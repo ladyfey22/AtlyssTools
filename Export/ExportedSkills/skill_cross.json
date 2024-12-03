@@ -1,0 +1,195 @@
+{
+  "_skillName": "Cross",
+  "_skillIcon": "_graphic/_ui/_skillicons/_abIco03",
+  "_skillControlType": 1,
+  "_skillDamageType": 2,
+  "_skillDescription": "<color=cyan>Charge and release skill.</color> Manifests a source of arcane magic, exploding and knocking foes back.",
+  "_allowAsBonusSkill": false,
+  "_weaponTypeRequirements": [],
+  "_requireShield": false,
+  "_baseSkillPower": 10,
+  "_skillRankParams": {
+    "_baseLevelRequirement": 10,
+    "_baseManaCost": 8,
+    "_baseHealthCost": 0,
+    "_baseStaminaCost": 0,
+    "_isGreaterThanCost": false,
+    "_castOnNoConditionOnly": false,
+    "_isUninterruptable": false,
+    "_baseRequiredItem": null,
+    "_basedItemCost": 0,
+    "_baseCastTime": 0.4,
+    "_baseCooldown": 2.0,
+    "_baseSkillPowerPercent": 1.0,
+    "_skillLevelRequirementPerLevel": 1,
+    "_skillLevelRequirementChange": 2,
+    "_skillCostChangePerLevel": 2,
+    "_skillCostChange": 12,
+    "_skillCastTimePerLevel": 0,
+    "_skillCastTimeChange": 0.0,
+    "_skillCooldownPerLevel": 2,
+    "_skillCooldownChange": 1.15,
+    "_skillPowerPercentPerLevel": 1,
+    "_skillPowerPercentChange": 0.45
+  },
+  "_skillRanks": [
+    {
+      "_rankTag": "Cross (Rank 1)",
+      "_levelRequirement": 10,
+      "_manaCost": 8,
+      "_healthCost": 0,
+      "_staminaCost": 0,
+      "_greaterThanCost": false,
+      "_requiredItem": null,
+      "_requiredItemQuantity": 0,
+      "_castTime": 0.4,
+      "_coolDown": 2.0,
+      "_skillPowerPercent": 1.0,
+      "_attackPowerModRef": 0.0,
+      "_magicPowerModRef": 0.0,
+      "_rangePowerModRef": 0.0,
+      "_rankDescriptor": "Deals $SKP initial damage with a <color=yellow>small</color> blast radius. Additionally decreases affected target's Magic Defense by <color=yellow>5.</color>",
+      "_selfConditionOutput": null,
+      "_earlySkillObjectOutput": {
+        "_skillObjectTag": "",
+        "_skillObject": "_skill/_mysticskills/_cross/_projectile_cross_init01",
+        "_skillObjectCondition": {
+          "_scriptableCondition": "_skill/_mysticskills/_cross/statusCondition_crossFlash01",
+          "_chance": 1.0
+        }
+      },
+      "_skillObjectOutput": {
+        "_skillObjectTag": "",
+        "_skillObject": "",
+        "_skillObjectCondition": {
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      }
+    },
+    {
+      "_rankTag": "Cross (Rank 2)",
+      "_levelRequirement": 12,
+      "_manaCost": 8,
+      "_healthCost": 0,
+      "_staminaCost": 0,
+      "_greaterThanCost": false,
+      "_requiredItem": null,
+      "_requiredItemQuantity": 0,
+      "_castTime": 0.4,
+      "_coolDown": 2.0,
+      "_skillPowerPercent": 1.45,
+      "_attackPowerModRef": 0.0,
+      "_magicPowerModRef": 0.0,
+      "_rangePowerModRef": 0.0,
+      "_rankDescriptor": "Deals $SKP initial damage with a <color=yellow>medium</color> blast radius. Additionally decreases affected target's Magic Defense by <color=yellow>10.</color>",
+      "_selfConditionOutput": null,
+      "_earlySkillObjectOutput": {
+        "_skillObjectTag": "",
+        "_skillObject": "_skill/_mysticskills/_cross/_projectile_cross_init02",
+        "_skillObjectCondition": {
+          "_scriptableCondition": "_skill/_mysticskills/_cross/statusCondition_crossFlash02",
+          "_chance": 1.0
+        }
+      },
+      "_skillObjectOutput": {
+        "_skillObjectTag": "",
+        "_skillObject": "",
+        "_skillObjectCondition": {
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      }
+    },
+    {
+      "_rankTag": "Cross (Rank 3)",
+      "_levelRequirement": 14,
+      "_manaCost": 20,
+      "_healthCost": 0,
+      "_staminaCost": 0,
+      "_greaterThanCost": false,
+      "_requiredItem": null,
+      "_requiredItemQuantity": 0,
+      "_castTime": 0.4,
+      "_coolDown": 3.15,
+      "_skillPowerPercent": 1.9,
+      "_attackPowerModRef": 0.0,
+      "_magicPowerModRef": 0.0,
+      "_rangePowerModRef": 0.0,
+      "_rankDescriptor": "Deals $SKP initial damage with a <color=yellow>large</color> blast radius. Additionally decreases affected target's Magic Defense by <color=yellow>15.</color>",
+      "_selfConditionOutput": null,
+      "_earlySkillObjectOutput": {
+        "_skillObjectTag": "",
+        "_skillObject": "_skill/_mysticskills/_cross/_projectile_cross_init03",
+        "_skillObjectCondition": {
+          "_scriptableCondition": "_skill/_mysticskills/_cross/statusCondition_crossFlash03",
+          "_chance": 1.0
+        }
+      },
+      "_skillObjectOutput": {
+        "_skillObjectTag": "",
+        "_skillObject": "",
+        "_skillObjectCondition": {
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      }
+    },
+    {
+      "_rankTag": "Cross (Rank 4)",
+      "_levelRequirement": 16,
+      "_manaCost": 20,
+      "_healthCost": 0,
+      "_staminaCost": 0,
+      "_greaterThanCost": false,
+      "_requiredItem": null,
+      "_requiredItemQuantity": 0,
+      "_castTime": 0.4,
+      "_coolDown": 3.15,
+      "_skillPowerPercent": 2.35,
+      "_attackPowerModRef": 0.0,
+      "_magicPowerModRef": 0.0,
+      "_rangePowerModRef": 0.0,
+      "_rankDescriptor": "Deals $SKP initial damage with a <color=yellow>huge</color> blast radius. Additionally decreases affected target's Magic Defense by <color=yellow>20.</color>",
+      "_selfConditionOutput": null,
+      "_earlySkillObjectOutput": {
+        "_skillObjectTag": "",
+        "_skillObject": "_skill/_mysticskills/_cross/_projectile_cross_init04",
+        "_skillObjectCondition": {
+          "_scriptableCondition": "_skill/_mysticskills/_cross/statusCondition_crossFlash04",
+          "_chance": 1.0
+        }
+      },
+      "_skillObjectOutput": {
+        "_skillObjectTag": "",
+        "_skillObject": "",
+        "_skillObjectCondition": {
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      }
+    }
+  ],
+  "_movementSpeedDecrease": -15.0,
+  "_strafeDirection": true,
+  "_groundOnlySkill": false,
+  "_airTimeLockBuffer": 0.0,
+  "_enableAirTimeMod": false,
+  "_lockMoveControlTime": 0.0,
+  "_lockCombatControlTime": 0.35,
+  "_timeBeforeAttackForce": 0.0,
+  "_attackForceApply": 0.0,
+  "_attackForceDampen": 120.0,
+  "_attackForceInputInfluence": false,
+  "_castEffectCollection": "_skill/00_casteffects/castEffect_mystic",
+  "_useGlyphEffect": true,
+  "_skillChargeAnimation": "Omni",
+  "_skillCastAnimation": "Omni",
+  "_animChargeSmoothing": 0.1,
+  "_animCastSmoothing": 0.0,
+  "_setSheatheCondition": 0,
+  "_applySheatheCondition": false,
+  "_hideWeapon": true,
+  "name": "skill_cross",
+  "hideFlags": 0
+}

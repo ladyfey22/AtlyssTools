@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net472</TargetFramework>
+        <AssemblyName>AtlyssTools</AssemblyName>
+        <Product>AtlyssTools</Product>
+        <Version>1.0.0</Version>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <LangVersion>latest</LangVersion>
+        <RestoreAdditionalProjectSources>
+            https://api.nuget.org/v3/index.json;
+            https://nuget.bepinex.dev/v3/index.json;
+            https://nuget.samboy.dev/v3/index.json
+        </RestoreAdditionalProjectSources>
+        <RootNamespace>AtlyssTools</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Atlyss.GameLibs" Version="1.5.5"/>
+        <PackageReference Include="BepInEx.Analyzers" Version="1.*" PrivateAssets="all"/>
+        <PackageReference Include="BepInEx.Core" Version="5.*"/>
+        <PackageReference Include="BepInEx.PluginInfoProps" Version="2.*"/>
+        <PackageReference Include="UnityEngine.Modules" Version="2021.3.16" IncludeAssets="compile"/>
+    </ItemGroup>
+
+    <ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' == 'net'">
+        <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2" PrivateAssets="all"/>
+    </ItemGroup>
+
+
+    <ItemGroup>
+        <EmbeddedResource Remove="AtlyssTools\**"/>
+        <EmbeddedResource Remove="ATLYSS\**"/>
+        <EmbeddedResource Remove="ATLYSSThunderkit\**"/>
+        <EmbeddedResource Remove="ATLYSSUnity\**"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Compile Remove="AtlyssTools\**"/>
+        <Compile Remove="ATLYSS\**"/>
+        <Compile Remove="ATLYSSThunderkit\**"/>
+        <Compile Remove="ATLYSSUnity\**"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Remove="AtlyssTools\**"/>
+        <None Remove="ATLYSS\**"/>
+        <None Remove="ATLYSSThunderkit\**"/>
+        <None Remove="ATLYSSUnity\**"/>
+    </ItemGroup>
+</Project>

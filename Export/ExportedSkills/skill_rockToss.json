@@ -1,0 +1,161 @@
+{
+  "_skillName": "Rock Toss",
+  "_skillIcon": "_graphic/_ui/_skillicons/_abIco21",
+  "_skillControlType": 0,
+  "_skillDamageType": 0,
+  "_skillDescription": "Tosses a rock, generating high threat on hit targets.",
+  "_allowAsBonusSkill": false,
+  "_weaponTypeRequirements": [],
+  "_requireShield": false,
+  "_baseSkillPower": 12,
+  "_skillRankParams": {
+    "_baseLevelRequirement": 2,
+    "_baseManaCost": 0,
+    "_baseHealthCost": 0,
+    "_baseStaminaCost": 0,
+    "_isGreaterThanCost": false,
+    "_castOnNoConditionOnly": false,
+    "_isUninterruptable": false,
+    "_baseRequiredItem": "_item/03_trade/TRADEITEM_Rock",
+    "_basedItemCost": 1,
+    "_baseCastTime": 0.35,
+    "_baseCooldown": 2.0,
+    "_baseSkillPowerPercent": 1.0,
+    "_skillLevelRequirementPerLevel": 0,
+    "_skillLevelRequirementChange": 0,
+    "_skillCostChangePerLevel": 0,
+    "_skillCostChange": 0,
+    "_skillCastTimePerLevel": 1,
+    "_skillCastTimeChange": -0.05,
+    "_skillCooldownPerLevel": 1,
+    "_skillCooldownChange": -0.55,
+    "_skillPowerPercentPerLevel": 1,
+    "_skillPowerPercentChange": 0.5
+  },
+  "_skillRanks": [
+    {
+      "_rankTag": "Rock Toss (Rank 1)",
+      "_levelRequirement": 2,
+      "_manaCost": 0,
+      "_healthCost": 0,
+      "_staminaCost": 0,
+      "_greaterThanCost": false,
+      "_requiredItem": "_item/03_trade/TRADEITEM_Rock",
+      "_requiredItemQuantity": 1,
+      "_castTime": 0.35,
+      "_coolDown": 2.0,
+      "_skillPowerPercent": 1.0,
+      "_attackPowerModRef": 0.0,
+      "_magicPowerModRef": 0.0,
+      "_rangePowerModRef": 0.0,
+      "_rankDescriptor": "Deals $SKP damage. $COOLDWN",
+      "_selfConditionOutput": null,
+      "_earlySkillObjectOutput": {
+        "_skillObjectTag": "",
+        "_skillObject": "",
+        "_skillObjectCondition": {
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      },
+      "_skillObjectOutput": {
+        "_skillObjectTag": "",
+        "_skillObject": "_skill/_noviceskills/_rocktoss/_projectile_rockToss_01",
+        "_skillObjectCondition": {
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      }
+    },
+    {
+      "_rankTag": "Rock Toss (Rank 2)",
+      "_levelRequirement": 2,
+      "_manaCost": 0,
+      "_healthCost": 0,
+      "_staminaCost": 0,
+      "_greaterThanCost": false,
+      "_requiredItem": "_item/03_trade/TRADEITEM_Rock",
+      "_requiredItemQuantity": 1,
+      "_castTime": 0.299999982,
+      "_coolDown": 1.45,
+      "_skillPowerPercent": 1.5,
+      "_attackPowerModRef": 0.0,
+      "_magicPowerModRef": 0.0,
+      "_rangePowerModRef": 0.0,
+      "_rankDescriptor": "Deals $SKP damage. $COOLDWN",
+      "_selfConditionOutput": null,
+      "_earlySkillObjectOutput": {
+        "_skillObjectTag": "",
+        "_skillObject": "",
+        "_skillObjectCondition": {
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      },
+      "_skillObjectOutput": {
+        "_skillObjectTag": "",
+        "_skillObject": "_skill/_noviceskills/_rocktoss/_projectile_rockToss_01",
+        "_skillObjectCondition": {
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      }
+    },
+    {
+      "_rankTag": "Rock Toss (Rank 3)",
+      "_levelRequirement": 2,
+      "_manaCost": 0,
+      "_healthCost": 0,
+      "_staminaCost": 0,
+      "_greaterThanCost": false,
+      "_requiredItem": "_item/03_trade/TRADEITEM_Rock",
+      "_requiredItemQuantity": 1,
+      "_castTime": 0.25,
+      "_coolDown": 0.9,
+      "_skillPowerPercent": 2.0,
+      "_attackPowerModRef": 0.0,
+      "_magicPowerModRef": 0.0,
+      "_rangePowerModRef": 0.0,
+      "_rankDescriptor": "Deals $SKP damage. $COOLDWN",
+      "_selfConditionOutput": null,
+      "_earlySkillObjectOutput": {
+        "_skillObjectTag": "",
+        "_skillObject": "",
+        "_skillObjectCondition": {
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      },
+      "_skillObjectOutput": {
+        "_skillObjectTag": "",
+        "_skillObject": "_skill/_noviceskills/_rocktoss/_projectile_rockToss_01",
+        "_skillObjectCondition": {
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      }
+    }
+  ],
+  "_movementSpeedDecrease": -22.65,
+  "_strafeDirection": true,
+  "_groundOnlySkill": false,
+  "_airTimeLockBuffer": 0.0,
+  "_enableAirTimeMod": false,
+  "_lockMoveControlTime": 0.0,
+  "_lockCombatControlTime": 0.35,
+  "_timeBeforeAttackForce": 0.0,
+  "_attackForceApply": 0.0,
+  "_attackForceDampen": 120.0,
+  "_attackForceInputInfluence": false,
+  "_castEffectCollection": null,
+  "_useGlyphEffect": false,
+  "_skillChargeAnimation": "Direct",
+  "_skillCastAnimation": "Direct",
+  "_animChargeSmoothing": 0.1,
+  "_animCastSmoothing": 0.0,
+  "_setSheatheCondition": 0,
+  "_applySheatheCondition": false,
+  "_hideWeapon": true,
+  "name": "skill_rockToss",
+  "hideFlags": 0
+}

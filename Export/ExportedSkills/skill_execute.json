@@ -1,0 +1,182 @@
+{
+  "_skillName": "Execute",
+  "_skillIcon": "_graphic/_ui/_skillicons/_abIco08",
+  "_skillControlType": 0,
+  "_skillDamageType": 0,
+  "_skillDescription": "Deals damage to a target, with a chance to kill them instantly if they are low on health. <color=lime>Requires a physical combat weapon.</color>",
+  "_allowAsBonusSkill": true,
+  "_weaponTypeRequirements": [
+    {
+      "_wepType": "_weapontype/01_weaponType_katars",
+      "_animOverride_charge": "Katar",
+      "_animOverride_cast": "Melee2"
+    },
+    {
+      "_wepType": "_weapontype/02_weaponType_melee",
+      "_animOverride_charge": "MeleeSword",
+      "_animOverride_cast": "Melee2"
+    },
+    {
+      "_wepType": "_weapontype/03_weaponType_heavyMelee",
+      "_animOverride_charge": "MeleeAxehammer",
+      "_animOverride_cast": "Melee2"
+    },
+    {
+      "_wepType": "_weapontype/04_weaponType_polearm",
+      "_animOverride_charge": "MeleePolearm",
+      "_animOverride_cast": "Melee2"
+    }
+  ],
+  "_requireShield": false,
+  "_baseSkillPower": 6,
+  "_skillRankParams": {
+    "_baseLevelRequirement": 6,
+    "_baseManaCost": 0,
+    "_baseHealthCost": 0,
+    "_baseStaminaCost": 6,
+    "_isGreaterThanCost": false,
+    "_castOnNoConditionOnly": false,
+    "_isUninterruptable": false,
+    "_baseRequiredItem": null,
+    "_basedItemCost": 0,
+    "_baseCastTime": 0.4,
+    "_baseCooldown": 6.0,
+    "_baseSkillPowerPercent": 1.0,
+    "_skillLevelRequirementPerLevel": 2,
+    "_skillLevelRequirementChange": 2,
+    "_skillCostChangePerLevel": 0,
+    "_skillCostChange": 0,
+    "_skillCastTimePerLevel": 0,
+    "_skillCastTimeChange": 0.0,
+    "_skillCooldownPerLevel": 0,
+    "_skillCooldownChange": 0.0,
+    "_skillPowerPercentPerLevel": 1,
+    "_skillPowerPercentChange": 0.45
+  },
+  "_skillRanks": [
+    {
+      "_rankTag": "Execute (Rank 1)",
+      "_levelRequirement": 6,
+      "_manaCost": 0,
+      "_healthCost": 0,
+      "_staminaCost": 6,
+      "_greaterThanCost": false,
+      "_requiredItem": null,
+      "_requiredItemQuantity": 0,
+      "_castTime": 0.4,
+      "_coolDown": 6.0,
+      "_skillPowerPercent": 1.0,
+      "_attackPowerModRef": 0.0,
+      "_magicPowerModRef": 0.0,
+      "_rangePowerModRef": 0.0,
+      "_rankDescriptor": "Deals $SKP initial damage. Has a <color=yellow>10%</color> chance to instantly kill a target that has less than <color=yellow>30%</color> health.",
+      "_selfConditionOutput": null,
+      "_earlySkillObjectOutput": {
+        "_skillObjectTag": "",
+        "_skillObject": "",
+        "_skillObjectCondition": {
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      },
+      "_skillObjectOutput": {
+        "_skillObjectTag": "",
+        "_skillObject": "_skill/00_skillscroll_skills/_execute/_projectile_execute",
+        "_skillObjectCondition": {
+          "_scriptableCondition": "_skill/00_skillscroll_skills/_execute/statusCondition_execute_00",
+          "_chance": 0.1
+        }
+      }
+    },
+    {
+      "_rankTag": "Execute (Rank 2)",
+      "_levelRequirement": 6,
+      "_manaCost": 0,
+      "_healthCost": 0,
+      "_staminaCost": 6,
+      "_greaterThanCost": false,
+      "_requiredItem": null,
+      "_requiredItemQuantity": 0,
+      "_castTime": 0.4,
+      "_coolDown": 6.0,
+      "_skillPowerPercent": 1.45,
+      "_attackPowerModRef": 0.0,
+      "_magicPowerModRef": 0.0,
+      "_rangePowerModRef": 0.0,
+      "_rankDescriptor": "Deals $SKP initial damage. Has a <color=yellow>15%</color> chance to instantly kill a target that has less than <color=yellow>30%</color> health.",
+      "_selfConditionOutput": null,
+      "_earlySkillObjectOutput": {
+        "_skillObjectTag": "",
+        "_skillObject": "",
+        "_skillObjectCondition": {
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      },
+      "_skillObjectOutput": {
+        "_skillObjectTag": "",
+        "_skillObject": "_skill/00_skillscroll_skills/_execute/_projectile_execute",
+        "_skillObjectCondition": {
+          "_scriptableCondition": "_skill/00_skillscroll_skills/_execute/statusCondition_execute_00",
+          "_chance": 0.15
+        }
+      }
+    },
+    {
+      "_rankTag": "Execute (Rank 3)",
+      "_levelRequirement": 8,
+      "_manaCost": 0,
+      "_healthCost": 0,
+      "_staminaCost": 6,
+      "_greaterThanCost": false,
+      "_requiredItem": null,
+      "_requiredItemQuantity": 0,
+      "_castTime": 0.4,
+      "_coolDown": 6.0,
+      "_skillPowerPercent": 1.9,
+      "_attackPowerModRef": 0.0,
+      "_magicPowerModRef": 0.0,
+      "_rangePowerModRef": 0.0,
+      "_rankDescriptor": "Deals $SKP initial damage. Has a <color=yellow>20%</color> chance to instantly kill a target that has less than <color=yellow>30%</color> health.",
+      "_selfConditionOutput": null,
+      "_earlySkillObjectOutput": {
+        "_skillObjectTag": "",
+        "_skillObject": "",
+        "_skillObjectCondition": {
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      },
+      "_skillObjectOutput": {
+        "_skillObjectTag": "",
+        "_skillObject": "_skill/00_skillscroll_skills/_execute/_projectile_execute",
+        "_skillObjectCondition": {
+          "_scriptableCondition": "_skill/00_skillscroll_skills/_execute/statusCondition_execute_00",
+          "_chance": 0.2
+        }
+      }
+    }
+  ],
+  "_movementSpeedDecrease": -6.65,
+  "_strafeDirection": true,
+  "_groundOnlySkill": false,
+  "_airTimeLockBuffer": 0.1,
+  "_enableAirTimeMod": true,
+  "_lockMoveControlTime": 0.4,
+  "_lockCombatControlTime": 0.4,
+  "_timeBeforeAttackForce": 0.0,
+  "_attackForceApply": 150.0,
+  "_attackForceDampen": 1200.0,
+  "_attackForceInputInfluence": false,
+  "_castEffectCollection": null,
+  "_useGlyphEffect": false,
+  "_skillChargeAnimation": "Direct",
+  "_skillCastAnimation": "Direct",
+  "_animChargeSmoothing": 0.1,
+  "_animCastSmoothing": 0.0,
+  "_setSheatheCondition": 1,
+  "_applySheatheCondition": true,
+  "_hideWeapon": false,
+  "name": "skill_execute",
+  "hideFlags": 0
+}
