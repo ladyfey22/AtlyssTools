@@ -30,7 +30,7 @@ bundle and associated manifest in the assets folder.
 
 ## Json Loading
 
-Json will be automatically loaded from your mods Assets/ScriptableSkills and Assets/ScriptableStatusConditions folders.
+Json will be automatically loaded from your mods Assets/ScriptableSkills and Assets/ScriptableStatusConditions folders. These will be automatically loaded to the GameManager cache, and can be referenced in other scriptable objects.
 Use the JSON format provided in the extracted assets folder. The only requirement is you call
 ```AtlyssToolsLoader.LoadPlugin("yourmodid", "YourModPath")``` in your Awake() function. Please make your mod id unique.
 
