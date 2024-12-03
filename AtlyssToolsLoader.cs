@@ -190,6 +190,11 @@ public class AtlyssToolsLoader
             modInfo = new() { ModId = modName, ModPath = modPath };
             Instance.ModInfos.Add(modName, modInfo);
         }
+        
+        if(!Directory.Exists(modPath + "/Assets"))
+        {
+            return;
+        }
 
         // find all files in ModPath/Assets, if it doesn't end in .manifest
         string[] files = Directory.GetFiles(modPath + "/Assets", "*", System.IO.SearchOption.AllDirectories);
