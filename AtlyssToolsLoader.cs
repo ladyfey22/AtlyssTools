@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using AtlyssTools.Registries;
 using AtlyssTools.Utility;
 using BepInEx;
@@ -134,15 +135,56 @@ public class AtlyssToolsLoader
             }
         }
 
+        private static readonly System.Type[] NonConcreteType = new System.Type[]
+        {
+            typeof(ScriptableCondition)
+        };
+        
+        private static List<System.Type> ConcreteType = new List<System.Type>()
+        {
+            typeof(ScriptableStatusCondition),
+            typeof(ScriptableSceneTransferCondition),
+            typeof(ScriptablePolymorphCondition),
+        };
+        
         private T LoadJsonObject<T>(string path) where T : Object
         {
             if(string.IsNullOrEmpty(path))
             {
                 return null;
+            }           
+            
+            System.Type type = typeof(T);
+            
+            // if this is a non-concrete type, we need to check the json for the type
+            if (NonConcreteType.Contains(type))
+            {
+                // we need to deduce the type from the path
+                string[] parts = path.Split('/');
+                if (parts.Length < 2)
+                {
+                    return null;
+                }
+
+                string typeName = parts[0].ToLower();
+                //find the one that matches a type in ConcreteType
+                foreach (var t in ConcreteType)
+                {
+                    if (t.Name.ToLower() == typeName)
+                    {
+                        type = t;
+                        break;
+                    }
+                }
+                
+                if (type == typeof(T))
+                {
+                    return null;
+                }
             }
             
             // check if the dictionary already has typeof(T). if not, add it
-            if (!_scriptableObjects.ContainsKey(typeof(T)))
+            if (!_scriptableObjects.ContainsKey(type))
             {
                 _scriptableObjects.Add(typeof(T), new List<T>());
             }
@@ -168,13 +210,13 @@ public class AtlyssToolsLoader
             }
 
             // check that this is a ScriptableObject
-            if (!typeof(T).IsSubclassOf(typeof(ScriptableObject)))
+            if (!type.IsSubclassOf(typeof(ScriptableObject)) && type != typeof(ScriptableObject))
             {
                 Plugin.Logger.LogError($"Type {typeof(T).Name} is not a ScriptableObject");
                 return null;
             }
 
-            T obj = Utility.JsonUtility.LoadFromJson<T>(json);
+            T obj = Utility.JsonUtility.LoadFromJson(json, type) as T;
 
             if (obj == null)
             {
@@ -271,7 +313,7 @@ public class AtlyssToolsLoader
         _managers = new()
         {
             { typeof(ScriptableSkill), SkillManager.Instance },
-            { typeof(ScriptableStatusCondition), ConditionManager.Instance },
+            { typeof(ScriptableStatusCondition), StatusConditionManager.Instance },
             { typeof(ScriptablePlayerBaseClass), ClassManager.Instance }
         };
         // register the managers state machines

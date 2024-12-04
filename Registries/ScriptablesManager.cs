@@ -9,15 +9,14 @@ namespace AtlyssTools.Registries;
 
 public abstract class BaseScriptablesManager
 {
-    protected abstract void RegisterInternal(ScriptableObject obj);
-    protected abstract ScriptableObject GetFromCacheInternal(string objName);
     public abstract System.Type GetObjectType();
     public abstract IList GetModdedObjects();
-    protected abstract IList InternalGetCached();
+    protected abstract IDictionary InternalGetCached();
     public abstract LoaderStateManager GetStateManager();
     public abstract void OnModLoad(AtlyssToolsLoader.AtlyssToolsLoaderModInfo modInfo);
     public abstract void RegisterModObject(AtlyssToolsLoader.AtlyssToolsLoaderModInfo modInfo, ScriptableObject obj);
-    public abstract JsonSerializerSettings GetJsonSettings();
+    public abstract ScriptableObject Instantiate();
+    public abstract string GetName(ScriptableObject obj);
 }
 
 public abstract class ScriptablesManager<T> : BaseScriptablesManager where T : ScriptableObject
@@ -40,17 +39,24 @@ public abstract class ScriptablesManager<T> : BaseScriptablesManager where T : S
     {
         if (obj == null)
         {
-            Plugin.Logger.LogError("Attempted to register a null object");
+            Plugin.Logger.LogError("Attempted to register a null object for type " + typeof(T));
             return;
         }
 
         if (GetFromCache(obj.name) != null)
         {
-            Plugin.Logger.LogError($"Object {obj.name} is already in the cache");
+            Plugin.Logger.LogError($"Object {obj.name} is already in the cache for type {typeof(T)}");
             return;
         }
-        Plugin.Logger.LogInfo($"Registering {obj.name}");
-        RegisterInternal(obj);
+        
+        IDictionary cache = InternalGetCached();
+        if(cache == null)
+        {
+            Plugin.Logger.LogError($"Cache is null for type {typeof(T)}");
+            return;
+        }
+        string name = GetName(obj);
+        cache.Add(name, obj);
     }
 
     public override System.Type GetObjectType()
@@ -73,9 +79,9 @@ public abstract class ScriptablesManager<T> : BaseScriptablesManager where T : S
         return GetModdedObjects().Cast<T>().ToList();
     }
 
-    public List<T> GetCached()
+    public Dictionary<string, T>  GetCached()
     {
-        return InternalGetCached().Cast<T>().ToList();
+        return InternalGetCached() as Dictionary<string, T>;
     }
 
     public void LoadAllFromAssets()
@@ -97,7 +103,46 @@ public abstract class ScriptablesManager<T> : BaseScriptablesManager where T : S
 
     public readonly LoaderStateManager StateManager;
     public override LoaderStateManager GetStateManager() => StateManager;
-    public virtual T GetFromCache(string objName) => GetFromCacheInternal(objName) as T;
+
+    public T GetFromCache(string objName)
+    {
+        IDictionary cache = InternalGetCached();
+        if (cache.Contains(objName))
+        {
+            return cache[objName] as T;
+        }
+
+        return null;
+    }
+    
+    public void ReplaceAll(T to, T from)
+    {
+        // copy the values
+        System.Type sourceType = from.GetType();
+        System.Type destType = to.GetType();
+        
+        if(sourceType != destType)
+        {
+            Plugin.Logger.LogError($"Source type {sourceType} does not match destination type {destType}");
+            return;
+        }
+        
+        // copy the values
+        
+        // get all fields
+        System.Reflection.FieldInfo[] fields = sourceType.GetFields();
+        foreach (System.Reflection.FieldInfo field in fields)
+        {
+            field.SetValue(to, field.GetValue(from));
+        }
+        
+        // get all properties
+        System.Reflection.PropertyInfo[] properties = sourceType.GetProperties();
+        foreach (System.Reflection.PropertyInfo property in properties)
+        {
+            property.SetValue(to, property.GetValue(from));
+        }
+    }
 
     public virtual void PreCacheInit()
     {
@@ -111,5 +156,10 @@ public abstract class ScriptablesManager<T> : BaseScriptablesManager where T : S
 
     public virtual void PostLibraryInit()
     {
+    }
+    
+    public override ScriptableObject Instantiate()
+    {
+        return ScriptableObject.CreateInstance<T>();
     }
 }

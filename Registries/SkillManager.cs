@@ -30,33 +30,14 @@ public class SkillManager : ScriptablesManager<ScriptableSkill>
         GeneralSkills.Add(skillName);
     }
 
-
-    protected override void RegisterInternal(ScriptableObject obj)
+    protected override IDictionary InternalGetCached()
     {
-        ScriptableSkill skill = obj as ScriptableSkill;
-        if(skill == null)
-        {
-            Plugin.Logger.LogError("Attempted to register {obj.name} as a skill, but it is not a skill");
-            return;
-        }
-        
-        if(GameManager._current._cachedScriptableSkills.ContainsKey(skill._skillName))
-        {
-            Plugin.Logger.LogError($"Skill {skill._skillName} already registered");
-            return;
-        }
-        
-        GameManager._current._cachedScriptableSkills.Add(skill._skillName, skill);
+        return GameManager._current._cachedScriptableSkills;
     }
-
-    protected override ScriptableObject GetFromCacheInternal(string objName)
+    
+    public override string GetName(ScriptableObject obj)
     {
-        return GameManager._current.LocateSkill(objName);
-    }
-
-    protected override IList InternalGetCached()
-    {
-        return GameManager._current._cachedScriptableSkills.Values.ToList();
+        return ((ScriptableSkill)obj)._skillName;
     }
 
     public override void PreLibraryInit()
@@ -76,31 +57,6 @@ public class SkillManager : ScriptablesManager<ScriptableSkill>
         }
     }
     
-    public override JsonSerializerSettings GetJsonSettings()
-    {
-        List<JsonConverter> converters = new()
-        {    
-            new AssetConverter<Sprite>(),
-            new AssetConverter<CastEffectCollection>(),
-            new AssetConverter<ScriptableWeaponType>(),
-            new AssetConverter<ScriptableItem>(),
-            new ScriptableConditionConverter(),
-            new AssetConverter<AudioClip>(),
-            new AssetConverter<ScriptableCombatElement>(),
-            new AssetConverter<ScriptablePlayerBaseClass>(),
-            new Vector3Converter(),
-            new GameObjectConverter(),
-            new ColorConverter(),
-            new ScriptableSkillBaseConverter(),
-        };
-        
-        return new JsonSerializerSettings
-        {
-            PreserveReferencesHandling = PreserveReferencesHandling.Objects,
-            TypeNameHandling = TypeNameHandling.All,
-            Converters = converters
-        };
-    }
 
     internal static SkillManager Instance => _instance ??= new();
     private static SkillManager _instance;

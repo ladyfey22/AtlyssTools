@@ -35,12 +35,16 @@ public class Plugin : BaseUnityPlugin
         }
 
         // dump all loaded conditions
-        foreach (var condition in ConditionManager.Instance.GetModded())
+        foreach (var condition in StatusConditionManager.Instance.GetModded())
         {
             Logger.LogInfo($"Condition: {condition._conditionName}");
         }
-
-        // add a general skill
-        SkillManager.Instance.RegisterGeneralSkill("Hug");
+        
+        AtlyssToolsLoader.RegisterPostCacheInit(
+            "atlysstools", () =>
+            {
+                // list all cached
+                SkillManager.Instance.ReplaceAll(SkillManager.Instance.GetFromCache("Recovery"), SkillManager.Instance.GetFromCache("Hug"));
+            });
     }
 }

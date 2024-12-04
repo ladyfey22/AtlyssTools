@@ -21,19 +21,6 @@ public class AssetConverter<T> : JsonConverter<T> where T : UnityEngine.Object
     }
 }
 
-public class GameObjectConverter : JsonConverter<GameObject>
-{
-    public override void WriteJson(JsonWriter writer, GameObject value, JsonSerializer serializer)
-    {
-    }
-
-    public override GameObject ReadJson(JsonReader reader, System.Type objectType, GameObject existingValue,
-        bool hasExistingValue, JsonSerializer serializer)
-    {
-        return AtlyssToolsLoader.LoadAsset<GameObject>(reader!.Value?.ToString()); // prefab
-    }
-}
-
 // unity vector3, because Normalize causes a loop
 public class Vector3Converter : JsonConverter<Vector3>
 {
@@ -109,102 +96,47 @@ public class ColorConverter : JsonConverter<Color>
     }
 }
 
-public class ScriptableStatusConditionBaseConverter : JsonConverter<ScriptableStatusCondition>
+public class ScriptableConditionConverter : JsonConverter
 {
-    public override bool CanWrite =>
-        false; // we don't need to read, only write. We can use the default serialization for reading
-    
-    public override void WriteJson(JsonWriter writer, ScriptableStatusCondition value, JsonSerializer serializer)
+    public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
     {
-        throw new NotImplementedException();
+        // write the name of the condition
+        ScriptableCondition condition = value as ScriptableCondition;
+        writer.WriteValue(condition != null ? condition._conditionName : null);
     }
 
-    public override ScriptableStatusCondition ReadJson(JsonReader reader, System.Type objectType,
-        ScriptableStatusCondition existingValue, bool hasExistingValue, JsonSerializer serializer)
+    public override object ReadJson(JsonReader reader, System.Type objectType, object existingValue, JsonSerializer serializer)
     {
-        ScriptableStatusCondition condition = ScriptableObject.CreateInstance<ScriptableStatusCondition>();
+        // read the name of the condition
+        string conditionName = reader.Value?.ToString();
+        if (string.IsNullOrEmpty(conditionName))
+        {
+            return null;
+        }
 
-        // we can use newtonsoft's populate method to fill in the values
-        serializer.Populate(reader, condition);
-
+        // find the condition
+        ScriptableCondition condition = AtlyssToolsLoader.LoadAsset<ScriptableCondition>(conditionName);
         return condition;
     }
-}
 
-public class ScriptableSkillBaseConverter : JsonConverter<ScriptableSkill>
-{
-    public override bool CanWrite =>
-        false; // we don't need to read, only write. We can use the default serialization for reading
-
-    public override void WriteJson(JsonWriter writer, ScriptableSkill value, JsonSerializer serializer)
+    public override bool CanConvert(System.Type objectType)
     {
-        throw new NotImplementedException();
-    }
-
-    public override ScriptableSkill ReadJson(JsonReader reader, System.Type objectType, ScriptableSkill existingValue,
-        bool hasExistingValue, JsonSerializer serializer)
-    {
-        ScriptableSkill skill = ScriptableObject.CreateInstance<ScriptableSkill>();
-
-        // we can use newtonsoft's populate method to fill in the values
-        serializer.Populate(reader, skill);
-
-        return skill;
+        return objectType == typeof(ScriptableCondition); // prevent child classes from using this converter
     }
 }
 
-public class ScriptableClassBaseConverter : JsonConverter<ScriptablePlayerBaseClass>
+public class BaseConverter<T> : JsonConverter<T> where T : ScriptableObject
 {
-    public override bool CanWrite =>
-        false; // we don't need to read, only write. We can use the default serialization for reading
-
-    public override void WriteJson(JsonWriter writer, ScriptablePlayerBaseClass value, JsonSerializer serializer)
-    {
-        throw new NotImplementedException();
-    }
-
-    public override ScriptablePlayerBaseClass ReadJson(JsonReader reader, System.Type objectType,
-        ScriptablePlayerBaseClass existingValue, bool hasExistingValue, JsonSerializer serializer)
-    {
-        ScriptablePlayerBaseClass skill = ScriptableObject.CreateInstance<ScriptablePlayerBaseClass>();
-
-        // we can use newtonsoft's populate method to fill in the values
-        serializer.Populate(reader, skill);
-
-        return skill;
-    }
-}
-
-public class ScriptableConditionConverter : JsonConverter<ScriptableCondition>
-{
-    public override void WriteJson(JsonWriter writer, ScriptableCondition value, JsonSerializer serializer)
+    public override void WriteJson(JsonWriter writer, T value, JsonSerializer serializer)
     {
     }
 
-    public override ScriptableCondition ReadJson(JsonReader reader, System.Type objectType,
-        ScriptableCondition existingValue, bool hasExistingValue, JsonSerializer serializer)
+    public override T ReadJson(JsonReader reader, System.Type objectType, T existingValue, bool hasExistingValue,
+        JsonSerializer serializer)
     {
-        ScriptableCondition condition =
-            AtlyssToolsLoader.LoadAsset<ScriptableStatusCondition>(reader!.Value?.ToString());
-        return condition;
-    }
-}
-
-public class ScriptableItemBaseConverter : JsonConverter<ScriptableItem>
-{
-    public override void WriteJson(JsonWriter writer, ScriptableItem value, JsonSerializer serializer)
-    {
-    }
-
-    public override ScriptableItem ReadJson(JsonReader reader, System.Type objectType, ScriptableItem existingValue,
-        bool hasExistingValue, JsonSerializer serializer)
-    {
-        ScriptableItem item = ScriptableObject.CreateInstance<ScriptableItem>();
-        
-        // we can use newtonsoft's populate method to fill in the values
-        serializer.Populate(reader, item);
-        
-        return item;
+        T obj = ScriptableObject.CreateInstance<T>();
+        serializer.Populate(reader, obj);
+        return obj;
     }
 }
 
@@ -230,6 +162,34 @@ public class Vector2Converter : JsonConverter<Vector2>
     }
 }
 
+// vector4
+public class Vector4Converter : JsonConverter<Vector4>
+{
+    public override void WriteJson(JsonWriter writer, Vector4 value, JsonSerializer serializer)
+    {
+        // write in 4 separate values
+        writer.WriteStartArray();
+        writer.WriteValue(value.x);
+        writer.WriteValue(value.y);
+        writer.WriteValue(value.z);
+        writer.WriteValue(value.w);
+        writer.WriteEndArray();
+    }
+
+    public override Vector4 ReadJson(JsonReader reader, System.Type objectType, Vector4 existingValue, bool hasExistingValue, JsonSerializer serializer)
+    {
+        // read in 4 separate values
+        reader.Read();
+        float x = (float)reader.Value;
+        reader.Read();
+        float y = (float)reader.Value;
+        reader.Read();
+        float z = (float)reader.Value;
+        reader.Read();
+        float w = (float)reader.Value;
+        return new Vector4(x, y, z, w);
+    }
+}
 
 
 public class JsonUtility
@@ -237,38 +197,126 @@ public class JsonUtility
     public static JsonSerializerSettings GetSettings(System.Type type)
     {
         // get the associated manager
-        BaseScriptablesManager manager = AtlyssToolsLoader.Instance.GetManager(type);
-        
-        if(manager != null)
+        List<JsonConverter> converters = new List<JsonConverter>()
         {
-            return manager.GetJsonSettings();
+            // all the scriptable object converters
+            new AssetConverter<ScriptableArmorRender>(),
+            new AssetConverter<ScriptableCombatElement>(),
+            new AssetConverter<ScriptableCreep>(),
+            new AssetConverter<ScriptableDialogData>(),
+            new AssetConverter<ScriptableEmoteList>(),
+            new AssetConverter<ScriptableLootTable>(),
+            new AssetConverter<ScriptableMapData>(),
+            new AssetConverter<ScriptablePlayerBaseClass>(),
+            new AssetConverter<ScriptablePlayerRace>(),
+            new AssetConverter<ScriptablePolymorphCondition>(),
+            new AssetConverter<ScriptableQuest>(),
+            new AssetConverter<ScriptableSceneTransferCondition>(),
+            new AssetConverter<ScriptableShopkeep>(),
+            new AssetConverter<ScriptableSkill>(),
+            new AssetConverter<ScriptableStatAttribute>(),
+            new AssetConverter<ScriptableStatModifier>(),
+            new AssetConverter<ScriptableStatModifierTable>(),
+            new AssetConverter<ScriptableStatusCondition>(),
+            new AssetConverter<ScriptableWeaponProjectileSet>(),
+            new AssetConverter<ScriptableWeaponType>(),
+
+
+            // items
+            new AssetConverter<ScriptableChestpiece>(),
+            new AssetConverter<ScriptableArmor>(),
+            new AssetConverter<ScriptableArmorDye>(),
+            new AssetConverter<ScriptableCape>(),
+            new AssetConverter<ScriptableClassTome>(),
+            new AssetConverter<ScriptableHelm>(),
+            new AssetConverter<ScriptableLeggings>(),
+            new AssetConverter<ScriptableRing>(),
+            new AssetConverter<ScriptableShield>(),
+            new AssetConverter<ScriptableSkillScroll>(),
+            new AssetConverter<ScriptableStatusConsumable>(),
+            new AssetConverter<ScriptableTradeItem>(),
+            new AssetConverter<ScriptableWeapon>(),
+
+            //
+            new AssetConverter<CastEffectCollection>(),
+
+            // custom converter
+            new AssetConverter<Texture>(),
+            new AssetConverter<AudioClip>(),
+            new AssetConverter<Sprite>(),
+            new Vector3Converter(),
+            new AssetConverter<GameObject>(),
+            new ColorConverter(),
+            new Vector2Converter(),
+            new Vector4Converter(),
+            new AssetConverter<Mesh>(),
+            
+            new ScriptableConditionConverter(),
+        };
+        
+        converters.RemoveAll(c => (c.GetType().GetGenericArguments().Length > 0) && (c.GetType().GetGenericArguments()[0] == type || type.IsSubclassOf(c.GetType().GetGenericArguments()[0])));
+        
+        // double check Type is a ScriptableObject
+        if(!type.IsSubclassOf(typeof(ScriptableObject)))
+        {
+            throw new Exception("Type must be a ScriptableObject");
         }
-        throw new Exception($"No manager found for type {type}");
+        
+        
+        // we have to do this through ugly reflection
+        
+        // add the base converter
+        System.Type baseConverterType = typeof(BaseConverter<>);
+        System.Type[] typeArgs = [type];
+        System.Type genericType = baseConverterType.MakeGenericType(typeArgs);
+        converters.Add((JsonConverter)Activator.CreateInstance(genericType));
+        
+        
+        return new JsonSerializerSettings
+        {
+            PreserveReferencesHandling = PreserveReferencesHandling.Objects,
+            TypeNameHandling = TypeNameHandling.Auto,
+            Converters = converters
+        };
+    }
+    
+    public static object LoadFromJson(string json, System.Type type)
+    {
+        if(string.IsNullOrEmpty(json))
+        {
+            return null;
+        }
+        
+        // apply our custom serialization
+        JsonSerializerSettings settings = GetSettings(type);
+        return JsonConvert.DeserializeObject(json, type, settings);
     }
 
     public static T LoadFromJson<T>(string json)
     {
+        if(string.IsNullOrEmpty(json))
+        {
+            return default;
+        }
+        
         // apply our custom serialization
         JsonSerializerSettings settings = GetSettings(typeof(T));
         return JsonConvert.DeserializeObject<T>(json, settings);
     }
 
-    public static T ReadFromFile<T>(string path)
+    public static T ReadFromFile<T>(string path) where T : ScriptableObject
     {
+        if(string.IsNullOrEmpty(path))
+        {
+            return null;
+        }
+        
+        if(!File.Exists(path))
+        {
+            return null;
+        }
+        
         string json = File.ReadAllText(path);
         return LoadFromJson<T>(json);
-    }
-
-    public static object LoadFromJson(string json, System.Type type)
-    {
-        JsonSerializerSettings settings = GetSettings(type);
-        return JsonConvert.DeserializeObject(json, type, settings);
-    }
-
-    public static object ReadFromFile(string path, System.Type type)
-    {
-        string json = File.ReadAllText(path);
-        Plugin.Logger.LogInfo($"Reading {type.Name} from {path}");
-        return LoadFromJson(json, type);
     }
 }
