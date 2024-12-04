@@ -212,7 +212,7 @@ public class JsonUtility
         Dictionary<System.Type, JsonConverter> typeConverters = new()
         {
             { typeof(ScriptableSkill), new ScriptableSkillBaseConverter() },
-            { typeof(ScriptablePlayerBaseClass), new ScriptableConditionConverter() }
+            { typeof(ScriptablePlayerBaseClass), new ScriptableClassBaseConverter() },
         };
 
         if (type == typeof(ScriptableStatusCondition))

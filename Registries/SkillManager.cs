@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -8,58 +9,60 @@ using UnityEngine;
 
 namespace AtlyssTools.Registries;
 
-public class SkillManager
+public class SkillManager : ScriptablesManager<ScriptableSkill>
 {
-    public static ScriptableSkill GetFromCache(string skillName)
+   public readonly List<string> GeneralSkills = new();
+    
+    public void RegisterGeneralSkill(string skillName)
     {
-        return GameManager._current.LocateSkill(skillName);
-    }
-
-
-    public static void Register(ScriptableSkill skill)
-    {
-        // double check that the skill isn't already in the cache
-        if (GameManager._current._cachedScriptableSkills.ContainsKey(skill._skillName))
+        if(GeneralSkills.Contains(skillName))
         {
-            Plugin.Logger.LogError($"Skill {skill._skillName} is already in the cache");
+            Plugin.Logger.LogWarning($"General skill {skillName} already registered");
             return;
         }
-
-        GameManager._current._cachedScriptableSkills.Add(skill._skillName, skill);
-    }
-
-    public static void RegisterGeneralSkill(ScriptableSkill skill)
-    {
-        // double check that the skill is in the cache and not already in the general skills list
-        if (!GameManager._current._cachedScriptableSkills.ContainsKey(skill._skillName))
+        
+        if(AtlyssToolsLoader.Instance.State > LoaderStateMachine.LoadState.PreLibraryInit)
         {
-            // add it to the cache
-            Register(skill);
-        }
-
-        if (GameManager._current._statLogics._generalSkills.Contains(skill))
-        {
-            Plugin.Logger.LogError($"Skill {skill._skillName} is already in the general skills list");
+            Plugin.Logger.LogWarning($"General skill {skillName} registered after skill library load");
             return;
         }
-
-        ScriptableSkill[] generalSkills = GameManager._current._statLogics._generalSkills;
-        List<ScriptableSkill> newGeneralSkills = generalSkills.ToList();
-        newGeneralSkills.Add(skill);
-        GameManager._current._statLogics._generalSkills = newGeneralSkills.ToArray();
+        
+        GeneralSkills.Add(skillName);
+    }
+    
+    
+    protected override void RegisterInternal(ScriptableObject obj)
+    {
+        GameManager._current._cachedScriptableSkills.Add(obj.name, obj as ScriptableSkill);
+    }
+    
+    protected override ScriptableObject GetFromCacheInternal(string objName)
+    {
+        return GameManager._current.LocateSkill(objName);
     }
 
-    public static void LoadAllFromAssets()
+    protected override IList InternalGetCached()
     {
-        // get skills from AtlyssToolsLoader
-        var skills = AtlyssToolsLoader.GetScriptableObjects<ScriptableSkill>();
-        // for each, check if it's in the cache and add it if not
-        foreach (var skill in skills)
+        return GameManager._current._cachedScriptableSkills.Values.ToList();
+    }
+
+    public override void PreLibraryInit()
+    {
+        base.PreLibraryInit();
+        foreach (string skill in Instance.GeneralSkills)
         {
-            if (!GameManager._current._cachedScriptableSkills.ContainsKey(skill._skillName))
+            if(!GameManager._current._cachedScriptableSkills.TryGetValue(skill, out var cachedSkill))
             {
-                Register(skill);
+                Plugin.Logger.LogError($"General skill {skill} not found in cache");
+                continue;
             }
+                
+            List<ScriptableSkill> generalSkills = GameManager._current._statLogics._generalSkills.ToList();
+            generalSkills.Add(cachedSkill);
+            GameManager._current._statLogics._generalSkills = generalSkills.ToArray();
         }
     }
+    
+    internal static SkillManager Instance => _instance ??= new();
+    private static SkillManager _instance;
 }

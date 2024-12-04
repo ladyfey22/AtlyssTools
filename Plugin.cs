@@ -20,9 +20,25 @@ public class Plugin : BaseUnityPlugin
         // Plugin startup logic
         Logger = base.Logger;
         Logger.LogInfo($"Plugin {MyPluginInfo.PLUGIN_GUID} is loaded!");
+        
 
         AtlyssToolsLoader.LoadPlugin("AtlyssTools", pluginPath);
+        // test our delegate
+        AtlyssToolsLoader.RegisterPreLibraryInit("AtlyssTools", () => Logger.LogInfo("PreLibraryInit delegate called"));
+        
         new Harmony("AtlyssTools").PatchAll(Assembly.GetExecutingAssembly());
+        
+        // dump all loaded skills
+        foreach (var skill in SkillManager.Instance.GetModded())
+        {
+            Logger.LogInfo($"Modded skill: {skill._skillName}");
+        }
+        
+        // dump all loaded conditions
+        foreach (var condition in ConditionManager.Instance.GetModded())
+        {
+            Logger.LogInfo($"Condition: {condition._conditionName}");
+        }
 
         // all other initialization should be done by other mods loading themselves
     }
