@@ -6,7 +6,7 @@ using HarmonyLib;
 
 namespace AtlyssTools;
 
-[BepInPlugin("com.ladyfey22.atlysstools", "AtlyssTools", "1.0.0")]
+[BepInPlugin("com.ladyfey22.atlysstools", "AtlyssTools", "1.0.1")]
 [BepInProcess("Atlyss.exe")]
 public class Plugin : BaseUnityPlugin
 {

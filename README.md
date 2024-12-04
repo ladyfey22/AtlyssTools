@@ -50,11 +50,12 @@ For a reference to an atlyss asset, or to an asset from your mod assetbundle. Th
 ```
 
 You can also specify a specific mod to load from. This is useful if you have multiple mods with the same asset name.
-It is always recommended to use this, as it is more efficient.
+It is always recommended to use this, as it is more efficient. This works on both asset bundle assets and json assets.
 
 ```json
 {
-    "someAtlyssScriptableOrSprite": "modid:myPicture"
+    "someAtlyssScriptableOrSprite": "modid:myPicture",
+    "someScriptableSkill": "modid:ScriptableSkills/mySkill"
 }
 ```
 
@@ -62,12 +63,43 @@ Json loading is the same as the other two, but it must be in the folder associat
 
 ```json
 {
-    "someAtlyssScriptableOrSprite": "modid:ScriptableSkills/mySkill"
+    "someAtlyssScriptableOrSprite": "ScriptableSkills/mySkill"
 }
 ```
 
-## The Future
+## Replacing Basegame Assets
 
-For now, you are responsible for adding your own assets to the different parts of the game where they are needed. It is
-my hope to automate this in the future, as well as provide a way to copy existing assets and only specify the
-modifications to them, especially for GameObjects.
+Currently, scriptable assets can fully replace basegame assets. This is done by using the same name as the asset, and will fully replace the asset type.
+```
+    ScriptableSkill _skillName
+    ScriptableStatusCondition _conditionName (all status conditions. StatusCondition, SceneTransfer, etc)
+    ScriptableItem _itemName (all item types. Armor, weapon, consumable, etc)
+    ScriptableShopkeep _shopName
+    ScriptableQuest _questName
+    ScriptableBaseClass _className
+    ScriptablePlayerRace _raceName
+    ScriptableCombatElement _elementName
+    ScriptableCreep _creepName
+    ScriptableStatModifier _modifierTag
+    
+    All others will just use name.
+```
+
+
+A full table for all supported scriptable objects will be added in the future. An example can be found in the ExampleAssets folder, which replaces the shopkeep.
+```json
+{
+    "_skillName": "Restora",
+    "_skillDescription": "My own skill",
+    ...
+}
+```
+
+It is highly reccommended you base it off the basegame asset, both for ease of use and to prevent any issues with the game.
+
+## Future Plans
+
+- Test and add more scriptable objects, and add their associated JSON dump.
+- Provide a full list of all assets and their paths.
+- Create an easy method of asset bundling.
+- Find a way to only partially replace assets, allowing for more modular modding. IE, only replace the sprite of a skill or add a new item to a shop.
