@@ -1,1 +1,86 @@
-{"$id":"1","_questName":"Strength and Honor","_questType":0,"_questSubType":2,"_questIco":"_graphic/_ui/_classicons/_clsIco_fighter","_questDescription":"The time has come to make the ultimate decision, lost one. I see that the strength and skill you have gathered has been more than sufficent <color=cyan>to bring forth your true colors of becoming a Fighter.</color>\n\nBecoming a Fighter will make you a living threat against the evil monstrosities that coat this world. <color=yellow>Take this tome.</color> Once read, you will join me in our effort to divide the darkness.\n\n<color=yellow>If you happen to lose your tome undecided, return to me. I can provide as many as you need.</color> <color=cyan>Keep in mind, reading this tome is irreversible.</color>","_questCompleteReturnMessage":"Return to Enok in Sanctum.","_questLevel":10,"_raceRequirement":null,"_baseClassRequirement":null,"_skillToHide":null,"_requireNoviceClass":true,"_autoFinishQuest":true,"_preQuestRequirements":[],"_questObjectiveItem":{"$id":"2","_scriptItem":"_item/02_consumable/_classtome/(lv-10) CLASSTOME_Tome of the Fighter","_setItemData":{"$id":"3","_itemName":"Tome of the Fighter","_quantity":1,"_maxQuantity":1,"_slotNumber":0,"_modifierTag":"","_damageTypeOverride":0,"_useDamageTypeOverride":false,"_isEquipped":false,"_isAltWeapon":false}},"_scenePath":"","_questObjective":{"$id":"4","_questItemRequirements":[],"_questCreepRequirements":[],"_questTriggerRequirements":[{"$id":"5","_questTriggerTag":"getFighterClass","_prefix":"Tome of the Fighter","_suffix":"read","_triggerEmitsNeeded":1}]},"_questExperiencePercentage":0.0,"_questCurrencyReward":0,"_questItemRewards":[{"$id":"6","_scriptItem":"_item/01_equipment/01_armor/02_chest/(lv-10) CHESTPIECE_Warrior Chest","_setItemData":{"$id":"7","_itemName":"Warrior Chest","_quantity":1,"_maxQuantity":1,"_slotNumber":0,"_modifierTag":"","_damageTypeOverride":0,"_useDamageTypeOverride":false,"_isEquipped":false,"_isAltWeapon":false}},{"$id":"8","_scriptItem":"_item/01_equipment/01_armor/03_legs/(lv-10) LEGGINGS_Warrior Leggings","_setItemData":{"$id":"9","_itemName":"Warrior Leggings","_quantity":1,"_maxQuantity":1,"_slotNumber":0,"_modifierTag":"","_damageTypeOverride":0,"_useDamageTypeOverride":false,"_isEquipped":false,"_isAltWeapon":false}}],"_displayEndDemoPrompt":false,"name":"(lv-10) QUEST_Strength and Honor","hideFlags":0}
+{
+  "$id": "1",
+  "_questName": "Strength and Honor",
+  "_questType": 0,
+  "_questSubType": 2,
+  "_questIco": "_graphic/_ui/_classicons/_clsIco_fighter",
+  "_questDescription": "The time has come to make the ultimate decision, lost one. I see that the strength and skill you have gathered has been more than sufficent <color=cyan>to bring forth your true colors of becoming a Fighter.</color>\n\nBecoming a Fighter will make you a living threat against the evil monstrosities that coat this world. <color=yellow>Take this tome.</color> Once read, you will join me in our effort to divide the darkness.\n\n<color=yellow>If you happen to lose your tome undecided, return to me. I can provide as many as you need.</color> <color=cyan>Keep in mind, reading this tome is irreversible.</color>",
+  "_questCompleteReturnMessage": "Return to Enok in Sanctum.",
+  "_questLevel": 10,
+  "_raceRequirement": null,
+  "_baseClassRequirement": null,
+  "_skillToHide": null,
+  "_requireNoviceClass": true,
+  "_autoFinishQuest": true,
+  "_preQuestRequirements": [],
+  "_questObjectiveItem": {
+    "$id": "2",
+    "_scriptItem": "_item/02_consumable/_classtome/(lv-10) CLASSTOME_Tome of the Fighter",
+    "_setItemData": {
+      "$id": "3",
+      "_itemName": "Tome of the Fighter",
+      "_quantity": 1,
+      "_maxQuantity": 1,
+      "_slotNumber": 0,
+      "_modifierTag": "",
+      "_damageTypeOverride": 0,
+      "_useDamageTypeOverride": false,
+      "_isEquipped": false,
+      "_isAltWeapon": false
+    }
+  },
+  "_scenePath": "",
+  "_questObjective": {
+    "$id": "4",
+    "_questItemRequirements": [],
+    "_questCreepRequirements": [],
+    "_questTriggerRequirements": [
+      {
+        "$id": "5",
+        "_questTriggerTag": "getFighterClass",
+        "_prefix": "Tome of the Fighter",
+        "_suffix": "read",
+        "_triggerEmitsNeeded": 1
+      }
+    ]
+  },
+  "_questExperiencePercentage": 0.0,
+  "_questCurrencyReward": 0,
+  "_questItemRewards": [
+    {
+      "$id": "6",
+      "_scriptItem": "_item/01_equipment/01_armor/02_chest/(lv-10) CHESTPIECE_Warrior Chest",
+      "_setItemData": {
+        "$id": "7",
+        "_itemName": "Warrior Chest",
+        "_quantity": 1,
+        "_maxQuantity": 1,
+        "_slotNumber": 0,
+        "_modifierTag": "",
+        "_damageTypeOverride": 0,
+        "_useDamageTypeOverride": false,
+        "_isEquipped": false,
+        "_isAltWeapon": false
+      }
+    },
+    {
+      "$id": "8",
+      "_scriptItem": "_item/01_equipment/01_armor/03_legs/(lv-10) LEGGINGS_Warrior Leggings",
+      "_setItemData": {
+        "$id": "9",
+        "_itemName": "Warrior Leggings",
+        "_quantity": 1,
+        "_maxQuantity": 1,
+        "_slotNumber": 0,
+        "_modifierTag": "",
+        "_damageTypeOverride": 0,
+        "_useDamageTypeOverride": false,
+        "_isEquipped": false,
+        "_isAltWeapon": false
+      }
+    }
+  ],
+  "_displayEndDemoPrompt": false,
+  "name": "(lv-10) QUEST_Strength and Honor",
+  "hideFlags": 0
+}

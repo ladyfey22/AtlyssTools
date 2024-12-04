@@ -1,1 +1,12 @@
-{"$id":"1","_elementName":"Normal","_elementWeaknessAgainst":null,"_elementIcon":"_graphic/_ui/_combatelementicons/elementIcon_normal","_elementHitEffect":"_combatelement/_hitEffect_Normal","_lightHitSfx":"_sound/_combat/weaponhits/weaponHit_Normal(light)","_mediumHitSfx":"_sound/_combat/weaponhits/weaponHit_Normal(average)","_heavyHitSfx":"_sound/_combat/weaponhits/weaponHit_Normal(heavy)","name":"comElement_normal","hideFlags":0}
+{
+  "$id": "1",
+  "_elementName": "Normal",
+  "_elementWeaknessAgainst": null,
+  "_elementIcon": "_graphic/_ui/_combatelementicons/elementIcon_normal",
+  "_elementHitEffect": "_combatelement/_hitEffect_Normal",
+  "_lightHitSfx": "_sound/_combat/weaponhits/weaponHit_Normal(light)",
+  "_mediumHitSfx": "_sound/_combat/weaponhits/weaponHit_Normal(average)",
+  "_heavyHitSfx": "_sound/_combat/weaponhits/weaponHit_Normal(heavy)",
+  "name": "comElement_normal",
+  "hideFlags": 0
+}

@@ -1,1 +1,47 @@
-{"$id":"1","_elementName":"Fire","_elementWeaknessAgainst":{"$id":"2","_elementName":"Water","_elementWeaknessAgainst":{"$id":"3","_elementName":"Earth","_elementWeaknessAgainst":{"$id":"4","_elementName":"Air","_elementWeaknessAgainst":{"$ref":"1"},"_elementIcon":"_graphic/_ui/_combatelementicons/elementIcon_air","_elementHitEffect":"_combatelement/_hitEffect_Air","_lightHitSfx":"_sound/_combat/weaponhits/weaponHit_Air(light)","_mediumHitSfx":"_sound/_combat/weaponhits/weaponHit_Air(average)","_heavyHitSfx":"_sound/_combat/weaponhits/weaponHit_Air(heavy)","name":"comElement_air","hideFlags":0},"_elementIcon":"_graphic/_ui/_combatelementicons/elementIcon_earth","_elementHitEffect":"_combatelement/_hitEffect_Earth","_lightHitSfx":"_sound/_combat/weaponhits/weaponHit_Earth(light)","_mediumHitSfx":"_sound/_combat/weaponhits/weaponHit_Earth(average)","_heavyHitSfx":"_sound/_combat/weaponhits/weaponHit_Normal(heavy)","name":"comElement_earth","hideFlags":0},"_elementIcon":"_graphic/_ui/_combatelementicons/elementIcon_water","_elementHitEffect":"_combatelement/_hitEffect_Water","_lightHitSfx":"_sound/_combat/weaponhits/weaponHit_Water(light)","_mediumHitSfx":"_sound/_combat/weaponhits/weaponHit_Water(average)","_heavyHitSfx":"_sound/_combat/weaponhits/weaponHit_Water(heavy)","name":"comElement_water","hideFlags":0},"_elementIcon":"_graphic/_ui/_combatelementicons/elementIcon_fire","_elementHitEffect":"_combatelement/_hitEffect_Fire","_lightHitSfx":"_sound/_combat/weaponhits/weaponHit_Fire(light)","_mediumHitSfx":"_sound/_combat/weaponhits/weaponHit_Fire(average)","_heavyHitSfx":"_sound/_combat/weaponhits/weaponHit_Fire(heavy)","name":"comElement_fire","hideFlags":0}
+{
+  "$id": "1",
+  "_elementName": "Fire",
+  "_elementWeaknessAgainst": {
+    "$id": "2",
+    "_elementName": "Water",
+    "_elementWeaknessAgainst": {
+      "$id": "3",
+      "_elementName": "Earth",
+      "_elementWeaknessAgainst": {
+        "$id": "4",
+        "_elementName": "Air",
+        "_elementWeaknessAgainst": {
+          "$ref": "1"
+        },
+        "_elementIcon": "_graphic/_ui/_combatelementicons/elementIcon_air",
+        "_elementHitEffect": "_combatelement/_hitEffect_Air",
+        "_lightHitSfx": "_sound/_combat/weaponhits/weaponHit_Air(light)",
+        "_mediumHitSfx": "_sound/_combat/weaponhits/weaponHit_Air(average)",
+        "_heavyHitSfx": "_sound/_combat/weaponhits/weaponHit_Air(heavy)",
+        "name": "comElement_air",
+        "hideFlags": 0
+      },
+      "_elementIcon": "_graphic/_ui/_combatelementicons/elementIcon_earth",
+      "_elementHitEffect": "_combatelement/_hitEffect_Earth",
+      "_lightHitSfx": "_sound/_combat/weaponhits/weaponHit_Earth(light)",
+      "_mediumHitSfx": "_sound/_combat/weaponhits/weaponHit_Earth(average)",
+      "_heavyHitSfx": "_sound/_combat/weaponhits/weaponHit_Normal(heavy)",
+      "name": "comElement_earth",
+      "hideFlags": 0
+    },
+    "_elementIcon": "_graphic/_ui/_combatelementicons/elementIcon_water",
+    "_elementHitEffect": "_combatelement/_hitEffect_Water",
+    "_lightHitSfx": "_sound/_combat/weaponhits/weaponHit_Water(light)",
+    "_mediumHitSfx": "_sound/_combat/weaponhits/weaponHit_Water(average)",
+    "_heavyHitSfx": "_sound/_combat/weaponhits/weaponHit_Water(heavy)",
+    "name": "comElement_water",
+    "hideFlags": 0
+  },
+  "_elementIcon": "_graphic/_ui/_combatelementicons/elementIcon_fire",
+  "_elementHitEffect": "_combatelement/_hitEffect_Fire",
+  "_lightHitSfx": "_sound/_combat/weaponhits/weaponHit_Fire(light)",
+  "_mediumHitSfx": "_sound/_combat/weaponhits/weaponHit_Fire(average)",
+  "_heavyHitSfx": "_sound/_combat/weaponhits/weaponHit_Fire(heavy)",
+  "name": "comElement_fire",
+  "hideFlags": 0
+}

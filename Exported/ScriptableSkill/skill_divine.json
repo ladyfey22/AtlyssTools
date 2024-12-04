@@ -1,1 +1,178 @@
-{"$id":"1","_skillName":"Divine","_skillIcon":"_graphic/_ui/_skillicons/_abIco62","_skillControlType":0,"_skillDamageType":2,"_skillDescription":"Places a holy well below the caster, damaging targets and healing allies over time.","_allowAsBonusSkill":true,"_weaponTypeRequirements":[],"_requireShield":false,"_baseSkillPower":6,"_skillRankParams":{"$id":"2","_baseLevelRequirement":16,"_baseManaCost":20,"_baseHealthCost":0,"_baseStaminaCost":0,"_isGreaterThanCost":false,"_castOnNoConditionOnly":false,"_isUninterruptable":false,"_baseRequiredItem":null,"_basedItemCost":0,"_baseCastTime":0.6,"_baseCooldown":30.0,"_baseSkillPowerPercent":1.0,"_skillLevelRequirementPerLevel":1,"_skillLevelRequirementChange":2,"_skillCostChangePerLevel":0,"_skillCostChange":0,"_skillCastTimePerLevel":0,"_skillCastTimeChange":0.0,"_skillCooldownPerLevel":0,"_skillCooldownChange":0.0,"_skillPowerPercentPerLevel":1,"_skillPowerPercentChange":0.3},"_skillRanks":[{"$id":"3","_rankTag":"Divine (Rank 1)","_levelRequirement":16,"_manaCost":20,"_healthCost":0,"_staminaCost":0,"_greaterThanCost":false,"_requiredItem":null,"_requiredItemQuantity":0,"_castTime":0.6,"_coolDown":30.0,"_skillPowerPercent":1.0,"_attackPowerModRef":0.0,"_magicPowerModRef":0.0,"_rangePowerModRef":0.0,"_rankDescriptor":"Spawns a holy well, healing allies and damaging enemies by $SKP every 0.4 seconds when nearby. Lasts for <color=yellow>3.25 seconds.</color>","_selfConditionOutput":null,"_earlySkillObjectOutput":{"$id":"4","_skillObjectTag":"","_skillObject":"","_skillObjectCondition":{"$id":"5","_scriptableCondition":null,"_chance":1.0}},"_skillObjectOutput":{"$id":"6","_skillObjectTag":"","_skillObject":"_skill/00_skillscroll_skills/_divine/_projectile_divine_00","_skillObjectCondition":{"$id":"7","_scriptableCondition":null,"_chance":1.0}}},{"$id":"8","_rankTag":"Divine (Rank 2)","_levelRequirement":18,"_manaCost":20,"_healthCost":0,"_staminaCost":0,"_greaterThanCost":false,"_requiredItem":null,"_requiredItemQuantity":0,"_castTime":0.6,"_coolDown":30.0,"_skillPowerPercent":1.3,"_attackPowerModRef":0.0,"_magicPowerModRef":0.0,"_rangePowerModRef":0.0,"_rankDescriptor":"Spawns a holy well, healing allies and damaging enemies by $SKP every 0.4 seconds when nearby. Lasts for <color=yellow>4.25 seconds.</color>","_selfConditionOutput":null,"_earlySkillObjectOutput":{"$id":"9","_skillObjectTag":"","_skillObject":"","_skillObjectCondition":{"$id":"10","_scriptableCondition":null,"_chance":1.0}},"_skillObjectOutput":{"$id":"11","_skillObjectTag":"","_skillObject":"_skill/00_skillscroll_skills/_divine/_projectile_divine_01","_skillObjectCondition":{"$id":"12","_scriptableCondition":null,"_chance":1.0}}},{"$id":"13","_rankTag":"Divine (Rank 3)","_levelRequirement":20,"_manaCost":20,"_healthCost":0,"_staminaCost":0,"_greaterThanCost":false,"_requiredItem":null,"_requiredItemQuantity":0,"_castTime":0.6,"_coolDown":30.0,"_skillPowerPercent":1.6,"_attackPowerModRef":0.0,"_magicPowerModRef":0.0,"_rangePowerModRef":0.0,"_rankDescriptor":"Spawns a holy well, healing allies and damaging enemies by $SKP every 0.4 seconds when nearby. Lasts for <color=yellow>5.25 seconds.</color>","_selfConditionOutput":null,"_earlySkillObjectOutput":{"$id":"14","_skillObjectTag":"","_skillObject":"","_skillObjectCondition":{"$id":"15","_scriptableCondition":null,"_chance":1.0}},"_skillObjectOutput":{"$id":"16","_skillObjectTag":"","_skillObject":"_skill/00_skillscroll_skills/_divine/_projectile_divine_02","_skillObjectCondition":{"$id":"17","_scriptableCondition":null,"_chance":1.0}}}],"_movementSpeedDecrease":-6.65,"_strafeDirection":false,"_groundOnlySkill":false,"_airTimeLockBuffer":0.0,"_enableAirTimeMod":false,"_lockMoveControlTime":0.0,"_lockCombatControlTime":0.35,"_timeBeforeAttackForce":0.0,"_attackForceApply":0.0,"_attackForceDampen":120.0,"_attackForceInputInfluence":false,"_castEffectCollection":{"$id":"18","_chargeSkillEffect":"_skill/00_casteffects/_spellCharge_holy","_castSkillEffect":"_skill/00_casteffects/_spellCast_holy","_channelGroundGlyphTexture":"_graphic/_texture/_cookie/_cookieTex_aura01","_channelGroundGlyphRotationSpeed":15.0,"_groundGlyphSpotAngleSize":25.0,"_groundGlyphIntensity":2000.0,"_groundGlyphColor":[1.0,0.874728,0.165094316,1.0],"_channelSound":"_sound/_combat/spellchannels/spellChannel_vector2","_castSound":"_sound/castsounds/_cast_holy","_channelSoundPitch":1.0,"_castSoundPitch":1.0,"name":"castEffect_holy","hideFlags":0},"_useGlyphEffect":true,"_skillChargeAnimation":"Omni","_skillCastAnimation":"Omni","_animChargeSmoothing":0.1,"_animCastSmoothing":0.0,"_setSheatheCondition":0,"_applySheatheCondition":false,"_hideWeapon":true,"name":"skill_divine","hideFlags":0}
+{
+  "$id": "1",
+  "_skillName": "Divine",
+  "_skillIcon": "_graphic/_ui/_skillicons/_abIco62",
+  "_skillControlType": 0,
+  "_skillDamageType": 2,
+  "_skillDescription": "Places a holy well below the caster, damaging targets and healing allies over time.",
+  "_allowAsBonusSkill": true,
+  "_weaponTypeRequirements": [],
+  "_requireShield": false,
+  "_baseSkillPower": 6,
+  "_skillRankParams": {
+    "$id": "2",
+    "_baseLevelRequirement": 16,
+    "_baseManaCost": 20,
+    "_baseHealthCost": 0,
+    "_baseStaminaCost": 0,
+    "_isGreaterThanCost": false,
+    "_castOnNoConditionOnly": false,
+    "_isUninterruptable": false,
+    "_baseRequiredItem": null,
+    "_basedItemCost": 0,
+    "_baseCastTime": 0.6,
+    "_baseCooldown": 30.0,
+    "_baseSkillPowerPercent": 1.0,
+    "_skillLevelRequirementPerLevel": 1,
+    "_skillLevelRequirementChange": 2,
+    "_skillCostChangePerLevel": 0,
+    "_skillCostChange": 0,
+    "_skillCastTimePerLevel": 0,
+    "_skillCastTimeChange": 0.0,
+    "_skillCooldownPerLevel": 0,
+    "_skillCooldownChange": 0.0,
+    "_skillPowerPercentPerLevel": 1,
+    "_skillPowerPercentChange": 0.3
+  },
+  "_skillRanks": [
+    {
+      "$id": "3",
+      "_rankTag": "Divine (Rank 1)",
+      "_levelRequirement": 16,
+      "_manaCost": 20,
+      "_healthCost": 0,
+      "_staminaCost": 0,
+      "_greaterThanCost": false,
+      "_requiredItem": null,
+      "_requiredItemQuantity": 0,
+      "_castTime": 0.6,
+      "_coolDown": 30.0,
+      "_skillPowerPercent": 1.0,
+      "_attackPowerModRef": 0.0,
+      "_magicPowerModRef": 0.0,
+      "_rangePowerModRef": 0.0,
+      "_rankDescriptor": "Spawns a holy well, healing allies and damaging enemies by $SKP every 0.4 seconds when nearby. Lasts for <color=yellow>3.25 seconds.</color>",
+      "_selfConditionOutput": null,
+      "_earlySkillObjectOutput": {
+        "$id": "4",
+        "_skillObjectTag": "",
+        "_skillObject": "",
+        "_skillObjectCondition": {
+          "$id": "5",
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      },
+      "_skillObjectOutput": {
+        "$id": "6",
+        "_skillObjectTag": "",
+        "_skillObject": "_skill/00_skillscroll_skills/_divine/_projectile_divine_00",
+        "_skillObjectCondition": {
+          "$id": "7",
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      }
+    },
+    {
+      "$id": "8",
+      "_rankTag": "Divine (Rank 2)",
+      "_levelRequirement": 18,
+      "_manaCost": 20,
+      "_healthCost": 0,
+      "_staminaCost": 0,
+      "_greaterThanCost": false,
+      "_requiredItem": null,
+      "_requiredItemQuantity": 0,
+      "_castTime": 0.6,
+      "_coolDown": 30.0,
+      "_skillPowerPercent": 1.3,
+      "_attackPowerModRef": 0.0,
+      "_magicPowerModRef": 0.0,
+      "_rangePowerModRef": 0.0,
+      "_rankDescriptor": "Spawns a holy well, healing allies and damaging enemies by $SKP every 0.4 seconds when nearby. Lasts for <color=yellow>4.25 seconds.</color>",
+      "_selfConditionOutput": null,
+      "_earlySkillObjectOutput": {
+        "$id": "9",
+        "_skillObjectTag": "",
+        "_skillObject": "",
+        "_skillObjectCondition": {
+          "$id": "10",
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      },
+      "_skillObjectOutput": {
+        "$id": "11",
+        "_skillObjectTag": "",
+        "_skillObject": "_skill/00_skillscroll_skills/_divine/_projectile_divine_01",
+        "_skillObjectCondition": {
+          "$id": "12",
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      }
+    },
+    {
+      "$id": "13",
+      "_rankTag": "Divine (Rank 3)",
+      "_levelRequirement": 20,
+      "_manaCost": 20,
+      "_healthCost": 0,
+      "_staminaCost": 0,
+      "_greaterThanCost": false,
+      "_requiredItem": null,
+      "_requiredItemQuantity": 0,
+      "_castTime": 0.6,
+      "_coolDown": 30.0,
+      "_skillPowerPercent": 1.6,
+      "_attackPowerModRef": 0.0,
+      "_magicPowerModRef": 0.0,
+      "_rangePowerModRef": 0.0,
+      "_rankDescriptor": "Spawns a holy well, healing allies and damaging enemies by $SKP every 0.4 seconds when nearby. Lasts for <color=yellow>5.25 seconds.</color>",
+      "_selfConditionOutput": null,
+      "_earlySkillObjectOutput": {
+        "$id": "14",
+        "_skillObjectTag": "",
+        "_skillObject": "",
+        "_skillObjectCondition": {
+          "$id": "15",
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      },
+      "_skillObjectOutput": {
+        "$id": "16",
+        "_skillObjectTag": "",
+        "_skillObject": "_skill/00_skillscroll_skills/_divine/_projectile_divine_02",
+        "_skillObjectCondition": {
+          "$id": "17",
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      }
+    }
+  ],
+  "_movementSpeedDecrease": -6.65,
+  "_strafeDirection": false,
+  "_groundOnlySkill": false,
+  "_airTimeLockBuffer": 0.0,
+  "_enableAirTimeMod": false,
+  "_lockMoveControlTime": 0.0,
+  "_lockCombatControlTime": 0.35,
+  "_timeBeforeAttackForce": 0.0,
+  "_attackForceApply": 0.0,
+  "_attackForceDampen": 120.0,
+  "_attackForceInputInfluence": false,
+  "_castEffectCollection": "_skill/00_casteffects/castEffect_holy",
+  "_useGlyphEffect": true,
+  "_skillChargeAnimation": "Omni",
+  "_skillCastAnimation": "Omni",
+  "_animChargeSmoothing": 0.1,
+  "_animCastSmoothing": 0.0,
+  "_setSheatheCondition": 0,
+  "_applySheatheCondition": false,
+  "_hideWeapon": true,
+  "name": "skill_divine",
+  "hideFlags": 0
+}

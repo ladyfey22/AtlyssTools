@@ -1,0 +1,21 @@
+{
+  "$id": "1",
+  "_scriptableSkill": "_skill/00_skillscroll_skills/_fireball/skill_fireball",
+  "_levelRequirement": 1,
+  "_baseClassRequirement": null,
+  "_consumableCooldown": 1.5,
+  "_useOnlyInTown": false,
+  "_consumableObject": "_item/02_consumable/_skillscroll/_consumableEffect_skillScroll",
+  "_itemType": 1,
+  "_itemName": "Skill Scroll (Fireball)",
+  "_itemIcon": "_graphic/_ui/_itemicons/_consumable/_conIco_13",
+  "_itemRarity": 0,
+  "_itemDescription": "Teaches the user Fireball.",
+  "_maxStackAmount": 1,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 650,
+  "name": "(lv-1) SKILLSCROLL_Skill Scroll (Fireball)",
+  "hideFlags": 0
+}

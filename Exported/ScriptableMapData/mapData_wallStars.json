@@ -1,1 +1,10 @@
-{"$id":"1","_mapSelectionIcon":"_graphic/_ui/_zoneSelIco_field","_subScene":"Assets/Scenes/map_hub_wallOfTheStars.unity","_mapCaptionTitle":"Wall of the Stars","_spawnPointTag":"wallStarWaypoint","_mapLockID":"wallstar00","name":"mapData_wallStars","hideFlags":0}
+{
+  "$id": "1",
+  "_mapSelectionIcon": "_graphic/_ui/_zoneSelIco_field",
+  "_subScene": "Assets/Scenes/map_hub_wallOfTheStars.unity",
+  "_mapCaptionTitle": "Wall of the Stars",
+  "_spawnPointTag": "wallStarWaypoint",
+  "_mapLockID": "wallstar00",
+  "name": "mapData_wallStars",
+  "hideFlags": 0
+}

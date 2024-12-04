@@ -1,0 +1,21 @@
+{
+  "$id": "1",
+  "_chargeSkillEffect": "_skill/00_casteffects/_spellCharge_earth",
+  "_castSkillEffect": "_skill/00_casteffects/_spellCast_earth",
+  "_channelGroundGlyphTexture": "_graphic/_texture/_cookie/_cookieTex_aura01",
+  "_channelGroundGlyphRotationSpeed": 15.85,
+  "_groundGlyphSpotAngleSize": 25.0,
+  "_groundGlyphIntensity": 2000.0,
+  "_groundGlyphColor": [
+    1.0,
+    0.488198,
+    0.259433985,
+    1.0
+  ],
+  "_channelSound": "_sound/spellchannels/_channelEarthSpell",
+  "_castSound": "_sound/spellchannels/_castEarth",
+  "_channelSoundPitch": 1.21,
+  "_castSoundPitch": 0.83,
+  "name": "castEffect_earth",
+  "hideFlags": 0
+}

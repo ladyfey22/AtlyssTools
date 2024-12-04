@@ -1,1 +1,590 @@
-{"$id":"1","_nameTag":"Angela","_introductionBranches":[{"$id":"2","_dialogIndexTag":"","dialogs":[{"$id":"3","_dialogKey":"","_dialogInput":"","_altInputs":["Goodness!","Ah!","Oh my!"],"facepic":"_graphic/_ui/_facepics/facepic_angela01","_npcAnimationTag":"surprise_init","_dialogUI":0,"_dialogSelections":[]},{"$id":"4","_dialogKey":"","_dialogInput":"What a relief to see that my calling worked... I was almost certain your soul would've been lost.","_altInputs":[],"facepic":"_graphic/_ui/_facepics/facepic_angela01","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[]},{"$id":"5","_dialogKey":"","_dialogInput":"I am Angela Flux, Mystic Guardian of Sanctum.","_altInputs":[],"facepic":"_graphic/_ui/_facepics/facepic_angela01","_npcAnimationTag":"nod_loop","_dialogUI":0,"_dialogSelections":[]},{"$id":"6","_dialogKey":"","_dialogInput":"I understand that you may have a few questions to ask...","_altInputs":[],"facepic":"_graphic/_ui/_facepics/facepic_angela01","_npcAnimationTag":"sad","_dialogUI":0,"_dialogSelections":[]},{"$id":"7","_dialogKey":"","_dialogInput":"But first, let's get your bearings sorted out, yes?","_altInputs":[],"facepic":"_graphic/_ui/_facepics/facepic_angela01","_npcAnimationTag":"","_dialogUI":1,"_dialogSelections":[{"$id":"8","_selectionCaption":"See ya!","_selectionIcon":"","_setDialogIndex":9}]}]}],"_dialogBranches":[{"$id":"9","_dialogIndexTag":"Dialog Branch Index #0","dialogs":[{"$id":"10","_dialogKey":"Angela0","_dialogInput":"Hm?","_altInputs":["Hm?","Yes?","Oh?"],"facepic":"_graphic/_ui/_facepics/facepic_angela01","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[{"$id":"11","_selectionCaption":"Nevermind...","_selectionIcon":"","_setDialogIndex":9},{"$id":"12","_selectionCaption":"I would like to know...","_selectionIcon":"_graphic/_ui/chatBubble","_setDialogIndex":2},{"$id":"13","_selectionCaption":"Got any Quests?","_selectionIcon":"LYSS/Sprite/_lexiconIco","_setDialogIndex":1}]}]},{"$id":"14","_dialogIndexTag":"Dialog Branch Index #1","dialogs":[{"$id":"15","_dialogKey":"Angela1","_dialogInput":"Well... let's see what you could do, shall we?","_altInputs":["Well... let's see what you could do, shall we?","Hm, well... let's see...","This world could use some purity, yes?"],"facepic":"_graphic/_ui/_facepics/facepic_angela02","_npcAnimationTag":"nod_loop","_dialogUI":1,"_dialogSelections":[{"$id":"16","_selectionCaption":"See ya!","_selectionIcon":"","_setDialogIndex":9},{"$id":"17","_selectionCaption":"One other thing...","_selectionIcon":"","_setDialogIndex":0}]}]},{"$id":"18","_dialogIndexTag":"Dialog Branch Index #2","dialogs":[{"$id":"19","_dialogKey":"Angela2","_dialogInput":"My knowledge is yours, what can I help you with?","_altInputs":[],"facepic":"_graphic/_ui/_facepics/facepic_angela02","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[{"$id":"20","_selectionCaption":"Well, actually...","_selectionIcon":"","_setDialogIndex":0},{"$id":"21","_selectionCaption":"What are Mystics?","_selectionIcon":"","_setDialogIndex":6},{"$id":"22","_selectionCaption":"Where are we?","_selectionIcon":"","_setDialogIndex":3},{"$id":"23","_selectionCaption":"Who are you?","_selectionIcon":"","_setDialogIndex":4},{"$id":"24","_selectionCaption":"The Calling?","_selectionIcon":"","_setDialogIndex":7}]}]},{"$id":"25","_dialogIndexTag":"Dialog Branch Index #3","dialogs":[{"$id":"26","_dialogKey":"Angela3","_dialogInput":"We are in Sanctum, the last bastion of peace within this tainted world...","_altInputs":[],"facepic":"_graphic/_ui/_facepics/facepic_angela01","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[]},{"$id":"27","_dialogKey":"Angela4","_dialogInput":"No creature of evil can ever enter as long as I'm here. As fate has it, I must be here to keep Sanctum safe.","_altInputs":[],"facepic":"_graphic/_ui/_facepics/facepic_angela02","_npcAnimationTag":"nod_loop","_dialogUI":0,"_dialogSelections":[{"$id":"28","_selectionCaption":"I see. Anyways...","_selectionIcon":"","_setDialogIndex":0}]}]},{"$id":"29","_dialogIndexTag":"Dialog Branch Index #4","dialogs":[{"$id":"30","_dialogKey":"Angela5","_dialogInput":"Quite curious you are, little one...","_altInputs":[],"facepic":"_graphic/_ui/_facepics/facepic_angela01","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[]},{"$id":"31","_dialogKey":"Angela6","_dialogInput":"I am one of the three guardians who have accompanied this land from the very beginning.","_altInputs":[],"facepic":"_graphic/_ui/_facepics/facepic_angela01","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[]},{"$id":"32","_dialogKey":"Angela7","_dialogInput":"I was once able to see all, but my magic has been stifled by... unfortunate circumstances.","_altInputs":[],"facepic":"_graphic/_ui/_facepics/facepic_angela03","_npcAnimationTag":"sad","_dialogUI":0,"_dialogSelections":[]},{"$id":"33","_dialogKey":"Angela8","_dialogInput":"All I can muster now is to keep the broken world intertwined, and to shield Sanctum from darkness.","_altInputs":[],"facepic":"_graphic/_ui/_facepics/facepic_angela02","_npcAnimationTag":"nod_loop","_dialogUI":0,"_dialogSelections":[]},{"$id":"34","_dialogKey":"Angela9","_dialogInput":"Without my magic, your soul would be imprisoned, and lost forever... stuck wherever you may be.","_altInputs":[],"facepic":"_graphic/_ui/_facepics/facepic_angela03","_npcAnimationTag":"sad","_dialogUI":0,"_dialogSelections":[{"$id":"35","_selectionCaption":"I see, anyways...","_selectionIcon":"","_setDialogIndex":0},{"$id":"36","_selectionCaption":"That's... concerning.","_selectionIcon":"","_setDialogIndex":5}]}]},{"$id":"37","_dialogIndexTag":"Dialog Branch Index #5","dialogs":[{"$id":"38","_dialogKey":"Angela10","_dialogInput":"You're in good hands, little one...","_altInputs":[],"facepic":"_graphic/_ui/_facepics/facepic_angela01","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[]},{"$id":"39","_dialogKey":"Angela11","_dialogInput":"Have faith, there are many souls alongside yours that can keep this land pure.","_altInputs":[],"facepic":"_graphic/_ui/_facepics/facepic_angela02","_npcAnimationTag":"nod_loop","_dialogUI":0,"_dialogSelections":[]},{"$id":"40","_dialogKey":"Angela12","_dialogInput":"Stay determined, and keep your head held high... I believe in you.","_altInputs":[],"facepic":"_graphic/_ui/_facepics/facepic_angela02","_npcAnimationTag":"nod_loop","_dialogUI":0,"_dialogSelections":[]}]},{"$id":"41","_dialogIndexTag":"Dialog Branch Index #6","dialogs":[{"$id":"42","_dialogKey":"Angela13","_dialogInput":"Oh? Y-you're interested in my studies?","_altInputs":[],"facepic":"_graphic/_ui/_facepics/facepic_angela01","_npcAnimationTag":"surprise_init","_dialogUI":0,"_dialogSelections":[]},{"$id":"43","_dialogKey":"Angela14","_dialogInput":"Ahem... ","_altInputs":[],"facepic":"_graphic/_ui/_facepics/facepic_angela01","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[]},{"$id":"44","_dialogKey":"Angela15","_dialogInput":"Forgive me, it's not often I'm asked of this.","_altInputs":[],"facepic":"_graphic/_ui/_facepics/facepic_angela03","_npcAnimationTag":"sad","_dialogUI":0,"_dialogSelections":[]},{"$id":"45","_dialogKey":"Angela16","_dialogInput":"Choosing to be a Mystic unlocks the potential of the mind, allowing the ability to cast powerful spells.","_altInputs":[],"facepic":"_graphic/_ui/_facepics/facepic_angela02","_npcAnimationTag":"nod_loop","_dialogUI":0,"_dialogSelections":[]},{"$id":"46","_dialogKey":"Angela17","_dialogInput":"They can barrier themselves from damage, throw explosive bolts, and pierce close threats...","_altInputs":[],"facepic":"_graphic/_ui/_facepics/facepic_angela02","_npcAnimationTag":"nod_loop","_dialogUI":0,"_dialogSelections":[]},{"$id":"47","_dialogKey":"Angela18","_dialogInput":"To summarize quickly, the arcane magics Mystics use are of my own power...","_altInputs":[],"facepic":"_graphic/_ui/_facepics/facepic_angela01","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[]},{"$id":"48","_dialogKey":"Angela19","_dialogInput":"Quite a bit to take in, wouldn't you say?","_altInputs":[],"facepic":"_graphic/_ui/_facepics/facepic_angela01","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[]}]},{"$id":"49","_dialogIndexTag":"Dialog Branch Index #7","dialogs":[{"$id":"50","_dialogKey":"Angela20","_dialogInput":"Ah, yes...","_altInputs":[],"facepic":"_graphic/_ui/_facepics/facepic_angela02","_npcAnimationTag":"nod_loop","_dialogUI":0,"_dialogSelections":[]},{"$id":"51","_dialogKey":"Angela21","_dialogInput":"You are not from this world, little one. You were once a living being somewhere far from here.","_altInputs":[],"facepic":"_graphic/_ui/_facepics/facepic_angela01","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[]},{"$id":"52","_dialogKey":"Angela22","_dialogInput":"Anything could have happened, that I'm unsure of...","_altInputs":[],"facepic":"_graphic/_ui/_facepics/facepic_angela03","_npcAnimationTag":"sad","_dialogUI":0,"_dialogSelections":[]},{"$id":"53","_dialogKey":"Angela23","_dialogInput":"I called your soul, amongst many others, to live once more, and to protect this world from darkness.","_altInputs":[],"facepic":"_graphic/_ui/_facepics/facepic_angela01","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[]},{"$id":"54","_dialogKey":"Angela24","_dialogInput":"I will always be sure that your soul stays purified and protected from what roams outside of Sanctum.","_altInputs":[],"facepic":"_graphic/_ui/_facepics/facepic_angela02","_npcAnimationTag":"nod_loop","_dialogUI":0,"_dialogSelections":[{"$id":"55","_selectionCaption":"I see, anyways...","_selectionIcon":"","_setDialogIndex":0},{"$id":"56","_selectionCaption":"Why choose me?","_selectionIcon":"","_setDialogIndex":8}]}]},{"$id":"57","_dialogIndexTag":"Dialog Branch Index #8","dialogs":[{"$id":"58","_dialogKey":"Angela25","_dialogInput":"This is another chance for you to live, isn't it?","_altInputs":[],"facepic":"_graphic/_ui/_facepics/facepic_angela01","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[]},{"$id":"59","_dialogKey":"Angela26","_dialogInput":"I understand that you find this concerning...","_altInputs":[],"facepic":"_graphic/_ui/_facepics/facepic_angela03","_npcAnimationTag":"sad","_dialogUI":0,"_dialogSelections":[]},{"$id":"60","_dialogKey":"Angela27","_dialogInput":"However, purgatory after death certainly isn't a loop worth suffering. Your soul rests more in this world.","_altInputs":[],"facepic":"_graphic/_ui/_facepics/facepic_angela01","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[]},{"$id":"61","_dialogKey":"Angela28","_dialogInput":"That I'm very sure of, little one...","_altInputs":[],"facepic":"_graphic/_ui/_facepics/facepic_angela02","_npcAnimationTag":"nod_loop","_dialogUI":0,"_dialogSelections":[]}]},{"$id":"62","_dialogIndexTag":"Dialog Branch Index #9","dialogs":[{"$id":"63","_dialogKey":"Angela29","_dialogInput":"","_altInputs":["Take care, little one...","I will be watching alongside you.","Farewell, little one.","Stay safe..."],"facepic":"_graphic/_ui/_facepics/facepic_angela01","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[]}]}],"_scriptableShopkeep":null,"_shopkeepResponses":[],"_shopkeepRejections":[],"_scriptableQuests":["_prefab/_entity/_npc/_angela/_quest/(lv-1) QUEST_A Warm Welcome","_prefab/_entity/_npc/_angela/_quest/(lv-1) QUEST_Communing Catacombs","_prefab/_entity/_npc/_angela/_quest/(lv-3) QUEST_The Effold Terrace","_prefab/_entity/_npc/_angela/_quest/(lv-5) QUEST_Diva Must Die","_prefab/_entity/_npc/_angela/_quest/(lv-1) QUEST_Ridding Slimes","_prefab/_entity/_npc/_angela/_quest/(lv-1) QUEST_Night Spirits","_prefab/_entity/_npc/_angela/_quest/(lv-5) QUEST_Cleaning Terrace","_prefab/_entity/_npc/_angela/_quest/(lv-6) QUEST_Rattlecage Rage","_prefab/_entity/_npc/_angela/_quest/(lv-7) QUEST_Huntin' Hogs","_prefab/_entity/_npc/_angela/_quest/(lv-10) QUEST_Disciple of Magic","_prefab/_entity/_npc/_angela/_quest/(lv-10) QUEST_The Keep Within","_prefab/_entity/_npc/_angela/_quest/(lv-11) QUEST_Ancient Beings","_prefab/_entity/_npc/_angela/_quest/(lv-12) QUEST_Consumed Madness","_prefab/_entity/_npc/_angela/_quest/(lv-15) QUEST_Tethering Grove","_prefab/_entity/_npc/_angela/_quest/(lv-15) QUEST_Spiraling In The Grove","_prefab/_entity/_npc/_angela/_quest/(lv-10) QUEST_Mastery of Scepters","_prefab/_entity/_npc/_angela/_quest/(lv-10) QUEST_Mastery of Bells"],"_questAcceptResponses":["Ah, yes... This is certainly a task in need of focus.","Please be careful... The world outside is unpredictable.","I pray for your success, adventurer...","Come back safely..."],"_questCompleteResponses":["Good work... There is a lot more ahead of us.","Ah, wonderful! I will bestow a reward to you...","You've proven yourself as a gift to us...","That's one less thing to worry about...","Certainly, a reward is in order for your troubles...","Well done, but please rest when you can...","I approve of this, yes..."],"_voxSounds":["_sound/dialogsounds/dialog_voices/voice_angelaflux/vox_angela01","_sound/dialogsounds/dialog_voices/voice_angelaflux/vox_angela02","_sound/dialogsounds/dialog_voices/voice_angelaflux/vox_angela05","_sound/dialogsounds/dialog_voices/voice_angelaflux/vox_angela06"],"_voxSpeed":0.185,"name":"dialogData_angela","hideFlags":0}
+{
+  "$id": "1",
+  "_nameTag": "Angela",
+  "_introductionBranches": [
+    {
+      "$id": "2",
+      "_dialogIndexTag": "",
+      "dialogs": [
+        {
+          "$id": "3",
+          "_dialogKey": "",
+          "_dialogInput": "",
+          "_altInputs": [
+            "Goodness!",
+            "Ah!",
+            "Oh my!"
+          ],
+          "facepic": "_graphic/_ui/_facepics/facepic_angela01",
+          "_npcAnimationTag": "surprise_init",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        },
+        {
+          "$id": "4",
+          "_dialogKey": "",
+          "_dialogInput": "What a relief to see that my calling worked... I was almost certain your soul would've been lost.",
+          "_altInputs": [],
+          "facepic": "_graphic/_ui/_facepics/facepic_angela01",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        },
+        {
+          "$id": "5",
+          "_dialogKey": "",
+          "_dialogInput": "I am Angela Flux, Mystic Guardian of Sanctum.",
+          "_altInputs": [],
+          "facepic": "_graphic/_ui/_facepics/facepic_angela01",
+          "_npcAnimationTag": "nod_loop",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        },
+        {
+          "$id": "6",
+          "_dialogKey": "",
+          "_dialogInput": "I understand that you may have a few questions to ask...",
+          "_altInputs": [],
+          "facepic": "_graphic/_ui/_facepics/facepic_angela01",
+          "_npcAnimationTag": "sad",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        },
+        {
+          "$id": "7",
+          "_dialogKey": "",
+          "_dialogInput": "But first, let's get your bearings sorted out, yes?",
+          "_altInputs": [],
+          "facepic": "_graphic/_ui/_facepics/facepic_angela01",
+          "_npcAnimationTag": "",
+          "_dialogUI": 1,
+          "_dialogSelections": [
+            {
+              "$id": "8",
+              "_selectionCaption": "See ya!",
+              "_selectionIcon": "",
+              "_setDialogIndex": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_dialogBranches": [
+    {
+      "$id": "9",
+      "_dialogIndexTag": "Dialog Branch Index #0",
+      "dialogs": [
+        {
+          "$id": "10",
+          "_dialogKey": "Angela0",
+          "_dialogInput": "Hm?",
+          "_altInputs": [
+            "Hm?",
+            "Yes?",
+            "Oh?"
+          ],
+          "facepic": "_graphic/_ui/_facepics/facepic_angela01",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": [
+            {
+              "$id": "11",
+              "_selectionCaption": "Nevermind...",
+              "_selectionIcon": "",
+              "_setDialogIndex": 9
+            },
+            {
+              "$id": "12",
+              "_selectionCaption": "I would like to know...",
+              "_selectionIcon": "_graphic/_ui/chatBubble",
+              "_setDialogIndex": 2
+            },
+            {
+              "$id": "13",
+              "_selectionCaption": "Got any Quests?",
+              "_selectionIcon": "LYSS/Sprite/_lexiconIco",
+              "_setDialogIndex": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$id": "14",
+      "_dialogIndexTag": "Dialog Branch Index #1",
+      "dialogs": [
+        {
+          "$id": "15",
+          "_dialogKey": "Angela1",
+          "_dialogInput": "Well... let's see what you could do, shall we?",
+          "_altInputs": [
+            "Well... let's see what you could do, shall we?",
+            "Hm, well... let's see...",
+            "This world could use some purity, yes?"
+          ],
+          "facepic": "_graphic/_ui/_facepics/facepic_angela02",
+          "_npcAnimationTag": "nod_loop",
+          "_dialogUI": 1,
+          "_dialogSelections": [
+            {
+              "$id": "16",
+              "_selectionCaption": "See ya!",
+              "_selectionIcon": "",
+              "_setDialogIndex": 9
+            },
+            {
+              "$id": "17",
+              "_selectionCaption": "One other thing...",
+              "_selectionIcon": "",
+              "_setDialogIndex": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$id": "18",
+      "_dialogIndexTag": "Dialog Branch Index #2",
+      "dialogs": [
+        {
+          "$id": "19",
+          "_dialogKey": "Angela2",
+          "_dialogInput": "My knowledge is yours, what can I help you with?",
+          "_altInputs": [],
+          "facepic": "_graphic/_ui/_facepics/facepic_angela02",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": [
+            {
+              "$id": "20",
+              "_selectionCaption": "Well, actually...",
+              "_selectionIcon": "",
+              "_setDialogIndex": 0
+            },
+            {
+              "$id": "21",
+              "_selectionCaption": "What are Mystics?",
+              "_selectionIcon": "",
+              "_setDialogIndex": 6
+            },
+            {
+              "$id": "22",
+              "_selectionCaption": "Where are we?",
+              "_selectionIcon": "",
+              "_setDialogIndex": 3
+            },
+            {
+              "$id": "23",
+              "_selectionCaption": "Who are you?",
+              "_selectionIcon": "",
+              "_setDialogIndex": 4
+            },
+            {
+              "$id": "24",
+              "_selectionCaption": "The Calling?",
+              "_selectionIcon": "",
+              "_setDialogIndex": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$id": "25",
+      "_dialogIndexTag": "Dialog Branch Index #3",
+      "dialogs": [
+        {
+          "$id": "26",
+          "_dialogKey": "Angela3",
+          "_dialogInput": "We are in Sanctum, the last bastion of peace within this tainted world...",
+          "_altInputs": [],
+          "facepic": "_graphic/_ui/_facepics/facepic_angela01",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        },
+        {
+          "$id": "27",
+          "_dialogKey": "Angela4",
+          "_dialogInput": "No creature of evil can ever enter as long as I'm here. As fate has it, I must be here to keep Sanctum safe.",
+          "_altInputs": [],
+          "facepic": "_graphic/_ui/_facepics/facepic_angela02",
+          "_npcAnimationTag": "nod_loop",
+          "_dialogUI": 0,
+          "_dialogSelections": [
+            {
+              "$id": "28",
+              "_selectionCaption": "I see. Anyways...",
+              "_selectionIcon": "",
+              "_setDialogIndex": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$id": "29",
+      "_dialogIndexTag": "Dialog Branch Index #4",
+      "dialogs": [
+        {
+          "$id": "30",
+          "_dialogKey": "Angela5",
+          "_dialogInput": "Quite curious you are, little one...",
+          "_altInputs": [],
+          "facepic": "_graphic/_ui/_facepics/facepic_angela01",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        },
+        {
+          "$id": "31",
+          "_dialogKey": "Angela6",
+          "_dialogInput": "I am one of the three guardians who have accompanied this land from the very beginning.",
+          "_altInputs": [],
+          "facepic": "_graphic/_ui/_facepics/facepic_angela01",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        },
+        {
+          "$id": "32",
+          "_dialogKey": "Angela7",
+          "_dialogInput": "I was once able to see all, but my magic has been stifled by... unfortunate circumstances.",
+          "_altInputs": [],
+          "facepic": "_graphic/_ui/_facepics/facepic_angela03",
+          "_npcAnimationTag": "sad",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        },
+        {
+          "$id": "33",
+          "_dialogKey": "Angela8",
+          "_dialogInput": "All I can muster now is to keep the broken world intertwined, and to shield Sanctum from darkness.",
+          "_altInputs": [],
+          "facepic": "_graphic/_ui/_facepics/facepic_angela02",
+          "_npcAnimationTag": "nod_loop",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        },
+        {
+          "$id": "34",
+          "_dialogKey": "Angela9",
+          "_dialogInput": "Without my magic, your soul would be imprisoned, and lost forever... stuck wherever you may be.",
+          "_altInputs": [],
+          "facepic": "_graphic/_ui/_facepics/facepic_angela03",
+          "_npcAnimationTag": "sad",
+          "_dialogUI": 0,
+          "_dialogSelections": [
+            {
+              "$id": "35",
+              "_selectionCaption": "I see, anyways...",
+              "_selectionIcon": "",
+              "_setDialogIndex": 0
+            },
+            {
+              "$id": "36",
+              "_selectionCaption": "That's... concerning.",
+              "_selectionIcon": "",
+              "_setDialogIndex": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$id": "37",
+      "_dialogIndexTag": "Dialog Branch Index #5",
+      "dialogs": [
+        {
+          "$id": "38",
+          "_dialogKey": "Angela10",
+          "_dialogInput": "You're in good hands, little one...",
+          "_altInputs": [],
+          "facepic": "_graphic/_ui/_facepics/facepic_angela01",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        },
+        {
+          "$id": "39",
+          "_dialogKey": "Angela11",
+          "_dialogInput": "Have faith, there are many souls alongside yours that can keep this land pure.",
+          "_altInputs": [],
+          "facepic": "_graphic/_ui/_facepics/facepic_angela02",
+          "_npcAnimationTag": "nod_loop",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        },
+        {
+          "$id": "40",
+          "_dialogKey": "Angela12",
+          "_dialogInput": "Stay determined, and keep your head held high... I believe in you.",
+          "_altInputs": [],
+          "facepic": "_graphic/_ui/_facepics/facepic_angela02",
+          "_npcAnimationTag": "nod_loop",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        }
+      ]
+    },
+    {
+      "$id": "41",
+      "_dialogIndexTag": "Dialog Branch Index #6",
+      "dialogs": [
+        {
+          "$id": "42",
+          "_dialogKey": "Angela13",
+          "_dialogInput": "Oh? Y-you're interested in my studies?",
+          "_altInputs": [],
+          "facepic": "_graphic/_ui/_facepics/facepic_angela01",
+          "_npcAnimationTag": "surprise_init",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        },
+        {
+          "$id": "43",
+          "_dialogKey": "Angela14",
+          "_dialogInput": "Ahem... ",
+          "_altInputs": [],
+          "facepic": "_graphic/_ui/_facepics/facepic_angela01",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        },
+        {
+          "$id": "44",
+          "_dialogKey": "Angela15",
+          "_dialogInput": "Forgive me, it's not often I'm asked of this.",
+          "_altInputs": [],
+          "facepic": "_graphic/_ui/_facepics/facepic_angela03",
+          "_npcAnimationTag": "sad",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        },
+        {
+          "$id": "45",
+          "_dialogKey": "Angela16",
+          "_dialogInput": "Choosing to be a Mystic unlocks the potential of the mind, allowing the ability to cast powerful spells.",
+          "_altInputs": [],
+          "facepic": "_graphic/_ui/_facepics/facepic_angela02",
+          "_npcAnimationTag": "nod_loop",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        },
+        {
+          "$id": "46",
+          "_dialogKey": "Angela17",
+          "_dialogInput": "They can barrier themselves from damage, throw explosive bolts, and pierce close threats...",
+          "_altInputs": [],
+          "facepic": "_graphic/_ui/_facepics/facepic_angela02",
+          "_npcAnimationTag": "nod_loop",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        },
+        {
+          "$id": "47",
+          "_dialogKey": "Angela18",
+          "_dialogInput": "To summarize quickly, the arcane magics Mystics use are of my own power...",
+          "_altInputs": [],
+          "facepic": "_graphic/_ui/_facepics/facepic_angela01",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        },
+        {
+          "$id": "48",
+          "_dialogKey": "Angela19",
+          "_dialogInput": "Quite a bit to take in, wouldn't you say?",
+          "_altInputs": [],
+          "facepic": "_graphic/_ui/_facepics/facepic_angela01",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        }
+      ]
+    },
+    {
+      "$id": "49",
+      "_dialogIndexTag": "Dialog Branch Index #7",
+      "dialogs": [
+        {
+          "$id": "50",
+          "_dialogKey": "Angela20",
+          "_dialogInput": "Ah, yes...",
+          "_altInputs": [],
+          "facepic": "_graphic/_ui/_facepics/facepic_angela02",
+          "_npcAnimationTag": "nod_loop",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        },
+        {
+          "$id": "51",
+          "_dialogKey": "Angela21",
+          "_dialogInput": "You are not from this world, little one. You were once a living being somewhere far from here.",
+          "_altInputs": [],
+          "facepic": "_graphic/_ui/_facepics/facepic_angela01",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        },
+        {
+          "$id": "52",
+          "_dialogKey": "Angela22",
+          "_dialogInput": "Anything could have happened, that I'm unsure of...",
+          "_altInputs": [],
+          "facepic": "_graphic/_ui/_facepics/facepic_angela03",
+          "_npcAnimationTag": "sad",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        },
+        {
+          "$id": "53",
+          "_dialogKey": "Angela23",
+          "_dialogInput": "I called your soul, amongst many others, to live once more, and to protect this world from darkness.",
+          "_altInputs": [],
+          "facepic": "_graphic/_ui/_facepics/facepic_angela01",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        },
+        {
+          "$id": "54",
+          "_dialogKey": "Angela24",
+          "_dialogInput": "I will always be sure that your soul stays purified and protected from what roams outside of Sanctum.",
+          "_altInputs": [],
+          "facepic": "_graphic/_ui/_facepics/facepic_angela02",
+          "_npcAnimationTag": "nod_loop",
+          "_dialogUI": 0,
+          "_dialogSelections": [
+            {
+              "$id": "55",
+              "_selectionCaption": "I see, anyways...",
+              "_selectionIcon": "",
+              "_setDialogIndex": 0
+            },
+            {
+              "$id": "56",
+              "_selectionCaption": "Why choose me?",
+              "_selectionIcon": "",
+              "_setDialogIndex": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$id": "57",
+      "_dialogIndexTag": "Dialog Branch Index #8",
+      "dialogs": [
+        {
+          "$id": "58",
+          "_dialogKey": "Angela25",
+          "_dialogInput": "This is another chance for you to live, isn't it?",
+          "_altInputs": [],
+          "facepic": "_graphic/_ui/_facepics/facepic_angela01",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        },
+        {
+          "$id": "59",
+          "_dialogKey": "Angela26",
+          "_dialogInput": "I understand that you find this concerning...",
+          "_altInputs": [],
+          "facepic": "_graphic/_ui/_facepics/facepic_angela03",
+          "_npcAnimationTag": "sad",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        },
+        {
+          "$id": "60",
+          "_dialogKey": "Angela27",
+          "_dialogInput": "However, purgatory after death certainly isn't a loop worth suffering. Your soul rests more in this world.",
+          "_altInputs": [],
+          "facepic": "_graphic/_ui/_facepics/facepic_angela01",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        },
+        {
+          "$id": "61",
+          "_dialogKey": "Angela28",
+          "_dialogInput": "That I'm very sure of, little one...",
+          "_altInputs": [],
+          "facepic": "_graphic/_ui/_facepics/facepic_angela02",
+          "_npcAnimationTag": "nod_loop",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        }
+      ]
+    },
+    {
+      "$id": "62",
+      "_dialogIndexTag": "Dialog Branch Index #9",
+      "dialogs": [
+        {
+          "$id": "63",
+          "_dialogKey": "Angela29",
+          "_dialogInput": "",
+          "_altInputs": [
+            "Take care, little one...",
+            "I will be watching alongside you.",
+            "Farewell, little one.",
+            "Stay safe..."
+          ],
+          "facepic": "_graphic/_ui/_facepics/facepic_angela01",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        }
+      ]
+    }
+  ],
+  "_scriptableShopkeep": null,
+  "_shopkeepResponses": [],
+  "_shopkeepRejections": [],
+  "_scriptableQuests": [
+    "_prefab/_entity/_npc/_angela/_quest/(lv-1) QUEST_A Warm Welcome",
+    "_prefab/_entity/_npc/_angela/_quest/(lv-1) QUEST_Communing Catacombs",
+    "_prefab/_entity/_npc/_angela/_quest/(lv-3) QUEST_The Effold Terrace",
+    "_prefab/_entity/_npc/_angela/_quest/(lv-5) QUEST_Diva Must Die",
+    "_prefab/_entity/_npc/_angela/_quest/(lv-1) QUEST_Ridding Slimes",
+    "_prefab/_entity/_npc/_angela/_quest/(lv-1) QUEST_Night Spirits",
+    "_prefab/_entity/_npc/_angela/_quest/(lv-5) QUEST_Cleaning Terrace",
+    "_prefab/_entity/_npc/_angela/_quest/(lv-6) QUEST_Rattlecage Rage",
+    "_prefab/_entity/_npc/_angela/_quest/(lv-7) QUEST_Huntin' Hogs",
+    "_prefab/_entity/_npc/_angela/_quest/(lv-10) QUEST_Disciple of Magic",
+    "_prefab/_entity/_npc/_angela/_quest/(lv-10) QUEST_The Keep Within",
+    "_prefab/_entity/_npc/_angela/_quest/(lv-11) QUEST_Ancient Beings",
+    "_prefab/_entity/_npc/_angela/_quest/(lv-12) QUEST_Consumed Madness",
+    "_prefab/_entity/_npc/_angela/_quest/(lv-15) QUEST_Tethering Grove",
+    "_prefab/_entity/_npc/_angela/_quest/(lv-15) QUEST_Spiraling In The Grove",
+    "_prefab/_entity/_npc/_angela/_quest/(lv-10) QUEST_Mastery of Scepters",
+    "_prefab/_entity/_npc/_angela/_quest/(lv-10) QUEST_Mastery of Bells"
+  ],
+  "_questAcceptResponses": [
+    "Ah, yes... This is certainly a task in need of focus.",
+    "Please be careful... The world outside is unpredictable.",
+    "I pray for your success, adventurer...",
+    "Come back safely..."
+  ],
+  "_questCompleteResponses": [
+    "Good work... There is a lot more ahead of us.",
+    "Ah, wonderful! I will bestow a reward to you...",
+    "You've proven yourself as a gift to us...",
+    "That's one less thing to worry about...",
+    "Certainly, a reward is in order for your troubles...",
+    "Well done, but please rest when you can...",
+    "I approve of this, yes..."
+  ],
+  "_voxSounds": [
+    "_sound/dialogsounds/dialog_voices/voice_angelaflux/vox_angela01",
+    "_sound/dialogsounds/dialog_voices/voice_angelaflux/vox_angela02",
+    "_sound/dialogsounds/dialog_voices/voice_angelaflux/vox_angela05",
+    "_sound/dialogsounds/dialog_voices/voice_angelaflux/vox_angela06"
+  ],
+  "_voxSpeed": 0.185,
+  "name": "dialogData_angela",
+  "hideFlags": 0
+}

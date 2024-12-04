@@ -1,1 +1,73 @@
-{"$id":"1","_questName":"Ghostly Goods","_questType":0,"_questSubType":0,"_questIco":"_graphic/_ui/_itemicons/_tradeitem/_tradIco_10","_questDescription":"Y'know, I could use somethin' of your help, if ya don't mind! <color=cyan>If you're up to it, I'll let you in on a secret too-- but keep it on the hush hush!</color>\n\nI'm lookin' for a special combination of ghostly goods, <color=cyan>the type that can be mixed into a fine lil' powder that makes you invisible!</color> \n\nIf ya could, <color=yellow>fetch me some Ghostdusts from them undead fellas, and a handful of those weird lil' collars the Geists wear from the Catacombs!</color>\n\nCome back when ya got a good amount of em', ya hear?","_questCompleteReturnMessage":"Return to Sally in Sanctum.","_questLevel":1,"_raceRequirement":null,"_baseClassRequirement":null,"_skillToHide":null,"_requireNoviceClass":false,"_autoFinishQuest":false,"_preQuestRequirements":[],"_questObjectiveItem":{"$id":"2","_scriptItem":null,"_setItemData":{"$id":"3","_itemName":"","_quantity":1,"_maxQuantity":1,"_slotNumber":0,"_modifierTag":"","_damageTypeOverride":0,"_useDamageTypeOverride":false,"_isEquipped":false,"_isAltWeapon":false}},"_scenePath":"","_questObjective":{"$id":"4","_questItemRequirements":[{"$id":"5","_questItem":"_item/03_trade/TRADEITEM_Ghostdust","_itemsNeeded":24},{"$id":"6","_questItem":"_item/03_trade/TRADEITEM_Geist Collar","_itemsNeeded":12}],"_questCreepRequirements":[],"_questTriggerRequirements":[]},"_questExperiencePercentage":6.0,"_questCurrencyReward":50,"_questItemRewards":[{"$id":"7","_scriptItem":"_item/02_consumable/_status/(lv-0) STATUSCONSUMABLE_Spectral Powder","_setItemData":{"$id":"8","_itemName":"Spectral Powder","_quantity":5,"_maxQuantity":5,"_slotNumber":0,"_modifierTag":"","_damageTypeOverride":0,"_useDamageTypeOverride":false,"_isEquipped":false,"_isAltWeapon":false}}],"_displayEndDemoPrompt":false,"name":"(lv-1) QUEST_Ghostly Goods","hideFlags":0}
+{
+  "$id": "1",
+  "_questName": "Ghostly Goods",
+  "_questType": 0,
+  "_questSubType": 0,
+  "_questIco": "_graphic/_ui/_itemicons/_tradeitem/_tradIco_10",
+  "_questDescription": "Y'know, I could use somethin' of your help, if ya don't mind! <color=cyan>If you're up to it, I'll let you in on a secret too-- but keep it on the hush hush!</color>\n\nI'm lookin' for a special combination of ghostly goods, <color=cyan>the type that can be mixed into a fine lil' powder that makes you invisible!</color> \n\nIf ya could, <color=yellow>fetch me some Ghostdusts from them undead fellas, and a handful of those weird lil' collars the Geists wear from the Catacombs!</color>\n\nCome back when ya got a good amount of em', ya hear?",
+  "_questCompleteReturnMessage": "Return to Sally in Sanctum.",
+  "_questLevel": 1,
+  "_raceRequirement": null,
+  "_baseClassRequirement": null,
+  "_skillToHide": null,
+  "_requireNoviceClass": false,
+  "_autoFinishQuest": false,
+  "_preQuestRequirements": [],
+  "_questObjectiveItem": {
+    "$id": "2",
+    "_scriptItem": null,
+    "_setItemData": {
+      "$id": "3",
+      "_itemName": "",
+      "_quantity": 1,
+      "_maxQuantity": 1,
+      "_slotNumber": 0,
+      "_modifierTag": "",
+      "_damageTypeOverride": 0,
+      "_useDamageTypeOverride": false,
+      "_isEquipped": false,
+      "_isAltWeapon": false
+    }
+  },
+  "_scenePath": "",
+  "_questObjective": {
+    "$id": "4",
+    "_questItemRequirements": [
+      {
+        "$id": "5",
+        "_questItem": "_item/03_trade/TRADEITEM_Ghostdust",
+        "_itemsNeeded": 24
+      },
+      {
+        "$id": "6",
+        "_questItem": "_item/03_trade/TRADEITEM_Geist Collar",
+        "_itemsNeeded": 12
+      }
+    ],
+    "_questCreepRequirements": [],
+    "_questTriggerRequirements": []
+  },
+  "_questExperiencePercentage": 6.0,
+  "_questCurrencyReward": 50,
+  "_questItemRewards": [
+    {
+      "$id": "7",
+      "_scriptItem": "_item/02_consumable/_status/(lv-0) STATUSCONSUMABLE_Spectral Powder",
+      "_setItemData": {
+        "$id": "8",
+        "_itemName": "Spectral Powder",
+        "_quantity": 5,
+        "_maxQuantity": 5,
+        "_slotNumber": 0,
+        "_modifierTag": "",
+        "_damageTypeOverride": 0,
+        "_useDamageTypeOverride": false,
+        "_isEquipped": false,
+        "_isAltWeapon": false
+      }
+    }
+  ],
+  "_displayEndDemoPrompt": false,
+  "name": "(lv-1) QUEST_Ghostly Goods",
+  "hideFlags": 0
+}

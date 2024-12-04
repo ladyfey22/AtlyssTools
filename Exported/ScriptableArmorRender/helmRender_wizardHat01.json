@@ -1,1 +1,117 @@
-{"$id":"1","_raceArmorRenders":[{"$id":"2","_raceNameTag":"Imp","_scriptableRace":"_race/01_race_imp/playerRace_imp","_raceArmorMesh":"_graphic/_mesh/03_item/00_armor/_helm/_wizardhat/helm_wizardHat","_boobOverrideMesh":"","_meshPosition":[0.0,0.0023,-0.0002],"_meshRotation":[10.2,0.0,0.0],"_meshScale":[0.008,0.009,0.008]},{"$id":"3","_raceNameTag":"Poon","_scriptableRace":"_race/02_race_poon/playerRace_poon","_raceArmorMesh":"_graphic/_mesh/03_item/00_armor/_helm/_wizardhat/helm_wizardHat","_boobOverrideMesh":"","_meshPosition":[0.0,0.004,0.001],"_meshRotation":[15.0,0.0,0.0],"_meshScale":[0.009,0.009,0.009]},{"$id":"4","_raceNameTag":"Kubold","_scriptableRace":"_race/03_race_kubold/playerRace_kubold","_raceArmorMesh":"_graphic/_mesh/03_item/00_armor/_helm/_wizardhat/helm_wizardHat","_boobOverrideMesh":"","_meshPosition":[0.0,0.0025,-0.0005],"_meshRotation":[5.9,0.0,0.0],"_meshScale":[0.0095,0.009,0.01]},{"$id":"5","_raceNameTag":"Byrdle","_scriptableRace":"_race/04_race_byrdle/playerRace_byrdle","_raceArmorMesh":"_graphic/_mesh/03_item/00_armor/_helm/_wizardhat/helm_wizardHat","_boobOverrideMesh":"","_meshPosition":[0.0,0.004,0.001],"_meshRotation":[5.2,0.0,0.0],"_meshScale":[0.009,0.0085,0.0098]},{"$id":"6","_raceNameTag":"Chang","_scriptableRace":"_race/05_race_chang/playerRace_chang","_raceArmorMesh":"_graphic/_mesh/03_item/00_armor/_helm/_wizardhat/helm_wizardHat","_boobOverrideMesh":"","_meshPosition":[0.0,0.0025,0.0001],"_meshRotation":[25.0,0.0,0.0],"_meshScale":[0.0099,0.009,0.009]}],"name":"helmRender_wizardHat01","hideFlags":0}
+{
+  "$id": "1",
+  "_raceArmorRenders": [
+    {
+      "$id": "2",
+      "_raceNameTag": "Imp",
+      "_scriptableRace": "_race/01_race_imp/playerRace_imp",
+      "_raceArmorMesh": "_graphic/_mesh/03_item/00_armor/_helm/_wizardhat/helm_wizardHat",
+      "_boobOverrideMesh": "",
+      "_meshPosition": [
+        0.0,
+        0.0023,
+        -0.0002
+      ],
+      "_meshRotation": [
+        10.2,
+        0.0,
+        0.0
+      ],
+      "_meshScale": [
+        0.008,
+        0.009,
+        0.008
+      ]
+    },
+    {
+      "$id": "3",
+      "_raceNameTag": "Poon",
+      "_scriptableRace": "_race/02_race_poon/playerRace_poon",
+      "_raceArmorMesh": "_graphic/_mesh/03_item/00_armor/_helm/_wizardhat/helm_wizardHat",
+      "_boobOverrideMesh": "",
+      "_meshPosition": [
+        0.0,
+        0.004,
+        0.001
+      ],
+      "_meshRotation": [
+        15.0,
+        0.0,
+        0.0
+      ],
+      "_meshScale": [
+        0.009,
+        0.009,
+        0.009
+      ]
+    },
+    {
+      "$id": "4",
+      "_raceNameTag": "Kubold",
+      "_scriptableRace": "_race/03_race_kubold/playerRace_kubold",
+      "_raceArmorMesh": "_graphic/_mesh/03_item/00_armor/_helm/_wizardhat/helm_wizardHat",
+      "_boobOverrideMesh": "",
+      "_meshPosition": [
+        0.0,
+        0.0025,
+        -0.0005
+      ],
+      "_meshRotation": [
+        5.9,
+        0.0,
+        0.0
+      ],
+      "_meshScale": [
+        0.0095,
+        0.009,
+        0.01
+      ]
+    },
+    {
+      "$id": "5",
+      "_raceNameTag": "Byrdle",
+      "_scriptableRace": "_race/04_race_byrdle/playerRace_byrdle",
+      "_raceArmorMesh": "_graphic/_mesh/03_item/00_armor/_helm/_wizardhat/helm_wizardHat",
+      "_boobOverrideMesh": "",
+      "_meshPosition": [
+        0.0,
+        0.004,
+        0.001
+      ],
+      "_meshRotation": [
+        5.2,
+        0.0,
+        0.0
+      ],
+      "_meshScale": [
+        0.009,
+        0.0085,
+        0.0098
+      ]
+    },
+    {
+      "$id": "6",
+      "_raceNameTag": "Chang",
+      "_scriptableRace": "_race/05_race_chang/playerRace_chang",
+      "_raceArmorMesh": "_graphic/_mesh/03_item/00_armor/_helm/_wizardhat/helm_wizardHat",
+      "_boobOverrideMesh": "",
+      "_meshPosition": [
+        0.0,
+        0.0025,
+        0.0001
+      ],
+      "_meshRotation": [
+        25.0,
+        0.0,
+        0.0
+      ],
+      "_meshScale": [
+        0.0099,
+        0.009,
+        0.009
+      ]
+    }
+  ],
+  "name": "helmRender_wizardHat01",
+  "hideFlags": 0
+}

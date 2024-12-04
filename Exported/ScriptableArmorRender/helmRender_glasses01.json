@@ -1,1 +1,117 @@
-{"$id":"1","_raceArmorRenders":[{"$id":"2","_raceNameTag":"Imp","_scriptableRace":"_race/01_race_imp/playerRace_imp","_raceArmorMesh":"_graphic/_mesh/03_item/00_armor/_helm/_glasses/_helm_glasses01","_boobOverrideMesh":"","_meshPosition":[0.0,0.004,0.0053],"_meshRotation":[0.0,0.0,0.0],"_meshScale":[0.0073,0.0058,0.009]},{"$id":"3","_raceNameTag":"Poon","_scriptableRace":"_race/02_race_poon/playerRace_poon","_raceArmorMesh":"_graphic/_mesh/03_item/00_armor/_helm/_glasses/_helm_glasses01","_boobOverrideMesh":"","_meshPosition":[0.0,0.0063,0.0054],"_meshRotation":[0.0,0.0,0.0],"_meshScale":[0.0075,0.0065,0.009]},{"$id":"4","_raceNameTag":"Kubold","_scriptableRace":"_race/03_race_kubold/playerRace_kubold","_raceArmorMesh":"_graphic/_mesh/03_item/00_armor/_helm/_glasses/_helm_glasses01","_boobOverrideMesh":"","_meshPosition":[0.0,0.0057,0.0056],"_meshRotation":[0.0,0.0,0.0],"_meshScale":[0.0087,0.0083,0.009]},{"$id":"5","_raceNameTag":"Byrdle","_scriptableRace":"_race/04_race_byrdle/playerRace_byrdle","_raceArmorMesh":"_graphic/_mesh/03_item/00_armor/_helm/_glasses/_helm_glasses01","_boobOverrideMesh":"","_meshPosition":[0.0,0.0056,0.0053],"_meshRotation":[0.0,0.0,0.0],"_meshScale":[0.0083,0.005,0.009]},{"$id":"6","_raceNameTag":"Chang","_scriptableRace":"_race/05_race_chang/playerRace_chang","_raceArmorMesh":"_graphic/_mesh/03_item/00_armor/_helm/_glasses/_helm_glasses01","_boobOverrideMesh":"","_meshPosition":[0.0,0.0051,0.0048],"_meshRotation":[0.0,0.0,0.0],"_meshScale":[0.008,0.005,0.009]}],"name":"helmRender_glasses01","hideFlags":0}
+{
+  "$id": "1",
+  "_raceArmorRenders": [
+    {
+      "$id": "2",
+      "_raceNameTag": "Imp",
+      "_scriptableRace": "_race/01_race_imp/playerRace_imp",
+      "_raceArmorMesh": "_graphic/_mesh/03_item/00_armor/_helm/_glasses/_helm_glasses01",
+      "_boobOverrideMesh": "",
+      "_meshPosition": [
+        0.0,
+        0.004,
+        0.0053
+      ],
+      "_meshRotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_meshScale": [
+        0.0073,
+        0.0058,
+        0.009
+      ]
+    },
+    {
+      "$id": "3",
+      "_raceNameTag": "Poon",
+      "_scriptableRace": "_race/02_race_poon/playerRace_poon",
+      "_raceArmorMesh": "_graphic/_mesh/03_item/00_armor/_helm/_glasses/_helm_glasses01",
+      "_boobOverrideMesh": "",
+      "_meshPosition": [
+        0.0,
+        0.0063,
+        0.0054
+      ],
+      "_meshRotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_meshScale": [
+        0.0075,
+        0.0065,
+        0.009
+      ]
+    },
+    {
+      "$id": "4",
+      "_raceNameTag": "Kubold",
+      "_scriptableRace": "_race/03_race_kubold/playerRace_kubold",
+      "_raceArmorMesh": "_graphic/_mesh/03_item/00_armor/_helm/_glasses/_helm_glasses01",
+      "_boobOverrideMesh": "",
+      "_meshPosition": [
+        0.0,
+        0.0057,
+        0.0056
+      ],
+      "_meshRotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_meshScale": [
+        0.0087,
+        0.0083,
+        0.009
+      ]
+    },
+    {
+      "$id": "5",
+      "_raceNameTag": "Byrdle",
+      "_scriptableRace": "_race/04_race_byrdle/playerRace_byrdle",
+      "_raceArmorMesh": "_graphic/_mesh/03_item/00_armor/_helm/_glasses/_helm_glasses01",
+      "_boobOverrideMesh": "",
+      "_meshPosition": [
+        0.0,
+        0.0056,
+        0.0053
+      ],
+      "_meshRotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_meshScale": [
+        0.0083,
+        0.005,
+        0.009
+      ]
+    },
+    {
+      "$id": "6",
+      "_raceNameTag": "Chang",
+      "_scriptableRace": "_race/05_race_chang/playerRace_chang",
+      "_raceArmorMesh": "_graphic/_mesh/03_item/00_armor/_helm/_glasses/_helm_glasses01",
+      "_boobOverrideMesh": "",
+      "_meshPosition": [
+        0.0,
+        0.0051,
+        0.0048
+      ],
+      "_meshRotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_meshScale": [
+        0.008,
+        0.005,
+        0.009
+      ]
+    }
+  ],
+  "name": "helmRender_glasses01",
+  "hideFlags": 0
+}

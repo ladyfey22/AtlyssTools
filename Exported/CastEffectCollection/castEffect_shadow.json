@@ -1,0 +1,21 @@
+{
+  "$id": "1",
+  "_chargeSkillEffect": "_skill/00_casteffects/_spellCharge_shadow",
+  "_castSkillEffect": "_skill/00_casteffects/_spellCast_shadow",
+  "_channelGroundGlyphTexture": "_graphic/_texture/_cookie/_cookieTex_aura01",
+  "_channelGroundGlyphRotationSpeed": 15.0,
+  "_groundGlyphSpotAngleSize": 25.0,
+  "_groundGlyphIntensity": 2000.0,
+  "_groundGlyphColor": [
+    0.407718658,
+    0.0,
+    1.0,
+    1.0
+  ],
+  "_channelSound": "_sound/spellchannels/castChannelShadow2",
+  "_castSound": "",
+  "_channelSoundPitch": 1.0,
+  "_castSoundPitch": 1.0,
+  "name": "castEffect_shadow",
+  "hideFlags": 0
+}

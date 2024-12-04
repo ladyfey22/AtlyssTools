@@ -1,1 +1,435 @@
-{"$id":"1","_nameTag":"Enok","_introductionBranches":[{"$id":"2","_dialogIndexTag":"Dialog Branch Index #0","dialogs":[{"$id":"3","_dialogKey":"Enok0","_dialogInput":"Looks like we have fresh blood.","_altInputs":[],"facepic":"_graphic/_ui/_facepics/facepic_enok01","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[]},{"$id":"4","_dialogKey":"Enok0","_dialogInput":"If you seek to toughen yourself and find the ways of valor, speak to me.","_altInputs":[],"facepic":"_graphic/_ui/_facepics/facepic_enok01","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[]},{"$id":"5","_dialogKey":"Enok0","_dialogInput":"If you have anything to say, it is best you do so now.","_altInputs":[],"facepic":"_graphic/_ui/_facepics/facepic_enok01","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[{"$id":"6","_selectionCaption":"Nevermind.","_selectionIcon":"","_setDialogIndex":-1},{"$id":"7","_selectionCaption":"I would like to know...","_selectionIcon":"_graphic/_ui/chatBubble","_setDialogIndex":1},{"$id":"8","_selectionCaption":"Got Quests?","_selectionIcon":"LYSS/Sprite/_lexiconIco","_setDialogIndex":4}]}]}],"_dialogBranches":[{"$id":"9","_dialogIndexTag":"Dialog Branch Index #0","dialogs":[{"$id":"10","_dialogKey":"Enok0","_dialogInput":"","_altInputs":["State your business, quickly.","There is much work to do.","Speak."],"facepic":"_graphic/_ui/_facepics/facepic_enok01","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[{"$id":"11","_selectionCaption":"Nevermind.","_selectionIcon":"","_setDialogIndex":-1},{"$id":"12","_selectionCaption":"I would like to know...","_selectionIcon":"_graphic/_ui/chatBubble","_setDialogIndex":1},{"$id":"13","_selectionCaption":"Got Quests?","_selectionIcon":"LYSS/Sprite/_lexiconIco","_setDialogIndex":4}]}]},{"$id":"14","_dialogIndexTag":"Dialog Branch Index #1","dialogs":[{"$id":"15","_dialogKey":"Enok1","_dialogInput":"","_altInputs":["Yes?","I have an answer.","No question is left unanswered.","Let's hear it."],"facepic":"_graphic/_ui/_facepics/facepic_enok01","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[{"$id":"16","_selectionCaption":"Actually...","_selectionIcon":"","_setDialogIndex":0},{"$id":"17","_selectionCaption":"Who are you?","_selectionIcon":"","_setDialogIndex":2},{"$id":"18","_selectionCaption":"What is a Fighter?","_selectionIcon":"","_setDialogIndex":3},{"$id":"19","_selectionCaption":"Parrying?","_selectionIcon":"","_setDialogIndex":5}]}]},{"$id":"20","_dialogIndexTag":"Dialog Branch Index #2","dialogs":[{"$id":"21","_dialogKey":"Enok2","_dialogInput":"I am Enok, the Fighter Guardian. I am the ferocity of the light, upbringer of hell against darkness.","_altInputs":[],"facepic":"_graphic/_ui/_facepics/facepic_enok01","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[]},{"$id":"22","_dialogKey":"Enok3","_dialogInput":"I take it you are new to this world. You've arrived late, during a time where it stands corrupted.","_altInputs":[],"facepic":"_graphic/_ui/_facepics/facepic_enok01","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[]},{"$id":"23","_dialogKey":"Enok4","_dialogInput":"My powers provide the strength and vitality to the souls who are driven to prove themselves worthy.","_altInputs":[],"facepic":"_graphic/_ui/_facepics/facepic_enok01","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[]},{"$id":"24","_dialogKey":"Enok5","_dialogInput":"I sense a spark of determination within you. Succumb to fear, and you will fail.","_altInputs":[],"facepic":"_graphic/_ui/_facepics/facepic_enok01","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[{"$id":"25","_selectionCaption":"Goodbye.","_selectionIcon":"","_setDialogIndex":-1},{"$id":"26","_selectionCaption":"Another thing...","_selectionIcon":"","_setDialogIndex":0}]}]},{"$id":"27","_dialogIndexTag":"Dialog Branch Index #3","dialogs":[{"$id":"28","_dialogKey":"Enok6","_dialogInput":"A lost soul can be driven to the ferocity of a Fighter once they have proven to be strong enough.","_altInputs":[],"facepic":"_graphic/_ui/_facepics/facepic_enok01","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[]},{"$id":"29","_dialogKey":"Enok7","_dialogInput":"A Fighter can rend the flesh of foes, weakening them with bloodshed.","_altInputs":[],"facepic":"_graphic/_ui/_facepics/facepic_enok01","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[]},{"$id":"30","_dialogKey":"Enok8","_dialogInput":"A Fighter can devastate surrounding enemies, from a close stomp, or afar with a lethal strike.","_altInputs":[],"facepic":"_graphic/_ui/_facepics/facepic_enok01","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[]},{"$id":"31","_dialogKey":"Enok9","_dialogInput":"It takes supreme focus to have what it takes to master the art of combat.","_altInputs":[],"facepic":"_graphic/_ui/_facepics/facepic_enok01","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[]},{"$id":"32","_dialogKey":"Enok10","_dialogInput":"If you have what it takes, return to me, and I can teach you.","_altInputs":[],"facepic":"_graphic/_ui/_facepics/facepic_enok01","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[{"$id":"33","_selectionCaption":"Goodbye.","_selectionIcon":"","_setDialogIndex":-1},{"$id":"34","_selectionCaption":"I see, anyways...","_selectionIcon":"","_setDialogIndex":0}]}]},{"$id":"35","_dialogIndexTag":"Dialog Branch Index #4","dialogs":[{"$id":"36","_dialogKey":"Enok11","_dialogInput":"","_altInputs":["There is business that must be tended to.","Let's see if you're up to the task.","Today is a fine day for bloodshed.","It's time to gather your strength."],"facepic":"_graphic/_ui/_facepics/facepic_enok01","_npcAnimationTag":"","_dialogUI":1,"_dialogSelections":[{"$id":"37","_selectionCaption":"See ya!","_selectionIcon":"","_setDialogIndex":-1},{"$id":"38","_selectionCaption":"Something else...","_selectionIcon":"","_setDialogIndex":0}]}]},{"$id":"39","_dialogIndexTag":"Dialog Branch Index #5","dialogs":[{"$id":"40","_dialogKey":"Enok12","_dialogInput":"Parrying your foes is essential in melee combat.","_altInputs":[],"facepic":"_graphic/_ui/_facepics/facepic_enok01","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[]},{"$id":"41","_dialogKey":"Enok13","_dialogInput":"To parry them, block shortly before they initiate their attack.","_altInputs":[],"facepic":"_graphic/_ui/_facepics/facepic_enok01","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[]},{"$id":"42","_dialogKey":"Enok14","_dialogInput":"If you successfully parry them, it will not cost any of your stamina.","_altInputs":[],"facepic":"_graphic/_ui/_facepics/facepic_enok01","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[]},{"$id":"43","_dialogKey":"Enok15","_dialogInput":"However, your foes must be relatively as strong as you for this to take in effect.","_altInputs":[],"facepic":"_graphic/_ui/_facepics/facepic_enok01","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[]},{"$id":"44","_dialogKey":"Enok16","_dialogInput":"If you were to fight your foe and they happen to be much stronger than you,","_altInputs":[],"facepic":"_graphic/_ui/_facepics/facepic_enok01","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[]},{"$id":"45","_dialogKey":"Enok17","_dialogInput":"you will falter and loose your stamina quickly.","_altInputs":[],"facepic":"_graphic/_ui/_facepics/facepic_enok01","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[]},{"$id":"46","_dialogKey":"Enok18","_dialogInput":"Watch your enemies closely. They are nothing to you if you strategize.","_altInputs":[],"facepic":"_graphic/_ui/_facepics/facepic_enok01","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[{"$id":"47","_selectionCaption":"See ya!","_selectionIcon":"","_setDialogIndex":-1},{"$id":"48","_selectionCaption":"Something else...","_selectionIcon":"","_setDialogIndex":0}]}]}],"_scriptableShopkeep":null,"_shopkeepResponses":[],"_shopkeepRejections":[],"_scriptableQuests":["_prefab/_entity/_npc/_enok/_quest/(lv-6) QUEST_The Voice of Zuulneruda","_prefab/_entity/_npc/_enok/_quest/(lv-6) QUEST_Purging the Undead","_prefab/_entity/_npc/_enok/_quest/(lv-10) QUEST_Strength and Honor","_prefab/_entity/_npc/_enok/_quest/(lv-12) QUEST_Eradicating the Undead","_prefab/_entity/_npc/_enok/_quest/(lv-15) QUEST_The Colossus","_prefab/_entity/_npc/_enok/_quest/(lv-15) QUEST_Purging the Grove","_prefab/_entity/_npc/_enok/_quest/(lv-15) QUEST_Reviling the Rageboars","_prefab/_entity/_npc/_enok/_quest/(lv-10) QUEST_Mastery of Blades","_prefab/_entity/_npc/_enok/_quest/(lv-10) QUEST_Mastery of Hammers","_prefab/_entity/_npc/_enok/_quest/(lv-10) QUEST_Mastery of Polearms"],"_questAcceptResponses":["Granted.","Let the bloodshed commence.","The time is now."],"_questCompleteResponses":["You're becoming more capable of these tasks, lost one.","Well done, lost one.","The hunt is complete.","Well played."],"_voxSounds":["_sound/dialogsounds/dialog_voices/voice_enok/_enok_vox08","_sound/dialogsounds/dialog_voices/voice_enok/_enok_vox07","_sound/dialogsounds/dialog_voices/voice_enok/_enok_vox06","_sound/dialogsounds/dialog_voices/voice_enok/_enok_vox04","_sound/dialogsounds/dialog_voices/voice_enok/_enok_vox05"],"_voxSpeed":0.185,"name":"dialogData_enok","hideFlags":0}
+{
+  "$id": "1",
+  "_nameTag": "Enok",
+  "_introductionBranches": [
+    {
+      "$id": "2",
+      "_dialogIndexTag": "Dialog Branch Index #0",
+      "dialogs": [
+        {
+          "$id": "3",
+          "_dialogKey": "Enok0",
+          "_dialogInput": "Looks like we have fresh blood.",
+          "_altInputs": [],
+          "facepic": "_graphic/_ui/_facepics/facepic_enok01",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        },
+        {
+          "$id": "4",
+          "_dialogKey": "Enok0",
+          "_dialogInput": "If you seek to toughen yourself and find the ways of valor, speak to me.",
+          "_altInputs": [],
+          "facepic": "_graphic/_ui/_facepics/facepic_enok01",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        },
+        {
+          "$id": "5",
+          "_dialogKey": "Enok0",
+          "_dialogInput": "If you have anything to say, it is best you do so now.",
+          "_altInputs": [],
+          "facepic": "_graphic/_ui/_facepics/facepic_enok01",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": [
+            {
+              "$id": "6",
+              "_selectionCaption": "Nevermind.",
+              "_selectionIcon": "",
+              "_setDialogIndex": -1
+            },
+            {
+              "$id": "7",
+              "_selectionCaption": "I would like to know...",
+              "_selectionIcon": "_graphic/_ui/chatBubble",
+              "_setDialogIndex": 1
+            },
+            {
+              "$id": "8",
+              "_selectionCaption": "Got Quests?",
+              "_selectionIcon": "LYSS/Sprite/_lexiconIco",
+              "_setDialogIndex": 4
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_dialogBranches": [
+    {
+      "$id": "9",
+      "_dialogIndexTag": "Dialog Branch Index #0",
+      "dialogs": [
+        {
+          "$id": "10",
+          "_dialogKey": "Enok0",
+          "_dialogInput": "",
+          "_altInputs": [
+            "State your business, quickly.",
+            "There is much work to do.",
+            "Speak."
+          ],
+          "facepic": "_graphic/_ui/_facepics/facepic_enok01",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": [
+            {
+              "$id": "11",
+              "_selectionCaption": "Nevermind.",
+              "_selectionIcon": "",
+              "_setDialogIndex": -1
+            },
+            {
+              "$id": "12",
+              "_selectionCaption": "I would like to know...",
+              "_selectionIcon": "_graphic/_ui/chatBubble",
+              "_setDialogIndex": 1
+            },
+            {
+              "$id": "13",
+              "_selectionCaption": "Got Quests?",
+              "_selectionIcon": "LYSS/Sprite/_lexiconIco",
+              "_setDialogIndex": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$id": "14",
+      "_dialogIndexTag": "Dialog Branch Index #1",
+      "dialogs": [
+        {
+          "$id": "15",
+          "_dialogKey": "Enok1",
+          "_dialogInput": "",
+          "_altInputs": [
+            "Yes?",
+            "I have an answer.",
+            "No question is left unanswered.",
+            "Let's hear it."
+          ],
+          "facepic": "_graphic/_ui/_facepics/facepic_enok01",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": [
+            {
+              "$id": "16",
+              "_selectionCaption": "Actually...",
+              "_selectionIcon": "",
+              "_setDialogIndex": 0
+            },
+            {
+              "$id": "17",
+              "_selectionCaption": "Who are you?",
+              "_selectionIcon": "",
+              "_setDialogIndex": 2
+            },
+            {
+              "$id": "18",
+              "_selectionCaption": "What is a Fighter?",
+              "_selectionIcon": "",
+              "_setDialogIndex": 3
+            },
+            {
+              "$id": "19",
+              "_selectionCaption": "Parrying?",
+              "_selectionIcon": "",
+              "_setDialogIndex": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$id": "20",
+      "_dialogIndexTag": "Dialog Branch Index #2",
+      "dialogs": [
+        {
+          "$id": "21",
+          "_dialogKey": "Enok2",
+          "_dialogInput": "I am Enok, the Fighter Guardian. I am the ferocity of the light, upbringer of hell against darkness.",
+          "_altInputs": [],
+          "facepic": "_graphic/_ui/_facepics/facepic_enok01",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        },
+        {
+          "$id": "22",
+          "_dialogKey": "Enok3",
+          "_dialogInput": "I take it you are new to this world. You've arrived late, during a time where it stands corrupted.",
+          "_altInputs": [],
+          "facepic": "_graphic/_ui/_facepics/facepic_enok01",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        },
+        {
+          "$id": "23",
+          "_dialogKey": "Enok4",
+          "_dialogInput": "My powers provide the strength and vitality to the souls who are driven to prove themselves worthy.",
+          "_altInputs": [],
+          "facepic": "_graphic/_ui/_facepics/facepic_enok01",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        },
+        {
+          "$id": "24",
+          "_dialogKey": "Enok5",
+          "_dialogInput": "I sense a spark of determination within you. Succumb to fear, and you will fail.",
+          "_altInputs": [],
+          "facepic": "_graphic/_ui/_facepics/facepic_enok01",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": [
+            {
+              "$id": "25",
+              "_selectionCaption": "Goodbye.",
+              "_selectionIcon": "",
+              "_setDialogIndex": -1
+            },
+            {
+              "$id": "26",
+              "_selectionCaption": "Another thing...",
+              "_selectionIcon": "",
+              "_setDialogIndex": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$id": "27",
+      "_dialogIndexTag": "Dialog Branch Index #3",
+      "dialogs": [
+        {
+          "$id": "28",
+          "_dialogKey": "Enok6",
+          "_dialogInput": "A lost soul can be driven to the ferocity of a Fighter once they have proven to be strong enough.",
+          "_altInputs": [],
+          "facepic": "_graphic/_ui/_facepics/facepic_enok01",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        },
+        {
+          "$id": "29",
+          "_dialogKey": "Enok7",
+          "_dialogInput": "A Fighter can rend the flesh of foes, weakening them with bloodshed.",
+          "_altInputs": [],
+          "facepic": "_graphic/_ui/_facepics/facepic_enok01",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        },
+        {
+          "$id": "30",
+          "_dialogKey": "Enok8",
+          "_dialogInput": "A Fighter can devastate surrounding enemies, from a close stomp, or afar with a lethal strike.",
+          "_altInputs": [],
+          "facepic": "_graphic/_ui/_facepics/facepic_enok01",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        },
+        {
+          "$id": "31",
+          "_dialogKey": "Enok9",
+          "_dialogInput": "It takes supreme focus to have what it takes to master the art of combat.",
+          "_altInputs": [],
+          "facepic": "_graphic/_ui/_facepics/facepic_enok01",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        },
+        {
+          "$id": "32",
+          "_dialogKey": "Enok10",
+          "_dialogInput": "If you have what it takes, return to me, and I can teach you.",
+          "_altInputs": [],
+          "facepic": "_graphic/_ui/_facepics/facepic_enok01",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": [
+            {
+              "$id": "33",
+              "_selectionCaption": "Goodbye.",
+              "_selectionIcon": "",
+              "_setDialogIndex": -1
+            },
+            {
+              "$id": "34",
+              "_selectionCaption": "I see, anyways...",
+              "_selectionIcon": "",
+              "_setDialogIndex": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$id": "35",
+      "_dialogIndexTag": "Dialog Branch Index #4",
+      "dialogs": [
+        {
+          "$id": "36",
+          "_dialogKey": "Enok11",
+          "_dialogInput": "",
+          "_altInputs": [
+            "There is business that must be tended to.",
+            "Let's see if you're up to the task.",
+            "Today is a fine day for bloodshed.",
+            "It's time to gather your strength."
+          ],
+          "facepic": "_graphic/_ui/_facepics/facepic_enok01",
+          "_npcAnimationTag": "",
+          "_dialogUI": 1,
+          "_dialogSelections": [
+            {
+              "$id": "37",
+              "_selectionCaption": "See ya!",
+              "_selectionIcon": "",
+              "_setDialogIndex": -1
+            },
+            {
+              "$id": "38",
+              "_selectionCaption": "Something else...",
+              "_selectionIcon": "",
+              "_setDialogIndex": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$id": "39",
+      "_dialogIndexTag": "Dialog Branch Index #5",
+      "dialogs": [
+        {
+          "$id": "40",
+          "_dialogKey": "Enok12",
+          "_dialogInput": "Parrying your foes is essential in melee combat.",
+          "_altInputs": [],
+          "facepic": "_graphic/_ui/_facepics/facepic_enok01",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        },
+        {
+          "$id": "41",
+          "_dialogKey": "Enok13",
+          "_dialogInput": "To parry them, block shortly before they initiate their attack.",
+          "_altInputs": [],
+          "facepic": "_graphic/_ui/_facepics/facepic_enok01",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        },
+        {
+          "$id": "42",
+          "_dialogKey": "Enok14",
+          "_dialogInput": "If you successfully parry them, it will not cost any of your stamina.",
+          "_altInputs": [],
+          "facepic": "_graphic/_ui/_facepics/facepic_enok01",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        },
+        {
+          "$id": "43",
+          "_dialogKey": "Enok15",
+          "_dialogInput": "However, your foes must be relatively as strong as you for this to take in effect.",
+          "_altInputs": [],
+          "facepic": "_graphic/_ui/_facepics/facepic_enok01",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        },
+        {
+          "$id": "44",
+          "_dialogKey": "Enok16",
+          "_dialogInput": "If you were to fight your foe and they happen to be much stronger than you,",
+          "_altInputs": [],
+          "facepic": "_graphic/_ui/_facepics/facepic_enok01",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        },
+        {
+          "$id": "45",
+          "_dialogKey": "Enok17",
+          "_dialogInput": "you will falter and loose your stamina quickly.",
+          "_altInputs": [],
+          "facepic": "_graphic/_ui/_facepics/facepic_enok01",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        },
+        {
+          "$id": "46",
+          "_dialogKey": "Enok18",
+          "_dialogInput": "Watch your enemies closely. They are nothing to you if you strategize.",
+          "_altInputs": [],
+          "facepic": "_graphic/_ui/_facepics/facepic_enok01",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": [
+            {
+              "$id": "47",
+              "_selectionCaption": "See ya!",
+              "_selectionIcon": "",
+              "_setDialogIndex": -1
+            },
+            {
+              "$id": "48",
+              "_selectionCaption": "Something else...",
+              "_selectionIcon": "",
+              "_setDialogIndex": 0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_scriptableShopkeep": null,
+  "_shopkeepResponses": [],
+  "_shopkeepRejections": [],
+  "_scriptableQuests": [
+    "_prefab/_entity/_npc/_enok/_quest/(lv-6) QUEST_The Voice of Zuulneruda",
+    "_prefab/_entity/_npc/_enok/_quest/(lv-6) QUEST_Purging the Undead",
+    "_prefab/_entity/_npc/_enok/_quest/(lv-10) QUEST_Strength and Honor",
+    "_prefab/_entity/_npc/_enok/_quest/(lv-12) QUEST_Eradicating the Undead",
+    "_prefab/_entity/_npc/_enok/_quest/(lv-15) QUEST_The Colossus",
+    "_prefab/_entity/_npc/_enok/_quest/(lv-15) QUEST_Purging the Grove",
+    "_prefab/_entity/_npc/_enok/_quest/(lv-15) QUEST_Reviling the Rageboars",
+    "_prefab/_entity/_npc/_enok/_quest/(lv-10) QUEST_Mastery of Blades",
+    "_prefab/_entity/_npc/_enok/_quest/(lv-10) QUEST_Mastery of Hammers",
+    "_prefab/_entity/_npc/_enok/_quest/(lv-10) QUEST_Mastery of Polearms"
+  ],
+  "_questAcceptResponses": [
+    "Granted.",
+    "Let the bloodshed commence.",
+    "The time is now."
+  ],
+  "_questCompleteResponses": [
+    "You're becoming more capable of these tasks, lost one.",
+    "Well done, lost one.",
+    "The hunt is complete.",
+    "Well played."
+  ],
+  "_voxSounds": [
+    "_sound/dialogsounds/dialog_voices/voice_enok/_enok_vox08",
+    "_sound/dialogsounds/dialog_voices/voice_enok/_enok_vox07",
+    "_sound/dialogsounds/dialog_voices/voice_enok/_enok_vox06",
+    "_sound/dialogsounds/dialog_voices/voice_enok/_enok_vox04",
+    "_sound/dialogsounds/dialog_voices/voice_enok/_enok_vox05"
+  ],
+  "_voxSpeed": 0.185,
+  "name": "dialogData_enok",
+  "hideFlags": 0
+}

@@ -1,1 +1,36 @@
-{"$id":"1","_modifierTag":"Guardian","_modifierElement":null,"_modifierStatStruct":{"$id":"2","_maxHealth":0,"_maxMana":0,"_maxStamina":0,"_experience":0,"_attackPower":0,"_dexPower":0,"_magicPower":0,"_criticalRate":0.0,"_magicCriticalRate":0.0,"_defense":2,"_magicDefense":2,"_evasion":0.0},"_modifierPercentage":0.14,"_creepMaxHealthBoostPercentage":0.12,"_creepStatModifierPercentage":0.45,"_experiencePercentage":0.25,"_currencyDropPercentage":1.5,"_damageType":0,"_overrideDamageType":false,"_glowTintColor":[0.2971698,0.607336938,1.0,0.6862745],"_creepScaleAdd":0.4,"name":"STATMODIFIER_Guardian","hideFlags":0}
+{
+  "$id": "1",
+  "_modifierTag": "Guardian",
+  "_modifierElement": null,
+  "_modifierStatStruct": {
+    "$id": "2",
+    "_maxHealth": 0,
+    "_maxMana": 0,
+    "_maxStamina": 0,
+    "_experience": 0,
+    "_attackPower": 0,
+    "_dexPower": 0,
+    "_magicPower": 0,
+    "_criticalRate": 0.0,
+    "_magicCriticalRate": 0.0,
+    "_defense": 2,
+    "_magicDefense": 2,
+    "_evasion": 0.0
+  },
+  "_modifierPercentage": 0.14,
+  "_creepMaxHealthBoostPercentage": 0.12,
+  "_creepStatModifierPercentage": 0.45,
+  "_experiencePercentage": 0.25,
+  "_currencyDropPercentage": 1.5,
+  "_damageType": 0,
+  "_overrideDamageType": false,
+  "_glowTintColor": [
+    0.2971698,
+    0.607336938,
+    1.0,
+    0.6862745
+  ],
+  "_creepScaleAdd": 0.4,
+  "name": "STATMODIFIER_Guardian",
+  "hideFlags": 0
+}

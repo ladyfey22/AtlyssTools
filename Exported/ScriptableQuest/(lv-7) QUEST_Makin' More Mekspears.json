@@ -1,1 +1,147 @@
-{"$id":"1","_questName":"Makin' More Mekspears","_questType":1,"_questSubType":0,"_questIco":"_graphic/_ui/_itemicons/_weapon/_wepIco_65","_questDescription":"<color=cyan>Lookin' to make another Mekspear?</color> Well, alright then!\n\nY'know the drill! I'll need... <color=yellow>1 spear from them Mekboars and 15 Slimek Cores to keep it together,</color> and I'll make a nice partisan for ya in return. Sound good?\n","_questCompleteReturnMessage":"Return to Sally in Sanctum.","_questLevel":7,"_raceRequirement":null,"_baseClassRequirement":null,"_skillToHide":null,"_requireNoviceClass":false,"_autoFinishQuest":false,"_preQuestRequirements":[{"$id":"2","_questName":"Makin' a Mekspear","_questType":0,"_questSubType":0,"_questIco":"_graphic/_ui/_itemicons/_weapon/_wepIco_65","_questDescription":"Heya hun'! <color=cyan>I've been thinkin' of somethin we could make. Perhaps somethin' like a powerful spear!</color> Y'know, them Mekboars look like they got somethin fierce with them spears on their lil' heads.\n\nHow bout this, give me... say, <color=yellow>1 spear from them Mekboars, and 15 Slimek Cores to keep it all together.</color> I'll make a nice partisan for ya in return. Sound good?\n\t","_questCompleteReturnMessage":"Return to Sally in Sanctum.","_questLevel":7,"_raceRequirement":null,"_baseClassRequirement":null,"_skillToHide":null,"_requireNoviceClass":false,"_autoFinishQuest":false,"_preQuestRequirements":[],"_questObjectiveItem":{"$id":"3","_scriptItem":null,"_setItemData":{"$id":"4","_itemName":"","_quantity":1,"_maxQuantity":1,"_slotNumber":0,"_modifierTag":"","_damageTypeOverride":0,"_useDamageTypeOverride":false,"_isEquipped":false,"_isAltWeapon":false}},"_scenePath":"","_questObjective":{"$id":"5","_questItemRequirements":[{"$id":"6","_questItem":"_item/03_trade/TRADEITEM_Mekboar Spear","_itemsNeeded":1},{"$id":"7","_questItem":"_item/03_trade/TRADEITEM_Slimek Core","_itemsNeeded":15}],"_questCreepRequirements":[],"_questTriggerRequirements":[]},"_questExperiencePercentage":0.35,"_questCurrencyReward":0,"_questItemRewards":[{"$id":"8","_scriptItem":"_item/01_equipment/02_weapon/04_polearm/(lv-10) WEAPON_Mekspear (Polearm)","_setItemData":{"$id":"9","_itemName":"Mekspear","_quantity":1,"_maxQuantity":1,"_slotNumber":0,"_modifierTag":"","_damageTypeOverride":0,"_useDamageTypeOverride":false,"_isEquipped":false,"_isAltWeapon":false}}],"_displayEndDemoPrompt":false,"name":"(lv-7) QUEST_Makin' a Mekspear","hideFlags":0}],"_questObjectiveItem":{"$id":"10","_scriptItem":null,"_setItemData":{"$id":"11","_itemName":"","_quantity":1,"_maxQuantity":1,"_slotNumber":0,"_modifierTag":"","_damageTypeOverride":0,"_useDamageTypeOverride":false,"_isEquipped":false,"_isAltWeapon":false}},"_scenePath":"","_questObjective":{"$id":"12","_questItemRequirements":[{"$id":"13","_questItem":"_item/03_trade/TRADEITEM_Mekboar Spear","_itemsNeeded":1},{"$id":"14","_questItem":"_item/03_trade/TRADEITEM_Slimek Core","_itemsNeeded":15}],"_questCreepRequirements":[],"_questTriggerRequirements":[]},"_questExperiencePercentage":0.05,"_questCurrencyReward":0,"_questItemRewards":[{"$id":"15","_scriptItem":"_item/01_equipment/02_weapon/04_polearm/(lv-10) WEAPON_Mekspear (Polearm)","_setItemData":{"$id":"16","_itemName":"Mekspear","_quantity":1,"_maxQuantity":1,"_slotNumber":0,"_modifierTag":"","_damageTypeOverride":0,"_useDamageTypeOverride":false,"_isEquipped":false,"_isAltWeapon":false}}],"_displayEndDemoPrompt":false,"name":"(lv-7) QUEST_Makin' More Mekspears","hideFlags":0}
+{
+  "$id": "1",
+  "_questName": "Makin' More Mekspears",
+  "_questType": 1,
+  "_questSubType": 0,
+  "_questIco": "_graphic/_ui/_itemicons/_weapon/_wepIco_65",
+  "_questDescription": "<color=cyan>Lookin' to make another Mekspear?</color> Well, alright then!\n\nY'know the drill! I'll need... <color=yellow>1 spear from them Mekboars and 15 Slimek Cores to keep it together,</color> and I'll make a nice partisan for ya in return. Sound good?\n",
+  "_questCompleteReturnMessage": "Return to Sally in Sanctum.",
+  "_questLevel": 7,
+  "_raceRequirement": null,
+  "_baseClassRequirement": null,
+  "_skillToHide": null,
+  "_requireNoviceClass": false,
+  "_autoFinishQuest": false,
+  "_preQuestRequirements": [
+    {
+      "$id": "2",
+      "_questName": "Makin' a Mekspear",
+      "_questType": 0,
+      "_questSubType": 0,
+      "_questIco": "_graphic/_ui/_itemicons/_weapon/_wepIco_65",
+      "_questDescription": "Heya hun'! <color=cyan>I've been thinkin' of somethin we could make. Perhaps somethin' like a powerful spear!</color> Y'know, them Mekboars look like they got somethin fierce with them spears on their lil' heads.\n\nHow bout this, give me... say, <color=yellow>1 spear from them Mekboars, and 15 Slimek Cores to keep it all together.</color> I'll make a nice partisan for ya in return. Sound good?\n\t",
+      "_questCompleteReturnMessage": "Return to Sally in Sanctum.",
+      "_questLevel": 7,
+      "_raceRequirement": null,
+      "_baseClassRequirement": null,
+      "_skillToHide": null,
+      "_requireNoviceClass": false,
+      "_autoFinishQuest": false,
+      "_preQuestRequirements": [],
+      "_questObjectiveItem": {
+        "$id": "3",
+        "_scriptItem": null,
+        "_setItemData": {
+          "$id": "4",
+          "_itemName": "",
+          "_quantity": 1,
+          "_maxQuantity": 1,
+          "_slotNumber": 0,
+          "_modifierTag": "",
+          "_damageTypeOverride": 0,
+          "_useDamageTypeOverride": false,
+          "_isEquipped": false,
+          "_isAltWeapon": false
+        }
+      },
+      "_scenePath": "",
+      "_questObjective": {
+        "$id": "5",
+        "_questItemRequirements": [
+          {
+            "$id": "6",
+            "_questItem": "_item/03_trade/TRADEITEM_Mekboar Spear",
+            "_itemsNeeded": 1
+          },
+          {
+            "$id": "7",
+            "_questItem": "_item/03_trade/TRADEITEM_Slimek Core",
+            "_itemsNeeded": 15
+          }
+        ],
+        "_questCreepRequirements": [],
+        "_questTriggerRequirements": []
+      },
+      "_questExperiencePercentage": 0.35,
+      "_questCurrencyReward": 0,
+      "_questItemRewards": [
+        {
+          "$id": "8",
+          "_scriptItem": "_item/01_equipment/02_weapon/04_polearm/(lv-10) WEAPON_Mekspear (Polearm)",
+          "_setItemData": {
+            "$id": "9",
+            "_itemName": "Mekspear",
+            "_quantity": 1,
+            "_maxQuantity": 1,
+            "_slotNumber": 0,
+            "_modifierTag": "",
+            "_damageTypeOverride": 0,
+            "_useDamageTypeOverride": false,
+            "_isEquipped": false,
+            "_isAltWeapon": false
+          }
+        }
+      ],
+      "_displayEndDemoPrompt": false,
+      "name": "(lv-7) QUEST_Makin' a Mekspear",
+      "hideFlags": 0
+    }
+  ],
+  "_questObjectiveItem": {
+    "$id": "10",
+    "_scriptItem": null,
+    "_setItemData": {
+      "$id": "11",
+      "_itemName": "",
+      "_quantity": 1,
+      "_maxQuantity": 1,
+      "_slotNumber": 0,
+      "_modifierTag": "",
+      "_damageTypeOverride": 0,
+      "_useDamageTypeOverride": false,
+      "_isEquipped": false,
+      "_isAltWeapon": false
+    }
+  },
+  "_scenePath": "",
+  "_questObjective": {
+    "$id": "12",
+    "_questItemRequirements": [
+      {
+        "$id": "13",
+        "_questItem": "_item/03_trade/TRADEITEM_Mekboar Spear",
+        "_itemsNeeded": 1
+      },
+      {
+        "$id": "14",
+        "_questItem": "_item/03_trade/TRADEITEM_Slimek Core",
+        "_itemsNeeded": 15
+      }
+    ],
+    "_questCreepRequirements": [],
+    "_questTriggerRequirements": []
+  },
+  "_questExperiencePercentage": 0.05,
+  "_questCurrencyReward": 0,
+  "_questItemRewards": [
+    {
+      "$id": "15",
+      "_scriptItem": "_item/01_equipment/02_weapon/04_polearm/(lv-10) WEAPON_Mekspear (Polearm)",
+      "_setItemData": {
+        "$id": "16",
+        "_itemName": "Mekspear",
+        "_quantity": 1,
+        "_maxQuantity": 1,
+        "_slotNumber": 0,
+        "_modifierTag": "",
+        "_damageTypeOverride": 0,
+        "_useDamageTypeOverride": false,
+        "_isEquipped": false,
+        "_isAltWeapon": false
+      }
+    }
+  ],
+  "_displayEndDemoPrompt": false,
+  "name": "(lv-7) QUEST_Makin' More Mekspears",
+  "hideFlags": 0
+}

@@ -9,9 +9,14 @@ using UnityEngine;
 
 namespace AtlyssTools.Registries;
 
+[ManagerAttribute]
 public class SkillManager : ScriptablesManager<ScriptableSkill>
 {
     public readonly List<string> GeneralSkills = new();
+
+    private SkillManager()
+    {
+    }
 
     public void RegisterGeneralSkill(string skillName)
     {
@@ -34,7 +39,7 @@ public class SkillManager : ScriptablesManager<ScriptableSkill>
     {
         return GameManager._current._cachedScriptableSkills;
     }
-    
+
     public override string GetName(ScriptableObject obj)
     {
         return ((ScriptableSkill)obj)._skillName;
@@ -56,7 +61,7 @@ public class SkillManager : ScriptablesManager<ScriptableSkill>
             GameManager._current._statLogics._generalSkills = generalSkills.ToArray();
         }
     }
-    
+
 
     internal static SkillManager Instance => _instance ??= new();
     private static SkillManager _instance;

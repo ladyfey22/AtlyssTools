@@ -1,1 +1,185 @@
-{"$id":"1","_skillName":"Volley","_skillIcon":"_graphic/_ui/_skillicons/_abIco46","_skillControlType":1,"_skillDamageType":1,"_skillDescription":"<color=cyan>Charge and release skill.</color> Fires a projectile in the air, raining shrapnel within a radius below. <color=lime>Requires a ranged weapon.</color>","_allowAsBonusSkill":false,"_weaponTypeRequirements":[{"$id":"2","_wepType":"_weapontype/05_weaponType_rangeWeapon","_animOverride_charge":"Bow","_animOverride_cast":"Bow"}],"_requireShield":false,"_baseSkillPower":2,"_skillRankParams":{"$id":"3","_baseLevelRequirement":12,"_baseManaCost":12,"_baseHealthCost":0,"_baseStaminaCost":0,"_isGreaterThanCost":false,"_castOnNoConditionOnly":false,"_isUninterruptable":false,"_baseRequiredItem":null,"_basedItemCost":5,"_baseCastTime":0.3,"_baseCooldown":8.0,"_baseSkillPowerPercent":1.0,"_skillLevelRequirementPerLevel":1,"_skillLevelRequirementChange":4,"_skillCostChangePerLevel":0,"_skillCostChange":0,"_skillCastTimePerLevel":0,"_skillCastTimeChange":0.0,"_skillCooldownPerLevel":0,"_skillCooldownChange":0.0,"_skillPowerPercentPerLevel":1,"_skillPowerPercentChange":2.0},"_skillRanks":[{"$id":"4","_rankTag":"Volley (Rank 1)","_levelRequirement":12,"_manaCost":12,"_healthCost":0,"_staminaCost":0,"_greaterThanCost":false,"_requiredItem":"_item/03_trade/TRADEITEM_Bronze Arrows","_requiredItemQuantity":0,"_castTime":0.3,"_coolDown":8.0,"_skillPowerPercent":1.0,"_attackPowerModRef":0.0,"_magicPowerModRef":0.0,"_rangePowerModRef":0.0,"_rankDescriptor":"Deals up to $SKP persistant damage.","_selfConditionOutput":null,"_earlySkillObjectOutput":{"$id":"5","_skillObjectTag":"","_skillObject":"_skill/_banditskills/_volley/_projectile_volley_indicator","_skillObjectCondition":{"$id":"6","_scriptableCondition":null,"_chance":1.0}},"_skillObjectOutput":{"$id":"7","_skillObjectTag":"","_skillObject":"_skill/_banditskills/_volley/_projectile_volley","_skillObjectCondition":{"$id":"8","_scriptableCondition":null,"_chance":1.0}}},{"$id":"9","_rankTag":"Volley (Rank 2)","_levelRequirement":16,"_manaCost":12,"_healthCost":0,"_staminaCost":0,"_greaterThanCost":false,"_requiredItem":"_item/03_trade/TRADEITEM_Bronze Arrows","_requiredItemQuantity":0,"_castTime":0.3,"_coolDown":8.0,"_skillPowerPercent":3.0,"_attackPowerModRef":0.0,"_magicPowerModRef":0.0,"_rangePowerModRef":0.0,"_rankDescriptor":"Deals up to $SKP persistant damage.","_selfConditionOutput":null,"_earlySkillObjectOutput":{"$id":"10","_skillObjectTag":"","_skillObject":"_skill/_banditskills/_volley/_projectile_volley_indicator","_skillObjectCondition":{"$id":"11","_scriptableCondition":null,"_chance":1.0}},"_skillObjectOutput":{"$id":"12","_skillObjectTag":"","_skillObject":"_skill/_banditskills/_volley/_projectile_volley","_skillObjectCondition":{"$id":"13","_scriptableCondition":null,"_chance":1.0}}},{"$id":"14","_rankTag":"Volley (Rank 3)","_levelRequirement":20,"_manaCost":12,"_healthCost":0,"_staminaCost":0,"_greaterThanCost":false,"_requiredItem":"_item/03_trade/TRADEITEM_Bronze Arrows","_requiredItemQuantity":0,"_castTime":0.3,"_coolDown":8.0,"_skillPowerPercent":5.0,"_attackPowerModRef":0.0,"_magicPowerModRef":0.0,"_rangePowerModRef":0.0,"_rankDescriptor":"Deals up to $SKP persistant damage.","_selfConditionOutput":null,"_earlySkillObjectOutput":{"$id":"15","_skillObjectTag":"","_skillObject":"_skill/_banditskills/_volley/_projectile_volley_indicator","_skillObjectCondition":{"$id":"16","_scriptableCondition":null,"_chance":1.0}},"_skillObjectOutput":{"$id":"17","_skillObjectTag":"","_skillObject":"_skill/_banditskills/_volley/_projectile_volley","_skillObjectCondition":{"$id":"18","_scriptableCondition":null,"_chance":1.0}}}],"_movementSpeedDecrease":-8.65,"_strafeDirection":true,"_groundOnlySkill":false,"_airTimeLockBuffer":0.0,"_enableAirTimeMod":false,"_lockMoveControlTime":0.0,"_lockCombatControlTime":0.35,"_timeBeforeAttackForce":0.0,"_attackForceApply":0.0,"_attackForceDampen":120.0,"_attackForceInputInfluence":false,"_castEffectCollection":null,"_useGlyphEffect":false,"_skillChargeAnimation":"Direct","_skillCastAnimation":"Direct","_animChargeSmoothing":0.1,"_animCastSmoothing":0.0,"_setSheatheCondition":1,"_applySheatheCondition":true,"_hideWeapon":false,"name":"skill_volley","hideFlags":0}
+{
+  "$id": "1",
+  "_skillName": "Volley",
+  "_skillIcon": "_graphic/_ui/_skillicons/_abIco46",
+  "_skillControlType": 1,
+  "_skillDamageType": 1,
+  "_skillDescription": "<color=cyan>Charge and release skill.</color> Fires a projectile in the air, raining shrapnel within a radius below. <color=lime>Requires a ranged weapon.</color>",
+  "_allowAsBonusSkill": false,
+  "_weaponTypeRequirements": [
+    {
+      "$id": "2",
+      "_wepType": "_weapontype/05_weaponType_rangeWeapon",
+      "_animOverride_charge": "Bow",
+      "_animOverride_cast": "Bow"
+    }
+  ],
+  "_requireShield": false,
+  "_baseSkillPower": 2,
+  "_skillRankParams": {
+    "$id": "3",
+    "_baseLevelRequirement": 12,
+    "_baseManaCost": 12,
+    "_baseHealthCost": 0,
+    "_baseStaminaCost": 0,
+    "_isGreaterThanCost": false,
+    "_castOnNoConditionOnly": false,
+    "_isUninterruptable": false,
+    "_baseRequiredItem": null,
+    "_basedItemCost": 5,
+    "_baseCastTime": 0.3,
+    "_baseCooldown": 8.0,
+    "_baseSkillPowerPercent": 1.0,
+    "_skillLevelRequirementPerLevel": 1,
+    "_skillLevelRequirementChange": 4,
+    "_skillCostChangePerLevel": 0,
+    "_skillCostChange": 0,
+    "_skillCastTimePerLevel": 0,
+    "_skillCastTimeChange": 0.0,
+    "_skillCooldownPerLevel": 0,
+    "_skillCooldownChange": 0.0,
+    "_skillPowerPercentPerLevel": 1,
+    "_skillPowerPercentChange": 2.0
+  },
+  "_skillRanks": [
+    {
+      "$id": "4",
+      "_rankTag": "Volley (Rank 1)",
+      "_levelRequirement": 12,
+      "_manaCost": 12,
+      "_healthCost": 0,
+      "_staminaCost": 0,
+      "_greaterThanCost": false,
+      "_requiredItem": "_item/03_trade/TRADEITEM_Bronze Arrows",
+      "_requiredItemQuantity": 0,
+      "_castTime": 0.3,
+      "_coolDown": 8.0,
+      "_skillPowerPercent": 1.0,
+      "_attackPowerModRef": 0.0,
+      "_magicPowerModRef": 0.0,
+      "_rangePowerModRef": 0.0,
+      "_rankDescriptor": "Deals up to $SKP persistant damage.",
+      "_selfConditionOutput": null,
+      "_earlySkillObjectOutput": {
+        "$id": "5",
+        "_skillObjectTag": "",
+        "_skillObject": "_skill/_banditskills/_volley/_projectile_volley_indicator",
+        "_skillObjectCondition": {
+          "$id": "6",
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      },
+      "_skillObjectOutput": {
+        "$id": "7",
+        "_skillObjectTag": "",
+        "_skillObject": "_skill/_banditskills/_volley/_projectile_volley",
+        "_skillObjectCondition": {
+          "$id": "8",
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      }
+    },
+    {
+      "$id": "9",
+      "_rankTag": "Volley (Rank 2)",
+      "_levelRequirement": 16,
+      "_manaCost": 12,
+      "_healthCost": 0,
+      "_staminaCost": 0,
+      "_greaterThanCost": false,
+      "_requiredItem": "_item/03_trade/TRADEITEM_Bronze Arrows",
+      "_requiredItemQuantity": 0,
+      "_castTime": 0.3,
+      "_coolDown": 8.0,
+      "_skillPowerPercent": 3.0,
+      "_attackPowerModRef": 0.0,
+      "_magicPowerModRef": 0.0,
+      "_rangePowerModRef": 0.0,
+      "_rankDescriptor": "Deals up to $SKP persistant damage.",
+      "_selfConditionOutput": null,
+      "_earlySkillObjectOutput": {
+        "$id": "10",
+        "_skillObjectTag": "",
+        "_skillObject": "_skill/_banditskills/_volley/_projectile_volley_indicator",
+        "_skillObjectCondition": {
+          "$id": "11",
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      },
+      "_skillObjectOutput": {
+        "$id": "12",
+        "_skillObjectTag": "",
+        "_skillObject": "_skill/_banditskills/_volley/_projectile_volley",
+        "_skillObjectCondition": {
+          "$id": "13",
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      }
+    },
+    {
+      "$id": "14",
+      "_rankTag": "Volley (Rank 3)",
+      "_levelRequirement": 20,
+      "_manaCost": 12,
+      "_healthCost": 0,
+      "_staminaCost": 0,
+      "_greaterThanCost": false,
+      "_requiredItem": "_item/03_trade/TRADEITEM_Bronze Arrows",
+      "_requiredItemQuantity": 0,
+      "_castTime": 0.3,
+      "_coolDown": 8.0,
+      "_skillPowerPercent": 5.0,
+      "_attackPowerModRef": 0.0,
+      "_magicPowerModRef": 0.0,
+      "_rangePowerModRef": 0.0,
+      "_rankDescriptor": "Deals up to $SKP persistant damage.",
+      "_selfConditionOutput": null,
+      "_earlySkillObjectOutput": {
+        "$id": "15",
+        "_skillObjectTag": "",
+        "_skillObject": "_skill/_banditskills/_volley/_projectile_volley_indicator",
+        "_skillObjectCondition": {
+          "$id": "16",
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      },
+      "_skillObjectOutput": {
+        "$id": "17",
+        "_skillObjectTag": "",
+        "_skillObject": "_skill/_banditskills/_volley/_projectile_volley",
+        "_skillObjectCondition": {
+          "$id": "18",
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      }
+    }
+  ],
+  "_movementSpeedDecrease": -8.65,
+  "_strafeDirection": true,
+  "_groundOnlySkill": false,
+  "_airTimeLockBuffer": 0.0,
+  "_enableAirTimeMod": false,
+  "_lockMoveControlTime": 0.0,
+  "_lockCombatControlTime": 0.35,
+  "_timeBeforeAttackForce": 0.0,
+  "_attackForceApply": 0.0,
+  "_attackForceDampen": 120.0,
+  "_attackForceInputInfluence": false,
+  "_castEffectCollection": null,
+  "_useGlyphEffect": false,
+  "_skillChargeAnimation": "Direct",
+  "_skillCastAnimation": "Direct",
+  "_animChargeSmoothing": 0.1,
+  "_animCastSmoothing": 0.0,
+  "_setSheatheCondition": 1,
+  "_applySheatheCondition": true,
+  "_hideWeapon": false,
+  "name": "skill_volley",
+  "hideFlags": 0
+}

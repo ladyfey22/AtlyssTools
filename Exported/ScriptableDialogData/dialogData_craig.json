@@ -1,1 +1,118 @@
-{"$id":"1","_nameTag":"Craig","_introductionBranches":[{"$id":"2","_dialogIndexTag":"","dialogs":[{"$id":"3","_dialogKey":"","_dialogInput":"Hello my friend...","_altInputs":[],"facepic":"","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[]},{"$id":"4","_dialogKey":"","_dialogInput":"Interested in trading? (Hopefully you got something edible, I'm starving...)","_altInputs":[],"facepic":"","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[{"$id":"5","_selectionCaption":"Some other time.","_selectionIcon":"","_setDialogIndex":-1},{"$id":"6","_selectionCaption":"Sure, let's trade.","_selectionIcon":"_graphic/_ui/_currencyBagIco","_setDialogIndex":1}]}]}],"_dialogBranches":[{"$id":"7","_dialogIndexTag":"Dialog Branch Index #0","dialogs":[{"$id":"8","_dialogKey":"Craig0","_dialogInput":"Hello my friend. Want to trade?","_altInputs":[],"facepic":"","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[{"$id":"9","_selectionCaption":"See ya.","_selectionIcon":"","_setDialogIndex":-1},{"$id":"10","_selectionCaption":"Let's trade!","_selectionIcon":"_graphic/_ui/_currencyBagIco","_setDialogIndex":1}]}]},{"$id":"11","_dialogIndexTag":"Dialog Branch Index #1","dialogs":[{"$id":"12","_dialogKey":"Craig1","_dialogInput":"Okay, what's on the menu?","_altInputs":[],"facepic":"","_npcAnimationTag":"","_dialogUI":2,"_dialogSelections":[{"$id":"13","_selectionCaption":"See ya!","_selectionIcon":"","_setDialogIndex":-1}]}]}],"_scriptableShopkeep":"_prefab/_entity/_npc/_sallyworkers/_craig/shopKeep_craig","_shopkeepResponses":["Hm, thanks much!","Good trade.","Mmm, mhm."],"_shopkeepRejections":["Can't take it.","Not interested, sorry."],"_scriptableQuests":[],"_questAcceptResponses":[],"_questCompleteResponses":[],"_voxSounds":["_sound/dialogsounds/type"],"_voxSpeed":0.12,"name":"dialogData_craig","hideFlags":0}
+{
+  "$id": "1",
+  "_nameTag": "Craig",
+  "_introductionBranches": [
+    {
+      "$id": "2",
+      "_dialogIndexTag": "",
+      "dialogs": [
+        {
+          "$id": "3",
+          "_dialogKey": "",
+          "_dialogInput": "Hello my friend...",
+          "_altInputs": [],
+          "facepic": "",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        },
+        {
+          "$id": "4",
+          "_dialogKey": "",
+          "_dialogInput": "Interested in trading? (Hopefully you got something edible, I'm starving...)",
+          "_altInputs": [],
+          "facepic": "",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": [
+            {
+              "$id": "5",
+              "_selectionCaption": "Some other time.",
+              "_selectionIcon": "",
+              "_setDialogIndex": -1
+            },
+            {
+              "$id": "6",
+              "_selectionCaption": "Sure, let's trade.",
+              "_selectionIcon": "_graphic/_ui/_currencyBagIco",
+              "_setDialogIndex": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_dialogBranches": [
+    {
+      "$id": "7",
+      "_dialogIndexTag": "Dialog Branch Index #0",
+      "dialogs": [
+        {
+          "$id": "8",
+          "_dialogKey": "Craig0",
+          "_dialogInput": "Hello my friend. Want to trade?",
+          "_altInputs": [],
+          "facepic": "",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": [
+            {
+              "$id": "9",
+              "_selectionCaption": "See ya.",
+              "_selectionIcon": "",
+              "_setDialogIndex": -1
+            },
+            {
+              "$id": "10",
+              "_selectionCaption": "Let's trade!",
+              "_selectionIcon": "_graphic/_ui/_currencyBagIco",
+              "_setDialogIndex": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$id": "11",
+      "_dialogIndexTag": "Dialog Branch Index #1",
+      "dialogs": [
+        {
+          "$id": "12",
+          "_dialogKey": "Craig1",
+          "_dialogInput": "Okay, what's on the menu?",
+          "_altInputs": [],
+          "facepic": "",
+          "_npcAnimationTag": "",
+          "_dialogUI": 2,
+          "_dialogSelections": [
+            {
+              "$id": "13",
+              "_selectionCaption": "See ya!",
+              "_selectionIcon": "",
+              "_setDialogIndex": -1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_scriptableShopkeep": "_prefab/_entity/_npc/_sallyworkers/_craig/shopKeep_craig",
+  "_shopkeepResponses": [
+    "Hm, thanks much!",
+    "Good trade.",
+    "Mmm, mhm."
+  ],
+  "_shopkeepRejections": [
+    "Can't take it.",
+    "Not interested, sorry."
+  ],
+  "_scriptableQuests": [],
+  "_questAcceptResponses": [],
+  "_questCompleteResponses": [],
+  "_voxSounds": [
+    "_sound/dialogsounds/type"
+  ],
+  "_voxSpeed": 0.12,
+  "name": "dialogData_craig",
+  "hideFlags": 0
+}

@@ -1,1 +1,491 @@
-{"$id":"1","_itemDrops":[{"$id":"2","_itemTag":"Deathgel Shivs (0.1%)","_item":"_item/01_equipment/02_weapon/00_katars/(lv-6) WEAPON_Deathgel Shivs (Katars)","_dropChance":0.001,"_dropQuantity":1},{"$id":"3","_itemTag":"Iron Chestpiece (0.1%)","_item":"_item/01_equipment/01_armor/02_chest/(lv-6) CHESTPIECE_Iron Chestpiece","_dropChance":0.001,"_dropQuantity":1},{"$id":"4","_itemTag":"Iron Shield (0.1%)","_item":"_item/01_equipment/01_armor/04_shield/(lv-7) SHIELD_Iron Shield","_dropChance":0.001,"_dropQuantity":1},{"$id":"5","_itemTag":"Rugged Cloak (0.1%)","_item":"_item/01_equipment/01_armor/01_cape/(lv-7) CAPE_Rugged Cloak","_dropChance":0.001,"_dropQuantity":1},{"$id":"6","_itemTag":"Journeyman Leggings (0.1%)","_item":"_item/01_equipment/01_armor/03_legs/(lv-8) LEGGINGS_Journeyman Leggings","_dropChance":0.001,"_dropQuantity":1},{"$id":"7","_itemTag":"Sleeper's Robe (0.1%)","_item":"_item/01_equipment/01_armor/02_chest/(lv-11) CHESTPIECE_Sleeper's Robe","_dropChance":0.001,"_dropQuantity":1},{"$id":"8","_itemTag":"Iris Shield (0.1%)","_item":"_item/01_equipment/01_armor/04_shield/(lv-12) SHIELD_Iris Shield","_dropChance":0.001,"_dropQuantity":1},{"$id":"9","_itemTag":"Skill Scroll (Alacrity) (0.1%)","_item":"_item/02_consumable/_skillscroll/(lv-1) SKILLSCROLL_Skill Scroll (Alacrity)","_dropChance":0.001,"_dropQuantity":1},{"$id":"10","_itemTag":"Skill Scroll (Fireball) (0.1%)","_item":"_item/02_consumable/_skillscroll/(lv-1) SKILLSCROLL_Skill Scroll (Fireball)","_dropChance":0.001,"_dropQuantity":1},{"$id":"11","_itemTag":"Skill Scroll (Execute) (0.1%)","_item":"_item/02_consumable/_skillscroll/(lv-1) SKILLSCROLL_Skill Scroll (Execute)","_dropChance":0.001,"_dropQuantity":1},{"$id":"12","_itemTag":"Skill Scroll (Inner Focus) (0.1%)","_item":"_item/02_consumable/_skillscroll/(lv-1) SKILLSCROLL_Skill Scroll (Inner Focus)","_dropChance":0.001,"_dropQuantity":1},{"$id":"13","_itemTag":"Skill Scroll (Siphon Leech) (0.1%)","_item":"_item/02_consumable/_skillscroll/(lv-1) SKILLSCROLL_Skill Scroll (Siphon Leech)","_dropChance":0.001,"_dropQuantity":1},{"$id":"14","_itemTag":"Skill Scroll (Leg Up) (0.1%)","_item":"_item/02_consumable/_skillscroll/(lv-1) SKILLSCROLL_Skill Scroll (Leg Up)","_dropChance":0.001,"_dropQuantity":1},{"$id":"15","_itemTag":"Skill Scroll (Spire) (0.1%)","_item":"_item/02_consumable/_skillscroll/(lv-1) SKILLSCROLL_Skill Scroll (Spire)","_dropChance":0.001,"_dropQuantity":1},{"$id":"16","_itemTag":"Skill Scroll (Spread Shot) (0.1%)","_item":"_item/02_consumable/_skillscroll/(lv-1) SKILLSCROLL_Skill Scroll (Spread Shot)","_dropChance":0.001,"_dropQuantity":1},{"$id":"17","_itemTag":"Skill Scroll (Sturdy) (0.1%)","_item":"_item/02_consumable/_skillscroll/(lv-1) SKILLSCROLL_Skill Scroll (Sturdy)","_dropChance":0.001,"_dropQuantity":1},{"$id":"18","_itemTag":"Demicrypt Buckler (0.1%)","_item":"_item/01_equipment/01_armor/04_shield/(lv-6) SHIELD_Demicrypt Buckler","_dropChance":0.001,"_dropQuantity":1},{"$id":"19","_itemTag":"Stone Greatblade (0.1%)","_item":"_item/01_equipment/02_weapon/03_heavymelee/(lv-10) WEAPON_Stone Greatblade (Heavy Melee)","_dropChance":0.001,"_dropQuantity":1},{"$id":"20","_itemTag":"Runic Katars (0.1%)","_item":"_item/01_equipment/02_weapon/00_katars/(lv-10) WEAPON_Runic Katars (Katars)","_dropChance":0.001,"_dropQuantity":1},{"$id":"21","_itemTag":"Dawn Mace (0.1%)","_item":"_item/01_equipment/02_weapon/02_melee/(lv-10) WEAPON_Dawn Mace (Melee)","_dropChance":0.001,"_dropQuantity":1},{"$id":"22","_itemTag":"Slime Diva Baton (0.1%)","_item":"_item/01_equipment/02_weapon/05_magicscepter/(lv-10) WEAPON_Slime Diva Baton (Magic Scepter)","_dropChance":0.001,"_dropQuantity":1},{"$id":"23","_itemTag":"Silken Top (0.1%)","_item":"_item/01_equipment/01_armor/02_chest/(lv-1) CHESTPIECE_Silken Top","_dropChance":0.001,"_dropQuantity":1},{"$id":"24","_itemTag":"Silken Loincloth (0.1%)","_item":"_item/01_equipment/01_armor/03_legs/(lv-1) LEGGINGS_Silken Loincloth","_dropChance":0.001,"_dropQuantity":1},{"$id":"25","_itemTag":"Wizard Hat (0.1%)","_item":"_item/01_equipment/01_armor/00_helm/_cosmetic/(lv-1) HELM_Wizard Hat","_dropChance":0.001,"_dropQuantity":1},{"$id":"26","_itemTag":"Tome of Lesser Experience (0.1%)","_item":"_item/02_consumable/_status/_tome/(lv-0) STATUSCONSUMABLE_Tome of Lesser Experience","_dropChance":0.001,"_dropQuantity":1},{"$id":"27","_itemTag":"Tome of Greater Experience (0.1%)","_item":"_item/02_consumable/_status/_tome/(lv-0) STATUSCONSUMABLE_Tome of Greater Experience","_dropChance":0.001,"_dropQuantity":1},{"$id":"28","_itemTag":"Bunjar (0.1%)","_item":"_item/02_consumable/_status/(lv-0) STATUSCONSUMABLE_Bunjar","_dropChance":0.001,"_dropQuantity":1},{"$id":"29","_itemTag":"Tome of Naivety (0.1%)","_item":"_item/02_consumable/_status/_tome/(lv-0) STATUSCONSUMABLE_Tome of Naivety","_dropChance":0.001,"_dropQuantity":1},{"$id":"30","_itemTag":"Tome of Unlearning (0.1%)","_item":"_item/02_consumable/_status/_tome/(lv-0) STATUSCONSUMABLE_Tome of Unlearning","_dropChance":0.001,"_dropQuantity":1},{"$id":"31","_itemTag":"Magiclove (0.1%)","_item":"_item/02_consumable/_status/(lv-0) STATUSCONSUMABLE_Magiclove","_dropChance":0.001,"_dropQuantity":1},{"$id":"32","_itemTag":"Bunjar (0.1%)","_item":"_item/02_consumable/_status/(lv-0) STATUSCONSUMABLE_Bunjar","_dropChance":0.001,"_dropQuantity":1},{"$id":"33","_itemTag":"Bunbag (0.1%)","_item":"_item/02_consumable/_status/(lv-0) STATUSCONSUMABLE_Bunbag","_dropChance":0.001,"_dropQuantity":1},{"$id":"34","_itemTag":"Cryptsinge Halberd (0.1%)","_item":"_item/01_equipment/02_weapon/04_polearm/(lv-8) WEAPON_Cryptsinge Halberd (Polearm)","_dropChance":0.001,"_dropQuantity":1},{"$id":"35","_itemTag":"Sapphireweave Ring (0.1%)","_item":"_item/01_equipment/01_armor/05_ring/(lv-7) RING_Sapphireweave Ring","_dropChance":0.001,"_dropQuantity":1},{"$id":"36","_itemTag":"Emeraldfocus Ring (0.1%)","_item":"_item/01_equipment/01_armor/05_ring/(lv-7) RING_Emeraldfocus Ring","_dropChance":0.001,"_dropQuantity":1},{"$id":"37","_itemTag":"Ambersquire Ring (0.1%)","_item":"_item/01_equipment/01_armor/05_ring/(lv-7) RING_Ambersquire Ring","_dropChance":0.001,"_dropQuantity":1},{"$id":"38","_itemTag":"Diva Crown (0.1%)","_item":"_item/01_equipment/01_armor/00_helm/(lv-7) HELM_Diva Crown","_dropChance":0.001,"_dropQuantity":1},{"$id":"39","_itemTag":"Wizard Hat (0.1%)","_item":"_item/01_equipment/01_armor/00_helm/_cosmetic/(lv-1) HELM_Wizard Hat","_dropChance":0.001,"_dropQuantity":1},{"$id":"40","_itemTag":"Dire Helm (0.1%)","_item":"_item/01_equipment/01_armor/00_helm/_cosmetic/(lv-1) HELM_Dire Helm","_dropChance":0.001,"_dropQuantity":1},{"$id":"41","_itemTag":"Acolyte Hood (0.1%)","_item":"_item/01_equipment/01_armor/00_helm/_cosmetic/(lv-1) HELM_Acolyte Hood","_dropChance":0.001,"_dropQuantity":1},{"$id":"42","_itemTag":"Menace Bow (0.1%)","_item":"_item/01_equipment/02_weapon/01_ranged/(lv-12) WEAPON_Menace Bow (Range Weapon)","_dropChance":0.001,"_dropQuantity":1},{"$id":"43","_itemTag":"Illusion Stone (0.1%)","_item":"_item/03_trade/TRADEITEM_Illusion Stone","_dropChance":0.001,"_dropQuantity":1},{"$id":"44","_itemTag":"Noble Shirt (0.1%)","_item":"_item/01_equipment/01_armor/02_chest/(lv-1) CHESTPIECE_Noble Shirt","_dropChance":0.001,"_dropQuantity":1},{"$id":"45","_itemTag":"Noble Pants (0.1%)","_item":"_item/01_equipment/01_armor/03_legs/(lv-1) LEGGINGS_Noble Pants","_dropChance":0.001,"_dropQuantity":1},{"$id":"46","_itemTag":"Soul Pearl (0.1%)","_item":"_item/03_trade/TRADEITEM_Soul Pearl","_dropChance":0.001,"_dropQuantity":1},{"$id":"47","_itemTag":"Angela's Tear (0.1%)","_item":"_item/03_trade/TRADEITEM_Angela's Tear","_dropChance":0.001,"_dropQuantity":1},{"$id":"48","_itemTag":"Stamstar (0.1%)","_item":"_item/02_consumable/_status/(lv-0) STATUSCONSUMABLE_Stamstar","_dropChance":0.001,"_dropQuantity":1},{"$id":"49","_itemTag":"Blue Dye (0.1%)","_item":"_item/02_consumable/_dyes/DYE_Blue Dye","_dropChance":0.001,"_dropQuantity":1},{"$id":"50","_itemTag":"Green Dye (0.1%)","_item":"_item/02_consumable/_dyes/DYE_Green Dye","_dropChance":0.001,"_dropQuantity":1},{"$id":"51","_itemTag":"Grey Dye (0.1%)","_item":"_item/02_consumable/_dyes/DYE_Grey Dye","_dropChance":0.001,"_dropQuantity":1},{"$id":"52","_itemTag":"Red Dye (0.1%)","_item":"_item/02_consumable/_dyes/DYE_Red Dye","_dropChance":0.001,"_dropQuantity":1},{"$id":"53","_itemTag":"Cryptcall Bell (0.1%)","_item":"_item/01_equipment/02_weapon/06_magicbell/(lv-10) WEAPON_Cryptcall Bell (Magic Bell)","_dropChance":0.001,"_dropQuantity":1},{"$id":"54","_itemTag":"Mercenary Vestment (0.1%)","_item":"_item/01_equipment/01_armor/02_chest/(lv-15) CHESTPIECE_Mercenary Vestment","_dropChance":0.001,"_dropQuantity":1},{"$id":"55","_itemTag":"Tattered Battlerobe (0.1%)","_item":"_item/01_equipment/01_armor/02_chest/(lv-10) CHESTPIECE_Tattered Battlerobe","_dropChance":0.001,"_dropQuantity":1},{"$id":"56","_itemTag":"Warrior Chest (0.1%)","_item":"_item/01_equipment/01_armor/02_chest/(lv-10) CHESTPIECE_Warrior Chest","_dropChance":0.001,"_dropQuantity":1},{"$id":"57","_itemTag":"Chainmail Leggings (0.1%)","_item":"_item/01_equipment/01_armor/03_legs/(lv-13) LEGGINGS_Chainmail Leggings","_dropChance":0.001,"_dropQuantity":1},{"$id":"58","_itemTag":"Blightwood Log (0.1%)","_item":"_item/03_trade/TRADEITEM_Blightwood Log","_dropChance":0.001,"_dropQuantity":1},{"$id":"59","_itemTag":"Blightwood Stick (0.1%)","_item":"_item/03_trade/TRADEITEM_Blightwood Stick","_dropChance":0.001,"_dropQuantity":1},{"$id":"60","_itemTag":"Red Minchroom Cap (0.1%)","_item":"_item/03_trade/TRADEITEM_Red Minchroom Cap","_dropChance":0.001,"_dropQuantity":1},{"$id":"61","_itemTag":"Mithril Chestpiece (0.1%)","_item":"_item/01_equipment/01_armor/02_chest/(lv-15) CHESTPIECE_Mithril Chestpiece","_dropChance":0.001,"_dropQuantity":1},{"$id":"62","_itemTag":"Mercenary Leggings (0.1%)","_item":"_item/01_equipment/01_armor/03_legs/(lv-15) LEGGINGS_Mercenary Leggings","_dropChance":0.001,"_dropQuantity":1},{"$id":"63","_itemTag":"Necroroyal Halberd (0.1%)","_item":"_item/01_equipment/02_weapon/04_polearm/(lv-15) WEAPON_Necroroyal Halberd (Polearm)","_dropChance":0.001,"_dropQuantity":1},{"$id":"64","_itemTag":"Orbos Ring (0.1%)","_item":"_item/01_equipment/01_armor/05_ring/(lv-16) RING_Orbos Ring","_dropChance":0.001,"_dropQuantity":1},{"$id":"65","_itemTag":"Might Stone (0.1%)","_item":"_item/03_trade/TRADEITEM_Might Stone","_dropChance":0.001,"_dropQuantity":1},{"$id":"66","_itemTag":"Agility Stone (0.1%)","_item":"_item/03_trade/TRADEITEM_Agility Stone","_dropChance":0.001,"_dropQuantity":1},{"$id":"67","_itemTag":"Flux Stone (0.1%)","_item":"_item/03_trade/TRADEITEM_Flux Stone","_dropChance":0.001,"_dropQuantity":1},{"$id":"68","_itemTag":"Defense Potion (0.1%)","_item":"_item/02_consumable/_status/_potion/(lv-10) STATUSCONSUMABLE_Defense Potion","_dropChance":0.001,"_dropQuantity":1},{"$id":"69","_itemTag":"Evasion Potion (0.1%)","_item":"_item/02_consumable/_status/_potion/(lv-10) STATUSCONSUMABLE_Evasion Potion","_dropChance":0.001,"_dropQuantity":1},{"$id":"70","_itemTag":"Mgk. Defense Potion (0.1%)","_item":"_item/02_consumable/_status/_potion/(lv-10) STATUSCONSUMABLE_Mgk","_dropChance":0.001,"_dropQuantity":1}],"_currencyAmount":0,"name":"lootTable_Skrit_1000Cost_tier00","hideFlags":0}
+{
+  "$id": "1",
+  "_itemDrops": [
+    {
+      "$id": "2",
+      "_itemTag": "Deathgel Shivs (0.1%)",
+      "_item": "_item/01_equipment/02_weapon/00_katars/(lv-6) WEAPON_Deathgel Shivs (Katars)",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "3",
+      "_itemTag": "Iron Chestpiece (0.1%)",
+      "_item": "_item/01_equipment/01_armor/02_chest/(lv-6) CHESTPIECE_Iron Chestpiece",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "4",
+      "_itemTag": "Iron Shield (0.1%)",
+      "_item": "_item/01_equipment/01_armor/04_shield/(lv-7) SHIELD_Iron Shield",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "5",
+      "_itemTag": "Rugged Cloak (0.1%)",
+      "_item": "_item/01_equipment/01_armor/01_cape/(lv-7) CAPE_Rugged Cloak",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "6",
+      "_itemTag": "Journeyman Leggings (0.1%)",
+      "_item": "_item/01_equipment/01_armor/03_legs/(lv-8) LEGGINGS_Journeyman Leggings",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "7",
+      "_itemTag": "Sleeper's Robe (0.1%)",
+      "_item": "_item/01_equipment/01_armor/02_chest/(lv-11) CHESTPIECE_Sleeper's Robe",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "8",
+      "_itemTag": "Iris Shield (0.1%)",
+      "_item": "_item/01_equipment/01_armor/04_shield/(lv-12) SHIELD_Iris Shield",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "9",
+      "_itemTag": "Skill Scroll (Alacrity) (0.1%)",
+      "_item": "_item/02_consumable/_skillscroll/(lv-1) SKILLSCROLL_Skill Scroll (Alacrity)",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "10",
+      "_itemTag": "Skill Scroll (Fireball) (0.1%)",
+      "_item": "_item/02_consumable/_skillscroll/(lv-1) SKILLSCROLL_Skill Scroll (Fireball)",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "11",
+      "_itemTag": "Skill Scroll (Execute) (0.1%)",
+      "_item": "_item/02_consumable/_skillscroll/(lv-1) SKILLSCROLL_Skill Scroll (Execute)",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "12",
+      "_itemTag": "Skill Scroll (Inner Focus) (0.1%)",
+      "_item": "_item/02_consumable/_skillscroll/(lv-1) SKILLSCROLL_Skill Scroll (Inner Focus)",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "13",
+      "_itemTag": "Skill Scroll (Siphon Leech) (0.1%)",
+      "_item": "_item/02_consumable/_skillscroll/(lv-1) SKILLSCROLL_Skill Scroll (Siphon Leech)",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "14",
+      "_itemTag": "Skill Scroll (Leg Up) (0.1%)",
+      "_item": "_item/02_consumable/_skillscroll/(lv-1) SKILLSCROLL_Skill Scroll (Leg Up)",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "15",
+      "_itemTag": "Skill Scroll (Spire) (0.1%)",
+      "_item": "_item/02_consumable/_skillscroll/(lv-1) SKILLSCROLL_Skill Scroll (Spire)",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "16",
+      "_itemTag": "Skill Scroll (Spread Shot) (0.1%)",
+      "_item": "_item/02_consumable/_skillscroll/(lv-1) SKILLSCROLL_Skill Scroll (Spread Shot)",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "17",
+      "_itemTag": "Skill Scroll (Sturdy) (0.1%)",
+      "_item": "_item/02_consumable/_skillscroll/(lv-1) SKILLSCROLL_Skill Scroll (Sturdy)",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "18",
+      "_itemTag": "Demicrypt Buckler (0.1%)",
+      "_item": "_item/01_equipment/01_armor/04_shield/(lv-6) SHIELD_Demicrypt Buckler",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "19",
+      "_itemTag": "Stone Greatblade (0.1%)",
+      "_item": "_item/01_equipment/02_weapon/03_heavymelee/(lv-10) WEAPON_Stone Greatblade (Heavy Melee)",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "20",
+      "_itemTag": "Runic Katars (0.1%)",
+      "_item": "_item/01_equipment/02_weapon/00_katars/(lv-10) WEAPON_Runic Katars (Katars)",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "21",
+      "_itemTag": "Dawn Mace (0.1%)",
+      "_item": "_item/01_equipment/02_weapon/02_melee/(lv-10) WEAPON_Dawn Mace (Melee)",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "22",
+      "_itemTag": "Slime Diva Baton (0.1%)",
+      "_item": "_item/01_equipment/02_weapon/05_magicscepter/(lv-10) WEAPON_Slime Diva Baton (Magic Scepter)",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "23",
+      "_itemTag": "Silken Top (0.1%)",
+      "_item": "_item/01_equipment/01_armor/02_chest/(lv-1) CHESTPIECE_Silken Top",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "24",
+      "_itemTag": "Silken Loincloth (0.1%)",
+      "_item": "_item/01_equipment/01_armor/03_legs/(lv-1) LEGGINGS_Silken Loincloth",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "25",
+      "_itemTag": "Wizard Hat (0.1%)",
+      "_item": "_item/01_equipment/01_armor/00_helm/_cosmetic/(lv-1) HELM_Wizard Hat",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "26",
+      "_itemTag": "Tome of Lesser Experience (0.1%)",
+      "_item": "_item/02_consumable/_status/_tome/(lv-0) STATUSCONSUMABLE_Tome of Lesser Experience",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "27",
+      "_itemTag": "Tome of Greater Experience (0.1%)",
+      "_item": "_item/02_consumable/_status/_tome/(lv-0) STATUSCONSUMABLE_Tome of Greater Experience",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "28",
+      "_itemTag": "Bunjar (0.1%)",
+      "_item": "_item/02_consumable/_status/(lv-0) STATUSCONSUMABLE_Bunjar",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "29",
+      "_itemTag": "Tome of Naivety (0.1%)",
+      "_item": "_item/02_consumable/_status/_tome/(lv-0) STATUSCONSUMABLE_Tome of Naivety",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "30",
+      "_itemTag": "Tome of Unlearning (0.1%)",
+      "_item": "_item/02_consumable/_status/_tome/(lv-0) STATUSCONSUMABLE_Tome of Unlearning",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "31",
+      "_itemTag": "Magiclove (0.1%)",
+      "_item": "_item/02_consumable/_status/(lv-0) STATUSCONSUMABLE_Magiclove",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "32",
+      "_itemTag": "Bunjar (0.1%)",
+      "_item": "_item/02_consumable/_status/(lv-0) STATUSCONSUMABLE_Bunjar",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "33",
+      "_itemTag": "Bunbag (0.1%)",
+      "_item": "_item/02_consumable/_status/(lv-0) STATUSCONSUMABLE_Bunbag",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "34",
+      "_itemTag": "Cryptsinge Halberd (0.1%)",
+      "_item": "_item/01_equipment/02_weapon/04_polearm/(lv-8) WEAPON_Cryptsinge Halberd (Polearm)",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "35",
+      "_itemTag": "Sapphireweave Ring (0.1%)",
+      "_item": "_item/01_equipment/01_armor/05_ring/(lv-7) RING_Sapphireweave Ring",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "36",
+      "_itemTag": "Emeraldfocus Ring (0.1%)",
+      "_item": "_item/01_equipment/01_armor/05_ring/(lv-7) RING_Emeraldfocus Ring",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "37",
+      "_itemTag": "Ambersquire Ring (0.1%)",
+      "_item": "_item/01_equipment/01_armor/05_ring/(lv-7) RING_Ambersquire Ring",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "38",
+      "_itemTag": "Diva Crown (0.1%)",
+      "_item": "_item/01_equipment/01_armor/00_helm/(lv-7) HELM_Diva Crown",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "39",
+      "_itemTag": "Wizard Hat (0.1%)",
+      "_item": "_item/01_equipment/01_armor/00_helm/_cosmetic/(lv-1) HELM_Wizard Hat",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "40",
+      "_itemTag": "Dire Helm (0.1%)",
+      "_item": "_item/01_equipment/01_armor/00_helm/_cosmetic/(lv-1) HELM_Dire Helm",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "41",
+      "_itemTag": "Acolyte Hood (0.1%)",
+      "_item": "_item/01_equipment/01_armor/00_helm/_cosmetic/(lv-1) HELM_Acolyte Hood",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "42",
+      "_itemTag": "Menace Bow (0.1%)",
+      "_item": "_item/01_equipment/02_weapon/01_ranged/(lv-12) WEAPON_Menace Bow (Range Weapon)",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "43",
+      "_itemTag": "Illusion Stone (0.1%)",
+      "_item": "_item/03_trade/TRADEITEM_Illusion Stone",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "44",
+      "_itemTag": "Noble Shirt (0.1%)",
+      "_item": "_item/01_equipment/01_armor/02_chest/(lv-1) CHESTPIECE_Noble Shirt",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "45",
+      "_itemTag": "Noble Pants (0.1%)",
+      "_item": "_item/01_equipment/01_armor/03_legs/(lv-1) LEGGINGS_Noble Pants",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "46",
+      "_itemTag": "Soul Pearl (0.1%)",
+      "_item": "_item/03_trade/TRADEITEM_Soul Pearl",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "47",
+      "_itemTag": "Angela's Tear (0.1%)",
+      "_item": "_item/03_trade/TRADEITEM_Angela's Tear",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "48",
+      "_itemTag": "Stamstar (0.1%)",
+      "_item": "_item/02_consumable/_status/(lv-0) STATUSCONSUMABLE_Stamstar",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "49",
+      "_itemTag": "Blue Dye (0.1%)",
+      "_item": "_item/02_consumable/_dyes/DYE_Blue Dye",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "50",
+      "_itemTag": "Green Dye (0.1%)",
+      "_item": "_item/02_consumable/_dyes/DYE_Green Dye",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "51",
+      "_itemTag": "Grey Dye (0.1%)",
+      "_item": "_item/02_consumable/_dyes/DYE_Grey Dye",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "52",
+      "_itemTag": "Red Dye (0.1%)",
+      "_item": "_item/02_consumable/_dyes/DYE_Red Dye",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "53",
+      "_itemTag": "Cryptcall Bell (0.1%)",
+      "_item": "_item/01_equipment/02_weapon/06_magicbell/(lv-10) WEAPON_Cryptcall Bell (Magic Bell)",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "54",
+      "_itemTag": "Mercenary Vestment (0.1%)",
+      "_item": "_item/01_equipment/01_armor/02_chest/(lv-15) CHESTPIECE_Mercenary Vestment",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "55",
+      "_itemTag": "Tattered Battlerobe (0.1%)",
+      "_item": "_item/01_equipment/01_armor/02_chest/(lv-10) CHESTPIECE_Tattered Battlerobe",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "56",
+      "_itemTag": "Warrior Chest (0.1%)",
+      "_item": "_item/01_equipment/01_armor/02_chest/(lv-10) CHESTPIECE_Warrior Chest",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "57",
+      "_itemTag": "Chainmail Leggings (0.1%)",
+      "_item": "_item/01_equipment/01_armor/03_legs/(lv-13) LEGGINGS_Chainmail Leggings",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "58",
+      "_itemTag": "Blightwood Log (0.1%)",
+      "_item": "_item/03_trade/TRADEITEM_Blightwood Log",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "59",
+      "_itemTag": "Blightwood Stick (0.1%)",
+      "_item": "_item/03_trade/TRADEITEM_Blightwood Stick",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "60",
+      "_itemTag": "Red Minchroom Cap (0.1%)",
+      "_item": "_item/03_trade/TRADEITEM_Red Minchroom Cap",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "61",
+      "_itemTag": "Mithril Chestpiece (0.1%)",
+      "_item": "_item/01_equipment/01_armor/02_chest/(lv-15) CHESTPIECE_Mithril Chestpiece",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "62",
+      "_itemTag": "Mercenary Leggings (0.1%)",
+      "_item": "_item/01_equipment/01_armor/03_legs/(lv-15) LEGGINGS_Mercenary Leggings",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "63",
+      "_itemTag": "Necroroyal Halberd (0.1%)",
+      "_item": "_item/01_equipment/02_weapon/04_polearm/(lv-15) WEAPON_Necroroyal Halberd (Polearm)",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "64",
+      "_itemTag": "Orbos Ring (0.1%)",
+      "_item": "_item/01_equipment/01_armor/05_ring/(lv-16) RING_Orbos Ring",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "65",
+      "_itemTag": "Might Stone (0.1%)",
+      "_item": "_item/03_trade/TRADEITEM_Might Stone",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "66",
+      "_itemTag": "Agility Stone (0.1%)",
+      "_item": "_item/03_trade/TRADEITEM_Agility Stone",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "67",
+      "_itemTag": "Flux Stone (0.1%)",
+      "_item": "_item/03_trade/TRADEITEM_Flux Stone",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "68",
+      "_itemTag": "Defense Potion (0.1%)",
+      "_item": "_item/02_consumable/_status/_potion/(lv-10) STATUSCONSUMABLE_Defense Potion",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "69",
+      "_itemTag": "Evasion Potion (0.1%)",
+      "_item": "_item/02_consumable/_status/_potion/(lv-10) STATUSCONSUMABLE_Evasion Potion",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "70",
+      "_itemTag": "Mgk. Defense Potion (0.1%)",
+      "_item": "_item/02_consumable/_status/_potion/(lv-10) STATUSCONSUMABLE_Mgk",
+      "_dropChance": 0.001,
+      "_dropQuantity": 1
+    }
+  ],
+  "_currencyAmount": 0,
+  "name": "lootTable_Skrit_1000Cost_tier00",
+  "hideFlags": 0
+}

@@ -1,1 +1,377 @@
-{"$id":"1","_weaponTypeName":"Range Weapon","_combatType":1,"_damageWeight":1,"_isRangedWeapon":true,"_allowShield":false,"_canWallKnockback":false,"_maxSwingStates":0,"_movSpeedDecrease":-8.5,"_weaponAttackForce":[0,0,0],"_attackActionBuffer":0.4,"_attackSwingCooldown":0.1,"_maxComboResetBuffer":0.0,"_hitboxTime":0.0,"_damagePercent":1.0,"_hitboxPersistantTime":0.12,"_percentAdjustEachHit":-0.1,"_isHitboxPersistantDamage":false,"_hitboxScale":[0.0,0.0,0.0],"_hitboxCenter":[0.0,0.0,0.0],"_attackMoveForce":0.0,"_attackMoveForceDampen":0.0,"_weaponTypeCombatParams":[{"$id":"2","_paramTag":"Range Weapon lv-0","_allowChargeAttack":false,"_allowJumpAttack":false,"_weaponTypeJumpAttackClipHandle":"","_weaponTypeJumpLandClipHandle":"","_weaponTypeChargeHandle":"","_weaponTypeChargeAttackHandles":[],"_rangedWepSpeed":0.8,"_healthCost":0,"_manaCost":0,"_staminaCost":0,"_timeBeforeJumpAttack":0.0,"_JumpAttackJumpForce":0.0,"_JumpAttackFowardForce":0.0,"_JumpAttackJumpGravityMultiply":0.0,"_jumpDamagePercent":0.0,"_jumpAttackActionBuffer":0.0,"_jumpAtkNoHitStunChance":false,"_jumpAtkPersistantDamage":false,"_persistantDamageRate":0.0,"_jumpAttackColliderCenter":[0.0,0.0,0.0],"_jumpAttackColliderScale":[0.0,0.0,0.0],"_jumpLandDamagePercent":0.0,"_jumpLandForce":0,"_jumpLandDelayTime":0.4,"_jumpAtkLandNoHitStunChance":false,"_jumpAtkLandPersistantDamage":false,"_jumpAtkLandPersistantDamageRate":0.0,"_jumpAtkLandHitboxTime":0.0,"_jumpAttackLandColliderCenter":[0.0,0.0,0.0],"_jumpAttackLandColliderScale":[0.0,0.0,0.0],"_chargeAtkDamagePercent":0.0,"_chargeMovSpeedDecrease":0.0,"_maxChargeIntervals":1,"_chargeInputBuffer":0.4,"_chargeTime":0.6,"_chargeAttackCooldown":0.8,"_chargeAttackActionBuffer":0.8,"_chargeAtkPersistantDamage":false,"_chargeAtkPersistantDamageRate":0.0,"_timeBeforeChargeAttackStrafeRotationLock":0.0,"_chargeAttackStrafeRotationLock":0.0,"_chargeAttackForce":0,"_chargeAttackMoveForce":0.0,"_chargeAttackMoveForceDampen":0.0,"_applyChargeAttackForceOnNoInput":false,"_chargeAttackHitboxTime":0.0,"_chargeAttackColliderCenter":[0.0,0.0,0.0],"_chargeAttackColliderScale":[0.0,0.0,0.0]},{"$id":"3","_paramTag":"Range Weapon lv-1","_allowChargeAttack":false,"_allowJumpAttack":false,"_weaponTypeJumpAttackClipHandle":"","_weaponTypeJumpLandClipHandle":"","_weaponTypeChargeHandle":"","_weaponTypeChargeAttackHandles":[],"_rangedWepSpeed":1.0,"_healthCost":0,"_manaCost":0,"_staminaCost":0,"_timeBeforeJumpAttack":0.0,"_JumpAttackJumpForce":0.0,"_JumpAttackFowardForce":0.0,"_JumpAttackJumpGravityMultiply":0.0,"_jumpDamagePercent":0.0,"_jumpAttackActionBuffer":0.0,"_jumpAtkNoHitStunChance":false,"_jumpAtkPersistantDamage":false,"_persistantDamageRate":0.0,"_jumpAttackColliderCenter":[0.0,0.0,0.0],"_jumpAttackColliderScale":[0.0,0.0,0.0],"_jumpLandDamagePercent":0.0,"_jumpLandForce":0,"_jumpLandDelayTime":0.4,"_jumpAtkLandNoHitStunChance":false,"_jumpAtkLandPersistantDamage":false,"_jumpAtkLandPersistantDamageRate":0.0,"_jumpAtkLandHitboxTime":0.0,"_jumpAttackLandColliderCenter":[0.0,0.0,0.0],"_jumpAttackLandColliderScale":[0.0,0.0,0.0],"_chargeAtkDamagePercent":0.0,"_chargeMovSpeedDecrease":0.0,"_maxChargeIntervals":1,"_chargeInputBuffer":0.4,"_chargeTime":0.6,"_chargeAttackCooldown":0.8,"_chargeAttackActionBuffer":0.8,"_chargeAtkPersistantDamage":false,"_chargeAtkPersistantDamageRate":0.0,"_timeBeforeChargeAttackStrafeRotationLock":0.0,"_chargeAttackStrafeRotationLock":0.0,"_chargeAttackForce":0,"_chargeAttackMoveForce":0.0,"_chargeAttackMoveForceDampen":0.0,"_applyChargeAttackForceOnNoInput":false,"_chargeAttackHitboxTime":0.0,"_chargeAttackColliderCenter":[0.0,0.0,0.0],"_chargeAttackColliderScale":[0.0,0.0,0.0]},{"$id":"4","_paramTag":"Range Weapon lv-2","_allowChargeAttack":false,"_allowJumpAttack":false,"_weaponTypeJumpAttackClipHandle":"","_weaponTypeJumpLandClipHandle":"","_weaponTypeChargeHandle":"","_weaponTypeChargeAttackHandles":[],"_rangedWepSpeed":1.2,"_healthCost":0,"_manaCost":0,"_staminaCost":0,"_timeBeforeJumpAttack":0.0,"_JumpAttackJumpForce":0.0,"_JumpAttackFowardForce":0.0,"_JumpAttackJumpGravityMultiply":0.0,"_jumpDamagePercent":0.0,"_jumpAttackActionBuffer":0.0,"_jumpAtkNoHitStunChance":false,"_jumpAtkPersistantDamage":false,"_persistantDamageRate":0.0,"_jumpAttackColliderCenter":[0.0,0.0,0.0],"_jumpAttackColliderScale":[0.0,0.0,0.0],"_jumpLandDamagePercent":0.0,"_jumpLandForce":0,"_jumpLandDelayTime":0.4,"_jumpAtkLandNoHitStunChance":false,"_jumpAtkLandPersistantDamage":false,"_jumpAtkLandPersistantDamageRate":0.0,"_jumpAtkLandHitboxTime":0.0,"_jumpAttackLandColliderCenter":[0.0,0.0,0.0],"_jumpAttackLandColliderScale":[0.0,0.0,0.0],"_chargeAtkDamagePercent":0.0,"_chargeMovSpeedDecrease":0.0,"_maxChargeIntervals":1,"_chargeInputBuffer":0.4,"_chargeTime":0.6,"_chargeAttackCooldown":0.8,"_chargeAttackActionBuffer":0.8,"_chargeAtkPersistantDamage":false,"_chargeAtkPersistantDamageRate":0.0,"_timeBeforeChargeAttackStrafeRotationLock":0.0,"_chargeAttackStrafeRotationLock":0.0,"_chargeAttackForce":0,"_chargeAttackMoveForce":0.0,"_chargeAttackMoveForceDampen":0.0,"_applyChargeAttackForceOnNoInput":false,"_chargeAttackHitboxTime":0.0,"_chargeAttackColliderCenter":[0.0,0.0,0.0],"_chargeAttackColliderScale":[0.0,0.0,0.0]},{"$id":"5","_paramTag":"Range Weapon lv-3","_allowChargeAttack":true,"_allowJumpAttack":false,"_weaponTypeJumpAttackClipHandle":"","_weaponTypeJumpLandClipHandle":"","_weaponTypeChargeHandle":"bow_charge","_weaponTypeChargeAttackHandles":["bow_chargeAtk"],"_rangedWepSpeed":1.6,"_healthCost":0,"_manaCost":0,"_staminaCost":5,"_timeBeforeJumpAttack":0.0,"_JumpAttackJumpForce":0.0,"_JumpAttackFowardForce":0.0,"_JumpAttackJumpGravityMultiply":0.0,"_jumpDamagePercent":0.0,"_jumpAttackActionBuffer":0.0,"_jumpAtkNoHitStunChance":false,"_jumpAtkPersistantDamage":false,"_persistantDamageRate":0.0,"_jumpAttackColliderCenter":[0.0,0.0,0.0],"_jumpAttackColliderScale":[0.0,0.0,0.0],"_jumpLandDamagePercent":0.0,"_jumpLandForce":0,"_jumpLandDelayTime":0.4,"_jumpAtkLandNoHitStunChance":false,"_jumpAtkLandPersistantDamage":false,"_jumpAtkLandPersistantDamageRate":0.0,"_jumpAtkLandHitboxTime":0.0,"_jumpAttackLandColliderCenter":[0.0,0.0,0.0],"_jumpAttackLandColliderScale":[0.0,0.0,0.0],"_chargeAtkDamagePercent":0.0,"_chargeMovSpeedDecrease":0.0,"_maxChargeIntervals":1,"_chargeInputBuffer":0.4,"_chargeTime":0.6,"_chargeAttackCooldown":0.8,"_chargeAttackActionBuffer":0.8,"_chargeAtkPersistantDamage":false,"_chargeAtkPersistantDamageRate":0.0,"_timeBeforeChargeAttackStrafeRotationLock":0.0,"_chargeAttackStrafeRotationLock":0.0,"_chargeAttackForce":0,"_chargeAttackMoveForce":0.0,"_chargeAttackMoveForceDampen":0.0,"_applyChargeAttackForceOnNoInput":false,"_chargeAttackHitboxTime":0.0,"_chargeAttackColliderCenter":[0.0,0.0,0.0],"_chargeAttackColliderScale":[0.0,0.0,0.0]}],"_weaponTypeSheatheClipHandle":"Hold_bow","_weaponTypeAttackClipHandle":"bow_atk","_smoothBetweenClips":0.0,"_weaponDisplayMode":1,"_weaponChargeEffectPosition":[0.0,0.0,0.0],"_weaponTrailBasePosition":[0.0,0.0,0.0],"_weaponTrailEndPosition":[0.0,0.0,0.0],"_backWeaponIndex":2,"_hidePutAwayWeapon":false,"_lockBoobOnTakeOut":true,"_takeOutWeaponSfx":["_sound/_combat/bow/bow_takeOut"],"_chargeWeaponSfx":["_sound/_combat/scepter/_scepterChargeWeak"],"_weaponSwingSfx":["_sound/_combat/bow/bow_fire01"],"name":"05_weaponType_rangeWeapon","hideFlags":0}
+{
+  "$id": "1",
+  "_weaponTypeName": "Range Weapon",
+  "_combatType": 1,
+  "_damageWeight": 1,
+  "_isRangedWeapon": true,
+  "_allowShield": false,
+  "_canWallKnockback": false,
+  "_maxSwingStates": 0,
+  "_movSpeedDecrease": -8.5,
+  "_weaponAttackForce": [
+    0,
+    0,
+    0
+  ],
+  "_attackActionBuffer": 0.4,
+  "_attackSwingCooldown": 0.1,
+  "_maxComboResetBuffer": 0.0,
+  "_hitboxTime": 0.0,
+  "_damagePercent": 1.0,
+  "_hitboxPersistantTime": 0.12,
+  "_percentAdjustEachHit": -0.1,
+  "_isHitboxPersistantDamage": false,
+  "_hitboxScale": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "_hitboxCenter": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "_attackMoveForce": 0.0,
+  "_attackMoveForceDampen": 0.0,
+  "_weaponTypeCombatParams": [
+    {
+      "$id": "2",
+      "_paramTag": "Range Weapon lv-0",
+      "_allowChargeAttack": false,
+      "_allowJumpAttack": false,
+      "_weaponTypeJumpAttackClipHandle": "",
+      "_weaponTypeJumpLandClipHandle": "",
+      "_weaponTypeChargeHandle": "",
+      "_weaponTypeChargeAttackHandles": [],
+      "_rangedWepSpeed": 0.8,
+      "_healthCost": 0,
+      "_manaCost": 0,
+      "_staminaCost": 0,
+      "_timeBeforeJumpAttack": 0.0,
+      "_JumpAttackJumpForce": 0.0,
+      "_JumpAttackFowardForce": 0.0,
+      "_JumpAttackJumpGravityMultiply": 0.0,
+      "_jumpDamagePercent": 0.0,
+      "_jumpAttackActionBuffer": 0.0,
+      "_jumpAtkNoHitStunChance": false,
+      "_jumpAtkPersistantDamage": false,
+      "_persistantDamageRate": 0.0,
+      "_jumpAttackColliderCenter": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_jumpAttackColliderScale": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_jumpLandDamagePercent": 0.0,
+      "_jumpLandForce": 0,
+      "_jumpLandDelayTime": 0.4,
+      "_jumpAtkLandNoHitStunChance": false,
+      "_jumpAtkLandPersistantDamage": false,
+      "_jumpAtkLandPersistantDamageRate": 0.0,
+      "_jumpAtkLandHitboxTime": 0.0,
+      "_jumpAttackLandColliderCenter": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_jumpAttackLandColliderScale": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_chargeAtkDamagePercent": 0.0,
+      "_chargeMovSpeedDecrease": 0.0,
+      "_maxChargeIntervals": 1,
+      "_chargeInputBuffer": 0.4,
+      "_chargeTime": 0.6,
+      "_chargeAttackCooldown": 0.8,
+      "_chargeAttackActionBuffer": 0.8,
+      "_chargeAtkPersistantDamage": false,
+      "_chargeAtkPersistantDamageRate": 0.0,
+      "_timeBeforeChargeAttackStrafeRotationLock": 0.0,
+      "_chargeAttackStrafeRotationLock": 0.0,
+      "_chargeAttackForce": 0,
+      "_chargeAttackMoveForce": 0.0,
+      "_chargeAttackMoveForceDampen": 0.0,
+      "_applyChargeAttackForceOnNoInput": false,
+      "_chargeAttackHitboxTime": 0.0,
+      "_chargeAttackColliderCenter": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_chargeAttackColliderScale": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "$id": "3",
+      "_paramTag": "Range Weapon lv-1",
+      "_allowChargeAttack": false,
+      "_allowJumpAttack": false,
+      "_weaponTypeJumpAttackClipHandle": "",
+      "_weaponTypeJumpLandClipHandle": "",
+      "_weaponTypeChargeHandle": "",
+      "_weaponTypeChargeAttackHandles": [],
+      "_rangedWepSpeed": 1.0,
+      "_healthCost": 0,
+      "_manaCost": 0,
+      "_staminaCost": 0,
+      "_timeBeforeJumpAttack": 0.0,
+      "_JumpAttackJumpForce": 0.0,
+      "_JumpAttackFowardForce": 0.0,
+      "_JumpAttackJumpGravityMultiply": 0.0,
+      "_jumpDamagePercent": 0.0,
+      "_jumpAttackActionBuffer": 0.0,
+      "_jumpAtkNoHitStunChance": false,
+      "_jumpAtkPersistantDamage": false,
+      "_persistantDamageRate": 0.0,
+      "_jumpAttackColliderCenter": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_jumpAttackColliderScale": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_jumpLandDamagePercent": 0.0,
+      "_jumpLandForce": 0,
+      "_jumpLandDelayTime": 0.4,
+      "_jumpAtkLandNoHitStunChance": false,
+      "_jumpAtkLandPersistantDamage": false,
+      "_jumpAtkLandPersistantDamageRate": 0.0,
+      "_jumpAtkLandHitboxTime": 0.0,
+      "_jumpAttackLandColliderCenter": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_jumpAttackLandColliderScale": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_chargeAtkDamagePercent": 0.0,
+      "_chargeMovSpeedDecrease": 0.0,
+      "_maxChargeIntervals": 1,
+      "_chargeInputBuffer": 0.4,
+      "_chargeTime": 0.6,
+      "_chargeAttackCooldown": 0.8,
+      "_chargeAttackActionBuffer": 0.8,
+      "_chargeAtkPersistantDamage": false,
+      "_chargeAtkPersistantDamageRate": 0.0,
+      "_timeBeforeChargeAttackStrafeRotationLock": 0.0,
+      "_chargeAttackStrafeRotationLock": 0.0,
+      "_chargeAttackForce": 0,
+      "_chargeAttackMoveForce": 0.0,
+      "_chargeAttackMoveForceDampen": 0.0,
+      "_applyChargeAttackForceOnNoInput": false,
+      "_chargeAttackHitboxTime": 0.0,
+      "_chargeAttackColliderCenter": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_chargeAttackColliderScale": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "$id": "4",
+      "_paramTag": "Range Weapon lv-2",
+      "_allowChargeAttack": false,
+      "_allowJumpAttack": false,
+      "_weaponTypeJumpAttackClipHandle": "",
+      "_weaponTypeJumpLandClipHandle": "",
+      "_weaponTypeChargeHandle": "",
+      "_weaponTypeChargeAttackHandles": [],
+      "_rangedWepSpeed": 1.2,
+      "_healthCost": 0,
+      "_manaCost": 0,
+      "_staminaCost": 0,
+      "_timeBeforeJumpAttack": 0.0,
+      "_JumpAttackJumpForce": 0.0,
+      "_JumpAttackFowardForce": 0.0,
+      "_JumpAttackJumpGravityMultiply": 0.0,
+      "_jumpDamagePercent": 0.0,
+      "_jumpAttackActionBuffer": 0.0,
+      "_jumpAtkNoHitStunChance": false,
+      "_jumpAtkPersistantDamage": false,
+      "_persistantDamageRate": 0.0,
+      "_jumpAttackColliderCenter": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_jumpAttackColliderScale": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_jumpLandDamagePercent": 0.0,
+      "_jumpLandForce": 0,
+      "_jumpLandDelayTime": 0.4,
+      "_jumpAtkLandNoHitStunChance": false,
+      "_jumpAtkLandPersistantDamage": false,
+      "_jumpAtkLandPersistantDamageRate": 0.0,
+      "_jumpAtkLandHitboxTime": 0.0,
+      "_jumpAttackLandColliderCenter": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_jumpAttackLandColliderScale": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_chargeAtkDamagePercent": 0.0,
+      "_chargeMovSpeedDecrease": 0.0,
+      "_maxChargeIntervals": 1,
+      "_chargeInputBuffer": 0.4,
+      "_chargeTime": 0.6,
+      "_chargeAttackCooldown": 0.8,
+      "_chargeAttackActionBuffer": 0.8,
+      "_chargeAtkPersistantDamage": false,
+      "_chargeAtkPersistantDamageRate": 0.0,
+      "_timeBeforeChargeAttackStrafeRotationLock": 0.0,
+      "_chargeAttackStrafeRotationLock": 0.0,
+      "_chargeAttackForce": 0,
+      "_chargeAttackMoveForce": 0.0,
+      "_chargeAttackMoveForceDampen": 0.0,
+      "_applyChargeAttackForceOnNoInput": false,
+      "_chargeAttackHitboxTime": 0.0,
+      "_chargeAttackColliderCenter": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_chargeAttackColliderScale": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "$id": "5",
+      "_paramTag": "Range Weapon lv-3",
+      "_allowChargeAttack": true,
+      "_allowJumpAttack": false,
+      "_weaponTypeJumpAttackClipHandle": "",
+      "_weaponTypeJumpLandClipHandle": "",
+      "_weaponTypeChargeHandle": "bow_charge",
+      "_weaponTypeChargeAttackHandles": [
+        "bow_chargeAtk"
+      ],
+      "_rangedWepSpeed": 1.6,
+      "_healthCost": 0,
+      "_manaCost": 0,
+      "_staminaCost": 5,
+      "_timeBeforeJumpAttack": 0.0,
+      "_JumpAttackJumpForce": 0.0,
+      "_JumpAttackFowardForce": 0.0,
+      "_JumpAttackJumpGravityMultiply": 0.0,
+      "_jumpDamagePercent": 0.0,
+      "_jumpAttackActionBuffer": 0.0,
+      "_jumpAtkNoHitStunChance": false,
+      "_jumpAtkPersistantDamage": false,
+      "_persistantDamageRate": 0.0,
+      "_jumpAttackColliderCenter": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_jumpAttackColliderScale": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_jumpLandDamagePercent": 0.0,
+      "_jumpLandForce": 0,
+      "_jumpLandDelayTime": 0.4,
+      "_jumpAtkLandNoHitStunChance": false,
+      "_jumpAtkLandPersistantDamage": false,
+      "_jumpAtkLandPersistantDamageRate": 0.0,
+      "_jumpAtkLandHitboxTime": 0.0,
+      "_jumpAttackLandColliderCenter": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_jumpAttackLandColliderScale": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_chargeAtkDamagePercent": 0.0,
+      "_chargeMovSpeedDecrease": 0.0,
+      "_maxChargeIntervals": 1,
+      "_chargeInputBuffer": 0.4,
+      "_chargeTime": 0.6,
+      "_chargeAttackCooldown": 0.8,
+      "_chargeAttackActionBuffer": 0.8,
+      "_chargeAtkPersistantDamage": false,
+      "_chargeAtkPersistantDamageRate": 0.0,
+      "_timeBeforeChargeAttackStrafeRotationLock": 0.0,
+      "_chargeAttackStrafeRotationLock": 0.0,
+      "_chargeAttackForce": 0,
+      "_chargeAttackMoveForce": 0.0,
+      "_chargeAttackMoveForceDampen": 0.0,
+      "_applyChargeAttackForceOnNoInput": false,
+      "_chargeAttackHitboxTime": 0.0,
+      "_chargeAttackColliderCenter": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_chargeAttackColliderScale": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "_weaponTypeSheatheClipHandle": "Hold_bow",
+  "_weaponTypeAttackClipHandle": "bow_atk",
+  "_smoothBetweenClips": 0.0,
+  "_weaponDisplayMode": 1,
+  "_weaponChargeEffectPosition": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "_weaponTrailBasePosition": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "_weaponTrailEndPosition": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "_backWeaponIndex": 2,
+  "_hidePutAwayWeapon": false,
+  "_lockBoobOnTakeOut": true,
+  "_takeOutWeaponSfx": [
+    "_sound/_combat/bow/bow_takeOut"
+  ],
+  "_chargeWeaponSfx": [
+    "_sound/_combat/scepter/_scepterChargeWeak"
+  ],
+  "_weaponSwingSfx": [
+    "_sound/_combat/bow/bow_fire01"
+  ],
+  "name": "05_weaponType_rangeWeapon",
+  "hideFlags": 0
+}

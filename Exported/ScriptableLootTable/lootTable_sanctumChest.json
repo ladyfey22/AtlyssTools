@@ -1,1 +1,57 @@
-{"$id":"1","_itemDrops":[{"$id":"2","_itemTag":"Bunhost Garb (83.1%)","_item":"_item/01_equipment/01_armor/02_chest/(lv-1) CHESTPIECE_Bunhost Garb","_dropChance":0.831,"_dropQuantity":1},{"$id":"3","_itemTag":"Bunhost Leggings (77.2%)","_item":"_item/01_equipment/01_armor/03_legs/(lv-1) LEGGINGS_Bunhost Leggings","_dropChance":0.772,"_dropQuantity":1},{"$id":"4","_itemTag":"Tome of Lesser Experience (31.2%)","_item":"_item/02_consumable/_status/_tome/(lv-0) STATUSCONSUMABLE_Tome of Lesser Experience","_dropChance":0.312,"_dropQuantity":1},{"$id":"5","_itemTag":"Blue Dye (20.6%)","_item":"_item/02_consumable/_dyes/DYE_Blue Dye","_dropChance":0.206,"_dropQuantity":1},{"$id":"6","_itemTag":"Tome of Naivety (3.3%)","_item":"_item/02_consumable/_status/_tome/(lv-0) STATUSCONSUMABLE_Tome of Naivety","_dropChance":0.033,"_dropQuantity":1},{"$id":"7","_itemTag":"Tome of Unlearning (6.9%)","_item":"_item/02_consumable/_status/_tome/(lv-0) STATUSCONSUMABLE_Tome of Unlearning","_dropChance":0.069,"_dropQuantity":1},{"$id":"8","_itemTag":"Illusion Stone (2.1%)","_item":"_item/03_trade/TRADEITEM_Illusion Stone","_dropChance":0.021,"_dropQuantity":1}],"_currencyAmount":0,"name":"lootTable_sanctumChest","hideFlags":0}
+{
+  "$id": "1",
+  "_itemDrops": [
+    {
+      "$id": "2",
+      "_itemTag": "Bunhost Garb (83.1%)",
+      "_item": "_item/01_equipment/01_armor/02_chest/(lv-1) CHESTPIECE_Bunhost Garb",
+      "_dropChance": 0.831,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "3",
+      "_itemTag": "Bunhost Leggings (77.2%)",
+      "_item": "_item/01_equipment/01_armor/03_legs/(lv-1) LEGGINGS_Bunhost Leggings",
+      "_dropChance": 0.772,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "4",
+      "_itemTag": "Tome of Lesser Experience (31.2%)",
+      "_item": "_item/02_consumable/_status/_tome/(lv-0) STATUSCONSUMABLE_Tome of Lesser Experience",
+      "_dropChance": 0.312,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "5",
+      "_itemTag": "Blue Dye (20.6%)",
+      "_item": "_item/02_consumable/_dyes/DYE_Blue Dye",
+      "_dropChance": 0.206,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "6",
+      "_itemTag": "Tome of Naivety (3.3%)",
+      "_item": "_item/02_consumable/_status/_tome/(lv-0) STATUSCONSUMABLE_Tome of Naivety",
+      "_dropChance": 0.033,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "7",
+      "_itemTag": "Tome of Unlearning (6.9%)",
+      "_item": "_item/02_consumable/_status/_tome/(lv-0) STATUSCONSUMABLE_Tome of Unlearning",
+      "_dropChance": 0.069,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "8",
+      "_itemTag": "Illusion Stone (2.1%)",
+      "_item": "_item/03_trade/TRADEITEM_Illusion Stone",
+      "_dropChance": 0.021,
+      "_dropQuantity": 1
+    }
+  ],
+  "_currencyAmount": 0,
+  "name": "lootTable_sanctumChest",
+  "hideFlags": 0
+}

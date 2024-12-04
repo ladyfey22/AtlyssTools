@@ -1,1 +1,114 @@
-{"$id":"1","_creepName":"Tar Spawn","_creepObject":"_prefab/_entity/_creep/_creepdirectory/_creep_slime/_creepObject_tarSpawn","_creepLevel":3,"_unkillable":false,"_creepStatStruct":{"$id":"2","_maxHealth":3,"_maxMana":0,"_maxStamina":0,"_experience":0,"_attackPower":0,"_dexPower":0,"_magicPower":0,"_criticalRate":0.0,"_magicCriticalRate":0.0,"_defense":5,"_magicDefense":3,"_evasion":0.016},"_creepDamageType":0,"_combatElement":null,"_baseDamage":4,"_canParry":true,"_selfApplyConditions":[],"_conditionDampenSlots":[],"_basePainStateChance":185,"_hitStunBuffer":1.15,"_parryStunMod":0.0,"_faceTargetWhenHurt":true,"_immuneToKnockback":false,"_creepAssistType":0,"_canAggro":true,"_dontFollowAggroTarget":false,"_playMapInstanceActionMusic":false,"_levelDifferenceToIgnore":0,"_awarenessChance":45,"_currencyDropBonus":0,"_itemDrops":[],"_makeKinematicOnDeath":false,"_alwaysKinematic":false,"_ignoreGravity":false,"_pathfindParams":{"$id":"3","_movementSpeed":1.5,"_stoppingDistance":12.85,"_wanderingPathfinder":true,"_wanderingRadius":45.5,"_wanderResetFloor":2.5,"_wanderResetCeiling":12.85,"_heightJumpForce":100.0,"_heightJumpForwardForce":45.5,"_disableHeightJump":false,"_ledgeJumpForce":58.0,"_ledgeJumpForwardForce":20.0},"_generalCreepVisual":{"$id":"4","_creepVisualScale":1.2,"_shadowProjectionScale":2.0,"_deathAnimDespawnTime":1.67,"_showHealthBar":true,"_healthBarYPosition":6.0,"_healthBarSize":[1.2,1.21,1.0],"_targeterOffset":2.5,"_lockonArrowOffset":10.0,"_aggroiconYPosition":6.5,"_bloodEffectSize":1.0,"_gibEffectSize":1.0,"_canGib":true,"_creepBloodColor":[0.549019635,0.7058824,0.9725491,1.0],"_creepBloodSubColor":[0.470588267,0.5686275,0.8980393,0.45],"_creepGibColor":[0.4901961,0.607843161,0.9176471,1.0],"_creepGibSubColor":[0.4039216,0.447058856,0.8313726,1.0]},"_generalCreepAudio":{"$id":"5","_dynamicAudioPitch":1.24,"_attackSfx":["_sound/_creep/slime/_creepSfx_slimeAtk1","_sound/_creep/slime/_creepSfx_slimeAtk2","_sound/_creep/slime/_creepSfx_slimeAtk3"],"_painSfx":"_sound/_creep/slime/_creepSfx_slimeHurt","_deathSfx":"_sound/_creep/slime/_creepSfx_slimeDeath"},"name":"(lv-3) CREEP_Tar Spawn","hideFlags":0}
+{
+  "$id": "1",
+  "_creepName": "Tar Spawn",
+  "_creepObject": "_prefab/_entity/_creep/_creepdirectory/_creep_slime/_creepObject_tarSpawn",
+  "_creepLevel": 3,
+  "_unkillable": false,
+  "_creepStatStruct": {
+    "$id": "2",
+    "_maxHealth": 3,
+    "_maxMana": 0,
+    "_maxStamina": 0,
+    "_experience": 0,
+    "_attackPower": 0,
+    "_dexPower": 0,
+    "_magicPower": 0,
+    "_criticalRate": 0.0,
+    "_magicCriticalRate": 0.0,
+    "_defense": 5,
+    "_magicDefense": 3,
+    "_evasion": 0.016
+  },
+  "_creepDamageType": 0,
+  "_combatElement": null,
+  "_baseDamage": 4,
+  "_canParry": true,
+  "_selfApplyConditions": [],
+  "_conditionDampenSlots": [],
+  "_basePainStateChance": 185,
+  "_hitStunBuffer": 1.15,
+  "_parryStunMod": 0.0,
+  "_faceTargetWhenHurt": true,
+  "_immuneToKnockback": false,
+  "_creepAssistType": 0,
+  "_canAggro": true,
+  "_dontFollowAggroTarget": false,
+  "_playMapInstanceActionMusic": false,
+  "_levelDifferenceToIgnore": 0,
+  "_awarenessChance": 45,
+  "_currencyDropBonus": 0,
+  "_itemDrops": [],
+  "_makeKinematicOnDeath": false,
+  "_alwaysKinematic": false,
+  "_ignoreGravity": false,
+  "_pathfindParams": {
+    "$id": "3",
+    "_movementSpeed": 1.5,
+    "_stoppingDistance": 12.85,
+    "_wanderingPathfinder": true,
+    "_wanderingRadius": 45.5,
+    "_wanderResetFloor": 2.5,
+    "_wanderResetCeiling": 12.85,
+    "_heightJumpForce": 100.0,
+    "_heightJumpForwardForce": 45.5,
+    "_disableHeightJump": false,
+    "_ledgeJumpForce": 58.0,
+    "_ledgeJumpForwardForce": 20.0
+  },
+  "_generalCreepVisual": {
+    "$id": "4",
+    "_creepVisualScale": 1.2,
+    "_shadowProjectionScale": 2.0,
+    "_deathAnimDespawnTime": 1.67,
+    "_showHealthBar": true,
+    "_healthBarYPosition": 6.0,
+    "_healthBarSize": [
+      1.2,
+      1.21,
+      1.0
+    ],
+    "_targeterOffset": 2.5,
+    "_lockonArrowOffset": 10.0,
+    "_aggroiconYPosition": 6.5,
+    "_bloodEffectSize": 1.0,
+    "_gibEffectSize": 1.0,
+    "_canGib": true,
+    "_creepBloodColor": [
+      0.549019635,
+      0.7058824,
+      0.9725491,
+      1.0
+    ],
+    "_creepBloodSubColor": [
+      0.470588267,
+      0.5686275,
+      0.8980393,
+      0.45
+    ],
+    "_creepGibColor": [
+      0.4901961,
+      0.607843161,
+      0.9176471,
+      1.0
+    ],
+    "_creepGibSubColor": [
+      0.4039216,
+      0.447058856,
+      0.8313726,
+      1.0
+    ]
+  },
+  "_generalCreepAudio": {
+    "$id": "5",
+    "_dynamicAudioPitch": 1.24,
+    "_attackSfx": [
+      "_sound/_creep/slime/_creepSfx_slimeAtk1",
+      "_sound/_creep/slime/_creepSfx_slimeAtk2",
+      "_sound/_creep/slime/_creepSfx_slimeAtk3"
+    ],
+    "_painSfx": "_sound/_creep/slime/_creepSfx_slimeHurt",
+    "_deathSfx": "_sound/_creep/slime/_creepSfx_slimeDeath"
+  },
+  "name": "(lv-3) CREEP_Tar Spawn",
+  "hideFlags": 0
+}

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using AtlyssTools.Registries;
 using AtlyssTools.Utility;
 using BepInEx;
@@ -119,7 +120,7 @@ public class AtlyssToolsLoader
             string path = ModPath + "/Assets/" + typeof(T).Name;
             if (!Directory.Exists(path))
             {
-                Plugin.Logger.LogError($"Failed to load {typeof(T).Name} from {ModId}. Path {path} does not exist");
+                // skip if the directory doesn't exist
                 return;
             }
 
@@ -139,23 +140,23 @@ public class AtlyssToolsLoader
         {
             typeof(ScriptableCondition)
         };
-        
-        private static List<System.Type> ConcreteType = new List<System.Type>()
-        {
+
+        private static readonly List<System.Type> ConcreteType =
+        [
             typeof(ScriptableStatusCondition),
             typeof(ScriptableSceneTransferCondition),
-            typeof(ScriptablePolymorphCondition),
-        };
-        
+            typeof(ScriptablePolymorphCondition)
+        ];
+
         private T LoadJsonObject<T>(string path) where T : Object
         {
-            if(string.IsNullOrEmpty(path))
+            if (string.IsNullOrEmpty(path))
             {
                 return null;
-            }           
-            
+            }
+
             System.Type type = typeof(T);
-            
+
             // if this is a non-concrete type, we need to check the json for the type
             if (NonConcreteType.Contains(type))
             {
@@ -176,13 +177,13 @@ public class AtlyssToolsLoader
                         break;
                     }
                 }
-                
+
                 if (type == typeof(T))
                 {
                     return null;
                 }
             }
-            
+
             // check if the dictionary already has typeof(T). if not, add it
             if (!_scriptableObjects.ContainsKey(type))
             {
@@ -226,6 +227,7 @@ public class AtlyssToolsLoader
 
             ((List<T>)_scriptableObjects[typeof(T)]).Add(obj);
             PathToAsset.Add(path, obj);
+
             return obj;
         }
 
@@ -240,7 +242,7 @@ public class AtlyssToolsLoader
                     return obj;
                 }
             }
-            
+
             // check if T is a scriptable object
             if (typeof(T).IsSubclassOf(typeof(ScriptableObject)) || typeof(T) == typeof(ScriptableObject))
             {
@@ -250,7 +252,7 @@ public class AtlyssToolsLoader
                     return obj;
                 }
             }
-            
+
             return null;
         }
     }
@@ -308,23 +310,36 @@ public class AtlyssToolsLoader
 
     private readonly Dictionary<System.Type, BaseScriptablesManager> _managers;
 
+    public void RegisterManagers()
+    {
+        List<BaseScriptablesManager> managers =
+        [
+            StatusConditionManager.Instance, SceneTransferConditionManager.Instance, PolymorphConditionManager.Instance,
+            ChestpieceManager.Instance, ArmorDyeManager.Instance, CapeManager.Instance, ClassTomeManager.Instance,
+            HelmManager.Instance, LeggingsManager.Instance, RingManager.Instance, ShieldManager.Instance,
+            SkillScrollManager.Instance, StatusConsumableManager.Instance, TradeItemManager.Instance,
+            WeaponManager.Instance,
+            CreepManager.Instance, QuestManager.Instance, PlayerRaceManager.Instance, CombatElementManager.Instance,
+            StatModifierManager.Instance, PlayerBaseClassManager.Instance, SkillManager.Instance,
+            ArmorRenderManager.Instance, Registries.ShopkeepManager.Instance,
+        ];
+
+        foreach (var manager in managers)
+        {
+            _managers.Add(manager.GetObjectType(), manager);
+            _stateMachine.RegisterManager(manager.GetStateManager());
+        }
+    }
+
+
     AtlyssToolsLoader()
     {
-        _managers = new()
-        {
-            { typeof(ScriptableSkill), SkillManager.Instance },
-            { typeof(ScriptableStatusCondition), StatusConditionManager.Instance },
-            { typeof(ScriptablePlayerBaseClass), ClassManager.Instance }
-        };
-        // register the managers state machines
-        foreach (var manager in _managers)
-        {
-            _stateMachine.RegisterManager(manager.Value.GetStateManager());
-        }
+        _managers = new();
+        RegisterManagers();
 
         _stateMachine.RegisterManager(new AtlyssLoaderStateManager());
     }
-    
+
     public BaseScriptablesManager GetManager(System.Type type)
     {
         if (_managers.TryGetValue(type, out var manager))
@@ -413,7 +428,7 @@ public class AtlyssToolsLoader
         {
             return null;
         }
-        
+
         // replace \\ with / for windows
         assetName = assetName.Replace("\\", "/");
 

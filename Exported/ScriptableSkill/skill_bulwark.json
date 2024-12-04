@@ -1,1 +1,217 @@
-{"$id":"1","_skillName":"Bulwark","_skillIcon":"_graphic/_ui/_skillicons/_abIco33","_skillControlType":3,"_skillDamageType":0,"_skillDescription":"Bolsters the defensive strength of the Fighter.","_allowAsBonusSkill":false,"_weaponTypeRequirements":[],"_requireShield":false,"_baseSkillPower":0,"_skillRankParams":{"$id":"2","_baseLevelRequirement":10,"_baseManaCost":1,"_baseHealthCost":0,"_baseStaminaCost":0,"_isGreaterThanCost":false,"_castOnNoConditionOnly":false,"_isUninterruptable":false,"_baseRequiredItem":null,"_basedItemCost":0,"_baseCastTime":0.85,"_baseCooldown":1.25,"_baseSkillPowerPercent":1.0,"_skillLevelRequirementPerLevel":1,"_skillLevelRequirementChange":2,"_skillCostChangePerLevel":0,"_skillCostChange":0,"_skillCastTimePerLevel":0,"_skillCastTimeChange":0.0,"_skillCooldownPerLevel":0,"_skillCooldownChange":0.0,"_skillPowerPercentPerLevel":0,"_skillPowerPercentChange":0.0},"_skillRanks":[{"$id":"3","_rankTag":"Bulwark (Rank 1)","_levelRequirement":10,"_manaCost":1,"_healthCost":0,"_staminaCost":0,"_greaterThanCost":false,"_requiredItem":null,"_requiredItemQuantity":0,"_castTime":0.85,"_coolDown":1.25,"_skillPowerPercent":1.0,"_attackPowerModRef":0.0,"_magicPowerModRef":0.0,"_rangePowerModRef":0.0,"_rankDescriptor":"Decreases Stamina cost from getting hit while blocking by <color=yellow>15%.</color>","_selfConditionOutput":null,"_earlySkillObjectOutput":{"$id":"4","_skillObjectTag":"","_skillObject":"","_skillObjectCondition":{"$id":"5","_scriptableCondition":null,"_chance":1.0}},"_skillObjectOutput":{"$id":"6","_skillObjectTag":"","_skillObject":"_skill/_fighterskills/00_passive/_bulwark/_skillObject_bulwark_rank01","_skillObjectCondition":{"$id":"7","_scriptableCondition":null,"_chance":1.0}}},{"$id":"8","_rankTag":"Bulwark (Rank 2)","_levelRequirement":12,"_manaCost":1,"_healthCost":0,"_staminaCost":0,"_greaterThanCost":false,"_requiredItem":null,"_requiredItemQuantity":0,"_castTime":0.85,"_coolDown":1.25,"_skillPowerPercent":1.0,"_attackPowerModRef":0.0,"_magicPowerModRef":0.0,"_rangePowerModRef":0.0,"_rankDescriptor":"Decreases Stamina cost from getting hit while blocking by <color=yellow>25%.</color>","_selfConditionOutput":null,"_earlySkillObjectOutput":{"$id":"9","_skillObjectTag":"","_skillObject":"","_skillObjectCondition":{"$id":"10","_scriptableCondition":null,"_chance":1.0}},"_skillObjectOutput":{"$id":"11","_skillObjectTag":"","_skillObject":"_skill/_fighterskills/00_passive/_bulwark/_skillObject_bulwark_rank02","_skillObjectCondition":{"$id":"12","_scriptableCondition":null,"_chance":1.0}}},{"$id":"13","_rankTag":"Bulwark (Rank 3)","_levelRequirement":14,"_manaCost":1,"_healthCost":0,"_staminaCost":0,"_greaterThanCost":false,"_requiredItem":null,"_requiredItemQuantity":0,"_castTime":0.85,"_coolDown":1.25,"_skillPowerPercent":1.0,"_attackPowerModRef":0.0,"_magicPowerModRef":0.0,"_rangePowerModRef":0.0,"_rankDescriptor":"Decreases Stamina cost from getting hit while blocking by <color=yellow>50%.</color>","_selfConditionOutput":null,"_earlySkillObjectOutput":{"$id":"14","_skillObjectTag":"","_skillObject":"","_skillObjectCondition":{"$id":"15","_scriptableCondition":null,"_chance":1.0}},"_skillObjectOutput":{"$id":"16","_skillObjectTag":"","_skillObject":"_skill/_fighterskills/00_passive/_bulwark/_skillObject_bulwark_rank03","_skillObjectCondition":{"$id":"17","_scriptableCondition":null,"_chance":1.0}}},{"$id":"18","_rankTag":"Bulwark (Rank 4)","_levelRequirement":16,"_manaCost":1,"_healthCost":0,"_staminaCost":0,"_greaterThanCost":false,"_requiredItem":null,"_requiredItemQuantity":0,"_castTime":0.85,"_coolDown":1.25,"_skillPowerPercent":1.0,"_attackPowerModRef":0.0,"_magicPowerModRef":0.0,"_rangePowerModRef":0.0,"_rankDescriptor":"Decreases Stamina cost from getting hit while blocking by <color=yellow>60%.</color>\n\nParry window and stagger time on targets increased by <color=yellow>0.4 seconds.</color>","_selfConditionOutput":null,"_earlySkillObjectOutput":{"$id":"19","_skillObjectTag":"","_skillObject":"","_skillObjectCondition":{"$id":"20","_scriptableCondition":null,"_chance":1.0}},"_skillObjectOutput":{"$id":"21","_skillObjectTag":"","_skillObject":"_skill/_fighterskills/00_passive/_bulwark/_skillObject_bulwark_rank04","_skillObjectCondition":{"$id":"22","_scriptableCondition":null,"_chance":1.0}}}],"_movementSpeedDecrease":-8.65,"_strafeDirection":false,"_groundOnlySkill":false,"_airTimeLockBuffer":0.0,"_enableAirTimeMod":false,"_lockMoveControlTime":0.0,"_lockCombatControlTime":0.35,"_timeBeforeAttackForce":0.0,"_attackForceApply":0.0,"_attackForceDampen":120.0,"_attackForceInputInfluence":false,"_castEffectCollection":null,"_useGlyphEffect":true,"_skillChargeAnimation":"Direct","_skillCastAnimation":"Direct","_animChargeSmoothing":0.1,"_animCastSmoothing":0.0,"_setSheatheCondition":0,"_applySheatheCondition":false,"_hideWeapon":true,"name":"skill_bulwark","hideFlags":0}
+{
+  "$id": "1",
+  "_skillName": "Bulwark",
+  "_skillIcon": "_graphic/_ui/_skillicons/_abIco33",
+  "_skillControlType": 3,
+  "_skillDamageType": 0,
+  "_skillDescription": "Bolsters the defensive strength of the Fighter.",
+  "_allowAsBonusSkill": false,
+  "_weaponTypeRequirements": [],
+  "_requireShield": false,
+  "_baseSkillPower": 0,
+  "_skillRankParams": {
+    "$id": "2",
+    "_baseLevelRequirement": 10,
+    "_baseManaCost": 1,
+    "_baseHealthCost": 0,
+    "_baseStaminaCost": 0,
+    "_isGreaterThanCost": false,
+    "_castOnNoConditionOnly": false,
+    "_isUninterruptable": false,
+    "_baseRequiredItem": null,
+    "_basedItemCost": 0,
+    "_baseCastTime": 0.85,
+    "_baseCooldown": 1.25,
+    "_baseSkillPowerPercent": 1.0,
+    "_skillLevelRequirementPerLevel": 1,
+    "_skillLevelRequirementChange": 2,
+    "_skillCostChangePerLevel": 0,
+    "_skillCostChange": 0,
+    "_skillCastTimePerLevel": 0,
+    "_skillCastTimeChange": 0.0,
+    "_skillCooldownPerLevel": 0,
+    "_skillCooldownChange": 0.0,
+    "_skillPowerPercentPerLevel": 0,
+    "_skillPowerPercentChange": 0.0
+  },
+  "_skillRanks": [
+    {
+      "$id": "3",
+      "_rankTag": "Bulwark (Rank 1)",
+      "_levelRequirement": 10,
+      "_manaCost": 1,
+      "_healthCost": 0,
+      "_staminaCost": 0,
+      "_greaterThanCost": false,
+      "_requiredItem": null,
+      "_requiredItemQuantity": 0,
+      "_castTime": 0.85,
+      "_coolDown": 1.25,
+      "_skillPowerPercent": 1.0,
+      "_attackPowerModRef": 0.0,
+      "_magicPowerModRef": 0.0,
+      "_rangePowerModRef": 0.0,
+      "_rankDescriptor": "Decreases Stamina cost from getting hit while blocking by <color=yellow>15%.</color>",
+      "_selfConditionOutput": null,
+      "_earlySkillObjectOutput": {
+        "$id": "4",
+        "_skillObjectTag": "",
+        "_skillObject": "",
+        "_skillObjectCondition": {
+          "$id": "5",
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      },
+      "_skillObjectOutput": {
+        "$id": "6",
+        "_skillObjectTag": "",
+        "_skillObject": "_skill/_fighterskills/00_passive/_bulwark/_skillObject_bulwark_rank01",
+        "_skillObjectCondition": {
+          "$id": "7",
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      }
+    },
+    {
+      "$id": "8",
+      "_rankTag": "Bulwark (Rank 2)",
+      "_levelRequirement": 12,
+      "_manaCost": 1,
+      "_healthCost": 0,
+      "_staminaCost": 0,
+      "_greaterThanCost": false,
+      "_requiredItem": null,
+      "_requiredItemQuantity": 0,
+      "_castTime": 0.85,
+      "_coolDown": 1.25,
+      "_skillPowerPercent": 1.0,
+      "_attackPowerModRef": 0.0,
+      "_magicPowerModRef": 0.0,
+      "_rangePowerModRef": 0.0,
+      "_rankDescriptor": "Decreases Stamina cost from getting hit while blocking by <color=yellow>25%.</color>",
+      "_selfConditionOutput": null,
+      "_earlySkillObjectOutput": {
+        "$id": "9",
+        "_skillObjectTag": "",
+        "_skillObject": "",
+        "_skillObjectCondition": {
+          "$id": "10",
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      },
+      "_skillObjectOutput": {
+        "$id": "11",
+        "_skillObjectTag": "",
+        "_skillObject": "_skill/_fighterskills/00_passive/_bulwark/_skillObject_bulwark_rank02",
+        "_skillObjectCondition": {
+          "$id": "12",
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      }
+    },
+    {
+      "$id": "13",
+      "_rankTag": "Bulwark (Rank 3)",
+      "_levelRequirement": 14,
+      "_manaCost": 1,
+      "_healthCost": 0,
+      "_staminaCost": 0,
+      "_greaterThanCost": false,
+      "_requiredItem": null,
+      "_requiredItemQuantity": 0,
+      "_castTime": 0.85,
+      "_coolDown": 1.25,
+      "_skillPowerPercent": 1.0,
+      "_attackPowerModRef": 0.0,
+      "_magicPowerModRef": 0.0,
+      "_rangePowerModRef": 0.0,
+      "_rankDescriptor": "Decreases Stamina cost from getting hit while blocking by <color=yellow>50%.</color>",
+      "_selfConditionOutput": null,
+      "_earlySkillObjectOutput": {
+        "$id": "14",
+        "_skillObjectTag": "",
+        "_skillObject": "",
+        "_skillObjectCondition": {
+          "$id": "15",
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      },
+      "_skillObjectOutput": {
+        "$id": "16",
+        "_skillObjectTag": "",
+        "_skillObject": "_skill/_fighterskills/00_passive/_bulwark/_skillObject_bulwark_rank03",
+        "_skillObjectCondition": {
+          "$id": "17",
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      }
+    },
+    {
+      "$id": "18",
+      "_rankTag": "Bulwark (Rank 4)",
+      "_levelRequirement": 16,
+      "_manaCost": 1,
+      "_healthCost": 0,
+      "_staminaCost": 0,
+      "_greaterThanCost": false,
+      "_requiredItem": null,
+      "_requiredItemQuantity": 0,
+      "_castTime": 0.85,
+      "_coolDown": 1.25,
+      "_skillPowerPercent": 1.0,
+      "_attackPowerModRef": 0.0,
+      "_magicPowerModRef": 0.0,
+      "_rangePowerModRef": 0.0,
+      "_rankDescriptor": "Decreases Stamina cost from getting hit while blocking by <color=yellow>60%.</color>\n\nParry window and stagger time on targets increased by <color=yellow>0.4 seconds.</color>",
+      "_selfConditionOutput": null,
+      "_earlySkillObjectOutput": {
+        "$id": "19",
+        "_skillObjectTag": "",
+        "_skillObject": "",
+        "_skillObjectCondition": {
+          "$id": "20",
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      },
+      "_skillObjectOutput": {
+        "$id": "21",
+        "_skillObjectTag": "",
+        "_skillObject": "_skill/_fighterskills/00_passive/_bulwark/_skillObject_bulwark_rank04",
+        "_skillObjectCondition": {
+          "$id": "22",
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      }
+    }
+  ],
+  "_movementSpeedDecrease": -8.65,
+  "_strafeDirection": false,
+  "_groundOnlySkill": false,
+  "_airTimeLockBuffer": 0.0,
+  "_enableAirTimeMod": false,
+  "_lockMoveControlTime": 0.0,
+  "_lockCombatControlTime": 0.35,
+  "_timeBeforeAttackForce": 0.0,
+  "_attackForceApply": 0.0,
+  "_attackForceDampen": 120.0,
+  "_attackForceInputInfluence": false,
+  "_castEffectCollection": null,
+  "_useGlyphEffect": true,
+  "_skillChargeAnimation": "Direct",
+  "_skillCastAnimation": "Direct",
+  "_animChargeSmoothing": 0.1,
+  "_animCastSmoothing": 0.0,
+  "_setSheatheCondition": 0,
+  "_applySheatheCondition": false,
+  "_hideWeapon": true,
+  "name": "skill_bulwark",
+  "hideFlags": 0
+}

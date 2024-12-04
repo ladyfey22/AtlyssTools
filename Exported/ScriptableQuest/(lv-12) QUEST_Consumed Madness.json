@@ -1,1 +1,281 @@
-{"$id":"1","_questName":"Consumed Madness","_questType":1,"_questSubType":0,"_questIco":"_graphic/_ui/_zoneSelIco_dungeon","_questDescription":"The Sanctum Catacombs isn't what you remember, little one... In fact, <color=cyan>the true incantation of the Catacombs is open for us to see, and it's quite dire.</color> I understand that you may have been through so much, but <i>I know</i> that you can do this!\n\nThe only way to keep the Catacombs from getting worse, <color=yellow>is to satiate the madness by defeating the forces of undead in it's worst form...</color>\n\nPlease return to me once you have done this task... <color=cyan>I greatly urge you to bring healing items with you in this journey!</color>","_questCompleteReturnMessage":"Return to Angela in Sanctum.","_questLevel":12,"_raceRequirement":null,"_baseClassRequirement":null,"_skillToHide":null,"_requireNoviceClass":false,"_autoFinishQuest":false,"_preQuestRequirements":[{"$id":"2","_questName":"Communing Catacombs","_questType":0,"_questSubType":1,"_questIco":"_graphic/_ui/_zoneSelIco_dungeon","_questDescription":"It's quite dire, you see... the <color=cyan>Catacombs outside Sanctum</color> was a place I could commune my mystic energies with to survey the undead. What goes on there now has been all a mystery to me...\n\n<color=cyan>When the world shattered, so did my magic.</color> Fortunately, I can still feel the lost magic existing...\n\n<color=yellow>Find the stray Sigil deep within the Catacombs and let it tether to your soul.</color> Once you do, we can further explore what looms ahead of us... I do fear for the worst.","_questCompleteReturnMessage":"Return to Angela in Sanctum.","_questLevel":1,"_raceRequirement":null,"_baseClassRequirement":null,"_skillToHide":null,"_requireNoviceClass":false,"_autoFinishQuest":false,"_preQuestRequirements":[{"$id":"3","_questName":"A Warm Welcome","_questType":0,"_questSubType":1,"_questIco":"","_questDescription":"Ah... I see that you're awake, and your soul is as bright as ever. Please, do not be afraid. <color=cyan>This place is your home, our home.</color>\n\nBefore we can begin your journey, please make yourself familiar with Sanctum... <color=cyan>After all, this is the last safe haven of this broken world.</color>\n\n<color=yellow>Come back to me after you have seen the World Portal, the Barracks, the Shop, and the Gateway to the Outer Sanctum.</color> \n\n<i>Of course, take your time...</i>","_questCompleteReturnMessage":"Return to Angela in Sanctum.","_questLevel":1,"_raceRequirement":null,"_baseClassRequirement":null,"_skillToHide":null,"_requireNoviceClass":false,"_autoFinishQuest":false,"_preQuestRequirements":[],"_questObjectiveItem":{"$id":"4","_scriptItem":null,"_setItemData":{"$id":"5","_itemName":"","_quantity":1,"_maxQuantity":1,"_slotNumber":0,"_modifierTag":"","_damageTypeOverride":0,"_useDamageTypeOverride":false,"_isEquipped":false,"_isAltWeapon":false}},"_scenePath":"","_questObjective":{"$id":"6","_questItemRequirements":[],"_questCreepRequirements":[],"_questTriggerRequirements":[{"$id":"7","_questTriggerTag":"worldPortalTrigger","_prefix":"World Portal","_suffix":"discovered","_triggerEmitsNeeded":1},{"$id":"8","_questTriggerTag":"shopDiscoverTrigger","_prefix":"Shop","_suffix":"discovered","_triggerEmitsNeeded":1},{"$id":"9","_questTriggerTag":"gatewayDiscoverTrigger","_prefix":"Gateway","_suffix":"discovered","_triggerEmitsNeeded":1},{"$id":"10","_questTriggerTag":"barracksDiscoverTrigger","_prefix":"Barracks","_suffix":"discovered","_triggerEmitsNeeded":1}]},"_questExperiencePercentage":0.0,"_questCurrencyReward":30,"_questItemRewards":[{"$id":"11","_scriptItem":"_item/01_equipment/01_armor/00_helm/(lv-1) HELM_Newfold Halo","_setItemData":{"$id":"12","_itemName":"Newfold Halo","_quantity":1,"_maxQuantity":1,"_slotNumber":0,"_modifierTag":"","_damageTypeOverride":0,"_useDamageTypeOverride":false,"_isEquipped":false,"_isAltWeapon":false}}],"_displayEndDemoPrompt":false,"name":"(lv-1) QUEST_A Warm Welcome","hideFlags":0}],"_questObjectiveItem":{"$id":"13","_scriptItem":null,"_setItemData":{"$id":"14","_itemName":"","_quantity":1,"_maxQuantity":1,"_slotNumber":0,"_modifierTag":"","_damageTypeOverride":0,"_useDamageTypeOverride":false,"_isEquipped":false,"_isAltWeapon":false}},"_scenePath":"Assets/Scenes/map_dungeon00_sanctumCatacombs.unity","_questObjective":{"$id":"15","_questItemRequirements":[],"_questCreepRequirements":[],"_questTriggerRequirements":[{"$id":"16","_questTriggerTag":"sigilTrigger","_prefix":"Sigil","_suffix":"attuned","_triggerEmitsNeeded":1}]},"_questExperiencePercentage":4.0,"_questCurrencyReward":150,"_questItemRewards":[{"$id":"17","_scriptItem":"_item/01_equipment/01_armor/01_cape/(lv-4) CAPE_Initiate Cloak","_setItemData":{"$id":"18","_itemName":"Initiate Cloak","_quantity":1,"_maxQuantity":1,"_slotNumber":0,"_modifierTag":"","_damageTypeOverride":0,"_useDamageTypeOverride":false,"_isEquipped":false,"_isAltWeapon":false}}],"_displayEndDemoPrompt":false,"name":"(lv-1) QUEST_Communing Catacombs","hideFlags":0}],"_questObjectiveItem":{"$id":"19","_scriptItem":null,"_setItemData":{"$id":"20","_itemName":"","_quantity":1,"_maxQuantity":1,"_slotNumber":0,"_modifierTag":"","_damageTypeOverride":0,"_useDamageTypeOverride":false,"_isEquipped":false,"_isAltWeapon":false}},"_scenePath":"","_questObjective":{"$id":"21","_questItemRequirements":[],"_questCreepRequirements":[],"_questTriggerRequirements":[{"$id":"22","_questTriggerTag":"sweepFinishHard","_prefix":"Catacombs","_suffix":"Cleared (lv12-18)","_triggerEmitsNeeded":1}]},"_questExperiencePercentage":0.6,"_questCurrencyReward":600,"_questItemRewards":[{"$id":"23","_scriptItem":"_item/03_trade/TRADEITEM_Angela's Tear","_setItemData":{"$id":"24","_itemName":"Angela's Tear","_quantity":1,"_maxQuantity":1,"_slotNumber":0,"_modifierTag":"","_damageTypeOverride":0,"_useDamageTypeOverride":false,"_isEquipped":false,"_isAltWeapon":false}},{"$id":"25","_scriptItem":"_item/02_consumable/_status/(lv-0) STATUSCONSUMABLE_Stamstar","_setItemData":{"$id":"26","_itemName":"Stamstar","_quantity":5,"_maxQuantity":99,"_slotNumber":0,"_modifierTag":"","_damageTypeOverride":0,"_useDamageTypeOverride":false,"_isEquipped":false,"_isAltWeapon":false}},{"$id":"27","_scriptItem":"_item/02_consumable/_status/(lv-0) STATUSCONSUMABLE_Bunbag","_setItemData":{"$id":"28","_itemName":"Bunbag","_quantity":5,"_maxQuantity":99,"_slotNumber":0,"_modifierTag":"","_damageTypeOverride":0,"_useDamageTypeOverride":false,"_isEquipped":false,"_isAltWeapon":false}},{"$id":"29","_scriptItem":"_item/02_consumable/_status/(lv-0) STATUSCONSUMABLE_Magiflower","_setItemData":{"$id":"30","_itemName":"Magiflower","_quantity":5,"_maxQuantity":99,"_slotNumber":0,"_modifierTag":"","_damageTypeOverride":0,"_useDamageTypeOverride":false,"_isEquipped":false,"_isAltWeapon":false}}],"_displayEndDemoPrompt":false,"name":"(lv-12) QUEST_Consumed Madness","hideFlags":0}
+{
+  "$id": "1",
+  "_questName": "Consumed Madness",
+  "_questType": 1,
+  "_questSubType": 0,
+  "_questIco": "_graphic/_ui/_zoneSelIco_dungeon",
+  "_questDescription": "The Sanctum Catacombs isn't what you remember, little one... In fact, <color=cyan>the true incantation of the Catacombs is open for us to see, and it's quite dire.</color> I understand that you may have been through so much, but <i>I know</i> that you can do this!\n\nThe only way to keep the Catacombs from getting worse, <color=yellow>is to satiate the madness by defeating the forces of undead in it's worst form...</color>\n\nPlease return to me once you have done this task... <color=cyan>I greatly urge you to bring healing items with you in this journey!</color>",
+  "_questCompleteReturnMessage": "Return to Angela in Sanctum.",
+  "_questLevel": 12,
+  "_raceRequirement": null,
+  "_baseClassRequirement": null,
+  "_skillToHide": null,
+  "_requireNoviceClass": false,
+  "_autoFinishQuest": false,
+  "_preQuestRequirements": [
+    {
+      "$id": "2",
+      "_questName": "Communing Catacombs",
+      "_questType": 0,
+      "_questSubType": 1,
+      "_questIco": "_graphic/_ui/_zoneSelIco_dungeon",
+      "_questDescription": "It's quite dire, you see... the <color=cyan>Catacombs outside Sanctum</color> was a place I could commune my mystic energies with to survey the undead. What goes on there now has been all a mystery to me...\n\n<color=cyan>When the world shattered, so did my magic.</color> Fortunately, I can still feel the lost magic existing...\n\n<color=yellow>Find the stray Sigil deep within the Catacombs and let it tether to your soul.</color> Once you do, we can further explore what looms ahead of us... I do fear for the worst.",
+      "_questCompleteReturnMessage": "Return to Angela in Sanctum.",
+      "_questLevel": 1,
+      "_raceRequirement": null,
+      "_baseClassRequirement": null,
+      "_skillToHide": null,
+      "_requireNoviceClass": false,
+      "_autoFinishQuest": false,
+      "_preQuestRequirements": [
+        {
+          "$id": "3",
+          "_questName": "A Warm Welcome",
+          "_questType": 0,
+          "_questSubType": 1,
+          "_questIco": "",
+          "_questDescription": "Ah... I see that you're awake, and your soul is as bright as ever. Please, do not be afraid. <color=cyan>This place is your home, our home.</color>\n\nBefore we can begin your journey, please make yourself familiar with Sanctum... <color=cyan>After all, this is the last safe haven of this broken world.</color>\n\n<color=yellow>Come back to me after you have seen the World Portal, the Barracks, the Shop, and the Gateway to the Outer Sanctum.</color> \n\n<i>Of course, take your time...</i>",
+          "_questCompleteReturnMessage": "Return to Angela in Sanctum.",
+          "_questLevel": 1,
+          "_raceRequirement": null,
+          "_baseClassRequirement": null,
+          "_skillToHide": null,
+          "_requireNoviceClass": false,
+          "_autoFinishQuest": false,
+          "_preQuestRequirements": [],
+          "_questObjectiveItem": {
+            "$id": "4",
+            "_scriptItem": null,
+            "_setItemData": {
+              "$id": "5",
+              "_itemName": "",
+              "_quantity": 1,
+              "_maxQuantity": 1,
+              "_slotNumber": 0,
+              "_modifierTag": "",
+              "_damageTypeOverride": 0,
+              "_useDamageTypeOverride": false,
+              "_isEquipped": false,
+              "_isAltWeapon": false
+            }
+          },
+          "_scenePath": "",
+          "_questObjective": {
+            "$id": "6",
+            "_questItemRequirements": [],
+            "_questCreepRequirements": [],
+            "_questTriggerRequirements": [
+              {
+                "$id": "7",
+                "_questTriggerTag": "worldPortalTrigger",
+                "_prefix": "World Portal",
+                "_suffix": "discovered",
+                "_triggerEmitsNeeded": 1
+              },
+              {
+                "$id": "8",
+                "_questTriggerTag": "shopDiscoverTrigger",
+                "_prefix": "Shop",
+                "_suffix": "discovered",
+                "_triggerEmitsNeeded": 1
+              },
+              {
+                "$id": "9",
+                "_questTriggerTag": "gatewayDiscoverTrigger",
+                "_prefix": "Gateway",
+                "_suffix": "discovered",
+                "_triggerEmitsNeeded": 1
+              },
+              {
+                "$id": "10",
+                "_questTriggerTag": "barracksDiscoverTrigger",
+                "_prefix": "Barracks",
+                "_suffix": "discovered",
+                "_triggerEmitsNeeded": 1
+              }
+            ]
+          },
+          "_questExperiencePercentage": 0.0,
+          "_questCurrencyReward": 30,
+          "_questItemRewards": [
+            {
+              "$id": "11",
+              "_scriptItem": "_item/01_equipment/01_armor/00_helm/(lv-1) HELM_Newfold Halo",
+              "_setItemData": {
+                "$id": "12",
+                "_itemName": "Newfold Halo",
+                "_quantity": 1,
+                "_maxQuantity": 1,
+                "_slotNumber": 0,
+                "_modifierTag": "",
+                "_damageTypeOverride": 0,
+                "_useDamageTypeOverride": false,
+                "_isEquipped": false,
+                "_isAltWeapon": false
+              }
+            }
+          ],
+          "_displayEndDemoPrompt": false,
+          "name": "(lv-1) QUEST_A Warm Welcome",
+          "hideFlags": 0
+        }
+      ],
+      "_questObjectiveItem": {
+        "$id": "13",
+        "_scriptItem": null,
+        "_setItemData": {
+          "$id": "14",
+          "_itemName": "",
+          "_quantity": 1,
+          "_maxQuantity": 1,
+          "_slotNumber": 0,
+          "_modifierTag": "",
+          "_damageTypeOverride": 0,
+          "_useDamageTypeOverride": false,
+          "_isEquipped": false,
+          "_isAltWeapon": false
+        }
+      },
+      "_scenePath": "Assets/Scenes/map_dungeon00_sanctumCatacombs.unity",
+      "_questObjective": {
+        "$id": "15",
+        "_questItemRequirements": [],
+        "_questCreepRequirements": [],
+        "_questTriggerRequirements": [
+          {
+            "$id": "16",
+            "_questTriggerTag": "sigilTrigger",
+            "_prefix": "Sigil",
+            "_suffix": "attuned",
+            "_triggerEmitsNeeded": 1
+          }
+        ]
+      },
+      "_questExperiencePercentage": 4.0,
+      "_questCurrencyReward": 150,
+      "_questItemRewards": [
+        {
+          "$id": "17",
+          "_scriptItem": "_item/01_equipment/01_armor/01_cape/(lv-4) CAPE_Initiate Cloak",
+          "_setItemData": {
+            "$id": "18",
+            "_itemName": "Initiate Cloak",
+            "_quantity": 1,
+            "_maxQuantity": 1,
+            "_slotNumber": 0,
+            "_modifierTag": "",
+            "_damageTypeOverride": 0,
+            "_useDamageTypeOverride": false,
+            "_isEquipped": false,
+            "_isAltWeapon": false
+          }
+        }
+      ],
+      "_displayEndDemoPrompt": false,
+      "name": "(lv-1) QUEST_Communing Catacombs",
+      "hideFlags": 0
+    }
+  ],
+  "_questObjectiveItem": {
+    "$id": "19",
+    "_scriptItem": null,
+    "_setItemData": {
+      "$id": "20",
+      "_itemName": "",
+      "_quantity": 1,
+      "_maxQuantity": 1,
+      "_slotNumber": 0,
+      "_modifierTag": "",
+      "_damageTypeOverride": 0,
+      "_useDamageTypeOverride": false,
+      "_isEquipped": false,
+      "_isAltWeapon": false
+    }
+  },
+  "_scenePath": "",
+  "_questObjective": {
+    "$id": "21",
+    "_questItemRequirements": [],
+    "_questCreepRequirements": [],
+    "_questTriggerRequirements": [
+      {
+        "$id": "22",
+        "_questTriggerTag": "sweepFinishHard",
+        "_prefix": "Catacombs",
+        "_suffix": "Cleared (lv12-18)",
+        "_triggerEmitsNeeded": 1
+      }
+    ]
+  },
+  "_questExperiencePercentage": 0.6,
+  "_questCurrencyReward": 600,
+  "_questItemRewards": [
+    {
+      "$id": "23",
+      "_scriptItem": "_item/03_trade/TRADEITEM_Angela's Tear",
+      "_setItemData": {
+        "$id": "24",
+        "_itemName": "Angela's Tear",
+        "_quantity": 1,
+        "_maxQuantity": 1,
+        "_slotNumber": 0,
+        "_modifierTag": "",
+        "_damageTypeOverride": 0,
+        "_useDamageTypeOverride": false,
+        "_isEquipped": false,
+        "_isAltWeapon": false
+      }
+    },
+    {
+      "$id": "25",
+      "_scriptItem": "_item/02_consumable/_status/(lv-0) STATUSCONSUMABLE_Stamstar",
+      "_setItemData": {
+        "$id": "26",
+        "_itemName": "Stamstar",
+        "_quantity": 5,
+        "_maxQuantity": 99,
+        "_slotNumber": 0,
+        "_modifierTag": "",
+        "_damageTypeOverride": 0,
+        "_useDamageTypeOverride": false,
+        "_isEquipped": false,
+        "_isAltWeapon": false
+      }
+    },
+    {
+      "$id": "27",
+      "_scriptItem": "_item/02_consumable/_status/(lv-0) STATUSCONSUMABLE_Bunbag",
+      "_setItemData": {
+        "$id": "28",
+        "_itemName": "Bunbag",
+        "_quantity": 5,
+        "_maxQuantity": 99,
+        "_slotNumber": 0,
+        "_modifierTag": "",
+        "_damageTypeOverride": 0,
+        "_useDamageTypeOverride": false,
+        "_isEquipped": false,
+        "_isAltWeapon": false
+      }
+    },
+    {
+      "$id": "29",
+      "_scriptItem": "_item/02_consumable/_status/(lv-0) STATUSCONSUMABLE_Magiflower",
+      "_setItemData": {
+        "$id": "30",
+        "_itemName": "Magiflower",
+        "_quantity": 5,
+        "_maxQuantity": 99,
+        "_slotNumber": 0,
+        "_modifierTag": "",
+        "_damageTypeOverride": 0,
+        "_useDamageTypeOverride": false,
+        "_isEquipped": false,
+        "_isAltWeapon": false
+      }
+    }
+  ],
+  "_displayEndDemoPrompt": false,
+  "name": "(lv-12) QUEST_Consumed Madness",
+  "hideFlags": 0
+}

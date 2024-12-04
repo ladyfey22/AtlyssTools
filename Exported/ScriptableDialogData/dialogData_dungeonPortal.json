@@ -1,1 +1,76 @@
-{"$id":"1","_nameTag":"","_introductionBranches":[{"$id":"2","_dialogIndexTag":"","dialogs":[{"$id":"3","_dialogKey":"","_dialogInput":"The portal eminates an evil power! It's unlike any other portal you've seen before.","_altInputs":[],"facepic":"","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[]},{"$id":"4","_dialogKey":"","_dialogInput":"What is your destiny?","_altInputs":[],"facepic":"","_npcAnimationTag":"","_dialogUI":5,"_dialogSelections":[{"$id":"5","_selectionCaption":"Cancel","_selectionIcon":"","_setDialogIndex":-1}]}]}],"_dialogBranches":[{"$id":"6","_dialogIndexTag":"Dialog Branch Index #0","dialogs":[{"$id":"7","_dialogKey":"0","_dialogInput":"What is your destiny?","_altInputs":[],"facepic":"","_npcAnimationTag":"","_dialogUI":5,"_dialogSelections":[{"$id":"8","_selectionCaption":"Cancel","_selectionIcon":"","_setDialogIndex":-1}]}]}],"_scriptableShopkeep":null,"_shopkeepResponses":[],"_shopkeepRejections":[],"_scriptableQuests":[],"_questAcceptResponses":[],"_questCompleteResponses":[],"_voxSounds":["_sound/dialogsounds/type"],"_voxSpeed":0.06,"name":"dialogData_dungeonPortal","hideFlags":0}
+{
+  "$id": "1",
+  "_nameTag": "",
+  "_introductionBranches": [
+    {
+      "$id": "2",
+      "_dialogIndexTag": "",
+      "dialogs": [
+        {
+          "$id": "3",
+          "_dialogKey": "",
+          "_dialogInput": "The portal eminates an evil power! It's unlike any other portal you've seen before.",
+          "_altInputs": [],
+          "facepic": "",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        },
+        {
+          "$id": "4",
+          "_dialogKey": "",
+          "_dialogInput": "What is your destiny?",
+          "_altInputs": [],
+          "facepic": "",
+          "_npcAnimationTag": "",
+          "_dialogUI": 5,
+          "_dialogSelections": [
+            {
+              "$id": "5",
+              "_selectionCaption": "Cancel",
+              "_selectionIcon": "",
+              "_setDialogIndex": -1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_dialogBranches": [
+    {
+      "$id": "6",
+      "_dialogIndexTag": "Dialog Branch Index #0",
+      "dialogs": [
+        {
+          "$id": "7",
+          "_dialogKey": "0",
+          "_dialogInput": "What is your destiny?",
+          "_altInputs": [],
+          "facepic": "",
+          "_npcAnimationTag": "",
+          "_dialogUI": 5,
+          "_dialogSelections": [
+            {
+              "$id": "8",
+              "_selectionCaption": "Cancel",
+              "_selectionIcon": "",
+              "_setDialogIndex": -1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_scriptableShopkeep": null,
+  "_shopkeepResponses": [],
+  "_shopkeepRejections": [],
+  "_scriptableQuests": [],
+  "_questAcceptResponses": [],
+  "_questCompleteResponses": [],
+  "_voxSounds": [
+    "_sound/dialogsounds/type"
+  ],
+  "_voxSpeed": 0.06,
+  "name": "dialogData_dungeonPortal",
+  "hideFlags": 0
+}

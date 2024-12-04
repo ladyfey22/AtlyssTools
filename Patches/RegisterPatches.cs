@@ -31,6 +31,41 @@ namespace AtlyssTools.Patches
             // add our custom skills to the cache
             // do a dump of the skills
             AtlyssToolsLoader.Instance.State = LoaderStateMachine.LoadState.PostCacheInit; // run the post cache init
+
+            // check if the hug condition is in the cache
+            ScriptableCondition hugC = StatusConditionManager.Instance.GetFromCache("Hugged");
+
+            if (hugC != null)
+            {
+                Plugin.Logger.LogInfo("Hug condition found in cache");
+            }
+            else
+            {
+                Plugin.Logger.LogError("Hug condition not found in cache");
+            }
+
+            // check if the hug skill is in the cache
+            ScriptableSkill hugSkill = SkillManager.Instance.GetFromCache("Hug");
+
+            if (hugSkill != null)
+            {
+                Plugin.Logger.LogInfo("Hug skill found in cache");
+                // associated condition
+
+                ScriptableCondition hugCondition = hugSkill._skillRanks[0]._selfConditionOutput;
+                if (hugCondition != null)
+                {
+                    Plugin.Logger.LogInfo(hugCondition._conditionName);
+                }
+                else
+                {
+                    Plugin.Logger.LogError("Hug condition not found");
+                }
+            }
+            else
+            {
+                Plugin.Logger.LogError("Hug skill not found in cache");
+            }
         }
     }
 
@@ -52,6 +87,27 @@ namespace AtlyssTools.Patches
             Plugin.Logger.LogInfo("PlayerCasting.Init_SkillLibrary postfix patch");
             AtlyssToolsLoader.Instance.State =
                 LoaderStateMachine.LoadState.PostLibraryInit; // run the post library init
+
+            // dump the skill library
+            foreach (SkillLibrarySlot skillLibrarySlot in __instance._skillLibrary)
+            {
+                Plugin.Logger.LogInfo(skillLibrarySlot._skillTag + " " + skillLibrarySlot._scriptSkill._skillName);
+            }
+
+            for (int m = 0; m < __instance._bonusSkillTags.Count; m++)
+            {
+                Plugin.Logger.LogInfo(__instance._bonusSkillTags[m]);
+
+                ScriptableSkill scriptableSkill = SkillManager.Instance.GetFromCache(__instance._bonusSkillTags[m]);
+                if (scriptableSkill != null)
+                {
+                    Plugin.Logger.LogInfo(scriptableSkill._skillName);
+                }
+                else
+                {
+                    Plugin.Logger.LogError("Skill not found in cache");
+                }
+            }
         }
     }
 }

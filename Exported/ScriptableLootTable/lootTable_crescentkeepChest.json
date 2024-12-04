@@ -1,1 +1,211 @@
-{"$id":"1","_itemDrops":[{"$id":"2","_itemTag":"Tome of Lesser Experience (5%)","_item":"_item/02_consumable/_status/_tome/(lv-0) STATUSCONSUMABLE_Tome of Lesser Experience","_dropChance":0.05,"_dropQuantity":1},{"$id":"3","_itemTag":"Soul Pearl (2.9%)","_item":"_item/03_trade/TRADEITEM_Soul Pearl","_dropChance":0.029,"_dropQuantity":1},{"$id":"4","_itemTag":"Illusion Stone (1.7%)","_item":"_item/03_trade/TRADEITEM_Illusion Stone","_dropChance":0.017,"_dropQuantity":1},{"$id":"5","_itemTag":"Might Stone (10.3%)","_item":"_item/03_trade/TRADEITEM_Might Stone","_dropChance":0.103,"_dropQuantity":1},{"$id":"6","_itemTag":"Agility Stone (10.3%)","_item":"_item/03_trade/TRADEITEM_Agility Stone","_dropChance":0.103,"_dropQuantity":1},{"$id":"7","_itemTag":"Flux Stone (10.3%)","_item":"_item/03_trade/TRADEITEM_Flux Stone","_dropChance":0.103,"_dropQuantity":1},{"$id":"8","_itemTag":"Blue Dye (7.3%)","_item":"_item/02_consumable/_dyes/DYE_Blue Dye","_dropChance":0.073,"_dropQuantity":1},{"$id":"9","_itemTag":"Red Dye (12%)","_item":"_item/02_consumable/_dyes/DYE_Red Dye","_dropChance":0.12,"_dropQuantity":1},{"$id":"10","_itemTag":"Rock (15%)","_item":"_item/03_trade/TRADEITEM_Rock","_dropChance":0.15,"_dropQuantity":1},{"$id":"11","_itemTag":"Noble Shirt (6.2%)","_item":"_item/01_equipment/01_armor/02_chest/(lv-1) CHESTPIECE_Noble Shirt","_dropChance":0.062,"_dropQuantity":1},{"$id":"12","_itemTag":"Omen Shield (21.4%)","_item":"_item/01_equipment/01_armor/04_shield/(lv-12) SHIELD_Omen Shield","_dropChance":0.214,"_dropQuantity":1},{"$id":"13","_itemTag":"Stone Greatblade (34.2%)","_item":"_item/01_equipment/02_weapon/03_heavymelee/(lv-10) WEAPON_Stone Greatblade (Heavy Melee)","_dropChance":0.342,"_dropQuantity":1},{"$id":"14","_itemTag":"Rugged Cloak (25%)","_item":"_item/01_equipment/01_armor/01_cape/(lv-7) CAPE_Rugged Cloak","_dropChance":0.25,"_dropQuantity":1},{"$id":"15","_itemTag":"Sash Leggings (19.6%)","_item":"_item/01_equipment/01_armor/03_legs/(lv-10) LEGGINGS_Sash Leggings","_dropChance":0.196,"_dropQuantity":1},{"$id":"16","_itemTag":"Duelist Garb (22.9%)","_item":"_item/01_equipment/01_armor/02_chest/(lv-10) CHESTPIECE_Duelist Garb","_dropChance":0.229,"_dropQuantity":1},{"$id":"17","_itemTag":"Iris Shield (25%)","_item":"_item/01_equipment/01_armor/04_shield/(lv-12) SHIELD_Iris Shield","_dropChance":0.25,"_dropQuantity":1},{"$id":"18","_itemTag":"Cryo Cane (26.2%)","_item":"_item/01_equipment/02_weapon/05_magicscepter/(lv-10) WEAPON_Cryo Cane (Magic Scepter)","_dropChance":0.262,"_dropQuantity":1},{"$id":"19","_itemTag":"Rude Blade (14.2%)","_item":"_item/01_equipment/02_weapon/02_melee/(lv-10) WEAPON_Rude Blade (Melee)","_dropChance":0.142,"_dropQuantity":1},{"$id":"20","_itemTag":"Dawn Mace (34.3%)","_item":"_item/01_equipment/02_weapon/02_melee/(lv-10) WEAPON_Dawn Mace (Melee)","_dropChance":0.343,"_dropQuantity":1},{"$id":"21","_itemTag":"Sleeper's Robe (25.1%)","_item":"_item/01_equipment/01_armor/02_chest/(lv-11) CHESTPIECE_Sleeper's Robe","_dropChance":0.251,"_dropQuantity":1},{"$id":"22","_itemTag":"Menace Bow (9%)","_item":"_item/01_equipment/02_weapon/01_ranged/(lv-12) WEAPON_Menace Bow (Range Weapon)","_dropChance":0.09,"_dropQuantity":1},{"$id":"23","_itemTag":"Runic Katars (9.8%)","_item":"_item/01_equipment/02_weapon/00_katars/(lv-10) WEAPON_Runic Katars (Katars)","_dropChance":0.098,"_dropQuantity":1},{"$id":"24","_itemTag":"Iron Halo (9.4%)","_item":"_item/01_equipment/01_armor/00_helm/(lv-7) HELM_Iron Halo","_dropChance":0.094,"_dropQuantity":1},{"$id":"25","_itemTag":"Rage Circlet (13.5%)","_item":"_item/01_equipment/01_armor/00_helm/(lv-10) HELM_Rage Circlet","_dropChance":0.135,"_dropQuantity":1},{"$id":"26","_itemTag":"Focus Circlet (12.6%)","_item":"_item/01_equipment/01_armor/00_helm/(lv-10) HELM_Focus Circlet","_dropChance":0.126,"_dropQuantity":1},{"$id":"27","_itemTag":"Magistrate Circlet (11.7%)","_item":"_item/01_equipment/01_armor/00_helm/(lv-10) HELM_Magistrate Circlet","_dropChance":0.117,"_dropQuantity":1},{"$id":"28","_itemTag":"Lesser Defense Potion (4.3%)","_item":"_item/02_consumable/_status/_potion/(lv-0) STATUSCONSUMABLE_Lesser Defense Potion","_dropChance":0.043,"_dropQuantity":1},{"$id":"29","_itemTag":"Lesser Mgk. Defense Potion (4.3%)","_item":"_item/02_consumable/_status/_potion/(lv-0) STATUSCONSUMABLE_Lesser Mgk","_dropChance":0.043,"_dropQuantity":1},{"$id":"30","_itemTag":"Lesser Evasion Potion (4.3%)","_item":"_item/02_consumable/_status/_potion/(lv-0) STATUSCONSUMABLE_Lesser Evasion Potion","_dropChance":0.043,"_dropQuantity":1}],"_currencyAmount":3,"name":"lootTable_crescentkeepChest","hideFlags":0}
+{
+  "$id": "1",
+  "_itemDrops": [
+    {
+      "$id": "2",
+      "_itemTag": "Tome of Lesser Experience (5%)",
+      "_item": "_item/02_consumable/_status/_tome/(lv-0) STATUSCONSUMABLE_Tome of Lesser Experience",
+      "_dropChance": 0.05,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "3",
+      "_itemTag": "Soul Pearl (2.9%)",
+      "_item": "_item/03_trade/TRADEITEM_Soul Pearl",
+      "_dropChance": 0.029,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "4",
+      "_itemTag": "Illusion Stone (1.7%)",
+      "_item": "_item/03_trade/TRADEITEM_Illusion Stone",
+      "_dropChance": 0.017,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "5",
+      "_itemTag": "Might Stone (10.3%)",
+      "_item": "_item/03_trade/TRADEITEM_Might Stone",
+      "_dropChance": 0.103,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "6",
+      "_itemTag": "Agility Stone (10.3%)",
+      "_item": "_item/03_trade/TRADEITEM_Agility Stone",
+      "_dropChance": 0.103,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "7",
+      "_itemTag": "Flux Stone (10.3%)",
+      "_item": "_item/03_trade/TRADEITEM_Flux Stone",
+      "_dropChance": 0.103,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "8",
+      "_itemTag": "Blue Dye (7.3%)",
+      "_item": "_item/02_consumable/_dyes/DYE_Blue Dye",
+      "_dropChance": 0.073,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "9",
+      "_itemTag": "Red Dye (12%)",
+      "_item": "_item/02_consumable/_dyes/DYE_Red Dye",
+      "_dropChance": 0.12,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "10",
+      "_itemTag": "Rock (15%)",
+      "_item": "_item/03_trade/TRADEITEM_Rock",
+      "_dropChance": 0.15,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "11",
+      "_itemTag": "Noble Shirt (6.2%)",
+      "_item": "_item/01_equipment/01_armor/02_chest/(lv-1) CHESTPIECE_Noble Shirt",
+      "_dropChance": 0.062,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "12",
+      "_itemTag": "Omen Shield (21.4%)",
+      "_item": "_item/01_equipment/01_armor/04_shield/(lv-12) SHIELD_Omen Shield",
+      "_dropChance": 0.214,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "13",
+      "_itemTag": "Stone Greatblade (34.2%)",
+      "_item": "_item/01_equipment/02_weapon/03_heavymelee/(lv-10) WEAPON_Stone Greatblade (Heavy Melee)",
+      "_dropChance": 0.342,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "14",
+      "_itemTag": "Rugged Cloak (25%)",
+      "_item": "_item/01_equipment/01_armor/01_cape/(lv-7) CAPE_Rugged Cloak",
+      "_dropChance": 0.25,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "15",
+      "_itemTag": "Sash Leggings (19.6%)",
+      "_item": "_item/01_equipment/01_armor/03_legs/(lv-10) LEGGINGS_Sash Leggings",
+      "_dropChance": 0.196,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "16",
+      "_itemTag": "Duelist Garb (22.9%)",
+      "_item": "_item/01_equipment/01_armor/02_chest/(lv-10) CHESTPIECE_Duelist Garb",
+      "_dropChance": 0.229,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "17",
+      "_itemTag": "Iris Shield (25%)",
+      "_item": "_item/01_equipment/01_armor/04_shield/(lv-12) SHIELD_Iris Shield",
+      "_dropChance": 0.25,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "18",
+      "_itemTag": "Cryo Cane (26.2%)",
+      "_item": "_item/01_equipment/02_weapon/05_magicscepter/(lv-10) WEAPON_Cryo Cane (Magic Scepter)",
+      "_dropChance": 0.262,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "19",
+      "_itemTag": "Rude Blade (14.2%)",
+      "_item": "_item/01_equipment/02_weapon/02_melee/(lv-10) WEAPON_Rude Blade (Melee)",
+      "_dropChance": 0.142,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "20",
+      "_itemTag": "Dawn Mace (34.3%)",
+      "_item": "_item/01_equipment/02_weapon/02_melee/(lv-10) WEAPON_Dawn Mace (Melee)",
+      "_dropChance": 0.343,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "21",
+      "_itemTag": "Sleeper's Robe (25.1%)",
+      "_item": "_item/01_equipment/01_armor/02_chest/(lv-11) CHESTPIECE_Sleeper's Robe",
+      "_dropChance": 0.251,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "22",
+      "_itemTag": "Menace Bow (9%)",
+      "_item": "_item/01_equipment/02_weapon/01_ranged/(lv-12) WEAPON_Menace Bow (Range Weapon)",
+      "_dropChance": 0.09,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "23",
+      "_itemTag": "Runic Katars (9.8%)",
+      "_item": "_item/01_equipment/02_weapon/00_katars/(lv-10) WEAPON_Runic Katars (Katars)",
+      "_dropChance": 0.098,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "24",
+      "_itemTag": "Iron Halo (9.4%)",
+      "_item": "_item/01_equipment/01_armor/00_helm/(lv-7) HELM_Iron Halo",
+      "_dropChance": 0.094,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "25",
+      "_itemTag": "Rage Circlet (13.5%)",
+      "_item": "_item/01_equipment/01_armor/00_helm/(lv-10) HELM_Rage Circlet",
+      "_dropChance": 0.135,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "26",
+      "_itemTag": "Focus Circlet (12.6%)",
+      "_item": "_item/01_equipment/01_armor/00_helm/(lv-10) HELM_Focus Circlet",
+      "_dropChance": 0.126,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "27",
+      "_itemTag": "Magistrate Circlet (11.7%)",
+      "_item": "_item/01_equipment/01_armor/00_helm/(lv-10) HELM_Magistrate Circlet",
+      "_dropChance": 0.117,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "28",
+      "_itemTag": "Lesser Defense Potion (4.3%)",
+      "_item": "_item/02_consumable/_status/_potion/(lv-0) STATUSCONSUMABLE_Lesser Defense Potion",
+      "_dropChance": 0.043,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "29",
+      "_itemTag": "Lesser Mgk. Defense Potion (4.3%)",
+      "_item": "_item/02_consumable/_status/_potion/(lv-0) STATUSCONSUMABLE_Lesser Mgk",
+      "_dropChance": 0.043,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "30",
+      "_itemTag": "Lesser Evasion Potion (4.3%)",
+      "_item": "_item/02_consumable/_status/_potion/(lv-0) STATUSCONSUMABLE_Lesser Evasion Potion",
+      "_dropChance": 0.043,
+      "_dropQuantity": 1
+    }
+  ],
+  "_currencyAmount": 3,
+  "name": "lootTable_crescentkeepChest",
+  "hideFlags": 0
+}

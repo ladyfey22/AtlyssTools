@@ -1,1 +1,376 @@
-{"$id":"1","_raceName":"Kubold","_raceAvatar":"_graphic/_ui/_charactercreationicons/_raceicons/rcIco_azora","_raceEmblemIcon":"_graphic/_ui/_charactercreationicons/_raceicons/_emblem_kubold","_raceDescription":"Reptillian hermits who are naturally adept in the use of magic. The Kubold's homeland resides within a distant arid desert, sealed by arcane energies.","_raceDefaultNames":["Poobah","Tekk","Saul","Sage","Memi","Rakk","Tori","Zool","Yosh"],"_startingItems":[],"_startingWeapons":["_item/01_equipment/02_weapon/00_katars/(lv-1) WEAPON_Wood Daggers (Katars)","_item/01_equipment/02_weapon/02_melee/(lv-1) WEAPON_Wood Sword (Melee)","_item/01_equipment/02_weapon/03_heavymelee/(lv-1) WEAPON_Wood Hammer (Heavy Melee)","_item/01_equipment/02_weapon/05_magicscepter/(lv-1) WEAPON_Wood Scepter (Magic Scepter)","_item/01_equipment/02_weapon/01_ranged/(lv-1) WEAPON_Wooden Bow (Ranged)"],"_startingChestpieces":["_item/01_equipment/01_armor/02_chest/(lv-1) CHESTPIECE_Sagecloth Top"],"_startingLeggings":["_item/01_equipment/01_armor/03_legs/(lv-1) LEGGINGS_Sagecloth Shorts"],"_racialSkills":["_skill/_noviceskills/_alacrity/skill_alacrity"],"_headMaterialIndex":0,"_bodyMaterialIndex":1,"_armMaterialIndex":0,"_upperLegMaterialIndex":2,"_lowerLegMaterialIndex":3,"_raceModel":"_race/03_race_kubold/_raceModel_Kubold","_raceDisplayParams":{"$id":"2","_bodyHueSliderSprite":"_graphic/_ui/_charactercreationicons/fill_hue_kubold","_miscHueSliderSprite":"","_bodyHueRange":[0.0,360.0],"_bodyBrightnessRange":[-0.15,0.1],"_bodyContrastRange":[0.75,1.45],"_bodySaturationRange":[0.0,2.0],"_headWidthRange":[0.95,1.15],"_headModRange":[-15.0,100.0],"_heightRange":[0.95,1.055],"_widthRange":[0.95,1.15],"_torsoRange":[-10.0,105.0],"_boobRange":[-40.0,120.0],"_armRange":[25.0,105.0],"_bellyRange":[-20.0,120.0],"_bottomRange":[-120.0,120.0],"_pitchRange":[0.6,1.25]},"_hairStyleMeshes":["","_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_hairstyles/_koboldHair_01","_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_hairstyles/_koboldHair_02","_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_hairstyles/_koboldHair_03","_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_hairstyles/_koboldHair_04","_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_hairstyles/_koboldHair_05"],"_helmHairMesh":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_hairstyles/_koboldHelmHair","_muzzleWeightIsHead":false,"_skinTextureGroups":[{"$id":"3","_textureGroupTag":"Standard","_headTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/kobold_headTex","_bodyTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/kobold_chestTex","_legTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/kobold_legTex","_tailTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_koboldTailTex","_earTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_koboldEarTex","_hairTexture":"_graphic/_mesh/00_player/player_meshes/_hairGradient_kubold"},{"$id":"4","_textureGroupTag":"Glyphed","_headTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/kobold_headTex02","_bodyTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/kobold_chestTex02","_legTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/kobold_legTex02","_tailTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_koboldTailTex02","_earTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_koboldEarTex","_hairTexture":"_graphic/_mesh/00_player/player_meshes/_hairGradient_kubold"},{"$id":"5","_textureGroupTag":"Spotted","_headTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/kobold_headTex03","_bodyTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/kobold_chestTex03","_legTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/kobold_legTex03","_tailTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_koboldTailTex03","_earTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_koboldEarTex02","_hairTexture":"_graphic/_mesh/00_player/player_meshes/_hairGradient_kubold"}],"_eyeTextures":[{"$id":"6","_center":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_01/_koboldEye01","_up":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_01/_koboldEye01_U","_down":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_01/_koboldEye01_D","_left":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_01/_koboldEye01_L","_right":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_01/_koboldEye01_R","_hurt":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_01/_koboldEye01","_pissed":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_01/_koboldEye01","_closed":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_01/_koboldEye01_B"},{"$id":"7","_center":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_02/_koboldEye02","_up":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_02/_koboldEye02","_down":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_02/_koboldEye02","_left":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_02/_koboldEye02","_right":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_02/_koboldEye02","_hurt":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_02/_koboldEye02","_pissed":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_02/_koboldEye02_pissed","_closed":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_02/_koboldEye02_closed"},{"$id":"8","_center":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_03/_koboldEye03","_up":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_03/_koboldEye03_U","_down":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_03/_koboldEye03_D","_left":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_03/_koboldEye03_L","_right":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_03/_koboldEye03_R","_hurt":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_03/_koboldEye03","_pissed":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_03/_koboldEye03_pissed","_closed":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_03/_koboldEye03_closed"},{"$id":"9","_center":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_04/_koboldEye04","_up":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_04/_koboldEye04","_down":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_04/_koboldEye04","_left":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_04/_koboldEye04_L","_right":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_04/_koboldEye04_R","_hurt":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_04/_koboldEye04","_pissed":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_04/_koboldEye04_pissed","_closed":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_04/_koboldEye04_closed"},{"$id":"10","_center":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_05/_koboldEye05","_up":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_05/_koboldEye05","_down":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_05/_koboldEye05","_left":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_05/_koboldEye05_left","_right":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_05/_koboldEye05_right","_hurt":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_05/_koboldEye05","_pissed":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_05/_koboldEye05","_closed":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_05/_koboldEye05_closed"},{"$id":"11","_center":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_07/_koboldEye07","_up":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_07/_koboldEye07","_down":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_07/_koboldEye07","_left":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_07/_koboldEye07","_right":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_07/_koboldEye07","_hurt":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_07/_koboldEye07","_pissed":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_07/_koboldEye07_pissed","_closed":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_07/_koboldEye07_blink"},{"$id":"12","_center":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_08/_koboldEye08","_up":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_08/_koboldEye08","_down":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_08/_koboldEye08","_left":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_08/_koboldEye08_L","_right":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_08/_koboldEye08_R","_hurt":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_08/_koboldEye08_hurt","_pissed":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_08/_koboldEye08_pissed","_closed":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_08/_koboldEye08_blink"},{"$id":"13","_center":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_09/_koboldEye09","_up":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_09/_koboldEye09","_down":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_09/_koboldEye09","_left":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_09/_koboldEye09_L","_right":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_09/_koboldEye09_R","_hurt":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_09/_koboldEye09_hurt","_pissed":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_09/_koboldEye09_pissed","_closed":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_09/_koboldEye09_blink"},{"$id":"14","_center":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_10/_koboldEye10","_up":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_10/_koboldEye10","_down":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_10/_koboldEye10","_left":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_10/_koboldEye10_L","_right":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_10/_koboldEye10_R","_hurt":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_10/_koboldEye10_hurt","_pissed":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_10/_koboldEye10_pissed","_closed":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_10/_koboldEye10_blink"}],"_mouthTextures":[{"$id":"15","_closed":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_mouths/_mouth_kobold02","_open":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_mouths/_mouth_kobold01_open"},{"$id":"16","_closed":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_mouths/_mouth_kobold01","_open":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_mouths/_mouth_kobold01_open"},{"$id":"17","_closed":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_mouths/_mouth_kobold03","_open":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_mouths/_mouth_kobold01_open"},{"$id":"18","_closed":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_mouths/_mouth_kobold04","_open":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_mouths/_mouth_kobold01_open"},{"$id":"19","_closed":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_mouths/_mouth_kobold05","_open":"_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_mouths/_mouth_kobold01_open"}],"_appearanceTemplates":[{"$id":"20","_setRaceTag":"Kubold","_eyeID":0,"_mouthID":2,"_hairStyleID":0,"_earID":1,"_tailID":1,"_miscID":6,"_displayBoobs":true,"_isLeftHanded":false,"_voicePitch":0.6408752,"_helmDyeIndex":2,"_chestDyeIndex":1,"_legsDyeIndex":1,"_capeDyeIndex":0,"_headWidth":1.04912651,"_muzzleWeight":38.7672272,"_heightWeight":0.998910666,"_widthWeight":1.01353407,"_torsoWeight":0.0,"_armWeight":25.0,"_boobWeight":-2.161479,"_bellyWeight":-19.7429066,"_bottomWeight":23.5201645,"_textureID":1,"_bodyColorHue":360.0,"_bodyColorBrightness":0.0840157643,"_bodyColorContrast":0.8957859,"_bodyColorSaturation":1.62099242,"_hairStyleHue":91.1744,"_hairStyleBrightness":0.0542729869,"_hairStyleContrast":1.29407918,"_hairStyleSaturation":0.3681202,"_hairIsBodyColor":true,"_miscHue":13.2066822,"_miscBrightness":-0.015698202,"_miscContrast":1.18909585,"_miscSaturation":1.0,"_hideHelm":false,"_hideCape":true,"_hideChest":false,"_hideLeggings":false},{"$id":"21","_setRaceTag":"Kubold","_eyeID":2,"_mouthID":1,"_hairStyleID":5,"_earID":2,"_tailID":0,"_miscID":8,"_displayBoobs":false,"_isLeftHanded":false,"_voicePitch":1.14372,"_helmDyeIndex":1,"_chestDyeIndex":1,"_legsDyeIndex":1,"_capeDyeIndex":0,"_headWidth":1.08111274,"_muzzleWeight":-15.0,"_heightWeight":1.055,"_widthWeight":1.14589107,"_torsoWeight":105.0,"_armWeight":105.0,"_boobWeight":0.0,"_bellyWeight":18.8688164,"_bottomWeight":-99.741745,"_textureID":1,"_bodyColorHue":28.921814,"_bodyColorBrightness":0.0440077819,"_bodyColorContrast":1.106724,"_bodyColorSaturation":1.6005187,"_hairStyleHue":117.1,"_hairStyleBrightness":-0.0487659648,"_hairStyleContrast":1.02301025,"_hairStyleSaturation":1.09594786,"_hairIsBodyColor":true,"_miscHue":13.20668,"_miscBrightness":0.0108290948,"_miscContrast":1.0231359,"_miscSaturation":0.9551827,"_hideHelm":false,"_hideCape":true,"_hideChest":false,"_hideLeggings":false}],"_miscName":"Horns","_disableEarSelector":false,"_disableMouthSelector":false,"_randomizeHairStylesOnCC":false,"_defaultHairColorToBodyValue":true,"_defaultMiscColorValues":false,"_footstepPitch":0.85,"_chatVoiceClips":["_sound/_voice/_player/_kubold/_kuboldTalk02","_sound/_voice/_player/_kubold/_kuboldTalk03","_sound/_voice/_player/_kubold/_kuboldTalk05"],"name":"playerRace_kubold","hideFlags":0}
+{
+  "$id": "1",
+  "_raceName": "Kubold",
+  "_raceAvatar": "_graphic/_ui/_charactercreationicons/_raceicons/rcIco_azora",
+  "_raceEmblemIcon": "_graphic/_ui/_charactercreationicons/_raceicons/_emblem_kubold",
+  "_raceDescription": "Reptillian hermits who are naturally adept in the use of magic. The Kubold's homeland resides within a distant arid desert, sealed by arcane energies.",
+  "_raceDefaultNames": [
+    "Poobah",
+    "Tekk",
+    "Saul",
+    "Sage",
+    "Memi",
+    "Rakk",
+    "Tori",
+    "Zool",
+    "Yosh"
+  ],
+  "_startingItems": [],
+  "_startingWeapons": [
+    "_item/01_equipment/02_weapon/00_katars/(lv-1) WEAPON_Wood Daggers (Katars)",
+    "_item/01_equipment/02_weapon/02_melee/(lv-1) WEAPON_Wood Sword (Melee)",
+    "_item/01_equipment/02_weapon/03_heavymelee/(lv-1) WEAPON_Wood Hammer (Heavy Melee)",
+    "_item/01_equipment/02_weapon/05_magicscepter/(lv-1) WEAPON_Wood Scepter (Magic Scepter)",
+    "_item/01_equipment/02_weapon/01_ranged/(lv-1) WEAPON_Wooden Bow (Ranged)"
+  ],
+  "_startingChestpieces": [
+    "_item/01_equipment/01_armor/02_chest/(lv-1) CHESTPIECE_Sagecloth Top"
+  ],
+  "_startingLeggings": [
+    "_item/01_equipment/01_armor/03_legs/(lv-1) LEGGINGS_Sagecloth Shorts"
+  ],
+  "_racialSkills": [
+    "_skill/_noviceskills/_alacrity/skill_alacrity"
+  ],
+  "_headMaterialIndex": 0,
+  "_bodyMaterialIndex": 1,
+  "_armMaterialIndex": 0,
+  "_upperLegMaterialIndex": 2,
+  "_lowerLegMaterialIndex": 3,
+  "_raceModel": "_race/03_race_kubold/_raceModel_Kubold",
+  "_raceDisplayParams": {
+    "$id": "2",
+    "_bodyHueSliderSprite": "_graphic/_ui/_charactercreationicons/fill_hue_kubold",
+    "_miscHueSliderSprite": "",
+    "_bodyHueRange": [
+      0.0,
+      360.0
+    ],
+    "_bodyBrightnessRange": [
+      -0.15,
+      0.1
+    ],
+    "_bodyContrastRange": [
+      0.75,
+      1.45
+    ],
+    "_bodySaturationRange": [
+      0.0,
+      2.0
+    ],
+    "_headWidthRange": [
+      0.95,
+      1.15
+    ],
+    "_headModRange": [
+      -15.0,
+      100.0
+    ],
+    "_heightRange": [
+      0.95,
+      1.055
+    ],
+    "_widthRange": [
+      0.95,
+      1.15
+    ],
+    "_torsoRange": [
+      -10.0,
+      105.0
+    ],
+    "_boobRange": [
+      -40.0,
+      120.0
+    ],
+    "_armRange": [
+      25.0,
+      105.0
+    ],
+    "_bellyRange": [
+      -20.0,
+      120.0
+    ],
+    "_bottomRange": [
+      -120.0,
+      120.0
+    ],
+    "_pitchRange": [
+      0.6,
+      1.25
+    ]
+  },
+  "_hairStyleMeshes": [
+    "",
+    "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_hairstyles/_koboldHair_01",
+    "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_hairstyles/_koboldHair_02",
+    "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_hairstyles/_koboldHair_03",
+    "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_hairstyles/_koboldHair_04",
+    "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_hairstyles/_koboldHair_05"
+  ],
+  "_helmHairMesh": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_hairstyles/_koboldHelmHair",
+  "_muzzleWeightIsHead": false,
+  "_skinTextureGroups": [
+    {
+      "$id": "3",
+      "_textureGroupTag": "Standard",
+      "_headTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/kobold_headTex",
+      "_bodyTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/kobold_chestTex",
+      "_legTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/kobold_legTex",
+      "_tailTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_koboldTailTex",
+      "_earTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_koboldEarTex",
+      "_hairTexture": "_graphic/_mesh/00_player/player_meshes/_hairGradient_kubold"
+    },
+    {
+      "$id": "4",
+      "_textureGroupTag": "Glyphed",
+      "_headTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/kobold_headTex02",
+      "_bodyTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/kobold_chestTex02",
+      "_legTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/kobold_legTex02",
+      "_tailTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_koboldTailTex02",
+      "_earTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_koboldEarTex",
+      "_hairTexture": "_graphic/_mesh/00_player/player_meshes/_hairGradient_kubold"
+    },
+    {
+      "$id": "5",
+      "_textureGroupTag": "Spotted",
+      "_headTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/kobold_headTex03",
+      "_bodyTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/kobold_chestTex03",
+      "_legTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/kobold_legTex03",
+      "_tailTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_koboldTailTex03",
+      "_earTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_koboldEarTex02",
+      "_hairTexture": "_graphic/_mesh/00_player/player_meshes/_hairGradient_kubold"
+    }
+  ],
+  "_eyeTextures": [
+    {
+      "$id": "6",
+      "_center": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_01/_koboldEye01",
+      "_up": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_01/_koboldEye01_U",
+      "_down": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_01/_koboldEye01_D",
+      "_left": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_01/_koboldEye01_L",
+      "_right": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_01/_koboldEye01_R",
+      "_hurt": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_01/_koboldEye01",
+      "_pissed": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_01/_koboldEye01",
+      "_closed": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_01/_koboldEye01_B"
+    },
+    {
+      "$id": "7",
+      "_center": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_02/_koboldEye02",
+      "_up": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_02/_koboldEye02",
+      "_down": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_02/_koboldEye02",
+      "_left": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_02/_koboldEye02",
+      "_right": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_02/_koboldEye02",
+      "_hurt": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_02/_koboldEye02",
+      "_pissed": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_02/_koboldEye02_pissed",
+      "_closed": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_02/_koboldEye02_closed"
+    },
+    {
+      "$id": "8",
+      "_center": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_03/_koboldEye03",
+      "_up": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_03/_koboldEye03_U",
+      "_down": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_03/_koboldEye03_D",
+      "_left": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_03/_koboldEye03_L",
+      "_right": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_03/_koboldEye03_R",
+      "_hurt": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_03/_koboldEye03",
+      "_pissed": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_03/_koboldEye03_pissed",
+      "_closed": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_03/_koboldEye03_closed"
+    },
+    {
+      "$id": "9",
+      "_center": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_04/_koboldEye04",
+      "_up": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_04/_koboldEye04",
+      "_down": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_04/_koboldEye04",
+      "_left": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_04/_koboldEye04_L",
+      "_right": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_04/_koboldEye04_R",
+      "_hurt": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_04/_koboldEye04",
+      "_pissed": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_04/_koboldEye04_pissed",
+      "_closed": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_04/_koboldEye04_closed"
+    },
+    {
+      "$id": "10",
+      "_center": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_05/_koboldEye05",
+      "_up": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_05/_koboldEye05",
+      "_down": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_05/_koboldEye05",
+      "_left": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_05/_koboldEye05_left",
+      "_right": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_05/_koboldEye05_right",
+      "_hurt": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_05/_koboldEye05",
+      "_pissed": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_05/_koboldEye05",
+      "_closed": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_05/_koboldEye05_closed"
+    },
+    {
+      "$id": "11",
+      "_center": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_07/_koboldEye07",
+      "_up": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_07/_koboldEye07",
+      "_down": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_07/_koboldEye07",
+      "_left": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_07/_koboldEye07",
+      "_right": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_07/_koboldEye07",
+      "_hurt": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_07/_koboldEye07",
+      "_pissed": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_07/_koboldEye07_pissed",
+      "_closed": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_07/_koboldEye07_blink"
+    },
+    {
+      "$id": "12",
+      "_center": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_08/_koboldEye08",
+      "_up": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_08/_koboldEye08",
+      "_down": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_08/_koboldEye08",
+      "_left": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_08/_koboldEye08_L",
+      "_right": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_08/_koboldEye08_R",
+      "_hurt": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_08/_koboldEye08_hurt",
+      "_pissed": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_08/_koboldEye08_pissed",
+      "_closed": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_08/_koboldEye08_blink"
+    },
+    {
+      "$id": "13",
+      "_center": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_09/_koboldEye09",
+      "_up": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_09/_koboldEye09",
+      "_down": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_09/_koboldEye09",
+      "_left": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_09/_koboldEye09_L",
+      "_right": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_09/_koboldEye09_R",
+      "_hurt": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_09/_koboldEye09_hurt",
+      "_pissed": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_09/_koboldEye09_pissed",
+      "_closed": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_09/_koboldEye09_blink"
+    },
+    {
+      "$id": "14",
+      "_center": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_10/_koboldEye10",
+      "_up": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_10/_koboldEye10",
+      "_down": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_10/_koboldEye10",
+      "_left": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_10/_koboldEye10_L",
+      "_right": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_10/_koboldEye10_R",
+      "_hurt": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_10/_koboldEye10_hurt",
+      "_pissed": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_10/_koboldEye10_pissed",
+      "_closed": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_eyes/_10/_koboldEye10_blink"
+    }
+  ],
+  "_mouthTextures": [
+    {
+      "$id": "15",
+      "_closed": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_mouths/_mouth_kobold02",
+      "_open": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_mouths/_mouth_kobold01_open"
+    },
+    {
+      "$id": "16",
+      "_closed": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_mouths/_mouth_kobold01",
+      "_open": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_mouths/_mouth_kobold01_open"
+    },
+    {
+      "$id": "17",
+      "_closed": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_mouths/_mouth_kobold03",
+      "_open": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_mouths/_mouth_kobold01_open"
+    },
+    {
+      "$id": "18",
+      "_closed": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_mouths/_mouth_kobold04",
+      "_open": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_mouths/_mouth_kobold01_open"
+    },
+    {
+      "$id": "19",
+      "_closed": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_mouths/_mouth_kobold05",
+      "_open": "_graphic/_mesh/00_player/player_meshes/_racemesh_kobold/_mouths/_mouth_kobold01_open"
+    }
+  ],
+  "_appearanceTemplates": [
+    {
+      "$id": "20",
+      "_setRaceTag": "Kubold",
+      "_eyeID": 0,
+      "_mouthID": 2,
+      "_hairStyleID": 0,
+      "_earID": 1,
+      "_tailID": 1,
+      "_miscID": 6,
+      "_displayBoobs": true,
+      "_isLeftHanded": false,
+      "_voicePitch": 0.6408752,
+      "_helmDyeIndex": 2,
+      "_chestDyeIndex": 1,
+      "_legsDyeIndex": 1,
+      "_capeDyeIndex": 0,
+      "_headWidth": 1.04912651,
+      "_muzzleWeight": 38.7672272,
+      "_heightWeight": 0.998910666,
+      "_widthWeight": 1.01353407,
+      "_torsoWeight": 0.0,
+      "_armWeight": 25.0,
+      "_boobWeight": -2.161479,
+      "_bellyWeight": -19.7429066,
+      "_bottomWeight": 23.5201645,
+      "_textureID": 1,
+      "_bodyColorHue": 360.0,
+      "_bodyColorBrightness": 0.0840157643,
+      "_bodyColorContrast": 0.8957859,
+      "_bodyColorSaturation": 1.62099242,
+      "_hairStyleHue": 91.1744,
+      "_hairStyleBrightness": 0.0542729869,
+      "_hairStyleContrast": 1.29407918,
+      "_hairStyleSaturation": 0.3681202,
+      "_hairIsBodyColor": true,
+      "_miscHue": 13.2066822,
+      "_miscBrightness": -0.015698202,
+      "_miscContrast": 1.18909585,
+      "_miscSaturation": 1.0,
+      "_hideHelm": false,
+      "_hideCape": true,
+      "_hideChest": false,
+      "_hideLeggings": false
+    },
+    {
+      "$id": "21",
+      "_setRaceTag": "Kubold",
+      "_eyeID": 2,
+      "_mouthID": 1,
+      "_hairStyleID": 5,
+      "_earID": 2,
+      "_tailID": 0,
+      "_miscID": 8,
+      "_displayBoobs": false,
+      "_isLeftHanded": false,
+      "_voicePitch": 1.14372,
+      "_helmDyeIndex": 1,
+      "_chestDyeIndex": 1,
+      "_legsDyeIndex": 1,
+      "_capeDyeIndex": 0,
+      "_headWidth": 1.08111274,
+      "_muzzleWeight": -15.0,
+      "_heightWeight": 1.055,
+      "_widthWeight": 1.14589107,
+      "_torsoWeight": 105.0,
+      "_armWeight": 105.0,
+      "_boobWeight": 0.0,
+      "_bellyWeight": 18.8688164,
+      "_bottomWeight": -99.741745,
+      "_textureID": 1,
+      "_bodyColorHue": 28.921814,
+      "_bodyColorBrightness": 0.0440077819,
+      "_bodyColorContrast": 1.106724,
+      "_bodyColorSaturation": 1.6005187,
+      "_hairStyleHue": 117.1,
+      "_hairStyleBrightness": -0.0487659648,
+      "_hairStyleContrast": 1.02301025,
+      "_hairStyleSaturation": 1.09594786,
+      "_hairIsBodyColor": true,
+      "_miscHue": 13.20668,
+      "_miscBrightness": 0.0108290948,
+      "_miscContrast": 1.0231359,
+      "_miscSaturation": 0.9551827,
+      "_hideHelm": false,
+      "_hideCape": true,
+      "_hideChest": false,
+      "_hideLeggings": false
+    }
+  ],
+  "_miscName": "Horns",
+  "_disableEarSelector": false,
+  "_disableMouthSelector": false,
+  "_randomizeHairStylesOnCC": false,
+  "_defaultHairColorToBodyValue": true,
+  "_defaultMiscColorValues": false,
+  "_footstepPitch": 0.85,
+  "_chatVoiceClips": [
+    "_sound/_voice/_player/_kubold/_kuboldTalk02",
+    "_sound/_voice/_player/_kubold/_kuboldTalk03",
+    "_sound/_voice/_player/_kubold/_kuboldTalk05"
+  ],
+  "name": "playerRace_kubold",
+  "hideFlags": 0
+}

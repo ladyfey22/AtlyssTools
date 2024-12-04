@@ -1,1 +1,518 @@
-{"$id":"1","_raceName":"Poon","_raceAvatar":"_graphic/_ui/_charactercreationicons/_raceicons/rcIco_poon","_raceEmblemIcon":"_graphic/_ui/_charactercreationicons/_raceicons/_emblem_poon","_raceDescription":"An ancient but thriving race of dryads who are tactful and cunning. Poons have adapted beyond being prey from the Deep Forest, able to take on any foe that stands against them.","_raceDefaultNames":["Puki","Jude","Noka","Ruth","Taibah","Obouya","Nuhhn","Takek","Borz","Galuu","Wrea","Hal","Louie","Spu","Krea","Moom","Hopp","Chip","Carrot","Thistle","Thom","Victor","Candy","Chie","Tulah","Punn","Selku","Nowah","Panunu","Yoke","Slook","Lola","Trev","King","Arthur","Sue"],"_startingItems":[],"_startingWeapons":["_item/01_equipment/02_weapon/00_katars/(lv-1) WEAPON_Wood Daggers (Katars)","_item/01_equipment/02_weapon/02_melee/(lv-1) WEAPON_Wood Sword (Melee)","_item/01_equipment/02_weapon/03_heavymelee/(lv-1) WEAPON_Wood Hammer (Heavy Melee)","_item/01_equipment/02_weapon/05_magicscepter/(lv-1) WEAPON_Wood Scepter (Magic Scepter)","_item/01_equipment/02_weapon/01_ranged/(lv-1) WEAPON_Wooden Bow (Ranged)"],"_startingChestpieces":["_item/01_equipment/01_armor/02_chest/(lv-1) CHESTPIECE_Leather Top"],"_startingLeggings":["_item/01_equipment/01_armor/03_legs/(lv-1) LEGGINGS_Leather Britches"],"_racialSkills":["_skill/_noviceskills/_legup/skill_legup"],"_headMaterialIndex":0,"_bodyMaterialIndex":1,"_armMaterialIndex":0,"_upperLegMaterialIndex":2,"_lowerLegMaterialIndex":3,"_raceModel":"_race/02_race_poon/_raceModel_Poon","_raceDisplayParams":{"$id":"2","_bodyHueSliderSprite":"_graphic/_ui/_charactercreationicons/fill_hue_poon","_miscHueSliderSprite":"","_bodyHueRange":[0.0,360.0],"_bodyBrightnessRange":[-0.35,0.1],"_bodyContrastRange":[0.75,1.45],"_bodySaturationRange":[0.0,2.0],"_headWidthRange":[0.95,1.15],"_headModRange":[0.0,100.0],"_heightRange":[0.95,1.055],"_widthRange":[0.95,1.15],"_torsoRange":[-10.0,105.0],"_boobRange":[-20.0,100.0],"_armRange":[15.0,105.0],"_bellyRange":[-20.0,120.0],"_bottomRange":[-120.0,120.0],"_pitchRange":[0.6,1.25]},"_hairStyleMeshes":["_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_hairstyles/poon_hair01","_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_hairstyles/poon_hair02","_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_hairstyles/poon_hair03","_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_hairstyles/poon_hair04","_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_hairstyles/poon_hair05","_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_hairstyles/poon_hair06","_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_hairstyles/poon_hair07","_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_hairstyles/poon_hair08",""],"_helmHairMesh":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_hairstyles/poon_helmHair","_muzzleWeightIsHead":false,"_skinTextureGroups":[{"$id":"3","_textureGroupTag":"DarkSpots_Tattoo","_headTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex02_head","_bodyTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex02_chest","_legTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex02_leg","_tailTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex02_head","_earTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex02_head","_hairTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex02_head"},{"$id":"4","_textureGroupTag":"DarkSpots_Clear","_headTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex01_head","_bodyTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex01_chest","_legTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex01_leg","_tailTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex01_head","_earTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex01_head","_hairTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex01_head"},{"$id":"5","_textureGroupTag":"LightSpots_Tattoo","_headTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex03_head03","_bodyTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex03_chest02","_legTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex03_leg02","_tailTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex03_head","_earTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex03_head","_hairTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex03_head"},{"$id":"6","_textureGroupTag":"LightSpots_Clear","_headTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex03_head","_bodyTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex03_chest","_legTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex03_leg","_tailTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex03_head","_earTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex03_head","_hairTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex03_head"},{"$id":"7","_textureGroupTag":"LightSpots_DeerHead","_headTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex03_head02","_bodyTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex03_chest","_legTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex03_leg","_tailTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex03_head","_earTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex03_head","_hairTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex03_head"},{"$id":"8","_textureGroupTag":"LightSpots_ValuHead","_headTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex03_head04","_bodyTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex03_chest","_legTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex03_leg","_tailTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex03_head","_earTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex03_head","_hairTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex03_head"},{"$id":"9","_textureGroupTag":"DarkSpots_DeerHead","_headTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex01_head_03","_bodyTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex01_chest","_legTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex01_leg","_tailTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex01_head","_earTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex01_head","_hairTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex01_head"},{"$id":"10","_textureGroupTag":"DarkSpots_ValuHead","_headTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex01_head_02","_bodyTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex01_chest","_legTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex01_leg","_tailTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex01_head","_earTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex01_head","_hairTexture":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex01_head"}],"_eyeTextures":[{"$id":"11","_center":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_01/poonEYe01","_up":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_01/poonEYe01_U","_down":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_01/poonEYe01_D","_left":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_01/poonEYe01_L","_right":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_01/poonEYe01_R","_hurt":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_01/poonEYe01_hurt","_pissed":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_01/poonEYe01_pissed","_closed":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_01/poonEYe01_closed"},{"$id":"12","_center":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_02/poonEYe02","_up":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_02/poonEYe02_U","_down":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_02/poonEYe02_D","_left":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_02/poonEYe02_L","_right":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_02/poonEYe02_R","_hurt":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_02/poonEYe02_hurt","_pissed":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_02/poonEYe02_pissed","_closed":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_02/poonEYe02_closed"},{"$id":"13","_center":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_03/poonEYe03","_up":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_03/poonEYe03_U","_down":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_03/poonEYe03_D","_left":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_03/poonEYe03_L","_right":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_03/poonEYe03_R","_hurt":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_03/poonEYe03_hurt","_pissed":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_03/poonEYe03_pissed","_closed":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_03/poonEYe03_closed"},{"$id":"14","_center":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_04/poonEYe04","_up":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_04/poonEYe04_u","_down":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_04/poonEYe04_d","_left":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_04/poonEYe04","_right":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_04/poonEYe04","_hurt":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_04/poonEYe04_hurt","_pissed":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_04/poonEYe04_pissed","_closed":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_04/poonEYe04_closed"},{"$id":"15","_center":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_05/poonEYe05","_up":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_05/poonEYe05_U","_down":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_05/poonEYe05_D","_left":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_05/poonEYe05_L","_right":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_05/poonEYe05_R","_hurt":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_05/poonEYe05_hurt","_pissed":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_05/poonEYe05_pissed","_closed":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_05/poonEYe05_closed"},{"$id":"16","_center":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_06/poonEYe06","_up":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_06/poonEYe06_U","_down":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_06/poonEYe06_D","_left":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_06/poonEYe06_L","_right":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_06/poonEYe06_R","_hurt":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_06/poonEYe06_hurt","_pissed":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_06/poonEYe06_pissed","_closed":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_06/poonEYe06_closed"},{"$id":"17","_center":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_07/poonEYe07","_up":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_07/poonEYe07","_down":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_07/poonEYe07_D","_left":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_07/poonEYe07_L","_right":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_07/poonEYe07_R","_hurt":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_07/poonEYe07_Hurt","_pissed":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_07/poonEYe07_pissed","_closed":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_07/poonEYe07_closed"},{"$id":"18","_center":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_08/poonEYe08","_up":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_08/poonEYe08","_down":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_08/poonEYe08_D","_left":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_08/poonEYe08_L","_right":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_08/poonEYe08_R","_hurt":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_08/poonEYe08_hurt","_pissed":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_08/poonEYe08_pissed","_closed":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_08/poonEYe08_closed"},{"$id":"19","_center":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_09/poonEYe09","_up":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_09/poonEYe09","_down":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_09/poonEYe09_D","_left":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_09/poonEYe09_L","_right":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_09/poonEYe09_R","_hurt":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_09/poonEYe09_hurt","_pissed":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_09/poonEYe09_pissed","_closed":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_09/poonEYe09_blink"},{"$id":"20","_center":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_11/poonEYe11","_up":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_11/poonEYe11","_down":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_11/poonEYe11_D","_left":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_11/poonEYe11_L","_right":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_11/poonEYe11_R","_hurt":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_11/poonEYe11_hurt","_pissed":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_11/poonEYe11_pissed","_closed":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_11/poonEYe11_blink"},{"$id":"21","_center":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_12/poonEYe12","_up":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_12/poonEYe12","_down":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_12/poonEYe12_D","_left":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_12/poonEYe12_L","_right":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_12/poonEYe12_R","_hurt":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_12/poonEYe12_hurt","_pissed":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_12/poonEYe12_pissed","_closed":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_12/poonEYe12_blink"},{"$id":"22","_center":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_13/poonEYe13","_up":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_13/poonEYe13","_down":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_13/poonEYe13_D","_left":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_13/poonEYe13_L","_right":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_13/poonEYe13_R","_hurt":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_13/poonEYe13_hurt","_pissed":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_13/poonEYe13_pissed","_closed":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_13/poonEYe13_blink"},{"$id":"23","_center":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_10/poonEYe10","_up":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_10/poonEYe10","_down":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_10/poonEYe10_D","_left":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_10/poonEYe10_L","_right":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_10/poonEYe10_R","_hurt":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_10/poonEYe10_hurt","_pissed":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_10/poonEYe10_pissed","_closed":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_10/poonEYe10_blink"}],"_mouthTextures":[{"$id":"24","_closed":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonmouth01","_open":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonmouth05"},{"$id":"25","_closed":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonmouth02","_open":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonmouth03"},{"$id":"26","_closed":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonmouth06","_open":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonmouth05"},{"$id":"27","_closed":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonmouth04","_open":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonmouth03"},{"$id":"28","_closed":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonmouth08","_open":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonmouth05"},{"$id":"29","_closed":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonmouth09","_open":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonmouth03"},{"$id":"30","_closed":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonmouth10","_open":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonmouth05"},{"$id":"31","_closed":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonmouth11","_open":"_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonmouth11_open"}],"_appearanceTemplates":[{"$id":"32","_setRaceTag":"Poon","_eyeID":7,"_mouthID":6,"_hairStyleID":1,"_earID":0,"_tailID":2,"_miscID":1,"_displayBoobs":true,"_isLeftHanded":false,"_voicePitch":1.14031553,"_helmDyeIndex":1,"_chestDyeIndex":3,"_legsDyeIndex":3,"_capeDyeIndex":3,"_headWidth":1.02043521,"_muzzleWeight":25.0,"_heightWeight":1.01382053,"_widthWeight":1.01879585,"_torsoWeight":0.0,"_armWeight":56.91,"_boobWeight":17.2772484,"_bellyWeight":-10.3653965,"_bottomWeight":7.62525558,"_textureID":0,"_bodyColorHue":360.0,"_bodyColorBrightness":-0.0212611388,"_bodyColorContrast":1.05076635,"_bodyColorSaturation":1.327148,"_hairStyleHue":32.07012,"_hairStyleBrightness":-0.3110931,"_hairStyleContrast":0.80685395,"_hairStyleSaturation":1.80180717,"_hairIsBodyColor":true,"_miscHue":206.3,"_miscBrightness":-0.189456716,"_miscContrast":1.19651461,"_miscSaturation":1.22561109,"_hideHelm":false,"_hideCape":true,"_hideChest":true,"_hideLeggings":false},{"$id":"33","_setRaceTag":"Poon","_eyeID":1,"_mouthID":4,"_hairStyleID":6,"_earID":2,"_tailID":1,"_miscID":3,"_displayBoobs":false,"_isLeftHanded":false,"_voicePitch":0.673102,"_helmDyeIndex":0,"_chestDyeIndex":3,"_legsDyeIndex":3,"_capeDyeIndex":3,"_headWidth":1.142714,"_muzzleWeight":100.0,"_heightWeight":1.055,"_widthWeight":1.11433625,"_torsoWeight":105.0,"_armWeight":105.0,"_boobWeight":0.0,"_bellyWeight":3.28720856,"_bottomWeight":-120.0,"_textureID":2,"_bodyColorHue":360.0,"_bodyColorBrightness":-0.0496543869,"_bodyColorContrast":0.880804062,"_bodyColorSaturation":0.7,"_hairStyleHue":170.875748,"_hairStyleBrightness":-0.0416635051,"_hairStyleContrast":1.22873664,"_hairStyleSaturation":0.91,"_hairIsBodyColor":true,"_miscHue":206.5,"_miscBrightness":-0.228653669,"_miscContrast":1.15870142,"_miscSaturation":1.0,"_hideHelm":false,"_hideCape":true,"_hideChest":true,"_hideLeggings":false}],"_miscName":"Antlers","_disableEarSelector":false,"_disableMouthSelector":false,"_randomizeHairStylesOnCC":true,"_defaultHairColorToBodyValue":true,"_defaultMiscColorValues":false,"_footstepPitch":1.0,"_chatVoiceClips":["_sound/_voice/_player/_poon/_poonTalk01","_sound/_voice/_player/_poon/_poonTalk02","_sound/_voice/_player/_poon/_poonTalk03","_sound/_voice/_player/_poon/_poonTalk04","_sound/_voice/_player/_poon/_poonTalk05","_sound/_voice/_player/_poon/_poonTalk06"],"name":"playerRace_poon","hideFlags":0}
+{
+  "$id": "1",
+  "_raceName": "Poon",
+  "_raceAvatar": "_graphic/_ui/_charactercreationicons/_raceicons/rcIco_poon",
+  "_raceEmblemIcon": "_graphic/_ui/_charactercreationicons/_raceicons/_emblem_poon",
+  "_raceDescription": "An ancient but thriving race of dryads who are tactful and cunning. Poons have adapted beyond being prey from the Deep Forest, able to take on any foe that stands against them.",
+  "_raceDefaultNames": [
+    "Puki",
+    "Jude",
+    "Noka",
+    "Ruth",
+    "Taibah",
+    "Obouya",
+    "Nuhhn",
+    "Takek",
+    "Borz",
+    "Galuu",
+    "Wrea",
+    "Hal",
+    "Louie",
+    "Spu",
+    "Krea",
+    "Moom",
+    "Hopp",
+    "Chip",
+    "Carrot",
+    "Thistle",
+    "Thom",
+    "Victor",
+    "Candy",
+    "Chie",
+    "Tulah",
+    "Punn",
+    "Selku",
+    "Nowah",
+    "Panunu",
+    "Yoke",
+    "Slook",
+    "Lola",
+    "Trev",
+    "King",
+    "Arthur",
+    "Sue"
+  ],
+  "_startingItems": [],
+  "_startingWeapons": [
+    "_item/01_equipment/02_weapon/00_katars/(lv-1) WEAPON_Wood Daggers (Katars)",
+    "_item/01_equipment/02_weapon/02_melee/(lv-1) WEAPON_Wood Sword (Melee)",
+    "_item/01_equipment/02_weapon/03_heavymelee/(lv-1) WEAPON_Wood Hammer (Heavy Melee)",
+    "_item/01_equipment/02_weapon/05_magicscepter/(lv-1) WEAPON_Wood Scepter (Magic Scepter)",
+    "_item/01_equipment/02_weapon/01_ranged/(lv-1) WEAPON_Wooden Bow (Ranged)"
+  ],
+  "_startingChestpieces": [
+    "_item/01_equipment/01_armor/02_chest/(lv-1) CHESTPIECE_Leather Top"
+  ],
+  "_startingLeggings": [
+    "_item/01_equipment/01_armor/03_legs/(lv-1) LEGGINGS_Leather Britches"
+  ],
+  "_racialSkills": [
+    "_skill/_noviceskills/_legup/skill_legup"
+  ],
+  "_headMaterialIndex": 0,
+  "_bodyMaterialIndex": 1,
+  "_armMaterialIndex": 0,
+  "_upperLegMaterialIndex": 2,
+  "_lowerLegMaterialIndex": 3,
+  "_raceModel": "_race/02_race_poon/_raceModel_Poon",
+  "_raceDisplayParams": {
+    "$id": "2",
+    "_bodyHueSliderSprite": "_graphic/_ui/_charactercreationicons/fill_hue_poon",
+    "_miscHueSliderSprite": "",
+    "_bodyHueRange": [
+      0.0,
+      360.0
+    ],
+    "_bodyBrightnessRange": [
+      -0.35,
+      0.1
+    ],
+    "_bodyContrastRange": [
+      0.75,
+      1.45
+    ],
+    "_bodySaturationRange": [
+      0.0,
+      2.0
+    ],
+    "_headWidthRange": [
+      0.95,
+      1.15
+    ],
+    "_headModRange": [
+      0.0,
+      100.0
+    ],
+    "_heightRange": [
+      0.95,
+      1.055
+    ],
+    "_widthRange": [
+      0.95,
+      1.15
+    ],
+    "_torsoRange": [
+      -10.0,
+      105.0
+    ],
+    "_boobRange": [
+      -20.0,
+      100.0
+    ],
+    "_armRange": [
+      15.0,
+      105.0
+    ],
+    "_bellyRange": [
+      -20.0,
+      120.0
+    ],
+    "_bottomRange": [
+      -120.0,
+      120.0
+    ],
+    "_pitchRange": [
+      0.6,
+      1.25
+    ]
+  },
+  "_hairStyleMeshes": [
+    "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_hairstyles/poon_hair01",
+    "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_hairstyles/poon_hair02",
+    "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_hairstyles/poon_hair03",
+    "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_hairstyles/poon_hair04",
+    "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_hairstyles/poon_hair05",
+    "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_hairstyles/poon_hair06",
+    "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_hairstyles/poon_hair07",
+    "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_hairstyles/poon_hair08",
+    ""
+  ],
+  "_helmHairMesh": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_hairstyles/poon_helmHair",
+  "_muzzleWeightIsHead": false,
+  "_skinTextureGroups": [
+    {
+      "$id": "3",
+      "_textureGroupTag": "DarkSpots_Tattoo",
+      "_headTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex02_head",
+      "_bodyTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex02_chest",
+      "_legTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex02_leg",
+      "_tailTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex02_head",
+      "_earTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex02_head",
+      "_hairTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex02_head"
+    },
+    {
+      "$id": "4",
+      "_textureGroupTag": "DarkSpots_Clear",
+      "_headTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex01_head",
+      "_bodyTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex01_chest",
+      "_legTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex01_leg",
+      "_tailTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex01_head",
+      "_earTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex01_head",
+      "_hairTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex01_head"
+    },
+    {
+      "$id": "5",
+      "_textureGroupTag": "LightSpots_Tattoo",
+      "_headTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex03_head03",
+      "_bodyTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex03_chest02",
+      "_legTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex03_leg02",
+      "_tailTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex03_head",
+      "_earTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex03_head",
+      "_hairTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex03_head"
+    },
+    {
+      "$id": "6",
+      "_textureGroupTag": "LightSpots_Clear",
+      "_headTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex03_head",
+      "_bodyTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex03_chest",
+      "_legTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex03_leg",
+      "_tailTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex03_head",
+      "_earTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex03_head",
+      "_hairTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex03_head"
+    },
+    {
+      "$id": "7",
+      "_textureGroupTag": "LightSpots_DeerHead",
+      "_headTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex03_head02",
+      "_bodyTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex03_chest",
+      "_legTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex03_leg",
+      "_tailTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex03_head",
+      "_earTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex03_head",
+      "_hairTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex03_head"
+    },
+    {
+      "$id": "8",
+      "_textureGroupTag": "LightSpots_ValuHead",
+      "_headTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex03_head04",
+      "_bodyTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex03_chest",
+      "_legTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex03_leg",
+      "_tailTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex03_head",
+      "_earTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex03_head",
+      "_hairTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex03_head"
+    },
+    {
+      "$id": "9",
+      "_textureGroupTag": "DarkSpots_DeerHead",
+      "_headTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex01_head_03",
+      "_bodyTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex01_chest",
+      "_legTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex01_leg",
+      "_tailTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex01_head",
+      "_earTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex01_head",
+      "_hairTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex01_head"
+    },
+    {
+      "$id": "10",
+      "_textureGroupTag": "DarkSpots_ValuHead",
+      "_headTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex01_head_02",
+      "_bodyTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex01_chest",
+      "_legTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex01_leg",
+      "_tailTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex01_head",
+      "_earTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex01_head",
+      "_hairTexture": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonTex01_head"
+    }
+  ],
+  "_eyeTextures": [
+    {
+      "$id": "11",
+      "_center": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_01/poonEYe01",
+      "_up": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_01/poonEYe01_U",
+      "_down": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_01/poonEYe01_D",
+      "_left": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_01/poonEYe01_L",
+      "_right": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_01/poonEYe01_R",
+      "_hurt": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_01/poonEYe01_hurt",
+      "_pissed": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_01/poonEYe01_pissed",
+      "_closed": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_01/poonEYe01_closed"
+    },
+    {
+      "$id": "12",
+      "_center": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_02/poonEYe02",
+      "_up": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_02/poonEYe02_U",
+      "_down": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_02/poonEYe02_D",
+      "_left": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_02/poonEYe02_L",
+      "_right": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_02/poonEYe02_R",
+      "_hurt": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_02/poonEYe02_hurt",
+      "_pissed": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_02/poonEYe02_pissed",
+      "_closed": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_02/poonEYe02_closed"
+    },
+    {
+      "$id": "13",
+      "_center": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_03/poonEYe03",
+      "_up": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_03/poonEYe03_U",
+      "_down": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_03/poonEYe03_D",
+      "_left": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_03/poonEYe03_L",
+      "_right": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_03/poonEYe03_R",
+      "_hurt": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_03/poonEYe03_hurt",
+      "_pissed": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_03/poonEYe03_pissed",
+      "_closed": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_03/poonEYe03_closed"
+    },
+    {
+      "$id": "14",
+      "_center": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_04/poonEYe04",
+      "_up": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_04/poonEYe04_u",
+      "_down": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_04/poonEYe04_d",
+      "_left": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_04/poonEYe04",
+      "_right": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_04/poonEYe04",
+      "_hurt": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_04/poonEYe04_hurt",
+      "_pissed": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_04/poonEYe04_pissed",
+      "_closed": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_04/poonEYe04_closed"
+    },
+    {
+      "$id": "15",
+      "_center": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_05/poonEYe05",
+      "_up": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_05/poonEYe05_U",
+      "_down": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_05/poonEYe05_D",
+      "_left": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_05/poonEYe05_L",
+      "_right": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_05/poonEYe05_R",
+      "_hurt": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_05/poonEYe05_hurt",
+      "_pissed": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_05/poonEYe05_pissed",
+      "_closed": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_05/poonEYe05_closed"
+    },
+    {
+      "$id": "16",
+      "_center": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_06/poonEYe06",
+      "_up": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_06/poonEYe06_U",
+      "_down": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_06/poonEYe06_D",
+      "_left": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_06/poonEYe06_L",
+      "_right": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_06/poonEYe06_R",
+      "_hurt": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_06/poonEYe06_hurt",
+      "_pissed": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_06/poonEYe06_pissed",
+      "_closed": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_06/poonEYe06_closed"
+    },
+    {
+      "$id": "17",
+      "_center": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_07/poonEYe07",
+      "_up": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_07/poonEYe07",
+      "_down": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_07/poonEYe07_D",
+      "_left": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_07/poonEYe07_L",
+      "_right": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_07/poonEYe07_R",
+      "_hurt": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_07/poonEYe07_Hurt",
+      "_pissed": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_07/poonEYe07_pissed",
+      "_closed": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_07/poonEYe07_closed"
+    },
+    {
+      "$id": "18",
+      "_center": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_08/poonEYe08",
+      "_up": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_08/poonEYe08",
+      "_down": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_08/poonEYe08_D",
+      "_left": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_08/poonEYe08_L",
+      "_right": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_08/poonEYe08_R",
+      "_hurt": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_08/poonEYe08_hurt",
+      "_pissed": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_08/poonEYe08_pissed",
+      "_closed": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_08/poonEYe08_closed"
+    },
+    {
+      "$id": "19",
+      "_center": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_09/poonEYe09",
+      "_up": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_09/poonEYe09",
+      "_down": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_09/poonEYe09_D",
+      "_left": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_09/poonEYe09_L",
+      "_right": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_09/poonEYe09_R",
+      "_hurt": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_09/poonEYe09_hurt",
+      "_pissed": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_09/poonEYe09_pissed",
+      "_closed": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_09/poonEYe09_blink"
+    },
+    {
+      "$id": "20",
+      "_center": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_11/poonEYe11",
+      "_up": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_11/poonEYe11",
+      "_down": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_11/poonEYe11_D",
+      "_left": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_11/poonEYe11_L",
+      "_right": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_11/poonEYe11_R",
+      "_hurt": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_11/poonEYe11_hurt",
+      "_pissed": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_11/poonEYe11_pissed",
+      "_closed": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_11/poonEYe11_blink"
+    },
+    {
+      "$id": "21",
+      "_center": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_12/poonEYe12",
+      "_up": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_12/poonEYe12",
+      "_down": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_12/poonEYe12_D",
+      "_left": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_12/poonEYe12_L",
+      "_right": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_12/poonEYe12_R",
+      "_hurt": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_12/poonEYe12_hurt",
+      "_pissed": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_12/poonEYe12_pissed",
+      "_closed": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_12/poonEYe12_blink"
+    },
+    {
+      "$id": "22",
+      "_center": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_13/poonEYe13",
+      "_up": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_13/poonEYe13",
+      "_down": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_13/poonEYe13_D",
+      "_left": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_13/poonEYe13_L",
+      "_right": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_13/poonEYe13_R",
+      "_hurt": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_13/poonEYe13_hurt",
+      "_pissed": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_13/poonEYe13_pissed",
+      "_closed": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_13/poonEYe13_blink"
+    },
+    {
+      "$id": "23",
+      "_center": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_10/poonEYe10",
+      "_up": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_10/poonEYe10",
+      "_down": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_10/poonEYe10_D",
+      "_left": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_10/poonEYe10_L",
+      "_right": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_10/poonEYe10_R",
+      "_hurt": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_10/poonEYe10_hurt",
+      "_pissed": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_10/poonEYe10_pissed",
+      "_closed": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/_eyes/_10/poonEYe10_blink"
+    }
+  ],
+  "_mouthTextures": [
+    {
+      "$id": "24",
+      "_closed": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonmouth01",
+      "_open": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonmouth05"
+    },
+    {
+      "$id": "25",
+      "_closed": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonmouth02",
+      "_open": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonmouth03"
+    },
+    {
+      "$id": "26",
+      "_closed": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonmouth06",
+      "_open": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonmouth05"
+    },
+    {
+      "$id": "27",
+      "_closed": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonmouth04",
+      "_open": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonmouth03"
+    },
+    {
+      "$id": "28",
+      "_closed": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonmouth08",
+      "_open": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonmouth05"
+    },
+    {
+      "$id": "29",
+      "_closed": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonmouth09",
+      "_open": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonmouth03"
+    },
+    {
+      "$id": "30",
+      "_closed": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonmouth10",
+      "_open": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonmouth05"
+    },
+    {
+      "$id": "31",
+      "_closed": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonmouth11",
+      "_open": "_graphic/_mesh/00_player/player_meshes/_racemesh_poon/poonmouth11_open"
+    }
+  ],
+  "_appearanceTemplates": [
+    {
+      "$id": "32",
+      "_setRaceTag": "Poon",
+      "_eyeID": 7,
+      "_mouthID": 6,
+      "_hairStyleID": 1,
+      "_earID": 0,
+      "_tailID": 2,
+      "_miscID": 1,
+      "_displayBoobs": true,
+      "_isLeftHanded": false,
+      "_voicePitch": 1.14031553,
+      "_helmDyeIndex": 1,
+      "_chestDyeIndex": 3,
+      "_legsDyeIndex": 3,
+      "_capeDyeIndex": 3,
+      "_headWidth": 1.02043521,
+      "_muzzleWeight": 25.0,
+      "_heightWeight": 1.01382053,
+      "_widthWeight": 1.01879585,
+      "_torsoWeight": 0.0,
+      "_armWeight": 56.91,
+      "_boobWeight": 17.2772484,
+      "_bellyWeight": -10.3653965,
+      "_bottomWeight": 7.62525558,
+      "_textureID": 0,
+      "_bodyColorHue": 360.0,
+      "_bodyColorBrightness": -0.0212611388,
+      "_bodyColorContrast": 1.05076635,
+      "_bodyColorSaturation": 1.327148,
+      "_hairStyleHue": 32.07012,
+      "_hairStyleBrightness": -0.3110931,
+      "_hairStyleContrast": 0.80685395,
+      "_hairStyleSaturation": 1.80180717,
+      "_hairIsBodyColor": true,
+      "_miscHue": 206.3,
+      "_miscBrightness": -0.189456716,
+      "_miscContrast": 1.19651461,
+      "_miscSaturation": 1.22561109,
+      "_hideHelm": false,
+      "_hideCape": true,
+      "_hideChest": true,
+      "_hideLeggings": false
+    },
+    {
+      "$id": "33",
+      "_setRaceTag": "Poon",
+      "_eyeID": 1,
+      "_mouthID": 4,
+      "_hairStyleID": 6,
+      "_earID": 2,
+      "_tailID": 1,
+      "_miscID": 3,
+      "_displayBoobs": false,
+      "_isLeftHanded": false,
+      "_voicePitch": 0.673102,
+      "_helmDyeIndex": 0,
+      "_chestDyeIndex": 3,
+      "_legsDyeIndex": 3,
+      "_capeDyeIndex": 3,
+      "_headWidth": 1.142714,
+      "_muzzleWeight": 100.0,
+      "_heightWeight": 1.055,
+      "_widthWeight": 1.11433625,
+      "_torsoWeight": 105.0,
+      "_armWeight": 105.0,
+      "_boobWeight": 0.0,
+      "_bellyWeight": 3.28720856,
+      "_bottomWeight": -120.0,
+      "_textureID": 2,
+      "_bodyColorHue": 360.0,
+      "_bodyColorBrightness": -0.0496543869,
+      "_bodyColorContrast": 0.880804062,
+      "_bodyColorSaturation": 0.7,
+      "_hairStyleHue": 170.875748,
+      "_hairStyleBrightness": -0.0416635051,
+      "_hairStyleContrast": 1.22873664,
+      "_hairStyleSaturation": 0.91,
+      "_hairIsBodyColor": true,
+      "_miscHue": 206.5,
+      "_miscBrightness": -0.228653669,
+      "_miscContrast": 1.15870142,
+      "_miscSaturation": 1.0,
+      "_hideHelm": false,
+      "_hideCape": true,
+      "_hideChest": true,
+      "_hideLeggings": false
+    }
+  ],
+  "_miscName": "Antlers",
+  "_disableEarSelector": false,
+  "_disableMouthSelector": false,
+  "_randomizeHairStylesOnCC": true,
+  "_defaultHairColorToBodyValue": true,
+  "_defaultMiscColorValues": false,
+  "_footstepPitch": 1.0,
+  "_chatVoiceClips": [
+    "_sound/_voice/_player/_poon/_poonTalk01",
+    "_sound/_voice/_player/_poon/_poonTalk02",
+    "_sound/_voice/_player/_poon/_poonTalk03",
+    "_sound/_voice/_player/_poon/_poonTalk04",
+    "_sound/_voice/_player/_poon/_poonTalk05",
+    "_sound/_voice/_player/_poon/_poonTalk06"
+  ],
+  "name": "playerRace_poon",
+  "hideFlags": 0
+}

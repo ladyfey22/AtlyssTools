@@ -1,1 +1,295 @@
-{"$id":"1","_skillName":"Rage","_skillIcon":"_graphic/_ui/_skillicons/_abIco28","_skillControlType":0,"_skillDamageType":3,"_skillDescription":"Drives the Fighter and their nearby allies into a fit of rage, <color=lime>increasing all power stats temporarily.</color>","_allowAsBonusSkill":false,"_weaponTypeRequirements":[],"_requireShield":false,"_baseSkillPower":0,"_skillRankParams":{"$id":"2","_baseLevelRequirement":10,"_baseManaCost":5,"_baseHealthCost":0,"_baseStaminaCost":0,"_isGreaterThanCost":false,"_castOnNoConditionOnly":false,"_isUninterruptable":false,"_baseRequiredItem":null,"_basedItemCost":0,"_baseCastTime":0.12,"_baseCooldown":30.0,"_baseSkillPowerPercent":1.0,"_skillLevelRequirementPerLevel":2,"_skillLevelRequirementChange":4,"_skillCostChangePerLevel":2,"_skillCostChange":5,"_skillCastTimePerLevel":0,"_skillCastTimeChange":0.0,"_skillCooldownPerLevel":0,"_skillCooldownChange":0.0,"_skillPowerPercentPerLevel":0,"_skillPowerPercentChange":0.0},"_skillRanks":[{"$id":"3","_rankTag":"Rage (Rank 1)","_levelRequirement":10,"_manaCost":5,"_healthCost":0,"_staminaCost":0,"_greaterThanCost":false,"_requiredItem":null,"_requiredItemQuantity":0,"_castTime":0.12,"_coolDown":30.0,"_skillPowerPercent":1.0,"_attackPowerModRef":0.0,"_magicPowerModRef":0.0,"_rangePowerModRef":0.0,"_rankDescriptor":"","_selfConditionOutput":"_skill/_fighterskills/_rage/statusCondition_rage01","_earlySkillObjectOutput":{"$id":"4","_skillObjectTag":"","_skillObject":"","_skillObjectCondition":{"$id":"5","_scriptableCondition":null,"_chance":1.0}},"_skillObjectOutput":{"$id":"6","_skillObjectTag":"","_skillObject":"_skill/_fighterskills/_rage/_projectile_rage","_skillObjectCondition":{"$id":"7","_scriptableCondition":"_skill/_fighterskills/_rage/statusCondition_rage01","_chance":1.0}}},{"$id":"8","_rankTag":"Rage (Rank 2)","_levelRequirement":10,"_manaCost":5,"_healthCost":0,"_staminaCost":0,"_greaterThanCost":false,"_requiredItem":null,"_requiredItemQuantity":0,"_castTime":0.12,"_coolDown":30.0,"_skillPowerPercent":1.0,"_attackPowerModRef":0.0,"_magicPowerModRef":0.0,"_rangePowerModRef":0.0,"_rankDescriptor":"","_selfConditionOutput":"_skill/_fighterskills/_rage/statusCondition_rage02","_earlySkillObjectOutput":{"$id":"9","_skillObjectTag":"","_skillObject":"","_skillObjectCondition":{"$id":"10","_scriptableCondition":null,"_chance":1.0}},"_skillObjectOutput":{"$id":"11","_skillObjectTag":"","_skillObject":"_skill/_fighterskills/_rage/_projectile_rage","_skillObjectCondition":{"$id":"12","_scriptableCondition":"_skill/_fighterskills/_rage/statusCondition_rage02","_chance":1.0}}},{"$id":"13","_rankTag":"Rage (Rank 3)","_levelRequirement":14,"_manaCost":10,"_healthCost":0,"_staminaCost":0,"_greaterThanCost":false,"_requiredItem":null,"_requiredItemQuantity":0,"_castTime":0.12,"_coolDown":30.0,"_skillPowerPercent":1.0,"_attackPowerModRef":0.0,"_magicPowerModRef":0.0,"_rangePowerModRef":0.0,"_rankDescriptor":"","_selfConditionOutput":"_skill/_fighterskills/_rage/statusCondition_rage03","_earlySkillObjectOutput":{"$id":"14","_skillObjectTag":"","_skillObject":"","_skillObjectCondition":{"$id":"15","_scriptableCondition":null,"_chance":1.0}},"_skillObjectOutput":{"$id":"16","_skillObjectTag":"","_skillObject":"_skill/_fighterskills/_rage/_projectile_rage","_skillObjectCondition":{"$id":"17","_scriptableCondition":"_skill/_fighterskills/_rage/statusCondition_rage03","_chance":1.0}}},{"$id":"18","_rankTag":"Rage (Rank 4)","_levelRequirement":14,"_manaCost":10,"_healthCost":0,"_staminaCost":0,"_greaterThanCost":false,"_requiredItem":null,"_requiredItemQuantity":0,"_castTime":0.12,"_coolDown":30.0,"_skillPowerPercent":1.0,"_attackPowerModRef":0.0,"_magicPowerModRef":0.0,"_rangePowerModRef":0.0,"_rankDescriptor":"","_selfConditionOutput":"_skill/_fighterskills/_rage/statusCondition_rage04","_earlySkillObjectOutput":{"$id":"19","_skillObjectTag":"","_skillObject":"","_skillObjectCondition":{"$id":"20","_scriptableCondition":null,"_chance":1.0}},"_skillObjectOutput":{"$id":"21","_skillObjectTag":"","_skillObject":"_skill/_fighterskills/_rage/_projectile_rage","_skillObjectCondition":{"$id":"22","_scriptableCondition":"_skill/_fighterskills/_rage/statusCondition_rage04","_chance":1.0}}},{"$id":"23","_rankTag":"Rage (Rank 5)","_levelRequirement":18,"_manaCost":15,"_healthCost":0,"_staminaCost":0,"_greaterThanCost":false,"_requiredItem":null,"_requiredItemQuantity":0,"_castTime":0.12,"_coolDown":30.0,"_skillPowerPercent":1.0,"_attackPowerModRef":0.0,"_magicPowerModRef":0.0,"_rangePowerModRef":0.0,"_rankDescriptor":"","_selfConditionOutput":"_skill/_fighterskills/_rage/statusCondition_rage05","_earlySkillObjectOutput":{"$id":"24","_skillObjectTag":"","_skillObject":"","_skillObjectCondition":{"$id":"25","_scriptableCondition":null,"_chance":1.0}},"_skillObjectOutput":{"$id":"26","_skillObjectTag":"","_skillObject":"_skill/_fighterskills/_rage/_projectile_rage","_skillObjectCondition":{"$id":"27","_scriptableCondition":"_skill/_fighterskills/_rage/statusCondition_rage05","_chance":1.0}}},{"$id":"28","_rankTag":"Rage (Rank 6)","_levelRequirement":18,"_manaCost":15,"_healthCost":0,"_staminaCost":0,"_greaterThanCost":false,"_requiredItem":null,"_requiredItemQuantity":0,"_castTime":0.12,"_coolDown":30.0,"_skillPowerPercent":1.0,"_attackPowerModRef":0.0,"_magicPowerModRef":0.0,"_rangePowerModRef":0.0,"_rankDescriptor":"","_selfConditionOutput":"_skill/_fighterskills/_rage/statusCondition_rage06","_earlySkillObjectOutput":{"$id":"29","_skillObjectTag":"","_skillObject":"","_skillObjectCondition":{"$id":"30","_scriptableCondition":null,"_chance":1.0}},"_skillObjectOutput":{"$id":"31","_skillObjectTag":"","_skillObject":"_skill/_fighterskills/_rage/_projectile_rage","_skillObjectCondition":{"$id":"32","_scriptableCondition":"_skill/_fighterskills/_rage/statusCondition_rage06","_chance":1.0}}}],"_movementSpeedDecrease":0.0,"_strafeDirection":false,"_groundOnlySkill":false,"_airTimeLockBuffer":0.0,"_enableAirTimeMod":false,"_lockMoveControlTime":0.0,"_lockCombatControlTime":0.35,"_timeBeforeAttackForce":0.0,"_attackForceApply":0.0,"_attackForceDampen":120.0,"_attackForceInputInfluence":false,"_castEffectCollection":null,"_useGlyphEffect":false,"_skillChargeAnimation":"Omni","_skillCastAnimation":"Omni","_animChargeSmoothing":0.1,"_animCastSmoothing":0.0,"_setSheatheCondition":0,"_applySheatheCondition":false,"_hideWeapon":true,"name":"skill_rage","hideFlags":0}
+{
+  "$id": "1",
+  "_skillName": "Rage",
+  "_skillIcon": "_graphic/_ui/_skillicons/_abIco28",
+  "_skillControlType": 0,
+  "_skillDamageType": 3,
+  "_skillDescription": "Drives the Fighter and their nearby allies into a fit of rage, <color=lime>increasing all power stats temporarily.</color>",
+  "_allowAsBonusSkill": false,
+  "_weaponTypeRequirements": [],
+  "_requireShield": false,
+  "_baseSkillPower": 0,
+  "_skillRankParams": {
+    "$id": "2",
+    "_baseLevelRequirement": 10,
+    "_baseManaCost": 5,
+    "_baseHealthCost": 0,
+    "_baseStaminaCost": 0,
+    "_isGreaterThanCost": false,
+    "_castOnNoConditionOnly": false,
+    "_isUninterruptable": false,
+    "_baseRequiredItem": null,
+    "_basedItemCost": 0,
+    "_baseCastTime": 0.12,
+    "_baseCooldown": 30.0,
+    "_baseSkillPowerPercent": 1.0,
+    "_skillLevelRequirementPerLevel": 2,
+    "_skillLevelRequirementChange": 4,
+    "_skillCostChangePerLevel": 2,
+    "_skillCostChange": 5,
+    "_skillCastTimePerLevel": 0,
+    "_skillCastTimeChange": 0.0,
+    "_skillCooldownPerLevel": 0,
+    "_skillCooldownChange": 0.0,
+    "_skillPowerPercentPerLevel": 0,
+    "_skillPowerPercentChange": 0.0
+  },
+  "_skillRanks": [
+    {
+      "$id": "3",
+      "_rankTag": "Rage (Rank 1)",
+      "_levelRequirement": 10,
+      "_manaCost": 5,
+      "_healthCost": 0,
+      "_staminaCost": 0,
+      "_greaterThanCost": false,
+      "_requiredItem": null,
+      "_requiredItemQuantity": 0,
+      "_castTime": 0.12,
+      "_coolDown": 30.0,
+      "_skillPowerPercent": 1.0,
+      "_attackPowerModRef": 0.0,
+      "_magicPowerModRef": 0.0,
+      "_rangePowerModRef": 0.0,
+      "_rankDescriptor": "",
+      "_selfConditionOutput": "_skill/_fighterskills/_rage/statusCondition_rage01",
+      "_earlySkillObjectOutput": {
+        "$id": "4",
+        "_skillObjectTag": "",
+        "_skillObject": "",
+        "_skillObjectCondition": {
+          "$id": "5",
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      },
+      "_skillObjectOutput": {
+        "$id": "6",
+        "_skillObjectTag": "",
+        "_skillObject": "_skill/_fighterskills/_rage/_projectile_rage",
+        "_skillObjectCondition": {
+          "$id": "7",
+          "_scriptableCondition": "_skill/_fighterskills/_rage/statusCondition_rage01",
+          "_chance": 1.0
+        }
+      }
+    },
+    {
+      "$id": "8",
+      "_rankTag": "Rage (Rank 2)",
+      "_levelRequirement": 10,
+      "_manaCost": 5,
+      "_healthCost": 0,
+      "_staminaCost": 0,
+      "_greaterThanCost": false,
+      "_requiredItem": null,
+      "_requiredItemQuantity": 0,
+      "_castTime": 0.12,
+      "_coolDown": 30.0,
+      "_skillPowerPercent": 1.0,
+      "_attackPowerModRef": 0.0,
+      "_magicPowerModRef": 0.0,
+      "_rangePowerModRef": 0.0,
+      "_rankDescriptor": "",
+      "_selfConditionOutput": "_skill/_fighterskills/_rage/statusCondition_rage02",
+      "_earlySkillObjectOutput": {
+        "$id": "9",
+        "_skillObjectTag": "",
+        "_skillObject": "",
+        "_skillObjectCondition": {
+          "$id": "10",
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      },
+      "_skillObjectOutput": {
+        "$id": "11",
+        "_skillObjectTag": "",
+        "_skillObject": "_skill/_fighterskills/_rage/_projectile_rage",
+        "_skillObjectCondition": {
+          "$id": "12",
+          "_scriptableCondition": "_skill/_fighterskills/_rage/statusCondition_rage02",
+          "_chance": 1.0
+        }
+      }
+    },
+    {
+      "$id": "13",
+      "_rankTag": "Rage (Rank 3)",
+      "_levelRequirement": 14,
+      "_manaCost": 10,
+      "_healthCost": 0,
+      "_staminaCost": 0,
+      "_greaterThanCost": false,
+      "_requiredItem": null,
+      "_requiredItemQuantity": 0,
+      "_castTime": 0.12,
+      "_coolDown": 30.0,
+      "_skillPowerPercent": 1.0,
+      "_attackPowerModRef": 0.0,
+      "_magicPowerModRef": 0.0,
+      "_rangePowerModRef": 0.0,
+      "_rankDescriptor": "",
+      "_selfConditionOutput": "_skill/_fighterskills/_rage/statusCondition_rage03",
+      "_earlySkillObjectOutput": {
+        "$id": "14",
+        "_skillObjectTag": "",
+        "_skillObject": "",
+        "_skillObjectCondition": {
+          "$id": "15",
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      },
+      "_skillObjectOutput": {
+        "$id": "16",
+        "_skillObjectTag": "",
+        "_skillObject": "_skill/_fighterskills/_rage/_projectile_rage",
+        "_skillObjectCondition": {
+          "$id": "17",
+          "_scriptableCondition": "_skill/_fighterskills/_rage/statusCondition_rage03",
+          "_chance": 1.0
+        }
+      }
+    },
+    {
+      "$id": "18",
+      "_rankTag": "Rage (Rank 4)",
+      "_levelRequirement": 14,
+      "_manaCost": 10,
+      "_healthCost": 0,
+      "_staminaCost": 0,
+      "_greaterThanCost": false,
+      "_requiredItem": null,
+      "_requiredItemQuantity": 0,
+      "_castTime": 0.12,
+      "_coolDown": 30.0,
+      "_skillPowerPercent": 1.0,
+      "_attackPowerModRef": 0.0,
+      "_magicPowerModRef": 0.0,
+      "_rangePowerModRef": 0.0,
+      "_rankDescriptor": "",
+      "_selfConditionOutput": "_skill/_fighterskills/_rage/statusCondition_rage04",
+      "_earlySkillObjectOutput": {
+        "$id": "19",
+        "_skillObjectTag": "",
+        "_skillObject": "",
+        "_skillObjectCondition": {
+          "$id": "20",
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      },
+      "_skillObjectOutput": {
+        "$id": "21",
+        "_skillObjectTag": "",
+        "_skillObject": "_skill/_fighterskills/_rage/_projectile_rage",
+        "_skillObjectCondition": {
+          "$id": "22",
+          "_scriptableCondition": "_skill/_fighterskills/_rage/statusCondition_rage04",
+          "_chance": 1.0
+        }
+      }
+    },
+    {
+      "$id": "23",
+      "_rankTag": "Rage (Rank 5)",
+      "_levelRequirement": 18,
+      "_manaCost": 15,
+      "_healthCost": 0,
+      "_staminaCost": 0,
+      "_greaterThanCost": false,
+      "_requiredItem": null,
+      "_requiredItemQuantity": 0,
+      "_castTime": 0.12,
+      "_coolDown": 30.0,
+      "_skillPowerPercent": 1.0,
+      "_attackPowerModRef": 0.0,
+      "_magicPowerModRef": 0.0,
+      "_rangePowerModRef": 0.0,
+      "_rankDescriptor": "",
+      "_selfConditionOutput": "_skill/_fighterskills/_rage/statusCondition_rage05",
+      "_earlySkillObjectOutput": {
+        "$id": "24",
+        "_skillObjectTag": "",
+        "_skillObject": "",
+        "_skillObjectCondition": {
+          "$id": "25",
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      },
+      "_skillObjectOutput": {
+        "$id": "26",
+        "_skillObjectTag": "",
+        "_skillObject": "_skill/_fighterskills/_rage/_projectile_rage",
+        "_skillObjectCondition": {
+          "$id": "27",
+          "_scriptableCondition": "_skill/_fighterskills/_rage/statusCondition_rage05",
+          "_chance": 1.0
+        }
+      }
+    },
+    {
+      "$id": "28",
+      "_rankTag": "Rage (Rank 6)",
+      "_levelRequirement": 18,
+      "_manaCost": 15,
+      "_healthCost": 0,
+      "_staminaCost": 0,
+      "_greaterThanCost": false,
+      "_requiredItem": null,
+      "_requiredItemQuantity": 0,
+      "_castTime": 0.12,
+      "_coolDown": 30.0,
+      "_skillPowerPercent": 1.0,
+      "_attackPowerModRef": 0.0,
+      "_magicPowerModRef": 0.0,
+      "_rangePowerModRef": 0.0,
+      "_rankDescriptor": "",
+      "_selfConditionOutput": "_skill/_fighterskills/_rage/statusCondition_rage06",
+      "_earlySkillObjectOutput": {
+        "$id": "29",
+        "_skillObjectTag": "",
+        "_skillObject": "",
+        "_skillObjectCondition": {
+          "$id": "30",
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      },
+      "_skillObjectOutput": {
+        "$id": "31",
+        "_skillObjectTag": "",
+        "_skillObject": "_skill/_fighterskills/_rage/_projectile_rage",
+        "_skillObjectCondition": {
+          "$id": "32",
+          "_scriptableCondition": "_skill/_fighterskills/_rage/statusCondition_rage06",
+          "_chance": 1.0
+        }
+      }
+    }
+  ],
+  "_movementSpeedDecrease": 0.0,
+  "_strafeDirection": false,
+  "_groundOnlySkill": false,
+  "_airTimeLockBuffer": 0.0,
+  "_enableAirTimeMod": false,
+  "_lockMoveControlTime": 0.0,
+  "_lockCombatControlTime": 0.35,
+  "_timeBeforeAttackForce": 0.0,
+  "_attackForceApply": 0.0,
+  "_attackForceDampen": 120.0,
+  "_attackForceInputInfluence": false,
+  "_castEffectCollection": null,
+  "_useGlyphEffect": false,
+  "_skillChargeAnimation": "Omni",
+  "_skillCastAnimation": "Omni",
+  "_animChargeSmoothing": 0.1,
+  "_animCastSmoothing": 0.0,
+  "_setSheatheCondition": 0,
+  "_applySheatheCondition": false,
+  "_hideWeapon": true,
+  "name": "skill_rage",
+  "hideFlags": 0
+}

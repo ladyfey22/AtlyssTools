@@ -1,1 +1,10 @@
-{"$id":"1","_mapSelectionIcon":"_graphic/_ui/_zoneSelIco_field","_subScene":"Assets/Scenes/map_zone00_crescentKeep.unity","_mapCaptionTitle":"Crescent Keep","_spawnPointTag":"ckeepWaypoint","_mapLockID":"ckeep","name":"mapData_crescentKeep","hideFlags":0}
+{
+  "$id": "1",
+  "_mapSelectionIcon": "_graphic/_ui/_zoneSelIco_field",
+  "_subScene": "Assets/Scenes/map_zone00_crescentKeep.unity",
+  "_mapCaptionTitle": "Crescent Keep",
+  "_spawnPointTag": "ckeepWaypoint",
+  "_mapLockID": "ckeep",
+  "name": "mapData_crescentKeep",
+  "hideFlags": 0
+}

@@ -1,1 +1,9 @@
-{"$id":"1","_projectileObjects":["_item/01_equipment/02_weapon/01_ranged/bow_projectilesets/_projectile_arrow(shadow)"],"_ammunitionItem":"_item/03_trade/TRADEITEM_Bronze Arrows","name":"weaponProjectileSet_bow(shadow)","hideFlags":0}
+{
+  "$id": "1",
+  "_projectileObjects": [
+    "_item/01_equipment/02_weapon/01_ranged/bow_projectilesets/_projectile_arrow(shadow)"
+  ],
+  "_ammunitionItem": "_item/03_trade/TRADEITEM_Bronze Arrows",
+  "name": "weaponProjectileSet_bow(shadow)",
+  "hideFlags": 0
+}

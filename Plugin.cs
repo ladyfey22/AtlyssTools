@@ -23,28 +23,6 @@ public class Plugin : BaseUnityPlugin
 
 
         AtlyssToolsLoader.LoadPlugin("AtlyssTools", pluginPath);
-        // test our delegate
-        AtlyssToolsLoader.RegisterPreLibraryInit("AtlyssTools", () => Logger.LogInfo("PreLibraryInit delegate called"));
-
         new Harmony("AtlyssTools").PatchAll(Assembly.GetExecutingAssembly());
-
-        // dump all loaded skills
-        foreach (var skill in SkillManager.Instance.GetModded())
-        {
-            Logger.LogInfo($"Modded skill: {skill._skillName}");
-        }
-
-        // dump all loaded conditions
-        foreach (var condition in StatusConditionManager.Instance.GetModded())
-        {
-            Logger.LogInfo($"Condition: {condition._conditionName}");
-        }
-        
-        AtlyssToolsLoader.RegisterPostCacheInit(
-            "atlysstools", () =>
-            {
-                // list all cached
-                SkillManager.Instance.ReplaceAll(SkillManager.Instance.GetFromCache("Recovery"), SkillManager.Instance.GetFromCache("Hug"));
-            });
     }
 }

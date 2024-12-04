@@ -1,1 +1,58 @@
-{"$id":"1","_attributeName":"Mind","_attributeIcon":"_graphic/_ui/_icon_mind","_attributeStringColor":[0.0,0.764835835,1.0,1.0],"_attributeDescriptor":"Increases Magic Power and Max Mana.","_statStructs":[{"$id":"2","_statStruct":{"$id":"3","_maxHealth":0,"_maxMana":0,"_maxStamina":0,"_experience":0,"_attackPower":0,"_dexPower":0,"_magicPower":2,"_criticalRate":0.0,"_magicCriticalRate":0.0,"_defense":0,"_magicDefense":0,"_evasion":0.0},"_statBaseMultiplier":0.0033,"_statIncreasePercentage":0.0082,"_statDampen":0.02},{"$id":"4","_statStruct":{"$id":"5","_maxHealth":0,"_maxMana":2,"_maxStamina":0,"_experience":0,"_attackPower":0,"_dexPower":0,"_magicPower":0,"_criticalRate":0.0,"_magicCriticalRate":0.0,"_defense":0,"_magicDefense":0,"_evasion":0.0},"_statBaseMultiplier":1.25,"_statIncreasePercentage":0.095,"_statDampen":2.87}],"name":"attribute_mind","hideFlags":0}
+{
+  "$id": "1",
+  "_attributeName": "Mind",
+  "_attributeIcon": "_graphic/_ui/_icon_mind",
+  "_attributeStringColor": [
+    0.0,
+    0.764835835,
+    1.0,
+    1.0
+  ],
+  "_attributeDescriptor": "Increases Magic Power and Max Mana.",
+  "_statStructs": [
+    {
+      "$id": "2",
+      "_statStruct": {
+        "$id": "3",
+        "_maxHealth": 0,
+        "_maxMana": 0,
+        "_maxStamina": 0,
+        "_experience": 0,
+        "_attackPower": 0,
+        "_dexPower": 0,
+        "_magicPower": 2,
+        "_criticalRate": 0.0,
+        "_magicCriticalRate": 0.0,
+        "_defense": 0,
+        "_magicDefense": 0,
+        "_evasion": 0.0
+      },
+      "_statBaseMultiplier": 0.0033,
+      "_statIncreasePercentage": 0.0082,
+      "_statDampen": 0.02
+    },
+    {
+      "$id": "4",
+      "_statStruct": {
+        "$id": "5",
+        "_maxHealth": 0,
+        "_maxMana": 2,
+        "_maxStamina": 0,
+        "_experience": 0,
+        "_attackPower": 0,
+        "_dexPower": 0,
+        "_magicPower": 0,
+        "_criticalRate": 0.0,
+        "_magicCriticalRate": 0.0,
+        "_defense": 0,
+        "_magicDefense": 0,
+        "_evasion": 0.0
+      },
+      "_statBaseMultiplier": 1.25,
+      "_statIncreasePercentage": 0.095,
+      "_statDampen": 2.87
+    }
+  ],
+  "name": "attribute_mind",
+  "hideFlags": 0
+}

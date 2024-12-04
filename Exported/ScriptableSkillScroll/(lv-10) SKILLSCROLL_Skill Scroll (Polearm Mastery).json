@@ -1,0 +1,21 @@
+{
+  "$id": "1",
+  "_scriptableSkill": "_skill/00_skillscroll_skills/00_masteries/_polearmmastery/skill_polearmMastery",
+  "_levelRequirement": 10,
+  "_baseClassRequirement": null,
+  "_consumableCooldown": 1.5,
+  "_useOnlyInTown": false,
+  "_consumableObject": "_item/02_consumable/_skillscroll/_consumableEffect_skillScroll",
+  "_itemType": 1,
+  "_itemName": "Skill Scroll (Polearm Mastery)",
+  "_itemIcon": "_graphic/_ui/_itemicons/_consumable/_conIco_13",
+  "_itemRarity": 0,
+  "_itemDescription": "Teaches the user Polearm Mastery.",
+  "_maxStackAmount": 1,
+  "_scriptableQuest": "_prefab/_entity/_npc/_enok/_quest/(lv-10) QUEST_Mastery of Polearms",
+  "_questTriggerTag": "usePolearmScroll",
+  "_destroyOnDrop": true,
+  "_vendorCost": 0,
+  "name": "(lv-10) SKILLSCROLL_Skill Scroll (Polearm Mastery)",
+  "hideFlags": 0
+}

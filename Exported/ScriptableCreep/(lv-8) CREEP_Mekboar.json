@@ -1,1 +1,135 @@
-{"$id":"1","_creepName":"Mekboar","_creepObject":"_prefab/_entity/_creep/_creepdirectory/_creep_mekboar/_creepObject_mekBoar","_creepLevel":8,"_unkillable":false,"_creepStatStruct":{"$id":"2","_maxHealth":40,"_maxMana":0,"_maxStamina":0,"_experience":5,"_attackPower":0,"_dexPower":0,"_magicPower":0,"_criticalRate":0.0,"_magicCriticalRate":0.0,"_defense":15,"_magicDefense":10,"_evasion":0.0},"_creepDamageType":0,"_combatElement":null,"_baseDamage":12,"_canParry":true,"_selfApplyConditions":[],"_conditionDampenSlots":[],"_basePainStateChance":67,"_hitStunBuffer":1.45,"_parryStunMod":0.0,"_faceTargetWhenHurt":true,"_immuneToKnockback":false,"_creepAssistType":0,"_canAggro":true,"_dontFollowAggroTarget":false,"_playMapInstanceActionMusic":false,"_levelDifferenceToIgnore":0,"_awarenessChance":85,"_currencyDropBonus":0,"_itemDrops":[{"$id":"3","_itemTag":"Mekboar Head (12%)","_item":"_item/03_trade/TRADEITEM_Mekboar Head","_dropChance":0.12,"_dropQuantity":1},{"$id":"4","_itemTag":"Mekboar Spear (65%)","_item":"_item/03_trade/TRADEITEM_Mekboar Spear","_dropChance":0.65,"_dropQuantity":1},{"$id":"5","_itemTag":"Mekspike Bow (10%)","_item":"_item/01_equipment/02_weapon/01_ranged/(lv-8) WEAPON_Mekspike Bow (Range Weapon)","_dropChance":0.1,"_dropQuantity":1}],"_makeKinematicOnDeath":false,"_alwaysKinematic":false,"_ignoreGravity":false,"_pathfindParams":{"$id":"6","_movementSpeed":1.5,"_stoppingDistance":28.65,"_wanderingPathfinder":true,"_wanderingRadius":125.0,"_wanderResetFloor":2.5,"_wanderResetCeiling":12.85,"_heightJumpForce":115.0,"_heightJumpForwardForce":75.0,"_disableHeightJump":false,"_ledgeJumpForce":58.0,"_ledgeJumpForwardForce":20.0},"_generalCreepVisual":{"$id":"7","_creepVisualScale":1.75,"_shadowProjectionScale":2.8,"_deathAnimDespawnTime":3.0,"_showHealthBar":true,"_healthBarYPosition":10.0,"_healthBarSize":[1.5,1.25,1.0],"_targeterOffset":4.0,"_lockonArrowOffset":12.72,"_aggroiconYPosition":6.5,"_bloodEffectSize":1.0,"_gibEffectSize":1.0,"_canGib":true,"_creepBloodColor":[1.0,0.0,0.0,1.0],"_creepBloodSubColor":[0.5188679,0.0,0.120752126,0.45],"_creepGibColor":[1.0,0.0,0.0,1.0],"_creepGibSubColor":[0.5176471,0.0,0.121568628,0.4509804]},"_generalCreepAudio":{"$id":"8","_dynamicAudioPitch":1.0,"_attackSfx":["_sound/_creep/mekboar/_mekboar_chargeAtk01","_sound/_creep/mekboar/_mekboar_chargeAtk02"],"_painSfx":"_sound/_creep/mekboar/_mekboar_hurt","_deathSfx":"_sound/_creep/mekboar/_mekboar_death"},"name":"(lv-8) CREEP_Mekboar","hideFlags":0}
+{
+  "$id": "1",
+  "_creepName": "Mekboar",
+  "_creepObject": "_prefab/_entity/_creep/_creepdirectory/_creep_mekboar/_creepObject_mekBoar",
+  "_creepLevel": 8,
+  "_unkillable": false,
+  "_creepStatStruct": {
+    "$id": "2",
+    "_maxHealth": 40,
+    "_maxMana": 0,
+    "_maxStamina": 0,
+    "_experience": 5,
+    "_attackPower": 0,
+    "_dexPower": 0,
+    "_magicPower": 0,
+    "_criticalRate": 0.0,
+    "_magicCriticalRate": 0.0,
+    "_defense": 15,
+    "_magicDefense": 10,
+    "_evasion": 0.0
+  },
+  "_creepDamageType": 0,
+  "_combatElement": null,
+  "_baseDamage": 12,
+  "_canParry": true,
+  "_selfApplyConditions": [],
+  "_conditionDampenSlots": [],
+  "_basePainStateChance": 67,
+  "_hitStunBuffer": 1.45,
+  "_parryStunMod": 0.0,
+  "_faceTargetWhenHurt": true,
+  "_immuneToKnockback": false,
+  "_creepAssistType": 0,
+  "_canAggro": true,
+  "_dontFollowAggroTarget": false,
+  "_playMapInstanceActionMusic": false,
+  "_levelDifferenceToIgnore": 0,
+  "_awarenessChance": 85,
+  "_currencyDropBonus": 0,
+  "_itemDrops": [
+    {
+      "$id": "3",
+      "_itemTag": "Mekboar Head (12%)",
+      "_item": "_item/03_trade/TRADEITEM_Mekboar Head",
+      "_dropChance": 0.12,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "4",
+      "_itemTag": "Mekboar Spear (65%)",
+      "_item": "_item/03_trade/TRADEITEM_Mekboar Spear",
+      "_dropChance": 0.65,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "5",
+      "_itemTag": "Mekspike Bow (10%)",
+      "_item": "_item/01_equipment/02_weapon/01_ranged/(lv-8) WEAPON_Mekspike Bow (Range Weapon)",
+      "_dropChance": 0.1,
+      "_dropQuantity": 1
+    }
+  ],
+  "_makeKinematicOnDeath": false,
+  "_alwaysKinematic": false,
+  "_ignoreGravity": false,
+  "_pathfindParams": {
+    "$id": "6",
+    "_movementSpeed": 1.5,
+    "_stoppingDistance": 28.65,
+    "_wanderingPathfinder": true,
+    "_wanderingRadius": 125.0,
+    "_wanderResetFloor": 2.5,
+    "_wanderResetCeiling": 12.85,
+    "_heightJumpForce": 115.0,
+    "_heightJumpForwardForce": 75.0,
+    "_disableHeightJump": false,
+    "_ledgeJumpForce": 58.0,
+    "_ledgeJumpForwardForce": 20.0
+  },
+  "_generalCreepVisual": {
+    "$id": "7",
+    "_creepVisualScale": 1.75,
+    "_shadowProjectionScale": 2.8,
+    "_deathAnimDespawnTime": 3.0,
+    "_showHealthBar": true,
+    "_healthBarYPosition": 10.0,
+    "_healthBarSize": [
+      1.5,
+      1.25,
+      1.0
+    ],
+    "_targeterOffset": 4.0,
+    "_lockonArrowOffset": 12.72,
+    "_aggroiconYPosition": 6.5,
+    "_bloodEffectSize": 1.0,
+    "_gibEffectSize": 1.0,
+    "_canGib": true,
+    "_creepBloodColor": [
+      1.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "_creepBloodSubColor": [
+      0.5188679,
+      0.0,
+      0.120752126,
+      0.45
+    ],
+    "_creepGibColor": [
+      1.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "_creepGibSubColor": [
+      0.5176471,
+      0.0,
+      0.121568628,
+      0.4509804
+    ]
+  },
+  "_generalCreepAudio": {
+    "$id": "8",
+    "_dynamicAudioPitch": 1.0,
+    "_attackSfx": [
+      "_sound/_creep/mekboar/_mekboar_chargeAtk01",
+      "_sound/_creep/mekboar/_mekboar_chargeAtk02"
+    ],
+    "_painSfx": "_sound/_creep/mekboar/_mekboar_hurt",
+    "_deathSfx": "_sound/_creep/mekboar/_mekboar_death"
+  },
+  "name": "(lv-8) CREEP_Mekboar",
+  "hideFlags": 0
+}

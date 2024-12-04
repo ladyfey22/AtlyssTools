@@ -1,1 +1,281 @@
-{"$id":"1","_skillName":"Killer Jab","_skillIcon":"_graphic/_ui/_skillicons/_abIco50","_skillControlType":0,"_skillDamageType":1,"_skillDescription":"Strikes the target, dealing strong initial damage and a poison debuff. <color=lime>Requires a physical combat weapon.</color>","_allowAsBonusSkill":false,"_weaponTypeRequirements":[{"$id":"2","_wepType":"_weapontype/01_weaponType_katars","_animOverride_charge":"Katar","_animOverride_cast":"Melee2"},{"$id":"3","_wepType":"_weapontype/02_weaponType_melee","_animOverride_charge":"MeleeSpin","_animOverride_cast":"Melee2"},{"$id":"4","_wepType":"_weapontype/03_weaponType_heavyMelee","_animOverride_charge":"MeleeSpin","_animOverride_cast":"Melee2"},{"$id":"5","_wepType":"_weapontype/04_weaponType_polearm","_animOverride_charge":"MeleeSpin","_animOverride_cast":"Melee2"}],"_requireShield":false,"_baseSkillPower":12,"_skillRankParams":{"$id":"6","_baseLevelRequirement":10,"_baseManaCost":0,"_baseHealthCost":0,"_baseStaminaCost":5,"_isGreaterThanCost":false,"_castOnNoConditionOnly":false,"_isUninterruptable":false,"_baseRequiredItem":null,"_basedItemCost":0,"_baseCastTime":0.5,"_baseCooldown":8.0,"_baseSkillPowerPercent":1.0,"_skillLevelRequirementPerLevel":1,"_skillLevelRequirementChange":2,"_skillCostChangePerLevel":0,"_skillCostChange":0,"_skillCastTimePerLevel":0,"_skillCastTimeChange":0.0,"_skillCooldownPerLevel":0,"_skillCooldownChange":0.0,"_skillPowerPercentPerLevel":1,"_skillPowerPercentChange":0.98},"_skillRanks":[{"$id":"7","_rankTag":"Killer Jab (Rank 1)","_levelRequirement":10,"_manaCost":0,"_healthCost":0,"_staminaCost":5,"_greaterThanCost":false,"_requiredItem":null,"_requiredItemQuantity":0,"_castTime":0.5,"_coolDown":8.0,"_skillPowerPercent":1.0,"_attackPowerModRef":0.0,"_magicPowerModRef":0.0,"_rangePowerModRef":0.0,"_rankDescriptor":"Deals $SKP initial damage. Applies a poison debuff to the target, decreasing defense by <color=yellow>10</color> and movement speed by <color=yellow>20%.</color> ","_selfConditionOutput":null,"_earlySkillObjectOutput":{"$id":"8","_skillObjectTag":"","_skillObject":"","_skillObjectCondition":{"$id":"9","_scriptableCondition":null,"_chance":1.0}},"_skillObjectOutput":{"$id":"10","_skillObjectTag":"","_skillObject":"_skill/_banditskills/_killerjab/_projectile_killerJab","_skillObjectCondition":{"$id":"11","_scriptableCondition":"_skill/_banditskills/_killerjab/statusCondition_killerJab","_chance":1.0}}},{"$id":"12","_rankTag":"Killer Jab (Rank 2)","_levelRequirement":12,"_manaCost":0,"_healthCost":0,"_staminaCost":5,"_greaterThanCost":false,"_requiredItem":null,"_requiredItemQuantity":0,"_castTime":0.5,"_coolDown":8.0,"_skillPowerPercent":1.98,"_attackPowerModRef":0.0,"_magicPowerModRef":0.0,"_rangePowerModRef":0.0,"_rankDescriptor":"Deals $SKP initial damage. Applies a poison debuff to the target, decreasing defense by <color=yellow>10</color> and movement speed by <color=yellow>20%.</color> ","_selfConditionOutput":null,"_earlySkillObjectOutput":{"$id":"13","_skillObjectTag":"","_skillObject":"","_skillObjectCondition":{"$id":"14","_scriptableCondition":null,"_chance":1.0}},"_skillObjectOutput":{"$id":"15","_skillObjectTag":"","_skillObject":"_skill/_banditskills/_killerjab/_projectile_killerJab","_skillObjectCondition":{"$id":"16","_scriptableCondition":"_skill/_banditskills/_killerjab/statusCondition_killerJab","_chance":1.0}}},{"$id":"17","_rankTag":"Killer Jab (Rank 3)","_levelRequirement":14,"_manaCost":0,"_healthCost":0,"_staminaCost":5,"_greaterThanCost":false,"_requiredItem":null,"_requiredItemQuantity":0,"_castTime":0.5,"_coolDown":8.0,"_skillPowerPercent":2.96,"_attackPowerModRef":0.0,"_magicPowerModRef":0.0,"_rangePowerModRef":0.0,"_rankDescriptor":"Deals $SKP initial damage. Applies a poison debuff to the target, decreasing defense by <color=yellow>10</color> and movement speed by <color=yellow>20%.</color> ","_selfConditionOutput":null,"_earlySkillObjectOutput":{"$id":"18","_skillObjectTag":"","_skillObject":"","_skillObjectCondition":{"$id":"19","_scriptableCondition":null,"_chance":1.0}},"_skillObjectOutput":{"$id":"20","_skillObjectTag":"","_skillObject":"_skill/_banditskills/_killerjab/_projectile_killerJab","_skillObjectCondition":{"$id":"21","_scriptableCondition":"_skill/_banditskills/_killerjab/statusCondition_killerJab","_chance":1.0}}},{"$id":"22","_rankTag":"Killer Jab (Rank 4)","_levelRequirement":16,"_manaCost":0,"_healthCost":0,"_staminaCost":5,"_greaterThanCost":false,"_requiredItem":null,"_requiredItemQuantity":0,"_castTime":0.5,"_coolDown":8.0,"_skillPowerPercent":3.94,"_attackPowerModRef":0.0,"_magicPowerModRef":0.0,"_rangePowerModRef":0.0,"_rankDescriptor":"Deals $SKP initial damage. Applies a poison debuff to the target, decreasing defense by <color=yellow>10</color> and movement speed by <color=yellow>20%.</color> ","_selfConditionOutput":null,"_earlySkillObjectOutput":{"$id":"23","_skillObjectTag":"","_skillObject":"","_skillObjectCondition":{"$id":"24","_scriptableCondition":null,"_chance":1.0}},"_skillObjectOutput":{"$id":"25","_skillObjectTag":"","_skillObject":"_skill/_banditskills/_killerjab/_projectile_killerJab","_skillObjectCondition":{"$id":"26","_scriptableCondition":"_skill/_banditskills/_killerjab/statusCondition_killerJab","_chance":1.0}}},{"$id":"27","_rankTag":"Killer Jab (Rank 5)","_levelRequirement":18,"_manaCost":0,"_healthCost":0,"_staminaCost":5,"_greaterThanCost":false,"_requiredItem":null,"_requiredItemQuantity":0,"_castTime":0.5,"_coolDown":8.0,"_skillPowerPercent":4.92,"_attackPowerModRef":0.0,"_magicPowerModRef":0.0,"_rangePowerModRef":0.0,"_rankDescriptor":"Deals $SKP initial damage. Applies a poison debuff to the target, decreasing defense by <color=yellow>10</color> and movement speed by <color=yellow>20%.</color> ","_selfConditionOutput":null,"_earlySkillObjectOutput":{"$id":"28","_skillObjectTag":"","_skillObject":"","_skillObjectCondition":{"$id":"29","_scriptableCondition":null,"_chance":1.0}},"_skillObjectOutput":{"$id":"30","_skillObjectTag":"","_skillObject":"_skill/_banditskills/_killerjab/_projectile_killerJab","_skillObjectCondition":{"$id":"31","_scriptableCondition":"_skill/_banditskills/_killerjab/statusCondition_killerJab","_chance":1.0}}}],"_movementSpeedDecrease":-12.0,"_strafeDirection":true,"_groundOnlySkill":false,"_airTimeLockBuffer":0.1,"_enableAirTimeMod":true,"_lockMoveControlTime":0.6,"_lockCombatControlTime":0.35,"_timeBeforeAttackForce":0.0,"_attackForceApply":350.0,"_attackForceDampen":2000.0,"_attackForceInputInfluence":false,"_castEffectCollection":{"$id":"32","_chargeSkillEffect":"_skill/00_casteffects/_spellCharge_shadow","_castSkillEffect":"_skill/00_casteffects/_spellCast_shadow","_channelGroundGlyphTexture":"_graphic/_texture/_cookie/_cookieTex_aura01","_channelGroundGlyphRotationSpeed":15.0,"_groundGlyphSpotAngleSize":25.0,"_groundGlyphIntensity":2000.0,"_groundGlyphColor":[0.407718658,0.0,1.0,1.0],"_channelSound":"_sound/spellchannels/castChannelShadow2","_castSound":"","_channelSoundPitch":1.0,"_castSoundPitch":1.0,"name":"castEffect_shadow","hideFlags":0},"_useGlyphEffect":false,"_skillChargeAnimation":"Direct","_skillCastAnimation":"Direct","_animChargeSmoothing":0.1,"_animCastSmoothing":0.0,"_setSheatheCondition":1,"_applySheatheCondition":true,"_hideWeapon":false,"name":"skill_killerJab","hideFlags":0}
+{
+  "$id": "1",
+  "_skillName": "Killer Jab",
+  "_skillIcon": "_graphic/_ui/_skillicons/_abIco50",
+  "_skillControlType": 0,
+  "_skillDamageType": 1,
+  "_skillDescription": "Strikes the target, dealing strong initial damage and a poison debuff. <color=lime>Requires a physical combat weapon.</color>",
+  "_allowAsBonusSkill": false,
+  "_weaponTypeRequirements": [
+    {
+      "$id": "2",
+      "_wepType": "_weapontype/01_weaponType_katars",
+      "_animOverride_charge": "Katar",
+      "_animOverride_cast": "Melee2"
+    },
+    {
+      "$id": "3",
+      "_wepType": "_weapontype/02_weaponType_melee",
+      "_animOverride_charge": "MeleeSpin",
+      "_animOverride_cast": "Melee2"
+    },
+    {
+      "$id": "4",
+      "_wepType": "_weapontype/03_weaponType_heavyMelee",
+      "_animOverride_charge": "MeleeSpin",
+      "_animOverride_cast": "Melee2"
+    },
+    {
+      "$id": "5",
+      "_wepType": "_weapontype/04_weaponType_polearm",
+      "_animOverride_charge": "MeleeSpin",
+      "_animOverride_cast": "Melee2"
+    }
+  ],
+  "_requireShield": false,
+  "_baseSkillPower": 12,
+  "_skillRankParams": {
+    "$id": "6",
+    "_baseLevelRequirement": 10,
+    "_baseManaCost": 0,
+    "_baseHealthCost": 0,
+    "_baseStaminaCost": 5,
+    "_isGreaterThanCost": false,
+    "_castOnNoConditionOnly": false,
+    "_isUninterruptable": false,
+    "_baseRequiredItem": null,
+    "_basedItemCost": 0,
+    "_baseCastTime": 0.5,
+    "_baseCooldown": 8.0,
+    "_baseSkillPowerPercent": 1.0,
+    "_skillLevelRequirementPerLevel": 1,
+    "_skillLevelRequirementChange": 2,
+    "_skillCostChangePerLevel": 0,
+    "_skillCostChange": 0,
+    "_skillCastTimePerLevel": 0,
+    "_skillCastTimeChange": 0.0,
+    "_skillCooldownPerLevel": 0,
+    "_skillCooldownChange": 0.0,
+    "_skillPowerPercentPerLevel": 1,
+    "_skillPowerPercentChange": 0.98
+  },
+  "_skillRanks": [
+    {
+      "$id": "7",
+      "_rankTag": "Killer Jab (Rank 1)",
+      "_levelRequirement": 10,
+      "_manaCost": 0,
+      "_healthCost": 0,
+      "_staminaCost": 5,
+      "_greaterThanCost": false,
+      "_requiredItem": null,
+      "_requiredItemQuantity": 0,
+      "_castTime": 0.5,
+      "_coolDown": 8.0,
+      "_skillPowerPercent": 1.0,
+      "_attackPowerModRef": 0.0,
+      "_magicPowerModRef": 0.0,
+      "_rangePowerModRef": 0.0,
+      "_rankDescriptor": "Deals $SKP initial damage. Applies a poison debuff to the target, decreasing defense by <color=yellow>10</color> and movement speed by <color=yellow>20%.</color> ",
+      "_selfConditionOutput": null,
+      "_earlySkillObjectOutput": {
+        "$id": "8",
+        "_skillObjectTag": "",
+        "_skillObject": "",
+        "_skillObjectCondition": {
+          "$id": "9",
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      },
+      "_skillObjectOutput": {
+        "$id": "10",
+        "_skillObjectTag": "",
+        "_skillObject": "_skill/_banditskills/_killerjab/_projectile_killerJab",
+        "_skillObjectCondition": {
+          "$id": "11",
+          "_scriptableCondition": "_skill/_banditskills/_killerjab/statusCondition_killerJab",
+          "_chance": 1.0
+        }
+      }
+    },
+    {
+      "$id": "12",
+      "_rankTag": "Killer Jab (Rank 2)",
+      "_levelRequirement": 12,
+      "_manaCost": 0,
+      "_healthCost": 0,
+      "_staminaCost": 5,
+      "_greaterThanCost": false,
+      "_requiredItem": null,
+      "_requiredItemQuantity": 0,
+      "_castTime": 0.5,
+      "_coolDown": 8.0,
+      "_skillPowerPercent": 1.98,
+      "_attackPowerModRef": 0.0,
+      "_magicPowerModRef": 0.0,
+      "_rangePowerModRef": 0.0,
+      "_rankDescriptor": "Deals $SKP initial damage. Applies a poison debuff to the target, decreasing defense by <color=yellow>10</color> and movement speed by <color=yellow>20%.</color> ",
+      "_selfConditionOutput": null,
+      "_earlySkillObjectOutput": {
+        "$id": "13",
+        "_skillObjectTag": "",
+        "_skillObject": "",
+        "_skillObjectCondition": {
+          "$id": "14",
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      },
+      "_skillObjectOutput": {
+        "$id": "15",
+        "_skillObjectTag": "",
+        "_skillObject": "_skill/_banditskills/_killerjab/_projectile_killerJab",
+        "_skillObjectCondition": {
+          "$id": "16",
+          "_scriptableCondition": "_skill/_banditskills/_killerjab/statusCondition_killerJab",
+          "_chance": 1.0
+        }
+      }
+    },
+    {
+      "$id": "17",
+      "_rankTag": "Killer Jab (Rank 3)",
+      "_levelRequirement": 14,
+      "_manaCost": 0,
+      "_healthCost": 0,
+      "_staminaCost": 5,
+      "_greaterThanCost": false,
+      "_requiredItem": null,
+      "_requiredItemQuantity": 0,
+      "_castTime": 0.5,
+      "_coolDown": 8.0,
+      "_skillPowerPercent": 2.96,
+      "_attackPowerModRef": 0.0,
+      "_magicPowerModRef": 0.0,
+      "_rangePowerModRef": 0.0,
+      "_rankDescriptor": "Deals $SKP initial damage. Applies a poison debuff to the target, decreasing defense by <color=yellow>10</color> and movement speed by <color=yellow>20%.</color> ",
+      "_selfConditionOutput": null,
+      "_earlySkillObjectOutput": {
+        "$id": "18",
+        "_skillObjectTag": "",
+        "_skillObject": "",
+        "_skillObjectCondition": {
+          "$id": "19",
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      },
+      "_skillObjectOutput": {
+        "$id": "20",
+        "_skillObjectTag": "",
+        "_skillObject": "_skill/_banditskills/_killerjab/_projectile_killerJab",
+        "_skillObjectCondition": {
+          "$id": "21",
+          "_scriptableCondition": "_skill/_banditskills/_killerjab/statusCondition_killerJab",
+          "_chance": 1.0
+        }
+      }
+    },
+    {
+      "$id": "22",
+      "_rankTag": "Killer Jab (Rank 4)",
+      "_levelRequirement": 16,
+      "_manaCost": 0,
+      "_healthCost": 0,
+      "_staminaCost": 5,
+      "_greaterThanCost": false,
+      "_requiredItem": null,
+      "_requiredItemQuantity": 0,
+      "_castTime": 0.5,
+      "_coolDown": 8.0,
+      "_skillPowerPercent": 3.94,
+      "_attackPowerModRef": 0.0,
+      "_magicPowerModRef": 0.0,
+      "_rangePowerModRef": 0.0,
+      "_rankDescriptor": "Deals $SKP initial damage. Applies a poison debuff to the target, decreasing defense by <color=yellow>10</color> and movement speed by <color=yellow>20%.</color> ",
+      "_selfConditionOutput": null,
+      "_earlySkillObjectOutput": {
+        "$id": "23",
+        "_skillObjectTag": "",
+        "_skillObject": "",
+        "_skillObjectCondition": {
+          "$id": "24",
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      },
+      "_skillObjectOutput": {
+        "$id": "25",
+        "_skillObjectTag": "",
+        "_skillObject": "_skill/_banditskills/_killerjab/_projectile_killerJab",
+        "_skillObjectCondition": {
+          "$id": "26",
+          "_scriptableCondition": "_skill/_banditskills/_killerjab/statusCondition_killerJab",
+          "_chance": 1.0
+        }
+      }
+    },
+    {
+      "$id": "27",
+      "_rankTag": "Killer Jab (Rank 5)",
+      "_levelRequirement": 18,
+      "_manaCost": 0,
+      "_healthCost": 0,
+      "_staminaCost": 5,
+      "_greaterThanCost": false,
+      "_requiredItem": null,
+      "_requiredItemQuantity": 0,
+      "_castTime": 0.5,
+      "_coolDown": 8.0,
+      "_skillPowerPercent": 4.92,
+      "_attackPowerModRef": 0.0,
+      "_magicPowerModRef": 0.0,
+      "_rangePowerModRef": 0.0,
+      "_rankDescriptor": "Deals $SKP initial damage. Applies a poison debuff to the target, decreasing defense by <color=yellow>10</color> and movement speed by <color=yellow>20%.</color> ",
+      "_selfConditionOutput": null,
+      "_earlySkillObjectOutput": {
+        "$id": "28",
+        "_skillObjectTag": "",
+        "_skillObject": "",
+        "_skillObjectCondition": {
+          "$id": "29",
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      },
+      "_skillObjectOutput": {
+        "$id": "30",
+        "_skillObjectTag": "",
+        "_skillObject": "_skill/_banditskills/_killerjab/_projectile_killerJab",
+        "_skillObjectCondition": {
+          "$id": "31",
+          "_scriptableCondition": "_skill/_banditskills/_killerjab/statusCondition_killerJab",
+          "_chance": 1.0
+        }
+      }
+    }
+  ],
+  "_movementSpeedDecrease": -12.0,
+  "_strafeDirection": true,
+  "_groundOnlySkill": false,
+  "_airTimeLockBuffer": 0.1,
+  "_enableAirTimeMod": true,
+  "_lockMoveControlTime": 0.6,
+  "_lockCombatControlTime": 0.35,
+  "_timeBeforeAttackForce": 0.0,
+  "_attackForceApply": 350.0,
+  "_attackForceDampen": 2000.0,
+  "_attackForceInputInfluence": false,
+  "_castEffectCollection": "_skill/00_casteffects/castEffect_shadow",
+  "_useGlyphEffect": false,
+  "_skillChargeAnimation": "Direct",
+  "_skillCastAnimation": "Direct",
+  "_animChargeSmoothing": 0.1,
+  "_animCastSmoothing": 0.0,
+  "_setSheatheCondition": 1,
+  "_applySheatheCondition": true,
+  "_hideWeapon": false,
+  "name": "skill_killerJab",
+  "hideFlags": 0
+}

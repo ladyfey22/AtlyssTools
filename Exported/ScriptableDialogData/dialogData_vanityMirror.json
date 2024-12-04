@@ -1,1 +1,303 @@
-{"$id":"1","_nameTag":"Mirror of Illusion","_introductionBranches":[{"$id":"2","_dialogIndexTag":"","dialogs":[{"$id":"3","_dialogKey":"","_dialogInput":"Greetings. I take it you may have some interest in me?","_altInputs":[],"facepic":"","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[]},{"$id":"4","_dialogKey":"","_dialogInput":"I am the Mirror of Illusion, Angela's construct. My voice can only be heard between myself and the one who chooses to speak to me.","_altInputs":[],"facepic":"","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[]},{"$id":"5","_dialogKey":"","_dialogInput":"Bring me Illusion Stones, and I can change your look permanently. Though, keep in mind that you cannot be in the form of another race.","_altInputs":[],"facepic":"","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[{"$id":"6","_selectionCaption":"Goodbye.","_selectionIcon":"","_setDialogIndex":-1},{"$id":"7","_selectionCaption":"Illusion Stones?","_selectionIcon":"","_setDialogIndex":2},{"$id":"8","_selectionCaption":"Equipment Vanity?","_selectionIcon":"","_setDialogIndex":3},{"$id":"9","_selectionCaption":"Peer into the Mirror.","_selectionIcon":"","_setDialogIndex":1}]}]}],"_dialogBranches":[{"$id":"10","_dialogIndexTag":"Dialog Branch Index #0","dialogs":[{"$id":"11","_dialogKey":"Mirror of Illusion0","_dialogInput":"","_altInputs":["Ah, yes. Have you sprung inspiration for a new look?","You seem inspired...","Are you ready to take on a new look?"],"facepic":"","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[{"$id":"12","_selectionCaption":"Goodbye.","_selectionIcon":"","_setDialogIndex":-1},{"$id":"13","_selectionCaption":"Illusion Stones?","_selectionIcon":"","_setDialogIndex":2},{"$id":"14","_selectionCaption":"Equipment Vanity?","_selectionIcon":"","_setDialogIndex":3},{"$id":"15","_selectionCaption":"Peer into the Mirror.","_selectionIcon":"","_setDialogIndex":1}]}]},{"$id":"16","_dialogIndexTag":"Dialog Branch Index #1","dialogs":[{"$id":"17","_dialogKey":"Mirror of Illusion1","_dialogInput":"","_altInputs":["Shall we begin?","What is your vision?","What is the look that you seek?","Let us commence."],"facepic":"","_npcAnimationTag":"","_dialogUI":4,"_dialogSelections":[{"$id":"18","_selectionCaption":"Goodbye.","_selectionIcon":"","_setDialogIndex":-1}]}]},{"$id":"19","_dialogIndexTag":"Dialog Branch Index #2","dialogs":[{"$id":"20","_dialogKey":"Mirror of Illusion2","_dialogInput":"Illusion Stones are the main source of my power, or rather, my service.","_altInputs":[],"facepic":"","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[]},{"$id":"21","_dialogKey":"Mirror of Illusion3","_dialogInput":"While not necessarily a currency, they are considered as a Trade Item.","_altInputs":[],"facepic":"","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[]},{"$id":"22","_dialogKey":"Mirror of Illusion4","_dialogInput":"Illusion Stones can be purchased for a high value, or be found from the outside world.","_altInputs":[],"facepic":"","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[]},{"$id":"23","_dialogKey":"Mirror of Illusion5","_dialogInput":"Each category you change your appearance in (Color, Head, Body), will cost one Illusion Stone each.","_altInputs":[],"facepic":"","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[{"$id":"24","_selectionCaption":"I see, anyways...","_selectionIcon":"","_setDialogIndex":0}]}]},{"$id":"25","_dialogIndexTag":"Dialog Branch Index #3","dialogs":[{"$id":"26","_dialogKey":"Mirror of Illusion6","_dialogInput":"My services are not needed to apply vanity to your gear.","_altInputs":[],"facepic":"","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[]},{"$id":"27","_dialogKey":"Mirror of Illusion7","_dialogInput":"However, you will need Illusion Stones to do this task.","_altInputs":[],"facepic":"","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[]},{"$id":"28","_dialogKey":"Mirror of Illusion8","_dialogInput":"Seek your inventory menu, and press the vanity button on the top right corner of the Tab Menu to access your vanity slots.","_altInputs":[],"facepic":"","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[]},{"$id":"29","_dialogKey":"Mirror of Illusion9","_dialogInput":"All but weapons and rings can be vanitized.","_altInputs":[],"facepic":"","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[]},{"$id":"30","_dialogKey":"Mirror of Illusion10","_dialogInput":"The equipment slot you wish to vanitize must have something equipped to override the look.","_altInputs":[],"facepic":"","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[]},{"$id":"31","_dialogKey":"Mirror of Illusion11","_dialogInput":"You will not be able to transmogrify equipment that you cannot wear, so keep that in mind.","_altInputs":[],"facepic":"","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[]},{"$id":"32","_dialogKey":"Mirror of Illusion12","_dialogInput":"The equipment you wish to vanitize must be the same level or lower than the equipment you're overriding.","_altInputs":[],"facepic":"","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[]},{"$id":"33","_dialogKey":"Mirror of Illusion13","_dialogInput":"If you change your equipment, the vanity on the same slot will dissipate as well.","_altInputs":[],"facepic":"","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[]},{"$id":"34","_dialogKey":"Mirror of Illusion14","_dialogInput":"I take it you have many ideas with this new found knowledge, yes?","_altInputs":[],"facepic":"","_npcAnimationTag":"","_dialogUI":0,"_dialogSelections":[]}]}],"_scriptableShopkeep":null,"_shopkeepResponses":[],"_shopkeepRejections":[],"_scriptableQuests":[],"_questAcceptResponses":[],"_questCompleteResponses":[],"_voxSounds":["_sound/dialogsounds/type"],"_voxSpeed":0.06,"name":"dialogData_vanityMirror","hideFlags":0}
+{
+  "$id": "1",
+  "_nameTag": "Mirror of Illusion",
+  "_introductionBranches": [
+    {
+      "$id": "2",
+      "_dialogIndexTag": "",
+      "dialogs": [
+        {
+          "$id": "3",
+          "_dialogKey": "",
+          "_dialogInput": "Greetings. I take it you may have some interest in me?",
+          "_altInputs": [],
+          "facepic": "",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        },
+        {
+          "$id": "4",
+          "_dialogKey": "",
+          "_dialogInput": "I am the Mirror of Illusion, Angela's construct. My voice can only be heard between myself and the one who chooses to speak to me.",
+          "_altInputs": [],
+          "facepic": "",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        },
+        {
+          "$id": "5",
+          "_dialogKey": "",
+          "_dialogInput": "Bring me Illusion Stones, and I can change your look permanently. Though, keep in mind that you cannot be in the form of another race.",
+          "_altInputs": [],
+          "facepic": "",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": [
+            {
+              "$id": "6",
+              "_selectionCaption": "Goodbye.",
+              "_selectionIcon": "",
+              "_setDialogIndex": -1
+            },
+            {
+              "$id": "7",
+              "_selectionCaption": "Illusion Stones?",
+              "_selectionIcon": "",
+              "_setDialogIndex": 2
+            },
+            {
+              "$id": "8",
+              "_selectionCaption": "Equipment Vanity?",
+              "_selectionIcon": "",
+              "_setDialogIndex": 3
+            },
+            {
+              "$id": "9",
+              "_selectionCaption": "Peer into the Mirror.",
+              "_selectionIcon": "",
+              "_setDialogIndex": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_dialogBranches": [
+    {
+      "$id": "10",
+      "_dialogIndexTag": "Dialog Branch Index #0",
+      "dialogs": [
+        {
+          "$id": "11",
+          "_dialogKey": "Mirror of Illusion0",
+          "_dialogInput": "",
+          "_altInputs": [
+            "Ah, yes. Have you sprung inspiration for a new look?",
+            "You seem inspired...",
+            "Are you ready to take on a new look?"
+          ],
+          "facepic": "",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": [
+            {
+              "$id": "12",
+              "_selectionCaption": "Goodbye.",
+              "_selectionIcon": "",
+              "_setDialogIndex": -1
+            },
+            {
+              "$id": "13",
+              "_selectionCaption": "Illusion Stones?",
+              "_selectionIcon": "",
+              "_setDialogIndex": 2
+            },
+            {
+              "$id": "14",
+              "_selectionCaption": "Equipment Vanity?",
+              "_selectionIcon": "",
+              "_setDialogIndex": 3
+            },
+            {
+              "$id": "15",
+              "_selectionCaption": "Peer into the Mirror.",
+              "_selectionIcon": "",
+              "_setDialogIndex": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$id": "16",
+      "_dialogIndexTag": "Dialog Branch Index #1",
+      "dialogs": [
+        {
+          "$id": "17",
+          "_dialogKey": "Mirror of Illusion1",
+          "_dialogInput": "",
+          "_altInputs": [
+            "Shall we begin?",
+            "What is your vision?",
+            "What is the look that you seek?",
+            "Let us commence."
+          ],
+          "facepic": "",
+          "_npcAnimationTag": "",
+          "_dialogUI": 4,
+          "_dialogSelections": [
+            {
+              "$id": "18",
+              "_selectionCaption": "Goodbye.",
+              "_selectionIcon": "",
+              "_setDialogIndex": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$id": "19",
+      "_dialogIndexTag": "Dialog Branch Index #2",
+      "dialogs": [
+        {
+          "$id": "20",
+          "_dialogKey": "Mirror of Illusion2",
+          "_dialogInput": "Illusion Stones are the main source of my power, or rather, my service.",
+          "_altInputs": [],
+          "facepic": "",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        },
+        {
+          "$id": "21",
+          "_dialogKey": "Mirror of Illusion3",
+          "_dialogInput": "While not necessarily a currency, they are considered as a Trade Item.",
+          "_altInputs": [],
+          "facepic": "",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        },
+        {
+          "$id": "22",
+          "_dialogKey": "Mirror of Illusion4",
+          "_dialogInput": "Illusion Stones can be purchased for a high value, or be found from the outside world.",
+          "_altInputs": [],
+          "facepic": "",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        },
+        {
+          "$id": "23",
+          "_dialogKey": "Mirror of Illusion5",
+          "_dialogInput": "Each category you change your appearance in (Color, Head, Body), will cost one Illusion Stone each.",
+          "_altInputs": [],
+          "facepic": "",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": [
+            {
+              "$id": "24",
+              "_selectionCaption": "I see, anyways...",
+              "_selectionIcon": "",
+              "_setDialogIndex": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$id": "25",
+      "_dialogIndexTag": "Dialog Branch Index #3",
+      "dialogs": [
+        {
+          "$id": "26",
+          "_dialogKey": "Mirror of Illusion6",
+          "_dialogInput": "My services are not needed to apply vanity to your gear.",
+          "_altInputs": [],
+          "facepic": "",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        },
+        {
+          "$id": "27",
+          "_dialogKey": "Mirror of Illusion7",
+          "_dialogInput": "However, you will need Illusion Stones to do this task.",
+          "_altInputs": [],
+          "facepic": "",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        },
+        {
+          "$id": "28",
+          "_dialogKey": "Mirror of Illusion8",
+          "_dialogInput": "Seek your inventory menu, and press the vanity button on the top right corner of the Tab Menu to access your vanity slots.",
+          "_altInputs": [],
+          "facepic": "",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        },
+        {
+          "$id": "29",
+          "_dialogKey": "Mirror of Illusion9",
+          "_dialogInput": "All but weapons and rings can be vanitized.",
+          "_altInputs": [],
+          "facepic": "",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        },
+        {
+          "$id": "30",
+          "_dialogKey": "Mirror of Illusion10",
+          "_dialogInput": "The equipment slot you wish to vanitize must have something equipped to override the look.",
+          "_altInputs": [],
+          "facepic": "",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        },
+        {
+          "$id": "31",
+          "_dialogKey": "Mirror of Illusion11",
+          "_dialogInput": "You will not be able to transmogrify equipment that you cannot wear, so keep that in mind.",
+          "_altInputs": [],
+          "facepic": "",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        },
+        {
+          "$id": "32",
+          "_dialogKey": "Mirror of Illusion12",
+          "_dialogInput": "The equipment you wish to vanitize must be the same level or lower than the equipment you're overriding.",
+          "_altInputs": [],
+          "facepic": "",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        },
+        {
+          "$id": "33",
+          "_dialogKey": "Mirror of Illusion13",
+          "_dialogInput": "If you change your equipment, the vanity on the same slot will dissipate as well.",
+          "_altInputs": [],
+          "facepic": "",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        },
+        {
+          "$id": "34",
+          "_dialogKey": "Mirror of Illusion14",
+          "_dialogInput": "I take it you have many ideas with this new found knowledge, yes?",
+          "_altInputs": [],
+          "facepic": "",
+          "_npcAnimationTag": "",
+          "_dialogUI": 0,
+          "_dialogSelections": []
+        }
+      ]
+    }
+  ],
+  "_scriptableShopkeep": null,
+  "_shopkeepResponses": [],
+  "_shopkeepRejections": [],
+  "_scriptableQuests": [],
+  "_questAcceptResponses": [],
+  "_questCompleteResponses": [],
+  "_voxSounds": [
+    "_sound/dialogsounds/type"
+  ],
+  "_voxSpeed": 0.06,
+  "name": "dialogData_vanityMirror",
+  "hideFlags": 0
+}

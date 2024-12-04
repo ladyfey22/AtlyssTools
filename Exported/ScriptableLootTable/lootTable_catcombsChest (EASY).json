@@ -1,1 +1,190 @@
-{"$id":"1","_itemDrops":[{"$id":"2","_itemTag":"Rock (3.6%)","_item":"_item/03_trade/TRADEITEM_Rock","_dropChance":0.036,"_dropQuantity":1},{"$id":"3","_itemTag":"Tome of Lesser Experience (2%)","_item":"_item/02_consumable/_status/_tome/(lv-0) STATUSCONSUMABLE_Tome of Lesser Experience","_dropChance":0.02,"_dropQuantity":1},{"$id":"4","_itemTag":"Initiate Spectacles (23.2%)","_item":"_item/01_equipment/01_armor/00_helm/(lv-3) HELM_Initiate Spectacles","_dropChance":0.232,"_dropQuantity":1},{"$id":"5","_itemTag":"Crypt Buckler (18.4%)","_item":"_item/01_equipment/01_armor/04_shield/(lv-4) SHIELD_Crypt Buckler","_dropChance":0.184,"_dropQuantity":1},{"$id":"6","_itemTag":"Crypt Blade (12%)","_item":"_item/01_equipment/02_weapon/02_melee/(lv-4) WEAPON_Crypt Blade (Melee)","_dropChance":0.12,"_dropQuantity":1},{"$id":"7","_itemTag":"Crypt Bow (28.9%)","_item":"_item/01_equipment/02_weapon/01_ranged/(lv-4) WEAPON_Crypt Bow (Range Weapon)","_dropChance":0.289,"_dropQuantity":1},{"$id":"8","_itemTag":"Ghostly Tabard (25.5%)","_item":"_item/01_equipment/01_armor/02_chest/(lv-4) CHESTPIECE_Ghostly Tabard","_dropChance":0.255,"_dropQuantity":1},{"$id":"9","_itemTag":"Skill Scroll (Alacrity) (0.5%)","_item":"_item/02_consumable/_skillscroll/(lv-1) SKILLSCROLL_Skill Scroll (Alacrity)","_dropChance":0.005,"_dropQuantity":1},{"$id":"10","_itemTag":"Skill Scroll (Inner Focus) (0.5%)","_item":"_item/02_consumable/_skillscroll/(lv-1) SKILLSCROLL_Skill Scroll (Inner Focus)","_dropChance":0.005,"_dropQuantity":1},{"$id":"11","_itemTag":"Skill Scroll (Leg Up) (0.5%)","_item":"_item/02_consumable/_skillscroll/(lv-1) SKILLSCROLL_Skill Scroll (Leg Up)","_dropChance":0.005,"_dropQuantity":1},{"$id":"12","_itemTag":"Skill Scroll (Siphon Leech) (0.5%)","_item":"_item/02_consumable/_skillscroll/(lv-1) SKILLSCROLL_Skill Scroll (Siphon Leech)","_dropChance":0.005,"_dropQuantity":1},{"$id":"13","_itemTag":"Skill Scroll (Sturdy) (0.5%)","_item":"_item/02_consumable/_skillscroll/(lv-1) SKILLSCROLL_Skill Scroll (Sturdy)","_dropChance":0.005,"_dropQuantity":1},{"$id":"14","_itemTag":"Skill Scroll (Spread Shot) (1%)","_item":"_item/02_consumable/_skillscroll/(lv-1) SKILLSCROLL_Skill Scroll (Spread Shot)","_dropChance":0.01,"_dropQuantity":1},{"$id":"15","_itemTag":"Skill Scroll (Fireball) (1%)","_item":"_item/02_consumable/_skillscroll/(lv-1) SKILLSCROLL_Skill Scroll (Fireball)","_dropChance":0.01,"_dropQuantity":1},{"$id":"16","_itemTag":"Skill Scroll (Spire) (1%)","_item":"_item/02_consumable/_skillscroll/(lv-1) SKILLSCROLL_Skill Scroll (Spire)","_dropChance":0.01,"_dropQuantity":1},{"$id":"17","_itemTag":"Skill Scroll (Cryo Needle) (1%)","_item":"_item/02_consumable/_skillscroll/(lv-1) SKILLSCROLL_Skill Scroll (Cryo Needle)","_dropChance":0.01,"_dropQuantity":1},{"$id":"18","_itemTag":"Ring Of Ambition (7.6%)","_item":"_item/01_equipment/01_armor/05_ring/(lv-1) RING_Ring Of Ambition","_dropChance":0.076,"_dropQuantity":1},{"$id":"19","_itemTag":"Grey Dye (4.2%)","_item":"_item/02_consumable/_dyes/DYE_Grey Dye","_dropChance":0.042,"_dropQuantity":1},{"$id":"20","_itemTag":"Cryptsinge Chest (31.7%)","_item":"_item/01_equipment/01_armor/02_chest/(lv-5) CHESTPIECE_Cryptsinge Chest","_dropChance":0.317,"_dropQuantity":1},{"$id":"21","_itemTag":"Cryptsinge Halo (25.5%)","_item":"_item/01_equipment/01_armor/00_helm/(lv-5) HELM_Cryptsinge Halo","_dropChance":0.255,"_dropQuantity":1},{"$id":"22","_itemTag":"Marrow Bauble (22.4%)","_item":"_item/01_equipment/02_weapon/05_magicscepter/(lv-6) WEAPON_Marrow Bauble (Magic Scepter)","_dropChance":0.224,"_dropQuantity":1},{"$id":"23","_itemTag":"Journeyman Vest (26.3%)","_item":"_item/01_equipment/01_armor/02_chest/(lv-3) CHESTPIECE_Journeyman Vest","_dropChance":0.263,"_dropQuantity":1},{"$id":"24","_itemTag":"Journeyman Shorts (26.3%)","_item":"_item/01_equipment/01_armor/03_legs/(lv-3) LEGGINGS_Journeyman Shorts","_dropChance":0.263,"_dropQuantity":1},{"$id":"25","_itemTag":"Might Stone (3%)","_item":"_item/03_trade/TRADEITEM_Might Stone","_dropChance":0.03,"_dropQuantity":1},{"$id":"26","_itemTag":"Agility Stone (3%)","_item":"_item/03_trade/TRADEITEM_Agility Stone","_dropChance":0.03,"_dropQuantity":1},{"$id":"27","_itemTag":"Flux Stone (3%)","_item":"_item/03_trade/TRADEITEM_Flux Stone","_dropChance":0.03,"_dropQuantity":1}],"_currencyAmount":1,"name":"lootTable_catcombsChest (EASY)","hideFlags":0}
+{
+  "$id": "1",
+  "_itemDrops": [
+    {
+      "$id": "2",
+      "_itemTag": "Rock (3.6%)",
+      "_item": "_item/03_trade/TRADEITEM_Rock",
+      "_dropChance": 0.036,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "3",
+      "_itemTag": "Tome of Lesser Experience (2%)",
+      "_item": "_item/02_consumable/_status/_tome/(lv-0) STATUSCONSUMABLE_Tome of Lesser Experience",
+      "_dropChance": 0.02,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "4",
+      "_itemTag": "Initiate Spectacles (23.2%)",
+      "_item": "_item/01_equipment/01_armor/00_helm/(lv-3) HELM_Initiate Spectacles",
+      "_dropChance": 0.232,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "5",
+      "_itemTag": "Crypt Buckler (18.4%)",
+      "_item": "_item/01_equipment/01_armor/04_shield/(lv-4) SHIELD_Crypt Buckler",
+      "_dropChance": 0.184,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "6",
+      "_itemTag": "Crypt Blade (12%)",
+      "_item": "_item/01_equipment/02_weapon/02_melee/(lv-4) WEAPON_Crypt Blade (Melee)",
+      "_dropChance": 0.12,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "7",
+      "_itemTag": "Crypt Bow (28.9%)",
+      "_item": "_item/01_equipment/02_weapon/01_ranged/(lv-4) WEAPON_Crypt Bow (Range Weapon)",
+      "_dropChance": 0.289,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "8",
+      "_itemTag": "Ghostly Tabard (25.5%)",
+      "_item": "_item/01_equipment/01_armor/02_chest/(lv-4) CHESTPIECE_Ghostly Tabard",
+      "_dropChance": 0.255,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "9",
+      "_itemTag": "Skill Scroll (Alacrity) (0.5%)",
+      "_item": "_item/02_consumable/_skillscroll/(lv-1) SKILLSCROLL_Skill Scroll (Alacrity)",
+      "_dropChance": 0.005,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "10",
+      "_itemTag": "Skill Scroll (Inner Focus) (0.5%)",
+      "_item": "_item/02_consumable/_skillscroll/(lv-1) SKILLSCROLL_Skill Scroll (Inner Focus)",
+      "_dropChance": 0.005,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "11",
+      "_itemTag": "Skill Scroll (Leg Up) (0.5%)",
+      "_item": "_item/02_consumable/_skillscroll/(lv-1) SKILLSCROLL_Skill Scroll (Leg Up)",
+      "_dropChance": 0.005,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "12",
+      "_itemTag": "Skill Scroll (Siphon Leech) (0.5%)",
+      "_item": "_item/02_consumable/_skillscroll/(lv-1) SKILLSCROLL_Skill Scroll (Siphon Leech)",
+      "_dropChance": 0.005,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "13",
+      "_itemTag": "Skill Scroll (Sturdy) (0.5%)",
+      "_item": "_item/02_consumable/_skillscroll/(lv-1) SKILLSCROLL_Skill Scroll (Sturdy)",
+      "_dropChance": 0.005,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "14",
+      "_itemTag": "Skill Scroll (Spread Shot) (1%)",
+      "_item": "_item/02_consumable/_skillscroll/(lv-1) SKILLSCROLL_Skill Scroll (Spread Shot)",
+      "_dropChance": 0.01,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "15",
+      "_itemTag": "Skill Scroll (Fireball) (1%)",
+      "_item": "_item/02_consumable/_skillscroll/(lv-1) SKILLSCROLL_Skill Scroll (Fireball)",
+      "_dropChance": 0.01,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "16",
+      "_itemTag": "Skill Scroll (Spire) (1%)",
+      "_item": "_item/02_consumable/_skillscroll/(lv-1) SKILLSCROLL_Skill Scroll (Spire)",
+      "_dropChance": 0.01,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "17",
+      "_itemTag": "Skill Scroll (Cryo Needle) (1%)",
+      "_item": "_item/02_consumable/_skillscroll/(lv-1) SKILLSCROLL_Skill Scroll (Cryo Needle)",
+      "_dropChance": 0.01,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "18",
+      "_itemTag": "Ring Of Ambition (7.6%)",
+      "_item": "_item/01_equipment/01_armor/05_ring/(lv-1) RING_Ring Of Ambition",
+      "_dropChance": 0.076,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "19",
+      "_itemTag": "Grey Dye (4.2%)",
+      "_item": "_item/02_consumable/_dyes/DYE_Grey Dye",
+      "_dropChance": 0.042,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "20",
+      "_itemTag": "Cryptsinge Chest (31.7%)",
+      "_item": "_item/01_equipment/01_armor/02_chest/(lv-5) CHESTPIECE_Cryptsinge Chest",
+      "_dropChance": 0.317,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "21",
+      "_itemTag": "Cryptsinge Halo (25.5%)",
+      "_item": "_item/01_equipment/01_armor/00_helm/(lv-5) HELM_Cryptsinge Halo",
+      "_dropChance": 0.255,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "22",
+      "_itemTag": "Marrow Bauble (22.4%)",
+      "_item": "_item/01_equipment/02_weapon/05_magicscepter/(lv-6) WEAPON_Marrow Bauble (Magic Scepter)",
+      "_dropChance": 0.224,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "23",
+      "_itemTag": "Journeyman Vest (26.3%)",
+      "_item": "_item/01_equipment/01_armor/02_chest/(lv-3) CHESTPIECE_Journeyman Vest",
+      "_dropChance": 0.263,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "24",
+      "_itemTag": "Journeyman Shorts (26.3%)",
+      "_item": "_item/01_equipment/01_armor/03_legs/(lv-3) LEGGINGS_Journeyman Shorts",
+      "_dropChance": 0.263,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "25",
+      "_itemTag": "Might Stone (3%)",
+      "_item": "_item/03_trade/TRADEITEM_Might Stone",
+      "_dropChance": 0.03,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "26",
+      "_itemTag": "Agility Stone (3%)",
+      "_item": "_item/03_trade/TRADEITEM_Agility Stone",
+      "_dropChance": 0.03,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "27",
+      "_itemTag": "Flux Stone (3%)",
+      "_item": "_item/03_trade/TRADEITEM_Flux Stone",
+      "_dropChance": 0.03,
+      "_dropQuantity": 1
+    }
+  ],
+  "_currencyAmount": 1,
+  "name": "lootTable_catcombsChest (EASY)",
+  "hideFlags": 0
+}

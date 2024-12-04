@@ -1,1 +1,303 @@
-{"$id":"1","_weaponTypeName":"Polearm","_combatType":0,"_damageWeight":1,"_isRangedWeapon":false,"_allowShield":false,"_canWallKnockback":true,"_maxSwingStates":1,"_movSpeedDecrease":-99.9,"_weaponAttackForce":[0,0,0],"_attackActionBuffer":0.56,"_attackSwingCooldown":0.56,"_maxComboResetBuffer":1.35,"_hitboxTime":0.2,"_damagePercent":1.0,"_hitboxPersistantTime":0.12,"_percentAdjustEachHit":-0.1,"_isHitboxPersistantDamage":true,"_hitboxScale":[10.0,5.0,18.0],"_hitboxCenter":[0.0,2.0,3.0],"_attackMoveForce":80.0,"_attackMoveForceDampen":400.0,"_weaponTypeCombatParams":[{"$id":"2","_paramTag":"Polearm lv-0","_allowChargeAttack":false,"_allowJumpAttack":true,"_weaponTypeJumpAttackClipHandle":"polearm_jumpAtk_novice","_weaponTypeJumpLandClipHandle":"polearm_jumpAtk_land","_weaponTypeChargeHandle":"","_weaponTypeChargeAttackHandles":[],"_rangedWepSpeed":1.0,"_healthCost":0,"_manaCost":0,"_staminaCost":0,"_timeBeforeJumpAttack":0.1,"_JumpAttackJumpForce":60.0,"_JumpAttackFowardForce":130.0,"_JumpAttackJumpGravityMultiply":100.0,"_jumpDamagePercent":1.3,"_jumpAttackActionBuffer":0.0,"_jumpAtkNoHitStunChance":false,"_jumpAtkPersistantDamage":false,"_persistantDamageRate":0.1,"_jumpAttackColliderCenter":[0.0,0.0,0.0],"_jumpAttackColliderScale":[5.0,5.0,15.0],"_jumpLandDamagePercent":1.0,"_jumpLandForce":0,"_jumpLandDelayTime":0.3,"_jumpAtkLandNoHitStunChance":false,"_jumpAtkLandPersistantDamage":false,"_jumpAtkLandPersistantDamageRate":0.0,"_jumpAtkLandHitboxTime":0.0,"_jumpAttackLandColliderCenter":[0.0,0.0,0.0],"_jumpAttackLandColliderScale":[5.0,5.0,5.0],"_chargeAtkDamagePercent":1.0,"_chargeMovSpeedDecrease":-7.0,"_maxChargeIntervals":1,"_chargeInputBuffer":0.3,"_chargeTime":0.4,"_chargeAttackCooldown":1.0,"_chargeAttackActionBuffer":0.8,"_chargeAtkPersistantDamage":true,"_chargeAtkPersistantDamageRate":0.08,"_timeBeforeChargeAttackStrafeRotationLock":0.3,"_chargeAttackStrafeRotationLock":0.7,"_chargeAttackForce":0,"_chargeAttackMoveForce":245.0,"_chargeAttackMoveForceDampen":600.0,"_applyChargeAttackForceOnNoInput":false,"_chargeAttackHitboxTime":0.3,"_chargeAttackColliderCenter":[0.0,2.0,4.0],"_chargeAttackColliderScale":[10.0,5.0,25.0]},{"$id":"3","_paramTag":"Polearm lv-1","_allowChargeAttack":true,"_allowJumpAttack":true,"_weaponTypeJumpAttackClipHandle":"polearm_jumpAtk_novice","_weaponTypeJumpLandClipHandle":"polearm_jumpAtk_land","_weaponTypeChargeHandle":"polearm_charge","_weaponTypeChargeAttackHandles":["polearm_chargeAtk"],"_rangedWepSpeed":1.0,"_healthCost":0,"_manaCost":0,"_staminaCost":5,"_timeBeforeJumpAttack":0.1,"_JumpAttackJumpForce":60.0,"_JumpAttackFowardForce":130.0,"_JumpAttackJumpGravityMultiply":100.0,"_jumpDamagePercent":1.3,"_jumpAttackActionBuffer":0.0,"_jumpAtkNoHitStunChance":false,"_jumpAtkPersistantDamage":false,"_persistantDamageRate":0.1,"_jumpAttackColliderCenter":[0.0,0.0,0.0],"_jumpAttackColliderScale":[5.0,5.0,15.0],"_jumpLandDamagePercent":1.0,"_jumpLandForce":0,"_jumpLandDelayTime":0.3,"_jumpAtkLandNoHitStunChance":false,"_jumpAtkLandPersistantDamage":false,"_jumpAtkLandPersistantDamageRate":0.0,"_jumpAtkLandHitboxTime":0.0,"_jumpAttackLandColliderCenter":[0.0,0.0,0.0],"_jumpAttackLandColliderScale":[5.0,5.0,5.0],"_chargeAtkDamagePercent":1.3,"_chargeMovSpeedDecrease":-7.0,"_maxChargeIntervals":1,"_chargeInputBuffer":0.3,"_chargeTime":0.4,"_chargeAttackCooldown":0.4,"_chargeAttackActionBuffer":0.8,"_chargeAtkPersistantDamage":true,"_chargeAtkPersistantDamageRate":0.08,"_timeBeforeChargeAttackStrafeRotationLock":0.3,"_chargeAttackStrafeRotationLock":0.7,"_chargeAttackForce":0,"_chargeAttackMoveForce":245.0,"_chargeAttackMoveForceDampen":600.0,"_applyChargeAttackForceOnNoInput":true,"_chargeAttackHitboxTime":0.3,"_chargeAttackColliderCenter":[0.0,2.0,4.0],"_chargeAttackColliderScale":[10.0,5.0,25.0]},{"$id":"4","_paramTag":"Polearm lv-2","_allowChargeAttack":true,"_allowJumpAttack":true,"_weaponTypeJumpAttackClipHandle":"polearm_jumpAtk_fighter","_weaponTypeJumpLandClipHandle":"polearm_jumpAtk_land","_weaponTypeChargeHandle":"polearm_charge","_weaponTypeChargeAttackHandles":["polearm_chargeAtk"],"_rangedWepSpeed":1.0,"_healthCost":0,"_manaCost":0,"_staminaCost":5,"_timeBeforeJumpAttack":0.24,"_JumpAttackJumpForce":60.0,"_JumpAttackFowardForce":100.0,"_JumpAttackJumpGravityMultiply":60.0,"_jumpDamagePercent":1.0,"_jumpAttackActionBuffer":0.0,"_jumpAtkNoHitStunChance":false,"_jumpAtkPersistantDamage":true,"_persistantDamageRate":0.08,"_jumpAttackColliderCenter":[0.0,0.0,0.0],"_jumpAttackColliderScale":[8.0,25.0,25.0],"_jumpLandDamagePercent":1.0,"_jumpLandForce":0,"_jumpLandDelayTime":0.2,"_jumpAtkLandNoHitStunChance":false,"_jumpAtkLandPersistantDamage":false,"_jumpAtkLandPersistantDamageRate":0.0,"_jumpAtkLandHitboxTime":0.0,"_jumpAttackLandColliderCenter":[0.0,0.0,0.0],"_jumpAttackLandColliderScale":[5.0,5.0,5.0],"_chargeAtkDamagePercent":1.3,"_chargeMovSpeedDecrease":-7.0,"_maxChargeIntervals":1,"_chargeInputBuffer":0.3,"_chargeTime":0.4,"_chargeAttackCooldown":0.4,"_chargeAttackActionBuffer":0.8,"_chargeAtkPersistantDamage":true,"_chargeAtkPersistantDamageRate":0.08,"_timeBeforeChargeAttackStrafeRotationLock":0.3,"_chargeAttackStrafeRotationLock":0.7,"_chargeAttackForce":0,"_chargeAttackMoveForce":245.0,"_chargeAttackMoveForceDampen":600.0,"_applyChargeAttackForceOnNoInput":true,"_chargeAttackHitboxTime":0.3,"_chargeAttackColliderCenter":[0.0,2.0,4.0],"_chargeAttackColliderScale":[10.0,5.0,25.0]}],"_weaponTypeSheatheClipHandle":"Hold_polearm","_weaponTypeAttackClipHandle":"polearm_atk","_smoothBetweenClips":0.12,"_weaponDisplayMode":0,"_weaponChargeEffectPosition":[0.0,4.0,0.0],"_weaponTrailBasePosition":[0.0,1.0,0.0],"_weaponTrailEndPosition":[0.0,6.0,0.0],"_backWeaponIndex":5,"_hidePutAwayWeapon":false,"_lockBoobOnTakeOut":true,"_takeOutWeaponSfx":["_sound/_combat/_polearmTakeOut01"],"_chargeWeaponSfx":["_sound/_combat/_weaponCharge"],"_weaponSwingSfx":["_sound/_combat/_polearmSwing03"],"name":"04_weaponType_polearm","hideFlags":0}
+{
+  "$id": "1",
+  "_weaponTypeName": "Polearm",
+  "_combatType": 0,
+  "_damageWeight": 1,
+  "_isRangedWeapon": false,
+  "_allowShield": false,
+  "_canWallKnockback": true,
+  "_maxSwingStates": 1,
+  "_movSpeedDecrease": -99.9,
+  "_weaponAttackForce": [
+    0,
+    0,
+    0
+  ],
+  "_attackActionBuffer": 0.56,
+  "_attackSwingCooldown": 0.56,
+  "_maxComboResetBuffer": 1.35,
+  "_hitboxTime": 0.2,
+  "_damagePercent": 1.0,
+  "_hitboxPersistantTime": 0.12,
+  "_percentAdjustEachHit": -0.1,
+  "_isHitboxPersistantDamage": true,
+  "_hitboxScale": [
+    10.0,
+    5.0,
+    18.0
+  ],
+  "_hitboxCenter": [
+    0.0,
+    2.0,
+    3.0
+  ],
+  "_attackMoveForce": 80.0,
+  "_attackMoveForceDampen": 400.0,
+  "_weaponTypeCombatParams": [
+    {
+      "$id": "2",
+      "_paramTag": "Polearm lv-0",
+      "_allowChargeAttack": false,
+      "_allowJumpAttack": true,
+      "_weaponTypeJumpAttackClipHandle": "polearm_jumpAtk_novice",
+      "_weaponTypeJumpLandClipHandle": "polearm_jumpAtk_land",
+      "_weaponTypeChargeHandle": "",
+      "_weaponTypeChargeAttackHandles": [],
+      "_rangedWepSpeed": 1.0,
+      "_healthCost": 0,
+      "_manaCost": 0,
+      "_staminaCost": 0,
+      "_timeBeforeJumpAttack": 0.1,
+      "_JumpAttackJumpForce": 60.0,
+      "_JumpAttackFowardForce": 130.0,
+      "_JumpAttackJumpGravityMultiply": 100.0,
+      "_jumpDamagePercent": 1.3,
+      "_jumpAttackActionBuffer": 0.0,
+      "_jumpAtkNoHitStunChance": false,
+      "_jumpAtkPersistantDamage": false,
+      "_persistantDamageRate": 0.1,
+      "_jumpAttackColliderCenter": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_jumpAttackColliderScale": [
+        5.0,
+        5.0,
+        15.0
+      ],
+      "_jumpLandDamagePercent": 1.0,
+      "_jumpLandForce": 0,
+      "_jumpLandDelayTime": 0.3,
+      "_jumpAtkLandNoHitStunChance": false,
+      "_jumpAtkLandPersistantDamage": false,
+      "_jumpAtkLandPersistantDamageRate": 0.0,
+      "_jumpAtkLandHitboxTime": 0.0,
+      "_jumpAttackLandColliderCenter": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_jumpAttackLandColliderScale": [
+        5.0,
+        5.0,
+        5.0
+      ],
+      "_chargeAtkDamagePercent": 1.0,
+      "_chargeMovSpeedDecrease": -7.0,
+      "_maxChargeIntervals": 1,
+      "_chargeInputBuffer": 0.3,
+      "_chargeTime": 0.4,
+      "_chargeAttackCooldown": 1.0,
+      "_chargeAttackActionBuffer": 0.8,
+      "_chargeAtkPersistantDamage": true,
+      "_chargeAtkPersistantDamageRate": 0.08,
+      "_timeBeforeChargeAttackStrafeRotationLock": 0.3,
+      "_chargeAttackStrafeRotationLock": 0.7,
+      "_chargeAttackForce": 0,
+      "_chargeAttackMoveForce": 245.0,
+      "_chargeAttackMoveForceDampen": 600.0,
+      "_applyChargeAttackForceOnNoInput": false,
+      "_chargeAttackHitboxTime": 0.3,
+      "_chargeAttackColliderCenter": [
+        0.0,
+        2.0,
+        4.0
+      ],
+      "_chargeAttackColliderScale": [
+        10.0,
+        5.0,
+        25.0
+      ]
+    },
+    {
+      "$id": "3",
+      "_paramTag": "Polearm lv-1",
+      "_allowChargeAttack": true,
+      "_allowJumpAttack": true,
+      "_weaponTypeJumpAttackClipHandle": "polearm_jumpAtk_novice",
+      "_weaponTypeJumpLandClipHandle": "polearm_jumpAtk_land",
+      "_weaponTypeChargeHandle": "polearm_charge",
+      "_weaponTypeChargeAttackHandles": [
+        "polearm_chargeAtk"
+      ],
+      "_rangedWepSpeed": 1.0,
+      "_healthCost": 0,
+      "_manaCost": 0,
+      "_staminaCost": 5,
+      "_timeBeforeJumpAttack": 0.1,
+      "_JumpAttackJumpForce": 60.0,
+      "_JumpAttackFowardForce": 130.0,
+      "_JumpAttackJumpGravityMultiply": 100.0,
+      "_jumpDamagePercent": 1.3,
+      "_jumpAttackActionBuffer": 0.0,
+      "_jumpAtkNoHitStunChance": false,
+      "_jumpAtkPersistantDamage": false,
+      "_persistantDamageRate": 0.1,
+      "_jumpAttackColliderCenter": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_jumpAttackColliderScale": [
+        5.0,
+        5.0,
+        15.0
+      ],
+      "_jumpLandDamagePercent": 1.0,
+      "_jumpLandForce": 0,
+      "_jumpLandDelayTime": 0.3,
+      "_jumpAtkLandNoHitStunChance": false,
+      "_jumpAtkLandPersistantDamage": false,
+      "_jumpAtkLandPersistantDamageRate": 0.0,
+      "_jumpAtkLandHitboxTime": 0.0,
+      "_jumpAttackLandColliderCenter": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_jumpAttackLandColliderScale": [
+        5.0,
+        5.0,
+        5.0
+      ],
+      "_chargeAtkDamagePercent": 1.3,
+      "_chargeMovSpeedDecrease": -7.0,
+      "_maxChargeIntervals": 1,
+      "_chargeInputBuffer": 0.3,
+      "_chargeTime": 0.4,
+      "_chargeAttackCooldown": 0.4,
+      "_chargeAttackActionBuffer": 0.8,
+      "_chargeAtkPersistantDamage": true,
+      "_chargeAtkPersistantDamageRate": 0.08,
+      "_timeBeforeChargeAttackStrafeRotationLock": 0.3,
+      "_chargeAttackStrafeRotationLock": 0.7,
+      "_chargeAttackForce": 0,
+      "_chargeAttackMoveForce": 245.0,
+      "_chargeAttackMoveForceDampen": 600.0,
+      "_applyChargeAttackForceOnNoInput": true,
+      "_chargeAttackHitboxTime": 0.3,
+      "_chargeAttackColliderCenter": [
+        0.0,
+        2.0,
+        4.0
+      ],
+      "_chargeAttackColliderScale": [
+        10.0,
+        5.0,
+        25.0
+      ]
+    },
+    {
+      "$id": "4",
+      "_paramTag": "Polearm lv-2",
+      "_allowChargeAttack": true,
+      "_allowJumpAttack": true,
+      "_weaponTypeJumpAttackClipHandle": "polearm_jumpAtk_fighter",
+      "_weaponTypeJumpLandClipHandle": "polearm_jumpAtk_land",
+      "_weaponTypeChargeHandle": "polearm_charge",
+      "_weaponTypeChargeAttackHandles": [
+        "polearm_chargeAtk"
+      ],
+      "_rangedWepSpeed": 1.0,
+      "_healthCost": 0,
+      "_manaCost": 0,
+      "_staminaCost": 5,
+      "_timeBeforeJumpAttack": 0.24,
+      "_JumpAttackJumpForce": 60.0,
+      "_JumpAttackFowardForce": 100.0,
+      "_JumpAttackJumpGravityMultiply": 60.0,
+      "_jumpDamagePercent": 1.0,
+      "_jumpAttackActionBuffer": 0.0,
+      "_jumpAtkNoHitStunChance": false,
+      "_jumpAtkPersistantDamage": true,
+      "_persistantDamageRate": 0.08,
+      "_jumpAttackColliderCenter": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_jumpAttackColliderScale": [
+        8.0,
+        25.0,
+        25.0
+      ],
+      "_jumpLandDamagePercent": 1.0,
+      "_jumpLandForce": 0,
+      "_jumpLandDelayTime": 0.2,
+      "_jumpAtkLandNoHitStunChance": false,
+      "_jumpAtkLandPersistantDamage": false,
+      "_jumpAtkLandPersistantDamageRate": 0.0,
+      "_jumpAtkLandHitboxTime": 0.0,
+      "_jumpAttackLandColliderCenter": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_jumpAttackLandColliderScale": [
+        5.0,
+        5.0,
+        5.0
+      ],
+      "_chargeAtkDamagePercent": 1.3,
+      "_chargeMovSpeedDecrease": -7.0,
+      "_maxChargeIntervals": 1,
+      "_chargeInputBuffer": 0.3,
+      "_chargeTime": 0.4,
+      "_chargeAttackCooldown": 0.4,
+      "_chargeAttackActionBuffer": 0.8,
+      "_chargeAtkPersistantDamage": true,
+      "_chargeAtkPersistantDamageRate": 0.08,
+      "_timeBeforeChargeAttackStrafeRotationLock": 0.3,
+      "_chargeAttackStrafeRotationLock": 0.7,
+      "_chargeAttackForce": 0,
+      "_chargeAttackMoveForce": 245.0,
+      "_chargeAttackMoveForceDampen": 600.0,
+      "_applyChargeAttackForceOnNoInput": true,
+      "_chargeAttackHitboxTime": 0.3,
+      "_chargeAttackColliderCenter": [
+        0.0,
+        2.0,
+        4.0
+      ],
+      "_chargeAttackColliderScale": [
+        10.0,
+        5.0,
+        25.0
+      ]
+    }
+  ],
+  "_weaponTypeSheatheClipHandle": "Hold_polearm",
+  "_weaponTypeAttackClipHandle": "polearm_atk",
+  "_smoothBetweenClips": 0.12,
+  "_weaponDisplayMode": 0,
+  "_weaponChargeEffectPosition": [
+    0.0,
+    4.0,
+    0.0
+  ],
+  "_weaponTrailBasePosition": [
+    0.0,
+    1.0,
+    0.0
+  ],
+  "_weaponTrailEndPosition": [
+    0.0,
+    6.0,
+    0.0
+  ],
+  "_backWeaponIndex": 5,
+  "_hidePutAwayWeapon": false,
+  "_lockBoobOnTakeOut": true,
+  "_takeOutWeaponSfx": [
+    "_sound/_combat/_polearmTakeOut01"
+  ],
+  "_chargeWeaponSfx": [
+    "_sound/_combat/_weaponCharge"
+  ],
+  "_weaponSwingSfx": [
+    "_sound/_combat/_polearmSwing03"
+  ],
+  "name": "04_weaponType_polearm",
+  "hideFlags": 0
+}

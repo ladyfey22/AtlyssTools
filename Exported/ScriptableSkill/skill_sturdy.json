@@ -1,1 +1,178 @@
-{"$id":"1","_skillName":"Sturdy","_skillIcon":"_graphic/_ui/_skillicons/_abIco48","_skillControlType":0,"_skillDamageType":3,"_skillDescription":"Provides a buff that grants immunity to knockback and auto parries incoming attacks.","_allowAsBonusSkill":true,"_weaponTypeRequirements":[],"_requireShield":false,"_baseSkillPower":0,"_skillRankParams":{"$id":"2","_baseLevelRequirement":4,"_baseManaCost":5,"_baseHealthCost":0,"_baseStaminaCost":0,"_isGreaterThanCost":false,"_castOnNoConditionOnly":false,"_isUninterruptable":false,"_baseRequiredItem":null,"_basedItemCost":0,"_baseCastTime":0.6,"_baseCooldown":40.0,"_baseSkillPowerPercent":1.0,"_skillLevelRequirementPerLevel":0,"_skillLevelRequirementChange":0,"_skillCostChangePerLevel":1,"_skillCostChange":5,"_skillCastTimePerLevel":0,"_skillCastTimeChange":0.0,"_skillCooldownPerLevel":0,"_skillCooldownChange":0.0,"_skillPowerPercentPerLevel":0,"_skillPowerPercentChange":0.0},"_skillRanks":[{"$id":"3","_rankTag":"Sturdy (Rank 1)","_levelRequirement":4,"_manaCost":5,"_healthCost":0,"_staminaCost":0,"_greaterThanCost":false,"_requiredItem":null,"_requiredItemQuantity":0,"_castTime":0.6,"_coolDown":40.0,"_skillPowerPercent":1.0,"_attackPowerModRef":0.0,"_magicPowerModRef":0.0,"_rangePowerModRef":0.0,"_rankDescriptor":"","_selfConditionOutput":"_skill/_noviceskills/_sturdy/statusCondition_sturdy_01","_earlySkillObjectOutput":{"$id":"4","_skillObjectTag":"","_skillObject":"","_skillObjectCondition":{"$id":"5","_scriptableCondition":null,"_chance":1.0}},"_skillObjectOutput":{"$id":"6","_skillObjectTag":"","_skillObject":"","_skillObjectCondition":{"$id":"7","_scriptableCondition":null,"_chance":1.0}}},{"$id":"8","_rankTag":"Sturdy (Rank 2)","_levelRequirement":4,"_manaCost":10,"_healthCost":0,"_staminaCost":0,"_greaterThanCost":false,"_requiredItem":null,"_requiredItemQuantity":0,"_castTime":0.6,"_coolDown":40.0,"_skillPowerPercent":1.0,"_attackPowerModRef":0.0,"_magicPowerModRef":0.0,"_rangePowerModRef":0.0,"_rankDescriptor":"","_selfConditionOutput":"_skill/_noviceskills/_sturdy/statusCondition_sturdy_02","_earlySkillObjectOutput":{"$id":"9","_skillObjectTag":"","_skillObject":"","_skillObjectCondition":{"$id":"10","_scriptableCondition":null,"_chance":1.0}},"_skillObjectOutput":{"$id":"11","_skillObjectTag":"","_skillObject":"","_skillObjectCondition":{"$id":"12","_scriptableCondition":null,"_chance":1.0}}},{"$id":"13","_rankTag":"Sturdy (Rank 3)","_levelRequirement":4,"_manaCost":15,"_healthCost":0,"_staminaCost":0,"_greaterThanCost":false,"_requiredItem":null,"_requiredItemQuantity":0,"_castTime":0.6,"_coolDown":40.0,"_skillPowerPercent":1.0,"_attackPowerModRef":0.0,"_magicPowerModRef":0.0,"_rangePowerModRef":0.0,"_rankDescriptor":"","_selfConditionOutput":"_skill/_noviceskills/_sturdy/statusCondition_sturdy_03","_earlySkillObjectOutput":{"$id":"14","_skillObjectTag":"","_skillObject":"","_skillObjectCondition":{"$id":"15","_scriptableCondition":null,"_chance":1.0}},"_skillObjectOutput":{"$id":"16","_skillObjectTag":"","_skillObject":"","_skillObjectCondition":{"$id":"17","_scriptableCondition":null,"_chance":1.0}}}],"_movementSpeedDecrease":-8.65,"_strafeDirection":false,"_groundOnlySkill":false,"_airTimeLockBuffer":0.0,"_enableAirTimeMod":false,"_lockMoveControlTime":0.0,"_lockCombatControlTime":0.35,"_timeBeforeAttackForce":0.0,"_attackForceApply":0.0,"_attackForceDampen":120.0,"_attackForceInputInfluence":false,"_castEffectCollection":{"$id":"18","_chargeSkillEffect":"_skill/00_casteffects/_spellCharge_earth","_castSkillEffect":"_skill/00_casteffects/_spellCast_earth","_channelGroundGlyphTexture":"_graphic/_texture/_cookie/_cookieTex_aura01","_channelGroundGlyphRotationSpeed":15.85,"_groundGlyphSpotAngleSize":25.0,"_groundGlyphIntensity":2000.0,"_groundGlyphColor":[1.0,0.488198,0.259433985,1.0],"_channelSound":"_sound/spellchannels/_channelEarthSpell","_castSound":"_sound/spellchannels/_castEarth","_channelSoundPitch":1.21,"_castSoundPitch":0.83,"name":"castEffect_earth","hideFlags":0},"_useGlyphEffect":true,"_skillChargeAnimation":"Omni","_skillCastAnimation":"Omni","_animChargeSmoothing":0.1,"_animCastSmoothing":0.0,"_setSheatheCondition":0,"_applySheatheCondition":false,"_hideWeapon":true,"name":"skill_sturdy","hideFlags":0}
+{
+  "$id": "1",
+  "_skillName": "Sturdy",
+  "_skillIcon": "_graphic/_ui/_skillicons/_abIco48",
+  "_skillControlType": 0,
+  "_skillDamageType": 3,
+  "_skillDescription": "Provides a buff that grants immunity to knockback and auto parries incoming attacks.",
+  "_allowAsBonusSkill": true,
+  "_weaponTypeRequirements": [],
+  "_requireShield": false,
+  "_baseSkillPower": 0,
+  "_skillRankParams": {
+    "$id": "2",
+    "_baseLevelRequirement": 4,
+    "_baseManaCost": 5,
+    "_baseHealthCost": 0,
+    "_baseStaminaCost": 0,
+    "_isGreaterThanCost": false,
+    "_castOnNoConditionOnly": false,
+    "_isUninterruptable": false,
+    "_baseRequiredItem": null,
+    "_basedItemCost": 0,
+    "_baseCastTime": 0.6,
+    "_baseCooldown": 40.0,
+    "_baseSkillPowerPercent": 1.0,
+    "_skillLevelRequirementPerLevel": 0,
+    "_skillLevelRequirementChange": 0,
+    "_skillCostChangePerLevel": 1,
+    "_skillCostChange": 5,
+    "_skillCastTimePerLevel": 0,
+    "_skillCastTimeChange": 0.0,
+    "_skillCooldownPerLevel": 0,
+    "_skillCooldownChange": 0.0,
+    "_skillPowerPercentPerLevel": 0,
+    "_skillPowerPercentChange": 0.0
+  },
+  "_skillRanks": [
+    {
+      "$id": "3",
+      "_rankTag": "Sturdy (Rank 1)",
+      "_levelRequirement": 4,
+      "_manaCost": 5,
+      "_healthCost": 0,
+      "_staminaCost": 0,
+      "_greaterThanCost": false,
+      "_requiredItem": null,
+      "_requiredItemQuantity": 0,
+      "_castTime": 0.6,
+      "_coolDown": 40.0,
+      "_skillPowerPercent": 1.0,
+      "_attackPowerModRef": 0.0,
+      "_magicPowerModRef": 0.0,
+      "_rangePowerModRef": 0.0,
+      "_rankDescriptor": "",
+      "_selfConditionOutput": "_skill/_noviceskills/_sturdy/statusCondition_sturdy_01",
+      "_earlySkillObjectOutput": {
+        "$id": "4",
+        "_skillObjectTag": "",
+        "_skillObject": "",
+        "_skillObjectCondition": {
+          "$id": "5",
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      },
+      "_skillObjectOutput": {
+        "$id": "6",
+        "_skillObjectTag": "",
+        "_skillObject": "",
+        "_skillObjectCondition": {
+          "$id": "7",
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      }
+    },
+    {
+      "$id": "8",
+      "_rankTag": "Sturdy (Rank 2)",
+      "_levelRequirement": 4,
+      "_manaCost": 10,
+      "_healthCost": 0,
+      "_staminaCost": 0,
+      "_greaterThanCost": false,
+      "_requiredItem": null,
+      "_requiredItemQuantity": 0,
+      "_castTime": 0.6,
+      "_coolDown": 40.0,
+      "_skillPowerPercent": 1.0,
+      "_attackPowerModRef": 0.0,
+      "_magicPowerModRef": 0.0,
+      "_rangePowerModRef": 0.0,
+      "_rankDescriptor": "",
+      "_selfConditionOutput": "_skill/_noviceskills/_sturdy/statusCondition_sturdy_02",
+      "_earlySkillObjectOutput": {
+        "$id": "9",
+        "_skillObjectTag": "",
+        "_skillObject": "",
+        "_skillObjectCondition": {
+          "$id": "10",
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      },
+      "_skillObjectOutput": {
+        "$id": "11",
+        "_skillObjectTag": "",
+        "_skillObject": "",
+        "_skillObjectCondition": {
+          "$id": "12",
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      }
+    },
+    {
+      "$id": "13",
+      "_rankTag": "Sturdy (Rank 3)",
+      "_levelRequirement": 4,
+      "_manaCost": 15,
+      "_healthCost": 0,
+      "_staminaCost": 0,
+      "_greaterThanCost": false,
+      "_requiredItem": null,
+      "_requiredItemQuantity": 0,
+      "_castTime": 0.6,
+      "_coolDown": 40.0,
+      "_skillPowerPercent": 1.0,
+      "_attackPowerModRef": 0.0,
+      "_magicPowerModRef": 0.0,
+      "_rangePowerModRef": 0.0,
+      "_rankDescriptor": "",
+      "_selfConditionOutput": "_skill/_noviceskills/_sturdy/statusCondition_sturdy_03",
+      "_earlySkillObjectOutput": {
+        "$id": "14",
+        "_skillObjectTag": "",
+        "_skillObject": "",
+        "_skillObjectCondition": {
+          "$id": "15",
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      },
+      "_skillObjectOutput": {
+        "$id": "16",
+        "_skillObjectTag": "",
+        "_skillObject": "",
+        "_skillObjectCondition": {
+          "$id": "17",
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      }
+    }
+  ],
+  "_movementSpeedDecrease": -8.65,
+  "_strafeDirection": false,
+  "_groundOnlySkill": false,
+  "_airTimeLockBuffer": 0.0,
+  "_enableAirTimeMod": false,
+  "_lockMoveControlTime": 0.0,
+  "_lockCombatControlTime": 0.35,
+  "_timeBeforeAttackForce": 0.0,
+  "_attackForceApply": 0.0,
+  "_attackForceDampen": 120.0,
+  "_attackForceInputInfluence": false,
+  "_castEffectCollection": "_skill/00_casteffects/castEffect_earth",
+  "_useGlyphEffect": true,
+  "_skillChargeAnimation": "Omni",
+  "_skillCastAnimation": "Omni",
+  "_animChargeSmoothing": 0.1,
+  "_animCastSmoothing": 0.0,
+  "_setSheatheCondition": 0,
+  "_applySheatheCondition": false,
+  "_hideWeapon": true,
+  "name": "skill_sturdy",
+  "hideFlags": 0
+}

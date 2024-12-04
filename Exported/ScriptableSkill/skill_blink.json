@@ -1,1 +1,178 @@
-{"$id":"1","_skillName":"Blink","_skillIcon":"_graphic/_ui/_skillicons/_abIco15","_skillControlType":3,"_skillDamageType":2,"_skillDescription":"Unlocks the ability to quickly teleport from one point to another.","_allowAsBonusSkill":false,"_weaponTypeRequirements":[],"_requireShield":false,"_baseSkillPower":0,"_skillRankParams":{"$id":"2","_baseLevelRequirement":10,"_baseManaCost":4,"_baseHealthCost":0,"_baseStaminaCost":0,"_isGreaterThanCost":false,"_castOnNoConditionOnly":false,"_isUninterruptable":true,"_baseRequiredItem":null,"_basedItemCost":0,"_baseCastTime":0.2,"_baseCooldown":1.4,"_baseSkillPowerPercent":1.0,"_skillLevelRequirementPerLevel":1,"_skillLevelRequirementChange":4,"_skillCostChangePerLevel":1,"_skillCostChange":2,"_skillCastTimePerLevel":0,"_skillCastTimeChange":0.0,"_skillCooldownPerLevel":1,"_skillCooldownChange":-0.52,"_skillPowerPercentPerLevel":0,"_skillPowerPercentChange":0.0},"_skillRanks":[{"$id":"3","_rankTag":"Blink (Rank 1)","_levelRequirement":10,"_manaCost":4,"_healthCost":0,"_staminaCost":0,"_greaterThanCost":false,"_requiredItem":null,"_requiredItemQuantity":0,"_castTime":0.2,"_coolDown":1.4,"_skillPowerPercent":1.0,"_attackPowerModRef":0.0,"_magicPowerModRef":0.0,"_rangePowerModRef":0.0,"_rankDescriptor":"<color=yellow>Short</color> teleport distance. Costs <color=yellow=>5</color> mana. Double press the dash input to blink.","_selfConditionOutput":null,"_earlySkillObjectOutput":{"$id":"4","_skillObjectTag":"","_skillObject":"","_skillObjectCondition":{"$id":"5","_scriptableCondition":null,"_chance":1.0}},"_skillObjectOutput":{"$id":"6","_skillObjectTag":"","_skillObject":"_skill/_mysticskills/00_passive/_blink/_SkillObject_blink_rank01","_skillObjectCondition":{"$id":"7","_scriptableCondition":null,"_chance":1.0}}},{"$id":"8","_rankTag":"Blink (Rank 2)","_levelRequirement":14,"_manaCost":6,"_healthCost":0,"_staminaCost":0,"_greaterThanCost":false,"_requiredItem":null,"_requiredItemQuantity":0,"_castTime":0.2,"_coolDown":0.88,"_skillPowerPercent":1.0,"_attackPowerModRef":0.0,"_magicPowerModRef":0.0,"_rangePowerModRef":0.0,"_rankDescriptor":"<color=yellow>Medium</color> teleport distance. Costs <color=yellow=>5</color> mana. Double press the dash input to blink.","_selfConditionOutput":null,"_earlySkillObjectOutput":{"$id":"9","_skillObjectTag":"","_skillObject":"","_skillObjectCondition":{"$id":"10","_scriptableCondition":null,"_chance":1.0}},"_skillObjectOutput":{"$id":"11","_skillObjectTag":"","_skillObject":"_skill/_mysticskills/00_passive/_blink/_SkillObject_blink_rank02","_skillObjectCondition":{"$id":"12","_scriptableCondition":null,"_chance":1.0}}},{"$id":"13","_rankTag":"Blink (Rank 3)","_levelRequirement":18,"_manaCost":8,"_healthCost":0,"_staminaCost":0,"_greaterThanCost":false,"_requiredItem":null,"_requiredItemQuantity":0,"_castTime":0.2,"_coolDown":0.36,"_skillPowerPercent":1.0,"_attackPowerModRef":0.0,"_magicPowerModRef":0.0,"_rangePowerModRef":0.0,"_rankDescriptor":"<color=yellow>Long</color> teleport distance. Costs <color=yellow>5</color> mana. Double press the dash input to blink.","_selfConditionOutput":null,"_earlySkillObjectOutput":{"$id":"14","_skillObjectTag":"","_skillObject":"","_skillObjectCondition":{"$id":"15","_scriptableCondition":null,"_chance":1.0}},"_skillObjectOutput":{"$id":"16","_skillObjectTag":"","_skillObject":"_skill/_mysticskills/00_passive/_blink/_SkillObject_blink_rank03","_skillObjectCondition":{"$id":"17","_scriptableCondition":null,"_chance":1.0}}}],"_movementSpeedDecrease":0.0,"_strafeDirection":true,"_groundOnlySkill":false,"_airTimeLockBuffer":0.0,"_enableAirTimeMod":false,"_lockMoveControlTime":0.0,"_lockCombatControlTime":0.35,"_timeBeforeAttackForce":0.0,"_attackForceApply":0.0,"_attackForceDampen":0.0,"_attackForceInputInfluence":false,"_castEffectCollection":{"$id":"18","_chargeSkillEffect":"_skill/00_casteffects/_spellCharge_mystic","_castSkillEffect":"_skill/00_casteffects/_spellCast_basic","_channelGroundGlyphTexture":"_graphic/_texture/_cookie/_cookieTex_aura03","_channelGroundGlyphRotationSpeed":15.0,"_groundGlyphSpotAngleSize":25.0,"_groundGlyphIntensity":2000.0,"_groundGlyphColor":[0.4764151,1.0,0.849978447,1.0],"_channelSound":"_sound/spellchannels/_channelMysticSpell","_castSound":"_sound/spellchannels/_castMysticSpell","_channelSoundPitch":0.7,"_castSoundPitch":1.0,"name":"castEffect_mystic","hideFlags":0},"_useGlyphEffect":false,"_skillChargeAnimation":"Omni","_skillCastAnimation":"Omni","_animChargeSmoothing":0.1,"_animCastSmoothing":0.0,"_setSheatheCondition":0,"_applySheatheCondition":false,"_hideWeapon":true,"name":"skill_blink","hideFlags":0}
+{
+  "$id": "1",
+  "_skillName": "Blink",
+  "_skillIcon": "_graphic/_ui/_skillicons/_abIco15",
+  "_skillControlType": 3,
+  "_skillDamageType": 2,
+  "_skillDescription": "Unlocks the ability to quickly teleport from one point to another.",
+  "_allowAsBonusSkill": false,
+  "_weaponTypeRequirements": [],
+  "_requireShield": false,
+  "_baseSkillPower": 0,
+  "_skillRankParams": {
+    "$id": "2",
+    "_baseLevelRequirement": 10,
+    "_baseManaCost": 4,
+    "_baseHealthCost": 0,
+    "_baseStaminaCost": 0,
+    "_isGreaterThanCost": false,
+    "_castOnNoConditionOnly": false,
+    "_isUninterruptable": true,
+    "_baseRequiredItem": null,
+    "_basedItemCost": 0,
+    "_baseCastTime": 0.2,
+    "_baseCooldown": 1.4,
+    "_baseSkillPowerPercent": 1.0,
+    "_skillLevelRequirementPerLevel": 1,
+    "_skillLevelRequirementChange": 4,
+    "_skillCostChangePerLevel": 1,
+    "_skillCostChange": 2,
+    "_skillCastTimePerLevel": 0,
+    "_skillCastTimeChange": 0.0,
+    "_skillCooldownPerLevel": 1,
+    "_skillCooldownChange": -0.52,
+    "_skillPowerPercentPerLevel": 0,
+    "_skillPowerPercentChange": 0.0
+  },
+  "_skillRanks": [
+    {
+      "$id": "3",
+      "_rankTag": "Blink (Rank 1)",
+      "_levelRequirement": 10,
+      "_manaCost": 4,
+      "_healthCost": 0,
+      "_staminaCost": 0,
+      "_greaterThanCost": false,
+      "_requiredItem": null,
+      "_requiredItemQuantity": 0,
+      "_castTime": 0.2,
+      "_coolDown": 1.4,
+      "_skillPowerPercent": 1.0,
+      "_attackPowerModRef": 0.0,
+      "_magicPowerModRef": 0.0,
+      "_rangePowerModRef": 0.0,
+      "_rankDescriptor": "<color=yellow>Short</color> teleport distance. Costs <color=yellow=>5</color> mana. Double press the dash input to blink.",
+      "_selfConditionOutput": null,
+      "_earlySkillObjectOutput": {
+        "$id": "4",
+        "_skillObjectTag": "",
+        "_skillObject": "",
+        "_skillObjectCondition": {
+          "$id": "5",
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      },
+      "_skillObjectOutput": {
+        "$id": "6",
+        "_skillObjectTag": "",
+        "_skillObject": "_skill/_mysticskills/00_passive/_blink/_SkillObject_blink_rank01",
+        "_skillObjectCondition": {
+          "$id": "7",
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      }
+    },
+    {
+      "$id": "8",
+      "_rankTag": "Blink (Rank 2)",
+      "_levelRequirement": 14,
+      "_manaCost": 6,
+      "_healthCost": 0,
+      "_staminaCost": 0,
+      "_greaterThanCost": false,
+      "_requiredItem": null,
+      "_requiredItemQuantity": 0,
+      "_castTime": 0.2,
+      "_coolDown": 0.88,
+      "_skillPowerPercent": 1.0,
+      "_attackPowerModRef": 0.0,
+      "_magicPowerModRef": 0.0,
+      "_rangePowerModRef": 0.0,
+      "_rankDescriptor": "<color=yellow>Medium</color> teleport distance. Costs <color=yellow=>5</color> mana. Double press the dash input to blink.",
+      "_selfConditionOutput": null,
+      "_earlySkillObjectOutput": {
+        "$id": "9",
+        "_skillObjectTag": "",
+        "_skillObject": "",
+        "_skillObjectCondition": {
+          "$id": "10",
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      },
+      "_skillObjectOutput": {
+        "$id": "11",
+        "_skillObjectTag": "",
+        "_skillObject": "_skill/_mysticskills/00_passive/_blink/_SkillObject_blink_rank02",
+        "_skillObjectCondition": {
+          "$id": "12",
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      }
+    },
+    {
+      "$id": "13",
+      "_rankTag": "Blink (Rank 3)",
+      "_levelRequirement": 18,
+      "_manaCost": 8,
+      "_healthCost": 0,
+      "_staminaCost": 0,
+      "_greaterThanCost": false,
+      "_requiredItem": null,
+      "_requiredItemQuantity": 0,
+      "_castTime": 0.2,
+      "_coolDown": 0.36,
+      "_skillPowerPercent": 1.0,
+      "_attackPowerModRef": 0.0,
+      "_magicPowerModRef": 0.0,
+      "_rangePowerModRef": 0.0,
+      "_rankDescriptor": "<color=yellow>Long</color> teleport distance. Costs <color=yellow>5</color> mana. Double press the dash input to blink.",
+      "_selfConditionOutput": null,
+      "_earlySkillObjectOutput": {
+        "$id": "14",
+        "_skillObjectTag": "",
+        "_skillObject": "",
+        "_skillObjectCondition": {
+          "$id": "15",
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      },
+      "_skillObjectOutput": {
+        "$id": "16",
+        "_skillObjectTag": "",
+        "_skillObject": "_skill/_mysticskills/00_passive/_blink/_SkillObject_blink_rank03",
+        "_skillObjectCondition": {
+          "$id": "17",
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      }
+    }
+  ],
+  "_movementSpeedDecrease": 0.0,
+  "_strafeDirection": true,
+  "_groundOnlySkill": false,
+  "_airTimeLockBuffer": 0.0,
+  "_enableAirTimeMod": false,
+  "_lockMoveControlTime": 0.0,
+  "_lockCombatControlTime": 0.35,
+  "_timeBeforeAttackForce": 0.0,
+  "_attackForceApply": 0.0,
+  "_attackForceDampen": 0.0,
+  "_attackForceInputInfluence": false,
+  "_castEffectCollection": "_skill/00_casteffects/castEffect_mystic",
+  "_useGlyphEffect": false,
+  "_skillChargeAnimation": "Omni",
+  "_skillCastAnimation": "Omni",
+  "_animChargeSmoothing": 0.1,
+  "_animCastSmoothing": 0.0,
+  "_setSheatheCondition": 0,
+  "_applySheatheCondition": false,
+  "_hideWeapon": true,
+  "name": "skill_blink",
+  "hideFlags": 0
+}

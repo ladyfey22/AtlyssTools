@@ -1,1 +1,143 @@
-{"$id":"1","_creepName":"Greater Wisp","_creepObject":"_prefab/_entity/_creep/_creepdirectory/_creep_ wisp/_creepObject_greaterWisp","_creepLevel":4,"_unkillable":false,"_creepStatStruct":{"$id":"2","_maxHealth":4,"_maxMana":0,"_maxStamina":0,"_experience":0,"_attackPower":0,"_dexPower":0,"_magicPower":0,"_criticalRate":0.0,"_magicCriticalRate":0.0,"_defense":3,"_magicDefense":6,"_evasion":0.005},"_creepDamageType":2,"_combatElement":"_combatelement/comElement_shadow","_baseDamage":7,"_canParry":true,"_selfApplyConditions":[],"_conditionDampenSlots":[],"_basePainStateChance":30,"_hitStunBuffer":1.15,"_parryStunMod":0.0,"_faceTargetWhenHurt":true,"_immuneToKnockback":false,"_creepAssistType":0,"_canAggro":true,"_dontFollowAggroTarget":false,"_playMapInstanceActionMusic":false,"_levelDifferenceToIgnore":5,"_awarenessChance":58,"_currencyDropBonus":0,"_itemDrops":[{"$id":"3","_itemTag":"Rock (37.5%)","_item":"_item/03_trade/TRADEITEM_Rock","_dropChance":0.375,"_dropQuantity":1},{"$id":"4","_itemTag":"Ghostdust (15%)","_item":"_item/03_trade/TRADEITEM_Ghostdust","_dropChance":0.15,"_dropQuantity":1},{"$id":"5","_itemTag":"Old Ring (4.8%)","_item":"_item/01_equipment/01_armor/05_ring/(lv-1) RING_Old Ring","_dropChance":0.048,"_dropQuantity":1},{"$id":"6","_itemTag":"Gilded Sword (3.9%)","_item":"_item/01_equipment/02_weapon/02_melee/(lv-5) WEAPON_Gilded Sword (Melee)","_dropChance":0.039,"_dropQuantity":1}],"_makeKinematicOnDeath":false,"_alwaysKinematic":false,"_ignoreGravity":false,"_pathfindParams":{"$id":"7","_movementSpeed":1.5,"_stoppingDistance":18.0,"_wanderingPathfinder":true,"_wanderingRadius":45.5,"_wanderResetFloor":2.5,"_wanderResetCeiling":12.85,"_heightJumpForce":100.0,"_heightJumpForwardForce":45.5,"_disableHeightJump":false,"_ledgeJumpForce":58.0,"_ledgeJumpForwardForce":20.0},"_generalCreepVisual":{"$id":"8","_creepVisualScale":1.75,"_shadowProjectionScale":1.5,"_deathAnimDespawnTime":2.0,"_showHealthBar":true,"_healthBarYPosition":15.0,"_healthBarSize":[1.0,1.0,1.0],"_targeterOffset":9.37,"_lockonArrowOffset":15.85,"_aggroiconYPosition":14.65,"_bloodEffectSize":1.0,"_gibEffectSize":1.0,"_canGib":true,"_creepBloodColor":[0.203690529,0.0,1.0,1.0],"_creepBloodSubColor":[1.0,0.180577859,0.0,0.45],"_creepGibColor":[0.322386265,0.0,1.0,1.0],"_creepGibSubColor":[1.0,0.0,0.556559563,0.45]},"_generalCreepAudio":{"$id":"9","_dynamicAudioPitch":0.82,"_attackSfx":["_sound/creeps/floatskull/_floatSkull_attack01","_sound/creeps/floatskull/_floatSkull_attack02","_sound/itemObject_spawn"],"_painSfx":"_sound/creeps/floatskull/_floatSkull_hurt","_deathSfx":"_sound/creeps/floatskull/_floatSkull_death"},"name":"(lv-4) CREEP_Greater Wisp","hideFlags":0}
+{
+  "$id": "1",
+  "_creepName": "Greater Wisp",
+  "_creepObject": "_prefab/_entity/_creep/_creepdirectory/_creep_ wisp/_creepObject_greaterWisp",
+  "_creepLevel": 4,
+  "_unkillable": false,
+  "_creepStatStruct": {
+    "$id": "2",
+    "_maxHealth": 4,
+    "_maxMana": 0,
+    "_maxStamina": 0,
+    "_experience": 0,
+    "_attackPower": 0,
+    "_dexPower": 0,
+    "_magicPower": 0,
+    "_criticalRate": 0.0,
+    "_magicCriticalRate": 0.0,
+    "_defense": 3,
+    "_magicDefense": 6,
+    "_evasion": 0.005
+  },
+  "_creepDamageType": 2,
+  "_combatElement": "_combatelement/comElement_shadow",
+  "_baseDamage": 7,
+  "_canParry": true,
+  "_selfApplyConditions": [],
+  "_conditionDampenSlots": [],
+  "_basePainStateChance": 30,
+  "_hitStunBuffer": 1.15,
+  "_parryStunMod": 0.0,
+  "_faceTargetWhenHurt": true,
+  "_immuneToKnockback": false,
+  "_creepAssistType": 0,
+  "_canAggro": true,
+  "_dontFollowAggroTarget": false,
+  "_playMapInstanceActionMusic": false,
+  "_levelDifferenceToIgnore": 5,
+  "_awarenessChance": 58,
+  "_currencyDropBonus": 0,
+  "_itemDrops": [
+    {
+      "$id": "3",
+      "_itemTag": "Rock (37.5%)",
+      "_item": "_item/03_trade/TRADEITEM_Rock",
+      "_dropChance": 0.375,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "4",
+      "_itemTag": "Ghostdust (15%)",
+      "_item": "_item/03_trade/TRADEITEM_Ghostdust",
+      "_dropChance": 0.15,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "5",
+      "_itemTag": "Old Ring (4.8%)",
+      "_item": "_item/01_equipment/01_armor/05_ring/(lv-1) RING_Old Ring",
+      "_dropChance": 0.048,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "6",
+      "_itemTag": "Gilded Sword (3.9%)",
+      "_item": "_item/01_equipment/02_weapon/02_melee/(lv-5) WEAPON_Gilded Sword (Melee)",
+      "_dropChance": 0.039,
+      "_dropQuantity": 1
+    }
+  ],
+  "_makeKinematicOnDeath": false,
+  "_alwaysKinematic": false,
+  "_ignoreGravity": false,
+  "_pathfindParams": {
+    "$id": "7",
+    "_movementSpeed": 1.5,
+    "_stoppingDistance": 18.0,
+    "_wanderingPathfinder": true,
+    "_wanderingRadius": 45.5,
+    "_wanderResetFloor": 2.5,
+    "_wanderResetCeiling": 12.85,
+    "_heightJumpForce": 100.0,
+    "_heightJumpForwardForce": 45.5,
+    "_disableHeightJump": false,
+    "_ledgeJumpForce": 58.0,
+    "_ledgeJumpForwardForce": 20.0
+  },
+  "_generalCreepVisual": {
+    "$id": "8",
+    "_creepVisualScale": 1.75,
+    "_shadowProjectionScale": 1.5,
+    "_deathAnimDespawnTime": 2.0,
+    "_showHealthBar": true,
+    "_healthBarYPosition": 15.0,
+    "_healthBarSize": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "_targeterOffset": 9.37,
+    "_lockonArrowOffset": 15.85,
+    "_aggroiconYPosition": 14.65,
+    "_bloodEffectSize": 1.0,
+    "_gibEffectSize": 1.0,
+    "_canGib": true,
+    "_creepBloodColor": [
+      0.203690529,
+      0.0,
+      1.0,
+      1.0
+    ],
+    "_creepBloodSubColor": [
+      1.0,
+      0.180577859,
+      0.0,
+      0.45
+    ],
+    "_creepGibColor": [
+      0.322386265,
+      0.0,
+      1.0,
+      1.0
+    ],
+    "_creepGibSubColor": [
+      1.0,
+      0.0,
+      0.556559563,
+      0.45
+    ]
+  },
+  "_generalCreepAudio": {
+    "$id": "9",
+    "_dynamicAudioPitch": 0.82,
+    "_attackSfx": [
+      "_sound/creeps/floatskull/_floatSkull_attack01",
+      "_sound/creeps/floatskull/_floatSkull_attack02",
+      "_sound/itemObject_spawn"
+    ],
+    "_painSfx": "_sound/creeps/floatskull/_floatSkull_hurt",
+    "_deathSfx": "_sound/creeps/floatskull/_floatSkull_death"
+  },
+  "name": "(lv-4) CREEP_Greater Wisp",
+  "hideFlags": 0
+}

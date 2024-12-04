@@ -1,1 +1,10 @@
-{"$id":"1","_projectileObjects":["_item/01_equipment/02_weapon/06_magicbell/bell_projectilesets/_projectile_colossusTone_01","_item/01_equipment/02_weapon/06_magicbell/bell_projectilesets/_projectile_colossusTone_02"],"_ammunitionItem":null,"name":"weaponProjectileSet_bell_colossusTone","hideFlags":0}
+{
+  "$id": "1",
+  "_projectileObjects": [
+    "_item/01_equipment/02_weapon/06_magicbell/bell_projectilesets/_projectile_colossusTone_01",
+    "_item/01_equipment/02_weapon/06_magicbell/bell_projectilesets/_projectile_colossusTone_02"
+  ],
+  "_ammunitionItem": null,
+  "name": "weaponProjectileSet_bell_colossusTone",
+  "hideFlags": 0
+}

@@ -12,12 +12,19 @@ public class AssetConverter<T> : JsonConverter<T> where T : UnityEngine.Object
 {
     public override void WriteJson(JsonWriter writer, T value, JsonSerializer serializer)
     {
+        // write the name of the object
+        writer.WriteValue(value.name);
     }
 
     public override T ReadJson(JsonReader reader, System.Type objectType, T existingValue, bool hasExistingValue,
         JsonSerializer serializer)
     {
-        return AtlyssToolsLoader.LoadAsset<T>(reader!.Value?.ToString());
+        string name = (reader!.Value?.ToString());
+
+        T returnV = AtlyssToolsLoader.LoadAsset<T>(name);
+
+
+        return returnV;
     }
 }
 
@@ -96,39 +103,13 @@ public class ColorConverter : JsonConverter<Color>
     }
 }
 
-public class ScriptableConditionConverter : JsonConverter
-{
-    public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
-    {
-        // write the name of the condition
-        ScriptableCondition condition = value as ScriptableCondition;
-        writer.WriteValue(condition != null ? condition._conditionName : null);
-    }
-
-    public override object ReadJson(JsonReader reader, System.Type objectType, object existingValue, JsonSerializer serializer)
-    {
-        // read the name of the condition
-        string conditionName = reader.Value?.ToString();
-        if (string.IsNullOrEmpty(conditionName))
-        {
-            return null;
-        }
-
-        // find the condition
-        ScriptableCondition condition = AtlyssToolsLoader.LoadAsset<ScriptableCondition>(conditionName);
-        return condition;
-    }
-
-    public override bool CanConvert(System.Type objectType)
-    {
-        return objectType == typeof(ScriptableCondition); // prevent child classes from using this converter
-    }
-}
-
 public class BaseConverter<T> : JsonConverter<T> where T : ScriptableObject
 {
+    public override bool CanWrite => false;
+
     public override void WriteJson(JsonWriter writer, T value, JsonSerializer serializer)
     {
+        throw new NotImplementedException();
     }
 
     public override T ReadJson(JsonReader reader, System.Type objectType, T existingValue, bool hasExistingValue,
@@ -151,7 +132,8 @@ public class Vector2Converter : JsonConverter<Vector2>
         writer.WriteEndArray();
     }
 
-    public override Vector2 ReadJson(JsonReader reader, System.Type objectType, Vector2 existingValue, bool hasExistingValue, JsonSerializer serializer)
+    public override Vector2 ReadJson(JsonReader reader, System.Type objectType, Vector2 existingValue,
+        bool hasExistingValue, JsonSerializer serializer)
     {
         // read in 2 separate values
         reader.Read();
@@ -176,7 +158,8 @@ public class Vector4Converter : JsonConverter<Vector4>
         writer.WriteEndArray();
     }
 
-    public override Vector4 ReadJson(JsonReader reader, System.Type objectType, Vector4 existingValue, bool hasExistingValue, JsonSerializer serializer)
+    public override Vector4 ReadJson(JsonReader reader, System.Type objectType, Vector4 existingValue,
+        bool hasExistingValue, JsonSerializer serializer)
     {
         // read in 4 separate values
         reader.Read();
@@ -190,7 +173,6 @@ public class Vector4Converter : JsonConverter<Vector4>
         return new Vector4(x, y, z, w);
     }
 }
-
 
 public class JsonUtility
 {
@@ -220,6 +202,7 @@ public class JsonUtility
             new AssetConverter<ScriptableStatusCondition>(),
             new AssetConverter<ScriptableWeaponProjectileSet>(),
             new AssetConverter<ScriptableWeaponType>(),
+            new AssetConverter<CastEffectCollection>(),
 
 
             // items
@@ -236,6 +219,9 @@ public class JsonUtility
             new AssetConverter<ScriptableStatusConsumable>(),
             new AssetConverter<ScriptableTradeItem>(),
             new AssetConverter<ScriptableWeapon>(),
+            new AssetConverter<ScriptableItem>(),
+
+            new AssetConverter<ScriptableCondition>(),
 
             //
             new AssetConverter<CastEffectCollection>(),
@@ -250,28 +236,29 @@ public class JsonUtility
             new Vector2Converter(),
             new Vector4Converter(),
             new AssetConverter<Mesh>(),
-            
-            new ScriptableConditionConverter(),
         };
-        
-        converters.RemoveAll(c => (c.GetType().GetGenericArguments().Length > 0) && (c.GetType().GetGenericArguments()[0] == type || type.IsSubclassOf(c.GetType().GetGenericArguments()[0])));
-        
+
+        converters.RemoveAll(c =>
+            (c.GetType().GetGenericArguments().Length > 0) && (c.GetType().GetGenericArguments()[0] == type ||
+                                                               type.IsSubclassOf(
+                                                                   c.GetType().GetGenericArguments()[0])));
+
         // double check Type is a ScriptableObject
-        if(!type.IsSubclassOf(typeof(ScriptableObject)))
+        if (!type.IsSubclassOf(typeof(ScriptableObject)))
         {
             throw new Exception("Type must be a ScriptableObject");
         }
-        
-        
+
+
         // we have to do this through ugly reflection
-        
+
         // add the base converter
         System.Type baseConverterType = typeof(BaseConverter<>);
         System.Type[] typeArgs = [type];
         System.Type genericType = baseConverterType.MakeGenericType(typeArgs);
         converters.Add((JsonConverter)Activator.CreateInstance(genericType));
-        
-        
+
+
         return new JsonSerializerSettings
         {
             PreserveReferencesHandling = PreserveReferencesHandling.Objects,
@@ -279,26 +266,27 @@ public class JsonUtility
             Converters = converters
         };
     }
-    
+
     public static object LoadFromJson(string json, System.Type type)
     {
-        if(string.IsNullOrEmpty(json))
+        if (string.IsNullOrEmpty(json))
         {
             return null;
         }
-        
+
         // apply our custom serialization
         JsonSerializerSettings settings = GetSettings(type);
+
         return JsonConvert.DeserializeObject(json, type, settings);
     }
 
     public static T LoadFromJson<T>(string json)
     {
-        if(string.IsNullOrEmpty(json))
+        if (string.IsNullOrEmpty(json))
         {
             return default;
         }
-        
+
         // apply our custom serialization
         JsonSerializerSettings settings = GetSettings(typeof(T));
         return JsonConvert.DeserializeObject<T>(json, settings);
@@ -306,16 +294,16 @@ public class JsonUtility
 
     public static T ReadFromFile<T>(string path) where T : ScriptableObject
     {
-        if(string.IsNullOrEmpty(path))
+        if (string.IsNullOrEmpty(path))
         {
             return null;
         }
-        
-        if(!File.Exists(path))
+
+        if (!File.Exists(path))
         {
             return null;
         }
-        
+
         string json = File.ReadAllText(path);
         return LoadFromJson<T>(json);
     }

@@ -1,1 +1,148 @@
-{"$id":"1","_itemDrops":[{"$id":"2","_itemTag":"Tome of Experience (5%)","_item":"_item/02_consumable/_status/_tome/(lv-0) STATUSCONSUMABLE_Tome of Experience","_dropChance":0.05,"_dropQuantity":1},{"$id":"3","_itemTag":"Angela's Tear (0.7%)","_item":"_item/03_trade/TRADEITEM_Angela's Tear","_dropChance":0.007,"_dropQuantity":1},{"$id":"4","_itemTag":"Soul Pearl (2.3%)","_item":"_item/03_trade/TRADEITEM_Soul Pearl","_dropChance":0.023,"_dropQuantity":1},{"$id":"5","_itemTag":"Illusion Stone (4.3%)","_item":"_item/03_trade/TRADEITEM_Illusion Stone","_dropChance":0.043,"_dropQuantity":1},{"$id":"6","_itemTag":"Might Stone (3.4%)","_item":"_item/03_trade/TRADEITEM_Might Stone","_dropChance":0.034,"_dropQuantity":1},{"$id":"7","_itemTag":"Agility Stone (3.4%)","_item":"_item/03_trade/TRADEITEM_Agility Stone","_dropChance":0.034,"_dropQuantity":1},{"$id":"8","_itemTag":"Flux Stone (3.4%)","_item":"_item/03_trade/TRADEITEM_Flux Stone","_dropChance":0.034,"_dropQuantity":1},{"$id":"9","_itemTag":"Blue Dye (7.3%)","_item":"_item/02_consumable/_dyes/DYE_Blue Dye","_dropChance":0.073,"_dropQuantity":1},{"$id":"10","_itemTag":"Green Dye (7.3%)","_item":"_item/02_consumable/_dyes/DYE_Green Dye","_dropChance":0.073,"_dropQuantity":1},{"$id":"11","_itemTag":"Grey Dye (7.3%)","_item":"_item/02_consumable/_dyes/DYE_Grey Dye","_dropChance":0.073,"_dropQuantity":1},{"$id":"12","_itemTag":"Red Dye (7.3%)","_item":"_item/02_consumable/_dyes/DYE_Red Dye","_dropChance":0.073,"_dropQuantity":1},{"$id":"13","_itemTag":"Bunjar (11.1%)","_item":"_item/02_consumable/_status/(lv-0) STATUSCONSUMABLE_Bunjar","_dropChance":0.111,"_dropQuantity":1},{"$id":"14","_itemTag":"Magiclove (14.2%)","_item":"_item/02_consumable/_status/(lv-0) STATUSCONSUMABLE_Magiclove","_dropChance":0.142,"_dropQuantity":1},{"$id":"15","_itemTag":"Darkcloth Pants (18%)","_item":"_item/01_equipment/01_armor/03_legs/(lv-16) LEGGINGS_Darkcloth Pants","_dropChance":0.18,"_dropQuantity":1},{"$id":"16","_itemTag":"Fortified Vestment (12.2%)","_item":"_item/01_equipment/01_armor/02_chest/(lv-16) CHESTPIECE_Fortified Vestment","_dropChance":0.122,"_dropQuantity":1},{"$id":"17","_itemTag":"Mithril Halo (7.1%)","_item":"_item/01_equipment/01_armor/00_helm/(lv-16) HELM_Mithril Halo","_dropChance":0.071,"_dropQuantity":1},{"$id":"18","_itemTag":"Mithril Shield (1.4%)","_item":"_item/01_equipment/01_armor/04_shield/(lv-16) SHIELD_Mithril Shield","_dropChance":0.014,"_dropQuantity":1},{"$id":"19","_itemTag":"Defense Potion (3.8%)","_item":"_item/02_consumable/_status/_potion/(lv-10) STATUSCONSUMABLE_Defense Potion","_dropChance":0.038,"_dropQuantity":1},{"$id":"20","_itemTag":"Mgk. Defense Potion (3.8%)","_item":"_item/02_consumable/_status/_potion/(lv-10) STATUSCONSUMABLE_Mgk","_dropChance":0.038,"_dropQuantity":1},{"$id":"21","_itemTag":"Lesser Regeneration Potion (1.8%)","_item":"_item/02_consumable/_status/_potion/(lv-0) STATUSCONSUMABLE_Lesser Regeneration Potion","_dropChance":0.018,"_dropQuantity":1}],"_currencyAmount":3,"name":"lootTable_tuulValleyChest","hideFlags":0}
+{
+  "$id": "1",
+  "_itemDrops": [
+    {
+      "$id": "2",
+      "_itemTag": "Tome of Experience (5%)",
+      "_item": "_item/02_consumable/_status/_tome/(lv-0) STATUSCONSUMABLE_Tome of Experience",
+      "_dropChance": 0.05,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "3",
+      "_itemTag": "Angela's Tear (0.7%)",
+      "_item": "_item/03_trade/TRADEITEM_Angela's Tear",
+      "_dropChance": 0.007,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "4",
+      "_itemTag": "Soul Pearl (2.3%)",
+      "_item": "_item/03_trade/TRADEITEM_Soul Pearl",
+      "_dropChance": 0.023,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "5",
+      "_itemTag": "Illusion Stone (4.3%)",
+      "_item": "_item/03_trade/TRADEITEM_Illusion Stone",
+      "_dropChance": 0.043,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "6",
+      "_itemTag": "Might Stone (3.4%)",
+      "_item": "_item/03_trade/TRADEITEM_Might Stone",
+      "_dropChance": 0.034,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "7",
+      "_itemTag": "Agility Stone (3.4%)",
+      "_item": "_item/03_trade/TRADEITEM_Agility Stone",
+      "_dropChance": 0.034,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "8",
+      "_itemTag": "Flux Stone (3.4%)",
+      "_item": "_item/03_trade/TRADEITEM_Flux Stone",
+      "_dropChance": 0.034,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "9",
+      "_itemTag": "Blue Dye (7.3%)",
+      "_item": "_item/02_consumable/_dyes/DYE_Blue Dye",
+      "_dropChance": 0.073,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "10",
+      "_itemTag": "Green Dye (7.3%)",
+      "_item": "_item/02_consumable/_dyes/DYE_Green Dye",
+      "_dropChance": 0.073,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "11",
+      "_itemTag": "Grey Dye (7.3%)",
+      "_item": "_item/02_consumable/_dyes/DYE_Grey Dye",
+      "_dropChance": 0.073,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "12",
+      "_itemTag": "Red Dye (7.3%)",
+      "_item": "_item/02_consumable/_dyes/DYE_Red Dye",
+      "_dropChance": 0.073,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "13",
+      "_itemTag": "Bunjar (11.1%)",
+      "_item": "_item/02_consumable/_status/(lv-0) STATUSCONSUMABLE_Bunjar",
+      "_dropChance": 0.111,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "14",
+      "_itemTag": "Magiclove (14.2%)",
+      "_item": "_item/02_consumable/_status/(lv-0) STATUSCONSUMABLE_Magiclove",
+      "_dropChance": 0.142,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "15",
+      "_itemTag": "Darkcloth Pants (18%)",
+      "_item": "_item/01_equipment/01_armor/03_legs/(lv-16) LEGGINGS_Darkcloth Pants",
+      "_dropChance": 0.18,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "16",
+      "_itemTag": "Fortified Vestment (12.2%)",
+      "_item": "_item/01_equipment/01_armor/02_chest/(lv-16) CHESTPIECE_Fortified Vestment",
+      "_dropChance": 0.122,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "17",
+      "_itemTag": "Mithril Halo (7.1%)",
+      "_item": "_item/01_equipment/01_armor/00_helm/(lv-16) HELM_Mithril Halo",
+      "_dropChance": 0.071,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "18",
+      "_itemTag": "Mithril Shield (1.4%)",
+      "_item": "_item/01_equipment/01_armor/04_shield/(lv-16) SHIELD_Mithril Shield",
+      "_dropChance": 0.014,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "19",
+      "_itemTag": "Defense Potion (3.8%)",
+      "_item": "_item/02_consumable/_status/_potion/(lv-10) STATUSCONSUMABLE_Defense Potion",
+      "_dropChance": 0.038,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "20",
+      "_itemTag": "Mgk. Defense Potion (3.8%)",
+      "_item": "_item/02_consumable/_status/_potion/(lv-10) STATUSCONSUMABLE_Mgk",
+      "_dropChance": 0.038,
+      "_dropQuantity": 1
+    },
+    {
+      "$id": "21",
+      "_itemTag": "Lesser Regeneration Potion (1.8%)",
+      "_item": "_item/02_consumable/_status/_potion/(lv-0) STATUSCONSUMABLE_Lesser Regeneration Potion",
+      "_dropChance": 0.018,
+      "_dropQuantity": 1
+    }
+  ],
+  "_currencyAmount": 3,
+  "name": "lootTable_tuulValleyChest",
+  "hideFlags": 0
+}

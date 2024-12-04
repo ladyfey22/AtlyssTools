@@ -1,1 +1,475 @@
-{"$id":"1","_questName":"Summore' Golem Chestpieces","_questType":1,"_questSubType":0,"_questIco":"_graphic/_ui/_itemicons/_chest/_chestIco_29","_questDescription":"Oh? <color=cyan>Lookin' to make another Golem Chestpiece?</color> I'm gonna be needin' the same materials for it then, hun!\n\n<color=yellow>Bring on over 10 Golem Cores and 15 Golem Gems,</color> and we'll get that chestpiece made!\n","_questCompleteReturnMessage":"Return to Sally in Sanctum.","_questLevel":12,"_raceRequirement":null,"_baseClassRequirement":null,"_skillToHide":null,"_requireNoviceClass":false,"_autoFinishQuest":false,"_preQuestRequirements":[{"$id":"2","_questName":"Makin' a Golem Chestpiece","_questType":0,"_questSubType":0,"_questIco":"_graphic/_ui/_itemicons/_chest/_chestIco_29","_questDescription":"<color=cyan>Them Golems in Crescent Keep are strong buggers!</color> Maybe we can take their cores and gems, make somethin' neat outta it! It'd be a chestpiece, a pretty strong one too!\n\n<color=yellow>Bring on over 10 Golem Cores, and 15 Golem Gems,</color> and we'll get that chestpiece made!\n","_questCompleteReturnMessage":"Return to Sally in Sanctum.","_questLevel":12,"_raceRequirement":null,"_baseClassRequirement":null,"_skillToHide":null,"_requireNoviceClass":false,"_autoFinishQuest":false,"_preQuestRequirements":[{"$id":"3","_questName":"The Keep Within","_questType":0,"_questSubType":1,"_questIco":"","_questDescription":"The world is healing, little one... We must see what lies futher beyond and press on. <color=cyan>If memory serves, there is a portal in the Effold Terrace leading to an Ancient Keep. Within the east and west wing chambers, there are sigils that must be attuned to your soul.</color> Please be prepared for what may dwell there...","_questCompleteReturnMessage":"Return to Angela in Sanctum.","_questLevel":10,"_raceRequirement":null,"_baseClassRequirement":null,"_skillToHide":null,"_requireNoviceClass":false,"_autoFinishQuest":false,"_preQuestRequirements":[{"$id":"4","_questName":"Diva Must Die","_questType":0,"_questSubType":1,"_questIco":"","_questDescription":"It looks like you have done a great deal of damage to the Queen's hive of Slimeks... By proving your strength against her deluded offense, it's time to take her on while the iron is still hot.\n\nFrom what the ley energies that surround the Terrace suggest, <color=cyan>the Queen would appear if her children continued to die...</color>\n\nPerhaps where there are more Slimeks, that is where she may be hidden. I trust that you can fend her off and teach her a lesson, hm?","_questCompleteReturnMessage":"Return to Angela in Sanctum.","_questLevel":5,"_raceRequirement":null,"_baseClassRequirement":null,"_skillToHide":null,"_requireNoviceClass":false,"_autoFinishQuest":false,"_preQuestRequirements":[{"$id":"5","_questName":"The Effold Terrace","_questType":0,"_questSubType":1,"_questIco":"","_questDescription":"Slimes ambushed you in the Catacombs? Well then... it's possible that I can quickly piece this issue together.\n\nWith the ward restored by your lovely soul, the portal leading to the Effold Terrace should be open to you now.\n\n<color=cyan>The portal is located northeast of the Catacombs entrance.</color> From what I see in the Terrace, it's infested with filthy Slimeks. Unlike ordinary slimes, they are stronger and infused with tar.\n\n<color=yellow>Slay 15 Slimeks, then return to me safely...</color>","_questCompleteReturnMessage":"Return to Angela in Sanctum.","_questLevel":5,"_raceRequirement":null,"_baseClassRequirement":null,"_skillToHide":null,"_requireNoviceClass":false,"_autoFinishQuest":false,"_preQuestRequirements":[{"$id":"6","_questName":"Communing Catacombs","_questType":0,"_questSubType":1,"_questIco":"_graphic/_ui/_zoneSelIco_dungeon","_questDescription":"It's quite dire, you see... the <color=cyan>Catacombs outside Sanctum</color> was a place I could commune my mystic energies with to survey the undead. What goes on there now has been all a mystery to me...\n\n<color=cyan>When the world shattered, so did my magic.</color> Fortunately, I can still feel the lost magic existing...\n\n<color=yellow>Find the stray Sigil deep within the Catacombs and let it tether to your soul.</color> Once you do, we can further explore what looms ahead of us... I do fear for the worst.","_questCompleteReturnMessage":"Return to Angela in Sanctum.","_questLevel":1,"_raceRequirement":null,"_baseClassRequirement":null,"_skillToHide":null,"_requireNoviceClass":false,"_autoFinishQuest":false,"_preQuestRequirements":[{"$id":"7","_questName":"A Warm Welcome","_questType":0,"_questSubType":1,"_questIco":"","_questDescription":"Ah... I see that you're awake, and your soul is as bright as ever. Please, do not be afraid. <color=cyan>This place is your home, our home.</color>\n\nBefore we can begin your journey, please make yourself familiar with Sanctum... <color=cyan>After all, this is the last safe haven of this broken world.</color>\n\n<color=yellow>Come back to me after you have seen the World Portal, the Barracks, the Shop, and the Gateway to the Outer Sanctum.</color> \n\n<i>Of course, take your time...</i>","_questCompleteReturnMessage":"Return to Angela in Sanctum.","_questLevel":1,"_raceRequirement":null,"_baseClassRequirement":null,"_skillToHide":null,"_requireNoviceClass":false,"_autoFinishQuest":false,"_preQuestRequirements":[],"_questObjectiveItem":{"$id":"8","_scriptItem":null,"_setItemData":{"$id":"9","_itemName":"","_quantity":1,"_maxQuantity":1,"_slotNumber":0,"_modifierTag":"","_damageTypeOverride":0,"_useDamageTypeOverride":false,"_isEquipped":false,"_isAltWeapon":false}},"_scenePath":"","_questObjective":{"$id":"10","_questItemRequirements":[],"_questCreepRequirements":[],"_questTriggerRequirements":[{"$id":"11","_questTriggerTag":"worldPortalTrigger","_prefix":"World Portal","_suffix":"discovered","_triggerEmitsNeeded":1},{"$id":"12","_questTriggerTag":"shopDiscoverTrigger","_prefix":"Shop","_suffix":"discovered","_triggerEmitsNeeded":1},{"$id":"13","_questTriggerTag":"gatewayDiscoverTrigger","_prefix":"Gateway","_suffix":"discovered","_triggerEmitsNeeded":1},{"$id":"14","_questTriggerTag":"barracksDiscoverTrigger","_prefix":"Barracks","_suffix":"discovered","_triggerEmitsNeeded":1}]},"_questExperiencePercentage":0.0,"_questCurrencyReward":30,"_questItemRewards":[{"$id":"15","_scriptItem":"_item/01_equipment/01_armor/00_helm/(lv-1) HELM_Newfold Halo","_setItemData":{"$id":"16","_itemName":"Newfold Halo","_quantity":1,"_maxQuantity":1,"_slotNumber":0,"_modifierTag":"","_damageTypeOverride":0,"_useDamageTypeOverride":false,"_isEquipped":false,"_isAltWeapon":false}}],"_displayEndDemoPrompt":false,"name":"(lv-1) QUEST_A Warm Welcome","hideFlags":0}],"_questObjectiveItem":{"$id":"17","_scriptItem":null,"_setItemData":{"$id":"18","_itemName":"","_quantity":1,"_maxQuantity":1,"_slotNumber":0,"_modifierTag":"","_damageTypeOverride":0,"_useDamageTypeOverride":false,"_isEquipped":false,"_isAltWeapon":false}},"_scenePath":"Assets/Scenes/map_dungeon00_sanctumCatacombs.unity","_questObjective":{"$id":"19","_questItemRequirements":[],"_questCreepRequirements":[],"_questTriggerRequirements":[{"$id":"20","_questTriggerTag":"sigilTrigger","_prefix":"Sigil","_suffix":"attuned","_triggerEmitsNeeded":1}]},"_questExperiencePercentage":4.0,"_questCurrencyReward":150,"_questItemRewards":[{"$id":"21","_scriptItem":"_item/01_equipment/01_armor/01_cape/(lv-4) CAPE_Initiate Cloak","_setItemData":{"$id":"22","_itemName":"Initiate Cloak","_quantity":1,"_maxQuantity":1,"_slotNumber":0,"_modifierTag":"","_damageTypeOverride":0,"_useDamageTypeOverride":false,"_isEquipped":false,"_isAltWeapon":false}}],"_displayEndDemoPrompt":false,"name":"(lv-1) QUEST_Communing Catacombs","hideFlags":0}],"_questObjectiveItem":{"$id":"23","_scriptItem":null,"_setItemData":{"$id":"24","_itemName":"","_quantity":1,"_maxQuantity":1,"_slotNumber":0,"_modifierTag":"","_damageTypeOverride":0,"_useDamageTypeOverride":false,"_isEquipped":false,"_isAltWeapon":false}},"_scenePath":"","_questObjective":{"$id":"25","_questItemRequirements":[],"_questCreepRequirements":[{"$id":"26","_questCreep":"_prefab/_entity/_creep/_creepdirectory/_creep_slime/(lv-5) CREEP_Slimek","_creepsKilled":15}],"_questTriggerRequirements":[]},"_questExperiencePercentage":1.25,"_questCurrencyReward":40,"_questItemRewards":[],"_displayEndDemoPrompt":false,"name":"(lv-3) QUEST_The Effold Terrace","hideFlags":0}],"_questObjectiveItem":{"$id":"27","_scriptItem":null,"_setItemData":{"$id":"28","_itemName":"","_quantity":1,"_maxQuantity":1,"_slotNumber":0,"_modifierTag":"","_damageTypeOverride":0,"_useDamageTypeOverride":false,"_isEquipped":false,"_isAltWeapon":false}},"_scenePath":"","_questObjective":{"$id":"29","_questItemRequirements":[],"_questCreepRequirements":[{"$id":"30","_questCreep":"_prefab/_entity/_creep/_creepdirectory/_creep_slimediva/(lv-10) CREEP_Slime Diva","_creepsKilled":1}],"_questTriggerRequirements":[]},"_questExperiencePercentage":1.95,"_questCurrencyReward":1200,"_questItemRewards":[],"_displayEndDemoPrompt":false,"name":"(lv-5) QUEST_Diva Must Die","hideFlags":0}],"_questObjectiveItem":{"$id":"31","_scriptItem":null,"_setItemData":{"$id":"32","_itemName":"","_quantity":1,"_maxQuantity":1,"_slotNumber":0,"_modifierTag":"","_damageTypeOverride":0,"_useDamageTypeOverride":false,"_isEquipped":false,"_isAltWeapon":false}},"_scenePath":"","_questObjective":{"$id":"33","_questItemRequirements":[],"_questCreepRequirements":[],"_questTriggerRequirements":[{"$id":"34","_questTriggerTag":"sigilTrigger_00","_prefix":"West Wing Sigil","_suffix":"attuned","_triggerEmitsNeeded":1},{"$id":"35","_questTriggerTag":"sigilTrigger_01","_prefix":"East Wing Sigil","_suffix":"attuned","_triggerEmitsNeeded":1}]},"_questExperiencePercentage":0.76,"_questCurrencyReward":680,"_questItemRewards":[],"_displayEndDemoPrompt":false,"name":"(lv-10) QUEST_The Keep Within","hideFlags":0}],"_questObjectiveItem":{"$id":"36","_scriptItem":null,"_setItemData":{"$id":"37","_itemName":"","_quantity":1,"_maxQuantity":1,"_slotNumber":0,"_modifierTag":"","_damageTypeOverride":0,"_useDamageTypeOverride":false,"_isEquipped":false,"_isAltWeapon":false}},"_scenePath":"","_questObjective":{"$id":"38","_questItemRequirements":[{"$id":"39","_questItem":"_item/03_trade/TRADEITEM_Golem Core","_itemsNeeded":10},{"$id":"40","_questItem":"_item/03_trade/TRADEITEM_Golem Gem","_itemsNeeded":15}],"_questCreepRequirements":[],"_questTriggerRequirements":[]},"_questExperiencePercentage":0.2,"_questCurrencyReward":0,"_questItemRewards":[{"$id":"41","_scriptItem":"_item/01_equipment/01_armor/02_chest/(lv-13) CHESTPIECE_Golem Chestpiece","_setItemData":{"$id":"42","_itemName":"Golem Chestpiece","_quantity":1,"_maxQuantity":1,"_slotNumber":0,"_modifierTag":"","_damageTypeOverride":0,"_useDamageTypeOverride":false,"_isEquipped":false,"_isAltWeapon":false}}],"_displayEndDemoPrompt":false,"name":"(lv-12) QUEST_Makin' a Golem Chestpiece","hideFlags":0}],"_questObjectiveItem":{"$id":"43","_scriptItem":null,"_setItemData":{"$id":"44","_itemName":"","_quantity":1,"_maxQuantity":1,"_slotNumber":0,"_modifierTag":"","_damageTypeOverride":0,"_useDamageTypeOverride":false,"_isEquipped":false,"_isAltWeapon":false}},"_scenePath":"","_questObjective":{"$id":"45","_questItemRequirements":[{"$id":"46","_questItem":"_item/03_trade/TRADEITEM_Golem Core","_itemsNeeded":10},{"$id":"47","_questItem":"_item/03_trade/TRADEITEM_Golem Gem","_itemsNeeded":15}],"_questCreepRequirements":[],"_questTriggerRequirements":[]},"_questExperiencePercentage":0.05,"_questCurrencyReward":0,"_questItemRewards":[{"$id":"48","_scriptItem":"_item/01_equipment/01_armor/02_chest/(lv-13) CHESTPIECE_Golem Chestpiece","_setItemData":{"$id":"49","_itemName":"Golem Chestpiece","_quantity":1,"_maxQuantity":1,"_slotNumber":0,"_modifierTag":"","_damageTypeOverride":0,"_useDamageTypeOverride":false,"_isEquipped":false,"_isAltWeapon":false}}],"_displayEndDemoPrompt":false,"name":"(lv-12) QUEST_Summore' Golem Chestpieces","hideFlags":0}
+{
+  "$id": "1",
+  "_questName": "Summore' Golem Chestpieces",
+  "_questType": 1,
+  "_questSubType": 0,
+  "_questIco": "_graphic/_ui/_itemicons/_chest/_chestIco_29",
+  "_questDescription": "Oh? <color=cyan>Lookin' to make another Golem Chestpiece?</color> I'm gonna be needin' the same materials for it then, hun!\n\n<color=yellow>Bring on over 10 Golem Cores and 15 Golem Gems,</color> and we'll get that chestpiece made!\n",
+  "_questCompleteReturnMessage": "Return to Sally in Sanctum.",
+  "_questLevel": 12,
+  "_raceRequirement": null,
+  "_baseClassRequirement": null,
+  "_skillToHide": null,
+  "_requireNoviceClass": false,
+  "_autoFinishQuest": false,
+  "_preQuestRequirements": [
+    {
+      "$id": "2",
+      "_questName": "Makin' a Golem Chestpiece",
+      "_questType": 0,
+      "_questSubType": 0,
+      "_questIco": "_graphic/_ui/_itemicons/_chest/_chestIco_29",
+      "_questDescription": "<color=cyan>Them Golems in Crescent Keep are strong buggers!</color> Maybe we can take their cores and gems, make somethin' neat outta it! It'd be a chestpiece, a pretty strong one too!\n\n<color=yellow>Bring on over 10 Golem Cores, and 15 Golem Gems,</color> and we'll get that chestpiece made!\n",
+      "_questCompleteReturnMessage": "Return to Sally in Sanctum.",
+      "_questLevel": 12,
+      "_raceRequirement": null,
+      "_baseClassRequirement": null,
+      "_skillToHide": null,
+      "_requireNoviceClass": false,
+      "_autoFinishQuest": false,
+      "_preQuestRequirements": [
+        {
+          "$id": "3",
+          "_questName": "The Keep Within",
+          "_questType": 0,
+          "_questSubType": 1,
+          "_questIco": "",
+          "_questDescription": "The world is healing, little one... We must see what lies futher beyond and press on. <color=cyan>If memory serves, there is a portal in the Effold Terrace leading to an Ancient Keep. Within the east and west wing chambers, there are sigils that must be attuned to your soul.</color> Please be prepared for what may dwell there...",
+          "_questCompleteReturnMessage": "Return to Angela in Sanctum.",
+          "_questLevel": 10,
+          "_raceRequirement": null,
+          "_baseClassRequirement": null,
+          "_skillToHide": null,
+          "_requireNoviceClass": false,
+          "_autoFinishQuest": false,
+          "_preQuestRequirements": [
+            {
+              "$id": "4",
+              "_questName": "Diva Must Die",
+              "_questType": 0,
+              "_questSubType": 1,
+              "_questIco": "",
+              "_questDescription": "It looks like you have done a great deal of damage to the Queen's hive of Slimeks... By proving your strength against her deluded offense, it's time to take her on while the iron is still hot.\n\nFrom what the ley energies that surround the Terrace suggest, <color=cyan>the Queen would appear if her children continued to die...</color>\n\nPerhaps where there are more Slimeks, that is where she may be hidden. I trust that you can fend her off and teach her a lesson, hm?",
+              "_questCompleteReturnMessage": "Return to Angela in Sanctum.",
+              "_questLevel": 5,
+              "_raceRequirement": null,
+              "_baseClassRequirement": null,
+              "_skillToHide": null,
+              "_requireNoviceClass": false,
+              "_autoFinishQuest": false,
+              "_preQuestRequirements": [
+                {
+                  "$id": "5",
+                  "_questName": "The Effold Terrace",
+                  "_questType": 0,
+                  "_questSubType": 1,
+                  "_questIco": "",
+                  "_questDescription": "Slimes ambushed you in the Catacombs? Well then... it's possible that I can quickly piece this issue together.\n\nWith the ward restored by your lovely soul, the portal leading to the Effold Terrace should be open to you now.\n\n<color=cyan>The portal is located northeast of the Catacombs entrance.</color> From what I see in the Terrace, it's infested with filthy Slimeks. Unlike ordinary slimes, they are stronger and infused with tar.\n\n<color=yellow>Slay 15 Slimeks, then return to me safely...</color>",
+                  "_questCompleteReturnMessage": "Return to Angela in Sanctum.",
+                  "_questLevel": 5,
+                  "_raceRequirement": null,
+                  "_baseClassRequirement": null,
+                  "_skillToHide": null,
+                  "_requireNoviceClass": false,
+                  "_autoFinishQuest": false,
+                  "_preQuestRequirements": [
+                    {
+                      "$id": "6",
+                      "_questName": "Communing Catacombs",
+                      "_questType": 0,
+                      "_questSubType": 1,
+                      "_questIco": "_graphic/_ui/_zoneSelIco_dungeon",
+                      "_questDescription": "It's quite dire, you see... the <color=cyan>Catacombs outside Sanctum</color> was a place I could commune my mystic energies with to survey the undead. What goes on there now has been all a mystery to me...\n\n<color=cyan>When the world shattered, so did my magic.</color> Fortunately, I can still feel the lost magic existing...\n\n<color=yellow>Find the stray Sigil deep within the Catacombs and let it tether to your soul.</color> Once you do, we can further explore what looms ahead of us... I do fear for the worst.",
+                      "_questCompleteReturnMessage": "Return to Angela in Sanctum.",
+                      "_questLevel": 1,
+                      "_raceRequirement": null,
+                      "_baseClassRequirement": null,
+                      "_skillToHide": null,
+                      "_requireNoviceClass": false,
+                      "_autoFinishQuest": false,
+                      "_preQuestRequirements": [
+                        {
+                          "$id": "7",
+                          "_questName": "A Warm Welcome",
+                          "_questType": 0,
+                          "_questSubType": 1,
+                          "_questIco": "",
+                          "_questDescription": "Ah... I see that you're awake, and your soul is as bright as ever. Please, do not be afraid. <color=cyan>This place is your home, our home.</color>\n\nBefore we can begin your journey, please make yourself familiar with Sanctum... <color=cyan>After all, this is the last safe haven of this broken world.</color>\n\n<color=yellow>Come back to me after you have seen the World Portal, the Barracks, the Shop, and the Gateway to the Outer Sanctum.</color> \n\n<i>Of course, take your time...</i>",
+                          "_questCompleteReturnMessage": "Return to Angela in Sanctum.",
+                          "_questLevel": 1,
+                          "_raceRequirement": null,
+                          "_baseClassRequirement": null,
+                          "_skillToHide": null,
+                          "_requireNoviceClass": false,
+                          "_autoFinishQuest": false,
+                          "_preQuestRequirements": [],
+                          "_questObjectiveItem": {
+                            "$id": "8",
+                            "_scriptItem": null,
+                            "_setItemData": {
+                              "$id": "9",
+                              "_itemName": "",
+                              "_quantity": 1,
+                              "_maxQuantity": 1,
+                              "_slotNumber": 0,
+                              "_modifierTag": "",
+                              "_damageTypeOverride": 0,
+                              "_useDamageTypeOverride": false,
+                              "_isEquipped": false,
+                              "_isAltWeapon": false
+                            }
+                          },
+                          "_scenePath": "",
+                          "_questObjective": {
+                            "$id": "10",
+                            "_questItemRequirements": [],
+                            "_questCreepRequirements": [],
+                            "_questTriggerRequirements": [
+                              {
+                                "$id": "11",
+                                "_questTriggerTag": "worldPortalTrigger",
+                                "_prefix": "World Portal",
+                                "_suffix": "discovered",
+                                "_triggerEmitsNeeded": 1
+                              },
+                              {
+                                "$id": "12",
+                                "_questTriggerTag": "shopDiscoverTrigger",
+                                "_prefix": "Shop",
+                                "_suffix": "discovered",
+                                "_triggerEmitsNeeded": 1
+                              },
+                              {
+                                "$id": "13",
+                                "_questTriggerTag": "gatewayDiscoverTrigger",
+                                "_prefix": "Gateway",
+                                "_suffix": "discovered",
+                                "_triggerEmitsNeeded": 1
+                              },
+                              {
+                                "$id": "14",
+                                "_questTriggerTag": "barracksDiscoverTrigger",
+                                "_prefix": "Barracks",
+                                "_suffix": "discovered",
+                                "_triggerEmitsNeeded": 1
+                              }
+                            ]
+                          },
+                          "_questExperiencePercentage": 0.0,
+                          "_questCurrencyReward": 30,
+                          "_questItemRewards": [
+                            {
+                              "$id": "15",
+                              "_scriptItem": "_item/01_equipment/01_armor/00_helm/(lv-1) HELM_Newfold Halo",
+                              "_setItemData": {
+                                "$id": "16",
+                                "_itemName": "Newfold Halo",
+                                "_quantity": 1,
+                                "_maxQuantity": 1,
+                                "_slotNumber": 0,
+                                "_modifierTag": "",
+                                "_damageTypeOverride": 0,
+                                "_useDamageTypeOverride": false,
+                                "_isEquipped": false,
+                                "_isAltWeapon": false
+                              }
+                            }
+                          ],
+                          "_displayEndDemoPrompt": false,
+                          "name": "(lv-1) QUEST_A Warm Welcome",
+                          "hideFlags": 0
+                        }
+                      ],
+                      "_questObjectiveItem": {
+                        "$id": "17",
+                        "_scriptItem": null,
+                        "_setItemData": {
+                          "$id": "18",
+                          "_itemName": "",
+                          "_quantity": 1,
+                          "_maxQuantity": 1,
+                          "_slotNumber": 0,
+                          "_modifierTag": "",
+                          "_damageTypeOverride": 0,
+                          "_useDamageTypeOverride": false,
+                          "_isEquipped": false,
+                          "_isAltWeapon": false
+                        }
+                      },
+                      "_scenePath": "Assets/Scenes/map_dungeon00_sanctumCatacombs.unity",
+                      "_questObjective": {
+                        "$id": "19",
+                        "_questItemRequirements": [],
+                        "_questCreepRequirements": [],
+                        "_questTriggerRequirements": [
+                          {
+                            "$id": "20",
+                            "_questTriggerTag": "sigilTrigger",
+                            "_prefix": "Sigil",
+                            "_suffix": "attuned",
+                            "_triggerEmitsNeeded": 1
+                          }
+                        ]
+                      },
+                      "_questExperiencePercentage": 4.0,
+                      "_questCurrencyReward": 150,
+                      "_questItemRewards": [
+                        {
+                          "$id": "21",
+                          "_scriptItem": "_item/01_equipment/01_armor/01_cape/(lv-4) CAPE_Initiate Cloak",
+                          "_setItemData": {
+                            "$id": "22",
+                            "_itemName": "Initiate Cloak",
+                            "_quantity": 1,
+                            "_maxQuantity": 1,
+                            "_slotNumber": 0,
+                            "_modifierTag": "",
+                            "_damageTypeOverride": 0,
+                            "_useDamageTypeOverride": false,
+                            "_isEquipped": false,
+                            "_isAltWeapon": false
+                          }
+                        }
+                      ],
+                      "_displayEndDemoPrompt": false,
+                      "name": "(lv-1) QUEST_Communing Catacombs",
+                      "hideFlags": 0
+                    }
+                  ],
+                  "_questObjectiveItem": {
+                    "$id": "23",
+                    "_scriptItem": null,
+                    "_setItemData": {
+                      "$id": "24",
+                      "_itemName": "",
+                      "_quantity": 1,
+                      "_maxQuantity": 1,
+                      "_slotNumber": 0,
+                      "_modifierTag": "",
+                      "_damageTypeOverride": 0,
+                      "_useDamageTypeOverride": false,
+                      "_isEquipped": false,
+                      "_isAltWeapon": false
+                    }
+                  },
+                  "_scenePath": "",
+                  "_questObjective": {
+                    "$id": "25",
+                    "_questItemRequirements": [],
+                    "_questCreepRequirements": [
+                      {
+                        "$id": "26",
+                        "_questCreep": "_prefab/_entity/_creep/_creepdirectory/_creep_slime/(lv-5) CREEP_Slimek",
+                        "_creepsKilled": 15
+                      }
+                    ],
+                    "_questTriggerRequirements": []
+                  },
+                  "_questExperiencePercentage": 1.25,
+                  "_questCurrencyReward": 40,
+                  "_questItemRewards": [],
+                  "_displayEndDemoPrompt": false,
+                  "name": "(lv-3) QUEST_The Effold Terrace",
+                  "hideFlags": 0
+                }
+              ],
+              "_questObjectiveItem": {
+                "$id": "27",
+                "_scriptItem": null,
+                "_setItemData": {
+                  "$id": "28",
+                  "_itemName": "",
+                  "_quantity": 1,
+                  "_maxQuantity": 1,
+                  "_slotNumber": 0,
+                  "_modifierTag": "",
+                  "_damageTypeOverride": 0,
+                  "_useDamageTypeOverride": false,
+                  "_isEquipped": false,
+                  "_isAltWeapon": false
+                }
+              },
+              "_scenePath": "",
+              "_questObjective": {
+                "$id": "29",
+                "_questItemRequirements": [],
+                "_questCreepRequirements": [
+                  {
+                    "$id": "30",
+                    "_questCreep": "_prefab/_entity/_creep/_creepdirectory/_creep_slimediva/(lv-10) CREEP_Slime Diva",
+                    "_creepsKilled": 1
+                  }
+                ],
+                "_questTriggerRequirements": []
+              },
+              "_questExperiencePercentage": 1.95,
+              "_questCurrencyReward": 1200,
+              "_questItemRewards": [],
+              "_displayEndDemoPrompt": false,
+              "name": "(lv-5) QUEST_Diva Must Die",
+              "hideFlags": 0
+            }
+          ],
+          "_questObjectiveItem": {
+            "$id": "31",
+            "_scriptItem": null,
+            "_setItemData": {
+              "$id": "32",
+              "_itemName": "",
+              "_quantity": 1,
+              "_maxQuantity": 1,
+              "_slotNumber": 0,
+              "_modifierTag": "",
+              "_damageTypeOverride": 0,
+              "_useDamageTypeOverride": false,
+              "_isEquipped": false,
+              "_isAltWeapon": false
+            }
+          },
+          "_scenePath": "",
+          "_questObjective": {
+            "$id": "33",
+            "_questItemRequirements": [],
+            "_questCreepRequirements": [],
+            "_questTriggerRequirements": [
+              {
+                "$id": "34",
+                "_questTriggerTag": "sigilTrigger_00",
+                "_prefix": "West Wing Sigil",
+                "_suffix": "attuned",
+                "_triggerEmitsNeeded": 1
+              },
+              {
+                "$id": "35",
+                "_questTriggerTag": "sigilTrigger_01",
+                "_prefix": "East Wing Sigil",
+                "_suffix": "attuned",
+                "_triggerEmitsNeeded": 1
+              }
+            ]
+          },
+          "_questExperiencePercentage": 0.76,
+          "_questCurrencyReward": 680,
+          "_questItemRewards": [],
+          "_displayEndDemoPrompt": false,
+          "name": "(lv-10) QUEST_The Keep Within",
+          "hideFlags": 0
+        }
+      ],
+      "_questObjectiveItem": {
+        "$id": "36",
+        "_scriptItem": null,
+        "_setItemData": {
+          "$id": "37",
+          "_itemName": "",
+          "_quantity": 1,
+          "_maxQuantity": 1,
+          "_slotNumber": 0,
+          "_modifierTag": "",
+          "_damageTypeOverride": 0,
+          "_useDamageTypeOverride": false,
+          "_isEquipped": false,
+          "_isAltWeapon": false
+        }
+      },
+      "_scenePath": "",
+      "_questObjective": {
+        "$id": "38",
+        "_questItemRequirements": [
+          {
+            "$id": "39",
+            "_questItem": "_item/03_trade/TRADEITEM_Golem Core",
+            "_itemsNeeded": 10
+          },
+          {
+            "$id": "40",
+            "_questItem": "_item/03_trade/TRADEITEM_Golem Gem",
+            "_itemsNeeded": 15
+          }
+        ],
+        "_questCreepRequirements": [],
+        "_questTriggerRequirements": []
+      },
+      "_questExperiencePercentage": 0.2,
+      "_questCurrencyReward": 0,
+      "_questItemRewards": [
+        {
+          "$id": "41",
+          "_scriptItem": "_item/01_equipment/01_armor/02_chest/(lv-13) CHESTPIECE_Golem Chestpiece",
+          "_setItemData": {
+            "$id": "42",
+            "_itemName": "Golem Chestpiece",
+            "_quantity": 1,
+            "_maxQuantity": 1,
+            "_slotNumber": 0,
+            "_modifierTag": "",
+            "_damageTypeOverride": 0,
+            "_useDamageTypeOverride": false,
+            "_isEquipped": false,
+            "_isAltWeapon": false
+          }
+        }
+      ],
+      "_displayEndDemoPrompt": false,
+      "name": "(lv-12) QUEST_Makin' a Golem Chestpiece",
+      "hideFlags": 0
+    }
+  ],
+  "_questObjectiveItem": {
+    "$id": "43",
+    "_scriptItem": null,
+    "_setItemData": {
+      "$id": "44",
+      "_itemName": "",
+      "_quantity": 1,
+      "_maxQuantity": 1,
+      "_slotNumber": 0,
+      "_modifierTag": "",
+      "_damageTypeOverride": 0,
+      "_useDamageTypeOverride": false,
+      "_isEquipped": false,
+      "_isAltWeapon": false
+    }
+  },
+  "_scenePath": "",
+  "_questObjective": {
+    "$id": "45",
+    "_questItemRequirements": [
+      {
+        "$id": "46",
+        "_questItem": "_item/03_trade/TRADEITEM_Golem Core",
+        "_itemsNeeded": 10
+      },
+      {
+        "$id": "47",
+        "_questItem": "_item/03_trade/TRADEITEM_Golem Gem",
+        "_itemsNeeded": 15
+      }
+    ],
+    "_questCreepRequirements": [],
+    "_questTriggerRequirements": []
+  },
+  "_questExperiencePercentage": 0.05,
+  "_questCurrencyReward": 0,
+  "_questItemRewards": [
+    {
+      "$id": "48",
+      "_scriptItem": "_item/01_equipment/01_armor/02_chest/(lv-13) CHESTPIECE_Golem Chestpiece",
+      "_setItemData": {
+        "$id": "49",
+        "_itemName": "Golem Chestpiece",
+        "_quantity": 1,
+        "_maxQuantity": 1,
+        "_slotNumber": 0,
+        "_modifierTag": "",
+        "_damageTypeOverride": 0,
+        "_useDamageTypeOverride": false,
+        "_isEquipped": false,
+        "_isAltWeapon": false
+      }
+    }
+  ],
+  "_displayEndDemoPrompt": false,
+  "name": "(lv-12) QUEST_Summore' Golem Chestpieces",
+  "hideFlags": 0
+}

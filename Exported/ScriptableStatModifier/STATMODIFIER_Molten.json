@@ -1,1 +1,36 @@
-{"$id":"1","_modifierTag":"Molten","_modifierElement":"_combatelement/comElement_fire","_modifierStatStruct":{"$id":"2","_maxHealth":0,"_maxMana":0,"_maxStamina":0,"_experience":0,"_attackPower":0,"_dexPower":0,"_magicPower":0,"_criticalRate":0.0,"_magicCriticalRate":0.0,"_defense":0,"_magicDefense":0,"_evasion":0.0},"_modifierPercentage":0.45,"_creepMaxHealthBoostPercentage":0.12,"_creepStatModifierPercentage":0.45,"_experiencePercentage":0.25,"_currencyDropPercentage":1.5,"_damageType":0,"_overrideDamageType":false,"_glowTintColor":[1.0,1.0,1.0,1.0],"_creepScaleAdd":0.4,"name":"STATMODIFIER_Molten","hideFlags":0}
+{
+  "$id": "1",
+  "_modifierTag": "Molten",
+  "_modifierElement": "_combatelement/comElement_fire",
+  "_modifierStatStruct": {
+    "$id": "2",
+    "_maxHealth": 0,
+    "_maxMana": 0,
+    "_maxStamina": 0,
+    "_experience": 0,
+    "_attackPower": 0,
+    "_dexPower": 0,
+    "_magicPower": 0,
+    "_criticalRate": 0.0,
+    "_magicCriticalRate": 0.0,
+    "_defense": 0,
+    "_magicDefense": 0,
+    "_evasion": 0.0
+  },
+  "_modifierPercentage": 0.45,
+  "_creepMaxHealthBoostPercentage": 0.12,
+  "_creepStatModifierPercentage": 0.45,
+  "_experiencePercentage": 0.25,
+  "_currencyDropPercentage": 1.5,
+  "_damageType": 0,
+  "_overrideDamageType": false,
+  "_glowTintColor": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "_creepScaleAdd": 0.4,
+  "name": "STATMODIFIER_Molten",
+  "hideFlags": 0
+}

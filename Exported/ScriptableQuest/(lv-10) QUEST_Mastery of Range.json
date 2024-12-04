@@ -1,1 +1,53 @@
-{"$id":"1","_questName":"Mastery of Range","_questType":1,"_questSubType":3,"_questIco":"_graphic/_ui/_itemicons/_consumable/_conIco_10","_questDescription":"<color=cyan>Ever thought you'd be interested in the know-how on usin' ranged weapons?</color> It may come as a shock to you hun, but I know my way around usin' em and takin' down things when the job needs to be done! Ranged weapons have been a lifesaver for me and my crew!\n\nIf you'd be interested in knowing some of that skill, I can teach ya! <color=yellow>Take this scroll. Learnin' it can give you the ability to use ranged weapons at their best potential!</color>\n\n<color=yellow>In case ya wanna think' it over twice, I'm always here to give another scroll if ya need it! Just know that the scroll will vanish if ya drop it, ya hear?</color>","_questCompleteReturnMessage":"Return to Sally in Sanctum.","_questLevel":10,"_raceRequirement":null,"_baseClassRequirement":null,"_skillToHide":"_skill/00_skillscroll_skills/00_masteries/_rangedmastery/skill_rangedMastery","_requireNoviceClass":false,"_autoFinishQuest":true,"_preQuestRequirements":[],"_questObjectiveItem":{"$id":"2","_scriptItem":"_item/02_consumable/_skillscroll/(lv-10) SKILLSCROLL_Skill Scroll (Ranged Mastery)","_setItemData":{"$id":"3","_itemName":"Skill Scroll (Ranged Mastery)","_quantity":1,"_maxQuantity":1,"_slotNumber":0,"_modifierTag":"","_damageTypeOverride":0,"_useDamageTypeOverride":false,"_isEquipped":false,"_isAltWeapon":false}},"_scenePath":"","_questObjective":{"$id":"4","_questItemRequirements":[],"_questCreepRequirements":[],"_questTriggerRequirements":[{"$id":"5","_questTriggerTag":"useRangedScroll","_prefix":"Ranged Mastery Scroll","_suffix":"read","_triggerEmitsNeeded":1}]},"_questExperiencePercentage":0.0,"_questCurrencyReward":0,"_questItemRewards":[],"_displayEndDemoPrompt":false,"name":"(lv-10) QUEST_Mastery of Range","hideFlags":0}
+{
+  "$id": "1",
+  "_questName": "Mastery of Range",
+  "_questType": 1,
+  "_questSubType": 3,
+  "_questIco": "_graphic/_ui/_itemicons/_consumable/_conIco_10",
+  "_questDescription": "<color=cyan>Ever thought you'd be interested in the know-how on usin' ranged weapons?</color> It may come as a shock to you hun, but I know my way around usin' em and takin' down things when the job needs to be done! Ranged weapons have been a lifesaver for me and my crew!\n\nIf you'd be interested in knowing some of that skill, I can teach ya! <color=yellow>Take this scroll. Learnin' it can give you the ability to use ranged weapons at their best potential!</color>\n\n<color=yellow>In case ya wanna think' it over twice, I'm always here to give another scroll if ya need it! Just know that the scroll will vanish if ya drop it, ya hear?</color>",
+  "_questCompleteReturnMessage": "Return to Sally in Sanctum.",
+  "_questLevel": 10,
+  "_raceRequirement": null,
+  "_baseClassRequirement": null,
+  "_skillToHide": "_skill/00_skillscroll_skills/00_masteries/_rangedmastery/skill_rangedMastery",
+  "_requireNoviceClass": false,
+  "_autoFinishQuest": true,
+  "_preQuestRequirements": [],
+  "_questObjectiveItem": {
+    "$id": "2",
+    "_scriptItem": "_item/02_consumable/_skillscroll/(lv-10) SKILLSCROLL_Skill Scroll (Ranged Mastery)",
+    "_setItemData": {
+      "$id": "3",
+      "_itemName": "Skill Scroll (Ranged Mastery)",
+      "_quantity": 1,
+      "_maxQuantity": 1,
+      "_slotNumber": 0,
+      "_modifierTag": "",
+      "_damageTypeOverride": 0,
+      "_useDamageTypeOverride": false,
+      "_isEquipped": false,
+      "_isAltWeapon": false
+    }
+  },
+  "_scenePath": "",
+  "_questObjective": {
+    "$id": "4",
+    "_questItemRequirements": [],
+    "_questCreepRequirements": [],
+    "_questTriggerRequirements": [
+      {
+        "$id": "5",
+        "_questTriggerTag": "useRangedScroll",
+        "_prefix": "Ranged Mastery Scroll",
+        "_suffix": "read",
+        "_triggerEmitsNeeded": 1
+      }
+    ]
+  },
+  "_questExperiencePercentage": 0.0,
+  "_questCurrencyReward": 0,
+  "_questItemRewards": [],
+  "_displayEndDemoPrompt": false,
+  "name": "(lv-10) QUEST_Mastery of Range",
+  "hideFlags": 0
+}

@@ -1,1 +1,68 @@
-{"$id":"1","_questName":"Reviling the Rageboars","_questType":0,"_questSubType":0,"_questIco":"_graphic/_ui/_itemicons/_tradeitem/_tradIco_43","_questDescription":"The Rageboars in Tuul Valley are cowards. To think they can stand a chance against us is laughable.\n\n<color=cyan>Deep in the Valley is a temple, overrun with the damn things.</color> These devious boars were constructed by an ominous evil being that has no remorse for this world. We will discuss of her when your time is ready, lost one. For now, we must focus on what you can handle.\n\n<color=yellow>Slay 20 Rageboars. They are hidden within the temple I have spoken of, in Tuul Valley.</color> Be advised that going deep in the temple can get you killed if you're not careful.\n","_questCompleteReturnMessage":"Return to Enok in Sanctum.","_questLevel":15,"_raceRequirement":null,"_baseClassRequirement":null,"_skillToHide":null,"_requireNoviceClass":false,"_autoFinishQuest":false,"_preQuestRequirements":[],"_questObjectiveItem":{"$id":"2","_scriptItem":null,"_setItemData":{"$id":"3","_itemName":"","_quantity":1,"_maxQuantity":1,"_slotNumber":0,"_modifierTag":"","_damageTypeOverride":0,"_useDamageTypeOverride":false,"_isEquipped":false,"_isAltWeapon":false}},"_scenePath":"","_questObjective":{"$id":"4","_questItemRequirements":[],"_questCreepRequirements":[{"$id":"5","_questCreep":"_prefab/_entity/_creep/_creepdirectory/_creep_mekboar/_creep_rageboar/(lv-18) CREEP_Rageboar","_creepsKilled":20}],"_questTriggerRequirements":[]},"_questExperiencePercentage":0.22,"_questCurrencyReward":1000,"_questItemRewards":[{"$id":"6","_scriptItem":"_item/01_equipment/01_armor/01_cape/(lv-15) CAPE_Cozy Cloak","_setItemData":{"$id":"7","_itemName":"Cozy Cloak","_quantity":1,"_maxQuantity":1,"_slotNumber":0,"_modifierTag":"","_damageTypeOverride":0,"_useDamageTypeOverride":false,"_isEquipped":false,"_isAltWeapon":false}}],"_displayEndDemoPrompt":false,"name":"(lv-15) QUEST_Reviling the Rageboars","hideFlags":0}
+{
+  "$id": "1",
+  "_questName": "Reviling the Rageboars",
+  "_questType": 0,
+  "_questSubType": 0,
+  "_questIco": "_graphic/_ui/_itemicons/_tradeitem/_tradIco_43",
+  "_questDescription": "The Rageboars in Tuul Valley are cowards. To think they can stand a chance against us is laughable.\n\n<color=cyan>Deep in the Valley is a temple, overrun with the damn things.</color> These devious boars were constructed by an ominous evil being that has no remorse for this world. We will discuss of her when your time is ready, lost one. For now, we must focus on what you can handle.\n\n<color=yellow>Slay 20 Rageboars. They are hidden within the temple I have spoken of, in Tuul Valley.</color> Be advised that going deep in the temple can get you killed if you're not careful.\n",
+  "_questCompleteReturnMessage": "Return to Enok in Sanctum.",
+  "_questLevel": 15,
+  "_raceRequirement": null,
+  "_baseClassRequirement": null,
+  "_skillToHide": null,
+  "_requireNoviceClass": false,
+  "_autoFinishQuest": false,
+  "_preQuestRequirements": [],
+  "_questObjectiveItem": {
+    "$id": "2",
+    "_scriptItem": null,
+    "_setItemData": {
+      "$id": "3",
+      "_itemName": "",
+      "_quantity": 1,
+      "_maxQuantity": 1,
+      "_slotNumber": 0,
+      "_modifierTag": "",
+      "_damageTypeOverride": 0,
+      "_useDamageTypeOverride": false,
+      "_isEquipped": false,
+      "_isAltWeapon": false
+    }
+  },
+  "_scenePath": "",
+  "_questObjective": {
+    "$id": "4",
+    "_questItemRequirements": [],
+    "_questCreepRequirements": [
+      {
+        "$id": "5",
+        "_questCreep": "_prefab/_entity/_creep/_creepdirectory/_creep_mekboar/_creep_rageboar/(lv-18) CREEP_Rageboar",
+        "_creepsKilled": 20
+      }
+    ],
+    "_questTriggerRequirements": []
+  },
+  "_questExperiencePercentage": 0.22,
+  "_questCurrencyReward": 1000,
+  "_questItemRewards": [
+    {
+      "$id": "6",
+      "_scriptItem": "_item/01_equipment/01_armor/01_cape/(lv-15) CAPE_Cozy Cloak",
+      "_setItemData": {
+        "$id": "7",
+        "_itemName": "Cozy Cloak",
+        "_quantity": 1,
+        "_maxQuantity": 1,
+        "_slotNumber": 0,
+        "_modifierTag": "",
+        "_damageTypeOverride": 0,
+        "_useDamageTypeOverride": false,
+        "_isEquipped": false,
+        "_isAltWeapon": false
+      }
+    }
+  ],
+  "_displayEndDemoPrompt": false,
+  "name": "(lv-15) QUEST_Reviling the Rageboars",
+  "hideFlags": 0
+}

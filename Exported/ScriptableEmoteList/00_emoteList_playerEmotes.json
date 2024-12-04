@@ -1,1 +1,67 @@
-{"$id":"1","_emoteCommandList":[{"$id":"2","_emoteChatCommand":"/sit","_emoteAnimationTag":"sit_Init","_emoteChatMessage":""},{"$id":"3","_emoteChatCommand":"/sit2","_emoteAnimationTag":"sit_Init02","_emoteChatMessage":""},{"$id":"4","_emoteChatCommand":"/taunt","_emoteAnimationTag":"spank_Init","_emoteChatMessage":"taunts."},{"$id":"5","_emoteChatCommand":"/shrug","_emoteAnimationTag":"shrug","_emoteChatMessage":"shrugs."},{"$id":"6","_emoteChatCommand":"/clap","_emoteAnimationTag":"clap","_emoteChatMessage":"claps."},{"$id":"7","_emoteChatCommand":"/think","_emoteAnimationTag":"think","_emoteChatMessage":"thinks for a moment."},{"$id":"8","_emoteChatCommand":"/ponder","_emoteAnimationTag":"think","_emoteChatMessage":"ponders."},{"$id":"9","_emoteChatCommand":"/dance","_emoteAnimationTag":"dance_loop","_emoteChatMessage":"dances."},{"$id":"10","_emoteChatCommand":"/point","_emoteAnimationTag":"point_loop","_emoteChatMessage":"points in a direction."},{"$id":"11","_emoteChatCommand":"/nod","_emoteAnimationTag":"player_nod","_emoteChatMessage":"nods."}],"name":"00_emoteList_playerEmotes","hideFlags":0}
+{
+  "$id": "1",
+  "_emoteCommandList": [
+    {
+      "$id": "2",
+      "_emoteChatCommand": "/sit",
+      "_emoteAnimationTag": "sit_Init",
+      "_emoteChatMessage": ""
+    },
+    {
+      "$id": "3",
+      "_emoteChatCommand": "/sit2",
+      "_emoteAnimationTag": "sit_Init02",
+      "_emoteChatMessage": ""
+    },
+    {
+      "$id": "4",
+      "_emoteChatCommand": "/taunt",
+      "_emoteAnimationTag": "spank_Init",
+      "_emoteChatMessage": "taunts."
+    },
+    {
+      "$id": "5",
+      "_emoteChatCommand": "/shrug",
+      "_emoteAnimationTag": "shrug",
+      "_emoteChatMessage": "shrugs."
+    },
+    {
+      "$id": "6",
+      "_emoteChatCommand": "/clap",
+      "_emoteAnimationTag": "clap",
+      "_emoteChatMessage": "claps."
+    },
+    {
+      "$id": "7",
+      "_emoteChatCommand": "/think",
+      "_emoteAnimationTag": "think",
+      "_emoteChatMessage": "thinks for a moment."
+    },
+    {
+      "$id": "8",
+      "_emoteChatCommand": "/ponder",
+      "_emoteAnimationTag": "think",
+      "_emoteChatMessage": "ponders."
+    },
+    {
+      "$id": "9",
+      "_emoteChatCommand": "/dance",
+      "_emoteAnimationTag": "dance_loop",
+      "_emoteChatMessage": "dances."
+    },
+    {
+      "$id": "10",
+      "_emoteChatCommand": "/point",
+      "_emoteAnimationTag": "point_loop",
+      "_emoteChatMessage": "points in a direction."
+    },
+    {
+      "$id": "11",
+      "_emoteChatCommand": "/nod",
+      "_emoteAnimationTag": "player_nod",
+      "_emoteChatMessage": "nods."
+    }
+  ],
+  "name": "00_emoteList_playerEmotes",
+  "hideFlags": 0
+}
