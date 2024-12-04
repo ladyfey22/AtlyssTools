@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using AtlyssTools.Registries;
 using Newtonsoft.Json;
 using UnityEngine;
 
@@ -112,7 +113,7 @@ public class ScriptableStatusConditionBaseConverter : JsonConverter<ScriptableSt
 {
     public override bool CanWrite =>
         false; // we don't need to read, only write. We can use the default serialization for reading
-
+    
     public override void WriteJson(JsonWriter writer, ScriptableStatusCondition value, JsonSerializer serializer)
     {
         throw new NotImplementedException();
@@ -189,56 +190,60 @@ public class ScriptableConditionConverter : JsonConverter<ScriptableCondition>
     }
 }
 
+public class ScriptableItemBaseConverter : JsonConverter<ScriptableItem>
+{
+    public override void WriteJson(JsonWriter writer, ScriptableItem value, JsonSerializer serializer)
+    {
+    }
+
+    public override ScriptableItem ReadJson(JsonReader reader, System.Type objectType, ScriptableItem existingValue,
+        bool hasExistingValue, JsonSerializer serializer)
+    {
+        ScriptableItem item = ScriptableObject.CreateInstance<ScriptableItem>();
+        
+        // we can use newtonsoft's populate method to fill in the values
+        serializer.Populate(reader, item);
+        
+        return item;
+    }
+}
+
+public class Vector2Converter : JsonConverter<Vector2>
+{
+    public override void WriteJson(JsonWriter writer, Vector2 value, JsonSerializer serializer)
+    {
+        // write in 2 separate values
+        writer.WriteStartArray();
+        writer.WriteValue(value.x);
+        writer.WriteValue(value.y);
+        writer.WriteEndArray();
+    }
+
+    public override Vector2 ReadJson(JsonReader reader, System.Type objectType, Vector2 existingValue, bool hasExistingValue, JsonSerializer serializer)
+    {
+        // read in 2 separate values
+        reader.Read();
+        float x = (float)reader.Value;
+        reader.Read();
+        float y = (float)reader.Value;
+        return new Vector2(x, y);
+    }
+}
+
+
+
 public class JsonUtility
 {
     public static JsonSerializerSettings GetSettings(System.Type type)
     {
-        List<JsonConverter> converters = new()
+        // get the associated manager
+        BaseScriptablesManager manager = AtlyssToolsLoader.Instance.GetManager(type);
+        
+        if(manager != null)
         {
-            new AssetConverter<Sprite>(),
-            new AssetConverter<CastEffectCollection>(),
-            new AssetConverter<ScriptableWeaponType>(),
-            new AssetConverter<ScriptableItem>(),
-            new ScriptableConditionConverter(),
-            new AssetConverter<ScriptableSkill>(),
-            new AssetConverter<AudioClip>(),
-            new AssetConverter<ScriptableCombatElement>(),
-            new AssetConverter<ScriptablePlayerBaseClass>(),
-            new Vector3Converter(),
-            new GameObjectConverter(),
-            new ColorConverter(),
-        };
-
-        Dictionary<System.Type, JsonConverter> typeConverters = new()
-        {
-            { typeof(ScriptableSkill), new ScriptableSkillBaseConverter() },
-            { typeof(ScriptablePlayerBaseClass), new ScriptableClassBaseConverter() },
-        };
-
-        if (type == typeof(ScriptableStatusCondition))
-        {
-            converters.Add(new ScriptableStatusConditionBaseConverter());
-            // remove ScriptableCondition from the converters list
-            converters.RemoveAll(c => c.GetType() == typeof(ScriptableConditionConverter));
+            return manager.GetJsonSettings();
         }
-
-
-        // remove the type converter that matches the type we're serializing if it has it's own specialized converter
-        if (typeConverters.ContainsKey(type))
-        {
-            converters.RemoveAll(c =>
-                c.GetType().GetGenericArguments().Length > 0 && c.GetType().GetGenericArguments()[0] == type);
-            converters.Add(typeConverters[type]);
-        }
-
-        // add the type converter that matches the type we're serializing
-
-        return new JsonSerializerSettings
-        {
-            PreserveReferencesHandling = PreserveReferencesHandling.Objects,
-            TypeNameHandling = TypeNameHandling.All,
-            Converters = converters
-        };
+        throw new Exception($"No manager found for type {type}");
     }
 
     public static T LoadFromJson<T>(string json)

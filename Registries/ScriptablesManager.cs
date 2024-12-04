@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using AtlyssTools.Utility;
+using Newtonsoft.Json;
 using UnityEngine;
 
 namespace AtlyssTools.Registries;
@@ -16,6 +17,7 @@ public abstract class BaseScriptablesManager
     public abstract LoaderStateManager GetStateManager();
     public abstract void OnModLoad(AtlyssToolsLoader.AtlyssToolsLoaderModInfo modInfo);
     public abstract void RegisterModObject(AtlyssToolsLoader.AtlyssToolsLoaderModInfo modInfo, ScriptableObject obj);
+    public abstract JsonSerializerSettings GetJsonSettings();
 }
 
 public abstract class ScriptablesManager<T> : BaseScriptablesManager where T : ScriptableObject
@@ -27,55 +29,55 @@ public abstract class ScriptablesManager<T> : BaseScriptablesManager where T : S
         public void PreLibraryInit() => manager.PreLibraryInit();
         public void PostLibraryInit() => manager.PostLibraryInit();
     }
-    
-    
+
+
     public ScriptablesManager()
     {
         StateManager = new ScriptablesStateManager(this);
     }
-    
+
     void Register(T obj)
     {
-        if(obj == null)
+        if (obj == null)
         {
             Plugin.Logger.LogError("Attempted to register a null object");
             return;
         }
-        
-        if(GetFromCache(obj.name) != null)
+
+        if (GetFromCache(obj.name) != null)
         {
             Plugin.Logger.LogError($"Object {obj.name} is already in the cache");
             return;
         }
-        
+        Plugin.Logger.LogInfo($"Registering {obj.name}");
         RegisterInternal(obj);
     }
-    
+
     public override System.Type GetObjectType()
     {
         return typeof(T);
     }
-    
+
     public override IList GetModdedObjects()
     {
         return AtlyssToolsLoader.GetScriptableObjects<T>();
     }
-    
+
     public override void RegisterModObject(AtlyssToolsLoader.AtlyssToolsLoaderModInfo modInfo, ScriptableObject obj)
     {
     }
-    
-    
+
+
     public List<T> GetModded()
     {
         return GetModdedObjects().Cast<T>().ToList();
     }
-    
+
     public List<T> GetCached()
     {
         return InternalGetCached().Cast<T>().ToList();
     }
-    
+
     public void LoadAllFromAssets()
     {
         // get skills from AtlyssToolsLoader
@@ -97,9 +99,17 @@ public abstract class ScriptablesManager<T> : BaseScriptablesManager where T : S
     public override LoaderStateManager GetStateManager() => StateManager;
     public virtual T GetFromCache(string objName) => GetFromCacheInternal(objName) as T;
 
-    public virtual void PreCacheInit() { }
-    public virtual void PostCacheInit() => LoadAllFromAssets();
-    public virtual void PreLibraryInit() { }
-    public virtual void PostLibraryInit() { }
+    public virtual void PreCacheInit()
+    {
+    }
 
+    public virtual void PostCacheInit() => LoadAllFromAssets();
+
+    public virtual void PreLibraryInit()
+    {
+    }
+
+    public virtual void PostLibraryInit()
+    {
+    }
 }

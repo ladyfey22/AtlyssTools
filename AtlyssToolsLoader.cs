@@ -17,10 +17,10 @@ public class AtlyssToolsLoader
     {
         public readonly List<AssetBundle> Bundles = new();
         public readonly Dictionary<string, Object> PathToAsset = new();
-        
+
         private readonly Dictionary<System.Type, IList> _scriptableObjects = new();
 
-        
+
         // delegate lists
         public readonly List<Action> OnPreLibraryInit = new();
         public readonly List<Action> OnPostLibraryInit = new();
@@ -41,7 +41,7 @@ public class AtlyssToolsLoader
         public void Initialize()
         {
         }
-        
+
         public void LoadScriptableType<T>() where T : ScriptableObject
         {
             // check if the type is in the list, if not, add it
@@ -49,13 +49,9 @@ public class AtlyssToolsLoader
             {
                 _scriptableObjects.Add(typeof(T), new List<T>());
             }
-            
-            Plugin.Logger.LogInfo($"Loading {typeof(T).Name} from {ModId}");
-            
+
             LoadJsonObjects<T>();
             LoadAssetObjects<T>();
-            
-            Plugin.Logger.LogInfo($"Loaded {typeof(T).Name} from {ModId}. Assets: {_scriptableObjects[typeof(T)].Count}");
         }
 
         public void LoadAssetBundles()
@@ -80,7 +76,6 @@ public class AtlyssToolsLoader
                     Bundles.Add(bundle);
                 }
             }
-            
         }
 
 
@@ -93,7 +88,7 @@ public class AtlyssToolsLoader
 
             return new();
         }
-        
+
         public IList GetModScriptableObjects(System.Type type)
         {
             if (_scriptableObjects.TryGetValue(type, out var o))
@@ -123,50 +118,40 @@ public class AtlyssToolsLoader
             string path = ModPath + "/Assets/" + typeof(T).Name;
             if (!Directory.Exists(path))
             {
-                Plugin.Logger.LogError($"Failed to load {typeof(T).Name} from {ModId}. Path { path } does not exist");
+                Plugin.Logger.LogError($"Failed to load {typeof(T).Name} from {ModId}. Path {path} does not exist");
                 return;
             }
 
             string[] files = Directory.GetFiles(path, "*.json", SearchOption.AllDirectories);
-
             foreach (var file in files)
             {
                 // cut off the ModPath/Assets/ and .json, because the LoadJsonObject method will add it back
 
                 string relativePath = file.Replace(ModPath + "/Assets/", "");
                 relativePath = relativePath.Replace(".json", "");
+                relativePath = relativePath.Replace("\\", "/");
                 LoadJsonObject<T>(relativePath);
             }
-            Plugin.Logger.LogInfo($"Loaded {typeof(T).Name} from {ModId}. Path { path } Assets: {_scriptableObjects[typeof(T)].Count}");
         }
-        
-        private T LoadJsonObject<T>(string path) where T : ScriptableObject
+
+        private T LoadJsonObject<T>(string path) where T : Object
         {
-            T obj = LoadJsonObject(path, typeof(T)) as T;
+            if(string.IsNullOrEmpty(path))
+            {
+                return null;
+            }
+            
             // check if the dictionary already has typeof(T). if not, add it
             if (!_scriptableObjects.ContainsKey(typeof(T)))
             {
                 _scriptableObjects.Add(typeof(T), new List<T>());
             }
-            
-            if (obj != null)
-            {
-                ((List<T>)_scriptableObjects[typeof(T)]).Add(obj);
-            }
-            
-            // add the path to the dictionary
-            PathToAsset.Add(path, obj);
-            
-            return obj;
-        }
 
-        private Object LoadJsonObject(string path, System.Type type)
-        {
             path = path.Replace(".json", "");
 
             if (PathToAsset.TryGetValue(path, out var value))
             {
-                return value;
+                return value as T;
             }
 
             if (!File.Exists(ModPath + "/Assets/" + path + ".json"))
@@ -182,53 +167,54 @@ public class AtlyssToolsLoader
                 return null;
             }
 
-            Object obj = Utility.JsonUtility.LoadFromJson(json, type) as Object;
+            // check that this is a ScriptableObject
+            if (!typeof(T).IsSubclassOf(typeof(ScriptableObject)))
+            {
+                Plugin.Logger.LogError($"Type {typeof(T).Name} is not a ScriptableObject");
+                return null;
+            }
+
+            T obj = Utility.JsonUtility.LoadFromJson<T>(json);
 
             if (obj == null)
             {
                 Plugin.Logger.LogError($"Failed to load json asset {path}");
                 return null;
             }
-            
+
+            ((List<T>)_scriptableObjects[typeof(T)]).Add(obj);
+            PathToAsset.Add(path, obj);
             return obj;
         }
 
         public T LoadModAsset<T>(string assetName) where T : Object
         {
-            return LoadModAsset(assetName, typeof(T)) as T;
-        }
-
-        public Object LoadModAsset(string assetName, System.Type type)
-        {
             // check if it's in the asset bundles
             foreach (var bundle in Bundles)
             {
-                Object obj = bundle.LoadAsset(assetName, type);
+                T obj = bundle.LoadAsset<T>(assetName);
                 if (obj != null)
                 {
                     return obj;
                 }
             }
-
-            // if the type isn't inherited from ScriptableObject, we can't load it from json
-            if (!typeof(ScriptableObject).IsAssignableFrom(type))
+            
+            // check if T is a scriptable object
+            if (typeof(T).IsSubclassOf(typeof(ScriptableObject)) || typeof(T) == typeof(ScriptableObject))
             {
-                return null;
+                T obj = LoadJsonObject<T>(assetName);
+                if (obj != null)
+                {
+                    return obj;
+                }
             }
-
-            // check if it's in the json assets
-            ScriptableObject returnV = LoadJsonObject(assetName, type) as ScriptableObject;
-            if (returnV != null)
-            {
-                return returnV;
-            }
-
+            
             return null;
         }
     }
-    
+
     public readonly Dictionary<string, AtlyssToolsLoaderModInfo> ModInfos = new();
-    
+
     private readonly LoaderStateMachine _stateMachine = new();
 
     public class AtlyssLoaderStateManager : LoaderStateManager
@@ -279,22 +265,34 @@ public class AtlyssToolsLoader
     }
 
     private readonly Dictionary<System.Type, BaseScriptablesManager> _managers;
-    
+
     AtlyssToolsLoader()
     {
         _managers = new()
         {
             { typeof(ScriptableSkill), SkillManager.Instance },
-            { typeof(ScriptableCondition), ConditionManager.Instance },
+            { typeof(ScriptableStatusCondition), ConditionManager.Instance },
             { typeof(ScriptablePlayerBaseClass), ClassManager.Instance }
         };
         // register the managers state machines
-        foreach(var manager in _managers)
+        foreach (var manager in _managers)
         {
             _stateMachine.RegisterManager(manager.Value.GetStateManager());
         }
+
+        _stateMachine.RegisterManager(new AtlyssLoaderStateManager());
     }
     
+    public BaseScriptablesManager GetManager(System.Type type)
+    {
+        if (_managers.TryGetValue(type, out var manager))
+        {
+            return manager;
+        }
+
+        return null;
+    }
+
     public LoaderStateMachine.LoadState State
     {
         get => _stateMachine.State;
@@ -314,8 +312,8 @@ public class AtlyssToolsLoader
             modInfo = new() { ModId = modName, ModPath = modPath };
             Instance.ModInfos.Add(modName, modInfo);
         }
-        
-        if(!Directory.Exists(modPath + "/Assets"))
+
+        if (!Directory.Exists(modPath + "/Assets"))
         {
             Plugin.Logger.LogError($"Mod {modName} does not have an Assets folder");
             return;
@@ -323,20 +321,15 @@ public class AtlyssToolsLoader
 
         // find all files in ModPath/Assets, if it doesn't end in .manifest
         modInfo.LoadAssetBundles();
-        Plugin.Logger.LogInfo($"Loading AtlyssTools mod asset bundles for {modName}, count: {modInfo.Bundles.Count}");
-        
         // Managers
-        Plugin.Logger.LogInfo($"Loading AtlyssTools mod managers for {modName}, count: {Instance._managers.Count}");
         foreach (var manager in Instance._managers)
         {
-            Plugin.Logger.LogInfo($"Loading {manager.Value.GetObjectType().Name} from {modName}");
             manager.Value.OnModLoad(modInfo);
-            Plugin.Logger.LogInfo($"Loaded {manager.Value.GetObjectType().Name} from {modName}: {modInfo.GetModScriptableObjects(manager.Value.GetObjectType()).Count}");
         }
-        
+
         // now initialize the mod
         modInfo.Initialize();
-        
+
         Plugin.Logger.LogInfo($"Loaded AtlyssTools mod {modName}");
     }
 
@@ -350,7 +343,7 @@ public class AtlyssToolsLoader
         Instance.ModInfos[modName].Dispose();
         Instance.ModInfos.Remove(modName);
     }
-    
+
     public static List<T> GetScriptableObjects<T>() where T : ScriptableObject
     {
         List<T> objects = new();
@@ -361,7 +354,7 @@ public class AtlyssToolsLoader
 
         return objects;
     }
-    
+
     public static List<T> GetScriptableObjects<T>(string modName) where T : ScriptableObject
     {
         if (!Instance.ModInfos.ContainsKey(modName))
@@ -374,15 +367,13 @@ public class AtlyssToolsLoader
 
     public static T LoadAsset<T>(string assetName) where T : Object
     {
-        return LoadAsset(assetName, typeof(T)) as T;
-    }
-
-    public static Object LoadAsset(string assetName, System.Type type)
-    {
         if (string.IsNullOrEmpty(assetName))
         {
             return null;
         }
+        
+        // replace \\ with / for windows
+        assetName = assetName.Replace("\\", "/");
 
         // we use : to mark a specific mod's assets. default means to return from Resources
         if (assetName.Contains(":"))
@@ -394,13 +385,13 @@ public class AtlyssToolsLoader
                 return null;
             }
 
-            return Instance.ModInfos[parts[0].ToLower()].LoadModAsset(parts[1], type);
+            return Instance.ModInfos[parts[0].ToLower()].LoadModAsset<T>(parts[1]);
         }
 
         // check the resources in each mod bundle
         foreach (var modInfo in Instance.ModInfos.Values)
         {
-            Object obj = modInfo.LoadModAsset(assetName, type);
+            T obj = modInfo.LoadModAsset<T>(assetName);
             if (obj != null)
             {
                 return obj;
@@ -409,7 +400,7 @@ public class AtlyssToolsLoader
 
         // check the base resources
 
-        Object r = UnityEngine.Resources.Load(assetName, type);
+        T r = UnityEngine.Resources.Load<T>(assetName);
         if (r != null)
         {
             return r;
@@ -418,32 +409,33 @@ public class AtlyssToolsLoader
         Plugin.Logger.LogError($"Failed to load {assetName}");
         return null;
     }
-    
+
+
     // expose delegate lists
     public static void RegisterPreLibraryInit(string modName, Action action)
     {
         AtlyssToolsLoaderModInfo modInfo = GetModInfo(modName);
         modInfo?.OnPreLibraryInit.Add(action);
     }
-    
+
     public static void RegisterPostLibraryInit(string modName, Action action)
     {
         AtlyssToolsLoaderModInfo modInfo = GetModInfo(modName);
         modInfo?.OnPostLibraryInit.Add(action);
     }
-    
+
     public static void RegisterPreCacheInit(string modName, Action action)
     {
         AtlyssToolsLoaderModInfo modInfo = GetModInfo(modName);
         modInfo?.OnPreCacheInit.Add(action);
     }
-    
+
     public static void RegisterPostCacheInit(string modName, Action action)
     {
         AtlyssToolsLoaderModInfo modInfo = GetModInfo(modName);
         modInfo?.OnPostCacheInit.Add(action);
     }
-    
+
     public static AtlyssToolsLoaderModInfo GetModInfo(string modName)
     {
         modName = modName.ToLower();
@@ -452,6 +444,7 @@ public class AtlyssToolsLoader
             Plugin.Logger.LogError($"Mod {modName} not found");
             return null;
         }
+
         return Instance.ModInfos[modName];
     }
 

@@ -22,7 +22,7 @@ namespace AtlyssTools.Patches
             // do a dump of the skills
             AtlyssToolsLoader.Instance.State = LoaderStateMachine.LoadState.PreCacheInit; // run the pre cache init
         }
-        
+
         [HarmonyPostfix]
         private static void Postfix(GameManager __instance)
         {
@@ -41,16 +41,17 @@ namespace AtlyssTools.Patches
         private static void Prefix(PlayerCasting __instance)
         {
             Plugin.Logger.LogInfo("PlayerCasting.Init_SkillLibrary postfix patch");
-            
-            
-            AtlyssToolsLoader.Instance.State = LoaderStateMachine.LoadState.PostLibraryInit; // run the post library init
+
+
+            AtlyssToolsLoader.Instance.State = LoaderStateMachine.LoadState.PreLibraryInit; // run the post library init
         }
-        
+
         [HarmonyPostfix]
         private static void Postfix(PlayerCasting __instance)
         {
             Plugin.Logger.LogInfo("PlayerCasting.Init_SkillLibrary postfix patch");
-            AtlyssToolsLoader.Instance.State = LoaderStateMachine.LoadState.PostLibraryInit; // run the post library init
+            AtlyssToolsLoader.Instance.State =
+                LoaderStateMachine.LoadState.PostLibraryInit; // run the post library init
         }
     }
 }

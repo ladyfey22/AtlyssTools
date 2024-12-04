@@ -19,13 +19,13 @@ public class LoaderStateMachine
         PreLibraryInit,
         PostLibraryInit,
     }
-    
+
     public LoadState State { get; private set; }
-    
+
     internal void SetState(LoadState state)
     {
         State = state;
-        
+
         foreach (var manager in _managers)
         {
             switch (state)
@@ -45,8 +45,8 @@ public class LoaderStateMachine
             }
         }
     }
-    
-    
+
+
     public void RegisterManager(LoaderStateManager manager)
     {
         _managers.Add(manager);
