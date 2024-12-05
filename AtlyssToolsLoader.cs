@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using AtlyssTools.Commands;
 using AtlyssTools.Registries;
 using AtlyssTools.Utility;
 using BepInEx;
@@ -329,8 +330,13 @@ public class AtlyssToolsLoader
             _managers.Add(manager.GetObjectType(), manager);
             _stateMachine.RegisterManager(manager.GetStateManager());
         }
+        
+        // add our attribute managers
+        _attributeManagers.Add(new CommandManager());
+        _attributeManagers.Add(new ChatProcessorManager());
     }
 
+    private readonly List<IAttributeRegisterableManager> _attributeManagers = new();
 
     AtlyssToolsLoader()
     {
@@ -356,9 +362,37 @@ public class AtlyssToolsLoader
         set => _stateMachine.SetState(value);
     }
 
-    public static void LoadPlugin(string modName, string modPath)
+    private void FindAttributeLoaded(Assembly assembly)
     {
+        foreach (System.Type type in assembly.GetTypes())
+        {
+            // skip abstract classes/interfaces
+            if (type.IsAbstract || type.IsInterface)
+            {
+                continue;
+            }
+            
+            
+            foreach (IAttributeRegisterableManager attributeManager in _attributeManagers)
+            {
+                if (attributeManager.CanRegister(type))
+                {
+                    attributeManager.Register(type, assembly.GetName().Name);
+                }
+            }
+        }
+    }
+    
+    public static void LoadPlugin(string modName, string modPath, Assembly assembly = null)
+    {
+        // if the assembly is null, get the assembly that called this
+        assembly = assembly == null ? Assembly.GetCallingAssembly() : assembly;
+        
+        
         modName = modName.ToLower();
+        
+        Instance.FindAttributeLoaded(assembly);
+        
         AtlyssToolsLoaderModInfo modInfo;
         if (Instance.ModInfos.ContainsKey(modName)) // i don't know why we'd reload a mod, but we can
         {
@@ -370,6 +404,13 @@ public class AtlyssToolsLoader
             Instance.ModInfos.Add(modName, modInfo);
         }
 
+        foreach (var manager in Instance._managers)
+        {
+            manager.Value.OnModLoad(modInfo);
+        }
+
+        modInfo.Initialize();
+
         if (!Directory.Exists(modPath + "/Assets"))
         {
             Plugin.Logger.LogError($"Mod {modName} does not have an Assets folder");
@@ -379,14 +420,8 @@ public class AtlyssToolsLoader
         // find all files in ModPath/Assets, if it doesn't end in .manifest
         modInfo.LoadAssetBundles();
         // Managers
-        foreach (var manager in Instance._managers)
-        {
-            manager.Value.OnModLoad(modInfo);
-        }
 
         // now initialize the mod
-        modInfo.Initialize();
-
         Plugin.Logger.LogInfo($"Loaded AtlyssTools mod {modName}");
     }
 
@@ -505,10 +540,8 @@ public class AtlyssToolsLoader
         return Instance.ModInfos[modName];
     }
 
-
     // list of assets that need to be registered
 
     private static AtlyssToolsLoader _instance;
-
     public static AtlyssToolsLoader Instance => _instance ??= new();
 }

@@ -75,39 +75,14 @@ namespace AtlyssTools.Patches
         [HarmonyPrefix]
         private static void Prefix(PlayerCasting __instance)
         {
-            Plugin.Logger.LogInfo("PlayerCasting.Init_SkillLibrary postfix patch");
-
-
             AtlyssToolsLoader.Instance.State = LoaderStateMachine.LoadState.PreLibraryInit; // run the post library init
         }
 
         [HarmonyPostfix]
         private static void Postfix(PlayerCasting __instance)
         {
-            Plugin.Logger.LogInfo("PlayerCasting.Init_SkillLibrary postfix patch");
             AtlyssToolsLoader.Instance.State =
                 LoaderStateMachine.LoadState.PostLibraryInit; // run the post library init
-
-            // dump the skill library
-            foreach (SkillLibrarySlot skillLibrarySlot in __instance._skillLibrary)
-            {
-                Plugin.Logger.LogInfo(skillLibrarySlot._skillTag + " " + skillLibrarySlot._scriptSkill._skillName);
-            }
-
-            for (int m = 0; m < __instance._bonusSkillTags.Count; m++)
-            {
-                Plugin.Logger.LogInfo(__instance._bonusSkillTags[m]);
-
-                ScriptableSkill scriptableSkill = SkillManager.Instance.GetFromCache(__instance._bonusSkillTags[m]);
-                if (scriptableSkill != null)
-                {
-                    Plugin.Logger.LogInfo(scriptableSkill._skillName);
-                }
-                else
-                {
-                    Plugin.Logger.LogError("Skill not found in cache");
-                }
-            }
         }
     }
 }
