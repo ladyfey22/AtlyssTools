@@ -1,0 +1,85 @@
+{
+  "$id": "1",
+  "_weaponDamage": 16,
+  "_damageBonus": 0,
+  "_maxFloorDamageCap": 0,
+  "_maxCeilingDamageCap": 0,
+  "_readonlyDamageRange": {
+    "$id": "2",
+    "x": 16,
+    "y": 19,
+    "magnitude": 24.8394852,
+    "sqrMagnitude": 617
+  },
+  "weaponType": "_weapontype/05_weaponType_rangeWeapon",
+  "_combatElement": "_combatelement/comElement_normal",
+  "_weaponProjectileSet": "_item/01_equipment/02_weapon/01_ranged/bow_projectilesets/weaponProjectileSet_bow",
+  "_weaponConditionSlot": {
+    "$id": "3",
+    "_scriptableCondition": null,
+    "_chance": 1.0
+  },
+  "weaponMesh": "_graphic/_mesh/03_item/01_weapon/06_longbow/bow_01",
+  "weaponTexture": "_graphic/_mesh/03_item/01_weapon/06_longbow/_bow01/bow1Tex_03",
+  "_textureColorAdjust": {
+    "$id": "4",
+    "_hue": -18.0,
+    "_saturation": 1.39,
+    "_brightness": 0.23,
+    "_contrast": 1.67
+  },
+  "trailColors": [
+    [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    [
+      1.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "_weaponTakeOutSfxIndex": 0,
+  "_setWeaponTakeOutSfx": "_sound/_combat/bow/bow_takeOut",
+  "_weaponSwingSfxIndex": 0,
+  "_setWeaponSwingSfx": "_sound/_combat/bow/bow_fire01",
+  "_equipmentLevel": 15,
+  "_classRequirement": null,
+  "_equipType": 1,
+  "_statArray": {
+    "$id": "5",
+    "_maxHealth": 0,
+    "_maxMana": 0,
+    "_maxStamina": 3,
+    "_experience": 0,
+    "_attackPower": 0,
+    "_dexPower": 6,
+    "_magicPower": 0,
+    "_criticalRate": 0.0032,
+    "_magicCriticalRate": 0.0,
+    "_defense": 0,
+    "_magicDefense": 0,
+    "_evasion": 0.0
+  },
+  "_statModifierTable": "_item/01_equipment/00_modifier/_statmodifiertables/statModifierTable_tier00",
+  "_statModifierCost": {
+    "$id": "6",
+    "_scriptItem": null,
+    "_scriptItemQuantity": 0
+  },
+  "_itemType": 0,
+  "_itemName": "Mithril Bow",
+  "_itemIcon": "_graphic/_ui/_itemicons/_weapon/_wepIco_54",
+  "_itemRarity": 0,
+  "_itemDescription": "",
+  "_maxStackAmount": 1,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 525,
+  "name": "(lv-15) WEAPON_Mithril Bow (Range Weapon)",
+  "hideFlags": 0
+}

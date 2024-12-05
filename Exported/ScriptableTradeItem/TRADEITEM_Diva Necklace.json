@@ -1,0 +1,15 @@
+{
+  "$id": "1",
+  "_itemType": 2,
+  "_itemName": "Diva Necklace",
+  "_itemIcon": "_graphic/_ui/_itemicons/_tradeitem/_tradIco_12",
+  "_itemRarity": 0,
+  "_itemDescription": "Too big to wear, though quite valuable.",
+  "_maxStackAmount": 10,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 120,
+  "name": "TRADEITEM_Diva Necklace",
+  "hideFlags": 0
+}

@@ -1,0 +1,48 @@
+{
+  "$id": "1",
+  "_armorTexture": "",
+  "_canDyeArmor": true,
+  "_colorAdjustParams": {
+    "$id": "2",
+    "_hue": 0.0,
+    "_saturation": 1.0,
+    "_brightness": 0.0,
+    "_contrast": 1.0
+  },
+  "_equipmentLevel": 17,
+  "_classRequirement": null,
+  "_equipType": 0,
+  "_statArray": {
+    "$id": "3",
+    "_maxHealth": 0,
+    "_maxMana": 8,
+    "_maxStamina": 0,
+    "_experience": 0,
+    "_attackPower": 6,
+    "_dexPower": 12,
+    "_magicPower": 8,
+    "_criticalRate": 0.032,
+    "_magicCriticalRate": 0.0,
+    "_defense": 0,
+    "_magicDefense": 0,
+    "_evasion": 0.0
+  },
+  "_statModifierTable": "_item/01_equipment/00_modifier/_statmodifiertables/statModifierTable_tier00",
+  "_statModifierCost": {
+    "$id": "4",
+    "_scriptItem": null,
+    "_scriptItemQuantity": 0
+  },
+  "_itemType": 0,
+  "_itemName": "Jadetrout Ring",
+  "_itemIcon": "_graphic/_ui/_itemicons/_ring/icon_ring13",
+  "_itemRarity": 0,
+  "_itemDescription": "The tail of the fish on this ring moves rapidly.",
+  "_maxStackAmount": 1,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 815,
+  "name": "(lv-17) RING_Jadetrout Ring",
+  "hideFlags": 0
+}

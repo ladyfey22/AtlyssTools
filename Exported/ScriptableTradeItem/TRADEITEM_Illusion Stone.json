@@ -1,0 +1,15 @@
+{
+  "$id": "1",
+  "_itemType": 2,
+  "_itemName": "Illusion Stone",
+  "_itemIcon": "_graphic/_ui/_itemicons/_tradeitem/_tradIco_18",
+  "_itemRarity": 0,
+  "_itemDescription": "This magical stone can be used to change the appearance of things.",
+  "_maxStackAmount": 20,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 300,
+  "name": "TRADEITEM_Illusion Stone",
+  "hideFlags": 0
+}

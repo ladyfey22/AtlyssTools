@@ -1,0 +1,15 @@
+{
+  "$id": "1",
+  "_itemType": 2,
+  "_itemName": "Mouth Bittertooth",
+  "_itemIcon": "_graphic/_ui/_itemicons/_tradeitem/_tradIco_22",
+  "_itemRarity": 0,
+  "_itemDescription": "The tip of the tooth endlessly drips a little bit of poison.",
+  "_maxStackAmount": 30,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 25,
+  "name": "TRADEITEM_Mouth Bittertooth",
+  "hideFlags": 0
+}

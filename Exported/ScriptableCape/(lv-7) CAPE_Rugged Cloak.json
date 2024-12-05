@@ -1,0 +1,49 @@
+{
+  "$id": "1",
+  "_capeMesh": "_graphic/_mesh/03_item/00_armor/_cape/cape01",
+  "_armorTexture": "_graphic/_mesh/03_item/00_armor/_cape/_capeTex_01",
+  "_canDyeArmor": true,
+  "_colorAdjustParams": {
+    "$id": "2",
+    "_hue": -27.0,
+    "_saturation": 2.0,
+    "_brightness": -0.23,
+    "_contrast": 1.23
+  },
+  "_equipmentLevel": 7,
+  "_classRequirement": null,
+  "_equipType": 0,
+  "_statArray": {
+    "$id": "3",
+    "_maxHealth": 0,
+    "_maxMana": 0,
+    "_maxStamina": 0,
+    "_experience": 0,
+    "_attackPower": 0,
+    "_dexPower": 0,
+    "_magicPower": 0,
+    "_criticalRate": 0.0,
+    "_magicCriticalRate": 0.0,
+    "_defense": 2,
+    "_magicDefense": 0,
+    "_evasion": 0.0
+  },
+  "_statModifierTable": "_item/01_equipment/00_modifier/_statmodifiertables/statModifierTable_tier00",
+  "_statModifierCost": {
+    "$id": "4",
+    "_scriptItem": null,
+    "_scriptItemQuantity": 1
+  },
+  "_itemType": 0,
+  "_itemName": "Rugged Cloak",
+  "_itemIcon": "_graphic/_ui/_itemicons/_chest/_capIco_03",
+  "_itemRarity": 0,
+  "_itemDescription": "",
+  "_maxStackAmount": 1,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 34,
+  "name": "(lv-7) CAPE_Rugged Cloak",
+  "hideFlags": 0
+}

@@ -1,0 +1,49 @@
+{
+  "$id": "1",
+  "_capeMesh": "_graphic/_mesh/03_item/00_armor/_cape/cape01",
+  "_armorTexture": "_graphic/_mesh/03_item/00_armor/_cape/_capeTex_03",
+  "_canDyeArmor": true,
+  "_colorAdjustParams": {
+    "$id": "2",
+    "_hue": 11.0,
+    "_saturation": 0.94,
+    "_brightness": -0.14,
+    "_contrast": 1.01
+  },
+  "_equipmentLevel": 17,
+  "_classRequirement": null,
+  "_equipType": 0,
+  "_statArray": {
+    "$id": "3",
+    "_maxHealth": 0,
+    "_maxMana": 0,
+    "_maxStamina": 0,
+    "_experience": 0,
+    "_attackPower": 5,
+    "_dexPower": 5,
+    "_magicPower": 5,
+    "_criticalRate": 0.0,
+    "_magicCriticalRate": 0.0,
+    "_defense": 10,
+    "_magicDefense": 3,
+    "_evasion": 0.0
+  },
+  "_statModifierTable": "_item/01_equipment/00_modifier/_statmodifiertables/statModifierTable_tier00",
+  "_statModifierCost": {
+    "$id": "4",
+    "_scriptItem": "_item/03_trade/TRADEITEM_Soul Pearl",
+    "_scriptItemQuantity": 1
+  },
+  "_itemType": 0,
+  "_itemName": "Deathward Cape",
+  "_itemIcon": "_graphic/_ui/_itemicons/_chest/_capIco_02",
+  "_itemRarity": 1,
+  "_itemDescription": "You can hear the laughter from the skull motif.",
+  "_maxStackAmount": 1,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 1530,
+  "name": "(lv-17) CAPE_Deathward Cape",
+  "hideFlags": 0
+}

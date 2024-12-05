@@ -1,0 +1,49 @@
+{
+  "$id": "1",
+  "_capeMesh": "_graphic/_mesh/03_item/00_armor/_cape/cape01",
+  "_armorTexture": "_graphic/_mesh/03_item/00_armor/_cape/_capeTex_05",
+  "_canDyeArmor": true,
+  "_colorAdjustParams": {
+    "$id": "2",
+    "_hue": 1.0,
+    "_saturation": 2.0,
+    "_brightness": 0.047,
+    "_contrast": 1.286
+  },
+  "_equipmentLevel": 16,
+  "_classRequirement": "_class/01_CLASS_mystic",
+  "_equipType": 0,
+  "_statArray": {
+    "$id": "3",
+    "_maxHealth": 0,
+    "_maxMana": 10,
+    "_maxStamina": 0,
+    "_experience": 0,
+    "_attackPower": 0,
+    "_dexPower": 0,
+    "_magicPower": 12,
+    "_criticalRate": 0.0,
+    "_magicCriticalRate": 0.0,
+    "_defense": 5,
+    "_magicDefense": 4,
+    "_evasion": 0.0
+  },
+  "_statModifierTable": "_item/01_equipment/00_modifier/_statmodifiertables/statModifierTable_tier00",
+  "_statModifierCost": {
+    "$id": "4",
+    "_scriptItem": null,
+    "_scriptItemQuantity": 0
+  },
+  "_itemType": 0,
+  "_itemName": "Sagecaller Cape",
+  "_itemIcon": "_graphic/_ui/_itemicons/_chest/_capIco_07",
+  "_itemRarity": 0,
+  "_itemDescription": "Brimming with magical power.",
+  "_maxStackAmount": 1,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 923,
+  "name": "(lv-16) CAPE_Sagecaller Cape",
+  "hideFlags": 0
+}

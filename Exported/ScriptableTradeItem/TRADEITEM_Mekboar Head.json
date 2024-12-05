@@ -1,0 +1,15 @@
+{
+  "$id": "1",
+  "_itemType": 2,
+  "_itemName": "Mekboar Head",
+  "_itemIcon": "_graphic/_ui/_itemicons/_tradeitem/_tradIco_09",
+  "_itemRarity": 0,
+  "_itemDescription": "The snout continues to pulse and wiggle around.",
+  "_maxStackAmount": 30,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 12,
+  "name": "TRADEITEM_Mekboar Head",
+  "hideFlags": 0
+}

@@ -1,0 +1,85 @@
+{
+  "$id": "1",
+  "_weaponDamage": 12,
+  "_damageBonus": 2,
+  "_maxFloorDamageCap": 0,
+  "_maxCeilingDamageCap": 0,
+  "_readonlyDamageRange": {
+    "$id": "2",
+    "x": 12,
+    "y": 17,
+    "magnitude": 20.8086529,
+    "sqrMagnitude": 433
+  },
+  "weaponType": "_weapontype/01_weaponType_katars",
+  "_combatElement": "_combatelement/comElement_shadow",
+  "_weaponProjectileSet": null,
+  "_weaponConditionSlot": {
+    "$id": "3",
+    "_scriptableCondition": null,
+    "_chance": 1.0
+  },
+  "weaponMesh": "_graphic/_mesh/03_item/01_weapon/02_dagger/_katar05/katar_04",
+  "weaponTexture": "_graphic/_mesh/03_item/01_weapon/02_dagger/_katar05/katar05Tex_00",
+  "_textureColorAdjust": {
+    "$id": "4",
+    "_hue": 1.0,
+    "_saturation": 2.0,
+    "_brightness": -0.06,
+    "_contrast": 1.17
+  },
+  "trailColors": [
+    [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    [
+      0.5849056,
+      0.5849056,
+      0.5849056,
+      1.0
+    ]
+  ],
+  "_weaponTakeOutSfxIndex": 0,
+  "_setWeaponTakeOutSfx": "_sound/_combat/_lightSheath",
+  "_weaponSwingSfxIndex": 0,
+  "_setWeaponSwingSfx": "_sound/_combat/_swingLight",
+  "_equipmentLevel": 12,
+  "_classRequirement": null,
+  "_equipType": 1,
+  "_statArray": {
+    "$id": "5",
+    "_maxHealth": 0,
+    "_maxMana": 0,
+    "_maxStamina": 0,
+    "_experience": 0,
+    "_attackPower": 0,
+    "_dexPower": 5,
+    "_magicPower": 0,
+    "_criticalRate": 0.0053,
+    "_magicCriticalRate": 0.0,
+    "_defense": 0,
+    "_magicDefense": 0,
+    "_evasion": 0.0025
+  },
+  "_statModifierTable": "_item/01_equipment/00_modifier/_statmodifiertables/statModifierTable_tier00",
+  "_statModifierCost": {
+    "$id": "6",
+    "_scriptItem": "_item/03_trade/TRADEITEM_Ghostdust",
+    "_scriptItemQuantity": 15
+  },
+  "_itemType": 0,
+  "_itemName": "Geistlord Claws",
+  "_itemIcon": "_graphic/_ui/_itemicons/_weapon/_wepIco_37",
+  "_itemRarity": 1,
+  "_itemDescription": "Shreds through the wailing souls.",
+  "_maxStackAmount": 1,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 480,
+  "name": "(lv-12) WEAPON_Geistlord Claws (Katars)",
+  "hideFlags": 0
+}

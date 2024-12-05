@@ -1,0 +1,50 @@
+{
+  "$id": "1",
+  "_blockDamageThreshold": 9,
+  "_elementType": null,
+  "_shieldMesh": "_graphic/_mesh/03_item/00_armor/_shield/_shield02/_shield_02",
+  "_shieldTexture": "_graphic/_mesh/03_item/00_armor/_shield/_shield02/shield02Tex_01",
+  "_textureColorAdjust": {
+    "$id": "2",
+    "_hue": 0.0,
+    "_saturation": 2.0,
+    "_brightness": -0.057,
+    "_contrast": 1.29
+  },
+  "_equipmentLevel": 12,
+  "_classRequirement": "_class/00_CLASS_fighter",
+  "_equipType": 2,
+  "_statArray": {
+    "$id": "3",
+    "_maxHealth": 0,
+    "_maxMana": 0,
+    "_maxStamina": 0,
+    "_experience": 0,
+    "_attackPower": 0,
+    "_dexPower": 0,
+    "_magicPower": 0,
+    "_criticalRate": 0.0,
+    "_magicCriticalRate": 0.0,
+    "_defense": 3,
+    "_magicDefense": 0,
+    "_evasion": 0.0
+  },
+  "_statModifierTable": "_item/01_equipment/00_modifier/_statmodifiertables/statModifierTable_tier00",
+  "_statModifierCost": {
+    "$id": "4",
+    "_scriptItem": "_item/03_trade/TRADEITEM_Golem Gem",
+    "_scriptItemQuantity": 3
+  },
+  "_itemType": 0,
+  "_itemName": "Omen Shield",
+  "_itemIcon": "_graphic/_ui/_itemicons/_shield/_shieldIco_04",
+  "_itemRarity": 0,
+  "_itemDescription": "Something's intimidating about the design.",
+  "_maxStackAmount": 1,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 187,
+  "name": "(lv-12) SHIELD_Omen Shield",
+  "hideFlags": 0
+}

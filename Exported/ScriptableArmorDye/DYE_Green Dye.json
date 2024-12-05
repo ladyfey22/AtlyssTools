@@ -1,0 +1,27 @@
+{
+  "$id": "1",
+  "_dyeParams": {
+    "$id": "2",
+    "_hue": 0.0,
+    "_saturation": 1.0,
+    "_brightness": 0.08,
+    "_contrast": 1.0
+  },
+  "_levelRequirement": 0,
+  "_baseClassRequirement": null,
+  "_consumableCooldown": 1.5,
+  "_useOnlyInTown": false,
+  "_consumableObject": "",
+  "_itemType": 1,
+  "_itemName": "Green Dye",
+  "_itemIcon": "_graphic/_ui/_itemicons/_consumable/_dyeicons/_dyeIco_green",
+  "_itemRarity": 0,
+  "_itemDescription": "A vial of green dye. Use it to make your gear dye color green.",
+  "_maxStackAmount": 1,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 160,
+  "name": "DYE_Green Dye",
+  "hideFlags": 0
+}

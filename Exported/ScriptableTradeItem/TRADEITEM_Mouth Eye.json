@@ -1,0 +1,15 @@
+{
+  "$id": "1",
+  "_itemType": 2,
+  "_itemName": "Mouth Eye",
+  "_itemIcon": "_graphic/_ui/_itemicons/_tradeitem/_tradIco_19",
+  "_itemRarity": 0,
+  "_itemDescription": "Squishy. Though, it can't be popped.",
+  "_maxStackAmount": 45,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 12,
+  "name": "TRADEITEM_Mouth Eye",
+  "hideFlags": 0
+}

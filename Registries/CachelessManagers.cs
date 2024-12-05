@@ -68,3 +68,14 @@ public class ShopkeepManager : CachelessManager<ScriptableShopkeep>
     public static ShopkeepManager Instance => _instance ??= new();
     private static ShopkeepManager _instance;
 }
+
+[ManagerAttribute]
+public class CastEffectCollectionManager : CachelessManager<CastEffectCollection>
+{
+    private CastEffectCollectionManager()
+    {
+    }
+
+    public static CastEffectCollectionManager Instance => _instance ??= new();
+    private static CastEffectCollectionManager _instance;
+}

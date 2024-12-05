@@ -1,0 +1,49 @@
+{
+  "$id": "1",
+  "_capeMesh": "_graphic/_mesh/03_item/00_armor/_cape/cape01",
+  "_armorTexture": "_graphic/_mesh/03_item/00_armor/_cape/_capeTex_10",
+  "_canDyeArmor": true,
+  "_colorAdjustParams": {
+    "$id": "2",
+    "_hue": 0.0,
+    "_saturation": 1.0,
+    "_brightness": 0.0,
+    "_contrast": 1.0
+  },
+  "_equipmentLevel": 6,
+  "_classRequirement": null,
+  "_equipType": 0,
+  "_statArray": {
+    "$id": "3",
+    "_maxHealth": 2,
+    "_maxMana": 0,
+    "_maxStamina": 0,
+    "_experience": 0,
+    "_attackPower": 0,
+    "_dexPower": 0,
+    "_magicPower": 0,
+    "_criticalRate": 0.0,
+    "_magicCriticalRate": 0.0,
+    "_defense": 3,
+    "_magicDefense": 1,
+    "_evasion": 0.0
+  },
+  "_statModifierTable": "_item/01_equipment/00_modifier/_statmodifiertables/statModifierTable_tier00",
+  "_statModifierCost": {
+    "$id": "4",
+    "_scriptItem": null,
+    "_scriptItemQuantity": 1
+  },
+  "_itemType": 0,
+  "_itemName": "Nokket Cloak",
+  "_itemIcon": "_graphic/_ui/_itemicons/_chest/_capIco_10",
+  "_itemRarity": 0,
+  "_itemDescription": "",
+  "_maxStackAmount": 1,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 34,
+  "name": "(lv-6) CAPE_Nokket Cloak",
+  "hideFlags": 0
+}

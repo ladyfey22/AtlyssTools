@@ -97,6 +97,14 @@ public class HelpCommand : Command
 
     public override bool Execute(ChatManager chatManager, string[] args)
     {
+        if(args.Length > 0)
+        {
+            if (CommandManager.Instance.ExecuteCommand(args[0], new string[0]))
+            {
+                return true;
+            }
+        }
+        
         foreach (var command in CommandManager.Instance.GetRegisteredList())
         {
             chatManager.SendMessage($"{command.Name} - {command.Description}");
@@ -107,7 +115,7 @@ public class HelpCommand : Command
 
     public override bool DisplayUsage(ChatManager chatManager)
     {
-        chatManager.SendMessage("Usage: /help");
+        chatManager.SendMessage("Usage: /help [command]");
         return true;
     }
 }
@@ -118,20 +126,19 @@ public class AtlyssToolsCommand : Command
     public AtlyssToolsCommand()
     {
         Name = "atlysstools";
-        Description = "Atlyss tools information";
+        Description = "Gets the AtlyssTools version";
         Aliases = new[] {"at"};
     }
 
     public override bool Execute(ChatManager chatManager, string[] args)
     {
-        chatManager.SendMessage("Atlyss Tools Command");
+        chatManager.SendMessage("AtlyssTools version: " + Plugin.Version);
         return true;
     }
 
     public override bool DisplayUsage(ChatManager chatManager)
     {
-        chatManager.SendMessage("Usage: /at version  : Displays the version of Atlyss Tools");
-        chatManager.SendMessage("Usage: /at help     : Displays this message");
+        chatManager.SendMessage("Usage: /atlysstools");
         return true;
     }
 }

@@ -1,0 +1,15 @@
+{
+  "$id": "1",
+  "_itemType": 2,
+  "_itemName": "Blightwood Log",
+  "_itemIcon": "_graphic/_ui/_itemicons/_tradeitem/_tradIco_24",
+  "_itemRarity": 0,
+  "_itemDescription": "The inside is very hot, containing a burning blue flame that never seems to go out.",
+  "_maxStackAmount": 15,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 12,
+  "name": "TRADEITEM_Blightwood Log",
+  "hideFlags": 0
+}

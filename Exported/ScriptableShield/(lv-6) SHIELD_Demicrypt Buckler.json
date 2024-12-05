@@ -1,0 +1,50 @@
+{
+  "$id": "1",
+  "_blockDamageThreshold": 7,
+  "_elementType": null,
+  "_shieldMesh": "_graphic/_mesh/03_item/00_armor/_shield/_shield01/_shield_01",
+  "_shieldTexture": "_graphic/_mesh/03_item/00_armor/_shield/_shield01/shield01tex_02",
+  "_textureColorAdjust": {
+    "$id": "2",
+    "_hue": 10.0,
+    "_saturation": 2.0,
+    "_brightness": -0.09,
+    "_contrast": 2.0
+  },
+  "_equipmentLevel": 6,
+  "_classRequirement": null,
+  "_equipType": 2,
+  "_statArray": {
+    "$id": "3",
+    "_maxHealth": 0,
+    "_maxMana": 0,
+    "_maxStamina": 0,
+    "_experience": 0,
+    "_attackPower": 0,
+    "_dexPower": 0,
+    "_magicPower": 0,
+    "_criticalRate": 0.0,
+    "_magicCriticalRate": 0.0,
+    "_defense": 1,
+    "_magicDefense": 0,
+    "_evasion": 0.0
+  },
+  "_statModifierTable": "_item/01_equipment/00_modifier/_statmodifiertables/statModifierTable_tier00",
+  "_statModifierCost": {
+    "$id": "4",
+    "_scriptItem": "_item/03_trade/TRADEITEM_Deathgel Core",
+    "_scriptItemQuantity": 3
+  },
+  "_itemType": 0,
+  "_itemName": "Demicrypt Buckler",
+  "_itemIcon": "_graphic/_ui/_itemicons/_shield/_shieldIco_06",
+  "_itemRarity": 0,
+  "_itemDescription": "An emblem of an ancient sarcophogus.",
+  "_maxStackAmount": 1,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 60,
+  "name": "(lv-6) SHIELD_Demicrypt Buckler",
+  "hideFlags": 0
+}

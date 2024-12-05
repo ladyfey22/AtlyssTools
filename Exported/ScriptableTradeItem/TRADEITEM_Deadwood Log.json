@@ -1,0 +1,15 @@
+{
+  "$id": "1",
+  "_itemType": 2,
+  "_itemName": "Deadwood Log",
+  "_itemIcon": "_graphic/_ui/_itemicons/_tradeitem/_tradIco_30",
+  "_itemRarity": 0,
+  "_itemDescription": "Hot orange energy eminates within this log.",
+  "_maxStackAmount": 99,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 35,
+  "name": "TRADEITEM_Deadwood Log",
+  "hideFlags": 0
+}

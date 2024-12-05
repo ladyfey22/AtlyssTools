@@ -1,0 +1,15 @@
+{
+  "$id": "1",
+  "_itemType": 2,
+  "_itemName": "Golem Core",
+  "_itemIcon": "_graphic/_ui/_itemicons/_tradeitem/_tradIco_17",
+  "_itemRarity": 0,
+  "_itemDescription": "The once functioning heart of a Golem. Quite heavy.",
+  "_maxStackAmount": 99,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 20,
+  "name": "TRADEITEM_Golem Core",
+  "hideFlags": 0
+}

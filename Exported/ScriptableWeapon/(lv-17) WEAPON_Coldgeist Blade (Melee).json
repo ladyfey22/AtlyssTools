@@ -1,0 +1,85 @@
+{
+  "$id": "1",
+  "_weaponDamage": 19,
+  "_damageBonus": 1,
+  "_maxFloorDamageCap": 38,
+  "_maxCeilingDamageCap": 52,
+  "_readonlyDamageRange": {
+    "$id": "2",
+    "x": 19,
+    "y": 23,
+    "magnitude": 29.8328686,
+    "sqrMagnitude": 890
+  },
+  "weaponType": "_weapontype/02_weaponType_melee",
+  "_combatElement": "_combatelement/comElement_water",
+  "_weaponProjectileSet": null,
+  "_weaponConditionSlot": {
+    "$id": "3",
+    "_scriptableCondition": "_generalconditions/statusCondition_cold",
+    "_chance": 0.1
+  },
+  "weaponMesh": "_graphic/_mesh/03_item/01_weapon/01_sword/_sword06/_weapon_blade06",
+  "weaponTexture": "_graphic/_mesh/03_item/01_weapon/01_sword/_sword06/blade06Tex_00",
+  "_textureColorAdjust": {
+    "$id": "4",
+    "_hue": -8.0,
+    "_saturation": 1.51,
+    "_brightness": -0.07,
+    "_contrast": 1.0
+  },
+  "trailColors": [
+    [
+      0.231372535,
+      0.811720431,
+      1.0,
+      1.0
+    ],
+    [
+      0.147338912,
+      0.418416381,
+      0.7264151,
+      1.0
+    ]
+  ],
+  "_weaponTakeOutSfxIndex": 0,
+  "_setWeaponTakeOutSfx": "_sound/_combat/_mediumSheath",
+  "_weaponSwingSfxIndex": 0,
+  "_setWeaponSwingSfx": "_sound/_combat/_swingMedium",
+  "_equipmentLevel": 17,
+  "_classRequirement": null,
+  "_equipType": 1,
+  "_statArray": {
+    "$id": "5",
+    "_maxHealth": 0,
+    "_maxMana": 5,
+    "_maxStamina": 0,
+    "_experience": 0,
+    "_attackPower": 7,
+    "_dexPower": 0,
+    "_magicPower": 5,
+    "_criticalRate": 0.0025,
+    "_magicCriticalRate": 0.002,
+    "_defense": 0,
+    "_magicDefense": 0,
+    "_evasion": 0.0
+  },
+  "_statModifierTable": "_item/01_equipment/00_modifier/_statmodifiertables/statModifierTable_tier00",
+  "_statModifierCost": {
+    "$id": "6",
+    "_scriptItem": "_item/03_trade/TRADEITEM_Soul Pearl",
+    "_scriptItemQuantity": 1
+  },
+  "_itemType": 0,
+  "_itemName": "Coldgeist Blade",
+  "_itemIcon": "_graphic/_ui/_itemicons/_weapon/_wepIco_45",
+  "_itemRarity": 1,
+  "_itemDescription": "Forged from corrupted frost, formally used by ancient sages.",
+  "_maxStackAmount": 1,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 798,
+  "name": "(lv-17) WEAPON_Coldgeist Blade (Melee)",
+  "hideFlags": 0
+}

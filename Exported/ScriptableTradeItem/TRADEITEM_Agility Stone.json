@@ -1,0 +1,15 @@
+{
+  "$id": "1",
+  "_itemType": 2,
+  "_itemName": "Agility Stone",
+  "_itemIcon": "_graphic/_ui/_itemicons/_tradeitem/_tradIco_40",
+  "_itemRarity": 0,
+  "_itemDescription": "Has capabilities to change a weapon damage scale to dexterity.",
+  "_maxStackAmount": 99,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 480,
+  "name": "TRADEITEM_Agility Stone",
+  "hideFlags": 0
+}

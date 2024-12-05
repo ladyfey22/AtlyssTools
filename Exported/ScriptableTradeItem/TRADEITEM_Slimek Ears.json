@@ -1,0 +1,15 @@
+{
+  "$id": "1",
+  "_itemType": 2,
+  "_itemName": "Slimek Ears",
+  "_itemIcon": "_graphic/_ui/_itemicons/_tradeitem/_tradIco_03",
+  "_itemRarity": 0,
+  "_itemDescription": "Even sharper than normal Slime ears.",
+  "_maxStackAmount": 30,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 14,
+  "name": "TRADEITEM_Slimek Ears",
+  "hideFlags": 0
+}

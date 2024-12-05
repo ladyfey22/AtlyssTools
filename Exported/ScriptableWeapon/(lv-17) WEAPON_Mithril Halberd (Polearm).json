@@ -1,0 +1,85 @@
+{
+  "$id": "1",
+  "_weaponDamage": 11,
+  "_damageBonus": 7,
+  "_maxFloorDamageCap": 0,
+  "_maxCeilingDamageCap": 0,
+  "_readonlyDamageRange": {
+    "$id": "2",
+    "x": 11,
+    "y": 21,
+    "magnitude": 23.70654,
+    "sqrMagnitude": 562
+  },
+  "weaponType": "_weapontype/04_weaponType_polearm",
+  "_combatElement": null,
+  "_weaponProjectileSet": null,
+  "_weaponConditionSlot": {
+    "$id": "3",
+    "_scriptableCondition": null,
+    "_chance": 1.0
+  },
+  "weaponMesh": "_graphic/_mesh/03_item/01_weapon/08_polearm/_polearm_02/polearm_02_alt01",
+  "weaponTexture": "_graphic/_mesh/03_item/01_weapon/08_polearm/_polearm_02/polearm02Tex_03",
+  "_textureColorAdjust": {
+    "$id": "4",
+    "_hue": 0.0,
+    "_saturation": 1.55,
+    "_brightness": 0.14,
+    "_contrast": 1.33
+  },
+  "trailColors": [
+    [
+      1.0,
+      1.0,
+      1.0,
+      0.6392157
+    ],
+    [
+      0.5471698,
+      0.5471698,
+      0.5471698,
+      0.5176471
+    ]
+  ],
+  "_weaponTakeOutSfxIndex": 0,
+  "_setWeaponTakeOutSfx": "_sound/_combat/_polearmTakeOut01",
+  "_weaponSwingSfxIndex": 0,
+  "_setWeaponSwingSfx": "_sound/_combat/_polearmSwing03",
+  "_equipmentLevel": 17,
+  "_classRequirement": null,
+  "_equipType": 1,
+  "_statArray": {
+    "$id": "5",
+    "_maxHealth": 0,
+    "_maxMana": 0,
+    "_maxStamina": 4,
+    "_experience": 0,
+    "_attackPower": 7,
+    "_dexPower": 0,
+    "_magicPower": 0,
+    "_criticalRate": 0.0085,
+    "_magicCriticalRate": 0.0,
+    "_defense": 0,
+    "_magicDefense": 0,
+    "_evasion": 0.008
+  },
+  "_statModifierTable": "_item/01_equipment/00_modifier/_statmodifiertables/statModifierTable_tier00",
+  "_statModifierCost": {
+    "$id": "6",
+    "_scriptItem": null,
+    "_scriptItemQuantity": 0
+  },
+  "_itemType": 0,
+  "_itemName": "Mithril Halberd",
+  "_itemIcon": "_graphic/_ui/_itemicons/_weapon/_wepIco_55",
+  "_itemRarity": 0,
+  "_itemDescription": "",
+  "_maxStackAmount": 1,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 800,
+  "name": "(lv-17) WEAPON_Mithril Halberd (Polearm)",
+  "hideFlags": 0
+}

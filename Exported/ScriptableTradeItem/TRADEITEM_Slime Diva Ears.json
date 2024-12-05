@@ -1,0 +1,15 @@
+{
+  "$id": "1",
+  "_itemType": 2,
+  "_itemName": "Slime Diva Ears",
+  "_itemIcon": "_graphic/_ui/_itemicons/_tradeitem/_tradIco_14",
+  "_itemRarity": 0,
+  "_itemDescription": "Extremely large and long ears. Unlike other slime ears, these are not sharp to the touch, but rather soft.",
+  "_maxStackAmount": 15,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 50,
+  "name": "TRADEITEM_Slime Diva Ears",
+  "hideFlags": 0
+}

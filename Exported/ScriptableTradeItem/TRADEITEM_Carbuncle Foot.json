@@ -1,0 +1,15 @@
+{
+  "$id": "1",
+  "_itemType": 2,
+  "_itemName": "Carbuncle Foot",
+  "_itemIcon": "_graphic/_ui/_itemicons/_tradeitem/_tradIco_38",
+  "_itemRarity": 0,
+  "_itemDescription": "The foot of a corrupted sage. The blood that drips from it quickly becomes a magical powder.",
+  "_maxStackAmount": 99,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 23,
+  "name": "TRADEITEM_Carbuncle Foot",
+  "hideFlags": 0
+}

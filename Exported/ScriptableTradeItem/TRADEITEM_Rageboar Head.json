@@ -1,0 +1,15 @@
+{
+  "$id": "1",
+  "_itemType": 2,
+  "_itemName": "Rageboar Head",
+  "_itemIcon": "_graphic/_ui/_itemicons/_tradeitem/_tradIco_43",
+  "_itemRarity": 0,
+  "_itemDescription": "The eyes are bloodshot and filled with rage.",
+  "_maxStackAmount": 30,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 15,
+  "name": "TRADEITEM_Rageboar Head",
+  "hideFlags": 0
+}

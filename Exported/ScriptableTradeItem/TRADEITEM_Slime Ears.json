@@ -1,0 +1,15 @@
+{
+  "$id": "1",
+  "_itemType": 2,
+  "_itemName": "Slime Ears",
+  "_itemIcon": "_graphic/_ui/_itemicons/_tradeitem/_tradIco_01",
+  "_itemRarity": 0,
+  "_itemDescription": "These are somehow sharp on the ends, which can actually hurt.",
+  "_maxStackAmount": 30,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 10,
+  "name": "TRADEITEM_Slime Ears",
+  "hideFlags": 0
+}

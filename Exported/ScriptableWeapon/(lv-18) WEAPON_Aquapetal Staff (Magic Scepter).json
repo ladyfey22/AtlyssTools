@@ -1,0 +1,85 @@
+{
+  "$id": "1",
+  "_weaponDamage": 15,
+  "_damageBonus": 3,
+  "_maxFloorDamageCap": 0,
+  "_maxCeilingDamageCap": 0,
+  "_readonlyDamageRange": {
+    "$id": "2",
+    "x": 15,
+    "y": 21,
+    "magnitude": 25.8069763,
+    "sqrMagnitude": 666
+  },
+  "weaponType": "_weapontype/06_weaponType_magicScepter",
+  "_combatElement": "_combatelement/comElement_water",
+  "_weaponProjectileSet": "_item/01_equipment/02_weapon/05_magicscepter/scepterprojectilesets/_scepterprojectileset(ele_water)/weaponProjectileSet_scepter(ele_water)_01",
+  "_weaponConditionSlot": {
+    "$id": "3",
+    "_scriptableCondition": "_generalconditions/statusCondition_cold",
+    "_chance": 0.2
+  },
+  "weaponMesh": "_graphic/_mesh/03_item/01_weapon/03_scepter/_scepter06/_scepter06",
+  "weaponTexture": "_graphic/_mesh/03_item/01_weapon/03_scepter/_scepter06/scepter06Tex_00",
+  "_textureColorAdjust": {
+    "$id": "4",
+    "_hue": 0.0,
+    "_saturation": 1.34,
+    "_brightness": -0.02,
+    "_contrast": 1.5
+  },
+  "trailColors": [
+    [
+      0.0,
+      0.8207519,
+      1.0,
+      1.0
+    ],
+    [
+      0.0627451,
+      0.270783275,
+      0.396078438,
+      1.0
+    ]
+  ],
+  "_weaponTakeOutSfxIndex": 0,
+  "_setWeaponTakeOutSfx": "_sound/_combat/scepter/weapon_scepterSheath",
+  "_weaponSwingSfxIndex": 0,
+  "_setWeaponSwingSfx": "_sound/_combat/scepter/_spinScepter",
+  "_equipmentLevel": 18,
+  "_classRequirement": null,
+  "_equipType": 1,
+  "_statArray": {
+    "$id": "5",
+    "_maxHealth": 0,
+    "_maxMana": 5,
+    "_maxStamina": 0,
+    "_experience": 0,
+    "_attackPower": 0,
+    "_dexPower": 0,
+    "_magicPower": 10,
+    "_criticalRate": 0.0,
+    "_magicCriticalRate": 0.018,
+    "_defense": 0,
+    "_magicDefense": 0,
+    "_evasion": 0.0
+  },
+  "_statModifierTable": "_item/01_equipment/00_modifier/_statmodifiertables/statModifierTable_tier00",
+  "_statModifierCost": {
+    "$id": "6",
+    "_scriptItem": "_item/03_trade/TRADEITEM_Blue Minchroom Cap",
+    "_scriptItemQuantity": 3
+  },
+  "_itemType": 0,
+  "_itemName": "Aquapetal Staff",
+  "_itemIcon": "_graphic/_ui/_itemicons/_weapon/_wepIco_62",
+  "_itemRarity": 0,
+  "_itemDescription": "",
+  "_maxStackAmount": 1,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 930,
+  "name": "(lv-18) WEAPON_Aquapetal Staff (Magic Scepter)",
+  "hideFlags": 0
+}

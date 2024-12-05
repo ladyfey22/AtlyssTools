@@ -1,0 +1,15 @@
+{
+  "$id": "1",
+  "_itemType": 2,
+  "_itemName": "Mekboar Spear",
+  "_itemIcon": "_graphic/_ui/_itemicons/_tradeitem/_tradIco_08",
+  "_itemRarity": 0,
+  "_itemDescription": "It is unknown how this spear was attached to a boar.",
+  "_maxStackAmount": 30,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 15,
+  "name": "TRADEITEM_Mekboar Spear",
+  "hideFlags": 0
+}

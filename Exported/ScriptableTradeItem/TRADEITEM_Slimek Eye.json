@@ -1,0 +1,15 @@
+{
+  "$id": "1",
+  "_itemType": 2,
+  "_itemName": "Slimek Eye",
+  "_itemIcon": "_graphic/_ui/_itemicons/_tradeitem/_tradIco_06",
+  "_itemRarity": 0,
+  "_itemDescription": "The swirly pupil rotates if you look at it long enough.",
+  "_maxStackAmount": 30,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 12,
+  "name": "TRADEITEM_Slimek Eye",
+  "hideFlags": 0
+}

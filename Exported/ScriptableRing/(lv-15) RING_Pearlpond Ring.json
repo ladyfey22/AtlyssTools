@@ -1,0 +1,48 @@
+{
+  "$id": "1",
+  "_armorTexture": "",
+  "_canDyeArmor": true,
+  "_colorAdjustParams": {
+    "$id": "2",
+    "_hue": 0.0,
+    "_saturation": 1.0,
+    "_brightness": 0.0,
+    "_contrast": 1.0
+  },
+  "_equipmentLevel": 15,
+  "_classRequirement": null,
+  "_equipType": 0,
+  "_statArray": {
+    "$id": "3",
+    "_maxHealth": 0,
+    "_maxMana": 15,
+    "_maxStamina": 0,
+    "_experience": 0,
+    "_attackPower": 0,
+    "_dexPower": 5,
+    "_magicPower": 7,
+    "_criticalRate": 0.0,
+    "_magicCriticalRate": 0.0,
+    "_defense": 0,
+    "_magicDefense": 0,
+    "_evasion": 0.0
+  },
+  "_statModifierTable": "_item/01_equipment/00_modifier/_statmodifiertables/statModifierTable_tier00",
+  "_statModifierCost": {
+    "$id": "4",
+    "_scriptItem": "_item/03_trade/TRADEITEM_Ghostdust",
+    "_scriptItemQuantity": 5
+  },
+  "_itemType": 0,
+  "_itemName": "Pearlpond Ring",
+  "_itemIcon": "_graphic/_ui/_itemicons/_ring/icon_ring10",
+  "_itemRarity": 0,
+  "_itemDescription": "The pearls chime, providing a peace of mind and clarity.",
+  "_maxStackAmount": 1,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 289,
+  "name": "(lv-15) RING_Pearlpond Ring",
+  "hideFlags": 0
+}

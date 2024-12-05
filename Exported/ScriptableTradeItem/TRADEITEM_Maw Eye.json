@@ -1,0 +1,15 @@
+{
+  "$id": "1",
+  "_itemType": 2,
+  "_itemName": "Maw Eye",
+  "_itemIcon": "_graphic/_ui/_itemicons/_tradeitem/_tradIco_37",
+  "_itemRarity": 0,
+  "_itemDescription": "There's a glare of anxiety in the dilated pupil.",
+  "_maxStackAmount": 45,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 12,
+  "name": "TRADEITEM_Maw Eye",
+  "hideFlags": 0
+}

@@ -1,0 +1,50 @@
+{
+  "$id": "1",
+  "_blockDamageThreshold": 14,
+  "_elementType": null,
+  "_shieldMesh": "_graphic/_mesh/03_item/00_armor/_shield/_shield02/_shield_02",
+  "_shieldTexture": "_graphic/_mesh/03_item/00_armor/_shield/_shield02/shield02Tex_03",
+  "_textureColorAdjust": {
+    "$id": "2",
+    "_hue": 0.0,
+    "_saturation": 1.87,
+    "_brightness": 0.24,
+    "_contrast": 1.58
+  },
+  "_equipmentLevel": 16,
+  "_classRequirement": null,
+  "_equipType": 2,
+  "_statArray": {
+    "$id": "3",
+    "_maxHealth": 0,
+    "_maxMana": 0,
+    "_maxStamina": 0,
+    "_experience": 0,
+    "_attackPower": 0,
+    "_dexPower": 0,
+    "_magicPower": 3,
+    "_criticalRate": 0.0,
+    "_magicCriticalRate": 0.0,
+    "_defense": 8,
+    "_magicDefense": 1,
+    "_evasion": 0.0
+  },
+  "_statModifierTable": "_item/01_equipment/00_modifier/_statmodifiertables/statModifierTable_tier00",
+  "_statModifierCost": {
+    "$id": "4",
+    "_scriptItem": null,
+    "_scriptItemQuantity": 0
+  },
+  "_itemType": 0,
+  "_itemName": "Mithril Shield",
+  "_itemIcon": "_graphic/_ui/_itemicons/_shield/_shieldIco_09",
+  "_itemRarity": 0,
+  "_itemDescription": "",
+  "_maxStackAmount": 1,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 700,
+  "name": "(lv-16) SHIELD_Mithril Shield",
+  "hideFlags": 0
+}

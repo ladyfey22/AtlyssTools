@@ -1,0 +1,48 @@
+{
+  "$id": "1",
+  "_armorTexture": "",
+  "_canDyeArmor": true,
+  "_colorAdjustParams": {
+    "$id": "2",
+    "_hue": 0.0,
+    "_saturation": 1.0,
+    "_brightness": 0.0,
+    "_contrast": 1.0
+  },
+  "_equipmentLevel": 12,
+  "_classRequirement": null,
+  "_equipType": 0,
+  "_statArray": {
+    "$id": "3",
+    "_maxHealth": 0,
+    "_maxMana": 0,
+    "_maxStamina": 0,
+    "_experience": 0,
+    "_attackPower": 0,
+    "_dexPower": 0,
+    "_magicPower": 3,
+    "_criticalRate": 0.0,
+    "_magicCriticalRate": 0.023,
+    "_defense": 0,
+    "_magicDefense": 0,
+    "_evasion": 0.0
+  },
+  "_statModifierTable": "_item/01_equipment/00_modifier/_statmodifiertables/statModifierTable_tier00",
+  "_statModifierCost": {
+    "$id": "4",
+    "_scriptItem": "_item/03_trade/TRADEITEM_Wizboar Scepter",
+    "_scriptItemQuantity": 3
+  },
+  "_itemType": 0,
+  "_itemName": "Students Ring",
+  "_itemIcon": "_graphic/_ui/_itemicons/_ring/icon_ring03",
+  "_itemRarity": 0,
+  "_itemDescription": "Excelsior!",
+  "_maxStackAmount": 1,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 165,
+  "name": "(lv-12) RING_Students Ring",
+  "hideFlags": 0
+}

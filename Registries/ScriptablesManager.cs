@@ -32,6 +32,7 @@ public abstract class ScriptablesManager<T> : BaseScriptablesManager where T : S
 
     protected ScriptablesManager()
     {
+        //Instance = this;
         StateManager = new ScriptablesStateManager(this);
     }
 
@@ -181,4 +182,6 @@ public abstract class ScriptablesManager<T> : BaseScriptablesManager where T : S
     {
         return ScriptableObject.CreateInstance<T>();
     }
+
+    //public ScriptablesManager<T> Instance { get; private set; }
 }

@@ -1,0 +1,15 @@
+{
+  "$id": "1",
+  "_itemType": 2,
+  "_itemName": "Red Minchroom Cap",
+  "_itemIcon": "_graphic/_ui/_itemicons/_tradeitem/_tradIco_25",
+  "_itemRarity": 0,
+  "_itemDescription": "The spores can set something on fire. Could be good to cook something spicy with.",
+  "_maxStackAmount": 99,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 20,
+  "name": "TRADEITEM_Red Minchroom Cap",
+  "hideFlags": 0
+}

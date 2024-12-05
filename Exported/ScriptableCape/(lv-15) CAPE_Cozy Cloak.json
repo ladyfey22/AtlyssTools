@@ -1,0 +1,49 @@
+{
+  "$id": "1",
+  "_capeMesh": "_graphic/_mesh/03_item/00_armor/_cape/cape01",
+  "_armorTexture": "_graphic/_mesh/03_item/00_armor/_cape/_capeTex_09",
+  "_canDyeArmor": true,
+  "_colorAdjustParams": {
+    "$id": "2",
+    "_hue": 0.0,
+    "_saturation": 1.0,
+    "_brightness": 0.0,
+    "_contrast": 1.0
+  },
+  "_equipmentLevel": 15,
+  "_classRequirement": null,
+  "_equipType": 0,
+  "_statArray": {
+    "$id": "3",
+    "_maxHealth": 0,
+    "_maxMana": 0,
+    "_maxStamina": 0,
+    "_experience": 0,
+    "_attackPower": 3,
+    "_dexPower": 3,
+    "_magicPower": 3,
+    "_criticalRate": 0.0,
+    "_magicCriticalRate": 0.0,
+    "_defense": 8,
+    "_magicDefense": 5,
+    "_evasion": 0.0
+  },
+  "_statModifierTable": "_item/01_equipment/00_modifier/_statmodifiertables/statModifierTable_tier00",
+  "_statModifierCost": {
+    "$id": "4",
+    "_scriptItem": "_item/03_trade/TRADEITEM_Rageboar Spear",
+    "_scriptItemQuantity": 1
+  },
+  "_itemType": 0,
+  "_itemName": "Cozy Cloak",
+  "_itemIcon": "_graphic/_ui/_itemicons/_chest/_capIco_09",
+  "_itemRarity": 0,
+  "_itemDescription": "Keeps you warm in the cold weather.",
+  "_maxStackAmount": 1,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 600,
+  "name": "(lv-15) CAPE_Cozy Cloak",
+  "hideFlags": 0
+}

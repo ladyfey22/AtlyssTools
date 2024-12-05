@@ -1,0 +1,49 @@
+{
+  "$id": "1",
+  "_capeMesh": "_graphic/_mesh/03_item/00_armor/_cape/cape01",
+  "_armorTexture": "_graphic/_mesh/03_item/00_armor/_cape/_capeTex_04",
+  "_canDyeArmor": false,
+  "_colorAdjustParams": {
+    "$id": "2",
+    "_hue": -300.0,
+    "_saturation": 2.0,
+    "_brightness": 0.32,
+    "_contrast": 1.46
+  },
+  "_equipmentLevel": 4,
+  "_classRequirement": null,
+  "_equipType": 0,
+  "_statArray": {
+    "$id": "3",
+    "_maxHealth": 0,
+    "_maxMana": 0,
+    "_maxStamina": 0,
+    "_experience": 0,
+    "_attackPower": 0,
+    "_dexPower": 0,
+    "_magicPower": 0,
+    "_criticalRate": 0.0,
+    "_magicCriticalRate": 0.0,
+    "_defense": 1,
+    "_magicDefense": 1,
+    "_evasion": 0.0
+  },
+  "_statModifierTable": "_item/01_equipment/00_modifier/_statmodifiertables/statModifierTable_tier00",
+  "_statModifierCost": {
+    "$id": "4",
+    "_scriptItem": null,
+    "_scriptItemQuantity": 1
+  },
+  "_itemType": 0,
+  "_itemName": "Initiate Cloak",
+  "_itemIcon": "_graphic/_ui/_itemicons/_chest/_capIco_04",
+  "_itemRarity": 0,
+  "_itemDescription": "New beginnings.",
+  "_maxStackAmount": 1,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 18,
+  "name": "(lv-4) CAPE_Initiate Cloak",
+  "hideFlags": 0
+}

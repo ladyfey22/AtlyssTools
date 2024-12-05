@@ -1,0 +1,48 @@
+{
+  "$id": "1",
+  "_armorTexture": "",
+  "_canDyeArmor": true,
+  "_colorAdjustParams": {
+    "$id": "2",
+    "_hue": 0.0,
+    "_saturation": 1.0,
+    "_brightness": 0.0,
+    "_contrast": 1.0
+  },
+  "_equipmentLevel": 20,
+  "_classRequirement": null,
+  "_equipType": 0,
+  "_statArray": {
+    "$id": "3",
+    "_maxHealth": 20,
+    "_maxMana": 0,
+    "_maxStamina": 13,
+    "_experience": 0,
+    "_attackPower": 8,
+    "_dexPower": 3,
+    "_magicPower": 5,
+    "_criticalRate": 0.0,
+    "_magicCriticalRate": 0.0,
+    "_defense": 13,
+    "_magicDefense": 5,
+    "_evasion": 0.0
+  },
+  "_statModifierTable": null,
+  "_statModifierCost": {
+    "$id": "4",
+    "_scriptItem": null,
+    "_scriptItemQuantity": 1
+  },
+  "_itemType": 0,
+  "_itemName": "Earthwoken Ring",
+  "_itemIcon": "_graphic/_ui/_itemicons/_ring/icon_ring14",
+  "_itemRarity": 2,
+  "_itemDescription": "The gems glimmer much like the gems of a Colossus.",
+  "_maxStackAmount": 1,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 1450,
+  "name": "(lv-20) RING_Earthwoken Ring",
+  "hideFlags": 0
+}

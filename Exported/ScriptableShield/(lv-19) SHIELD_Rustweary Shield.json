@@ -1,0 +1,50 @@
+{
+  "$id": "1",
+  "_blockDamageThreshold": 20,
+  "_elementType": null,
+  "_shieldMesh": "_graphic/_mesh/03_item/00_armor/_shield/_shield05/_shield_05",
+  "_shieldTexture": "_graphic/_mesh/03_item/00_armor/_shield/_shield05/shield05_tex",
+  "_textureColorAdjust": {
+    "$id": "2",
+    "_hue": 0.0,
+    "_saturation": 1.006,
+    "_brightness": 0.0,
+    "_contrast": 1.154
+  },
+  "_equipmentLevel": 19,
+  "_classRequirement": "_class/00_CLASS_fighter",
+  "_equipType": 2,
+  "_statArray": {
+    "$id": "3",
+    "_maxHealth": 0,
+    "_maxMana": 0,
+    "_maxStamina": 0,
+    "_experience": 0,
+    "_attackPower": 5,
+    "_dexPower": 0,
+    "_magicPower": 0,
+    "_criticalRate": 0.0,
+    "_magicCriticalRate": 0.0,
+    "_defense": 13,
+    "_magicDefense": 5,
+    "_evasion": 0.0
+  },
+  "_statModifierTable": "_item/01_equipment/00_modifier/_statmodifiertables/statModifierTable_tier00",
+  "_statModifierCost": {
+    "$id": "4",
+    "_scriptItem": "_item/03_trade/TRADEITEM_Deadwood Log",
+    "_scriptItemQuantity": 3
+  },
+  "_itemType": 0,
+  "_itemName": "Rustweary Shield",
+  "_itemIcon": "_graphic/_ui/_itemicons/_shield/_shieldIco_10",
+  "_itemRarity": 0,
+  "_itemDescription": "The face is worried.",
+  "_maxStackAmount": 1,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 1260,
+  "name": "(lv-19) SHIELD_Rustweary Shield",
+  "hideFlags": 0
+}

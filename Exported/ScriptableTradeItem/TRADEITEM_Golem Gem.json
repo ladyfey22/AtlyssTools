@@ -1,0 +1,15 @@
+{
+  "$id": "1",
+  "_itemType": 2,
+  "_itemName": "Golem Gem",
+  "_itemIcon": "_graphic/_ui/_itemicons/_tradeitem/_tradIco_28",
+  "_itemRarity": 0,
+  "_itemDescription": "A red mist twists and turns within this gem.",
+  "_maxStackAmount": 45,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 8,
+  "name": "TRADEITEM_Golem Gem",
+  "hideFlags": 0
+}

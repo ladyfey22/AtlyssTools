@@ -1,0 +1,50 @@
+{
+  "$id": "1",
+  "_blockDamageThreshold": 8,
+  "_elementType": null,
+  "_shieldMesh": "_graphic/_mesh/03_item/00_armor/_shield/_shield02/_shield_02",
+  "_shieldTexture": "_graphic/_mesh/03_item/00_armor/_shield/_shield02/shield02Tex_02",
+  "_textureColorAdjust": {
+    "$id": "2",
+    "_hue": 0.0,
+    "_saturation": 0.928,
+    "_brightness": -0.035,
+    "_contrast": 1.537
+  },
+  "_equipmentLevel": 7,
+  "_classRequirement": null,
+  "_equipType": 2,
+  "_statArray": {
+    "$id": "3",
+    "_maxHealth": 0,
+    "_maxMana": 0,
+    "_maxStamina": 0,
+    "_experience": 0,
+    "_attackPower": 0,
+    "_dexPower": 0,
+    "_magicPower": 0,
+    "_criticalRate": 0.0,
+    "_magicCriticalRate": 0.0,
+    "_defense": 4,
+    "_magicDefense": 0,
+    "_evasion": 0.0
+  },
+  "_statModifierTable": "_item/01_equipment/00_modifier/_statmodifiertables/statModifierTable_tier00",
+  "_statModifierCost": {
+    "$id": "4",
+    "_scriptItem": "_item/03_trade/TRADEITEM_Rock",
+    "_scriptItemQuantity": 5
+  },
+  "_itemType": 0,
+  "_itemName": "Iron Shield",
+  "_itemIcon": "_graphic/_ui/_itemicons/_shield/_shieldIco_08",
+  "_itemRarity": 0,
+  "_itemDescription": "",
+  "_maxStackAmount": 1,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 120,
+  "name": "(lv-7) SHIELD_Iron Shield",
+  "hideFlags": 0
+}

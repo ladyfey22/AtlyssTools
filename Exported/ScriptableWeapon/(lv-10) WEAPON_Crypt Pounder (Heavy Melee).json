@@ -1,0 +1,85 @@
+{
+  "$id": "1",
+  "_weaponDamage": 15,
+  "_damageBonus": 2,
+  "_maxFloorDamageCap": 0,
+  "_maxCeilingDamageCap": 0,
+  "_readonlyDamageRange": {
+    "$id": "2",
+    "x": 15,
+    "y": 20,
+    "magnitude": 25.0,
+    "sqrMagnitude": 625
+  },
+  "weaponType": "_weapontype/03_weaponType_heavyMelee",
+  "_combatElement": "_combatelement/comElement_shadow",
+  "_weaponProjectileSet": null,
+  "_weaponConditionSlot": {
+    "$id": "3",
+    "_scriptableCondition": null,
+    "_chance": 1.0
+  },
+  "weaponMesh": "_graphic/_mesh/03_item/01_weapon/00_axehammer/_hammer02/_axeHammer_02",
+  "weaponTexture": "_graphic/_mesh/03_item/01_weapon/00_axehammer/_hammer02/hammer02Tex",
+  "_textureColorAdjust": {
+    "$id": "4",
+    "_hue": -18.0,
+    "_saturation": 2.0,
+    "_brightness": 0.0,
+    "_contrast": 1.0
+  },
+  "trailColors": [
+    [
+      0.241179854,
+      0.0,
+      0.6886792,
+      1.0
+    ],
+    [
+      0.27177304,
+      0.155660391,
+      1.0,
+      1.0
+    ]
+  ],
+  "_weaponTakeOutSfxIndex": 0,
+  "_setWeaponTakeOutSfx": "_sound/_combat/_heavySheath",
+  "_weaponSwingSfxIndex": 0,
+  "_setWeaponSwingSfx": "_sound/_combat/_swingHeavy",
+  "_equipmentLevel": 10,
+  "_classRequirement": null,
+  "_equipType": 1,
+  "_statArray": {
+    "$id": "5",
+    "_maxHealth": 0,
+    "_maxMana": 0,
+    "_maxStamina": 0,
+    "_experience": 0,
+    "_attackPower": 3,
+    "_dexPower": 0,
+    "_magicPower": 0,
+    "_criticalRate": 0.0045,
+    "_magicCriticalRate": 0.0,
+    "_defense": 0,
+    "_magicDefense": 0,
+    "_evasion": 0.0
+  },
+  "_statModifierTable": "_item/01_equipment/00_modifier/_statmodifiertables/statModifierTable_tier00",
+  "_statModifierCost": {
+    "$id": "6",
+    "_scriptItem": "_item/03_trade/TRADEITEM_Ghostdust",
+    "_scriptItemQuantity": 15
+  },
+  "_itemType": 0,
+  "_itemName": "Crypt Pounder",
+  "_itemIcon": "_graphic/_ui/_itemicons/_weapon/_wepIco_10",
+  "_itemRarity": 1,
+  "_itemDescription": "Made with the bones of sinners.",
+  "_maxStackAmount": 1,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 650,
+  "name": "(lv-10) WEAPON_Crypt Pounder (Heavy Melee)",
+  "hideFlags": 0
+}

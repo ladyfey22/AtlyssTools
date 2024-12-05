@@ -1,0 +1,49 @@
+{
+  "$id": "1",
+  "_capeMesh": "_graphic/_mesh/03_item/00_armor/_cape/cape01",
+  "_armorTexture": "_graphic/_mesh/03_item/00_armor/_cape/_capeTex_07",
+  "_canDyeArmor": true,
+  "_colorAdjustParams": {
+    "$id": "2",
+    "_hue": 0.0,
+    "_saturation": 1.44,
+    "_brightness": 0.2,
+    "_contrast": 1.03
+  },
+  "_equipmentLevel": 16,
+  "_classRequirement": null,
+  "_equipType": 0,
+  "_statArray": {
+    "$id": "3",
+    "_maxHealth": 0,
+    "_maxMana": 0,
+    "_maxStamina": 4,
+    "_experience": 0,
+    "_attackPower": 4,
+    "_dexPower": 1,
+    "_magicPower": 3,
+    "_criticalRate": 0.0,
+    "_magicCriticalRate": 0.0,
+    "_defense": 6,
+    "_magicDefense": 3,
+    "_evasion": 0.0
+  },
+  "_statModifierTable": "_item/01_equipment/00_modifier/_statmodifiertables/statModifierTable_tier00",
+  "_statModifierCost": {
+    "$id": "4",
+    "_scriptItem": null,
+    "_scriptItemQuantity": 0
+  },
+  "_itemType": 0,
+  "_itemName": "Forlorn Cloak",
+  "_itemIcon": "_graphic/_ui/_itemicons/_chest/_capIco_05",
+  "_itemRarity": 0,
+  "_itemDescription": "Forever lost.",
+  "_maxStackAmount": 1,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 1200,
+  "name": "(lv-16) CAPE_Forlorn Cloak",
+  "hideFlags": 0
+}

@@ -9,6 +9,7 @@ using AtlyssTools.Registries;
 using AtlyssTools.Utility;
 using BepInEx;
 using JetBrains.Annotations;
+using Newtonsoft.Json;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
@@ -59,6 +60,12 @@ public class AtlyssToolsLoader
 
         public void LoadAssetBundles()
         {
+            // check that the assets folder exists
+            if (!Directory.Exists(ModPath + "/Assets"))
+            {
+                return;
+            }
+            
             string[] files = Directory.GetFiles(ModPath + "/Assets", "*", System.IO.SearchOption.AllDirectories);
             foreach (var file in files)
             {
@@ -139,14 +146,28 @@ public class AtlyssToolsLoader
 
         private static readonly System.Type[] NonConcreteType = new System.Type[]
         {
-            typeof(ScriptableCondition)
+            typeof(ScriptableCondition),
+            typeof(ScriptableItem)
         };
 
         private static readonly List<System.Type> ConcreteType =
         [
             typeof(ScriptableStatusCondition),
             typeof(ScriptableSceneTransferCondition),
-            typeof(ScriptablePolymorphCondition)
+            typeof(ScriptablePolymorphCondition),
+            
+            typeof(ScriptableChestpiece),
+            typeof(ScriptableArmorDye),
+            typeof(ScriptableCape),
+            typeof(ScriptableClassTome),
+            typeof(ScriptableHelm),
+            typeof(ScriptableLeggings),
+            typeof(ScriptableRing),
+            typeof(ScriptableShield),
+            typeof(ScriptableSkillScroll),
+            typeof(ScriptableStatusConsumable),
+            typeof(ScriptableTradeItem),
+            typeof(ScriptableWeapon),
         ];
 
         private T LoadJsonObject<T>(string path) where T : Object
@@ -235,6 +256,7 @@ public class AtlyssToolsLoader
         public T LoadModAsset<T>(string assetName) where T : Object
         {
             // check if it's in the asset bundles
+            
             foreach (var bundle in Bundles)
             {
                 T obj = bundle.LoadAsset<T>(assetName);
@@ -322,7 +344,7 @@ public class AtlyssToolsLoader
             WeaponManager.Instance,
             CreepManager.Instance, QuestManager.Instance, PlayerRaceManager.Instance, CombatElementManager.Instance,
             StatModifierManager.Instance, PlayerBaseClassManager.Instance, SkillManager.Instance,
-            ArmorRenderManager.Instance, Registries.ShopkeepManager.Instance,
+            ArmorRenderManager.Instance, Registries.ShopkeepManager.Instance, CastEffectCollectionManager.Instance
         ];
 
         foreach (var manager in managers)
@@ -383,16 +405,14 @@ public class AtlyssToolsLoader
         }
     }
     
-    public static void LoadPlugin(string modName, string modPath, Assembly assembly = null)
+    public static void LoadPlugin(string modName, string modPath, Assembly assembly)
     {
-        // if the assembly is null, get the assembly that called this
-        assembly = assembly == null ? Assembly.GetCallingAssembly() : assembly;
-        
-        
         modName = modName.ToLower();
-        
-        Instance.FindAttributeLoaded(assembly);
-        
+        if (assembly != null)
+        {
+            Instance.FindAttributeLoaded(assembly); //may be a asset only mod
+        }
+
         AtlyssToolsLoaderModInfo modInfo;
         if (Instance.ModInfos.ContainsKey(modName)) // i don't know why we'd reload a mod, but we can
         {
@@ -404,25 +424,28 @@ public class AtlyssToolsLoader
             Instance.ModInfos.Add(modName, modInfo);
         }
 
-        foreach (var manager in Instance._managers)
-        {
-            manager.Value.OnModLoad(modInfo);
-        }
-
         modInfo.Initialize();
 
         if (!Directory.Exists(modPath + "/Assets"))
         {
             Plugin.Logger.LogError($"Mod {modName} does not have an Assets folder");
-            return;
         }
 
         // find all files in ModPath/Assets, if it doesn't end in .manifest
         modInfo.LoadAssetBundles();
         // Managers
-
+        foreach (var manager in Instance._managers)
+        {
+            manager.Value.OnModLoad(modInfo);
+        }
+        
         // now initialize the mod
         Plugin.Logger.LogInfo($"Loaded AtlyssTools mod {modName}");
+    }
+    
+    public static void LoadPlugin(string modName, string modPath)
+    {
+        LoadPlugin(modName, modPath, Assembly.GetCallingAssembly());
     }
 
     public static void UnloadMod(string modName)
@@ -480,7 +503,7 @@ public class AtlyssToolsLoader
             return Instance.ModInfos[parts[0].ToLower()].LoadModAsset<T>(parts[1]);
         }
 
-        // check the resources in each mod bundle
+        // check the resources in each mod
         foreach (var modInfo in Instance.ModInfos.Values)
         {
             T obj = modInfo.LoadModAsset<T>(assetName);
@@ -540,6 +563,47 @@ public class AtlyssToolsLoader
         return Instance.ModInfos[modName];
     }
 
+    public static void FindAssetOnly()
+    {
+        string pluginPath = Paths.PluginPath;
+        //find all mods with an AtlyssTools.json at its root
+        string[] directories = Directory.GetDirectories(pluginPath);
+        
+        foreach (var directory in directories)
+        {
+            string[] files = Directory.GetFiles(directory, "AtlyssTools.json", SearchOption.TopDirectoryOnly);
+            if (files.Length == 0)
+            {
+                continue;
+            }
+            
+            // load the mod data, use the default json loader since JsonUtil is for scriptable objects
+            string json = File.ReadAllText(files[0]);
+            AtlyssToolsModDef modDef = JsonConvert.DeserializeObject<AtlyssToolsModDef>(json);
+            if (modDef == null)
+            {
+                Plugin.Logger.LogError($"Failed to load AtlyssTools.json for {directory}");
+                continue;
+            }
+            
+            Plugin.Logger.LogInfo($"Found AtlyssTools mod {modDef.ModName}");
+            
+            // for now, don't check the version
+            
+            
+            // check if there is an assembly
+            string[] dlls = Directory.GetFiles(directory, "*.dll", SearchOption.TopDirectoryOnly);
+            if (dlls.Length == 0)
+            {
+                LoadPlugin(modDef.ModId, directory, null);
+                continue;
+            }
+            
+            // skip, the assembly will be loaded when it registers itself
+            continue;
+        }
+    }
+    
     // list of assets that need to be registered
 
     private static AtlyssToolsLoader _instance;

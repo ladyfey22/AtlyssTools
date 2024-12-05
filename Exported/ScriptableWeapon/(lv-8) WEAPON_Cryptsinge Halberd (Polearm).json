@@ -1,0 +1,85 @@
+{
+  "$id": "1",
+  "_weaponDamage": 6,
+  "_damageBonus": 3,
+  "_maxFloorDamageCap": 0,
+  "_maxCeilingDamageCap": 0,
+  "_readonlyDamageRange": {
+    "$id": "2",
+    "x": 6,
+    "y": 12,
+    "magnitude": 13.4164076,
+    "sqrMagnitude": 180
+  },
+  "weaponType": "_weapontype/04_weaponType_polearm",
+  "_combatElement": null,
+  "_weaponProjectileSet": null,
+  "_weaponConditionSlot": {
+    "$id": "3",
+    "_scriptableCondition": null,
+    "_chance": 1.0
+  },
+  "weaponMesh": "_graphic/_mesh/03_item/01_weapon/08_polearm/_polearm_02/polearm_02",
+  "weaponTexture": "_graphic/_mesh/03_item/01_weapon/08_polearm/_polearm_02/polearm02Tex_01",
+  "_textureColorAdjust": {
+    "$id": "4",
+    "_hue": 51.0,
+    "_saturation": 1.277,
+    "_brightness": -0.059,
+    "_contrast": 1.229
+  },
+  "trailColors": [
+    [
+      1.0,
+      1.0,
+      1.0,
+      0.6392157
+    ],
+    [
+      0.5471698,
+      0.5471698,
+      0.5471698,
+      0.5176471
+    ]
+  ],
+  "_weaponTakeOutSfxIndex": 0,
+  "_setWeaponTakeOutSfx": "_sound/_combat/_polearmTakeOut01",
+  "_weaponSwingSfxIndex": 0,
+  "_setWeaponSwingSfx": "_sound/_combat/_polearmSwing03",
+  "_equipmentLevel": 8,
+  "_classRequirement": null,
+  "_equipType": 1,
+  "_statArray": {
+    "$id": "5",
+    "_maxHealth": 0,
+    "_maxMana": 0,
+    "_maxStamina": 0,
+    "_experience": 0,
+    "_attackPower": 0,
+    "_dexPower": 0,
+    "_magicPower": 0,
+    "_criticalRate": 0.0,
+    "_magicCriticalRate": 0.0,
+    "_defense": 0,
+    "_magicDefense": 0,
+    "_evasion": 0.015
+  },
+  "_statModifierTable": "_item/01_equipment/00_modifier/_statmodifiertables/statModifierTable_tier00",
+  "_statModifierCost": {
+    "$id": "6",
+    "_scriptItem": "_item/03_trade/TRADEITEM_Deathgel Core",
+    "_scriptItemQuantity": 5
+  },
+  "_itemType": 0,
+  "_itemName": "Cryptsinge Halberd",
+  "_itemIcon": "_graphic/_ui/_itemicons/_weapon/_wepIco_30",
+  "_itemRarity": 0,
+  "_itemDescription": "Poke and prod the undead into submission.",
+  "_maxStackAmount": 1,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 300,
+  "name": "(lv-8) WEAPON_Cryptsinge Halberd (Polearm)",
+  "hideFlags": 0
+}

@@ -1,0 +1,29 @@
+{
+  "$id": "1",
+  "_healthApply": 0,
+  "_manaApply": 0,
+  "_staminaApply": 0,
+  "_expGain": 0,
+  "_resetSkillPoints": false,
+  "_resetAttributePoints": false,
+  "_selfConditions": [
+    "_item/02_consumable/_status/_potion/statusCondition_evasionPotion_01"
+  ],
+  "_levelRequirement": 10,
+  "_baseClassRequirement": null,
+  "_consumableCooldown": 60.0,
+  "_useOnlyInTown": false,
+  "_consumableObject": "_item/02_consumable/_status/_consumableEffect_healthConsumable",
+  "_itemType": 1,
+  "_itemName": "Evasion Potion",
+  "_itemIcon": "_graphic/_ui/_itemicons/_consumable/_conIco_33",
+  "_itemRarity": 0,
+  "_itemDescription": "Temporarily increases Evasion by 5%.",
+  "_maxStackAmount": 99,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 230,
+  "name": "(lv-10) STATUSCONSUMABLE_Evasion Potion",
+  "hideFlags": 0
+}

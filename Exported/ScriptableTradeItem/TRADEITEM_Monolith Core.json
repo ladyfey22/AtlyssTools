@@ -1,0 +1,15 @@
+{
+  "$id": "1",
+  "_itemType": 2,
+  "_itemName": "Monolith Core",
+  "_itemIcon": "_graphic/_ui/_itemicons/_tradeitem/_tradIco_35",
+  "_itemRarity": 0,
+  "_itemDescription": "The heart of a Monolith. Dark green energy pulsates from within it.",
+  "_maxStackAmount": 99,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 45,
+  "name": "TRADEITEM_Monolith Core",
+  "hideFlags": 0
+}

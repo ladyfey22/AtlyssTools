@@ -1,0 +1,50 @@
+{
+  "$id": "1",
+  "_blockDamageThreshold": 17,
+  "_elementType": null,
+  "_shieldMesh": "_graphic/_mesh/03_item/00_armor/_shield/_shield05/_shield_05_alt00",
+  "_shieldTexture": "_graphic/_mesh/03_item/00_armor/_shield/_shield05/shield05_tex2",
+  "_textureColorAdjust": {
+    "$id": "2",
+    "_hue": -29.0,
+    "_saturation": 0.93,
+    "_brightness": -0.03,
+    "_contrast": 1.17
+  },
+  "_equipmentLevel": 19,
+  "_classRequirement": "_class/01_CLASS_mystic",
+  "_equipType": 2,
+  "_statArray": {
+    "$id": "3",
+    "_maxHealth": 0,
+    "_maxMana": 4,
+    "_maxStamina": 0,
+    "_experience": 0,
+    "_attackPower": 0,
+    "_dexPower": 0,
+    "_magicPower": 5,
+    "_criticalRate": 0.0,
+    "_magicCriticalRate": 0.0,
+    "_defense": 9,
+    "_magicDefense": 7,
+    "_evasion": 0.0
+  },
+  "_statModifierTable": "_item/01_equipment/00_modifier/_statmodifiertables/statModifierTable_tier00",
+  "_statModifierCost": {
+    "$id": "4",
+    "_scriptItem": "_item/03_trade/TRADEITEM_Deadwood Log",
+    "_scriptItemQuantity": 3
+  },
+  "_itemType": 0,
+  "_itemName": "Rustwise Shield",
+  "_itemIcon": "_graphic/_ui/_itemicons/_shield/_shieldIco_11",
+  "_itemRarity": 0,
+  "_itemDescription": "The face is confident.",
+  "_maxStackAmount": 1,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 1260,
+  "name": "(lv-19) SHIELD_Rustwise Shield",
+  "hideFlags": 0
+}

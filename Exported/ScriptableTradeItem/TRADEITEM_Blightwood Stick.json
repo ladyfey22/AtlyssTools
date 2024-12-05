@@ -1,0 +1,15 @@
+{
+  "$id": "1",
+  "_itemType": 2,
+  "_itemName": "Blightwood Stick",
+  "_itemIcon": "_graphic/_ui/_itemicons/_tradeitem/_tradIco_23",
+  "_itemRarity": 0,
+  "_itemDescription": "Feels warm to hold.",
+  "_maxStackAmount": 99,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 5,
+  "name": "TRADEITEM_Blightwood Stick",
+  "hideFlags": 0
+}

@@ -1,0 +1,85 @@
+{
+  "$id": "1",
+  "_weaponDamage": 13,
+  "_damageBonus": 0,
+  "_maxFloorDamageCap": 0,
+  "_maxCeilingDamageCap": 0,
+  "_readonlyDamageRange": {
+    "$id": "2",
+    "x": 13,
+    "y": 16,
+    "magnitude": 20.6155281,
+    "sqrMagnitude": 425
+  },
+  "weaponType": "_weapontype/01_weaponType_katars",
+  "_combatElement": "_combatelement/comElement_fire",
+  "_weaponProjectileSet": null,
+  "_weaponConditionSlot": {
+    "$id": "3",
+    "_scriptableCondition": "_generalconditions/statusCondition_burn",
+    "_chance": 0.033
+  },
+  "weaponMesh": "_graphic/_mesh/03_item/01_weapon/02_dagger/_katar03/katar_03",
+  "weaponTexture": "_graphic/_mesh/03_item/01_weapon/02_dagger/_katar03/katar03Tex_01",
+  "_textureColorAdjust": {
+    "$id": "4",
+    "_hue": -3.0,
+    "_saturation": 0.81,
+    "_brightness": -0.56,
+    "_contrast": 2.0
+  },
+  "trailColors": [
+    [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    [
+      0.5849056,
+      0.5849056,
+      0.5849056,
+      1.0
+    ]
+  ],
+  "_weaponTakeOutSfxIndex": 0,
+  "_setWeaponTakeOutSfx": "_sound/_combat/_lightSheath",
+  "_weaponSwingSfxIndex": 0,
+  "_setWeaponSwingSfx": "_sound/_combat/_swingLight",
+  "_equipmentLevel": 14,
+  "_classRequirement": null,
+  "_equipType": 1,
+  "_statArray": {
+    "$id": "5",
+    "_maxHealth": 0,
+    "_maxMana": 0,
+    "_maxStamina": 5,
+    "_experience": 0,
+    "_attackPower": 0,
+    "_dexPower": 7,
+    "_magicPower": 0,
+    "_criticalRate": 0.0028,
+    "_magicCriticalRate": 0.0,
+    "_defense": 0,
+    "_magicDefense": 0,
+    "_evasion": 0.0
+  },
+  "_statModifierTable": "_item/01_equipment/00_modifier/_statmodifiertables/statModifierTable_tier00",
+  "_statModifierCost": {
+    "$id": "6",
+    "_scriptItem": "_item/03_trade/TRADEITEM_Deathgel Core",
+    "_scriptItemQuantity": 5
+  },
+  "_itemType": 0,
+  "_itemName": "Hellsludge Shivs",
+  "_itemIcon": "_graphic/_ui/_itemicons/_weapon/_wepIco_68",
+  "_itemRarity": 0,
+  "_itemDescription": "Hot, hot, hot to the touch!",
+  "_maxStackAmount": 1,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 150,
+  "name": "(lv-14) WEAPON_Hellsludge Shivs (Katars)",
+  "hideFlags": 0
+}

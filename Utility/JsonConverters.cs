@@ -222,7 +222,6 @@ public class JsonUtility
             new AssetConverter<ScriptableItem>(),
 
             new AssetConverter<ScriptableCondition>(),
-
             //
             new AssetConverter<CastEffectCollection>(),
 

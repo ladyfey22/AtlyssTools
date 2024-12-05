@@ -1,0 +1,15 @@
+{
+  "$id": "1",
+  "_itemType": 2,
+  "_itemName": "Soul Pearl",
+  "_itemIcon": "_graphic/_ui/_itemicons/_consumable/_conIco_07",
+  "_itemRarity": 0,
+  "_itemDescription": "Allows the holder to revive a fallen soul.\n<color=cyan>To revive someone, press the interact key when nearby them.</color>",
+  "_maxStackAmount": 1,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 3500,
+  "name": "TRADEITEM_Soul Pearl",
+  "hideFlags": 0
+}

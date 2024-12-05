@@ -1,0 +1,85 @@
+{
+  "$id": "1",
+  "_weaponDamage": 28,
+  "_damageBonus": 3,
+  "_maxFloorDamageCap": 41,
+  "_maxCeilingDamageCap": 68,
+  "_readonlyDamageRange": {
+    "$id": "2",
+    "x": 28,
+    "y": 34,
+    "magnitude": 44.04543,
+    "sqrMagnitude": 1940
+  },
+  "weaponType": "_weapontype/07_weaponType_magicBell",
+  "_combatElement": "_combatelement/comElement_earth",
+  "_weaponProjectileSet": "_item/01_equipment/02_weapon/06_magicbell/bell_projectilesets/weaponProjectileSet_bell_colossusTone",
+  "_weaponConditionSlot": {
+    "$id": "3",
+    "_scriptableCondition": "_generalconditions/statusCondition_gash_00",
+    "_chance": 0.1
+  },
+  "weaponMesh": "_graphic/_mesh/03_item/01_weapon/04_magicbell/_bell_05/_bell_05",
+  "weaponTexture": "_graphic/_mesh/03_item/01_weapon/04_magicbell/_bell_05/bell05Tex_01",
+  "_textureColorAdjust": {
+    "$id": "4",
+    "_hue": 1.0,
+    "_saturation": 0.9,
+    "_brightness": 0.0,
+    "_contrast": 1.25
+  },
+  "trailColors": [
+    [
+      1.0,
+      0.6436968,
+      0.270588279,
+      1.0
+    ],
+    [
+      0.9607843,
+      0.399926543,
+      0.141176432,
+      1.0
+    ]
+  ],
+  "_weaponTakeOutSfxIndex": 0,
+  "_setWeaponTakeOutSfx": "_sound/_combat/bell/_takeOutBell3",
+  "_weaponSwingSfxIndex": 0,
+  "_setWeaponSwingSfx": "_sound/_combat/bell/_bellSwing04",
+  "_equipmentLevel": 20,
+  "_classRequirement": null,
+  "_equipType": 1,
+  "_statArray": {
+    "$id": "5",
+    "_maxHealth": 0,
+    "_maxMana": 10,
+    "_maxStamina": 0,
+    "_experience": 0,
+    "_attackPower": 0,
+    "_dexPower": 0,
+    "_magicPower": 15,
+    "_criticalRate": 0.0,
+    "_magicCriticalRate": 0.0,
+    "_defense": 0,
+    "_magicDefense": 8,
+    "_evasion": 0.0
+  },
+  "_statModifierTable": "_item/01_equipment/00_modifier/_statmodifiertables/statModifierTable_tier00",
+  "_statModifierCost": {
+    "$id": "6",
+    "_scriptItem": "_item/03_trade/TRADEITEM_Soul Pearl",
+    "_scriptItemQuantity": 3
+  },
+  "_itemType": 0,
+  "_itemName": "Colossus Tone",
+  "_itemIcon": "_graphic/_ui/_itemicons/_weapon/_wepIco_71",
+  "_itemRarity": 1,
+  "_itemDescription": "Pieces of a Colossus are embedded into this bell.",
+  "_maxStackAmount": 1,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 1350,
+  "name": "(lv-20) WEAPON_Colossus Tone (Magic Bell)",
+  "hideFlags": 0
+}

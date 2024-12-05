@@ -1,0 +1,85 @@
+{
+  "$id": "1",
+  "_weaponDamage": 4,
+  "_damageBonus": 3,
+  "_maxFloorDamageCap": 0,
+  "_maxCeilingDamageCap": 0,
+  "_readonlyDamageRange": {
+    "$id": "2",
+    "x": 4,
+    "y": 10,
+    "magnitude": 10.7703295,
+    "sqrMagnitude": 116
+  },
+  "weaponType": "_weapontype/01_weaponType_katars",
+  "_combatElement": null,
+  "_weaponProjectileSet": null,
+  "_weaponConditionSlot": {
+    "$id": "3",
+    "_scriptableCondition": null,
+    "_chance": 1.0
+  },
+  "weaponMesh": "_graphic/_mesh/03_item/01_weapon/02_dagger/_katar03/katar_03",
+  "weaponTexture": "_graphic/_mesh/03_item/01_weapon/02_dagger/_katar03/katar03Tex_01",
+  "_textureColorAdjust": {
+    "$id": "4",
+    "_hue": 1.0,
+    "_saturation": 1.0,
+    "_brightness": 0.0,
+    "_contrast": 1.0
+  },
+  "trailColors": [
+    [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    [
+      0.5849056,
+      0.5849056,
+      0.5849056,
+      1.0
+    ]
+  ],
+  "_weaponTakeOutSfxIndex": 0,
+  "_setWeaponTakeOutSfx": "_sound/_combat/_lightSheath",
+  "_weaponSwingSfxIndex": 0,
+  "_setWeaponSwingSfx": "_sound/_combat/_swingLight",
+  "_equipmentLevel": 5,
+  "_classRequirement": null,
+  "_equipType": 1,
+  "_statArray": {
+    "$id": "5",
+    "_maxHealth": 0,
+    "_maxMana": 0,
+    "_maxStamina": 0,
+    "_experience": 0,
+    "_attackPower": 0,
+    "_dexPower": 1,
+    "_magicPower": 0,
+    "_criticalRate": 0.0015,
+    "_magicCriticalRate": 0.0,
+    "_defense": 0,
+    "_magicDefense": 0,
+    "_evasion": 0.0
+  },
+  "_statModifierTable": "_item/01_equipment/00_modifier/_statmodifiertables/statModifierTable_tier00",
+  "_statModifierCost": {
+    "$id": "6",
+    "_scriptItem": "_item/03_trade/TRADEITEM_Slimek Eye",
+    "_scriptItemQuantity": 5
+  },
+  "_itemType": 0,
+  "_itemName": "Slimek Shivs",
+  "_itemIcon": "_graphic/_ui/_itemicons/_weapon/_wepIco_25",
+  "_itemRarity": 0,
+  "_itemDescription": "These ears of a Slimek seem to be usable for combat...",
+  "_maxStackAmount": 1,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 40,
+  "name": "(lv-5) WEAPON_Slimek Shivs (Katars)",
+  "hideFlags": 0
+}

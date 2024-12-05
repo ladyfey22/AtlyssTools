@@ -1,0 +1,15 @@
+{
+  "$id": "1",
+  "_itemType": 2,
+  "_itemName": "Bronze Arrows",
+  "_itemIcon": "_graphic/_ui/_itemicons/_tradeitem/_tradIco_29",
+  "_itemRarity": 0,
+  "_itemDescription": "Ammunition for bows.",
+  "_maxStackAmount": 999,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 3,
+  "name": "TRADEITEM_Bronze Arrows",
+  "hideFlags": 0
+}

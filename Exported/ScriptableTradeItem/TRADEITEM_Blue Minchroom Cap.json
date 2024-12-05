@@ -1,0 +1,15 @@
+{
+  "$id": "1",
+  "_itemType": 2,
+  "_itemName": "Blue Minchroom Cap",
+  "_itemIcon": "_graphic/_ui/_itemicons/_tradeitem/_tradIco_34",
+  "_itemRarity": 0,
+  "_itemDescription": "The spores can frostbite something. Could be good to keep a room cool.",
+  "_maxStackAmount": 99,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 18,
+  "name": "TRADEITEM_Blue Minchroom Cap",
+  "hideFlags": 0
+}

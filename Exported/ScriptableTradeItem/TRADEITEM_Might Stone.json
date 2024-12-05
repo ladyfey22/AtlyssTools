@@ -1,0 +1,15 @@
+{
+  "$id": "1",
+  "_itemType": 2,
+  "_itemName": "Might Stone",
+  "_itemIcon": "_graphic/_ui/_itemicons/_tradeitem/_tradIco_41",
+  "_itemRarity": 0,
+  "_itemDescription": "Has capabilities to change a weapon damage scale to strength.",
+  "_maxStackAmount": 99,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 480,
+  "name": "TRADEITEM_Might Stone",
+  "hideFlags": 0
+}
