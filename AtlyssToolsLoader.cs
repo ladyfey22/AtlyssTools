@@ -17,269 +17,6 @@ namespace AtlyssTools;
 
 public class AtlyssToolsLoader
 {
-    public class AtlyssToolsLoaderModInfo
-    {
-        public readonly List<AssetBundle> Bundles = new();
-        public readonly Dictionary<string, Object> PathToAsset = new();
-
-        private readonly Dictionary<System.Type, IList> _scriptableObjects = new();
-
-
-        // delegate lists
-        public readonly List<Action> OnPreLibraryInit = new();
-        public readonly List<Action> OnPostLibraryInit = new();
-        public readonly List<Action> OnPreCacheInit = new();
-        public readonly List<Action> OnPostCacheInit = new();
-
-        public string ModPath;
-        public string ModId;
-
-        public void Dispose()
-        {
-            foreach (var bundle in Bundles)
-            {
-                bundle.Unload(true);
-            }
-        }
-
-        public void Initialize()
-        {
-        }
-
-        public void LoadScriptableType<T>() where T : ScriptableObject
-        {
-            // check if the type is in the list, if not, add it
-            if (!_scriptableObjects.ContainsKey(typeof(T)))
-            {
-                _scriptableObjects.Add(typeof(T), new List<T>());
-            }
-
-            LoadJsonObjects<T>();
-            LoadAssetObjects<T>();
-        }
-
-        public void LoadAssetBundles()
-        {
-            // check that the assets folder exists
-            if (!Directory.Exists(ModPath + "/Assets"))
-            {
-                return;
-            }
-            
-            string[] files = Directory.GetFiles(ModPath + "/Assets", "*", System.IO.SearchOption.AllDirectories);
-            foreach (var file in files)
-            {
-                if (file.EndsWith(".manifest"))
-                {
-                    continue;
-                }
-
-                string manifest = file + ".manifest";
-                if (!File.Exists(manifest)) // not an asset bundle
-                {
-                    continue;
-                }
-
-                AssetBundle bundle = AssetBundle.LoadFromFile(file);
-                if (bundle != null)
-                {
-                    Bundles.Add(bundle);
-                }
-            }
-        }
-
-
-        public List<T> GetModScriptableObjects<T>() where T : ScriptableObject
-        {
-            if (_scriptableObjects.ContainsKey(typeof(T)))
-            {
-                return _scriptableObjects[typeof(T)] as List<T>;
-            }
-
-            return new();
-        }
-
-        public IList GetModScriptableObjects(System.Type type)
-        {
-            if (_scriptableObjects.TryGetValue(type, out var o))
-            {
-                return o;
-            }
-
-            return new List<Object>();
-        }
-
-        public void LoadAssetObjects<T>() where T : ScriptableObject
-        {
-            foreach (var bundle in Bundles)
-            {
-                T[] objects = bundle.LoadAllAssets<T>();
-                foreach (var obj in objects)
-                {
-                    ((List<T>)_scriptableObjects[typeof(T)])
-                        .Add(obj); // we don't need to mark the paths, since we're loading from the asset bundles. unity will handle it.
-                }
-            }
-        }
-
-        private void LoadJsonObjects<T>() where T : ScriptableObject
-        {
-            // we want to load it from Assets/TypeName folder
-            string path = ModPath + "/Assets/" + typeof(T).Name;
-            if (!Directory.Exists(path))
-            {
-                // skip if the directory doesn't exist
-                return;
-            }
-
-            string[] files = Directory.GetFiles(path, "*.json", SearchOption.AllDirectories);
-            foreach (var file in files)
-            {
-                // cut off the ModPath/Assets/ and .json, because the LoadJsonObject method will add it back
-
-                string relativePath = file.Replace(ModPath + "/Assets/", "");
-                relativePath = relativePath.Replace(".json", "");
-                relativePath = relativePath.Replace("\\", "/");
-                LoadJsonObject<T>(relativePath);
-            }
-        }
-
-        private static readonly System.Type[] NonConcreteType = new System.Type[]
-        {
-            typeof(ScriptableCondition),
-            typeof(ScriptableItem)
-        };
-
-        private static readonly List<System.Type> ConcreteType =
-        [
-            typeof(ScriptableStatusCondition),
-            typeof(ScriptableSceneTransferCondition),
-            typeof(ScriptablePolymorphCondition),
-            
-            typeof(ScriptableChestpiece),
-            typeof(ScriptableArmorDye),
-            typeof(ScriptableCape),
-            typeof(ScriptableClassTome),
-            typeof(ScriptableHelm),
-            typeof(ScriptableLeggings),
-            typeof(ScriptableRing),
-            typeof(ScriptableShield),
-            typeof(ScriptableSkillScroll),
-            typeof(ScriptableStatusConsumable),
-            typeof(ScriptableTradeItem),
-            typeof(ScriptableWeapon),
-        ];
-
-        private T LoadJsonObject<T>(string path) where T : Object
-        {
-            if (string.IsNullOrEmpty(path))
-            {
-                return null;
-            }
-
-            System.Type type = typeof(T);
-
-            // if this is a non-concrete type, we need to check the json for the type
-            if (NonConcreteType.Contains(type))
-            {
-                // we need to deduce the type from the path
-                string[] parts = path.Split('/');
-                if (parts.Length < 2)
-                {
-                    return null;
-                }
-
-                string typeName = parts[0].ToLower();
-                //find the one that matches a type in ConcreteType
-                foreach (var t in ConcreteType)
-                {
-                    if (t.Name.ToLower() == typeName)
-                    {
-                        type = t;
-                        break;
-                    }
-                }
-
-                if (type == typeof(T))
-                {
-                    return null;
-                }
-            }
-
-            // check if the dictionary already has typeof(T). if not, add it
-            if (!_scriptableObjects.ContainsKey(type))
-            {
-                _scriptableObjects.Add(typeof(T), new List<T>());
-            }
-
-            path = path.Replace(".json", "");
-
-            if (PathToAsset.TryGetValue(path, out var value))
-            {
-                return value as T;
-            }
-
-            if (!File.Exists(ModPath + "/Assets/" + path + ".json"))
-            {
-                return null;
-            }
-
-            // means either it's not loaded, or it's not in the json assets
-            string json = File.ReadAllText(ModPath + "/Assets/" + path + ".json");
-            if (string.IsNullOrEmpty(json))
-            {
-                Plugin.Logger.LogError($"Failed to load json asset {path}");
-                return null;
-            }
-
-            // check that this is a ScriptableObject
-            if (!type.IsSubclassOf(typeof(ScriptableObject)) && type != typeof(ScriptableObject))
-            {
-                Plugin.Logger.LogError($"Type {typeof(T).Name} is not a ScriptableObject");
-                return null;
-            }
-
-            T obj = Utility.JsonUtility.LoadFromJson(json, type) as T;
-
-            if (obj == null)
-            {
-                Plugin.Logger.LogError($"Failed to load json asset {path}");
-                return null;
-            }
-
-            ((List<T>)_scriptableObjects[typeof(T)]).Add(obj);
-            PathToAsset.Add(path, obj);
-
-            return obj;
-        }
-
-        public T LoadModAsset<T>(string assetName) where T : Object
-        {
-            // check if it's in the asset bundles
-            
-            foreach (var bundle in Bundles)
-            {
-                T obj = bundle.LoadAsset<T>(assetName);
-                if (obj != null)
-                {
-                    return obj;
-                }
-            }
-
-            // check if T is a scriptable object
-            if (typeof(T).IsSubclassOf(typeof(ScriptableObject)) || typeof(T) == typeof(ScriptableObject))
-            {
-                T obj = LoadJsonObject<T>(assetName);
-                if (obj != null)
-                {
-                    return obj;
-                }
-            }
-
-            return null;
-        }
-    }
-
     public readonly Dictionary<string, AtlyssToolsLoaderModInfo> ModInfos = new();
 
     private readonly LoaderStateMachine _stateMachine = new();
@@ -288,7 +25,7 @@ public class AtlyssToolsLoader
     {
         public void PreLibraryInit()
         {
-            foreach (var modInfo in AtlyssToolsLoader.Instance.ModInfos.Values)
+            foreach (var modInfo in Instance.ModInfos.Values)
             {
                 foreach (var action in modInfo.OnPreLibraryInit)
                 {
@@ -299,7 +36,7 @@ public class AtlyssToolsLoader
 
         public void PostLibraryInit()
         {
-            foreach (var modInfo in AtlyssToolsLoader.Instance.ModInfos.Values)
+            foreach (var modInfo in Instance.ModInfos.Values)
             {
                 foreach (var action in modInfo.OnPostLibraryInit)
                 {
@@ -310,7 +47,8 @@ public class AtlyssToolsLoader
 
         public void PreCacheInit()
         {
-            foreach (var modInfo in AtlyssToolsLoader.Instance.ModInfos.Values)
+            Instance.LoadAllJsonAssets();
+            foreach (var modInfo in Instance.ModInfos.Values)
             {
                 foreach (var action in modInfo.OnPreCacheInit)
                 {
@@ -321,7 +59,8 @@ public class AtlyssToolsLoader
 
         public void PostCacheInit()
         {
-            foreach (var modInfo in AtlyssToolsLoader.Instance.ModInfos.Values)
+            // load all json assets
+            foreach (var modInfo in Instance.ModInfos.Values)
             {
                 foreach (var action in modInfo.OnPostCacheInit)
                 {
@@ -433,11 +172,7 @@ public class AtlyssToolsLoader
 
         // find all files in ModPath/Assets, if it doesn't end in .manifest
         modInfo.LoadAssetBundles();
-        // Managers
-        foreach (var manager in Instance._managers)
-        {
-            manager.Value.OnModLoad(modInfo);
-        }
+        // delay loading jsons until after asset bundles are loaded
         
         // now initialize the mod
         Plugin.Logger.LogInfo($"Loaded AtlyssTools mod {modName}");
@@ -496,21 +231,19 @@ public class AtlyssToolsLoader
             string[] parts = assetName.Split(':');
             if (parts.Length != 2)
             {
-                Plugin.Logger.LogError($"Failed to load {assetName}");
+                Plugin.Logger.LogError($"Failed to load {assetName} of type {typeof(T).Name} Invalid format");
                 return null;
             }
 
-            return Instance.ModInfos[parts[0].ToLower()].LoadModAsset<T>(parts[1]);
-        }
-
-        // check the resources in each mod
-        foreach (var modInfo in Instance.ModInfos.Values)
-        {
-            T obj = modInfo.LoadModAsset<T>(assetName);
-            if (obj != null)
+            T returnV =  Instance.ModInfos[parts[0].ToLower()].LoadModAsset<T>(parts[1]);
+            
+            if (returnV != null)
             {
-                return obj;
+                return returnV;
             }
+            
+            Plugin.Logger.LogError($"Failed to load {assetName} from {parts[0]} of type { typeof(T).Name }. File not found or invalid");
+            return null;
         }
 
         // check the base resources
@@ -521,10 +254,19 @@ public class AtlyssToolsLoader
             return r;
         }
 
-        Plugin.Logger.LogError($"Failed to load {assetName}");
+        Plugin.Logger.LogError($"Failed to load {assetName} of type {typeof(T).Name}. File not found or invalid");
         return null;
     }
 
+
+    public void LoadAllJsonAssets()
+    {
+        foreach(var modInfo in ModInfos.Values)
+        foreach (var manager in Instance._managers)
+        {
+            manager.Value.OnModLoad(modInfo);
+        }
+    }
 
     // expose delegate lists
     public static void RegisterPreLibraryInit(string modName, Action action)
@@ -601,6 +343,58 @@ public class AtlyssToolsLoader
             
             // skip, the assembly will be loaded when it registers itself
             continue;
+        }
+    }
+    
+    public void GenerateDump()
+    {
+        // dump all scriptable objects to a json file
+        string scriptablesPath = Paths.PluginPath + "/AtlyssToolsDump.json";
+        using (StreamWriter writer = new(scriptablesPath))
+        {
+            foreach (var modInfo in ModInfos.Values)
+            {
+                // write the mod name
+                writer.WriteLine($"Mod: {modInfo.ModId}");
+                foreach (var manager in _managers)
+                {
+                    // write the manager name
+                    writer.WriteLine($"Manager: {manager.Key.Name}");
+                    foreach (var obj in modInfo.GetModScriptableObjects(manager.Key))
+                    {
+                        // we just want to write the name
+                        writer.WriteLine( manager.Value.GetName(obj as ScriptableObject));
+                    }
+                }
+                
+                writer.WriteLine();
+                writer.WriteLine();
+            }
+        }
+        
+        Plugin.Logger.LogInfo($"Dumped all scriptable objects to {scriptablesPath}");
+        
+        // dump all assets from asset bundles
+        string assetsPath = Paths.PluginPath + "/AtlyssToolsAssetsDump.json";
+        
+        using (StreamWriter writer = new(assetsPath))
+        {
+            foreach (var modInfo in ModInfos.Values)
+            {
+                // write the mod name
+                writer.WriteLine($"Mod: {modInfo.ModId}");
+                foreach (var bundle in modInfo.Bundles)
+                {
+                    writer.WriteLine($"Bundle: {bundle.name}");
+                    foreach (var asset in bundle.GetAllAssetNames())
+                    {
+                        writer.WriteLine(asset);
+                    }
+                }
+                
+                writer.WriteLine();
+                writer.WriteLine();
+            }
         }
     }
     

@@ -1,17 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Newtonsoft.Json.Linq;
 using UnityEngine;
 
 namespace AtlyssTools.Registries;
 
-[ManagerAttribute]
-public class StatusConditionManager : ScriptablesManager<ScriptableStatusCondition>
+public class ConditionManager<T> : ScriptablesManager<T> where T : ScriptableObject 
 {
-    private StatusConditionManager()
-    {
-    }
-
+    protected ConditionManager() { }
+    
     protected override IDictionary InternalGetCached()
     {
         return GameManager._current._cachedScriptableConditions;
@@ -19,52 +17,36 @@ public class StatusConditionManager : ScriptablesManager<ScriptableStatusConditi
 
     public override string GetName(ScriptableObject obj)
     {
-        ScriptableStatusCondition condition = (ScriptableStatusCondition)obj;
+        ScriptableCondition condition = (ScriptableCondition)obj;
         return $"{condition._conditionName}_{condition._conditionRank}";
     }
 
+    public override string GetJsonName(JObject obj)
+    {
+        return obj["_conditionName"]?.Value<string>();
+    }
+}
+
+[ManagerAttribute]
+public class StatusConditionManager : ConditionManager<ScriptableStatusCondition>
+{
+    protected StatusConditionManager() { }
     public static StatusConditionManager Instance => _instance ??= new();
     private static StatusConditionManager _instance;
 }
 
 [ManagerAttribute]
-public class SceneTransferConditionManager : ScriptablesManager<ScriptableSceneTransferCondition>
+public class SceneTransferConditionManager : ConditionManager<ScriptableSceneTransferCondition>
 {
-    private SceneTransferConditionManager()
-    {
-    }
-
-    protected override IDictionary InternalGetCached()
-    {
-        return GameManager._current._cachedScriptableConditions;
-    }
-
-    public override string GetName(ScriptableObject obj)
-    {
-        return ((ScriptableSceneTransferCondition)obj)._conditionName;
-    }
-
+    protected SceneTransferConditionManager() { }
     public static SceneTransferConditionManager Instance => _instance ??= new();
     private static SceneTransferConditionManager _instance;
 }
 
 [ManagerAttribute]
-public class PolymorphConditionManager : ScriptablesManager<ScriptablePolymorphCondition>
+public class PolymorphConditionManager : ConditionManager<ScriptablePolymorphCondition>
 {
-    private PolymorphConditionManager()
-    {
-    }
-
-    protected override IDictionary InternalGetCached()
-    {
-        return GameManager._current._cachedScriptableConditions;
-    }
-
-    public override string GetName(ScriptableObject obj)
-    {
-        return ((ScriptablePolymorphCondition)obj)._conditionName;
-    }
-
+    protected PolymorphConditionManager() { }
     public static PolymorphConditionManager Instance => _instance ??= new();
     private static PolymorphConditionManager _instance;
 }

@@ -1,14 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using Newtonsoft.Json.Linq;
 using UnityEngine;
 
 namespace AtlyssTools.Registries;
 
 public class CreepManager : ScriptablesManager<ScriptableCreep>
 {
-    private CreepManager()
-    {
-    }
+    protected CreepManager() { }
 
     protected override IDictionary InternalGetCached()
     {
@@ -19,6 +18,11 @@ public class CreepManager : ScriptablesManager<ScriptableCreep>
     {
         return ((ScriptableCreep)obj)._creepName;
     }
+    
+    public override string GetJsonName(JObject obj)
+    {
+        return obj["_creepName"]?.Value<string>();
+    }
 
     public static CreepManager Instance => _instance ??= new();
     private static CreepManager _instance;
@@ -26,18 +30,23 @@ public class CreepManager : ScriptablesManager<ScriptableCreep>
 
 public class QuestManager : ScriptablesManager<ScriptableQuest>
 {
-    private QuestManager()
+    protected QuestManager()
     {
     }
-
+        
     protected override IDictionary InternalGetCached()
     {
         return GameManager._current._cachedScriptableQuests;
     }
-
+    
     public override string GetName(ScriptableObject obj)
     {
         return ((ScriptableQuest)obj)._questName;
+    }
+    
+    public override string GetJsonName(JObject obj)
+    {
+        return obj["_questName"]?.Value<string>();
     }
 
     public static QuestManager Instance => _instance ??= new();
@@ -46,7 +55,7 @@ public class QuestManager : ScriptablesManager<ScriptableQuest>
 
 public class PlayerRaceManager : ScriptablesManager<ScriptablePlayerRace>
 {
-    private PlayerRaceManager()
+    protected PlayerRaceManager()
     {
     }
 
@@ -59,6 +68,11 @@ public class PlayerRaceManager : ScriptablesManager<ScriptablePlayerRace>
     {
         return ((ScriptablePlayerRace)obj)._raceName;
     }
+    
+    public override string GetJsonName(JObject obj)
+    {
+        return obj["_raceName"]?.Value<string>();
+    }
 
     public static PlayerRaceManager Instance => _instance ??= new();
     private static PlayerRaceManager _instance;
@@ -66,9 +80,7 @@ public class PlayerRaceManager : ScriptablesManager<ScriptablePlayerRace>
 
 public class CombatElementManager : ScriptablesManager<ScriptableCombatElement>
 {
-    private CombatElementManager()
-    {
-    }
+    protected CombatElementManager() { }
 
     protected override IDictionary InternalGetCached()
     {
@@ -79,6 +91,11 @@ public class CombatElementManager : ScriptablesManager<ScriptableCombatElement>
     {
         return ((ScriptableCombatElement)obj)._elementName;
     }
+    
+    public override string GetJsonName(JObject obj)
+    {
+        return obj["_elementName"]?.Value<string>();
+    }
 
     public static CombatElementManager Instance => _instance ??= new();
     private static CombatElementManager _instance;
@@ -86,7 +103,7 @@ public class CombatElementManager : ScriptablesManager<ScriptableCombatElement>
 
 public class StatModifierManager : ScriptablesManager<ScriptableStatModifier>
 {
-    private StatModifierManager()
+    protected StatModifierManager()
     {
     }
 
@@ -99,6 +116,11 @@ public class StatModifierManager : ScriptablesManager<ScriptableStatModifier>
     {
         return ((ScriptableStatModifier)obj)._modifierTag;
     }
+    
+    public override string GetJsonName(JObject obj)
+    {
+        return obj["_modifierTag"]?.Value<string>();
+    }
 
     public static StatModifierManager Instance => _instance ??= new();
     private static StatModifierManager _instance;
@@ -107,7 +129,7 @@ public class StatModifierManager : ScriptablesManager<ScriptableStatModifier>
 [ManagerAttribute]
 public class PlayerBaseClassManager : ScriptablesManager<ScriptablePlayerBaseClass>
 {
-    private PlayerBaseClassManager()
+    protected PlayerBaseClassManager()
     {
     }
 
@@ -119,6 +141,11 @@ public class PlayerBaseClassManager : ScriptablesManager<ScriptablePlayerBaseCla
     public override string GetName(ScriptableObject obj)
     {
         return ((ScriptablePlayerBaseClass)obj)._className;
+    }
+    
+    public override string GetJsonName(JObject obj)
+    {
+        return obj["_className"]?.Value<string>();
     }
 
     public static PlayerBaseClassManager Instance => _instance ??= new();

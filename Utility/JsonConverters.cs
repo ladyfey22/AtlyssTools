@@ -115,9 +115,29 @@ public class BaseConverter<T> : JsonConverter<T> where T : ScriptableObject
     public override T ReadJson(JsonReader reader, System.Type objectType, T existingValue, bool hasExistingValue,
         JsonSerializer serializer)
     {
-        T obj = ScriptableObject.CreateInstance<T>();
-        serializer.Populate(reader, obj);
-        return obj;
+        // check the depth. 0 depth = the object we need to read directly, anything past that, scriptable objects should be a string referring to the asset
+        
+        if (reader.Depth == 0)
+        {
+            T obj = ScriptableObject.CreateInstance<T>();
+            serializer.Populate(reader, obj);
+            return obj;
+        }
+        // read the asset name
+        string name = (reader.Value?.ToString());
+        if(String.IsNullOrEmpty(name))
+        {
+            return null;
+        }
+        
+        T asset = AtlyssToolsLoader.LoadAsset<T>(name);
+        
+        if(asset == null)
+        {
+            Plugin.Logger.LogError($"Failed to load asset {name} in {JsonUtility.currentFilePath}");
+        }
+        
+        return asset;
     }
 }
 
@@ -176,93 +196,120 @@ public class Vector4Converter : JsonConverter<Vector4>
 
 public class JsonUtility
 {
-    public static JsonSerializerSettings GetSettings(System.Type type)
+    
+    public static string currentFilePath; // for debugging
+    
+    private static List<JsonConverter> _converters;
+
+    private static readonly List<System.Type> ScriptableTypes =
+        [
+            typeof(ScriptableArmorRender),
+            typeof(ScriptableCombatElement),
+            typeof(ScriptableCreep),
+            typeof(ScriptableDialogData),
+            typeof(ScriptableEmoteList),
+            typeof(ScriptableLootTable),
+            typeof(ScriptableMapData),
+            typeof(ScriptablePlayerBaseClass),
+            typeof(ScriptablePlayerRace),
+            typeof(ScriptablePolymorphCondition),
+            typeof(ScriptableQuest),
+            typeof(ScriptableSceneTransferCondition),
+            typeof(ScriptableShopkeep),
+            typeof(ScriptableSkill),
+            typeof(ScriptableStatAttribute),
+            typeof(ScriptableStatModifier),
+            typeof(ScriptableStatModifierTable),
+            typeof(ScriptableStatusCondition),
+            typeof(ScriptableWeaponProjectileSet),
+            typeof(ScriptableWeaponType),
+            typeof(CastEffectCollection),
+            typeof(ScriptableChestpiece),
+            typeof(ScriptableArmor),
+            typeof(ScriptableArmorDye),
+            typeof(ScriptableCape),
+            typeof(ScriptableClassTome),
+            typeof(ScriptableHelm),
+            typeof(ScriptableLeggings),
+            typeof(ScriptableRing),
+            typeof(ScriptableShield),
+            typeof(ScriptableSkillScroll),
+            typeof(ScriptableStatusConsumable),
+            typeof(ScriptableTradeItem),
+            typeof(ScriptableWeapon),
+            typeof(ScriptableItem),
+            typeof(ScriptableCondition),
+            typeof(CastEffectCollection),
+        ];
+
+    private static readonly List<System.Type> AssetTypes =
+        [
+            typeof(Texture),
+            typeof(AudioClip),
+            typeof(Sprite),
+            typeof(GameObject),
+            typeof(Mesh),
+        ];
+    
+    static JsonConverter CreateGneericBase(System.Type type)
     {
-        // get the associated manager
-        List<JsonConverter> converters = new List<JsonConverter>()
-        {
-            // all the scriptable object converters
-            new AssetConverter<ScriptableArmorRender>(),
-            new AssetConverter<ScriptableCombatElement>(),
-            new AssetConverter<ScriptableCreep>(),
-            new AssetConverter<ScriptableDialogData>(),
-            new AssetConverter<ScriptableEmoteList>(),
-            new AssetConverter<ScriptableLootTable>(),
-            new AssetConverter<ScriptableMapData>(),
-            new AssetConverter<ScriptablePlayerBaseClass>(),
-            new AssetConverter<ScriptablePlayerRace>(),
-            new AssetConverter<ScriptablePolymorphCondition>(),
-            new AssetConverter<ScriptableQuest>(),
-            new AssetConverter<ScriptableSceneTransferCondition>(),
-            new AssetConverter<ScriptableShopkeep>(),
-            new AssetConverter<ScriptableSkill>(),
-            new AssetConverter<ScriptableStatAttribute>(),
-            new AssetConverter<ScriptableStatModifier>(),
-            new AssetConverter<ScriptableStatModifierTable>(),
-            new AssetConverter<ScriptableStatusCondition>(),
-            new AssetConverter<ScriptableWeaponProjectileSet>(),
-            new AssetConverter<ScriptableWeaponType>(),
-            new AssetConverter<CastEffectCollection>(),
-
-
-            // items
-            new AssetConverter<ScriptableChestpiece>(),
-            new AssetConverter<ScriptableArmor>(),
-            new AssetConverter<ScriptableArmorDye>(),
-            new AssetConverter<ScriptableCape>(),
-            new AssetConverter<ScriptableClassTome>(),
-            new AssetConverter<ScriptableHelm>(),
-            new AssetConverter<ScriptableLeggings>(),
-            new AssetConverter<ScriptableRing>(),
-            new AssetConverter<ScriptableShield>(),
-            new AssetConverter<ScriptableSkillScroll>(),
-            new AssetConverter<ScriptableStatusConsumable>(),
-            new AssetConverter<ScriptableTradeItem>(),
-            new AssetConverter<ScriptableWeapon>(),
-            new AssetConverter<ScriptableItem>(),
-
-            new AssetConverter<ScriptableCondition>(),
-            //
-            new AssetConverter<CastEffectCollection>(),
-
-            // custom converter
-            new AssetConverter<Texture>(),
-            new AssetConverter<AudioClip>(),
-            new AssetConverter<Sprite>(),
-            new Vector3Converter(),
-            new AssetConverter<GameObject>(),
-            new ColorConverter(),
-            new Vector2Converter(),
-            new Vector4Converter(),
-            new AssetConverter<Mesh>(),
-        };
-
-        converters.RemoveAll(c =>
-            (c.GetType().GetGenericArguments().Length > 0) && (c.GetType().GetGenericArguments()[0] == type ||
-                                                               type.IsSubclassOf(
-                                                                   c.GetType().GetGenericArguments()[0])));
-
-        // double check Type is a ScriptableObject
-        if (!type.IsSubclassOf(typeof(ScriptableObject)))
-        {
-            throw new Exception("Type must be a ScriptableObject");
-        }
-
-
-        // we have to do this through ugly reflection
-
-        // add the base converter
         System.Type baseConverterType = typeof(BaseConverter<>);
         System.Type[] typeArgs = [type];
         System.Type genericType = baseConverterType.MakeGenericType(typeArgs);
-        converters.Add((JsonConverter)Activator.CreateInstance(genericType));
+        return (JsonConverter)Activator.CreateInstance(genericType);
+    }
+    
+    static JsonConverter CreateAssetConverter(System.Type type)
+    {
+        System.Type assetConverterType = typeof(AssetConverter<>);
+        System.Type[] typeArgs = [type];
+        System.Type genericType = assetConverterType.MakeGenericType(typeArgs);
+        return (JsonConverter)Activator.CreateInstance(genericType);
+    }
+    
+    public static JsonSerializerSettings GetSettings(System.Type type)
+    {
+        // double check Type is a ScriptableObject in the list
+        if (!ScriptableTypes.Contains(type) && !AssetTypes.Contains(type))
+        {
+            throw new("Type must be a ScriptableObject");
+        }
+        
+        
+        if (_converters == null)
+        {
+            // get the associated manager
+            _converters =
+            [
+                new Vector3Converter(),
+                new ColorConverter(),
+                new Vector2Converter(),
+                new Vector4Converter()
+            ];
+            
+            foreach (System.Type scriptableType in ScriptableTypes)
+            {
+                _converters.Add(CreateGneericBase(scriptableType));
+            }
+            
+            foreach (System.Type assetType in AssetTypes)
+            {
+                _converters.Add(CreateAssetConverter(assetType));
+            }
+
+            // double check Type is a ScriptableObject
+            if (!type.IsSubclassOf(typeof(ScriptableObject)))
+            {
+                throw new("Type must be a ScriptableObject");
+            }
+        }
 
 
-        return new JsonSerializerSettings
+        return new()
         {
             PreserveReferencesHandling = PreserveReferencesHandling.Objects,
             TypeNameHandling = TypeNameHandling.Auto,
-            Converters = converters
+            Converters = _converters
         };
     }
 
@@ -275,7 +322,6 @@ public class JsonUtility
 
         // apply our custom serialization
         JsonSerializerSettings settings = GetSettings(type);
-
         return JsonConvert.DeserializeObject(json, type, settings);
     }
 
@@ -288,21 +334,26 @@ public class JsonUtility
 
         // apply our custom serialization
         JsonSerializerSettings settings = GetSettings(typeof(T));
-        return JsonConvert.DeserializeObject<T>(json, settings);
+        T returnV = JsonConvert.DeserializeObject<T>(json, settings);
+        return returnV;
     }
 
     public static T ReadFromFile<T>(string path) where T : ScriptableObject
     {
         if (string.IsNullOrEmpty(path))
         {
+            Plugin.Logger.LogError("Path is null or empty");
             return null;
         }
 
         if (!File.Exists(path))
         {
+            Plugin.Logger.LogError($"File {path} does not exist");
             return null;
         }
 
+        currentFilePath = path;
+        
         string json = File.ReadAllText(path);
         return LoadFromJson<T>(json);
     }

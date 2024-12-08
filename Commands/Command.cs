@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using AtlyssTools.Utility;
@@ -47,9 +48,17 @@ public class CommandManager : AttributeRegisterableManager<Command, CommandAttri
         {
             if (command.Name == commandName || command.Aliases.Contains(commandName))
             {
-                if (command.Execute(ChatManager.Instance, args))
+                try
                 {
-                    return true;
+                    if (command.Execute(ChatManager.Instance, args))
+                    {
+                        return true;
+                    }
+                }
+                catch (Exception e)
+                {
+                    Plugin.Logger.LogError($"Error executing command '{commandName}': {e}");
+                    return false;
                 }
 
                 command.DisplayUsage(ChatManager.Instance);
@@ -91,8 +100,6 @@ public class HelpCommand : Command
         Name = "help";
         Description = "Displays a list of available commands";
         Aliases = new[] {"?"};
-        
-        Plugin.Logger.LogInfo("Help command registered");
     }
 
     public override bool Execute(ChatManager chatManager, string[] args)
@@ -132,13 +139,32 @@ public class AtlyssToolsCommand : Command
 
     public override bool Execute(ChatManager chatManager, string[] args)
     {
-        chatManager.SendMessage("AtlyssTools version: " + Plugin.Version);
+        // subcommands
+        if(args.Length > 0)
+        {
+            if(args[0].Equals("dump"))
+            {
+                // dump scriptable objects
+                AtlyssToolsLoader.Instance.GenerateDump();
+            }
+            else
+            if(args[0].Equals("version"))
+            {
+                chatManager.SendMessage($"AtlyssTools version: {Plugin.Version}");
+            }
+            else
+            {
+                chatManager.SendMessage($"Unknown subcommand '{args[0]}'");
+                // display usage
+                DisplayUsage(chatManager);
+            }
+        }
         return true;
     }
 
     public override bool DisplayUsage(ChatManager chatManager)
     {
-        chatManager.SendMessage("Usage: /atlysstools");
+        chatManager.SendMessage("Usage: /atlysstools [dump|version]");
         return true;
     }
 }

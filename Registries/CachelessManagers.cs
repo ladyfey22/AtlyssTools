@@ -1,15 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Newtonsoft.Json.Linq;
 using UnityEngine;
 
 namespace AtlyssTools.Registries;
 
 public abstract class CachelessManager<T> : ScriptablesManager<T> where T : ScriptableObject
 {
+    protected CachelessManager() { }
     private readonly Dictionary<string, T> _cached = new();
-
-
     public override void PreCacheInit()
     {
         _cached.Clear();
@@ -32,10 +32,12 @@ public abstract class CachelessManager<T> : ScriptablesManager<T> where T : Scri
     {
         return obj.name;
     }
-
-    // we want to load the asset directly if we are cacheless
-
-
+    
+    public override string GetJsonName(JObject obj)
+    {
+        return obj["name"]?.Value<string>();
+    }
+    
     protected override IDictionary InternalGetCached()
     {
         return _cached;
@@ -45,10 +47,7 @@ public abstract class CachelessManager<T> : ScriptablesManager<T> where T : Scri
 [ManagerAttribute]
 public class ArmorRenderManager : CachelessManager<ScriptableArmorRender>
 {
-    private ArmorRenderManager()
-    {
-    }
-
+    protected ArmorRenderManager() { }
     public static ArmorRenderManager Instance => _instance ??= new();
     private static ArmorRenderManager _instance;
 }
@@ -56,10 +55,7 @@ public class ArmorRenderManager : CachelessManager<ScriptableArmorRender>
 [ManagerAttribute]
 public class ShopkeepManager : CachelessManager<ScriptableShopkeep>
 {
-    private ShopkeepManager()
-    {
-    }
-
+    protected ShopkeepManager() { }
     public override string GetName(ScriptableObject obj)
     {
         return ((ScriptableShopkeep)obj)._shopName;
@@ -72,10 +68,7 @@ public class ShopkeepManager : CachelessManager<ScriptableShopkeep>
 [ManagerAttribute]
 public class CastEffectCollectionManager : CachelessManager<CastEffectCollection>
 {
-    private CastEffectCollectionManager()
-    {
-    }
-
+    protected CastEffectCollectionManager() { }
     public static CastEffectCollectionManager Instance => _instance ??= new();
     private static CastEffectCollectionManager _instance;
 }

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Newtonsoft.Json.Linq;
 using UnityEngine;
 
 namespace AtlyssTools.Registries;
@@ -30,15 +31,17 @@ public abstract class ItemManager<T> : ScriptablesManager<T> where T : Scriptabl
     {
         return ((ScriptableItem)obj)._itemName;
     }
+    
+    public override string GetJsonName(JObject obj)
+    {
+        return obj["_itemName"]?.Value<string>();
+    }
 }
 
 [ManagerAttribute]
 public class ChestpieceManager : ItemManager<ScriptableChestpiece>
 {
-    private ChestpieceManager()
-    {
-    }
-
+    protected ChestpieceManager() { }
     public static ChestpieceManager Instance => _instance ??= new();
     private static ChestpieceManager _instance;
 }
@@ -46,10 +49,7 @@ public class ChestpieceManager : ItemManager<ScriptableChestpiece>
 [ManagerAttribute]
 public class ArmorDyeManager : ItemManager<ScriptableArmorDye>
 {
-    private ArmorDyeManager()
-    {
-    }
-
+    protected ArmorDyeManager() { }
     public static ArmorDyeManager Instance => _instance ??= new();
     private static ArmorDyeManager _instance;
 }
@@ -57,10 +57,7 @@ public class ArmorDyeManager : ItemManager<ScriptableArmorDye>
 [ManagerAttribute]
 public class CapeManager : ItemManager<ScriptableCape>
 {
-    private CapeManager()
-    {
-    }
-
+    protected CapeManager() { }
     public static CapeManager Instance => _instance ??= new();
     private static CapeManager _instance;
 }
@@ -68,10 +65,7 @@ public class CapeManager : ItemManager<ScriptableCape>
 [ManagerAttribute]
 public class ClassTomeManager : ItemManager<ScriptableClassTome>
 {
-    private ClassTomeManager()
-    {
-    }
-
+    protected ClassTomeManager() { }
     public static ClassTomeManager Instance => _instance ??= new();
     private static ClassTomeManager _instance;
 }
@@ -79,10 +73,7 @@ public class ClassTomeManager : ItemManager<ScriptableClassTome>
 [ManagerAttribute]
 public class HelmManager : ItemManager<ScriptableHelm>
 {
-    private HelmManager()
-    {
-    }
-
+    protected HelmManager() { }
     public static HelmManager Instance => _instance ??= new();
     private static HelmManager _instance;
 }
@@ -90,10 +81,7 @@ public class HelmManager : ItemManager<ScriptableHelm>
 [ManagerAttribute]
 public class LeggingsManager : ItemManager<ScriptableLeggings>
 {
-    private LeggingsManager()
-    {
-    }
-
+    protected LeggingsManager() { }
     public static LeggingsManager Instance => _instance ??= new();
     private static LeggingsManager _instance;
 }
@@ -101,10 +89,7 @@ public class LeggingsManager : ItemManager<ScriptableLeggings>
 [ManagerAttribute]
 public class RingManager : ItemManager<ScriptableRing>
 {
-    private RingManager()
-    {
-    }
-
+    protected RingManager() { }
     public static RingManager Instance => _instance ??= new();
     private static RingManager _instance;
 }
@@ -112,10 +97,7 @@ public class RingManager : ItemManager<ScriptableRing>
 [ManagerAttribute]
 public class ShieldManager : ItemManager<ScriptableShield>
 {
-    private ShieldManager()
-    {
-    }
-
+    protected ShieldManager() { }
     public static ShieldManager Instance => _instance ??= new();
     private static ShieldManager _instance;
 }
@@ -123,10 +105,7 @@ public class ShieldManager : ItemManager<ScriptableShield>
 [ManagerAttribute]
 public class SkillScrollManager : ItemManager<ScriptableSkillScroll>
 {
-    private SkillScrollManager()
-    {
-    }
-
+    protected SkillScrollManager() { }
     public static SkillScrollManager Instance => _instance ??= new();
     private static SkillScrollManager _instance;
 }
@@ -134,10 +113,7 @@ public class SkillScrollManager : ItemManager<ScriptableSkillScroll>
 [ManagerAttribute]
 public class StatusConsumableManager : ItemManager<ScriptableStatusConsumable>
 {
-    private StatusConsumableManager()
-    {
-    }
-
+    protected StatusConsumableManager() { }
     public static StatusConsumableManager Instance => _instance ??= new();
     private static StatusConsumableManager _instance;
 }
@@ -145,10 +121,7 @@ public class StatusConsumableManager : ItemManager<ScriptableStatusConsumable>
 [ManagerAttribute]
 public class TradeItemManager : ItemManager<ScriptableTradeItem>
 {
-    private TradeItemManager()
-    {
-    }
-
+    protected TradeItemManager() { }
     public static TradeItemManager Instance => _instance ??= new();
     private static TradeItemManager _instance;
 }
@@ -156,10 +129,7 @@ public class TradeItemManager : ItemManager<ScriptableTradeItem>
 [ManagerAttribute]
 public class WeaponManager : ItemManager<ScriptableWeapon>
 {
-    private WeaponManager()
-    {
-    }
-
+    protected WeaponManager() { }
     public static WeaponManager Instance => _instance ??= new();
     private static WeaponManager _instance;
 }

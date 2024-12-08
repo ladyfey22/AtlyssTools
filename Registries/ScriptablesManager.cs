@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using AtlyssTools.Utility;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using UnityEngine;
 using JsonUtility = AtlyssTools.Utility.JsonUtility;
 
@@ -10,13 +11,52 @@ namespace AtlyssTools.Registries;
 
 public abstract class BaseScriptablesManager
 {
+    /// <summary>
+    /// Gets the type of object that the manager is managing.
+    /// </summary>
+    /// <returns>The type of object that the manager is managing.</returns>
     public abstract System.Type GetObjectType();
-    public abstract IList GetModdedObjects();
+
+    /// <summary>
+    /// Gets the cached objects for the manager, which is used to store the objects.
+    /// If this is a scriptable object with a base game cache, it should return the GameManager's cached objects.
+    /// If this has no default cache, it should keep its own cache.
+    /// </summary>
+    /// <returns> The cached objects for the manager. </returns>
+    
     protected abstract IDictionary InternalGetCached();
+    
+    /// <summary>
+    /// Gets the state manager for the object, which is used to call the various OnState methods.
+    /// </summary>
+    /// <returns></returns>
     public abstract LoaderStateManager GetStateManager();
-    public abstract void OnModLoad(AtlyssToolsLoader.AtlyssToolsLoaderModInfo modInfo);
+    
+    /// <summary>
+    /// Called when a mod is loaded.
+    /// </summary>
+    /// <param name="modInfo"></param>
+    public abstract void OnModLoad(AtlyssToolsLoaderModInfo modInfo);
+    
+    /// <summary>
+    /// Creates a new instance of the object.
+    /// </summary>
+    /// <returns>A new instance of the scriptable object.</returns>
     public abstract ScriptableObject Instantiate();
+
+    /// <summary>
+    /// Gets the name of the object from the ScriptableObject.
+    /// </summary>
+    /// <param name="obj">The base object to get the name from.</param>
+    /// <returns>The name of the object.</returns>
     public abstract string GetName(ScriptableObject obj);
+    
+    /// <summary>
+    /// Gets the name of the object from a JSON file.
+    /// </summary>
+    /// <param name="obj">The base object to get the name from.</param>
+    /// <returns>The name of the object, or null if failed to locate.</returns>
+    public abstract string GetJsonName(JObject obj);
 }
 
 public abstract class ScriptablesManager<T> : BaseScriptablesManager where T : ScriptableObject
@@ -32,7 +72,6 @@ public abstract class ScriptablesManager<T> : BaseScriptablesManager where T : S
 
     protected ScriptablesManager()
     {
-        //Instance = this;
         StateManager = new ScriptablesStateManager(this);
     }
 
@@ -65,7 +104,7 @@ public abstract class ScriptablesManager<T> : BaseScriptablesManager where T : S
         return typeof(T);
     }
 
-    public override IList GetModdedObjects()
+    public virtual IList GetModdedObjects()
     {
         return AtlyssToolsLoader.GetScriptableObjects<T>();
     }
@@ -81,7 +120,7 @@ public abstract class ScriptablesManager<T> : BaseScriptablesManager where T : S
         return InternalGetCached() as Dictionary<string, T>;
     }
 
-    public void LoadAllFromAssets()
+    public void LoadToCache()
     {
         // get skills from AtlyssToolsLoader
         var objects = AtlyssToolsLoader.GetScriptableObjects<T>();
@@ -92,7 +131,7 @@ public abstract class ScriptablesManager<T> : BaseScriptablesManager where T : S
         }
     }
 
-    public override void OnModLoad(AtlyssToolsLoader.AtlyssToolsLoaderModInfo modInfo)
+    public override void OnModLoad(AtlyssToolsLoaderModInfo modInfo)
     {
         // asset bundles already loaded
         modInfo.LoadScriptableType<T>();
@@ -167,7 +206,7 @@ public abstract class ScriptablesManager<T> : BaseScriptablesManager where T : S
 
     public virtual void PostCacheInit()
     {
-        LoadAllFromAssets();
+        LoadToCache();
     }
 
     public virtual void PreLibraryInit()
@@ -182,6 +221,4 @@ public abstract class ScriptablesManager<T> : BaseScriptablesManager where T : S
     {
         return ScriptableObject.CreateInstance<T>();
     }
-
-    //public ScriptablesManager<T> Instance { get; private set; }
 }

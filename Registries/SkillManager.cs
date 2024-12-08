@@ -5,6 +5,7 @@ using System.Linq;
 using AtlyssTools.Utility;
 using BepInEx;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using UnityEngine;
 
 namespace AtlyssTools.Registries;
@@ -14,7 +15,7 @@ public class SkillManager : ScriptablesManager<ScriptableSkill>
 {
     public readonly List<string> GeneralSkills = new();
 
-    private SkillManager()
+    protected SkillManager()
     {
     }
 
@@ -44,6 +45,11 @@ public class SkillManager : ScriptablesManager<ScriptableSkill>
     {
         return ((ScriptableSkill)obj)._skillName;
     }
+    
+    public override string GetJsonName(JObject obj)
+    {
+        return obj["_skillName"]?.Value<string>();
+    }
 
     public override void PreLibraryInit()
     {
@@ -61,8 +67,7 @@ public class SkillManager : ScriptablesManager<ScriptableSkill>
             GameManager._current._statLogics._generalSkills = generalSkills.ToArray();
         }
     }
-
-
+    
     internal static SkillManager Instance => _instance ??= new();
     private static SkillManager _instance;
 }
