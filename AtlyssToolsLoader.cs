@@ -245,9 +245,18 @@ public class AtlyssToolsLoader
             Plugin.Logger.LogError($"Failed to load {assetName} from {parts[0]} of type { typeof(T).Name }. File not found or invalid");
             return null;
         }
+        
+        // if no mod is specified check them all
+        foreach (var modInfo in Instance.ModInfos.Values)
+        {
+            T returnV = modInfo.LoadModAsset<T>(assetName);
+            if (returnV != null)
+            {
+                return returnV;
+            }
+        }
 
         // check the base resources
-
         T r = UnityEngine.Resources.Load<T>(assetName);
         if (r != null)
         {

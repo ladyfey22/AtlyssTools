@@ -29,8 +29,6 @@ public abstract class Command
 
 public class CommandManager : AttributeRegisterableManager<Command, CommandAttribute>
 {
-    
-    
     public CommandManager()
     {
         if(Instance != null)
@@ -43,7 +41,6 @@ public class CommandManager : AttributeRegisterableManager<Command, CommandAttri
     public bool ExecuteCommand(string commandName, string[] args)
     {
         // check each registered command list (commands are based on modid)
-        
         foreach(var command in GetRegisteredList())
         {
             if (command.Name == commandName || command.Aliases.Contains(commandName))
@@ -106,10 +103,17 @@ public class HelpCommand : Command
     {
         if(args.Length > 0)
         {
-            if (CommandManager.Instance.ExecuteCommand(args[0], new string[0]))
+            foreach (var command in CommandManager.Instance.GetRegisteredList())
             {
-                return true;
+                if (command.Name == args[0] || command.Aliases.Contains(args[0]))
+                {
+                    command.DisplayUsage(chatManager);
+                    return true;
+                }
             }
+            
+            chatManager.SendMessage($"Command '{args[0]}' not found");
+            return true;
         }
         
         foreach (var command in CommandManager.Instance.GetRegisteredList())

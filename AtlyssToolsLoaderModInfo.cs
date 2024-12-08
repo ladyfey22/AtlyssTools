@@ -141,11 +141,11 @@ namespace AtlyssTools;
             }
         }
 
-        private static readonly System.Type[] NonConcreteType = new System.Type[]
-        {
+        private static readonly System.Type[] NonConcreteType =
+        [
             typeof(ScriptableCondition),
             typeof(ScriptableItem)
-        };
+        ];
 
         private static readonly List<System.Type> ConcreteType =
         [
@@ -183,7 +183,6 @@ namespace AtlyssTools;
                 string[] parts = path.Split('/');
                 if (parts.Length < 2)
                 {
-                    Plugin.Logger.LogError($"Failed to deduce type from path {path} in mod {ModId}");
                     return null;
                 }
 
@@ -200,7 +199,6 @@ namespace AtlyssTools;
 
                 if (type == typeof(T))
                 {
-                    Plugin.Logger.LogError($"Failed to deduce type from path {path} in mod {ModId}");
                     return null;
                 }
                 
