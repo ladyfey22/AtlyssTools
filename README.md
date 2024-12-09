@@ -17,9 +17,11 @@ it [here](https://docs.bepinex.dev/articles/user_guide/installation/index.html).
 
 Please use BepInEx 5.4.23.
 
-To install AtlyssTools, simply download the latest release from the releases page and extract it into your BepInEx plugins folder.
+To install AtlyssTools, simply download the latest release from the releases page and extract it into your BepInEx
+plugins folder.
 
 ## Resources
+
 [Wiki](https://github.com/ladyfey22/AtlyssTools/wiki)
 
 [Example AtlyssTools Mod](https://github.com/ladyfey22/AtlyssToolsExampleMod)
@@ -35,4 +37,5 @@ This is in the JSON format loadaable by AtlyssTools.
 - Test and add more scriptable objects, and add their associated JSON dump.
 - Provide a full list of all assets and their paths.
 - Create an easy method of asset bundling.
-- Find a way to only partially replace assets, allowing for more modular modding. IE, only replace the sprite of a skill or add a new item to a shop.
+- Find a way to only partially replace assets, allowing for more modular modding. IE, only replace the sprite of a skill
+  or add a new item to a shop.

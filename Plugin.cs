@@ -1,5 +1,4 @@
 ﻿using System.Reflection;
-using AtlyssTools.Registries;
 using BepInEx;
 using BepInEx.Logging;
 using HarmonyLib;
@@ -10,9 +9,9 @@ namespace AtlyssTools;
 [BepInProcess("Atlyss.exe")]
 public class Plugin : BaseUnityPlugin
 {
+    public const string Version = "1.0.4";
     internal new static ManualLogSource Logger;
     private string _pluginPath;
-    public const string Version = "1.0.3";
 
     private void Awake()
     {

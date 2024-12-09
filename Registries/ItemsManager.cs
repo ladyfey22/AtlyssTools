@@ -1,6 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
 using Newtonsoft.Json.Linq;
 using UnityEngine;
 
@@ -31,7 +29,7 @@ public abstract class ItemManager<T> : ScriptablesManager<T> where T : Scriptabl
     {
         return ((ScriptableItem)obj)._itemName;
     }
-    
+
     public override string GetJsonName(JObject obj)
     {
         return obj["_itemName"]?.Value<string>();
@@ -41,95 +39,143 @@ public abstract class ItemManager<T> : ScriptablesManager<T> where T : Scriptabl
 [ManagerAttribute]
 public class ChestpieceManager : ItemManager<ScriptableChestpiece>
 {
-    protected ChestpieceManager() { }
-    public static ChestpieceManager Instance => _instance ??= new();
     private static ChestpieceManager _instance;
+
+    protected ChestpieceManager()
+    {
+    }
+
+    public static ChestpieceManager Instance => _instance ??= new();
 }
 
 [ManagerAttribute]
 public class ArmorDyeManager : ItemManager<ScriptableArmorDye>
 {
-    protected ArmorDyeManager() { }
-    public static ArmorDyeManager Instance => _instance ??= new();
     private static ArmorDyeManager _instance;
+
+    protected ArmorDyeManager()
+    {
+    }
+
+    public static ArmorDyeManager Instance => _instance ??= new();
 }
 
 [ManagerAttribute]
 public class CapeManager : ItemManager<ScriptableCape>
 {
-    protected CapeManager() { }
-    public static CapeManager Instance => _instance ??= new();
     private static CapeManager _instance;
+
+    protected CapeManager()
+    {
+    }
+
+    public static CapeManager Instance => _instance ??= new();
 }
 
 [ManagerAttribute]
 public class ClassTomeManager : ItemManager<ScriptableClassTome>
 {
-    protected ClassTomeManager() { }
-    public static ClassTomeManager Instance => _instance ??= new();
     private static ClassTomeManager _instance;
+
+    protected ClassTomeManager()
+    {
+    }
+
+    public static ClassTomeManager Instance => _instance ??= new();
 }
 
 [ManagerAttribute]
 public class HelmManager : ItemManager<ScriptableHelm>
 {
-    protected HelmManager() { }
-    public static HelmManager Instance => _instance ??= new();
     private static HelmManager _instance;
+
+    protected HelmManager()
+    {
+    }
+
+    public static HelmManager Instance => _instance ??= new();
 }
 
 [ManagerAttribute]
 public class LeggingsManager : ItemManager<ScriptableLeggings>
 {
-    protected LeggingsManager() { }
-    public static LeggingsManager Instance => _instance ??= new();
     private static LeggingsManager _instance;
+
+    protected LeggingsManager()
+    {
+    }
+
+    public static LeggingsManager Instance => _instance ??= new();
 }
 
 [ManagerAttribute]
 public class RingManager : ItemManager<ScriptableRing>
 {
-    protected RingManager() { }
-    public static RingManager Instance => _instance ??= new();
     private static RingManager _instance;
+
+    protected RingManager()
+    {
+    }
+
+    public static RingManager Instance => _instance ??= new();
 }
 
 [ManagerAttribute]
 public class ShieldManager : ItemManager<ScriptableShield>
 {
-    protected ShieldManager() { }
-    public static ShieldManager Instance => _instance ??= new();
     private static ShieldManager _instance;
+
+    protected ShieldManager()
+    {
+    }
+
+    public static ShieldManager Instance => _instance ??= new();
 }
 
 [ManagerAttribute]
 public class SkillScrollManager : ItemManager<ScriptableSkillScroll>
 {
-    protected SkillScrollManager() { }
-    public static SkillScrollManager Instance => _instance ??= new();
     private static SkillScrollManager _instance;
+
+    protected SkillScrollManager()
+    {
+    }
+
+    public static SkillScrollManager Instance => _instance ??= new();
 }
 
 [ManagerAttribute]
 public class StatusConsumableManager : ItemManager<ScriptableStatusConsumable>
 {
-    protected StatusConsumableManager() { }
-    public static StatusConsumableManager Instance => _instance ??= new();
     private static StatusConsumableManager _instance;
+
+    protected StatusConsumableManager()
+    {
+    }
+
+    public static StatusConsumableManager Instance => _instance ??= new();
 }
 
 [ManagerAttribute]
 public class TradeItemManager : ItemManager<ScriptableTradeItem>
 {
-    protected TradeItemManager() { }
-    public static TradeItemManager Instance => _instance ??= new();
     private static TradeItemManager _instance;
+
+    protected TradeItemManager()
+    {
+    }
+
+    public static TradeItemManager Instance => _instance ??= new();
 }
 
 [ManagerAttribute]
 public class WeaponManager : ItemManager<ScriptableWeapon>
 {
-    protected WeaponManager() { }
-    public static WeaponManager Instance => _instance ??= new();
     private static WeaponManager _instance;
+
+    protected WeaponManager()
+    {
+    }
+
+    public static WeaponManager Instance => _instance ??= new();
 }

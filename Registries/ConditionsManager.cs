@@ -1,15 +1,15 @@
 using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
 using Newtonsoft.Json.Linq;
 using UnityEngine;
 
 namespace AtlyssTools.Registries;
 
-public class ConditionManager<T> : ScriptablesManager<T> where T : ScriptableObject 
+public class ConditionManager<T> : ScriptablesManager<T> where T : ScriptableObject
 {
-    protected ConditionManager() { }
-    
+    protected ConditionManager()
+    {
+    }
+
     protected override IDictionary InternalGetCached()
     {
         return GameManager._current._cachedScriptableConditions;
@@ -17,7 +17,7 @@ public class ConditionManager<T> : ScriptablesManager<T> where T : ScriptableObj
 
     public override string GetName(ScriptableObject obj)
     {
-        ScriptableCondition condition = (ScriptableCondition)obj;
+        var condition = (ScriptableCondition)obj;
         return $"{condition._conditionName}_{condition._conditionRank}";
     }
 
@@ -30,23 +30,35 @@ public class ConditionManager<T> : ScriptablesManager<T> where T : ScriptableObj
 [ManagerAttribute]
 public class StatusConditionManager : ConditionManager<ScriptableStatusCondition>
 {
-    protected StatusConditionManager() { }
-    public static StatusConditionManager Instance => _instance ??= new();
     private static StatusConditionManager _instance;
+
+    protected StatusConditionManager()
+    {
+    }
+
+    public static StatusConditionManager Instance => _instance ??= new();
 }
 
 [ManagerAttribute]
 public class SceneTransferConditionManager : ConditionManager<ScriptableSceneTransferCondition>
 {
-    protected SceneTransferConditionManager() { }
-    public static SceneTransferConditionManager Instance => _instance ??= new();
     private static SceneTransferConditionManager _instance;
+
+    protected SceneTransferConditionManager()
+    {
+    }
+
+    public static SceneTransferConditionManager Instance => _instance ??= new();
 }
 
 [ManagerAttribute]
 public class PolymorphConditionManager : ConditionManager<ScriptablePolymorphCondition>
 {
-    protected PolymorphConditionManager() { }
-    public static PolymorphConditionManager Instance => _instance ??= new();
     private static PolymorphConditionManager _instance;
+
+    protected PolymorphConditionManager()
+    {
+    }
+
+    public static PolymorphConditionManager Instance => _instance ??= new();
 }

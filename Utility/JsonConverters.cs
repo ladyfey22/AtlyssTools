@@ -1,14 +1,13 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using AtlyssTools.Registries;
 using Newtonsoft.Json;
 using UnityEngine;
+using Object = UnityEngine.Object;
 
 namespace AtlyssTools.Utility;
 
-public class AssetConverter<T> : JsonConverter<T> where T : UnityEngine.Object
+public class AssetConverter<T> : JsonConverter<T> where T : Object
 {
     public override void WriteJson(JsonWriter writer, T value, JsonSerializer serializer)
     {
@@ -19,9 +18,9 @@ public class AssetConverter<T> : JsonConverter<T> where T : UnityEngine.Object
     public override T ReadJson(JsonReader reader, System.Type objectType, T existingValue, bool hasExistingValue,
         JsonSerializer serializer)
     {
-        string name = (reader!.Value?.ToString());
+        var name = reader!.Value?.ToString();
 
-        T returnV = AtlyssToolsLoader.LoadAsset<T>(name);
+        var returnV = AtlyssToolsLoader.LoadAsset<T>(name);
 
 
         return returnV;
@@ -48,17 +47,15 @@ public class Vector3Converter : JsonConverter<Vector3>
         reader.Read();
         if (reader.Value != null)
         {
-            float x = (float)reader.Value;
+            var x = (float)reader.Value;
             reader.Read();
-            float y = (float)reader.Value;
+            var y = (float)reader.Value;
             reader.Read();
-            float z = (float)reader.Value;
-            return new Vector3(x, y, z);
+            var z = (float)reader.Value;
+            return new(x, y, z);
         }
-        else
-        {
-            return Vector3.zero;
-        }
+
+        return Vector3.zero;
     }
 }
 
@@ -85,21 +82,19 @@ public class ColorConverter : JsonConverter<Color>
         if (reader.Value != null)
         {
             // write the type of the object
-            float r = (float)((double)reader.Value);
+            var r = (float)(double)reader.Value;
             reader.Read();
-            float g = (float)((double)reader.Value);
+            var g = (float)(double)reader.Value;
             reader.Read();
-            float b = (float)((double)reader.Value);
+            var b = (float)(double)reader.Value;
             reader.Read();
-            float a = (float)((double)reader.Value);
+            var a = (float)(double)reader.Value;
             // end array
             reader.Read();
-            return new Color(r, g, b, a);
+            return new(r, g, b, a);
         }
-        else
-        {
-            return Color.white;
-        }
+
+        return Color.white;
     }
 }
 
@@ -116,27 +111,22 @@ public class BaseConverter<T> : JsonConverter<T> where T : ScriptableObject
         JsonSerializer serializer)
     {
         // check the depth. 0 depth = the object we need to read directly, anything past that, scriptable objects should be a string referring to the asset
-        
+
         if (reader.Depth == 0)
         {
-            T obj = ScriptableObject.CreateInstance<T>();
+            var obj = ScriptableObject.CreateInstance<T>();
             serializer.Populate(reader, obj);
             return obj;
         }
+
         // read the asset name
-        string name = (reader.Value?.ToString());
-        if(String.IsNullOrEmpty(name))
-        {
-            return null;
-        }
-        
-        T asset = AtlyssToolsLoader.LoadAsset<T>(name);
-        
-        if(asset == null)
-        {
-            Plugin.Logger.LogError($"Failed to load asset {name} in {JsonUtility.currentFilePath}");
-        }
-        
+        var name = reader.Value?.ToString();
+        if (string.IsNullOrEmpty(name)) return null;
+
+        var asset = AtlyssToolsLoader.LoadAsset<T>(name);
+
+        if (asset == null) Plugin.Logger.LogError($"Failed to load asset {name} in {JsonUtility.currentFilePath}");
+
         return asset;
     }
 }
@@ -157,10 +147,10 @@ public class Vector2Converter : JsonConverter<Vector2>
     {
         // read in 2 separate values
         reader.Read();
-        float x = (float)reader.Value;
+        var x = (float)reader.Value;
         reader.Read();
-        float y = (float)reader.Value;
-        return new Vector2(x, y);
+        var y = (float)reader.Value;
+        return new(x, y);
     }
 }
 
@@ -183,99 +173,95 @@ public class Vector4Converter : JsonConverter<Vector4>
     {
         // read in 4 separate values
         reader.Read();
-        float x = (float)reader.Value;
+        var x = (float)reader.Value;
         reader.Read();
-        float y = (float)reader.Value;
+        var y = (float)reader.Value;
         reader.Read();
-        float z = (float)reader.Value;
+        var z = (float)reader.Value;
         reader.Read();
-        float w = (float)reader.Value;
-        return new Vector4(x, y, z, w);
+        var w = (float)reader.Value;
+        return new(x, y, z, w);
     }
 }
 
 public class JsonUtility
 {
-    
     public static string currentFilePath; // for debugging
-    
+
     private static List<JsonConverter> _converters;
 
     private static readonly List<System.Type> ScriptableTypes =
-        [
-            typeof(ScriptableArmorRender),
-            typeof(ScriptableCombatElement),
-            typeof(ScriptableCreep),
-            typeof(ScriptableDialogData),
-            typeof(ScriptableEmoteList),
-            typeof(ScriptableLootTable),
-            typeof(ScriptableMapData),
-            typeof(ScriptablePlayerBaseClass),
-            typeof(ScriptablePlayerRace),
-            typeof(ScriptablePolymorphCondition),
-            typeof(ScriptableQuest),
-            typeof(ScriptableSceneTransferCondition),
-            typeof(ScriptableShopkeep),
-            typeof(ScriptableSkill),
-            typeof(ScriptableStatAttribute),
-            typeof(ScriptableStatModifier),
-            typeof(ScriptableStatModifierTable),
-            typeof(ScriptableStatusCondition),
-            typeof(ScriptableWeaponProjectileSet),
-            typeof(ScriptableWeaponType),
-            typeof(CastEffectCollection),
-            typeof(ScriptableChestpiece),
-            typeof(ScriptableArmor),
-            typeof(ScriptableArmorDye),
-            typeof(ScriptableCape),
-            typeof(ScriptableClassTome),
-            typeof(ScriptableHelm),
-            typeof(ScriptableLeggings),
-            typeof(ScriptableRing),
-            typeof(ScriptableShield),
-            typeof(ScriptableSkillScroll),
-            typeof(ScriptableStatusConsumable),
-            typeof(ScriptableTradeItem),
-            typeof(ScriptableWeapon),
-            typeof(ScriptableItem),
-            typeof(ScriptableCondition),
-            typeof(CastEffectCollection),
-        ];
+    [
+        typeof(ScriptableArmorRender),
+        typeof(ScriptableCombatElement),
+        typeof(ScriptableCreep),
+        typeof(ScriptableDialogData),
+        typeof(ScriptableEmoteList),
+        typeof(ScriptableLootTable),
+        typeof(ScriptableMapData),
+        typeof(ScriptablePlayerBaseClass),
+        typeof(ScriptablePlayerRace),
+        typeof(ScriptablePolymorphCondition),
+        typeof(ScriptableQuest),
+        typeof(ScriptableSceneTransferCondition),
+        typeof(ScriptableShopkeep),
+        typeof(ScriptableSkill),
+        typeof(ScriptableStatAttribute),
+        typeof(ScriptableStatModifier),
+        typeof(ScriptableStatModifierTable),
+        typeof(ScriptableStatusCondition),
+        typeof(ScriptableWeaponProjectileSet),
+        typeof(ScriptableWeaponType),
+        typeof(CastEffectCollection),
+        typeof(ScriptableChestpiece),
+        typeof(ScriptableArmor),
+        typeof(ScriptableArmorDye),
+        typeof(ScriptableCape),
+        typeof(ScriptableClassTome),
+        typeof(ScriptableHelm),
+        typeof(ScriptableLeggings),
+        typeof(ScriptableRing),
+        typeof(ScriptableShield),
+        typeof(ScriptableSkillScroll),
+        typeof(ScriptableStatusConsumable),
+        typeof(ScriptableTradeItem),
+        typeof(ScriptableWeapon),
+        typeof(ScriptableItem),
+        typeof(ScriptableCondition),
+        typeof(CastEffectCollection)
+    ];
 
     private static readonly List<System.Type> AssetTypes =
-        [
-            typeof(Texture),
-            typeof(AudioClip),
-            typeof(Sprite),
-            typeof(GameObject),
-            typeof(Mesh),
-        ];
-    
-    static JsonConverter CreateGneericBase(System.Type type)
+    [
+        typeof(Texture),
+        typeof(AudioClip),
+        typeof(Sprite),
+        typeof(GameObject),
+        typeof(Mesh)
+    ];
+
+    private static JsonConverter CreateGneericBase(System.Type type)
     {
-        System.Type baseConverterType = typeof(BaseConverter<>);
+        var baseConverterType = typeof(BaseConverter<>);
         System.Type[] typeArgs = [type];
-        System.Type genericType = baseConverterType.MakeGenericType(typeArgs);
+        var genericType = baseConverterType.MakeGenericType(typeArgs);
         return (JsonConverter)Activator.CreateInstance(genericType);
     }
-    
-    static JsonConverter CreateAssetConverter(System.Type type)
+
+    private static JsonConverter CreateAssetConverter(System.Type type)
     {
-        System.Type assetConverterType = typeof(AssetConverter<>);
+        var assetConverterType = typeof(AssetConverter<>);
         System.Type[] typeArgs = [type];
-        System.Type genericType = assetConverterType.MakeGenericType(typeArgs);
+        var genericType = assetConverterType.MakeGenericType(typeArgs);
         return (JsonConverter)Activator.CreateInstance(genericType);
     }
-    
+
     public static JsonSerializerSettings GetSettings(System.Type type)
     {
         // double check Type is a ScriptableObject in the list
-        if (!ScriptableTypes.Contains(type) && !AssetTypes.Contains(type))
-        {
-            throw new("Type must be a ScriptableObject");
-        }
-        
-        
+        if (!ScriptableTypes.Contains(type) && !AssetTypes.Contains(type)) throw new("Type must be a ScriptableObject");
+
+
         if (_converters == null)
         {
             // get the associated manager
@@ -286,22 +272,13 @@ public class JsonUtility
                 new Vector2Converter(),
                 new Vector4Converter()
             ];
-            
-            foreach (System.Type scriptableType in ScriptableTypes)
-            {
-                _converters.Add(CreateGneericBase(scriptableType));
-            }
-            
-            foreach (System.Type assetType in AssetTypes)
-            {
-                _converters.Add(CreateAssetConverter(assetType));
-            }
+
+            foreach (var scriptableType in ScriptableTypes) _converters.Add(CreateGneericBase(scriptableType));
+
+            foreach (var assetType in AssetTypes) _converters.Add(CreateAssetConverter(assetType));
 
             // double check Type is a ScriptableObject
-            if (!type.IsSubclassOf(typeof(ScriptableObject)))
-            {
-                throw new("Type must be a ScriptableObject");
-            }
+            if (!type.IsSubclassOf(typeof(ScriptableObject))) throw new("Type must be a ScriptableObject");
         }
 
 
@@ -315,26 +292,20 @@ public class JsonUtility
 
     public static object LoadFromJson(string json, System.Type type)
     {
-        if (string.IsNullOrEmpty(json))
-        {
-            return null;
-        }
+        if (string.IsNullOrEmpty(json)) return null;
 
         // apply our custom serialization
-        JsonSerializerSettings settings = GetSettings(type);
+        var settings = GetSettings(type);
         return JsonConvert.DeserializeObject(json, type, settings);
     }
 
     public static T LoadFromJson<T>(string json)
     {
-        if (string.IsNullOrEmpty(json))
-        {
-            return default;
-        }
+        if (string.IsNullOrEmpty(json)) return default;
 
         // apply our custom serialization
-        JsonSerializerSettings settings = GetSettings(typeof(T));
-        T returnV = JsonConvert.DeserializeObject<T>(json, settings);
+        var settings = GetSettings(typeof(T));
+        var returnV = JsonConvert.DeserializeObject<T>(json, settings);
         return returnV;
     }
 
@@ -353,8 +324,8 @@ public class JsonUtility
         }
 
         currentFilePath = path;
-        
-        string json = File.ReadAllText(path);
+
+        var json = File.ReadAllText(path);
         return LoadFromJson<T>(json);
     }
 }

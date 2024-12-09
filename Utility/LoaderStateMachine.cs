@@ -17,8 +17,10 @@ public class LoaderStateMachine
         PreCacheInit,
         PostCacheInit,
         PreLibraryInit,
-        PostLibraryInit,
+        PostLibraryInit
     }
+
+    private readonly List<LoaderStateManager> _managers = new();
 
     public LoadState State { get; private set; }
 
@@ -27,7 +29,6 @@ public class LoaderStateMachine
         State = state;
 
         foreach (var manager in _managers)
-        {
             switch (state)
             {
                 case LoadState.PreCacheInit:
@@ -43,7 +44,6 @@ public class LoaderStateMachine
                     manager.PostLibraryInit();
                     break;
             }
-        }
     }
 
 
@@ -56,6 +56,4 @@ public class LoaderStateMachine
     {
         _managers.AddRange(managers);
     }
-
-    private readonly List<LoaderStateManager> _managers = new();
 }
