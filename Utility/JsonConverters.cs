@@ -47,11 +47,12 @@ public class Vector3Converter : JsonConverter<Vector3>
         reader.Read();
         if (reader.Value != null)
         {
-            var x = (float)reader.Value;
+            var x = Convert.ToSingle(reader.Value);
             reader.Read();
-            var y = (float)reader.Value;
+            var y = Convert.ToSingle(reader.Value);
             reader.Read();
-            var z = (float)reader.Value;
+            var z = Convert.ToSingle(reader.Value);
+            reader.Read();//End of array
             return new(x, y, z);
         }
 
@@ -147,9 +148,10 @@ public class Vector2Converter : JsonConverter<Vector2>
     {
         // read in 2 separate values
         reader.Read();
-        var x = (float)reader.Value;
+        var x = Convert.ToSingle(reader.Value);
         reader.Read();
-        var y = (float)reader.Value;
+        var y = Convert.ToSingle(reader.Value);
+        reader.Read();
         return new(x, y);
     }
 }
@@ -173,13 +175,14 @@ public class Vector4Converter : JsonConverter<Vector4>
     {
         // read in 4 separate values
         reader.Read();
-        var x = (float)reader.Value;
+        var x = Convert.ToSingle(reader.Value);
         reader.Read();
-        var y = (float)reader.Value;
+        var y = Convert.ToSingle(reader.Value);
         reader.Read();
-        var z = (float)reader.Value;
+        var z = Convert.ToSingle(reader.Value);
         reader.Read();
-        var w = (float)reader.Value;
+        var w = Convert.ToSingle(reader.Value);
+        reader.Read();
         return new(x, y, z, w);
     }
 }
