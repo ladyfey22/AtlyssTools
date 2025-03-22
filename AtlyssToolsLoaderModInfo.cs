@@ -182,7 +182,10 @@ public class AtlyssToolsLoaderModInfo
         // keep in mind, type may no longer be T, so we can't cast it to List<T>
         _scriptableObjects[type].Add(obj);
         PathToAsset.Add(path, obj as Object);
-        // write out the type it was 
+        
+        // write a debug message
+        Plugin.Logger.LogDebug($"Loaded json object {path} for type {type.Name}");
+        
         return obj as Object;
     }
 

@@ -4,6 +4,8 @@ namespace AtlyssTools.Utility;
 
 // WIP
 
+/*
+
 public class AtlyssToolsResourceAPI : UnityEngine.ResourcesAPI
 {
     // for now just log the call and pass it through
@@ -39,4 +41,4 @@ public class AtlyssToolsResourceAPI : UnityEngine.ResourcesAPI
         //Debug.Log($"AtlyssToolsResourceAPI.UnloadAsset({assetToUnload})");
         base.UnloadAsset(assetToUnload);
     }
-}
+}*/

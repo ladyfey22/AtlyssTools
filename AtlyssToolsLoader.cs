@@ -52,7 +52,7 @@ public class AtlyssToolsLoader
             WeaponManager.Instance,
             CreepManager.Instance, QuestManager.Instance, PlayerRaceManager.Instance, CombatElementManager.Instance,
             StatModifierManager.Instance, PlayerBaseClassManager.Instance, SkillManager.Instance,
-            ArmorRenderManager.Instance, Registries.ShopkeepManager.Instance, CastEffectCollectionManager.Instance
+            ArmorRenderManager.Instance, Registries.ShopkeepManager.Instance, CastEffectCollectionManager.Instance,
         ];
 
         foreach (var manager in managers)
@@ -113,7 +113,7 @@ public class AtlyssToolsLoader
         // delay loading jsons until after asset bundles are loaded
 
         // now initialize the mod
-        Plugin.Logger.LogInfo($"Loaded AtlyssTools mod {modName}");
+        Plugin.Logger.LogInfo($"Loaded AtlyssTools mod assets for {modName}");
     }
 
     public static void LoadPlugin(string modName, string modPath)
@@ -194,8 +194,11 @@ public class AtlyssToolsLoader
     public void LoadAllJsonAssets()
     {
         foreach (var modInfo in ModInfos.Values)
-        foreach (var manager in Instance._managers)
-            manager.Value.OnModLoad(modInfo);
+        {
+            Plugin.Logger.LogInfo($"Loading JSON assets for {modInfo.ModId}");
+            foreach (var manager in Instance._managers)
+                manager.Value.OnModLoad(modInfo);
+        }
     }
 
     // expose delegate lists

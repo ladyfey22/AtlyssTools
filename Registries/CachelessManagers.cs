@@ -21,7 +21,9 @@ public abstract class CachelessManager<T> : ScriptablesManager<T> where T : Scri
             if (_cached.ContainsKey(name))
                 Plugin.Logger.LogError($"Duplicate asset name {name} for type {typeof(T)}");
             else
+            {
                 _cached[name] = asset;
+            }
         }
     }
 
@@ -67,6 +69,11 @@ public class ShopkeepManager : CachelessManager<ScriptableShopkeep>
     public override string GetName(ScriptableObject obj)
     {
         return ((ScriptableShopkeep)obj)._shopName;
+    }
+    
+    public override string GetJsonName(JObject obj)
+    {
+        return obj["_shopName"]?.Value<string>();
     }
 }
 

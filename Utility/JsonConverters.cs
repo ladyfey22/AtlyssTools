@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -125,7 +126,12 @@ public class BaseConverter<T> : JsonConverter<T> where T : ScriptableObject
             
             T obj = manager.GetFromCache(cachedName);
             if (obj == null)
+            {
+                Plugin.Logger.LogDebug($"Failed to load {cachedName} from cache for type {typeof(T)}");
+                Plugin.Logger.LogDebug($"Creating new object of type {typeof(T)}");
                 obj = ScriptableObject.CreateInstance<T>();
+            }
+
             serializer.Populate(jObject.CreateReader(), obj);
             return obj;
         }
@@ -200,90 +206,160 @@ public class Vector4Converter : JsonConverter<Vector4>
 // arrays
 public class ArrayConverter : JsonConverter
 {
+    public override bool CanWrite => false;
     
     public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
     {
-        var array = value as Array;
-        writer.WriteStartArray();
-        foreach (var item in array)
+        // not implemented :3
+    }
+    
+    
+    private int FindItemIndex(IList list, JObject criteria) // we don't know the type of the list, so we can't use generics (well, we could, but it would be a pain)
+    {
+        if (criteria.ContainsKey("index"))
         {
-            serializer.Serialize(writer, item);
+            int idx = criteria["index"].Value<int>();
+            return (idx >= 0 && idx < list.Count) ? idx : -1;
         }
-        writer.WriteEndArray();
+
+        foreach (var item in list)
+        {
+            bool match = true;
+
+            foreach (var property in criteria.Properties())
+            {
+                if (property.Name == "value") continue; // Skip "value", since it's for modification
+
+                // first check if the field exists
+                var field = item.GetType().GetField(property.Name);
+                
+                if(field == null)
+                {
+                    Plugin.Logger.LogError($"JSON Load Error: Array modification field {property.Name} does not exist for type {item.GetType()}");
+                    match = false;
+                    break;
+                }
+                
+                var itemValue = field.GetValue(item)?.ToString();
+                
+                if (itemValue == null || itemValue != property.Value.ToString())
+                {
+                    match = false;
+                    break;
+                }
+            }
+
+            if (match) return list.IndexOf(item);
+        }
+
+        return -1;
     }
 
     public override object ReadJson(JsonReader reader, System.Type objectType, object existingValue, JsonSerializer serializer)
-    {        // format is
-        // [item1, item2, item3] OR
-        // {
-        //   "op": "add | access",
-        //   "index": 0, (if access)
-        //   "values": [item1, item2] (if add)
-        // }
-        
+    {
         if (reader.TokenType == JsonToken.StartArray)
         {
+            var elementType = objectType.GetElementType();
+            
+            if(elementType == null)
+                return existingValue;
+            
             var list = new List<object>();
-            while (reader.Read() && reader.TokenType != JsonToken.EndArray)
+
+            while (reader.Read())
             {
-                list.Add(serializer.Deserialize(reader));
+                if (reader.TokenType == JsonToken.EndArray)
+                    break;
+
+                var item = serializer.Deserialize(reader, elementType);
+                list.Add(item);
             }
-            return list.ToArray();
-        }
-        else
-        {
-            var jObject = JObject.Load(reader);
-            var op = jObject["op"].ToString();
-            if (op == "add")
+
+            var array = Array.CreateInstance(elementType, list.Count);
+            for (var i = 0; i < list.Count; i++)
             {
-                var values = jObject["values"]?.ToObject<object[]>();
-                var index = jObject["index"]?.ToObject<int>();
-                var array = existingValue as Array;
-                
-                if (array == null)
+                array.SetValue(list[i], i);
+            }
+            // logging
+            return array;
+        }
+        
+        if(reader.TokenType == JsonToken.StartObject)
+        {
+            JObject jObject = JObject.Load(reader);
+            // if there is no existing value, we need to create a new Array
+            // if there is an existing value, we need to copy it, modify the copy, and return the copy
+
+            System.Type itemType = objectType.GetElementType();
+            if(itemType == null) 
+                return existingValue;
+            
+            var list = new List<object>();
+            // copy the existing values
+            if (existingValue != null)
+            {
+                foreach (var item in (Array)existingValue)
                 {
-                    if (values != null)
-                        array = Array.CreateInstance(objectType.GetElementType() ?? throw new InvalidOperationException(), values.Length);
+                    list.Add(item);
+                }
+            }
+            
+            // add, remove, modify
+            
+            if (jObject.ContainsKey("add") && jObject["add"] is JArray addArray)
+            {
+                foreach (JObject item in addArray.Children<JObject>())
+                {
+                    var newItem = serializer.Deserialize(item.CreateReader(), itemType);
+                    list.Add(newItem);
+                }
+            }
+            
+            if (jObject.ContainsKey("remove") && jObject["remove"] is JArray removeArray)
+            {
+                HashSet<int> indicesToRemove = new HashSet<int>();
+                foreach(JObject condition in removeArray.Children<JObject>())
+                {
+                    int index = FindItemIndex(list, condition);
+                    if (index >= 0)
+                        indicesToRemove.Add(index);
+                }
+                
+                // remove in reverse order
+                foreach (var index in indicesToRemove.OrderByDescending(x => x))
+                {
+                    list.RemoveAt(index);
+                }
+            }
+            
+            if (jObject.ContainsKey("modify") && jObject["modify"] is JArray modifyArray)
+            {
+                foreach (JObject modifyObject in modifyArray.Children<JObject>())
+                {
+                    int index = FindItemIndex(list, modifyObject);
+                    if(index >= 0 && modifyObject.ContainsKey("value") && modifyObject["value"] is JObject)
+                    {
+                        serializer.Populate(modifyObject["value"].CreateReader(), list[index]);
+                    }
                     else
                     {
-                        Plugin.Logger.LogError("Array is null and values is null in JSON add operation");
-                        return null;
+                        Plugin.Logger.LogError("JSON Load Error: Failed to modify item in array of " + itemType);
                     }
                 }
-                
-                if (values == null || index == null)
-                {
-                    Plugin.Logger.LogError("Values or index is null");
-                    return null;
-                }
-                
-                for (var i = 0; i < values.Length; i++)
-                {
-                    array.SetValue(values[i], index.Value + i);
-                }
             }
-            else if (op == "access")
+         
+            // we need to convert the list to an array
+            var array = Array.CreateInstance(itemType, list.Count);
+            for (var i = 0; i < list.Count; i++)
             {
-                // this means they want to deserialize a specific element in the array
-                var index = jObject["index"]?.ToObject<int>();
-                if (index == null)
-                {
-                    Plugin.Logger.LogError("Index is null in JSON access operation");
-                    return null;
-                }
-                
-                var array = existingValue as Array;
-                if (array == null)
-                {
-                    Plugin.Logger.LogError("Array is null in JSON access operation");
-                    return null;
-                }
-                
-                // deserialize the object into the existing array using Populate. we just use the existing element reference
-                serializer.Populate(jObject.CreateReader(), array.GetValue(index.Value));
+                array.SetValue(list[i], i);
             }
+            
+            return array;
         }
-        return null;
+        
+        
+        return existingValue;
     }
 
     public override bool CanConvert(System.Type objectType)
@@ -348,7 +424,7 @@ public class JsonUtility
         typeof(Mesh)
     ];
 
-    private static JsonConverter CreateGneericBase(System.Type type)
+    private static JsonConverter CreateGenericBase(System.Type type)
     {
         var baseConverterType = typeof(BaseConverter<>);
         System.Type[] typeArgs = [type];
@@ -367,7 +443,8 @@ public class JsonUtility
     public static JsonSerializerSettings GetSettings(System.Type type)
     {
         // double check Type is a ScriptableObject in the list
-        if (!ScriptableTypes.Contains(type) && !AssetTypes.Contains(type)) throw new("Type must be a ScriptableObject");
+        if (!ScriptableTypes.Contains(type) && !AssetTypes.Contains(type)) 
+            throw new("Type must be a ScriptableObject or Asset");
 
 
         if (_converters == null)
@@ -378,15 +455,15 @@ public class JsonUtility
                 new Vector3Converter(),
                 new ColorConverter(),
                 new Vector2Converter(),
-                new Vector4Converter()
+                new Vector4Converter(),
+                new ArrayConverter()
             ];
 
-            foreach (var scriptableType in ScriptableTypes) _converters.Add(CreateGneericBase(scriptableType));
+            foreach (var scriptableType in ScriptableTypes) 
+                _converters.Add(CreateGenericBase(scriptableType));
 
-            foreach (var assetType in AssetTypes) _converters.Add(CreateAssetConverter(assetType));
-
-            // double check Type is a ScriptableObject
-            if (!type.IsSubclassOf(typeof(ScriptableObject))) throw new("Type must be a ScriptableObject");
+            foreach (var assetType in AssetTypes) 
+                _converters.Add(CreateAssetConverter(assetType));
         }
 
 

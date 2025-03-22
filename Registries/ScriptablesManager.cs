@@ -81,8 +81,7 @@ public abstract class ScriptablesManager<T> : BaseScriptablesManager where T : S
 
         if (cache.Contains(name))
         {
-            // replace it
-            Plugin.Logger.LogInfo($"Replacing {name} in cache for type {typeof(T)}");
+            // replace it, it could already be in the cache
             Replace(cache[name] as T, obj);
             return;
         }
