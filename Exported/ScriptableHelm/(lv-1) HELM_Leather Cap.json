@@ -30,7 +30,7 @@
     "_magicPower": 0,
     "_criticalRate": 0.0,
     "_magicCriticalRate": 0.0,
-    "_defense": 1,
+    "_defense": 5,
     "_magicDefense": 0,
     "_evasion": 0.0
   },
@@ -44,6 +44,7 @@
   "_itemName": "Leather Cap",
   "_itemIcon": "_graphic/_ui/_itemicons/_helm/_helmIco_01",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

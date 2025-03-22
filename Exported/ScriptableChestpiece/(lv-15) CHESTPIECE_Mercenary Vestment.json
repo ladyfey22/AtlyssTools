@@ -53,6 +53,7 @@
   "_itemName": "Mercenary Vestment",
   "_itemIcon": "_graphic/_ui/_itemicons/_chest/_chestIco_22",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

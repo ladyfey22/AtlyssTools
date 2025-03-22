@@ -53,6 +53,7 @@
   "_itemName": "Sagecloth Top",
   "_itemIcon": "_graphic/_ui/_itemicons/_chest/_leggingIco_kubold01",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "Common clothing worn by Kubolds.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

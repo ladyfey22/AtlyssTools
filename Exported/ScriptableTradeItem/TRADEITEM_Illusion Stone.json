@@ -4,6 +4,7 @@
   "_itemName": "Illusion Stone",
   "_itemIcon": "_graphic/_ui/_itemicons/_tradeitem/_tradIco_18",
   "_itemRarity": 0,
+  "_itemSortTag": 1,
   "_itemDescription": "This magical stone can be used to change the appearance of things.",
   "_maxStackAmount": 20,
   "_scriptableQuest": null,

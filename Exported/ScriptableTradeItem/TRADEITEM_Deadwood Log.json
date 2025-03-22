@@ -4,6 +4,7 @@
   "_itemName": "Deadwood Log",
   "_itemIcon": "_graphic/_ui/_itemicons/_tradeitem/_tradIco_30",
   "_itemRarity": 0,
+  "_itemSortTag": 9,
   "_itemDescription": "Hot orange energy eminates within this log.",
   "_maxStackAmount": 99,
   "_scriptableQuest": null,

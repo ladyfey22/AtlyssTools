@@ -1,8 +1,9 @@
 {
   "$id": "1",
-  "_creepName": "Broxxus",
+  "_creepName": "Valdur",
   "_creepObject": "_prefab/_entity/_creep/_creepdirectory/_creep_kinggolem/_creepObject_kingGolem(HARD)",
   "_creepLevel": 25,
+  "_isBoss": true,
   "_unkillable": false,
   "_creepStatStruct": {
     "$id": "2",

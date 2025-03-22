@@ -53,6 +53,7 @@
   "_itemName": "Aero Top",
   "_itemIcon": "_graphic/_ui/_itemicons/_chest/_chestIco_12",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "Common clothing worn by Byrdles.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

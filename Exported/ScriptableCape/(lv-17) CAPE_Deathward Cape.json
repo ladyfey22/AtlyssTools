@@ -38,6 +38,7 @@
   "_itemName": "Deathward Cape",
   "_itemIcon": "_graphic/_ui/_itemicons/_chest/_capIco_02",
   "_itemRarity": 1,
+  "_itemSortTag": 0,
   "_itemDescription": "You can hear the laughter from the skull motif.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

@@ -2,8 +2,6 @@
   "$id": "1",
   "_weaponDamage": 11,
   "_damageBonus": 7,
-  "_maxFloorDamageCap": 0,
-  "_maxCeilingDamageCap": 0,
   "_readonlyDamageRange": {
     "$id": "2",
     "x": 11,
@@ -74,6 +72,7 @@
   "_itemName": "Mithril Halberd",
   "_itemIcon": "_graphic/_ui/_itemicons/_weapon/_wepIco_55",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

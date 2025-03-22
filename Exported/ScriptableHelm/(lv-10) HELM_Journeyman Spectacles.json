@@ -44,6 +44,7 @@
   "_itemName": "Journeyman Spectacles",
   "_itemIcon": "_graphic/_ui/_itemicons/_helm/_helmIco_02",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "Used to read harder-- now with color!",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

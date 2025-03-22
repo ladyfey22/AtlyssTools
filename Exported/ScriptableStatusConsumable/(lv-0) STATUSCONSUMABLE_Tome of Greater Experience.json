@@ -16,6 +16,7 @@
   "_itemName": "Tome of Greater Experience",
   "_itemIcon": "_graphic/_ui/_itemicons/_consumable/_conIco_29",
   "_itemRarity": 0,
+  "_itemSortTag": 6,
   "_itemDescription": "The knowledge this Tome provides gives a massive pile of experience to the reader.",
   "_maxStackAmount": 5,
   "_scriptableQuest": null,

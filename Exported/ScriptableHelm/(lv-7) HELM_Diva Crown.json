@@ -44,6 +44,7 @@
   "_itemName": "Diva Crown",
   "_itemIcon": "_graphic/_ui/_itemicons/_helm/_helmIco_12",
   "_itemRarity": 1,
+  "_itemSortTag": 0,
   "_itemDescription": "A crown worn by a Slime Diva. Contains unusual power.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

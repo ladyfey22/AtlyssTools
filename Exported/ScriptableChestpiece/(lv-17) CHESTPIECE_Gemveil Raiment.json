@@ -53,6 +53,7 @@
   "_itemName": "Gemveil Raiment",
   "_itemIcon": "_graphic/_ui/_itemicons/_chest/_chestIco_25",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "Dazzling gems flicker on this loose but defensive chestpiece.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

@@ -39,6 +39,7 @@
   "_itemName": "Rustweary Shield",
   "_itemIcon": "_graphic/_ui/_itemicons/_shield/_shieldIco_10",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "The face is worried.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

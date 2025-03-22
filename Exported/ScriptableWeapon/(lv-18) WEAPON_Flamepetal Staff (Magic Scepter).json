@@ -2,8 +2,6 @@
   "$id": "1",
   "_weaponDamage": 12,
   "_damageBonus": 9,
-  "_maxFloorDamageCap": 0,
-  "_maxCeilingDamageCap": 0,
   "_readonlyDamageRange": {
     "$id": "2",
     "x": 12,
@@ -74,6 +72,7 @@
   "_itemName": "Flamepetal Staff",
   "_itemIcon": "_graphic/_ui/_itemicons/_weapon/_wepIco_63",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

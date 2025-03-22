@@ -37,6 +37,7 @@
   "_itemName": "Old Ring",
   "_itemIcon": "_graphic/_ui/_itemicons/_ring/icon_ring01",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

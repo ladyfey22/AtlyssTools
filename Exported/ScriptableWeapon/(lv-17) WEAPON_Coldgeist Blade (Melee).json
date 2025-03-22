@@ -2,8 +2,6 @@
   "$id": "1",
   "_weaponDamage": 19,
   "_damageBonus": 1,
-  "_maxFloorDamageCap": 38,
-  "_maxCeilingDamageCap": 52,
   "_readonlyDamageRange": {
     "$id": "2",
     "x": 19,
@@ -74,6 +72,7 @@
   "_itemName": "Coldgeist Blade",
   "_itemIcon": "_graphic/_ui/_itemicons/_weapon/_wepIco_45",
   "_itemRarity": 1,
+  "_itemSortTag": 0,
   "_itemDescription": "Forged from corrupted frost, formally used by ancient sages.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

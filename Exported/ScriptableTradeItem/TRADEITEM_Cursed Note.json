@@ -4,6 +4,7 @@
   "_itemName": "Cursed Note",
   "_itemIcon": "_graphic/_ui/_itemicons/_tradeitem/_tradIco_39",
   "_itemRarity": 0,
+  "_itemSortTag": 9,
   "_itemDescription": "There are magic glyphs on this note. They seem to slowly float above the parchment.",
   "_maxStackAmount": 99,
   "_scriptableQuest": null,

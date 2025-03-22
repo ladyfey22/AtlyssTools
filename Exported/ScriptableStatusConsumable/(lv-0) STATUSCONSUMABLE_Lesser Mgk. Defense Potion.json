@@ -18,6 +18,7 @@
   "_itemName": "Lesser Mgk. Defense Potion",
   "_itemIcon": "_graphic/_ui/_itemicons/_consumable/_conIco_37",
   "_itemRarity": 0,
+  "_itemSortTag": 6,
   "_itemDescription": "Temporarily increases Magic Defense by 5.",
   "_maxStackAmount": 99,
   "_scriptableQuest": null,

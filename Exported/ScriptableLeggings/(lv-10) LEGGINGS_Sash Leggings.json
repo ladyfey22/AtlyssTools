@@ -47,6 +47,7 @@
   "_itemName": "Sash Leggings",
   "_itemIcon": "_graphic/_ui/_itemicons/_chest/_legIco_13",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "Tight.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

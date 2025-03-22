@@ -53,6 +53,7 @@
   "_itemName": "King Breastplate",
   "_itemIcon": "_graphic/_ui/_itemicons/_chest/_chestIco_06",
   "_itemRarity": 1,
+  "_itemSortTag": 0,
   "_itemDescription": "Bend the knee, to the King!",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

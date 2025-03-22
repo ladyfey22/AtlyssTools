@@ -10,6 +10,7 @@
   "_itemName": "Skill Scroll (Spire)",
   "_itemIcon": "_graphic/_ui/_itemicons/_consumable/_conIco_09",
   "_itemRarity": 0,
+  "_itemSortTag": 7,
   "_itemDescription": "Teaches the user Spire.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

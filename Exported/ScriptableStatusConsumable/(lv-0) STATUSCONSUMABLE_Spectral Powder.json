@@ -18,6 +18,7 @@
   "_itemName": "Spectral Powder",
   "_itemIcon": "_graphic/_ui/_itemicons/_consumable/_conIco_27",
   "_itemRarity": 0,
+  "_itemSortTag": 6,
   "_itemDescription": "Potent mixture of grounded ghostly substance. Vanishes the user for a short duration.",
   "_maxStackAmount": 99,
   "_scriptableQuest": null,

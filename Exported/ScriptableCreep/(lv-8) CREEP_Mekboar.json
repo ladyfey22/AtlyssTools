@@ -3,6 +3,7 @@
   "_creepName": "Mekboar",
   "_creepObject": "_prefab/_entity/_creep/_creepdirectory/_creep_mekboar/_creepObject_mekBoar",
   "_creepLevel": 8,
+  "_isBoss": false,
   "_unkillable": false,
   "_creepStatStruct": {
     "$id": "2",
@@ -15,8 +16,8 @@
     "_magicPower": 0,
     "_criticalRate": 0.0,
     "_magicCriticalRate": 0.0,
-    "_defense": 15,
-    "_magicDefense": 10,
+    "_defense": 10,
+    "_magicDefense": 8,
     "_evasion": 0.0
   },
   "_creepDamageType": 0,

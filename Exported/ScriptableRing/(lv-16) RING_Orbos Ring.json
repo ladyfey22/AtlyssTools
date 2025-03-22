@@ -37,6 +37,7 @@
   "_itemName": "Orbos Ring",
   "_itemIcon": "_graphic/_ui/_itemicons/_ring/icon_ring12",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

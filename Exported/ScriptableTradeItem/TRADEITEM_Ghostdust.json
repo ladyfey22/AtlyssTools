@@ -4,6 +4,7 @@
   "_itemName": "Ghostdust",
   "_itemIcon": "_graphic/_ui/_itemicons/_tradeitem/_tradIco_10",
   "_itemRarity": 0,
+  "_itemSortTag": 9,
   "_itemDescription": "Bottled spectral ashes of a restless ghost.",
   "_maxStackAmount": 99,
   "_scriptableQuest": null,

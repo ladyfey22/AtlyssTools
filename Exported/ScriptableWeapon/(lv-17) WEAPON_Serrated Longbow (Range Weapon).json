@@ -1,15 +1,13 @@
 {
   "$id": "1",
-  "_weaponDamage": 19,
-  "_damageBonus": 2,
-  "_maxFloorDamageCap": 30,
-  "_maxCeilingDamageCap": 46,
+  "_weaponDamage": 17,
+  "_damageBonus": 0,
   "_readonlyDamageRange": {
     "$id": "2",
-    "x": 19,
-    "y": 24,
-    "magnitude": 30.6104565,
-    "sqrMagnitude": 937
+    "x": 17,
+    "y": 20,
+    "magnitude": 26.24881,
+    "sqrMagnitude": 689
   },
   "weaponType": "_weapontype/05_weaponType_rangeWeapon",
   "_combatElement": "_combatelement/comElement_normal",
@@ -74,6 +72,7 @@
   "_itemName": "Serrated Longbow",
   "_itemIcon": "_graphic/_ui/_itemicons/_weapon/_wepIco_61",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "Sharp and twisted. Fires arrows that pierce.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

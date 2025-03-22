@@ -112,6 +112,7 @@
       ]
     }
   ],
+  "_useThighBlendshape": false,
   "name": "helmRender_halo_01",
   "hideFlags": 0
 }

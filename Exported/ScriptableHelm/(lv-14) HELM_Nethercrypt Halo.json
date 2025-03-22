@@ -44,6 +44,7 @@
   "_itemName": "Nethercrypt Halo",
   "_itemIcon": "_graphic/_ui/_itemicons/_helm/_helmIco_14",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "Banished crown from the nether realms.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

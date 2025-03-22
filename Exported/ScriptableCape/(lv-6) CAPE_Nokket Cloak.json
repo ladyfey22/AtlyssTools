@@ -38,6 +38,7 @@
   "_itemName": "Nokket Cloak",
   "_itemIcon": "_graphic/_ui/_itemicons/_chest/_capIco_10",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

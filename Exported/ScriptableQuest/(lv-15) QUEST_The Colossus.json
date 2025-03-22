@@ -372,7 +372,24 @@
   },
   "_questExperiencePercentage": 0.42,
   "_questCurrencyReward": 2500,
-  "_questItemRewards": [],
+  "_questItemRewards": [
+    {
+      "$id": "39",
+      "_scriptItem": "_item/01_equipment/01_armor/05_ring/(lv-17) RING_Valor Ring",
+      "_setItemData": {
+        "$id": "40",
+        "_itemName": "Valor Ring",
+        "_quantity": 1,
+        "_maxQuantity": 1,
+        "_slotNumber": 0,
+        "_modifierTag": "",
+        "_damageTypeOverride": 0,
+        "_useDamageTypeOverride": false,
+        "_isEquipped": false,
+        "_isAltWeapon": false
+      }
+    }
+  ],
   "_displayEndDemoPrompt": false,
   "name": "(lv-15) QUEST_The Colossus",
   "hideFlags": 0

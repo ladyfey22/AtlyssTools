@@ -44,6 +44,7 @@
   "_itemName": "Knightguard Halo",
   "_itemIcon": "_graphic/_ui/_itemicons/_helm/_helmIco_18",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "Visions of might and prowess.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

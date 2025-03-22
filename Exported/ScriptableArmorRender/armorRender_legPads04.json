@@ -112,6 +112,7 @@
       ]
     }
   ],
+  "_useThighBlendshape": false,
   "name": "armorRender_legPads04",
   "hideFlags": 0
 }

@@ -39,6 +39,7 @@
   "_itemName": "Crypt Buckler",
   "_itemIcon": "_graphic/_ui/_itemicons/_shield/_shieldIco_03",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "Used by ancient warriors of the past.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

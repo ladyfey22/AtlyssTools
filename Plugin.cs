@@ -19,6 +19,8 @@ public class Plugin : BaseUnityPlugin
         // Plugin startup logic
         Logger = base.Logger;
         Logger.LogInfo($"Plugin {Version} is loaded!");
+        
+        UnityEngine.ResourcesAPI.overrideAPI = new Utility.AtlyssToolsResourceAPI();
 
 
         AtlyssToolsLoader.LoadPlugin("AtlyssTools", _pluginPath);

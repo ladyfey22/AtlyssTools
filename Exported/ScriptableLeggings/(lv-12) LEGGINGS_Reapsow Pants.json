@@ -47,6 +47,7 @@
   "_itemName": "Reapsow Pants",
   "_itemIcon": "_graphic/_ui/_itemicons/_chest/_legIco_02",
   "_itemRarity": 1,
+  "_itemSortTag": 0,
   "_itemDescription": "",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

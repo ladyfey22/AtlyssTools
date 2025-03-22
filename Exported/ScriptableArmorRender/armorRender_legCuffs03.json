@@ -112,6 +112,7 @@
       ]
     }
   ],
+  "_useThighBlendshape": false,
   "name": "armorRender_legCuffs03",
   "hideFlags": 0
 }

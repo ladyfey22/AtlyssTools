@@ -4,6 +4,7 @@
   "_itemName": "Bronze Arrows",
   "_itemIcon": "_graphic/_ui/_itemicons/_tradeitem/_tradIco_29",
   "_itemRarity": 0,
+  "_itemSortTag": 9,
   "_itemDescription": "Ammunition for bows.",
   "_maxStackAmount": 999,
   "_scriptableQuest": null,

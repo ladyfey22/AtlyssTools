@@ -38,6 +38,7 @@
   "_itemName": "Nethercrypt Cloak",
   "_itemIcon": "_graphic/_ui/_itemicons/_chest/_capIco_01",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "Rug for the feet of the dead.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

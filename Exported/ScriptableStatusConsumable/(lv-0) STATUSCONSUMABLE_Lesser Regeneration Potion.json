@@ -18,6 +18,7 @@
   "_itemName": "Lesser Regeneration Potion",
   "_itemIcon": "_graphic/_ui/_itemicons/_consumable/_conIco_36",
   "_itemRarity": 0,
+  "_itemSortTag": 6,
   "_itemDescription": "Temporarily regenerates 3 health over time.",
   "_maxStackAmount": 99,
   "_scriptableQuest": null,

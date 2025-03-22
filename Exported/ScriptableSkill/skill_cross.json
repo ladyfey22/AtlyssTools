@@ -4,7 +4,7 @@
   "_skillIcon": "_graphic/_ui/_skillicons/_abIco03",
   "_skillControlType": 1,
   "_skillDamageType": 2,
-  "_skillDescription": "<color=cyan>Charge and release skill.</color> Manifests a source of arcane magic, exploding and knocking foes back.",
+  "_skillDescription": "<color=cyan>Charge and release skill.</color> Manifests a source of explosive arcane magic.",
   "_allowAsBonusSkill": false,
   "_weaponTypeRequirements": [],
   "_requireShield": false,

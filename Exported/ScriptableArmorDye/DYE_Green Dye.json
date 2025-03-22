@@ -16,6 +16,7 @@
   "_itemName": "Green Dye",
   "_itemIcon": "_graphic/_ui/_itemicons/_consumable/_dyeicons/_dyeIco_green",
   "_itemRarity": 0,
+  "_itemSortTag": 1,
   "_itemDescription": "A vial of green dye. Use it to make your gear dye color green.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

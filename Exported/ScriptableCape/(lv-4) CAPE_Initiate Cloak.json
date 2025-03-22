@@ -38,6 +38,7 @@
   "_itemName": "Initiate Cloak",
   "_itemIcon": "_graphic/_ui/_itemicons/_chest/_capIco_04",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "New beginnings.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

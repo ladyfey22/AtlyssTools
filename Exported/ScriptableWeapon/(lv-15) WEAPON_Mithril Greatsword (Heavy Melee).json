@@ -2,8 +2,6 @@
   "$id": "1",
   "_weaponDamage": 19,
   "_damageBonus": 0,
-  "_maxFloorDamageCap": 32,
-  "_maxCeilingDamageCap": 43,
   "_readonlyDamageRange": {
     "$id": "2",
     "x": 19,
@@ -74,6 +72,7 @@
   "_itemName": "Mithril Greatsword",
   "_itemIcon": "_graphic/_ui/_itemicons/_weapon/_wepIco_56",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

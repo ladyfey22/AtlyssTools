@@ -1,14 +1,14 @@
 # AtlyssTools
 
 A set of tools to help with Atlyss modding.
-Currently a WIP.
+Currently a WIP, but should function as intended. Report any bugs via the channels provided in the support section.
 
 Allows for the following:
 
 - Loading scriptable objects from JSON files into the game cache.
 - Automatically load assetbundles into AtlyssTools, and automatically load supported assets from them.
 - Add new commands to the game, allowing for more interactivity with mods.
-- Load asset only mods, which only require assets to be loaded.
+- Load asset only mods, which only require assets to be loaded, instead of code mods.
 
 ## Installation
 
@@ -17,25 +17,20 @@ it [here](https://docs.bepinex.dev/articles/user_guide/installation/index.html).
 
 Please use BepInEx 5.4.23.
 
-To install AtlyssTools, simply download the latest release from the releases page and extract it into your BepInEx
-plugins folder.
+To install AtlyssTools manually, simply download the latest release from the releases page and extract it into your BepInEx
+plugins folder in ``BepinEx/plugins``. 
+You may also use r2modman or Thunderstore Mod Manager to install it.
+
+## Support
+
+Please get support in the dedicated [Thread](https://discord.com/channels/1247329379646705734/1313456428438126632) in the Atlyss Discord, or message me directly at ladyfey22 on discord.
+
+## Commands
+
+AtlyssTools supports commands, both from other mods and those provided by atlyss tools itself. To see a list of commands, type `/help` in chat.
 
 ## Resources
 
 [Wiki](https://github.com/ladyfey22/AtlyssTools/wiki)
 
 [Example AtlyssTools Mod](https://github.com/ladyfey22/AtlyssToolsExampleMod)
-
-## Dump
-
-Includes a dump of all currently supported scriptableobjects (for now, ScriptableSkills and ScriptableStatusConditions)
-in the game.
-This is in the JSON format loadaable by AtlyssTools.
-
-## Future Plans
-
-- Test and add more scriptable objects, and add their associated JSON dump.
-- Provide a full list of all assets and their paths.
-- Create an easy method of asset bundling.
-- Find a way to only partially replace assets, allowing for more modular modding. IE, only replace the sprite of a skill
-  or add a new item to a shop.

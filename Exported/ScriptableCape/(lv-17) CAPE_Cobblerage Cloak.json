@@ -38,6 +38,7 @@
   "_itemName": "Cobblerage Cloak",
   "_itemIcon": "_graphic/_ui/_itemicons/_chest/_capIco_08",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "You feel strong like a golem wearing this.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

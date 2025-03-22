@@ -1,15 +1,13 @@
 {
   "$id": "1",
   "_weaponDamage": 20,
-  "_damageBonus": 3,
-  "_maxFloorDamageCap": 34,
-  "_maxCeilingDamageCap": 50,
+  "_damageBonus": 4,
   "_readonlyDamageRange": {
     "$id": "2",
     "x": 20,
-    "y": 26,
-    "magnitude": 32.80244,
-    "sqrMagnitude": 1076
+    "y": 27,
+    "magnitude": 33.6005936,
+    "sqrMagnitude": 1129
   },
   "weaponType": "_weapontype/05_weaponType_rangeWeapon",
   "_combatElement": "_combatelement/comElement_water",
@@ -74,6 +72,7 @@
   "_itemName": "Coldgeist Bow",
   "_itemIcon": "_graphic/_ui/_itemicons/_weapon/_wepIco_46",
   "_itemRarity": 1,
+  "_itemSortTag": 0,
   "_itemDescription": "Ruination of the lost frozen souls.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

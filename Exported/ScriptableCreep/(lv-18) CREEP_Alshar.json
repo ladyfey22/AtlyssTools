@@ -3,6 +3,7 @@
   "_creepName": "Alshar",
   "_creepObject": "_prefab/_entity/_creep/_creepdirectory/_creep_carbuncle/_creepObject_carbuncle_alshar",
   "_creepLevel": 18,
+  "_isBoss": false,
   "_unkillable": false,
   "_creepStatStruct": {
     "$id": "2",

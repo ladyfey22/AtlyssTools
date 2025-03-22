@@ -3,6 +3,7 @@
   "_creepName": "Poltergeist",
   "_creepObject": "_prefab/_entity/_creep/_creepdirectory/_creep_geist/_creepObject_poltergiest",
   "_creepLevel": 16,
+  "_isBoss": false,
   "_unkillable": false,
   "_creepStatStruct": {
     "$id": "2",

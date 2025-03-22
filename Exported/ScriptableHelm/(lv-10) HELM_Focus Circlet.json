@@ -44,6 +44,7 @@
   "_itemName": "Focus Circlet",
   "_itemIcon": "_graphic/_ui/_itemicons/_helm/_helmIco_11",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "Keep still.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

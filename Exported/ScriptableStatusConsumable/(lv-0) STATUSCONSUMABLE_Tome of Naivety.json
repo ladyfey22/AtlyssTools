@@ -16,6 +16,7 @@
   "_itemName": "Tome of Naivety",
   "_itemIcon": "_graphic/_ui/_itemicons/_consumable/_conIco_08",
   "_itemRarity": 0,
+  "_itemSortTag": 2,
   "_itemDescription": "Reading this tome resets all of your Attributes, reimbursing your Attribute Points. <color=lime>Can only be used in a Safe Zone.</color>",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

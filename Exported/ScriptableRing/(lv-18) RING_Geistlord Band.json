@@ -37,6 +37,7 @@
   "_itemName": "Geistlord Band",
   "_itemIcon": "_graphic/_ui/_itemicons/_ring/icon_ring11",
   "_itemRarity": 2,
+  "_itemSortTag": 0,
   "_itemDescription": "Whispers of Kaluuz's memories echo and reverberate inside your soul.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

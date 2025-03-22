@@ -44,6 +44,7 @@
   "_itemName": "Geistlord Crown",
   "_itemIcon": "_graphic/_ui/_itemicons/_helm/_helmIco_13",
   "_itemRarity": 2,
+  "_itemSortTag": 0,
   "_itemDescription": "Can you handle the madness that ensues?",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

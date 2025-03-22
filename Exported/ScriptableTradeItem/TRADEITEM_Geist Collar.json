@@ -4,6 +4,7 @@
   "_itemName": "Geist Collar",
   "_itemIcon": "_graphic/_ui/_itemicons/_tradeitem/_tradIco_11",
   "_itemRarity": 0,
+  "_itemSortTag": 9,
   "_itemDescription": "Shaking the bell doesn't make any noise.",
   "_maxStackAmount": 99,
   "_scriptableQuest": null,

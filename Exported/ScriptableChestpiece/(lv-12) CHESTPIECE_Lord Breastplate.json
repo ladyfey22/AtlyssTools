@@ -53,6 +53,7 @@
   "_itemName": "Lord Breastplate",
   "_itemIcon": "_graphic/_ui/_itemicons/_chest/_chestIco_02",
   "_itemRarity": 1,
+  "_itemSortTag": 0,
   "_itemDescription": "Hail the Lord!",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

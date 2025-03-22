@@ -37,6 +37,7 @@
   "_itemName": "Geistlord Ring",
   "_itemIcon": "_graphic/_ui/_itemicons/_ring/icon_ring08",
   "_itemRarity": 2,
+  "_itemSortTag": 0,
   "_itemDescription": "Whispers of Zuulneruda's memories echo and reverberate inside your soul.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

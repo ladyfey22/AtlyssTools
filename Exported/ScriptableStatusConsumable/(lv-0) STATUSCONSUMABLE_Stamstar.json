@@ -16,6 +16,7 @@
   "_itemName": "Stamstar",
   "_itemIcon": "_graphic/_ui/_itemicons/_consumable/_conIco_26",
   "_itemRarity": 0,
+  "_itemSortTag": 4,
   "_itemDescription": "Clenching this star gives a sudden boost of energy.",
   "_maxStackAmount": 99,
   "_scriptableQuest": null,

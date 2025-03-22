@@ -2,8 +2,6 @@
   "$id": "1",
   "_weaponDamage": 23,
   "_damageBonus": 3,
-  "_maxFloorDamageCap": 32,
-  "_maxCeilingDamageCap": 48,
   "_readonlyDamageRange": {
     "$id": "2",
     "x": 23,
@@ -74,6 +72,7 @@
   "_itemName": "Deadwood Axe",
   "_itemIcon": "_graphic/_ui/_itemicons/_weapon/_wepIco_20",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "This was wedged deep into a Deadwood. Origins of the cause is a mystery.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

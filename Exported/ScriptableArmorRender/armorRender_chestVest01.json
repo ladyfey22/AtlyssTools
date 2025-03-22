@@ -112,6 +112,7 @@
       ]
     }
   ],
+  "_useThighBlendshape": false,
   "name": "armorRender_chestVest01",
   "hideFlags": 0
 }

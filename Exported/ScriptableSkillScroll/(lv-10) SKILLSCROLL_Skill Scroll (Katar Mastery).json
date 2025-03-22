@@ -10,6 +10,7 @@
   "_itemName": "Skill Scroll (Katar Mastery)",
   "_itemIcon": "_graphic/_ui/_itemicons/_consumable/_conIco_10",
   "_itemRarity": 0,
+  "_itemSortTag": 7,
   "_itemDescription": "Teaches the user Katar Mastery.",
   "_maxStackAmount": 1,
   "_scriptableQuest": "_prefab/_entity/_npc/_sally/_quest/(lv-10) QUEST_Mastery of Katars",

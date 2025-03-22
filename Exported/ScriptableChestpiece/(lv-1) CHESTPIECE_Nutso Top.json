@@ -53,6 +53,7 @@
   "_itemName": "Nutso Top",
   "_itemIcon": "_graphic/_ui/_itemicons/_chest/_chestIco_13",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "Common clothing worn by Chang.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

@@ -53,6 +53,7 @@
   "_itemName": "Sleeper's Robe",
   "_itemIcon": "_graphic/_ui/_itemicons/_chest/_chestIco_18",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "So tired...",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

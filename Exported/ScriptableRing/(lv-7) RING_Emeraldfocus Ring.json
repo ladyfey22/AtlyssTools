@@ -37,6 +37,7 @@
   "_itemName": "Emeraldfocus Ring",
   "_itemIcon": "_graphic/_ui/_itemicons/_ring/icon_ring06",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "The emerald glistens even from afar.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

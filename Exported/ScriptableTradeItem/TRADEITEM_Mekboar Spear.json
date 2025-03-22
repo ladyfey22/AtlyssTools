@@ -4,6 +4,7 @@
   "_itemName": "Mekboar Spear",
   "_itemIcon": "_graphic/_ui/_itemicons/_tradeitem/_tradIco_08",
   "_itemRarity": 0,
+  "_itemSortTag": 9,
   "_itemDescription": "It is unknown how this spear was attached to a boar.",
   "_maxStackAmount": 30,
   "_scriptableQuest": null,

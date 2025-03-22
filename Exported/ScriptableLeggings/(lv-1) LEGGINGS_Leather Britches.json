@@ -47,6 +47,7 @@
   "_itemName": "Leather Britches",
   "_itemIcon": "_graphic/_ui/_itemicons/_chest/_leggingIco_poon02",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "Common clothing worn by Poons.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

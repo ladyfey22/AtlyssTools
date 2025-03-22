@@ -37,6 +37,7 @@
   "_itemName": "Ambersquire Ring",
   "_itemIcon": "_graphic/_ui/_itemicons/_ring/icon_ring05",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "Tough as nails.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

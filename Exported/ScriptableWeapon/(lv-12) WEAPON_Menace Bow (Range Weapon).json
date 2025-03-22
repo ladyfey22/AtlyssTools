@@ -2,8 +2,6 @@
   "$id": "1",
   "_weaponDamage": 9,
   "_damageBonus": 5,
-  "_maxFloorDamageCap": 0,
-  "_maxCeilingDamageCap": 0,
   "_readonlyDamageRange": {
     "$id": "2",
     "x": 9,
@@ -74,6 +72,7 @@
   "_itemName": "Menace Bow",
   "_itemIcon": "_graphic/_ui/_itemicons/_weapon/_wepIco_19",
   "_itemRarity": 1,
+  "_itemSortTag": 0,
   "_itemDescription": "You feel a surge of swiftness holding this bow.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

@@ -63,7 +63,7 @@
   "_isStackable": false,
   "_isRefreshable": false,
   "_applyConditionOnRecieve": true,
-  "_cancelOnHit": true,
+  "_cancelOnHit": false,
   "_cancelOnSkillCast": 1,
   "_cancelOnAttack": true,
   "_conditionObject": "_skill/_banditskills/_mistveil/_conditionEffect_mistVeil",

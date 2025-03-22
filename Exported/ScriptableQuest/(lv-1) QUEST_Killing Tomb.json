@@ -1,0 +1,56 @@
+{
+  "$id": "1",
+  "_questName": "Killing Tomb",
+  "_questType": 1,
+  "_questSubType": 0,
+  "_questIco": "_graphic/_ui/_zoneSelIco_dungeon",
+  "_questDescription": "You'll soon be bearing witness to an atrocity, lost one. <color=cyan>The Sanctum Catacombs nearby have been stirring up noise for a while now.</color> I do not have the time or patience to put up with their nonsense. \n\nThis is your first challenge to prove your worth to this world. <color=yellow>Make haste to the Catacombs, and slay 10 Mini Geists alongside 2 Geists.</color> I will see that you will be worthy for the further tasks ahead once you have done this test. \n\n<color=cyan>Speak to Angela for further instructions if you haven't done so. Without her assistance, you will not gain entry to the Catacombs.</color>\n",
+  "_questCompleteReturnMessage": "Return to Enok in Sanctum.",
+  "_questLevel": 1,
+  "_raceRequirement": null,
+  "_baseClassRequirement": null,
+  "_skillToHide": null,
+  "_requireNoviceClass": false,
+  "_autoFinishQuest": false,
+  "_preQuestRequirements": [],
+  "_questObjectiveItem": {
+    "$id": "2",
+    "_scriptItem": null,
+    "_setItemData": {
+      "$id": "3",
+      "_itemName": "",
+      "_quantity": 1,
+      "_maxQuantity": 1,
+      "_slotNumber": 0,
+      "_modifierTag": "",
+      "_damageTypeOverride": 0,
+      "_useDamageTypeOverride": false,
+      "_isEquipped": false,
+      "_isAltWeapon": false
+    }
+  },
+  "_scenePath": "",
+  "_questObjective": {
+    "$id": "4",
+    "_questItemRequirements": [],
+    "_questCreepRequirements": [
+      {
+        "$id": "5",
+        "_questCreep": "_prefab/_entity/_creep/_creepdirectory/_creep_geist/(lv-4) CREEP_Mini Geist",
+        "_creepsKilled": 10
+      },
+      {
+        "$id": "6",
+        "_questCreep": "_prefab/_entity/_creep/_creepdirectory/_creep_geist/(lv-7) CREEP_Geist",
+        "_creepsKilled": 2
+      }
+    ],
+    "_questTriggerRequirements": []
+  },
+  "_questExperiencePercentage": 5.75,
+  "_questCurrencyReward": 100,
+  "_questItemRewards": [],
+  "_displayEndDemoPrompt": false,
+  "name": "(lv-1) QUEST_Killing Tomb",
+  "hideFlags": 0
+}

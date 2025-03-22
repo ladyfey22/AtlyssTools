@@ -44,6 +44,7 @@
   "_itemName": "Magistrate Circlet",
   "_itemIcon": "_graphic/_ui/_itemicons/_helm/_helmIco_08",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "Clears the mind, putting things at ease.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

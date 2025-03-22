@@ -38,6 +38,7 @@
   "_itemName": "Sagecaller Cape",
   "_itemIcon": "_graphic/_ui/_itemicons/_chest/_capIco_07",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "Brimming with magical power.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

@@ -44,6 +44,7 @@
   "_itemName": "Geistlord Eye",
   "_itemIcon": "_graphic/_ui/_itemicons/_helm/_helmIco_15",
   "_itemRarity": 2,
+  "_itemSortTag": 0,
   "_itemDescription": "Madness beyond comprehension.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

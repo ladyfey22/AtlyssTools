@@ -35,8 +35,12 @@
   "_headMaterialIndex": 0,
   "_bodyMaterialIndex": 1,
   "_armMaterialIndex": 0,
+  "_armMaterialIndex_2": 1,
+  "_useArmMaterialIndex_2": true,
   "_upperLegMaterialIndex": 2,
   "_lowerLegMaterialIndex": 3,
+  "_feetMaterialIndex": 1,
+  "_useFeetMaterialIndex": true,
   "_raceModel": "_race/03_race_kubold/_raceModel_Kubold",
   "_raceDisplayParams": {
     "$id": "2",
@@ -312,7 +316,11 @@
       "_hideHelm": false,
       "_hideCape": true,
       "_hideChest": false,
-      "_hideLeggings": false
+      "_hideLeggings": false,
+      "_hideVanityHelm": false,
+      "_hideVanityCape": false,
+      "_hideVanityChest": false,
+      "_hideVanityLeggings": false
     },
     {
       "$id": "21",
@@ -356,7 +364,11 @@
       "_hideHelm": false,
       "_hideCape": true,
       "_hideChest": false,
-      "_hideLeggings": false
+      "_hideLeggings": false,
+      "_hideVanityHelm": false,
+      "_hideVanityCape": false,
+      "_hideVanityChest": false,
+      "_hideVanityLeggings": false
     }
   ],
   "_miscName": "Horns",

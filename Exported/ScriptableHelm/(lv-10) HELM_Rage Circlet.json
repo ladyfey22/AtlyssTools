@@ -44,6 +44,7 @@
   "_itemName": "Rage Circlet",
   "_itemIcon": "_graphic/_ui/_itemicons/_helm/_helmIco_10",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "Fervor of angst and envy.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

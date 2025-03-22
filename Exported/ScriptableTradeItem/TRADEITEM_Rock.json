@@ -4,6 +4,7 @@
   "_itemName": "Rock",
   "_itemIcon": "_graphic/_ui/_itemicons/_tradeitem/_tradIco_04",
   "_itemRarity": 0,
+  "_itemSortTag": 9,
   "_itemDescription": "Just an ordinary rock. Could be tossed at enemies.",
   "_maxStackAmount": 99,
   "_scriptableQuest": null,

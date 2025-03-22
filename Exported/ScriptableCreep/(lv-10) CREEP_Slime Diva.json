@@ -3,6 +3,7 @@
   "_creepName": "Slime Diva",
   "_creepObject": "_prefab/_entity/_creep/_creepdirectory/_creep_slimediva/_creepObject_slimeDiva",
   "_creepLevel": 10,
+  "_isBoss": true,
   "_unkillable": false,
   "_creepStatStruct": {
     "$id": "2",

@@ -3,6 +3,7 @@
   "_creepName": "Lesser Wisp",
   "_creepObject": "_prefab/_entity/_creep/_creepdirectory/_creep_ wisp/_creepObject_lesserWisp",
   "_creepLevel": 1,
+  "_isBoss": false,
   "_unkillable": false,
   "_creepStatStruct": {
     "$id": "2",

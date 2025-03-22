@@ -62,8 +62,12 @@
   "_headMaterialIndex": 0,
   "_bodyMaterialIndex": 1,
   "_armMaterialIndex": 0,
+  "_armMaterialIndex_2": 0,
+  "_useArmMaterialIndex_2": false,
   "_upperLegMaterialIndex": 2,
   "_lowerLegMaterialIndex": 3,
+  "_feetMaterialIndex": 0,
+  "_useFeetMaterialIndex": false,
   "_raceModel": "_race/02_race_poon/_raceModel_Poon",
   "_raceDisplayParams": {
     "$id": "2",
@@ -451,7 +455,11 @@
       "_hideHelm": false,
       "_hideCape": true,
       "_hideChest": true,
-      "_hideLeggings": false
+      "_hideLeggings": false,
+      "_hideVanityHelm": false,
+      "_hideVanityCape": false,
+      "_hideVanityChest": false,
+      "_hideVanityLeggings": false
     },
     {
       "$id": "33",
@@ -495,7 +503,11 @@
       "_hideHelm": false,
       "_hideCape": true,
       "_hideChest": true,
-      "_hideLeggings": false
+      "_hideLeggings": false,
+      "_hideVanityHelm": false,
+      "_hideVanityCape": false,
+      "_hideVanityChest": false,
+      "_hideVanityLeggings": false
     }
   ],
   "_miscName": "Antlers",

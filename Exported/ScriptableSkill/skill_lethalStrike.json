@@ -4,7 +4,7 @@
   "_skillIcon": "_graphic/_ui/_skillicons/_abIco34",
   "_skillControlType": 1,
   "_skillDamageType": 0,
-  "_skillDescription": "<color=cyan>Charge and release skill.</color> Sends the Fighter into a dash, landing a heavy force attack on hit. <color=lime>Requires a physical combat weapon.</color>",
+  "_skillDescription": "<color=cyan>Charge and release skill.</color> Sends the Fighter into a dash, landing a heavy force attack on hit.",
   "_allowAsBonusSkill": false,
   "_weaponTypeRequirements": [
     {

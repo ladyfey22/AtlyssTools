@@ -53,6 +53,7 @@
   "_itemName": "Silken Top",
   "_itemIcon": "_graphic/_ui/_itemicons/_chest/_silkenTop",
   "_itemRarity": 4,
+  "_itemSortTag": 0,
   "_itemDescription": "Ancient silk cloth. This could've been around since the very beginning of time...",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

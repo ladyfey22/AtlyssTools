@@ -39,6 +39,7 @@
   "_itemName": "Demicrypt Buckler",
   "_itemIcon": "_graphic/_ui/_itemicons/_shield/_shieldIco_06",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "An emblem of an ancient sarcophogus.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

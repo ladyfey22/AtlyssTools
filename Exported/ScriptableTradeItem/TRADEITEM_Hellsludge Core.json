@@ -4,6 +4,7 @@
   "_itemName": "Hellsludge Core",
   "_itemIcon": "_graphic/_ui/_itemicons/_tradeitem/_tradIco_33",
   "_itemRarity": 0,
+  "_itemSortTag": 9,
   "_itemDescription": "A chunk of a Hellsludge.",
   "_maxStackAmount": 99,
   "_scriptableQuest": null,

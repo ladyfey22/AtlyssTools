@@ -3,6 +3,7 @@
   "_creepName": "Lord Zuulneruda",
   "_creepObject": "_prefab/_entity/_creep/_creepdirectory/_creep_geistlord/_creepObject_geistlord(normal)",
   "_creepLevel": 12,
+  "_isBoss": true,
   "_unkillable": false,
   "_creepStatStruct": {
     "$id": "2",

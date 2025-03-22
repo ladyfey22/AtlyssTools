@@ -53,6 +53,7 @@
   "_itemName": "Monolith Chestpiece",
   "_itemIcon": "_graphic/_ui/_itemicons/_chest/_chestIco_33",
   "_itemRarity": 1,
+  "_itemSortTag": 0,
   "_itemDescription": "",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

@@ -2,8 +2,6 @@
   "$id": "1",
   "_weaponDamage": 18,
   "_damageBonus": 6,
-  "_maxFloorDamageCap": 34,
-  "_maxCeilingDamageCap": 50,
   "_readonlyDamageRange": {
     "$id": "2",
     "x": 18,
@@ -74,6 +72,7 @@
   "_itemName": "Serrated Spear",
   "_itemIcon": "_graphic/_ui/_itemicons/_weapon/_wepIco_60",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

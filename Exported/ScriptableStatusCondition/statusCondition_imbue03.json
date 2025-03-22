@@ -53,7 +53,7 @@
   "_conditionIcon": "_graphic/_ui/_skillicons/_abIco35",
   "_displayConditionOnUI": true,
   "_conditionDescription": "Magic Power increased by 15, Magic Defense by 10, and Max Mana increased by 20.",
-  "_duration": 60.0,
+  "_duration": 120.0,
   "_repeatRate": 0.0,
   "_basePowerValue": 0,
   "_attackPowerMod": 0.0,

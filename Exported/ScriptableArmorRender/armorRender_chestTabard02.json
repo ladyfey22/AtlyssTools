@@ -112,6 +112,7 @@
       ]
     }
   ],
+  "_useThighBlendshape": true,
   "name": "armorRender_chestTabard02",
   "hideFlags": 0
 }

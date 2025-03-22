@@ -37,6 +37,7 @@
   "_itemName": "Jadetrout Ring",
   "_itemIcon": "_graphic/_ui/_itemicons/_ring/icon_ring13",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "The tail of the fish on this ring moves rapidly.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

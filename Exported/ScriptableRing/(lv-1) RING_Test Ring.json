@@ -37,6 +37,7 @@
   "_itemName": "Test Ring",
   "_itemIcon": "_graphic/_ui/equipCell_filter_ring",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "It was once possible to get this. If you have it, you must've been around for a while...",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

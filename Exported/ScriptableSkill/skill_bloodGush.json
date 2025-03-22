@@ -4,7 +4,7 @@
   "_skillIcon": "_graphic/_ui/_skillicons/_abIco13",
   "_skillControlType": 0,
   "_skillDamageType": 0,
-  "_skillDescription": "Deals initial damage, then applies a bleeding damage over time condition on hit. <color=lime>Requires a physical combat weapon.</color>",
+  "_skillDescription": "Deals initial damage, then applies a bleeding damage over time condition on hit.",
   "_allowAsBonusSkill": false,
   "_weaponTypeRequirements": [
     {

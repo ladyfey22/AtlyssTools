@@ -4,6 +4,7 @@
   "_itemName": "Blightwood Stick",
   "_itemIcon": "_graphic/_ui/_itemicons/_tradeitem/_tradIco_23",
   "_itemRarity": 0,
+  "_itemSortTag": 9,
   "_itemDescription": "Feels warm to hold.",
   "_maxStackAmount": 99,
   "_scriptableQuest": null,

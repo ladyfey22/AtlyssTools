@@ -47,6 +47,7 @@
   "_itemName": "Mercenary Leggings",
   "_itemIcon": "_graphic/_ui/_itemicons/_chest/_legIco_18",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

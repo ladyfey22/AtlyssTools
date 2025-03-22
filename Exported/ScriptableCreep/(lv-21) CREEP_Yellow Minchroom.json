@@ -3,6 +3,7 @@
   "_creepName": "Yellow Minchroom",
   "_creepObject": "_prefab/_entity/_creep/_creepdirectory/_creep_minchroom/_creepObject_minchRoom(Yellow)",
   "_creepLevel": 21,
+  "_isBoss": false,
   "_unkillable": false,
   "_creepStatStruct": {
     "$id": "2",
@@ -51,7 +52,7 @@
   "_ignoreGravity": false,
   "_pathfindParams": {
     "$id": "4",
-    "_movementSpeed": 2.3,
+    "_movementSpeed": 1.98,
     "_stoppingDistance": 15.35,
     "_wanderingPathfinder": true,
     "_wanderingRadius": 45.5,

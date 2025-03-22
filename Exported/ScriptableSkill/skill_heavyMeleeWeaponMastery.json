@@ -51,7 +51,7 @@
       "_attackPowerModRef": 0.0,
       "_magicPowerModRef": 0.0,
       "_rangePowerModRef": 0.0,
-      "_rankDescriptor": "Unlocks the heavy melee charge attack. Hold $CHARGEATKINPUT to charge attack. <color=yellow>Costs 5 stamina.</color>",
+      "_rankDescriptor": "Unlocks the heavy melee charge attack. Hold $CHARGEATKINPUT to charge attack. <color=yellow>Costs 10 stamina.</color>",
       "_selfConditionOutput": null,
       "_earlySkillObjectOutput": {
         "$id": "4",
@@ -90,7 +90,7 @@
       "_attackPowerModRef": 0.0,
       "_magicPowerModRef": 0.0,
       "_rangePowerModRef": 0.0,
-      "_rankDescriptor": "Unlocks the heavy melee charge attack. Hold $CHARGEATKINPUT to charge attack. <color=yellow>Costs 5 stamina.</color> Additionally upgrades the heavy melee jump attack.",
+      "_rankDescriptor": "Unlocks the heavy melee charge attack. Hold $CHARGEATKINPUT to charge attack. <color=yellow>Costs 10 stamina.</color> Additionally upgrades the heavy melee jump attack.",
       "_selfConditionOutput": null,
       "_earlySkillObjectOutput": {
         "$id": "9",

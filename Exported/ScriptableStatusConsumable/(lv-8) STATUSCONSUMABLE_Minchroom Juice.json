@@ -16,6 +16,7 @@
   "_itemName": "Minchroom Juice",
   "_itemIcon": "_graphic/_ui/_itemicons/_tradeitem/_tradIco_27",
   "_itemRarity": 0,
+  "_itemSortTag": 2,
   "_itemDescription": "Tasty Minchroom blood.",
   "_maxStackAmount": 99,
   "_scriptableQuest": null,

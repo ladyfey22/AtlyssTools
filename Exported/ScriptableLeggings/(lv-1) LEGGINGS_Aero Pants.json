@@ -47,6 +47,7 @@
   "_itemName": "Aero Pants",
   "_itemIcon": "_graphic/_ui/_itemicons/_chest/_legIco_10",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "Common clothing worn by Byrdles.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

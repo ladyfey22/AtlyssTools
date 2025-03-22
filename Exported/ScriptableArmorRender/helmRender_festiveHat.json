@@ -1,0 +1,118 @@
+{
+  "$id": "1",
+  "_raceArmorRenders": [
+    {
+      "$id": "2",
+      "_raceNameTag": "Imp",
+      "_scriptableRace": "_race/01_race_imp/playerRace_imp",
+      "_raceArmorMesh": "_graphic/_mesh/03_item/00_armor/_helm/_dreamer/helm_dreamer",
+      "_boobOverrideMesh": "",
+      "_meshPosition": [
+        0.0,
+        0.008,
+        -0.003
+      ],
+      "_meshRotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_meshScale": [
+        0.0085,
+        0.0082,
+        0.009
+      ]
+    },
+    {
+      "$id": "3",
+      "_raceNameTag": "Poon",
+      "_scriptableRace": "_race/02_race_poon/playerRace_poon",
+      "_raceArmorMesh": "_graphic/_mesh/03_item/00_armor/_helm/_dreamer/helm_dreamer",
+      "_boobOverrideMesh": "",
+      "_meshPosition": [
+        0.0,
+        0.01,
+        -0.005
+      ],
+      "_meshRotation": [
+        -4.54,
+        0.0,
+        0.0
+      ],
+      "_meshScale": [
+        0.01,
+        0.009,
+        0.0092
+      ]
+    },
+    {
+      "$id": "4",
+      "_raceNameTag": "Kubold",
+      "_scriptableRace": "_race/03_race_kubold/playerRace_kubold",
+      "_raceArmorMesh": "_graphic/_mesh/03_item/00_armor/_helm/_dreamer/helm_dreamer",
+      "_boobOverrideMesh": "",
+      "_meshPosition": [
+        0.0,
+        0.0098,
+        -0.0037
+      ],
+      "_meshRotation": [
+        0.55,
+        0.0,
+        0.0
+      ],
+      "_meshScale": [
+        0.01,
+        0.01,
+        0.0093
+      ]
+    },
+    {
+      "$id": "5",
+      "_raceNameTag": "Byrdle",
+      "_scriptableRace": "_race/04_race_byrdle/playerRace_byrdle",
+      "_raceArmorMesh": "_graphic/_mesh/03_item/00_armor/_helm/_dreamer/helm_dreamer",
+      "_boobOverrideMesh": "",
+      "_meshPosition": [
+        0.0,
+        0.01,
+        -0.004
+      ],
+      "_meshRotation": [
+        -11.6,
+        0.0,
+        0.0
+      ],
+      "_meshScale": [
+        0.009,
+        0.009,
+        0.009
+      ]
+    },
+    {
+      "$id": "6",
+      "_raceNameTag": "Chang",
+      "_scriptableRace": "_race/05_race_chang/playerRace_chang",
+      "_raceArmorMesh": "_graphic/_mesh/03_item/00_armor/_helm/_dreamer/helm_dreamer",
+      "_boobOverrideMesh": "",
+      "_meshPosition": [
+        0.0,
+        0.008,
+        -0.005
+      ],
+      "_meshRotation": [
+        -9.79,
+        0.0,
+        0.0
+      ],
+      "_meshScale": [
+        0.01,
+        0.0085,
+        0.009
+      ]
+    }
+  ],
+  "_useThighBlendshape": false,
+  "name": "helmRender_festiveHat",
+  "hideFlags": 0
+}

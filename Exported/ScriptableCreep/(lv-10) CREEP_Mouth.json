@@ -3,6 +3,7 @@
   "_creepName": "Mouth",
   "_creepObject": "_prefab/_entity/_creep/_creepdirectory/_creep_mouth/_creepObject_mouth",
   "_creepLevel": 10,
+  "_isBoss": false,
   "_unkillable": false,
   "_creepStatStruct": {
     "$id": "2",

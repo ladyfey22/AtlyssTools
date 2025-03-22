@@ -4,6 +4,7 @@
   "_itemName": "Angela's Tear",
   "_itemIcon": "_graphic/_ui/_itemicons/_tradeitem/_tradIco_31",
   "_itemRarity": 0,
+  "_itemSortTag": 1,
   "_itemDescription": "Instantly revives the holder if they die.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

@@ -47,6 +47,7 @@
   "_itemName": "Slimek Leggings",
   "_itemIcon": "_graphic/_ui/_itemicons/_chest/_legIco_08",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "Drenched in Slimek slime.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

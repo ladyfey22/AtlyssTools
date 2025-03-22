@@ -4,6 +4,7 @@
   "_itemName": "Deathgel Core",
   "_itemIcon": "_graphic/_ui/_itemicons/_tradeitem/_tradIco_32",
   "_itemRarity": 0,
+  "_itemSortTag": 9,
   "_itemDescription": "A chunk of a Deathgel.",
   "_maxStackAmount": 99,
   "_scriptableQuest": null,

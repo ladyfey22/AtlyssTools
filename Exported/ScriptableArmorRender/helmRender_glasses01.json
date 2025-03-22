@@ -112,6 +112,7 @@
       ]
     }
   ],
+  "_useThighBlendshape": false,
   "name": "helmRender_glasses01",
   "hideFlags": 0
 }

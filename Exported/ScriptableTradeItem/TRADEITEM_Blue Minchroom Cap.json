@@ -4,6 +4,7 @@
   "_itemName": "Blue Minchroom Cap",
   "_itemIcon": "_graphic/_ui/_itemicons/_tradeitem/_tradIco_34",
   "_itemRarity": 0,
+  "_itemSortTag": 9,
   "_itemDescription": "The spores can frostbite something. Could be good to keep a room cool.",
   "_maxStackAmount": 99,
   "_scriptableQuest": null,

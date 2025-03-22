@@ -53,6 +53,7 @@
   "_itemName": "Slimek Chest",
   "_itemIcon": "_graphic/_ui/_itemicons/_chest/_chestIco_10",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "Sturdy enough to widthstand some further damage.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

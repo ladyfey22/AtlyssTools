@@ -4,14 +4,14 @@
   "_skillIcon": "_graphic/_ui/_skillicons/_abIco60",
   "_skillControlType": 3,
   "_skillDamageType": 3,
-  "_skillDescription": "Allows the Fighter to reflect standard projectiles by the parry window. <color=cyan>Reflected projectiles are scaled by the Fighter's stats.</color> <color=lime>Requires a held shield.</color>",
+  "_skillDescription": "Allows the Fighter to reflect melee damage if successfully parried.",
   "_allowAsBonusSkill": false,
   "_weaponTypeRequirements": [],
   "_requireShield": false,
   "_baseSkillPower": 0,
   "_skillRankParams": {
     "$id": "2",
-    "_baseLevelRequirement": 18,
+    "_baseLevelRequirement": 14,
     "_baseManaCost": 1,
     "_baseHealthCost": 0,
     "_baseStaminaCost": 0,
@@ -23,8 +23,8 @@
     "_baseCastTime": 0.85,
     "_baseCooldown": 1.25,
     "_baseSkillPowerPercent": 1.0,
-    "_skillLevelRequirementPerLevel": 0,
-    "_skillLevelRequirementChange": 0,
+    "_skillLevelRequirementPerLevel": 1,
+    "_skillLevelRequirementChange": 4,
     "_skillCostChangePerLevel": 0,
     "_skillCostChange": 0,
     "_skillCastTimePerLevel": 0,
@@ -38,7 +38,7 @@
     {
       "$id": "3",
       "_rankTag": "Reflect (Rank 1)",
-      "_levelRequirement": 18,
+      "_levelRequirement": 14,
       "_manaCost": 1,
       "_healthCost": 0,
       "_staminaCost": 0,
@@ -51,7 +51,7 @@
       "_attackPowerModRef": 0.0,
       "_magicPowerModRef": 0.0,
       "_rangePowerModRef": 0.0,
-      "_rankDescriptor": "Unlocks the ability to <color=yellow>reflect parried projectiles with a held shield.</color>",
+      "_rankDescriptor": "Deals <color=yellow>40%</color> of the incoming melee damage back to the target.",
       "_selfConditionOutput": null,
       "_earlySkillObjectOutput": {
         "$id": "4",
@@ -69,6 +69,84 @@
         "_skillObject": "_skill/_fighterskills/00_passive/_reflect/_skillObject_reflect_00",
         "_skillObjectCondition": {
           "$id": "7",
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      }
+    },
+    {
+      "$id": "8",
+      "_rankTag": "Reflect (Rank 2)",
+      "_levelRequirement": 18,
+      "_manaCost": 1,
+      "_healthCost": 0,
+      "_staminaCost": 0,
+      "_greaterThanCost": false,
+      "_requiredItem": null,
+      "_requiredItemQuantity": 0,
+      "_castTime": 0.85,
+      "_coolDown": 1.25,
+      "_skillPowerPercent": 1.0,
+      "_attackPowerModRef": 0.0,
+      "_magicPowerModRef": 0.0,
+      "_rangePowerModRef": 0.0,
+      "_rankDescriptor": "Deals <color=yellow>80%</color> of the incoming melee damage back to the target.",
+      "_selfConditionOutput": null,
+      "_earlySkillObjectOutput": {
+        "$id": "9",
+        "_skillObjectTag": "",
+        "_skillObject": "",
+        "_skillObjectCondition": {
+          "$id": "10",
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      },
+      "_skillObjectOutput": {
+        "$id": "11",
+        "_skillObjectTag": "",
+        "_skillObject": "_skill/_fighterskills/00_passive/_reflect/_skillObject_reflect_01",
+        "_skillObjectCondition": {
+          "$id": "12",
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      }
+    },
+    {
+      "$id": "13",
+      "_rankTag": "Reflect (Rank 3)",
+      "_levelRequirement": 22,
+      "_manaCost": 1,
+      "_healthCost": 0,
+      "_staminaCost": 0,
+      "_greaterThanCost": false,
+      "_requiredItem": null,
+      "_requiredItemQuantity": 0,
+      "_castTime": 0.85,
+      "_coolDown": 1.25,
+      "_skillPowerPercent": 1.0,
+      "_attackPowerModRef": 0.0,
+      "_magicPowerModRef": 0.0,
+      "_rangePowerModRef": 0.0,
+      "_rankDescriptor": "Deals <color=yellow>120%</color> of the incoming melee damage back to the target.",
+      "_selfConditionOutput": null,
+      "_earlySkillObjectOutput": {
+        "$id": "14",
+        "_skillObjectTag": "",
+        "_skillObject": "",
+        "_skillObjectCondition": {
+          "$id": "15",
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      },
+      "_skillObjectOutput": {
+        "$id": "16",
+        "_skillObjectTag": "",
+        "_skillObject": "_skill/_fighterskills/00_passive/_reflect/_skillObject_reflect_02",
+        "_skillObjectCondition": {
+          "$id": "17",
           "_scriptableCondition": null,
           "_chance": 1.0
         }

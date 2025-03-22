@@ -23,7 +23,7 @@
     "_baseCastTime": 0.85,
     "_baseCooldown": 1.25,
     "_baseSkillPowerPercent": 1.0,
-    "_skillLevelRequirementPerLevel": 1,
+    "_skillLevelRequirementPerLevel": 2,
     "_skillLevelRequirementChange": 4,
     "_skillCostChangePerLevel": 0,
     "_skillCostChange": 0,
@@ -51,7 +51,7 @@
       "_attackPowerModRef": 0.0,
       "_magicPowerModRef": 0.0,
       "_rangePowerModRef": 0.0,
-      "_rankDescriptor": "Increases Mana Regeneration speed by 24%.",
+      "_rankDescriptor": "Increases Mana Regeneration speed by <color=yellow>12%.</color>",
       "_selfConditionOutput": null,
       "_earlySkillObjectOutput": {
         "$id": "4",
@@ -77,7 +77,7 @@
     {
       "$id": "8",
       "_rankTag": "Manaflow (Rank 2)",
-      "_levelRequirement": 14,
+      "_levelRequirement": 10,
       "_manaCost": 1,
       "_healthCost": 0,
       "_staminaCost": 0,
@@ -90,7 +90,7 @@
       "_attackPowerModRef": 0.0,
       "_magicPowerModRef": 0.0,
       "_rangePowerModRef": 0.0,
-      "_rankDescriptor": "Increases Mana Regeneration speed by 48%.",
+      "_rankDescriptor": "Increases Mana Regeneration speed by <color=yellow>24%.</color>",
       "_selfConditionOutput": null,
       "_earlySkillObjectOutput": {
         "$id": "9",
@@ -116,7 +116,7 @@
     {
       "$id": "13",
       "_rankTag": "Manaflow (Rank 3)",
-      "_levelRequirement": 18,
+      "_levelRequirement": 14,
       "_manaCost": 1,
       "_healthCost": 0,
       "_staminaCost": 0,
@@ -129,7 +129,7 @@
       "_attackPowerModRef": 0.0,
       "_magicPowerModRef": 0.0,
       "_rangePowerModRef": 0.0,
-      "_rankDescriptor": "Increases Mana Regeneration speed by 72%.",
+      "_rankDescriptor": "Increases Mana Regeneration speed by <color=yellow>48%.</color>",
       "_selfConditionOutput": null,
       "_earlySkillObjectOutput": {
         "$id": "14",
@@ -147,6 +147,84 @@
         "_skillObject": "_skill/_mysticskills/00_passive/_manaflow/_skillObject_manaflow_rank03",
         "_skillObjectCondition": {
           "$id": "17",
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      }
+    },
+    {
+      "$id": "18",
+      "_rankTag": "Manaflow (Rank 4)",
+      "_levelRequirement": 14,
+      "_manaCost": 1,
+      "_healthCost": 0,
+      "_staminaCost": 0,
+      "_greaterThanCost": false,
+      "_requiredItem": null,
+      "_requiredItemQuantity": 0,
+      "_castTime": 0.85,
+      "_coolDown": 1.25,
+      "_skillPowerPercent": 1.0,
+      "_attackPowerModRef": 0.0,
+      "_magicPowerModRef": 0.0,
+      "_rangePowerModRef": 0.0,
+      "_rankDescriptor": "Increases Mana Regeneration speed by <color=yellow>60%.</color>",
+      "_selfConditionOutput": null,
+      "_earlySkillObjectOutput": {
+        "$id": "19",
+        "_skillObjectTag": "",
+        "_skillObject": "",
+        "_skillObjectCondition": {
+          "$id": "20",
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      },
+      "_skillObjectOutput": {
+        "$id": "21",
+        "_skillObjectTag": "",
+        "_skillObject": "_skill/_mysticskills/00_passive/_manaflow/_skillObject_manaflow_rank04",
+        "_skillObjectCondition": {
+          "$id": "22",
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      }
+    },
+    {
+      "$id": "23",
+      "_rankTag": "Manaflow (Rank 5)",
+      "_levelRequirement": 18,
+      "_manaCost": 1,
+      "_healthCost": 0,
+      "_staminaCost": 0,
+      "_greaterThanCost": false,
+      "_requiredItem": null,
+      "_requiredItemQuantity": 0,
+      "_castTime": 0.85,
+      "_coolDown": 1.25,
+      "_skillPowerPercent": 1.0,
+      "_attackPowerModRef": 0.0,
+      "_magicPowerModRef": 0.0,
+      "_rangePowerModRef": 0.0,
+      "_rankDescriptor": "Increases Mana Regeneration speed by <color=yellow>72%.</color>",
+      "_selfConditionOutput": null,
+      "_earlySkillObjectOutput": {
+        "$id": "24",
+        "_skillObjectTag": "",
+        "_skillObject": "",
+        "_skillObjectCondition": {
+          "$id": "25",
+          "_scriptableCondition": null,
+          "_chance": 1.0
+        }
+      },
+      "_skillObjectOutput": {
+        "$id": "26",
+        "_skillObjectTag": "",
+        "_skillObject": "_skill/_mysticskills/00_passive/_manaflow/_skillObject_manaflow_rank05",
+        "_skillObjectCondition": {
+          "$id": "27",
           "_scriptableCondition": null,
           "_chance": 1.0
         }

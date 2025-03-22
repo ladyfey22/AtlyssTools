@@ -39,7 +39,7 @@
     "_magicPower": 0,
     "_criticalRate": 0.0,
     "_magicCriticalRate": 0.0,
-    "_defense": 2,
+    "_defense": 3,
     "_magicDefense": 0,
     "_evasion": 0.0
   },
@@ -53,6 +53,7 @@
   "_itemName": "Slimecrust Chest",
   "_itemIcon": "_graphic/_ui/_itemicons/_chest/_chestIco_09",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "Cracked and ravaged by slime.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

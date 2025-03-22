@@ -47,6 +47,7 @@
   "_itemName": "Test Pants",
   "_itemIcon": "_graphic/_ui/_skillicons/_abIco00",
   "_itemRarity": 4,
+  "_itemSortTag": 0,
   "_itemDescription": "Used to view texturing.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

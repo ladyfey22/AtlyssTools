@@ -3,6 +3,7 @@
   "_creepName": "Slimek",
   "_creepObject": "_prefab/_entity/_creep/_creepdirectory/_creep_slime/_creepObject_slimek",
   "_creepLevel": 5,
+  "_isBoss": false,
   "_unkillable": false,
   "_creepStatStruct": {
     "$id": "2",
@@ -15,7 +16,7 @@
     "_magicPower": 0,
     "_criticalRate": 0.0,
     "_magicCriticalRate": 0.0,
-    "_defense": 10,
+    "_defense": 7,
     "_magicDefense": 5,
     "_evasion": 0.0
   },

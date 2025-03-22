@@ -38,6 +38,7 @@
   "_itemName": "Rugged Cloak",
   "_itemIcon": "_graphic/_ui/_itemicons/_chest/_capIco_03",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

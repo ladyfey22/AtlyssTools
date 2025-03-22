@@ -38,6 +38,7 @@
   "_itemName": "Regazuul Cape",
   "_itemIcon": "_graphic/_ui/_itemicons/_chest/_capIco_00",
   "_itemRarity": 1,
+  "_itemSortTag": 0,
   "_itemDescription": "A long forgotten heirloom of Lord Zuulneruda.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

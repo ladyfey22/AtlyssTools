@@ -4,6 +4,7 @@
   "_itemName": "Slimek Ears",
   "_itemIcon": "_graphic/_ui/_itemicons/_tradeitem/_tradIco_03",
   "_itemRarity": 0,
+  "_itemSortTag": 9,
   "_itemDescription": "Even sharper than normal Slime ears.",
   "_maxStackAmount": 30,
   "_scriptableQuest": null,

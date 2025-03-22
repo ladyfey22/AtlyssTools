@@ -37,6 +37,7 @@
   "_itemName": "Pearlpond Ring",
   "_itemIcon": "_graphic/_ui/_itemicons/_ring/icon_ring10",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "The pearls chime, providing a peace of mind and clarity.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

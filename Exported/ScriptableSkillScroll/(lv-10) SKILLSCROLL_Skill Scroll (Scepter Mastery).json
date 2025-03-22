@@ -10,6 +10,7 @@
   "_itemName": "Skill Scroll (Scepter Mastery)",
   "_itemIcon": "_graphic/_ui/_itemicons/_consumable/_conIco_15",
   "_itemRarity": 0,
+  "_itemSortTag": 7,
   "_itemDescription": "Teaches the user Scepter Mastery.",
   "_maxStackAmount": 1,
   "_scriptableQuest": "_prefab/_entity/_npc/_angela/_quest/(lv-10) QUEST_Mastery of Scepters",

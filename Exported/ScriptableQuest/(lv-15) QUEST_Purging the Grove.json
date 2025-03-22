@@ -4,7 +4,7 @@
   "_questType": 1,
   "_questSubType": 0,
   "_questIco": "_graphic/_ui/_zoneSelIco_safe",
-  "_questDescription": "<color=cyan>The Crescent Grove is a malice to this world.</color> The creatures that swarm within the grove are not up to snuff to our standards, lost one. Silence them, and put their corrupted minds to rest.\n\n<color=yellow>Destroy 30 Deadwoods, 25 Carbuncles, 10 Red and Blue Minchrooms, and 15 Monoliths.</color> Return to me at once when your task is completed.\n",
+  "_questDescription": "<color=cyan>The Crescent Grove is a malice to this world.</color> The creatures that swarm within the grove are not up to snuff to our standards, lost one. Silence them, and put their corrupted minds to rest.\n\n<color=yellow>Destroy 20 Deadwoods, 10 Carbuncles, 10 Red and Blue Minchrooms, and 15 Monoliths.</color> Return to me at once when your task is completed.\n",
   "_questCompleteReturnMessage": "Return to Enok in Sanctum.",
   "_questLevel": 15,
   "_raceRequirement": null,
@@ -387,17 +387,34 @@
       },
       "_questExperiencePercentage": 0.42,
       "_questCurrencyReward": 2500,
-      "_questItemRewards": [],
+      "_questItemRewards": [
+        {
+          "$id": "40",
+          "_scriptItem": "_item/01_equipment/01_armor/05_ring/(lv-17) RING_Valor Ring",
+          "_setItemData": {
+            "$id": "41",
+            "_itemName": "Valor Ring",
+            "_quantity": 1,
+            "_maxQuantity": 1,
+            "_slotNumber": 0,
+            "_modifierTag": "",
+            "_damageTypeOverride": 0,
+            "_useDamageTypeOverride": false,
+            "_isEquipped": false,
+            "_isAltWeapon": false
+          }
+        }
+      ],
       "_displayEndDemoPrompt": false,
       "name": "(lv-15) QUEST_The Colossus",
       "hideFlags": 0
     }
   ],
   "_questObjectiveItem": {
-    "$id": "40",
+    "$id": "42",
     "_scriptItem": null,
     "_setItemData": {
-      "$id": "41",
+      "$id": "43",
       "_itemName": "",
       "_quantity": 1,
       "_maxQuantity": 1,
@@ -411,31 +428,31 @@
   },
   "_scenePath": "",
   "_questObjective": {
-    "$id": "42",
+    "$id": "44",
     "_questItemRequirements": [],
     "_questCreepRequirements": [
       {
-        "$id": "43",
-        "_questCreep": "_prefab/_entity/_creep/_creepdirectory/_creep_stump/(lv-13) CREEP_Deadwood",
-        "_creepsKilled": 30
-      },
-      {
-        "$id": "44",
-        "_questCreep": "_prefab/_entity/_creep/_creepdirectory/_creep_carbuncle/(lv-18) CREEP_Carbuncle",
-        "_creepsKilled": 25
-      },
-      {
         "$id": "45",
-        "_questCreep": "_prefab/_entity/_creep/_creepdirectory/_creep_minchroom/(lv-16) CREEP_Red Minchroom",
-        "_creepsKilled": 10
+        "_questCreep": "_prefab/_entity/_creep/_creepdirectory/_creep_stump/(lv-13) CREEP_Deadwood",
+        "_creepsKilled": 20
       },
       {
         "$id": "46",
-        "_questCreep": "_prefab/_entity/_creep/_creepdirectory/_creep_minchroom/(lv-16) CREEP_Blue Minchroom",
+        "_questCreep": "_prefab/_entity/_creep/_creepdirectory/_creep_carbuncle/(lv-18) CREEP_Carbuncle",
         "_creepsKilled": 10
       },
       {
         "$id": "47",
+        "_questCreep": "_prefab/_entity/_creep/_creepdirectory/_creep_minchroom/(lv-16) CREEP_Red Minchroom",
+        "_creepsKilled": 10
+      },
+      {
+        "$id": "48",
+        "_questCreep": "_prefab/_entity/_creep/_creepdirectory/_creep_minchroom/(lv-16) CREEP_Blue Minchroom",
+        "_creepsKilled": 10
+      },
+      {
+        "$id": "49",
         "_questCreep": "_prefab/_entity/_creep/_creepdirectory/_creep_golem/(lv-19) CREEP_Monolith",
         "_creepsKilled": 15
       }
@@ -446,10 +463,10 @@
   "_questCurrencyReward": 3200,
   "_questItemRewards": [
     {
-      "$id": "48",
+      "$id": "50",
       "_scriptItem": "_item/02_consumable/_status/_potion/(lv-10) STATUSCONSUMABLE_Defense Potion",
       "_setItemData": {
-        "$id": "49",
+        "$id": "51",
         "_itemName": "Defense Potion",
         "_quantity": 3,
         "_maxQuantity": 99,
@@ -462,10 +479,10 @@
       }
     },
     {
-      "$id": "50",
+      "$id": "52",
       "_scriptItem": "_item/02_consumable/_status/_potion/(lv-10) STATUSCONSUMABLE_Mgk",
       "_setItemData": {
-        "$id": "51",
+        "$id": "53",
         "_itemName": "Mgk. Defense Potion",
         "_quantity": 3,
         "_maxQuantity": 99,
@@ -478,10 +495,10 @@
       }
     },
     {
-      "$id": "52",
+      "$id": "54",
       "_scriptItem": "_item/02_consumable/_status/_potion/(lv-10) STATUSCONSUMABLE_Evasion Potion",
       "_setItemData": {
-        "$id": "53",
+        "$id": "55",
         "_itemName": "Evasion Potion",
         "_quantity": 3,
         "_maxQuantity": 99,

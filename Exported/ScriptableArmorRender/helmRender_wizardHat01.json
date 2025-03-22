@@ -112,6 +112,7 @@
       ]
     }
   ],
+  "_useThighBlendshape": false,
   "name": "helmRender_wizardHat01",
   "hideFlags": 0
 }

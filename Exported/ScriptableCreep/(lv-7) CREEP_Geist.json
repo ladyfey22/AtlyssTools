@@ -3,6 +3,7 @@
   "_creepName": "Geist",
   "_creepObject": "_prefab/_entity/_creep/_creepdirectory/_creep_geist/_creepObject_geist",
   "_creepLevel": 7,
+  "_isBoss": false,
   "_unkillable": false,
   "_creepStatStruct": {
     "$id": "2",

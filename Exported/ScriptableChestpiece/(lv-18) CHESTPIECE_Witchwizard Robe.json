@@ -53,6 +53,7 @@
   "_itemName": "Witchwizard Robe",
   "_itemIcon": "_graphic/_ui/_itemicons/_chest/_chestIco_05",
   "_itemRarity": 1,
+  "_itemSortTag": 0,
   "_itemDescription": "Robe of the higher elite occult.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

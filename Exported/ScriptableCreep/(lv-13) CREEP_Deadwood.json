@@ -3,6 +3,7 @@
   "_creepName": "Deadwood",
   "_creepObject": "_prefab/_entity/_creep/_creepdirectory/_creep_stump/_creepObject_deadwood",
   "_creepLevel": 15,
+  "_isBoss": false,
   "_unkillable": false,
   "_creepStatStruct": {
     "$id": "2",

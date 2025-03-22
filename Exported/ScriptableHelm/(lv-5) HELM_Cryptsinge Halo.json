@@ -44,6 +44,7 @@
   "_itemName": "Cryptsinge Halo",
   "_itemIcon": "_graphic/_ui/_itemicons/_helm/_helmIco_06",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "Rumination of the dead.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

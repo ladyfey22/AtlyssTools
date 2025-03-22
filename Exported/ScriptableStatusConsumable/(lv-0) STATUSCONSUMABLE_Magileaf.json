@@ -16,6 +16,7 @@
   "_itemName": "Magileaf",
   "_itemIcon": "_graphic/_ui/_itemicons/_consumable/_conIco_24",
   "_itemRarity": 0,
+  "_itemSortTag": 3,
   "_itemDescription": "A small mind replenishing leaf.",
   "_maxStackAmount": 99,
   "_scriptableQuest": null,

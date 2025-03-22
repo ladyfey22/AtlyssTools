@@ -44,6 +44,7 @@
   "_itemName": "Dire Helm",
   "_itemIcon": "_graphic/_ui/_itemicons/_helm/_helmIco_09",
   "_itemRarity": 4,
+  "_itemSortTag": 0,
   "_itemDescription": "Once worn by a brave warrior.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

@@ -2,8 +2,6 @@
   "$id": "1",
   "_weaponDamage": 10,
   "_damageBonus": 6,
-  "_maxFloorDamageCap": 0,
-  "_maxCeilingDamageCap": 0,
   "_readonlyDamageRange": {
     "$id": "2",
     "x": 10,
@@ -74,6 +72,7 @@
   "_itemName": "Necroroyal Halberd",
   "_itemIcon": "_graphic/_ui/_itemicons/_weapon/_wepIco_42",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "Used by the royal guard of the undead.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

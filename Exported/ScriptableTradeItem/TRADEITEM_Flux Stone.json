@@ -4,6 +4,7 @@
   "_itemName": "Flux Stone",
   "_itemIcon": "_graphic/_ui/_itemicons/_tradeitem/_tradIco_42",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "Has capabilities to change a weapon damage scale to mind.",
   "_maxStackAmount": 99,
   "_scriptableQuest": null,

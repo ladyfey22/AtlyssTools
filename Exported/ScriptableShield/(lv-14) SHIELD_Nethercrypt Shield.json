@@ -39,6 +39,7 @@
   "_itemName": "Nethercrypt Shield",
   "_itemIcon": "_graphic/_ui/_itemicons/_shield/_shieldIco_07",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "Emblem of the twisted nether realm.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

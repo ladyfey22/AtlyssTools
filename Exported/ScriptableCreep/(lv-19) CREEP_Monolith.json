@@ -3,6 +3,7 @@
   "_creepName": "Monolith",
   "_creepObject": "_prefab/_entity/_creep/_creepdirectory/_creep_golem/_creepObject_monolith",
   "_creepLevel": 19,
+  "_isBoss": false,
   "_unkillable": false,
   "_creepStatStruct": {
     "$id": "2",
@@ -40,9 +41,9 @@
   "_itemDrops": [
     {
       "$id": "3",
-      "_itemTag": "Monolith Core (42.4%)",
+      "_itemTag": "Monolith Core (71.3%)",
       "_item": "_item/03_trade/TRADEITEM_Monolith Core",
-      "_dropChance": 0.424,
+      "_dropChance": 0.713,
       "_dropQuantity": 1
     },
     {
@@ -54,23 +55,23 @@
     },
     {
       "$id": "5",
-      "_itemTag": "Green Dye (3.4%)",
-      "_item": "_item/02_consumable/_dyes/DYE_Green Dye",
-      "_dropChance": 0.034,
+      "_itemTag": "Serrated Spear (4.1%)",
+      "_item": "_item/01_equipment/02_weapon/04_polearm/(lv-18) WEAPON_Serrated Spear (Polearm)",
+      "_dropChance": 0.041,
       "_dropQuantity": 1
     },
     {
       "$id": "6",
-      "_itemTag": "Angela's Tear (0.1%)",
-      "_item": "_item/03_trade/TRADEITEM_Angela's Tear",
-      "_dropChance": 0.001,
+      "_itemTag": "Green Dye (1.6%)",
+      "_item": "_item/02_consumable/_dyes/DYE_Green Dye",
+      "_dropChance": 0.016,
       "_dropQuantity": 1
     },
     {
       "$id": "7",
-      "_itemTag": "Serrated Spear (4.1%)",
-      "_item": "_item/01_equipment/02_weapon/04_polearm/(lv-18) WEAPON_Serrated Spear (Polearm)",
-      "_dropChance": 0.041,
+      "_itemTag": "Angela's Tear (0.1%)",
+      "_item": "_item/03_trade/TRADEITEM_Angela's Tear",
+      "_dropChance": 0.001,
       "_dropQuantity": 1
     }
   ],

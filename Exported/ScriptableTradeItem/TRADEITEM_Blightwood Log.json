@@ -4,6 +4,7 @@
   "_itemName": "Blightwood Log",
   "_itemIcon": "_graphic/_ui/_itemicons/_tradeitem/_tradIco_24",
   "_itemRarity": 0,
+  "_itemSortTag": 9,
   "_itemDescription": "The inside is very hot, containing a burning blue flame that never seems to go out.",
   "_maxStackAmount": 15,
   "_scriptableQuest": null,

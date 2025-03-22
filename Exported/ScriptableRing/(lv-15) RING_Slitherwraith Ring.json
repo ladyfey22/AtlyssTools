@@ -37,6 +37,7 @@
   "_itemName": "Slitherwraith Ring",
   "_itemIcon": "_graphic/_ui/_itemicons/_ring/icon_ring09",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "Slither through and past the doors.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

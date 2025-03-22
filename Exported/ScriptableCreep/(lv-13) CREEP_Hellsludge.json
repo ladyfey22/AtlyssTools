@@ -3,6 +3,7 @@
   "_creepName": "Hellsludge",
   "_creepObject": "_prefab/_entity/_creep/_creepdirectory/_creep_slime/_creepObject_hellSludge",
   "_creepLevel": 13,
+  "_isBoss": false,
   "_unkillable": false,
   "_creepStatStruct": {
     "$id": "2",
@@ -106,7 +107,7 @@
   },
   "_generalCreepVisual": {
     "$id": "11",
-    "_creepVisualScale": 2.3,
+    "_creepVisualScale": 2.0,
     "_shadowProjectionScale": 4.2,
     "_deathAnimDespawnTime": 1.67,
     "_showHealthBar": true,

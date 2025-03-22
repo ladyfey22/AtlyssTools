@@ -16,6 +16,7 @@
   "_itemName": "Bunpot",
   "_itemIcon": "_graphic/_ui/_itemicons/_consumable/_conIco_20",
   "_itemRarity": 0,
+  "_itemSortTag": 2,
   "_itemDescription": "A small healing salve.",
   "_maxStackAmount": 99,
   "_scriptableQuest": null,

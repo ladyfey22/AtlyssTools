@@ -39,6 +39,7 @@
   "_itemName": "Omen Shield",
   "_itemIcon": "_graphic/_ui/_itemicons/_shield/_shieldIco_04",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "Something's intimidating about the design.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

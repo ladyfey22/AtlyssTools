@@ -37,6 +37,7 @@
   "_itemName": "Sapphireweave Ring",
   "_itemIcon": "_graphic/_ui/_itemicons/_ring/icon_ring07",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "Sounds of the ocean waves through your ears.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

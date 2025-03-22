@@ -112,6 +112,7 @@
       ]
     }
   ],
+  "_useThighBlendshape": false,
   "name": "helmRender_crown",
   "hideFlags": 0
 }

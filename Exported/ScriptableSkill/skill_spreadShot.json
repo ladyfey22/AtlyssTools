@@ -58,7 +58,7 @@
       "_attackPowerModRef": 0.0,
       "_magicPowerModRef": 0.0,
       "_rangePowerModRef": 0.0,
-      "_rankDescriptor": "Shoots 3 spreadshot arrows.",
+      "_rankDescriptor": "Shoots <color=yellow>3</color> projectiles, dealing $SKP damage.",
       "_selfConditionOutput": null,
       "_earlySkillObjectOutput": {
         "$id": "5",
@@ -97,7 +97,7 @@
       "_attackPowerModRef": 0.0,
       "_magicPowerModRef": 0.0,
       "_rangePowerModRef": 0.0,
-      "_rankDescriptor": "Shoots 5 spreadshot arrows.",
+      "_rankDescriptor": "Shoots <color=yellow>5</color> projectiles, dealing $SKP damage.",
       "_selfConditionOutput": null,
       "_earlySkillObjectOutput": {
         "$id": "10",
@@ -136,7 +136,7 @@
       "_attackPowerModRef": 0.0,
       "_magicPowerModRef": 0.0,
       "_rangePowerModRef": 0.0,
-      "_rankDescriptor": "Shoots 7 spreadshot arrows.",
+      "_rankDescriptor": "Shoots <color=yellow>7</color> projectiles, dealing $SKP damage.",
       "_selfConditionOutput": null,
       "_earlySkillObjectOutput": {
         "$id": "15",

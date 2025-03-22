@@ -3,6 +3,7 @@
   "_creepName": "Lord Kaluuz",
   "_creepObject": "_prefab/_entity/_creep/_creepdirectory/_creep_geistlord/_creepObject_geistlord(hard)",
   "_creepLevel": 18,
+  "_isBoss": true,
   "_unkillable": false,
   "_creepStatStruct": {
     "$id": "2",

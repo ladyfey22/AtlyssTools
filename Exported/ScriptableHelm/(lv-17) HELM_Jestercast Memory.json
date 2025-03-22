@@ -44,6 +44,7 @@
   "_itemName": "Jestercast Memory",
   "_itemIcon": "_graphic/_ui/_itemicons/_helm/_helmIco_19",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "The true fool is the enemy of the caster...",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

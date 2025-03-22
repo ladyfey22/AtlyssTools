@@ -2,8 +2,6 @@
   "$id": "1",
   "_weaponDamage": 8,
   "_damageBonus": 3,
-  "_maxFloorDamageCap": 0,
-  "_maxCeilingDamageCap": 0,
   "_readonlyDamageRange": {
     "$id": "2",
     "x": 8,
@@ -74,6 +72,7 @@
   "_itemName": "Mini Geist Scythe",
   "_itemIcon": "_graphic/_ui/_itemicons/_weapon/_wepIco_07",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "The only best friend of a Mini Geist. The blade emanates menacingly.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

@@ -3,6 +3,7 @@
   "_creepName": "Toxin",
   "_creepObject": "_prefab/_entity/_creep/_creepdirectory/_creep_ wisp/_creepObject_toxin",
   "_creepLevel": 8,
+  "_isBoss": false,
   "_unkillable": false,
   "_creepStatStruct": {
     "$id": "2",
@@ -16,7 +17,7 @@
     "_criticalRate": 0.0,
     "_magicCriticalRate": 0.0,
     "_defense": 10,
-    "_magicDefense": 13,
+    "_magicDefense": 12,
     "_evasion": 0.005
   },
   "_creepDamageType": 2,

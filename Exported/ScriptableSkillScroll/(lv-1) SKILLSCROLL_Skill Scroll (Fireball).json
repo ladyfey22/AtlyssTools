@@ -10,6 +10,7 @@
   "_itemName": "Skill Scroll (Fireball)",
   "_itemIcon": "_graphic/_ui/_itemicons/_consumable/_conIco_13",
   "_itemRarity": 0,
+  "_itemSortTag": 7,
   "_itemDescription": "Teaches the user Fireball.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

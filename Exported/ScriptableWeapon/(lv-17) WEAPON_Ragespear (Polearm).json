@@ -2,8 +2,6 @@
   "$id": "1",
   "_weaponDamage": 20,
   "_damageBonus": 2,
-  "_maxFloorDamageCap": 0,
-  "_maxCeilingDamageCap": 0,
   "_readonlyDamageRange": {
     "$id": "2",
     "x": 20,
@@ -74,6 +72,7 @@
   "_itemName": "Ragespear",
   "_itemIcon": "_graphic/_ui/_itemicons/_weapon/_wepIco_69",
   "_itemRarity": 1,
+  "_itemSortTag": 0,
   "_itemDescription": "The tip of the spear looks bloody, but it appears to be a corrosive material.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

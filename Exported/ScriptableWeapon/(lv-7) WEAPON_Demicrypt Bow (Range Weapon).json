@@ -2,8 +2,6 @@
   "$id": "1",
   "_weaponDamage": 4,
   "_damageBonus": 4,
-  "_maxFloorDamageCap": 0,
-  "_maxCeilingDamageCap": 0,
   "_readonlyDamageRange": {
     "$id": "2",
     "x": 4,
@@ -74,6 +72,7 @@
   "_itemName": "Demicrypt Bow",
   "_itemIcon": "_graphic/_ui/_itemicons/_weapon/_wepIco_32",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "The bones holding this bow together seem fresh.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

@@ -4,6 +4,7 @@
   "_itemName": "Slime Core",
   "_itemIcon": "_graphic/_ui/_itemicons/_tradeitem/_tradIco_00",
   "_itemRarity": 0,
+  "_itemSortTag": 9,
   "_itemDescription": "A chunk of a Slime.",
   "_maxStackAmount": 99,
   "_scriptableQuest": null,

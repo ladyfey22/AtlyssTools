@@ -2,8 +2,6 @@
   "$id": "1",
   "_weaponDamage": 11,
   "_damageBonus": 4,
-  "_maxFloorDamageCap": 0,
-  "_maxCeilingDamageCap": 0,
   "_readonlyDamageRange": {
     "$id": "2",
     "x": 11,
@@ -74,6 +72,7 @@
   "_itemName": "Nethercrypt Bauble",
   "_itemIcon": "_graphic/_ui/_itemicons/_weapon/_wepIco_39",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "It's hard to comprehend how terrible the malformed skull is.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

@@ -38,6 +38,7 @@
   "_itemName": "Meshlink Cape",
   "_itemIcon": "_graphic/_ui/_itemicons/_chest/_capIco_06",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "Evasive and light.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

@@ -1,7 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
+using AtlyssTools.Registries;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
@@ -115,8 +118,15 @@ public class BaseConverter<T> : JsonConverter<T> where T : ScriptableObject
 
         if (reader.Depth == 0)
         {
-            var obj = ScriptableObject.CreateInstance<T>();
-            serializer.Populate(reader, obj);
+            ScriptablesManager<T> manager = AtlyssToolsLoader.Instance.GetManager(typeof(T)) as ScriptablesManager<T>;
+            if (manager == null) throw new("Manager not found");
+            JObject jObject = JObject.Load(reader);
+            string cachedName = manager.GetJsonName(jObject);
+            
+            T obj = manager.GetFromCache(cachedName);
+            if (obj == null)
+                obj = ScriptableObject.CreateInstance<T>();
+            serializer.Populate(jObject.CreateReader(), obj);
             return obj;
         }
 
@@ -184,6 +194,101 @@ public class Vector4Converter : JsonConverter<Vector4>
         var w = Convert.ToSingle(reader.Value);
         reader.Read();
         return new(x, y, z, w);
+    }
+}
+
+// arrays
+public class ArrayConverter : JsonConverter
+{
+    
+    public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
+    {
+        var array = value as Array;
+        writer.WriteStartArray();
+        foreach (var item in array)
+        {
+            serializer.Serialize(writer, item);
+        }
+        writer.WriteEndArray();
+    }
+
+    public override object ReadJson(JsonReader reader, System.Type objectType, object existingValue, JsonSerializer serializer)
+    {        // format is
+        // [item1, item2, item3] OR
+        // {
+        //   "op": "add | access",
+        //   "index": 0, (if access)
+        //   "values": [item1, item2] (if add)
+        // }
+        
+        if (reader.TokenType == JsonToken.StartArray)
+        {
+            var list = new List<object>();
+            while (reader.Read() && reader.TokenType != JsonToken.EndArray)
+            {
+                list.Add(serializer.Deserialize(reader));
+            }
+            return list.ToArray();
+        }
+        else
+        {
+            var jObject = JObject.Load(reader);
+            var op = jObject["op"].ToString();
+            if (op == "add")
+            {
+                var values = jObject["values"]?.ToObject<object[]>();
+                var index = jObject["index"]?.ToObject<int>();
+                var array = existingValue as Array;
+                
+                if (array == null)
+                {
+                    if (values != null)
+                        array = Array.CreateInstance(objectType.GetElementType() ?? throw new InvalidOperationException(), values.Length);
+                    else
+                    {
+                        Plugin.Logger.LogError("Array is null and values is null in JSON add operation");
+                        return null;
+                    }
+                }
+                
+                if (values == null || index == null)
+                {
+                    Plugin.Logger.LogError("Values or index is null");
+                    return null;
+                }
+                
+                for (var i = 0; i < values.Length; i++)
+                {
+                    array.SetValue(values[i], index.Value + i);
+                }
+            }
+            else if (op == "access")
+            {
+                // this means they want to deserialize a specific element in the array
+                var index = jObject["index"]?.ToObject<int>();
+                if (index == null)
+                {
+                    Plugin.Logger.LogError("Index is null in JSON access operation");
+                    return null;
+                }
+                
+                var array = existingValue as Array;
+                if (array == null)
+                {
+                    Plugin.Logger.LogError("Array is null in JSON access operation");
+                    return null;
+                }
+                
+                // deserialize the object into the existing array using Populate. we just use the existing element reference
+                serializer.Populate(jObject.CreateReader(), array.GetValue(index.Value));
+            }
+        }
+        return null;
+    }
+
+    public override bool CanConvert(System.Type objectType)
+    {
+        return objectType.IsArray;
     }
 }
 

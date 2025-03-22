@@ -36,7 +36,7 @@
     "_questCreepRequirements": [
       {
         "$id": "5",
-        "_questCreep": "_prefab/_entity/_creep/_creepdirectory/_creep_mekboar/_creep_rageboar/(lv-18) CREEP_Rageboar",
+        "_questCreep": "_prefab/_entity/_creep/_creepdirectory/_creep_mekboar/_creep_rageboar/(lv-17) CREEP_Rageboar",
         "_creepsKilled": 20
       }
     ],

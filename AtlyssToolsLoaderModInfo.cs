@@ -123,7 +123,7 @@ public class AtlyssToolsLoaderModInfo
             // cut off the ModPath/Assets/ and .json, because the LoadJsonObject method will add it back
 
             var relativePath = file.Replace(ModPath + "/Assets/", "").Replace(".json", "").Replace("\\", "/");
-            var value = LoadJsonObject<T>(relativePath);
+            var value = LoadJsonObject(relativePath, typeof(T));
 
             if (value == null)
             {
@@ -132,11 +132,10 @@ public class AtlyssToolsLoaderModInfo
         }
     }
 
-    private T LoadJsonObject<T>(string path) where T : Object
+    private Object LoadJsonObject(string path, System.Type type)
     {
         if (string.IsNullOrEmpty(path)) return null;
 
-        var type = typeof(T);
         // if this is a non-concrete type, we need to check the json for the type
         if (NonConcreteType.Contains(type))
         {
@@ -159,7 +158,7 @@ public class AtlyssToolsLoaderModInfo
         path = path.Replace(".json", "");
 
         if (PathToAsset.TryGetValue(path, out var value)) // if it's already loaded, return it
-            return value as T;
+            return value;
         if (!File.Exists(ModPath + "/Assets/" + path + ".json")) 
             return null;
 
@@ -169,11 +168,11 @@ public class AtlyssToolsLoaderModInfo
         // check that this is a ScriptableObject
         if (!type.IsSubclassOf(typeof(ScriptableObject)) && type != typeof(ScriptableObject))
         {
-            Plugin.Logger.LogError($"Type {typeof(T).Name} is not a ScriptableObject");
+            Plugin.Logger.LogError($"Type {type.Name} is not a ScriptableObject");
             return null;
         }
 
-        var obj = JsonUtility.LoadFromJson(json, type) as T;
+        var obj = JsonUtility.LoadFromJson(json, type);
         if (obj == null)
         {
             Plugin.Logger.LogError($"Failed to load json asset {path}");
@@ -182,25 +181,25 @@ public class AtlyssToolsLoaderModInfo
 
         // keep in mind, type may no longer be T, so we can't cast it to List<T>
         _scriptableObjects[type].Add(obj);
-        PathToAsset.Add(path, obj);
+        PathToAsset.Add(path, obj as Object);
         // write out the type it was 
-        return obj;
+        return obj as Object;
     }
 
-    public T LoadModAsset<T>(string assetName) where T : Object
+    public Object LoadModAsset(string assetName, System.Type type)
     {
         // check if it's in the asset bundles
 
         foreach (var bundle in Bundles)
         {
-            var obj = bundle.LoadAsset<T>(assetName);
+            var obj = bundle.LoadAsset(assetName, type);
             if (obj != null) return obj;
         }
 
         // check if T is a scriptable object
-        if (typeof(T).IsSubclassOf(typeof(ScriptableObject)) || typeof(T) == typeof(ScriptableObject))
+        if (type.IsSubclassOf(typeof(ScriptableObject)) || type == typeof(ScriptableObject))
         {
-            var obj = LoadJsonObject<T>(assetName);
+            var obj = LoadJsonObject(assetName, type);
             if (obj != null) return obj;
         }
 

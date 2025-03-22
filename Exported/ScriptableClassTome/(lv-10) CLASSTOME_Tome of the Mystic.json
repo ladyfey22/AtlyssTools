@@ -11,6 +11,7 @@
   "_itemName": "Tome of the Mystic",
   "_itemIcon": "_graphic/_ui/_itemicons/_consumable/_conIco_02",
   "_itemRarity": 0,
+  "_itemSortTag": 1,
   "_itemDescription": "<color=lime>Can only be used in a Safe Zone.</color>\n\nReading this tome teaches you to be the <color=cyan>wise Mystic class.</color> Additionally resets and reimburses your Skill Points. Not reversible.",
   "_maxStackAmount": 1,
   "_scriptableQuest": "_prefab/_entity/_npc/_angela/_quest/(lv-10) QUEST_Disciple of Magic",

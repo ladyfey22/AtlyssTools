@@ -53,6 +53,7 @@
   "_itemName": "Magilord Overalls",
   "_itemIcon": "_graphic/_ui/_itemicons/_chest/_chestIco_27",
   "_itemRarity": 1,
+  "_itemSortTag": 0,
   "_itemDescription": "Devout mystic sages of ancient times worn these in ceremonies.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

@@ -53,6 +53,7 @@
   "_itemName": "Tattered Battlerobe",
   "_itemIcon": "_graphic/_ui/_itemicons/_chest/_chestIco_17",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

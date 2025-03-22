@@ -4,6 +4,7 @@
   "_itemName": "Mouth Eye",
   "_itemIcon": "_graphic/_ui/_itemicons/_tradeitem/_tradIco_19",
   "_itemRarity": 0,
+  "_itemSortTag": 9,
   "_itemDescription": "Squishy. Though, it can't be popped.",
   "_maxStackAmount": 45,
   "_scriptableQuest": null,

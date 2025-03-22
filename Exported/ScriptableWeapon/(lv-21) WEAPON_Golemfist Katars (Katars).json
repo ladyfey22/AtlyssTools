@@ -2,8 +2,6 @@
   "$id": "1",
   "_weaponDamage": 20,
   "_damageBonus": 8,
-  "_maxFloorDamageCap": 38,
-  "_maxCeilingDamageCap": 52,
   "_readonlyDamageRange": {
     "$id": "2",
     "x": 20,
@@ -74,6 +72,7 @@
   "_itemName": "Golemfist Katars",
   "_itemIcon": "_graphic/_ui/_itemicons/_weapon/_wepIco_73",
   "_itemRarity": 1,
+  "_itemSortTag": 0,
   "_itemDescription": "Pow!",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

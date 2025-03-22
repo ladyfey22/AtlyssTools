@@ -2,8 +2,6 @@
   "$id": "1",
   "_weaponDamage": 19,
   "_damageBonus": 3,
-  "_maxFloorDamageCap": 34,
-  "_maxCeilingDamageCap": 49,
   "_readonlyDamageRange": {
     "$id": "2",
     "x": 19,
@@ -74,6 +72,7 @@
   "_itemName": "Coldgeist Frostcaller",
   "_itemIcon": "_graphic/_ui/_itemicons/_weapon/_wepIco_47",
   "_itemRarity": 1,
+  "_itemSortTag": 0,
   "_itemDescription": "Used to awaken Geistlords with its spine chilling tone.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

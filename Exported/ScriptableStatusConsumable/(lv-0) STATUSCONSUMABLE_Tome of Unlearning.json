@@ -16,6 +16,7 @@
   "_itemName": "Tome of Unlearning",
   "_itemIcon": "_graphic/_ui/_itemicons/_consumable/_conIco_05",
   "_itemRarity": 0,
+  "_itemSortTag": 2,
   "_itemDescription": "Reading this tome unlearns all your Skills, reimbursing all your spent Skill Points. <color=lime>Can only be used in a Safe Zone.</color>",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

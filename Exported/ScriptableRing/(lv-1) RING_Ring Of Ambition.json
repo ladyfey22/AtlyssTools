@@ -37,6 +37,7 @@
   "_itemName": "Ring Of Ambition",
   "_itemIcon": "_graphic/_ui/_itemicons/_ring/icon_ring04",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "Something strikes you about this ring.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

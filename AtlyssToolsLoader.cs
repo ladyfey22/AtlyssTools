@@ -144,9 +144,9 @@ public class AtlyssToolsLoader
         return Instance.ModInfos[modName].GetModScriptableObjects<T>();
     }
 
-    public static T LoadAsset<T>(string assetName) where T : Object
+    public static Object LoadAsset(string assetName, System.Type type)
     {
-        if (string.IsNullOrEmpty(assetName)) return null;
+             if (string.IsNullOrEmpty(assetName)) return null;
 
         // replace \\ with / for windows
         assetName = assetName.Replace("\\", "/");
@@ -157,32 +157,37 @@ public class AtlyssToolsLoader
             var parts = assetName.Split(':');
             if (parts.Length != 2)
             {
-                Plugin.Logger.LogError($"Failed to load {assetName} of type {typeof(T).Name} Invalid format");
+                Plugin.Logger.LogError($"Failed to load {assetName} of type {type.Name} Invalid format");
                 return null;
             }
 
-            var returnV = Instance.ModInfos[parts[0].ToLower()].LoadModAsset<T>(parts[1]);
-
+            var returnV = Instance.ModInfos[parts[0].ToLower()].LoadModAsset(parts[1], type);
             if (returnV != null) return returnV;
 
             Plugin.Logger.LogError(
-                $"Failed to load {assetName} from {parts[0]} of type {typeof(T).Name}. File not found or invalid");
+                $"Failed to load {assetName} from {parts[0]} of type {type.Name}. File not found or invalid");
             return null;
         }
 
         // if no mod is specified check them all
         foreach (var modInfo in Instance.ModInfos.Values)
         {
-            var returnV = modInfo.LoadModAsset<T>(assetName);
+            var returnV = modInfo.LoadModAsset(assetName, type);
             if (returnV != null) return returnV;
         }
 
         // check the base resources
-        var r = UnityEngine.Resources.Load<T>(assetName);
+        var r = UnityEngine.Resources.Load(assetName, type);
         if (r != null) return r;
 
-        Plugin.Logger.LogError($"Failed to load {assetName} of type {typeof(T).Name}. File not found or invalid");
-        return null;
+        Plugin.Logger.LogError($"Failed to load {assetName} of type {type.Name}. File not found or invalid");
+        return null;   
+    }
+    
+
+    public static T LoadAsset<T>(string assetName) where T : Object
+    {
+        return LoadAsset(assetName, typeof(T)) as T;
     }
 
 

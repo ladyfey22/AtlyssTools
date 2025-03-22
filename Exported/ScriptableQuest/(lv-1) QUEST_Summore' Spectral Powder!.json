@@ -19,7 +19,7 @@
       "_questType": 0,
       "_questSubType": 0,
       "_questIco": "_graphic/_ui/_itemicons/_tradeitem/_tradIco_10",
-      "_questDescription": "Y'know, I could use somethin' of your help, if ya don't mind! <color=cyan>If you're up to it, I'll let you in on a secret too-- but keep it on the hush hush!</color>\n\nI'm lookin' for a special combination of ghostly goods, <color=cyan>the type that can be mixed into a fine lil' powder that makes you invisible!</color> \n\nIf ya could, <color=yellow>fetch me some Ghostdusts from them undead fellas, and a handful of those weird lil' collars the Geists wear from the Catacombs!</color>\n\nCome back when ya got a good amount of em', ya hear?",
+      "_questDescription": "Y'know, I could use somethin' of your help, if ya don't mind! <color=cyan>If you're up to it, I'll let you in on a secret too-- but keep it on the hush hush!</color>\n\nI'm lookin' for a special combination of ghostly goods, <color=cyan>the type that can be mixed into a fine lil' powder that makes you invisible!</color> \n\nIf ya could, <color=yellow>fetch me some Ghostdusts from them undead fellas, and a handful of those weird lil' collars the Geists wear from the Catacombs!</color>\n\nCome back when ya got a good amount of em', ya hear?\n\n<color=cyan>Oh! Make sure ya speak to Angela before ya head on over' there! She can open the way into the Catacombs real easy!</color>\n",
       "_questCompleteReturnMessage": "Return to Sally in Sanctum.",
       "_questLevel": 1,
       "_raceRequirement": null,

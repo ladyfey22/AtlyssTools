@@ -39,6 +39,7 @@
   "_itemName": "Mithril Shield",
   "_itemIcon": "_graphic/_ui/_itemicons/_shield/_shieldIco_09",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

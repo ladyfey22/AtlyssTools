@@ -3,6 +3,7 @@
   "_creepName": "Demigolem",
   "_creepObject": "_prefab/_entity/_creep/_creepdirectory/_creep_golem/_creepObject_demiGolem",
   "_creepLevel": 24,
+  "_isBoss": false,
   "_unkillable": false,
   "_creepStatStruct": {
     "$id": "2",

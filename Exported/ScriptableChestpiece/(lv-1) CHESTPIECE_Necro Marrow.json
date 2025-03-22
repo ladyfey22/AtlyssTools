@@ -53,6 +53,7 @@
   "_itemName": "Necro Marrow",
   "_itemIcon": "_graphic/_ui/_itemicons/_chest/_chestpieceIco_imp01",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "Common clothing worn by Imps.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

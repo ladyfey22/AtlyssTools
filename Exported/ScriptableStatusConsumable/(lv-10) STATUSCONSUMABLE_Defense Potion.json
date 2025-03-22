@@ -18,6 +18,7 @@
   "_itemName": "Defense Potion",
   "_itemIcon": "_graphic/_ui/_itemicons/_consumable/_conIco_30",
   "_itemRarity": 0,
+  "_itemSortTag": 6,
   "_itemDescription": "Temporarily increases Defense by 10.",
   "_maxStackAmount": 99,
   "_scriptableQuest": null,

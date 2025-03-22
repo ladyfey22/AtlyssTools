@@ -2,8 +2,6 @@
   "$id": "1",
   "_weaponDamage": 4,
   "_damageBonus": 1,
-  "_maxFloorDamageCap": 0,
-  "_maxCeilingDamageCap": 0,
   "_readonlyDamageRange": {
     "$id": "2",
     "x": 4,
@@ -74,6 +72,7 @@
   "_itemName": "Slimecrust Blade",
   "_itemIcon": "_graphic/_ui/_itemicons/_weapon/_wepIco_02",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "Looks to be an Iron Sword, but the blade is intensely dulled by slime.",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

@@ -3,6 +3,7 @@
   "_creepName": "Miasma",
   "_creepObject": "_prefab/_entity/_creep/_creepdirectory/_creep_ wisp/_creepObject_miasma",
   "_creepLevel": 14,
+  "_isBoss": false,
   "_unkillable": false,
   "_creepStatStruct": {
     "$id": "2",
@@ -15,7 +16,7 @@
     "_magicPower": 0,
     "_criticalRate": 0.0,
     "_magicCriticalRate": 0.0,
-    "_defense": 16,
+    "_defense": 15,
     "_magicDefense": 19,
     "_evasion": 0.005
   },

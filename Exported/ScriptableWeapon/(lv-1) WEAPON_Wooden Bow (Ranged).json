@@ -2,8 +2,6 @@
   "$id": "1",
   "_weaponDamage": 3,
   "_damageBonus": 0,
-  "_maxFloorDamageCap": 0,
-  "_maxCeilingDamageCap": 0,
   "_readonlyDamageRange": {
     "$id": "2",
     "x": 3,
@@ -74,6 +72,7 @@
   "_itemName": "Wooden Bow",
   "_itemIcon": "_graphic/_ui/_itemicons/_weapon/_wepIco_06",
   "_itemRarity": 0,
+  "_itemSortTag": 0,
   "_itemDescription": "",
   "_maxStackAmount": 1,
   "_scriptableQuest": null,

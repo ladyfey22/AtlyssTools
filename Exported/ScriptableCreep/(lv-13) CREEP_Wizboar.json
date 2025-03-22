@@ -3,6 +3,7 @@
   "_creepName": "Wizboar",
   "_creepObject": "_prefab/_entity/_creep/_creepdirectory/_creep_mekboar/_creep_wizboar/_creepObject_wizBoar",
   "_creepLevel": 13,
+  "_isBoss": false,
   "_unkillable": false,
   "_creepStatStruct": {
     "$id": "2",

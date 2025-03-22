@@ -1,0 +1,49 @@
+{
+  "$id": "1",
+  "_armorTexture": "",
+  "_canDyeArmor": true,
+  "_colorAdjustParams": {
+    "$id": "2",
+    "_hue": 0.0,
+    "_saturation": 1.0,
+    "_brightness": 0.0,
+    "_contrast": 1.0
+  },
+  "_equipmentLevel": 17,
+  "_classRequirement": null,
+  "_equipType": 0,
+  "_statArray": {
+    "$id": "3",
+    "_maxHealth": 0,
+    "_maxMana": 0,
+    "_maxStamina": 0,
+    "_experience": 0,
+    "_attackPower": 3,
+    "_dexPower": 3,
+    "_magicPower": 3,
+    "_criticalRate": 0.02,
+    "_magicCriticalRate": 0.0,
+    "_defense": 13,
+    "_magicDefense": 5,
+    "_evasion": 0.0
+  },
+  "_statModifierTable": "_item/01_equipment/00_modifier/_statmodifiertables/statModifierTable_tier00",
+  "_statModifierCost": {
+    "$id": "4",
+    "_scriptItem": null,
+    "_scriptItemQuantity": 0
+  },
+  "_itemType": 0,
+  "_itemName": "Valor Ring",
+  "_itemIcon": "_graphic/_ui/_itemicons/_ring/icon_ring02",
+  "_itemRarity": 1,
+  "_itemSortTag": 0,
+  "_itemDescription": "",
+  "_maxStackAmount": 1,
+  "_scriptableQuest": null,
+  "_questTriggerTag": "",
+  "_destroyOnDrop": false,
+  "_vendorCost": 1280,
+  "name": "(lv-17) RING_Valor Ring",
+  "hideFlags": 0
+}

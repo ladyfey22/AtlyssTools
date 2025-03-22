@@ -10,6 +10,7 @@
   "_itemName": "Skill Scroll (Melee Mastery)",
   "_itemIcon": "_graphic/_ui/_itemicons/_consumable/_conIco_13",
   "_itemRarity": 0,
+  "_itemSortTag": 7,
   "_itemDescription": "Teaches the user Melee Mastery.",
   "_maxStackAmount": 1,
   "_scriptableQuest": "_prefab/_entity/_npc/_enok/_quest/(lv-10) QUEST_Mastery of Blades",

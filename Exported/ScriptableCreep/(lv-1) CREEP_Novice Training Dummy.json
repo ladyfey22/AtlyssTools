@@ -3,6 +3,7 @@
   "_creepName": "Novice Training Dummy",
   "_creepObject": "_prefab/_entity/_creep/_creepdirectory/_creep_trainingdummy/_creepObject_noviceTrainingDummy",
   "_creepLevel": 1,
+  "_isBoss": false,
   "_unkillable": true,
   "_creepStatStruct": {
     "$id": "2",
